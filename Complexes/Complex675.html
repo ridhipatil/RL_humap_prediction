@@ -1,0 +1,103 @@
+
+<!doctype html>
+<html>
+<head>
+<title> Complex 675</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex676.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'MRPL32', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q6P1L8" }},
+{data: { id: 'MRM3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HC36" }},
+{data: { id: 'MRPL9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BYD2" }},
+{data: { id: 'MRPL1', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9BYD6" }},
+{data: { id: 'SPATS2', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q86XZ4" }},
+{data: { id: 'RPUSD3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6P087" }},
+{data: { id: 'MCAT', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IVS2" }}], 
+ edges: [{ data: { source: 'MRPL32', target: 'MRPL1', directed: 'false', weight: 0.9999959999999999} },
+{ data: { source: 'MRPL32', target: 'MRPL9', directed: 'false', weight: 0.9999979999999999} },
+{ data: { source: 'MRPL32', target: 'MRM3', directed: 'false', weight: 0.341048} },
+{ data: { source: 'MRPL32', target: 'RPUSD3', directed: 'false', weight: 0.195769} },
+{ data: { source: 'MRM3', target: 'MRPL1', directed: 'false', weight: 0.250012} },
+{ data: { source: 'MRM3', target: 'MRPL9', directed: 'false', weight: 0.2599} },
+{ data: { source: 'MRM3', target: 'SPATS2', directed: 'false', weight: 0.09052510000000001} },
+{ data: { source: 'MRM3', target: 'RPUSD3', directed: 'false', weight: 0.0967732} },
+{ data: { source: 'MRPL9', target: 'MRPL1', directed: 'false', weight: 1.0} },
+{ data: { source: 'MRPL9', target: 'RPUSD3', directed: 'false', weight: 0.124825} },
+{ data: { source: 'MRPL1', target: 'RPUSD3', directed: 'false', weight: 0.15093499999999999} },
+{ data: { source: 'RPUSD3', target: 'MCAT', directed: 'false', weight: 0.22536} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}                                
+  return 'rectangle';
+  },            
+            'background-color': 'mapData(score, 0, 5, yellow, green)',
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'line-color': 'blue',
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    Complex Score  = 0.37500
+    </section>
+    </body>
+    </html>
+    

@@ -1,0 +1,213 @@
+
+<!doctype html>
+<html>
+<head>
+<title> Complex 2025</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex2026.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'VTI1A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96AJ9" }},
+{data: { id: 'VTI1B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UEU0" }},
+{data: { id: 'STX12', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86Y82" }},
+{data: { id: 'TBC1D17', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HA65" }},
+{data: { id: 'STX8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UNK0" }},
+{data: { id: 'STXBP5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5T5C0" }},
+{data: { id: 'SKA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96BD8" }},
+{data: { id: 'GOSR2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O14653" }},
+{data: { id: 'SKA2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WVK7" }},
+{data: { id: 'SNAP47', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5SQN1" }},
+{data: { id: 'STX3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13277" }},
+{data: { id: 'STX16', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O14662" }},
+{data: { id: 'TRPM7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96QT4" }},
+{data: { id: 'STX6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43752" }},
+{data: { id: 'SNAP29', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95721" }},
+{data: { id: 'VAMP4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75379" }},
+{data: { id: 'STX7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15400" }},
+{data: { id: 'STX5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13190" }},
+{data: { id: 'VAMP8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BV40" }}], 
+ edges: [{ data: { source: 'VTI1A', target: 'SNAP29', directed: 'false', weight: 0.325994} },
+{ data: { source: 'VTI1A', target: 'STX7', directed: 'false', weight: 0.7990970000000001} },
+{ data: { source: 'VTI1A', target: 'STX8', directed: 'false', weight: 0.610322} },
+{ data: { source: 'VTI1A', target: 'VTI1B', directed: 'false', weight: 0.5343859999999999} },
+{ data: { source: 'VTI1A', target: 'STX5', directed: 'false', weight: 0.5397109999999999} },
+{ data: { source: 'VTI1A', target: 'STX12', directed: 'false', weight: 0.895616} },
+{ data: { source: 'VTI1A', target: 'STX6', directed: 'false', weight: 0.9210729999999999} },
+{ data: { source: 'VTI1A', target: 'GOSR2', directed: 'false', weight: 0.714739} },
+{ data: { source: 'VTI1A', target: 'VAMP8', directed: 'false', weight: 0.512418} },
+{ data: { source: 'VTI1A', target: 'SNAP47', directed: 'false', weight: 0.333465} },
+{ data: { source: 'VTI1A', target: 'VAMP4', directed: 'false', weight: 0.313012} },
+{ data: { source: 'VTI1A', target: 'STXBP5', directed: 'false', weight: 0.287896} },
+{ data: { source: 'VTI1A', target: 'STX3', directed: 'false', weight: 0.175861} },
+{ data: { source: 'VTI1A', target: 'STX16', directed: 'false', weight: 0.133451} },
+{ data: { source: 'VTI1B', target: 'SNAP29', directed: 'false', weight: 0.164605} },
+{ data: { source: 'VTI1B', target: 'STX7', directed: 'false', weight: 0.655357} },
+{ data: { source: 'VTI1B', target: 'STX8', directed: 'false', weight: 0.991461} },
+{ data: { source: 'VTI1B', target: 'VAMP8', directed: 'false', weight: 0.777771} },
+{ data: { source: 'VTI1B', target: 'STX6', directed: 'false', weight: 0.7736390000000001} },
+{ data: { source: 'VTI1B', target: 'STX12', directed: 'false', weight: 0.458121} },
+{ data: { source: 'VTI1B', target: 'VAMP4', directed: 'false', weight: 0.405673} },
+{ data: { source: 'VTI1B', target: 'STX5', directed: 'false', weight: 0.387473} },
+{ data: { source: 'VTI1B', target: 'GOSR2', directed: 'false', weight: 0.359342} },
+{ data: { source: 'VTI1B', target: 'SNAP47', directed: 'false', weight: 0.143488} },
+{ data: { source: 'VTI1B', target: 'STXBP5', directed: 'false', weight: 0.113825} },
+{ data: { source: 'VTI1B', target: 'STX3', directed: 'false', weight: 0.106912} },
+{ data: { source: 'VTI1B', target: 'STX16', directed: 'false', weight: 0.10554300000000001} },
+{ data: { source: 'STX12', target: 'SNAP29', directed: 'false', weight: 0.0764291} },
+{ data: { source: 'STX12', target: 'STX7', directed: 'false', weight: 0.24961799999999998} },
+{ data: { source: 'STX12', target: 'STX8', directed: 'false', weight: 0.401656} },
+{ data: { source: 'STX12', target: 'STX5', directed: 'false', weight: 0.0892265} },
+{ data: { source: 'STX12', target: 'TBC1D17', directed: 'false', weight: 0.8039029999999999} },
+{ data: { source: 'STX12', target: 'STX6', directed: 'false', weight: 0.555175} },
+{ data: { source: 'STX12', target: 'VAMP8', directed: 'false', weight: 0.466218} },
+{ data: { source: 'STX12', target: 'GOSR2', directed: 'false', weight: 0.45719099999999996} },
+{ data: { source: 'STX12', target: 'STXBP5', directed: 'false', weight: 0.382773} },
+{ data: { source: 'STX12', target: 'VAMP4', directed: 'false', weight: 0.359786} },
+{ data: { source: 'STX12', target: 'SNAP47', directed: 'false', weight: 0.240024} },
+{ data: { source: 'STX12', target: 'STX3', directed: 'false', weight: 0.125901} },
+{ data: { source: 'STX12', target: 'STX16', directed: 'false', weight: 0.09600089999999999} },
+{ data: { source: 'GOSR2', target: 'SNAP29', directed: 'false', weight: 0.145337} },
+{ data: { source: 'GOSR2', target: 'STX7', directed: 'false', weight: 0.671405} },
+{ data: { source: 'GOSR2', target: 'STX8', directed: 'false', weight: 0.359342} },
+{ data: { source: 'GOSR2', target: 'STX5', directed: 'false', weight: 0.5397109999999999} },
+{ data: { source: 'GOSR2', target: 'STX6', directed: 'false', weight: 0.811817} },
+{ data: { source: 'GOSR2', target: 'STXBP5', directed: 'false', weight: 0.287896} },
+{ data: { source: 'GOSR2', target: 'VAMP8', directed: 'false', weight: 0.251136} },
+{ data: { source: 'GOSR2', target: 'SNAP47', directed: 'false', weight: 0.333465} },
+{ data: { source: 'GOSR2', target: 'VAMP4', directed: 'false', weight: 0.313012} },
+{ data: { source: 'GOSR2', target: 'STX3', directed: 'false', weight: 0.175861} },
+{ data: { source: 'GOSR2', target: 'STX16', directed: 'false', weight: 0.133451} },
+{ data: { source: 'SKA2', target: 'SKA1', directed: 'false', weight: 0.9944049999999999} },
+{ data: { source: 'STX3', target: 'SNAP29', directed: 'false', weight: 0.07304930000000001} },
+{ data: { source: 'STX3', target: 'STX7', directed: 'false', weight: 0.380444} },
+{ data: { source: 'STX3', target: 'STX8', directed: 'false', weight: 0.106353} },
+{ data: { source: 'STX3', target: 'STX5', directed: 'false', weight: 0.089702} },
+{ data: { source: 'STX3', target: 'STX6', directed: 'false', weight: 0.6104229999999999} },
+{ data: { source: 'STX3', target: 'STXBP5', directed: 'false', weight: 0.42303599999999997} },
+{ data: { source: 'STX3', target: 'VAMP8', directed: 'false', weight: 0.218491} },
+{ data: { source: 'STX3', target: 'VAMP4', directed: 'false', weight: 0.21433400000000002} },
+{ data: { source: 'STX3', target: 'STX16', directed: 'false', weight: 0.128057} },
+{ data: { source: 'STX3', target: 'SNAP47', directed: 'false', weight: 0.08337710000000001} },
+{ data: { source: 'STX5', target: 'SNAP29', directed: 'false', weight: 0.41140699999999997} },
+{ data: { source: 'STX5', target: 'STX7', directed: 'false', weight: 0.86249} },
+{ data: { source: 'STX5', target: 'STX8', directed: 'false', weight: 0.9522459999999999} },
+{ data: { source: 'STX5', target: 'STX6', directed: 'false', weight: 0.8553950000000001} },
+{ data: { source: 'STX5', target: 'VAMP8', directed: 'false', weight: 0.5764670000000001} },
+{ data: { source: 'STX5', target: 'STXBP5', directed: 'false', weight: 0.46953599999999995} },
+{ data: { source: 'STX5', target: 'VAMP4', directed: 'false', weight: 0.349532} },
+{ data: { source: 'STX5', target: 'SNAP47', directed: 'false', weight: 0.164021} },
+{ data: { source: 'STX5', target: 'STX16', directed: 'false', weight: 0.101714} },
+{ data: { source: 'STX8', target: 'SNAP29', directed: 'false', weight: 0.251778} },
+{ data: { source: 'STX8', target: 'STX7', directed: 'false', weight: 0.863137} },
+{ data: { source: 'STX8', target: 'VAMP8', directed: 'false', weight: 0.829868} },
+{ data: { source: 'STX8', target: 'STX6', directed: 'false', weight: 0.816803} },
+{ data: { source: 'STX8', target: 'VAMP4', directed: 'false', weight: 0.643868} },
+{ data: { source: 'STX8', target: 'STXBP5', directed: 'false', weight: 0.343587} },
+{ data: { source: 'STX8', target: 'SNAP47', directed: 'false', weight: 0.20975100000000002} },
+{ data: { source: 'STX8', target: 'STX16', directed: 'false', weight: 0.10554300000000001} },
+{ data: { source: 'STXBP5', target: 'SKA1', directed: 'false', weight: 0.0925023} },
+{ data: { source: 'STXBP5', target: 'SNAP29', directed: 'false', weight: 0.868192} },
+{ data: { source: 'STXBP5', target: 'STX7', directed: 'false', weight: 0.742896} },
+{ data: { source: 'STXBP5', target: 'STX6', directed: 'false', weight: 0.22674} },
+{ data: { source: 'STXBP5', target: 'VAMP8', directed: 'false', weight: 0.48647299999999993} },
+{ data: { source: 'STXBP5', target: 'VAMP4', directed: 'false', weight: 0.222874} },
+{ data: { source: 'STXBP5', target: 'SNAP47', directed: 'false', weight: 0.189798} },
+{ data: { source: 'STXBP5', target: 'STX16', directed: 'false', weight: 0.120276} },
+{ data: { source: 'SKA1', target: 'SNAP29', directed: 'false', weight: 0.992822} },
+{ data: { source: 'SNAP47', target: 'SNAP29', directed: 'false', weight: 0.10563499999999999} },
+{ data: { source: 'SNAP47', target: 'STX7', directed: 'false', weight: 0.361654} },
+{ data: { source: 'SNAP47', target: 'STX6', directed: 'false', weight: 0.196176} },
+{ data: { source: 'SNAP47', target: 'VAMP8', directed: 'false', weight: 0.23197600000000002} },
+{ data: { source: 'SNAP47', target: 'VAMP4', directed: 'false', weight: 0.363892} },
+{ data: { source: 'SNAP47', target: 'STX16', directed: 'false', weight: 0.102896} },
+{ data: { source: 'STX16', target: 'SNAP29', directed: 'false', weight: 0.0952194} },
+{ data: { source: 'STX16', target: 'STX7', directed: 'false', weight: 0.630587} },
+{ data: { source: 'STX16', target: 'STX6', directed: 'false', weight: 0.120276} },
+{ data: { source: 'STX16', target: 'VAMP8', directed: 'false', weight: 0.11473699999999999} },
+{ data: { source: 'STX16', target: 'VAMP4', directed: 'false', weight: 0.12378900000000001} },
+{ data: { source: 'TRPM7', target: 'SNAP29', directed: 'false', weight: 0.716654} },
+{ data: { source: 'STX6', target: 'SNAP29', directed: 'false', weight: 0.304101} },
+{ data: { source: 'STX6', target: 'STX7', directed: 'false', weight: 0.8330569999999999} },
+{ data: { source: 'STX6', target: 'VAMP8', directed: 'false', weight: 0.822234} },
+{ data: { source: 'STX6', target: 'VAMP4', directed: 'false', weight: 0.39405999999999997} },
+{ data: { source: 'SNAP29', target: 'STX7', directed: 'false', weight: 0.998008} },
+{ data: { source: 'SNAP29', target: 'VAMP8', directed: 'false', weight: 0.7595149999999999} },
+{ data: { source: 'SNAP29', target: 'VAMP4', directed: 'false', weight: 0.16145} },
+{ data: { source: 'VAMP4', target: 'STX7', directed: 'false', weight: 0.774058} },
+{ data: { source: 'VAMP4', target: 'VAMP8', directed: 'false', weight: 0.33181700000000003} },
+{ data: { source: 'STX7', target: 'VAMP8', directed: 'false', weight: 0.604754} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}                                
+  return 'rectangle';
+  },            
+            'background-color': 'mapData(score, 0, 5, yellow, green)',
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'line-color': 'blue',
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    Complex Score  = 0.37500
+    </section>
+    </body>
+    </html>
+    

@@ -1,0 +1,104 @@
+
+<!doctype html>
+<html>
+<head>
+<title> Complex 2106</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex2107.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'PCSK6', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P29122" }},
+{data: { id: 'TTC13', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q8NBP0" }},
+{data: { id: 'CHPF', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q8IZ52" }},
+{data: { id: 'LRIG1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96JA1" }},
+{data: { id: 'EDEM3', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9BZQ6" }},
+{data: { id: 'IL17RA', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q96F46" }}], 
+ edges: [{ data: { source: 'PCSK6', target: 'IL17RA', directed: 'false', weight: 0.638433} },
+{ data: { source: 'PCSK6', target: 'EDEM3', directed: 'false', weight: 0.22075999999999998} },
+{ data: { source: 'PCSK6', target: 'CHPF', directed: 'false', weight: 0.13742000000000001} },
+{ data: { source: 'CHPF', target: 'LRIG1', directed: 'false', weight: 0.445546} },
+{ data: { source: 'CHPF', target: 'EDEM3', directed: 'false', weight: 0.24685700000000002} },
+{ data: { source: 'CHPF', target: 'IL17RA', directed: 'false', weight: 0.0471409} },
+{ data: { source: 'CHPF', target: 'TTC13', directed: 'false', weight: 0.353128} },
+{ data: { source: 'TTC13', target: 'LRIG1', directed: 'false', weight: 0.08441010000000002} },
+{ data: { source: 'EDEM3', target: 'IL17RA', directed: 'false', weight: 0.152285} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}                                
+  return 'rectangle';
+  },            
+            'background-color': 'mapData(score, 0, 5, yellow, green)',
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'line-color': 'blue',
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    Complex Score  = 0.37500
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        4 interacting protein(s): <br>PCSK6 CHPF EDEM3 IL17RA
+    </section>
+    </body>
+    </html>
+    

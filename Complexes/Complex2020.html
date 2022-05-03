@@ -1,0 +1,112 @@
+
+<!doctype html>
+<html>
+<head>
+<title> Complex 2020</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex2021.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'SARM1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6SZW1" }},
+{data: { id: 'CARNMT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N4J0" }},
+{data: { id: 'ZBTB25', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P24278" }},
+{data: { id: 'TAB2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NYJ8" }},
+{data: { id: 'RNF113A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15541" }},
+{data: { id: 'NR3C2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P08235" }},
+{data: { id: 'TAB1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15750" }},
+{data: { id: 'PGAM5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96HS1" }}], 
+ edges: [{ data: { source: 'SARM1', target: 'CARNMT1', directed: 'false', weight: 0.9736549999999999} },
+{ data: { source: 'SARM1', target: 'RNF113A', directed: 'false', weight: 0.171414} },
+{ data: { source: 'SARM1', target: 'NR3C2', directed: 'false', weight: 0.171414} },
+{ data: { source: 'SARM1', target: 'ZBTB25', directed: 'false', weight: 0.151455} },
+{ data: { source: 'SARM1', target: 'TAB2', directed: 'false', weight: 0.140692} },
+{ data: { source: 'SARM1', target: 'TAB1', directed: 'false', weight: 0.11248399999999999} },
+{ data: { source: 'CARNMT1', target: 'RNF113A', directed: 'false', weight: 0.9838889999999999} },
+{ data: { source: 'CARNMT1', target: 'NR3C2', directed: 'false', weight: 0.980894} },
+{ data: { source: 'CARNMT1', target: 'ZBTB25', directed: 'false', weight: 0.9226770000000001} },
+{ data: { source: 'CARNMT1', target: 'TAB2', directed: 'false', weight: 0.639592} },
+{ data: { source: 'CARNMT1', target: 'TAB1', directed: 'false', weight: 0.2953} },
+{ data: { source: 'ZBTB25', target: 'RNF113A', directed: 'false', weight: 0.151455} },
+{ data: { source: 'ZBTB25', target: 'NR3C2', directed: 'false', weight: 0.151455} },
+{ data: { source: 'TAB2', target: 'RNF113A', directed: 'false', weight: 0.140692} },
+{ data: { source: 'TAB2', target: 'NR3C2', directed: 'false', weight: 0.140692} },
+{ data: { source: 'TAB2', target: 'TAB1', directed: 'false', weight: 0.294644} },
+{ data: { source: 'RNF113A', target: 'NR3C2', directed: 'false', weight: 0.171414} },
+{ data: { source: 'RNF113A', target: 'TAB1', directed: 'false', weight: 0.11248399999999999} },
+{ data: { source: 'RNF113A', target: 'PGAM5', directed: 'false', weight: 0.078377} },
+{ data: { source: 'NR3C2', target: 'TAB1', directed: 'false', weight: 0.11248399999999999} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}                                
+  return 'rectangle';
+  },            
+            'background-color': 'mapData(score, 0, 5, yellow, green)',
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'line-color': 'blue',
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    Complex Score  = 0.37500
+    </section>
+    </body>
+    </html>
+    

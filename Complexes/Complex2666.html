@@ -1,0 +1,99 @@
+
+<!doctype html>
+<html>
+<head>
+<title> Complex 2666</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex2667.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'UBA6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/A0AVT1" }},
+{data: { id: 'PDE8B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95263" }},
+{data: { id: 'IMPDH2', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P12268" }},
+{data: { id: 'ANKRD9', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q96BM1" }},
+{data: { id: 'SLC25A44', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q96H78" }}], 
+ edges: [{ data: { source: 'UBA6', target: 'IMPDH2', directed: 'false', weight: 0.417282} },
+{ data: { source: 'IMPDH2', target: 'ANKRD9', directed: 'false', weight: 0.9803879999999999} },
+{ data: { source: 'IMPDH2', target: 'SLC25A44', directed: 'false', weight: 0.481997} },
+{ data: { source: 'IMPDH2', target: 'PDE8B', directed: 'false', weight: 0.363483} },
+{ data: { source: 'ANKRD9', target: 'SLC25A44', directed: 'false', weight: 0.151455} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}                                
+  return 'rectangle';
+  },            
+            'background-color': 'mapData(score, 0, 5, yellow, green)',
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'line-color': 'blue',
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    Complex Score  = 0.35000
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>IMPDH2
+    </section>
+    </body>
+    </html>
+    

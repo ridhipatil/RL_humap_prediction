@@ -1,0 +1,119 @@
+
+<!doctype html>
+<html>
+<head>
+<title> Complex 1564</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex1565.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'MAFG', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15525" }},
+{data: { id: 'IFT20', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IY31" }},
+{data: { id: 'IFT80', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9P2H3" }},
+{data: { id: 'GOLGA3', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q08378" }},
+{data: { id: 'HIP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00291" }},
+{data: { id: 'HSBP1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/O75506" }},
+{data: { id: 'DEUP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q05D60" }},
+{data: { id: 'DGKH', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86XP1" }},
+{data: { id: 'TRAF6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y4K3" }}], 
+ edges: [{ data: { source: 'MAFG', target: 'DEUP1', directed: 'false', weight: 0.9775940000000001} },
+{ data: { source: 'MAFG', target: 'HIP1', directed: 'false', weight: 0.171414} },
+{ data: { source: 'MAFG', target: 'DGKH', directed: 'false', weight: 0.151455} },
+{ data: { source: 'MAFG', target: 'TRAF6', directed: 'false', weight: 0.140692} },
+{ data: { source: 'MAFG', target: 'IFT20', directed: 'false', weight: 0.140692} },
+{ data: { source: 'MAFG', target: 'GOLGA3', directed: 'false', weight: 0.11047699999999999} },
+{ data: { source: 'IFT20', target: 'IFT80', directed: 'false', weight: 0.28781100000000004} },
+{ data: { source: 'IFT20', target: 'DEUP1', directed: 'false', weight: 0.6015550000000001} },
+{ data: { source: 'IFT20', target: 'HIP1', directed: 'false', weight: 0.140692} },
+{ data: { source: 'IFT20', target: 'HSBP1', directed: 'false', weight: 0.114755} },
+{ data: { source: 'IFT80', target: 'HSBP1', directed: 'false', weight: 0.123797} },
+{ data: { source: 'GOLGA3', target: 'DEUP1', directed: 'false', weight: 0.549886} },
+{ data: { source: 'GOLGA3', target: 'HIP1', directed: 'false', weight: 0.11047699999999999} },
+{ data: { source: 'GOLGA3', target: 'TRAF6', directed: 'false', weight: 0.0896254} },
+{ data: { source: 'GOLGA3', target: 'DGKH', directed: 'false', weight: 0.09685880000000001} },
+{ data: { source: 'HIP1', target: 'DEUP1', directed: 'false', weight: 0.94631} },
+{ data: { source: 'HIP1', target: 'DGKH', directed: 'false', weight: 0.151455} },
+{ data: { source: 'HIP1', target: 'TRAF6', directed: 'false', weight: 0.140692} },
+{ data: { source: 'DEUP1', target: 'TRAF6', directed: 'false', weight: 0.818858} },
+{ data: { source: 'DEUP1', target: 'DGKH', directed: 'false', weight: 0.780525} },
+{ data: { source: 'DGKH', target: 'TRAF6', directed: 'false', weight: 0.123797} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}                                
+  return 'rectangle';
+  },            
+            'background-color': 'mapData(score, 0, 5, yellow, green)',
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'line-color': 'blue',
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    Complex Score  = 0.37500
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        2 interacting protein(s): <br>GOLGA3 HSBP1
+    </section>
+    </body>
+    </html>
+    

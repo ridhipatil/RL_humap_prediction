@@ -1,0 +1,94 @@
+
+<!doctype html>
+<html>
+<head>
+<title> Complex 38</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex39.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'NLGN2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NFZ4" }},
+{data: { id: 'NLGN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N2Q7" }},
+{data: { id: 'WDR13', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q9H1Z4" }},
+{data: { id: 'B3GAT3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O94766" }},
+{data: { id: 'RELCH', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9P260" }}], 
+ edges: [{ data: { source: 'WDR13', target: 'B3GAT3', directed: 'false', weight: 0.9682299999999999} },
+{ data: { source: 'WDR13', target: 'RELCH', directed: 'false', weight: 0.171414} },
+{ data: { source: 'WDR13', target: 'NLGN1', directed: 'false', weight: 0.171414} },
+{ data: { source: 'WDR13', target: 'NLGN2', directed: 'false', weight: 0.151455} },
+{ data: { source: 'B3GAT3', target: 'RELCH', directed: 'false', weight: 0.9641879999999999} },
+{ data: { source: 'B3GAT3', target: 'NLGN2', directed: 'false', weight: 0.707929} },
+{ data: { source: 'B3GAT3', target: 'NLGN1', directed: 'false', weight: 0.695678} },
+{ data: { source: 'NLGN2', target: 'RELCH', directed: 'false', weight: 0.151455} },
+{ data: { source: 'NLGN2', target: 'NLGN1', directed: 'false', weight: 0.151455} },
+{ data: { source: 'NLGN1', target: 'RELCH', directed: 'false', weight: 0.171414} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 30,
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}                                
+  return 'rectangle';
+  },            
+            'background-color': 'mapData(score, 0, 5, yellow, green)',
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
+								'line-color': 'blue',
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    name: 'circle'
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    Complex Score  = 0.39375
+    </section>
+    </body>
+    </html>
+    

@@ -1,0 +1,110 @@
+
+<!doctype html>
+<html>
+<head>
+<title> Complex 776</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex777.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'DAXX', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UER7" }},
+{data: { id: 'FBXW8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N3Y1" }},
+{data: { id: 'ZNF445', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P59923" }},
+{data: { id: 'C14orf93', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q9H972" }},
+{data: { id: 'ZNF845', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q96IR2" }},
+{data: { id: 'ZNF646', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15015" }},
+{data: { id: 'ZBTB21', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9ULJ3" }},
+{data: { id: 'SET', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q01105" }}], 
+ edges: [{ data: { source: 'ZNF445', target: 'ZBTB21', directed: 'false', weight: 0.125749} },
+{ data: { source: 'ZNF445', target: 'SET', directed: 'false', weight: 0.890706} },
+{ data: { source: 'ZNF445', target: 'ZNF646', directed: 'false', weight: 0.144297} },
+{ data: { source: 'ZNF445', target: 'C14orf93', directed: 'false', weight: 0.144297} },
+{ data: { source: 'ZNF445', target: 'ZNF845', directed: 'false', weight: 0.125749} },
+{ data: { source: 'C14orf93', target: 'ZBTB21', directed: 'false', weight: 0.144297} },
+{ data: { source: 'C14orf93', target: 'SET', directed: 'false', weight: 0.572087} },
+{ data: { source: 'C14orf93', target: 'ZNF845', directed: 'false', weight: 0.144297} },
+{ data: { source: 'C14orf93', target: 'ZNF646', directed: 'false', weight: 0.165074} },
+{ data: { source: 'ZBTB21', target: 'SET', directed: 'false', weight: 0.816756} },
+{ data: { source: 'ZBTB21', target: 'ZNF646', directed: 'false', weight: 0.144297} },
+{ data: { source: 'ZBTB21', target: 'ZNF845', directed: 'false', weight: 0.125749} },
+{ data: { source: 'ZBTB21', target: 'DAXX', directed: 'false', weight: 0.117318} },
+{ data: { source: 'ZBTB21', target: 'FBXW8', directed: 'false', weight: 0.108699} },
+{ data: { source: 'SET', target: 'ZNF845', directed: 'false', weight: 0.633113} },
+{ data: { source: 'SET', target: 'ZNF646', directed: 'false', weight: 0.5306850000000001} },
+{ data: { source: 'ZNF845', target: 'ZNF646', directed: 'false', weight: 0.144297} },
+{ data: { source: 'FBXW8', target: 'DAXX', directed: 'false', weight: 0.123797} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}                                
+  return 'rectangle';
+  },            
+            'background-color': 'mapData(score, 0, 5, yellow, green)',
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'line-color': 'blue',
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    Complex Score  = 0.37500
+    </section>
+    </body>
+    </html>
+    

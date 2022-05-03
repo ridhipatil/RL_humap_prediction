@@ -1,0 +1,133 @@
+
+<!doctype html>
+<html>
+<head>
+<title> Complex 1247</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex1248.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'COMMD5', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9GZQ3" }},
+{data: { id: 'COMMD9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9P000" }},
+{data: { id: 'WASHC5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q12768" }},
+{data: { id: 'COMMD7', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q86VX2" }},
+{data: { id: 'VPS29', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UBQ0" }},
+{data: { id: 'VPS26C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O14972" }},
+{data: { id: 'VPS35L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q7Z3J2" }},
+{data: { id: 'COMMD4', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9H0A8" }},
+{data: { id: 'COMMD2', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q86X83" }},
+{data: { id: 'SNX5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y5X3" }},
+{data: { id: 'CCDC22', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60826" }}], 
+ edges: [{ data: { source: 'COMMD5', target: 'VPS35L', directed: 'false', weight: 0.19378199999999998} },
+{ data: { source: 'COMMD5', target: 'VPS29', directed: 'false', weight: 0.721302} },
+{ data: { source: 'COMMD5', target: 'VPS26C', directed: 'false', weight: 0.230046} },
+{ data: { source: 'COMMD5', target: 'COMMD4', directed: 'false', weight: 0.9141090000000001} },
+{ data: { source: 'COMMD5', target: 'COMMD9', directed: 'false', weight: 0.855929} },
+{ data: { source: 'COMMD5', target: 'CCDC22', directed: 'false', weight: 0.783463} },
+{ data: { source: 'COMMD5', target: 'COMMD7', directed: 'false', weight: 0.629486} },
+{ data: { source: 'COMMD5', target: 'COMMD2', directed: 'false', weight: 0.44154899999999997} },
+{ data: { source: 'COMMD9', target: 'VPS35L', directed: 'false', weight: 0.821299} },
+{ data: { source: 'COMMD9', target: 'VPS29', directed: 'false', weight: 0.62961} },
+{ data: { source: 'COMMD9', target: 'VPS26C', directed: 'false', weight: 0.855929} },
+{ data: { source: 'COMMD9', target: 'COMMD4', directed: 'false', weight: 0.991872} },
+{ data: { source: 'COMMD9', target: 'COMMD7', directed: 'false', weight: 0.668651} },
+{ data: { source: 'COMMD9', target: 'CCDC22', directed: 'false', weight: 0.84857} },
+{ data: { source: 'COMMD9', target: 'COMMD2', directed: 'false', weight: 0.776278} },
+{ data: { source: 'WASHC5', target: 'VPS29', directed: 'false', weight: 0.158478} },
+{ data: { source: 'COMMD7', target: 'VPS35L', directed: 'false', weight: 0.40326} },
+{ data: { source: 'COMMD7', target: 'VPS29', directed: 'false', weight: 0.553717} },
+{ data: { source: 'COMMD7', target: 'VPS26C', directed: 'false', weight: 0.775598} },
+{ data: { source: 'COMMD7', target: 'COMMD4', directed: 'false', weight: 0.8248559999999999} },
+{ data: { source: 'COMMD7', target: 'COMMD2', directed: 'false', weight: 0.793086} },
+{ data: { source: 'COMMD7', target: 'CCDC22', directed: 'false', weight: 0.789738} },
+{ data: { source: 'VPS29', target: 'VPS35L', directed: 'false', weight: 0.664317} },
+{ data: { source: 'VPS29', target: 'CCDC22', directed: 'false', weight: 0.810412} },
+{ data: { source: 'VPS29', target: 'VPS26C', directed: 'false', weight: 0.720171} },
+{ data: { source: 'VPS29', target: 'COMMD4', directed: 'false', weight: 0.714525} },
+{ data: { source: 'VPS29', target: 'COMMD2', directed: 'false', weight: 0.6026} },
+{ data: { source: 'VPS29', target: 'SNX5', directed: 'false', weight: 0.09363780000000001} },
+{ data: { source: 'VPS26C', target: 'VPS35L', directed: 'false', weight: 0.0647481} },
+{ data: { source: 'VPS26C', target: 'CCDC22', directed: 'false', weight: 0.958636} },
+{ data: { source: 'VPS26C', target: 'COMMD4', directed: 'false', weight: 0.807029} },
+{ data: { source: 'VPS26C', target: 'COMMD2', directed: 'false', weight: 0.5662020000000001} },
+{ data: { source: 'COMMD2', target: 'VPS35L', directed: 'false', weight: 0.138733} },
+{ data: { source: 'COMMD2', target: 'COMMD4', directed: 'false', weight: 0.589286} },
+{ data: { source: 'COMMD2', target: 'CCDC22', directed: 'false', weight: 0.670705} },
+{ data: { source: 'COMMD4', target: 'VPS35L', directed: 'false', weight: 0.682281} },
+{ data: { source: 'COMMD4', target: 'CCDC22', directed: 'false', weight: 0.8372700000000001} },
+{ data: { source: 'VPS35L', target: 'CCDC22', directed: 'false', weight: 0.75042} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}                                
+  return 'rectangle';
+  },            
+            'background-color': 'mapData(score, 0, 5, yellow, green)',
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'line-color': 'blue',
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    Complex Score  = 0.37500
+    </section>
+    </body>
+    </html>
+    

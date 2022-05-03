@@ -1,0 +1,101 @@
+
+<!doctype html>
+<html>
+<head>
+<title> Complex 1422</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex1423.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'NUP188', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5SRE5" }},
+{data: { id: 'CDCA2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q69YH5" }},
+{data: { id: 'NXF1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UBU9" }},
+{data: { id: 'NUP153', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49790" }},
+{data: { id: 'NUP93', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N1F7" }},
+{data: { id: 'SUMO2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P61956" }}], 
+ edges: [{ data: { source: 'NUP153', target: 'CDCA2', directed: 'false', weight: 0.972184} },
+{ data: { source: 'NUP153', target: 'NUP93', directed: 'false', weight: 0.9382} },
+{ data: { source: 'NUP153', target: 'NXF1', directed: 'false', weight: 0.827843} },
+{ data: { source: 'NUP153', target: 'NUP188', directed: 'false', weight: 0.398252} },
+{ data: { source: 'SUMO2', target: 'NXF1', directed: 'false', weight: 0.535428} },
+{ data: { source: 'NUP188', target: 'NUP93', directed: 'false', weight: 0.996334} },
+{ data: { source: 'NUP188', target: 'NXF1', directed: 'false', weight: 0.45982799999999996} },
+{ data: { source: 'NUP188', target: 'CDCA2', directed: 'false', weight: 0.23210300000000003} },
+{ data: { source: 'CDCA2', target: 'NUP93', directed: 'false', weight: 0.264422} },
+{ data: { source: 'CDCA2', target: 'NXF1', directed: 'false', weight: 0.398094} },
+{ data: { source: 'NXF1', target: 'NUP93', directed: 'false', weight: 0.538086} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}                                
+  return 'rectangle';
+  },            
+            'background-color': 'mapData(score, 0, 5, yellow, green)',
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'line-color': 'blue',
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    Complex Score  = 0.37500
+    </section>
+    </body>
+    </html>
+    

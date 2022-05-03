@@ -1,0 +1,112 @@
+
+<!doctype html>
+<html>
+<head>
+<title> Complex 1653</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex1654.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'DDC', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P20711" }},
+{data: { id: 'HSPA12B', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q96MM6" }},
+{data: { id: 'FASTKD5', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q7L8L6" }},
+{data: { id: 'GNPAT', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15228" }},
+{data: { id: 'TARBP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13395" }},
+{data: { id: 'BSG', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P35613" }},
+{data: { id: 'TBCD', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BTW9" }}], 
+ edges: [{ data: { source: 'DDC', target: 'BSG', directed: 'false', weight: 0.9897790000000001} },
+{ data: { source: 'DDC', target: 'HSPA12B', directed: 'false', weight: 0.151455} },
+{ data: { source: 'DDC', target: 'TARBP1', directed: 'false', weight: 0.128057} },
+{ data: { source: 'DDC', target: 'GNPAT', directed: 'false', weight: 0.11730499999999999} },
+{ data: { source: 'DDC', target: 'FASTKD5', directed: 'false', weight: 0.11730499999999999} },
+{ data: { source: 'HSPA12B', target: 'BSG', directed: 'false', weight: 0.312786} },
+{ data: { source: 'HSPA12B', target: 'TARBP1', directed: 'false', weight: 0.112499} },
+{ data: { source: 'HSPA12B', target: 'GNPAT', directed: 'false', weight: 0.102922} },
+{ data: { source: 'HSPA12B', target: 'FASTKD5', directed: 'false', weight: 0.102922} },
+{ data: { source: 'TARBP1', target: 'BSG', directed: 'false', weight: 0.878058} },
+{ data: { source: 'TARBP1', target: 'TBCD', directed: 'false', weight: 0.61002} },
+{ data: { source: 'TARBP1', target: 'GNPAT', directed: 'false', weight: 0.133243} },
+{ data: { source: 'TARBP1', target: 'FASTKD5', directed: 'false', weight: 0.086378} },
+{ data: { source: 'GNPAT', target: 'BSG', directed: 'false', weight: 0.5108689999999999} },
+{ data: { source: 'GNPAT', target: 'FASTKD5', directed: 'false', weight: 0.0788983} },
+{ data: { source: 'FASTKD5', target: 'BSG', directed: 'false', weight: 0.344007} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}                                
+  return 'rectangle';
+  },            
+            'background-color': 'mapData(score, 0, 5, yellow, green)',
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'line-color': 'blue',
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    Complex Score  = 0.37500
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>FASTKD5
+    </section>
+    </body>
+    </html>
+    

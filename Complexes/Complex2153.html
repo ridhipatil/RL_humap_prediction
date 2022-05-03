@@ -1,0 +1,103 @@
+
+<!doctype html>
+<html>
+<head>
+<title> Complex 2153</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex2154.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'RRM2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P31350" }},
+{data: { id: 'GNPTAB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q3T906" }},
+{data: { id: 'CDC16', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13042" }},
+{data: { id: 'ANAPC4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UJX5" }},
+{data: { id: 'FZR1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UM11" }},
+{data: { id: 'ANAPC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H1A4" }},
+{data: { id: 'CDC23', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UJX2" }}], 
+ edges: [{ data: { source: 'RRM2', target: 'FZR1', directed: 'false', weight: 0.9912209999999999} },
+{ data: { source: 'RRM2', target: 'GNPTAB', directed: 'false', weight: 0.5} },
+{ data: { source: 'GNPTAB', target: 'ANAPC1', directed: 'false', weight: 0.32260900000000003} },
+{ data: { source: 'GNPTAB', target: 'CDC16', directed: 'false', weight: 0.568964} },
+{ data: { source: 'GNPTAB', target: 'CDC23', directed: 'false', weight: 0.5756979999999999} },
+{ data: { source: 'GNPTAB', target: 'ANAPC4', directed: 'false', weight: 0.398094} },
+{ data: { source: 'GNPTAB', target: 'FZR1', directed: 'false', weight: 0.398094} },
+{ data: { source: 'ANAPC4', target: 'ANAPC1', directed: 'false', weight: 0.9883540000000001} },
+{ data: { source: 'ANAPC4', target: 'CDC16', directed: 'false', weight: 0.9999959999999999} },
+{ data: { source: 'ANAPC4', target: 'CDC23', directed: 'false', weight: 0.9999530000000001} },
+{ data: { source: 'ANAPC4', target: 'FZR1', directed: 'false', weight: 0.547642} },
+{ data: { source: 'CDC16', target: 'ANAPC1', directed: 'false', weight: 1.0} },
+{ data: { source: 'CDC16', target: 'CDC23', directed: 'false', weight: 0.9999899999999999} },
+{ data: { source: 'CDC16', target: 'FZR1', directed: 'false', weight: 0.9931110000000001} },
+{ data: { source: 'FZR1', target: 'ANAPC1', directed: 'false', weight: 0.582678} },
+{ data: { source: 'FZR1', target: 'CDC23', directed: 'false', weight: 0.975175} },
+{ data: { source: 'ANAPC1', target: 'CDC23', directed: 'false', weight: 0.999668} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 30,
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}                                
+  return 'rectangle';
+  },            
+            'background-color': 'mapData(score, 0, 5, yellow, green)',
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
+								'line-color': 'blue',
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    name: 'circle'
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    Complex Score  = 0.37500
+    </section>
+    </body>
+    </html>
+    

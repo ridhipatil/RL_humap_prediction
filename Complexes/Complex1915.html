@@ -1,0 +1,199 @@
+
+<!doctype html>
+<html>
+<head>
+<title> Complex 1915</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex1916.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'SMARCD2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92925" }},
+{data: { id: 'PHF10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WUB8" }},
+{data: { id: 'SMARCD3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6STE5" }},
+{data: { id: 'SMARCD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96GM5" }},
+{data: { id: 'ARID2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q68CP9" }},
+{data: { id: 'BRD9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H8M2" }},
+{data: { id: 'NCOR2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y618" }},
+{data: { id: 'ACTL6B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O94805" }},
+{data: { id: 'SMARCC2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TAQ2" }},
+{data: { id: 'NCOR1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75376" }},
+{data: { id: 'ARID1A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O14497" }},
+{data: { id: 'SMARCC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92922" }},
+{data: { id: 'TBL1X', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60907" }},
+{data: { id: 'BCL7C', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q8WUZ0" }},
+{data: { id: 'BICRAL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6AI39" }},
+{data: { id: 'SMARCB1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q12824" }},
+{data: { id: 'SMARCE1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q969G3" }}], 
+ edges: [{ data: { source: 'SMARCD2', target: 'SMARCB1', directed: 'false', weight: 0.9999899999999999} },
+{ data: { source: 'SMARCD2', target: 'SMARCC1', directed: 'false', weight: 0.999976} },
+{ data: { source: 'SMARCD2', target: 'SMARCC2', directed: 'false', weight: 0.999976} },
+{ data: { source: 'SMARCD2', target: 'SMARCE1', directed: 'false', weight: 0.999957} },
+{ data: { source: 'SMARCD2', target: 'SMARCD1', directed: 'false', weight: 0.999693} },
+{ data: { source: 'SMARCD2', target: 'ARID1A', directed: 'false', weight: 0.9977879999999999} },
+{ data: { source: 'SMARCD2', target: 'ARID2', directed: 'false', weight: 0.958192} },
+{ data: { source: 'SMARCD2', target: 'SMARCD3', directed: 'false', weight: 0.655328} },
+{ data: { source: 'SMARCD2', target: 'BCL7C', directed: 'false', weight: 0.480584} },
+{ data: { source: 'SMARCD2', target: 'BRD9', directed: 'false', weight: 0.47893900000000006} },
+{ data: { source: 'SMARCD2', target: 'TBL1X', directed: 'false', weight: 0.39778} },
+{ data: { source: 'SMARCD2', target: 'PHF10', directed: 'false', weight: 0.35689299999999996} },
+{ data: { source: 'SMARCD2', target: 'ACTL6B', directed: 'false', weight: 0.288313} },
+{ data: { source: 'SMARCD2', target: 'BICRAL', directed: 'false', weight: 0.181199} },
+{ data: { source: 'ARID1A', target: 'SMARCB1', directed: 'false', weight: 0.9992709999999999} },
+{ data: { source: 'ARID1A', target: 'SMARCC1', directed: 'false', weight: 0.999194} },
+{ data: { source: 'ARID1A', target: 'SMARCC2', directed: 'false', weight: 0.999833} },
+{ data: { source: 'ARID1A', target: 'SMARCE1', directed: 'false', weight: 0.999951} },
+{ data: { source: 'ARID1A', target: 'SMARCD1', directed: 'false', weight: 0.998976} },
+{ data: { source: 'ARID1A', target: 'SMARCD3', directed: 'false', weight: 0.932815} },
+{ data: { source: 'ARID1A', target: 'ARID2', directed: 'false', weight: 0.9527030000000001} },
+{ data: { source: 'ARID1A', target: 'BRD9', directed: 'false', weight: 0.725585} },
+{ data: { source: 'ARID1A', target: 'BCL7C', directed: 'false', weight: 0.629238} },
+{ data: { source: 'ARID1A', target: 'ACTL6B', directed: 'false', weight: 0.319639} },
+{ data: { source: 'ARID1A', target: 'BICRAL', directed: 'false', weight: 0.24959299999999998} },
+{ data: { source: 'ARID1A', target: 'PHF10', directed: 'false', weight: 0.222874} },
+{ data: { source: 'SMARCB1', target: 'SMARCC1', directed: 'false', weight: 1.0} },
+{ data: { source: 'SMARCB1', target: 'SMARCC2', directed: 'false', weight: 0.9999969999999999} },
+{ data: { source: 'SMARCB1', target: 'SMARCE1', directed: 'false', weight: 0.999978} },
+{ data: { source: 'SMARCB1', target: 'SMARCD1', directed: 'false', weight: 0.999965} },
+{ data: { source: 'SMARCB1', target: 'SMARCD3', directed: 'false', weight: 0.9998239999999999} },
+{ data: { source: 'SMARCB1', target: 'ARID2', directed: 'false', weight: 0.844359} },
+{ data: { source: 'SMARCB1', target: 'BCL7C', directed: 'false', weight: 0.45291499999999996} },
+{ data: { source: 'SMARCB1', target: 'BRD9', directed: 'false', weight: 0.341719} },
+{ data: { source: 'SMARCB1', target: 'PHF10', directed: 'false', weight: 0.33181700000000003} },
+{ data: { source: 'SMARCB1', target: 'ACTL6B', directed: 'false', weight: 0.26324699999999995} },
+{ data: { source: 'SMARCB1', target: 'TBL1X', directed: 'false', weight: 0.153005} },
+{ data: { source: 'SMARCB1', target: 'BICRAL', directed: 'false', weight: 0.11473699999999999} },
+{ data: { source: 'PHF10', target: 'SMARCC1', directed: 'false', weight: 0.192211} },
+{ data: { source: 'PHF10', target: 'SMARCC2', directed: 'false', weight: 0.30805} },
+{ data: { source: 'PHF10', target: 'SMARCE1', directed: 'false', weight: 0.5378109999999999} },
+{ data: { source: 'PHF10', target: 'SMARCD1', directed: 'false', weight: 0.791715} },
+{ data: { source: 'PHF10', target: 'SMARCD3', directed: 'false', weight: 0.33181700000000003} },
+{ data: { source: 'PHF10', target: 'ARID2', directed: 'false', weight: 0.439122} },
+{ data: { source: 'PHF10', target: 'BICRAL', directed: 'false', weight: 0.12378900000000001} },
+{ data: { source: 'PHF10', target: 'BCL7C', directed: 'false', weight: 0.180678} },
+{ data: { source: 'PHF10', target: 'BRD9', directed: 'false', weight: 0.222827} },
+{ data: { source: 'PHF10', target: 'ACTL6B', directed: 'false', weight: 0.123609} },
+{ data: { source: 'SMARCD3', target: 'SMARCC1', directed: 'false', weight: 0.999984} },
+{ data: { source: 'SMARCD3', target: 'SMARCC2', directed: 'false', weight: 0.9999450000000001} },
+{ data: { source: 'SMARCD3', target: 'SMARCE1', directed: 'false', weight: 0.9895440000000001} },
+{ data: { source: 'SMARCD3', target: 'SMARCD1', directed: 'false', weight: 0.831636} },
+{ data: { source: 'SMARCD3', target: 'BCL7C', directed: 'false', weight: 0.563566} },
+{ data: { source: 'SMARCD3', target: 'TBL1X', directed: 'false', weight: 0.462496} },
+{ data: { source: 'SMARCD3', target: 'ARID2', directed: 'false', weight: 0.36375} },
+{ data: { source: 'SMARCD3', target: 'ACTL6B', directed: 'false', weight: 0.26324699999999995} },
+{ data: { source: 'SMARCD3', target: 'BRD9', directed: 'false', weight: 0.124105} },
+{ data: { source: 'SMARCD3', target: 'BICRAL', directed: 'false', weight: 0.11473699999999999} },
+{ data: { source: 'SMARCC1', target: 'SMARCD1', directed: 'false', weight: 0.9999959999999999} },
+{ data: { source: 'SMARCC1', target: 'SMARCE1', directed: 'false', weight: 0.999992} },
+{ data: { source: 'SMARCC1', target: 'SMARCC2', directed: 'false', weight: 0.999553} },
+{ data: { source: 'SMARCC1', target: 'ARID2', directed: 'false', weight: 0.9796540000000001} },
+{ data: { source: 'SMARCC1', target: 'BICRAL', directed: 'false', weight: 0.9756610000000001} },
+{ data: { source: 'SMARCC1', target: 'BCL7C', directed: 'false', weight: 0.666898} },
+{ data: { source: 'SMARCC1', target: 'BRD9', directed: 'false', weight: 0.483548} },
+{ data: { source: 'SMARCC1', target: 'ACTL6B', directed: 'false', weight: 0.26324699999999995} },
+{ data: { source: 'SMARCD1', target: 'SMARCC2', directed: 'false', weight: 0.999992} },
+{ data: { source: 'SMARCD1', target: 'SMARCE1', directed: 'false', weight: 0.999883} },
+{ data: { source: 'SMARCD1', target: 'ARID2', directed: 'false', weight: 0.996618} },
+{ data: { source: 'SMARCD1', target: 'BICRAL', directed: 'false', weight: 0.875475} },
+{ data: { source: 'SMARCD1', target: 'BRD9', directed: 'false', weight: 0.7473270000000001} },
+{ data: { source: 'SMARCD1', target: 'TBL1X', directed: 'false', weight: 0.39771999999999996} },
+{ data: { source: 'SMARCD1', target: 'BCL7C', directed: 'false', weight: 0.350453} },
+{ data: { source: 'SMARCD1', target: 'ACTL6B', directed: 'false', weight: 0.34624299999999997} },
+{ data: { source: 'ARID2', target: 'SMARCC2', directed: 'false', weight: 0.8592420000000001} },
+{ data: { source: 'ARID2', target: 'SMARCE1', directed: 'false', weight: 0.9852} },
+{ data: { source: 'ARID2', target: 'BRD9', directed: 'false', weight: 0.7315229999999999} },
+{ data: { source: 'ARID2', target: 'ACTL6B', directed: 'false', weight: 0.20599499999999998} },
+{ data: { source: 'ARID2', target: 'BICRAL', directed: 'false', weight: 0.178787} },
+{ data: { source: 'ARID2', target: 'BCL7C', directed: 'false', weight: 0.08883869999999999} },
+{ data: { source: 'BRD9', target: 'SMARCC2', directed: 'false', weight: 0.358685} },
+{ data: { source: 'BRD9', target: 'SMARCE1', directed: 'false', weight: 0.339464} },
+{ data: { source: 'BRD9', target: 'BICRAL', directed: 'false', weight: 0.151455} },
+{ data: { source: 'BRD9', target: 'BCL7C', directed: 'false', weight: 0.07569189999999999} },
+{ data: { source: 'BRD9', target: 'ACTL6B', directed: 'false', weight: 0.200625} },
+{ data: { source: 'NCOR2', target: 'TBL1X', directed: 'false', weight: 0.140692} },
+{ data: { source: 'NCOR2', target: 'NCOR1', directed: 'false', weight: 0.124519} },
+{ data: { source: 'ACTL6B', target: 'SMARCC2', directed: 'false', weight: 0.242646} },
+{ data: { source: 'ACTL6B', target: 'SMARCE1', directed: 'false', weight: 0.26324699999999995} },
+{ data: { source: 'ACTL6B', target: 'BICRAL', directed: 'false', weight: 0.11730499999999999} },
+{ data: { source: 'ACTL6B', target: 'BCL7C', directed: 'false', weight: 0.39718000000000003} },
+{ data: { source: 'TBL1X', target: 'NCOR1', directed: 'false', weight: 0.0912802} },
+{ data: { source: 'BCL7C', target: 'SMARCC2', directed: 'false', weight: 0.580122} },
+{ data: { source: 'BCL7C', target: 'SMARCE1', directed: 'false', weight: 0.9224530000000001} },
+{ data: { source: 'BCL7C', target: 'BICRAL', directed: 'false', weight: 0.11248399999999999} },
+{ data: { source: 'BICRAL', target: 'SMARCC2', directed: 'false', weight: 0.20723000000000003} },
+{ data: { source: 'BICRAL', target: 'SMARCE1', directed: 'false', weight: 0.21104099999999998} },
+{ data: { source: 'SMARCC2', target: 'SMARCE1', directed: 'false', weight: 0.9999969999999999} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}                                
+  return 'rectangle';
+  },            
+            'background-color': 'mapData(score, 0, 5, yellow, green)',
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'line-color': 'blue',
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    Complex Score  = 0.37500
+    </section>
+    </body>
+    </html>
+    

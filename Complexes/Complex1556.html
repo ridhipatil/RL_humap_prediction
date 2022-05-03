@@ -1,0 +1,134 @@
+
+<!doctype html>
+<html>
+<head>
+<title> Complex 1556</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex1557.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'PPP4R1', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q8TF05" }},
+{data: { id: 'PPP2CB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62714" }},
+{data: { id: 'STRN3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13033" }},
+{data: { id: 'PPP4R3A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6IN85" }},
+{data: { id: 'MAP4K4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95819" }},
+{data: { id: 'STRN4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NRL3" }},
+{data: { id: 'FECH', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P22830" }},
+{data: { id: 'STRN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43815" }},
+{data: { id: 'PPP4R3B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5MIZ7" }},
+{data: { id: 'CTTNBP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WZ74" }},
+{data: { id: 'PPP4C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P60510" }},
+{data: { id: 'TBCCD1', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9NVR7" }}], 
+ edges: [{ data: { source: 'PPP4R1', target: 'STRN', directed: 'false', weight: 0.07551210000000001} },
+{ data: { source: 'PPP4R1', target: 'STRN4', directed: 'false', weight: 0.21374899999999997} },
+{ data: { source: 'PPP4R1', target: 'STRN3', directed: 'false', weight: 0.0390827} },
+{ data: { source: 'PPP4R1', target: 'PPP2CB', directed: 'false', weight: 0.9915879999999999} },
+{ data: { source: 'PPP4R1', target: 'TBCCD1', directed: 'false', weight: 0.252467} },
+{ data: { source: 'PPP4R1', target: 'PPP4C', directed: 'false', weight: 0.970907} },
+{ data: { source: 'PPP4R1', target: 'FECH', directed: 'false', weight: 0.42468199999999995} },
+{ data: { source: 'PPP4R1', target: 'CTTNBP2', directed: 'false', weight: 0.151455} },
+{ data: { source: 'PPP4R1', target: 'MAP4K4', directed: 'false', weight: 0.0832202} },
+{ data: { source: 'PPP2CB', target: 'STRN', directed: 'false', weight: 0.964989} },
+{ data: { source: 'PPP2CB', target: 'STRN4', directed: 'false', weight: 0.9988450000000001} },
+{ data: { source: 'PPP2CB', target: 'STRN3', directed: 'false', weight: 0.8055479999999999} },
+{ data: { source: 'PPP2CB', target: 'TBCCD1', directed: 'false', weight: 0.992358} },
+{ data: { source: 'PPP2CB', target: 'CTTNBP2', directed: 'false', weight: 0.9451450000000001} },
+{ data: { source: 'PPP2CB', target: 'FECH', directed: 'false', weight: 0.823226} },
+{ data: { source: 'PPP2CB', target: 'MAP4K4', directed: 'false', weight: 0.32187} },
+{ data: { source: 'MAP4K4', target: 'STRN', directed: 'false', weight: 0.171698} },
+{ data: { source: 'MAP4K4', target: 'STRN4', directed: 'false', weight: 0.283621} },
+{ data: { source: 'MAP4K4', target: 'STRN3', directed: 'false', weight: 0.353094} },
+{ data: { source: 'MAP4K4', target: 'FECH', directed: 'false', weight: 0.0960696} },
+{ data: { source: 'PPP4R3A', target: 'PPP4C', directed: 'false', weight: 0.683476} },
+{ data: { source: 'PPP4R3A', target: 'PPP4R3B', directed: 'false', weight: 0.253294} },
+{ data: { source: 'STRN3', target: 'STRN', directed: 'false', weight: 0.9998610000000001} },
+{ data: { source: 'STRN3', target: 'STRN4', directed: 'false', weight: 0.999986} },
+{ data: { source: 'STRN3', target: 'FECH', directed: 'false', weight: 0.144836} },
+{ data: { source: 'STRN3', target: 'CTTNBP2', directed: 'false', weight: 0.108674} },
+{ data: { source: 'STRN3', target: 'TBCCD1', directed: 'false', weight: 0.108674} },
+{ data: { source: 'STRN4', target: 'STRN', directed: 'false', weight: 0.9999370000000001} },
+{ data: { source: 'STRN4', target: 'FECH', directed: 'false', weight: 0.265178} },
+{ data: { source: 'STRN4', target: 'TBCCD1', directed: 'false', weight: 0.174599} },
+{ data: { source: 'STRN4', target: 'CTTNBP2', directed: 'false', weight: 0.11047699999999999} },
+{ data: { source: 'FECH', target: 'STRN', directed: 'false', weight: 0.269025} },
+{ data: { source: 'FECH', target: 'TBCCD1', directed: 'false', weight: 0.211796} },
+{ data: { source: 'FECH', target: 'CTTNBP2', directed: 'false', weight: 0.108674} },
+{ data: { source: 'STRN', target: 'TBCCD1', directed: 'false', weight: 0.185498} },
+{ data: { source: 'STRN', target: 'CTTNBP2', directed: 'false', weight: 0.120276} },
+{ data: { source: 'PPP4R3B', target: 'PPP4C', directed: 'false', weight: 0.689186} },
+{ data: { source: 'CTTNBP2', target: 'TBCCD1', directed: 'false', weight: 0.171414} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}                                
+  return 'rectangle';
+  },            
+            'background-color': 'mapData(score, 0, 5, yellow, green)',
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'line-color': 'blue',
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    Complex Score  = 0.37500
+    </section>
+    </body>
+    </html>
+    

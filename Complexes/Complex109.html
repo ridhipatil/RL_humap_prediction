@@ -1,0 +1,107 @@
+
+<!doctype html>
+<html>
+<head>
+<title> Complex 109</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex110.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'FBXO9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UK97" }},
+{data: { id: 'GFOD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NXC2" }},
+{data: { id: 'RALGAPA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6GYQ0" }},
+{data: { id: 'RALGAPA2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q2PPJ7" }},
+{data: { id: 'CARD10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BWT7" }},
+{data: { id: 'RALGAPB', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q86X10" }},
+{data: { id: 'GFOD2', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q3B7J2" }}], 
+ edges: [{ data: { source: 'FBXO9', target: 'GFOD1', directed: 'false', weight: 0.982668} },
+{ data: { source: 'FBXO9', target: 'GFOD2', directed: 'false', weight: 0.171414} },
+{ data: { source: 'FBXO9', target: 'CARD10', directed: 'false', weight: 0.171414} },
+{ data: { source: 'FBXO9', target: 'RALGAPA2', directed: 'false', weight: 0.171414} },
+{ data: { source: 'FBXO9', target: 'RALGAPB', directed: 'false', weight: 0.151455} },
+{ data: { source: 'FBXO9', target: 'RALGAPA1', directed: 'false', weight: 0.151455} },
+{ data: { source: 'GFOD1', target: 'GFOD2', directed: 'false', weight: 0.9867790000000001} },
+{ data: { source: 'GFOD1', target: 'CARD10', directed: 'false', weight: 0.9828100000000001} },
+{ data: { source: 'GFOD1', target: 'RALGAPB', directed: 'false', weight: 0.9726239999999999} },
+{ data: { source: 'GFOD1', target: 'RALGAPA1', directed: 'false', weight: 0.965208} },
+{ data: { source: 'GFOD1', target: 'RALGAPA2', directed: 'false', weight: 0.900381} },
+{ data: { source: 'RALGAPA1', target: 'GFOD2', directed: 'false', weight: 0.151455} },
+{ data: { source: 'RALGAPA1', target: 'CARD10', directed: 'false', weight: 0.151455} },
+{ data: { source: 'RALGAPA1', target: 'RALGAPB', directed: 'false', weight: 0.133456} },
+{ data: { source: 'RALGAPA1', target: 'RALGAPA2', directed: 'false', weight: 0.151455} },
+{ data: { source: 'RALGAPA2', target: 'GFOD2', directed: 'false', weight: 0.171414} },
+{ data: { source: 'RALGAPA2', target: 'CARD10', directed: 'false', weight: 0.171414} },
+{ data: { source: 'RALGAPA2', target: 'RALGAPB', directed: 'false', weight: 0.151455} },
+{ data: { source: 'CARD10', target: 'GFOD2', directed: 'false', weight: 0.171414} },
+{ data: { source: 'CARD10', target: 'RALGAPB', directed: 'false', weight: 0.151455} },
+{ data: { source: 'RALGAPB', target: 'GFOD2', directed: 'false', weight: 0.151455} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 30,
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}                                
+  return 'rectangle';
+  },            
+            'background-color': 'mapData(score, 0, 5, yellow, green)',
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
+								'line-color': 'blue',
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    name: 'circle'
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    Complex Score  = 0.39375
+    </section>
+    </body>
+    </html>
+    

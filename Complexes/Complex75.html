@@ -1,0 +1,85 @@
+
+<!doctype html>
+<html>
+<head>
+<title> Complex 75</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex76.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'CT55', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WUE5" }},
+{data: { id: 'UHRF1BP1L', score: 4, type: '', href: "https://www.uniprot.org/uniprot/A0JNW5" }},
+{data: { id: 'C12orf45', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q8N5I9" }}], 
+ edges: [{ data: { source: 'CT55', target: 'C12orf45', directed: 'false', weight: 0.91456} },
+{ data: { source: 'CT55', target: 'UHRF1BP1L', directed: 'false', weight: 0.8378639999999999} },
+{ data: { source: 'UHRF1BP1L', target: 'C12orf45', directed: 'false', weight: 0.114755} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 30,
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}                                
+  return 'rectangle';
+  },            
+            'background-color': 'mapData(score, 0, 5, yellow, green)',
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
+								'line-color': 'blue',
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    name: 'circle'
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    Complex Score  = 0.39375
+    </section>
+    </body>
+    </html>
+    

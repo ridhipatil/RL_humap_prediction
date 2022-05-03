@@ -1,0 +1,93 @@
+
+<!doctype html>
+<html>
+<head>
+<title> Complex 1751</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex1752.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'PIGB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92521" }},
+{data: { id: 'POMK', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H5K3" }},
+{data: { id: 'SLC35F2', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q8IXU6" }},
+{data: { id: 'PKDCC', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q504Y2" }},
+{data: { id: 'TMEM120A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BXJ8" }}], 
+ edges: [{ data: { source: 'POMK', target: 'PKDCC', directed: 'false', weight: 0.955442} },
+{ data: { source: 'POMK', target: 'TMEM120A', directed: 'false', weight: 0.7262430000000001} },
+{ data: { source: 'POMK', target: 'SLC35F2', directed: 'false', weight: 0.632158} },
+{ data: { source: 'POMK', target: 'PIGB', directed: 'false', weight: 0.42372600000000005} },
+{ data: { source: 'PIGB', target: 'PKDCC', directed: 'false', weight: 0.171414} },
+{ data: { source: 'PIGB', target: 'TMEM120A', directed: 'false', weight: 0.133451} },
+{ data: { source: 'PKDCC', target: 'SLC35F2', directed: 'false', weight: 0.151455} },
+{ data: { source: 'PKDCC', target: 'TMEM120A', directed: 'false', weight: 0.133451} },
+{ data: { source: 'SLC35F2', target: 'TMEM120A', directed: 'false', weight: 0.117318} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 30,
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}                                
+  return 'rectangle';
+  },            
+            'background-color': 'mapData(score, 0, 5, yellow, green)',
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
+								'line-color': 'blue',
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    name: 'circle'
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    Complex Score  = 0.37500
+    </section>
+    </body>
+    </html>
+    

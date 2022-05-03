@@ -1,0 +1,108 @@
+
+<!doctype html>
+<html>
+<head>
+<title> Complex 1076</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex1077.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'CEP78', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5JTW2" }},
+{data: { id: 'BBS4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96RK4" }},
+{data: { id: 'CSPP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q1MSJ5" }},
+{data: { id: 'MIB1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q86YT6" }},
+{data: { id: 'CCDC61', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y6R9" }},
+{data: { id: 'FGFR1OP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95684" }},
+{data: { id: 'PCM1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15154" }}], 
+ edges: [{ data: { source: 'CEP78', target: 'FGFR1OP', directed: 'false', weight: 0.43543000000000004} },
+{ data: { source: 'BBS4', target: 'PCM1', directed: 'false', weight: 0.526425} },
+{ data: { source: 'BBS4', target: 'CSPP1', directed: 'false', weight: 0.232828} },
+{ data: { source: 'BBS4', target: 'MIB1', directed: 'false', weight: 0.44178199999999995} },
+{ data: { source: 'BBS4', target: 'CCDC61', directed: 'false', weight: 0.343945} },
+{ data: { source: 'CSPP1', target: 'FGFR1OP', directed: 'false', weight: 0.8945379999999999} },
+{ data: { source: 'CSPP1', target: 'PCM1', directed: 'false', weight: 0.981455} },
+{ data: { source: 'CSPP1', target: 'MIB1', directed: 'false', weight: 0.47769399999999995} },
+{ data: { source: 'CSPP1', target: 'CCDC61', directed: 'false', weight: 0.33211} },
+{ data: { source: 'MIB1', target: 'PCM1', directed: 'false', weight: 0.12897} },
+{ data: { source: 'MIB1', target: 'CCDC61', directed: 'false', weight: 0.18799100000000002} },
+{ data: { source: 'CCDC61', target: 'PCM1', directed: 'false', weight: 0.179976} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}                                
+  return 'rectangle';
+  },            
+            'background-color': 'mapData(score, 0, 5, yellow, green)',
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'line-color': 'blue',
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    Complex Score  = 0.37500
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>MIB1
+    </section>
+    </body>
+    </html>
+    

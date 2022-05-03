@@ -1,0 +1,143 @@
+
+<!doctype html>
+<html>
+<head>
+<title> Complex 2140</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex2141.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'MRPL35', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NZE8" }},
+{data: { id: 'MRPL50', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q8N5N7" }},
+{data: { id: 'TRUB2', score: 4, type: '', href: "https://www.uniprot.org/uniprot/O95900" }},
+{data: { id: 'MRPL37', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BZE1" }},
+{data: { id: 'MRPL39', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NYK5" }},
+{data: { id: 'MRPL33', score: 4, type: '', href: "https://www.uniprot.org/uniprot/O75394" }},
+{data: { id: 'MRPL19', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49406" }},
+{data: { id: 'MCAT', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IVS2" }},
+{data: { id: 'MRPL13', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BYD1" }},
+{data: { id: 'MRPL30', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q8TCC3" }},
+{data: { id: 'MRPL4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BYD3" }},
+{data: { id: 'TBC1D8', score: 4, type: '', href: "https://www.uniprot.org/uniprot/O95759" }}], 
+ edges: [{ data: { source: 'MRPL35', target: 'MRPL13', directed: 'false', weight: 0.894755} },
+{ data: { source: 'MRPL35', target: 'MRPL19', directed: 'false', weight: 0.8431219999999999} },
+{ data: { source: 'MRPL35', target: 'MRPL50', directed: 'false', weight: 0.9953290000000001} },
+{ data: { source: 'MRPL35', target: 'MRPL39', directed: 'false', weight: 0.9892920000000001} },
+{ data: { source: 'MRPL35', target: 'MRPL30', directed: 'false', weight: 0.841018} },
+{ data: { source: 'MRPL35', target: 'MRPL4', directed: 'false', weight: 0.8556159999999999} },
+{ data: { source: 'MRPL35', target: 'MRPL37', directed: 'false', weight: 0.762774} },
+{ data: { source: 'MRPL35', target: 'MRPL33', directed: 'false', weight: 0.7195729999999999} },
+{ data: { source: 'MRPL35', target: 'TRUB2', directed: 'false', weight: 0.344038} },
+{ data: { source: 'MRPL50', target: 'MRPL13', directed: 'false', weight: 0.999991} },
+{ data: { source: 'MRPL50', target: 'MRPL19', directed: 'false', weight: 0.9999870000000001} },
+{ data: { source: 'MRPL50', target: 'MRPL4', directed: 'false', weight: 0.9999979999999999} },
+{ data: { source: 'MRPL50', target: 'MRPL39', directed: 'false', weight: 0.999991} },
+{ data: { source: 'MRPL50', target: 'MRPL30', directed: 'false', weight: 0.999849} },
+{ data: { source: 'MRPL50', target: 'MRPL37', directed: 'false', weight: 0.9994270000000001} },
+{ data: { source: 'MRPL50', target: 'TRUB2', directed: 'false', weight: 0.969427} },
+{ data: { source: 'MRPL50', target: 'MRPL33', directed: 'false', weight: 0.9690799999999999} },
+{ data: { source: 'MRPL50', target: 'TBC1D8', directed: 'false', weight: 0.804286} },
+{ data: { source: 'TRUB2', target: 'MRPL13', directed: 'false', weight: 0.378498} },
+{ data: { source: 'TRUB2', target: 'MRPL19', directed: 'false', weight: 0.5375949999999999} },
+{ data: { source: 'TRUB2', target: 'MRPL39', directed: 'false', weight: 0.541166} },
+{ data: { source: 'TRUB2', target: 'MRPL30', directed: 'false', weight: 0.226602} },
+{ data: { source: 'TRUB2', target: 'MRPL4', directed: 'false', weight: 0.488566} },
+{ data: { source: 'TRUB2', target: 'MRPL37', directed: 'false', weight: 0.174648} },
+{ data: { source: 'TRUB2', target: 'MRPL33', directed: 'false', weight: 0.17652} },
+{ data: { source: 'TRUB2', target: 'MCAT', directed: 'false', weight: 0.18672} },
+{ data: { source: 'MRPL37', target: 'MRPL13', directed: 'false', weight: 0.999216} },
+{ data: { source: 'MRPL37', target: 'MRPL19', directed: 'false', weight: 0.9871540000000001} },
+{ data: { source: 'MRPL37', target: 'MRPL39', directed: 'false', weight: 0.999707} },
+{ data: { source: 'MRPL37', target: 'MRPL30', directed: 'false', weight: 0.9985459999999999} },
+{ data: { source: 'MRPL37', target: 'MRPL4', directed: 'false', weight: 0.9450790000000001} },
+{ data: { source: 'MRPL37', target: 'MRPL33', directed: 'false', weight: 0.787918} },
+{ data: { source: 'MRPL39', target: 'MRPL13', directed: 'false', weight: 0.999985} },
+{ data: { source: 'MRPL39', target: 'MRPL19', directed: 'false', weight: 0.999893} },
+{ data: { source: 'MRPL39', target: 'MRPL30', directed: 'false', weight: 0.9984620000000001} },
+{ data: { source: 'MRPL39', target: 'MRPL4', directed: 'false', weight: 0.946772} },
+{ data: { source: 'MRPL39', target: 'MRPL33', directed: 'false', weight: 0.544508} },
+{ data: { source: 'MRPL33', target: 'MRPL13', directed: 'false', weight: 0.661543} },
+{ data: { source: 'MRPL33', target: 'MRPL19', directed: 'false', weight: 0.42983599999999994} },
+{ data: { source: 'MRPL33', target: 'MRPL30', directed: 'false', weight: 0.805188} },
+{ data: { source: 'MRPL33', target: 'MRPL4', directed: 'false', weight: 0.848972} },
+{ data: { source: 'MRPL19', target: 'MRPL13', directed: 'false', weight: 0.9999950000000001} },
+{ data: { source: 'MRPL19', target: 'MRPL30', directed: 'false', weight: 0.99974} },
+{ data: { source: 'MRPL19', target: 'MRPL4', directed: 'false', weight: 0.9525459999999999} },
+{ data: { source: 'MRPL13', target: 'MRPL30', directed: 'false', weight: 0.99835} },
+{ data: { source: 'MRPL13', target: 'MRPL4', directed: 'false', weight: 0.9966709999999999} },
+{ data: { source: 'MRPL30', target: 'MRPL4', directed: 'false', weight: 0.9759200000000001} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}                                
+  return 'rectangle';
+  },            
+            'background-color': 'mapData(score, 0, 5, yellow, green)',
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'line-color': 'blue',
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    Complex Score  = 0.37500
+    </section>
+    </body>
+    </html>
+    

@@ -1,0 +1,107 @@
+
+<!doctype html>
+<html>
+<head>
+<title> Complex 980</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex981.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'SEPTIN9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UHD8" }},
+{data: { id: 'SEPTIN5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99719" }},
+{data: { id: 'SEPTIN8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92599" }},
+{data: { id: 'SEPTIN2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15019" }},
+{data: { id: 'CDC42EP4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H3Q1" }},
+{data: { id: 'CDKN2AIP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NXV6" }},
+{data: { id: 'SEPTIN6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14141" }}], 
+ edges: [{ data: { source: 'SEPTIN9', target: 'SEPTIN2', directed: 'false', weight: 1.0} },
+{ data: { source: 'SEPTIN9', target: 'SEPTIN6', directed: 'false', weight: 0.9999889999999999} },
+{ data: { source: 'SEPTIN9', target: 'SEPTIN8', directed: 'false', weight: 0.997807} },
+{ data: { source: 'SEPTIN9', target: 'CDC42EP4', directed: 'false', weight: 0.9662040000000001} },
+{ data: { source: 'SEPTIN9', target: 'SEPTIN5', directed: 'false', weight: 0.743308} },
+{ data: { source: 'SEPTIN8', target: 'SEPTIN2', directed: 'false', weight: 0.997885} },
+{ data: { source: 'SEPTIN8', target: 'SEPTIN6', directed: 'false', weight: 0.9981709999999999} },
+{ data: { source: 'SEPTIN8', target: 'SEPTIN5', directed: 'false', weight: 0.9953129999999999} },
+{ data: { source: 'SEPTIN8', target: 'CDC42EP4', directed: 'false', weight: 0.9178290000000001} },
+{ data: { source: 'SEPTIN5', target: 'SEPTIN2', directed: 'false', weight: 0.995064} },
+{ data: { source: 'SEPTIN5', target: 'SEPTIN6', directed: 'false', weight: 0.999442} },
+{ data: { source: 'SEPTIN5', target: 'CDC42EP4', directed: 'false', weight: 0.38085} },
+{ data: { source: 'SEPTIN2', target: 'SEPTIN6', directed: 'false', weight: 0.9999299999999999} },
+{ data: { source: 'SEPTIN2', target: 'CDC42EP4', directed: 'false', weight: 0.663524} },
+{ data: { source: 'SEPTIN2', target: 'CDKN2AIP', directed: 'false', weight: 0.08205470000000001} },
+{ data: { source: 'CDC42EP4', target: 'SEPTIN6', directed: 'false', weight: 0.853765} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}                                
+  return 'rectangle';
+  },            
+            'background-color': 'mapData(score, 0, 5, yellow, green)',
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'line-color': 'blue',
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    Complex Score  = 0.37500
+    </section>
+    </body>
+    </html>
+    

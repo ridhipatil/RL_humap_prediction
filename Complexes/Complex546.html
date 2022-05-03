@@ -1,0 +1,111 @@
+
+<!doctype html>
+<html>
+<head>
+<title> Complex 546</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex547.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'POLR2E', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P19388" }},
+{data: { id: 'POLR1B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H9Y6" }},
+{data: { id: 'GTF2F2', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P13984" }},
+{data: { id: 'POLR2H', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P52434" }},
+{data: { id: 'POLR2L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62875" }},
+{data: { id: 'POLR1D', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P0DPB6" }},
+{data: { id: 'ZNRD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9P1U0" }}], 
+ edges: [{ data: { source: 'POLR2E', target: 'POLR1D', directed: 'false', weight: 0.987516} },
+{ data: { source: 'POLR2E', target: 'POLR1B', directed: 'false', weight: 0.9942479999999999} },
+{ data: { source: 'POLR2E', target: 'POLR2H', directed: 'false', weight: 0.999869} },
+{ data: { source: 'POLR2E', target: 'GTF2F2', directed: 'false', weight: 0.976} },
+{ data: { source: 'POLR2E', target: 'POLR2L', directed: 'false', weight: 0.975972} },
+{ data: { source: 'POLR2E', target: 'ZNRD1', directed: 'false', weight: 0.9594959999999999} },
+{ data: { source: 'POLR1B', target: 'POLR1D', directed: 'false', weight: 0.999999} },
+{ data: { source: 'POLR1B', target: 'POLR2L', directed: 'false', weight: 0.992732} },
+{ data: { source: 'POLR1B', target: 'POLR2H', directed: 'false', weight: 0.990583} },
+{ data: { source: 'POLR1B', target: 'ZNRD1', directed: 'false', weight: 0.213613} },
+{ data: { source: 'POLR2H', target: 'POLR1D', directed: 'false', weight: 0.975923} },
+{ data: { source: 'POLR2H', target: 'POLR2L', directed: 'false', weight: 0.992499} },
+{ data: { source: 'POLR2H', target: 'ZNRD1', directed: 'false', weight: 0.940033} },
+{ data: { source: 'POLR2L', target: 'POLR1D', directed: 'false', weight: 0.9756469999999999} },
+{ data: { source: 'POLR1D', target: 'ZNRD1', directed: 'false', weight: 0.25852800000000004} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}                                
+  return 'rectangle';
+  },            
+            'background-color': 'mapData(score, 0, 5, yellow, green)',
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'line-color': 'blue',
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    Complex Score  = 0.37500
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>GTF2F2
+    </section>
+    </body>
+    </html>
+    

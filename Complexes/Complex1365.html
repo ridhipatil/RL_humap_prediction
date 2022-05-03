@@ -1,0 +1,109 @@
+
+<!doctype html>
+<html>
+<head>
+<title> Complex 1365</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex1366.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'NEPRO', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q6NW34" }},
+{data: { id: 'POP4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95707" }},
+{data: { id: 'RPP25L', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q8N5L8" }},
+{data: { id: 'C18orf21', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q32NC0" }},
+{data: { id: 'POP7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75817" }},
+{data: { id: 'RPP30', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P78346" }},
+{data: { id: 'RPP40', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75818" }},
+{data: { id: 'TEX10', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9NXF1" }}], 
+ edges: [{ data: { source: 'NEPRO', target: 'RPP40', directed: 'false', weight: 0.390018} },
+{ data: { source: 'NEPRO', target: 'POP7', directed: 'false', weight: 0.345713} },
+{ data: { source: 'NEPRO', target: 'C18orf21', directed: 'false', weight: 0.31021} },
+{ data: { source: 'NEPRO', target: 'POP4', directed: 'false', weight: 0.662825} },
+{ data: { source: 'NEPRO', target: 'RPP30', directed: 'false', weight: 0.1711} },
+{ data: { source: 'POP4', target: 'RPP40', directed: 'false', weight: 0.856259} },
+{ data: { source: 'POP4', target: 'POP7', directed: 'false', weight: 0.6050989999999999} },
+{ data: { source: 'POP4', target: 'C18orf21', directed: 'false', weight: 0.8750549999999999} },
+{ data: { source: 'POP4', target: 'RPP30', directed: 'false', weight: 0.8646530000000001} },
+{ data: { source: 'RPP25L', target: 'TEX10', directed: 'false', weight: 0.100994} },
+{ data: { source: 'RPP25L', target: 'POP7', directed: 'false', weight: 0.685341} },
+{ data: { source: 'C18orf21', target: 'RPP40', directed: 'false', weight: 0.25848000000000004} },
+{ data: { source: 'C18orf21', target: 'POP7', directed: 'false', weight: 0.238157} },
+{ data: { source: 'C18orf21', target: 'RPP30', directed: 'false', weight: 0.14871800000000002} },
+{ data: { source: 'POP7', target: 'RPP40', directed: 'false', weight: 0.345713} },
+{ data: { source: 'POP7', target: 'RPP30', directed: 'false', weight: 0.145197} },
+{ data: { source: 'RPP30', target: 'RPP40', directed: 'false', weight: 0.309205} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}                                
+  return 'rectangle';
+  },            
+            'background-color': 'mapData(score, 0, 5, yellow, green)',
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'line-color': 'blue',
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    Complex Score  = 0.37500
+    </section>
+    </body>
+    </html>
+    

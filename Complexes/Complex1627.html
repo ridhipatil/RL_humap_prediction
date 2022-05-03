@@ -1,0 +1,103 @@
+
+<!doctype html>
+<html>
+<head>
+<title> Complex 1627</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex1628.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'NPAT', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14207" }},
+{data: { id: 'SIN3A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96ST3" }},
+{data: { id: 'RBBP7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16576" }},
+{data: { id: 'SINHCAF', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9NP50" }},
+{data: { id: 'FOXK1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P85037" }},
+{data: { id: 'SUDS3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H7L9" }},
+{data: { id: 'SAP130', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15393" }}], 
+ edges: [{ data: { source: 'NPAT', target: 'RBBP7', directed: 'false', weight: 0.624805} },
+{ data: { source: 'SIN3A', target: 'SUDS3', directed: 'false', weight: 0.9996229999999999} },
+{ data: { source: 'SIN3A', target: 'SAP130', directed: 'false', weight: 0.966983} },
+{ data: { source: 'SIN3A', target: 'SINHCAF', directed: 'false', weight: 0.7899510000000001} },
+{ data: { source: 'SIN3A', target: 'FOXK1', directed: 'false', weight: 0.164877} },
+{ data: { source: 'RBBP7', target: 'FOXK1', directed: 'false', weight: 0.514286} },
+{ data: { source: 'SINHCAF', target: 'SUDS3', directed: 'false', weight: 0.7878350000000001} },
+{ data: { source: 'SINHCAF', target: 'SAP130', directed: 'false', weight: 0.39225} },
+{ data: { source: 'SINHCAF', target: 'FOXK1', directed: 'false', weight: 0.0220984} },
+{ data: { source: 'FOXK1', target: 'SUDS3', directed: 'false', weight: 0.323491} },
+{ data: { source: 'FOXK1', target: 'SAP130', directed: 'false', weight: 0.233699} },
+{ data: { source: 'SUDS3', target: 'SAP130', directed: 'false', weight: 0.8159350000000001} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}                                
+  return 'rectangle';
+  },            
+            'background-color': 'mapData(score, 0, 5, yellow, green)',
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'line-color': 'blue',
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    Complex Score  = 0.37500
+    </section>
+    </body>
+    </html>
+    

@@ -1,0 +1,106 @@
+
+<!doctype html>
+<html>
+<head>
+<title> Complex 671</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex672.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'NMNAT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HAN9" }},
+{data: { id: 'EEF1G', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P26641" }},
+{data: { id: 'DDX27', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96GQ7" }},
+{data: { id: 'SRP72', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/O76094" }},
+{data: { id: 'GNL2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13823" }},
+{data: { id: 'YTHDC2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H6S0" }}], 
+ edges: [{ data: { source: 'EEF1G', target: 'NMNAT1', directed: 'false', weight: 0.0768359} },
+{ data: { source: 'DDX27', target: 'GNL2', directed: 'false', weight: 0.999909} },
+{ data: { source: 'DDX27', target: 'SRP72', directed: 'false', weight: 0.9939889999999999} },
+{ data: { source: 'DDX27', target: 'YTHDC2', directed: 'false', weight: 0.748212} },
+{ data: { source: 'DDX27', target: 'NMNAT1', directed: 'false', weight: 0.408562} },
+{ data: { source: 'SRP72', target: 'GNL2', directed: 'false', weight: 0.996907} },
+{ data: { source: 'SRP72', target: 'YTHDC2', directed: 'false', weight: 0.992057} },
+{ data: { source: 'SRP72', target: 'NMNAT1', directed: 'false', weight: 0.130382} },
+{ data: { source: 'YTHDC2', target: 'GNL2', directed: 'false', weight: 0.595461} },
+{ data: { source: 'YTHDC2', target: 'NMNAT1', directed: 'false', weight: 0.0737126} },
+{ data: { source: 'NMNAT1', target: 'GNL2', directed: 'false', weight: 0.3332} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}                                
+  return 'rectangle';
+  },            
+            'background-color': 'mapData(score, 0, 5, yellow, green)',
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'line-color': 'blue',
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    Complex Score  = 0.37500
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>SRP72
+    </section>
+    </body>
+    </html>
+    

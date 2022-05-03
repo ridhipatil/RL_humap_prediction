@@ -1,0 +1,101 @@
+
+<!doctype html>
+<html>
+<head>
+<title> Complex 1434</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex1435.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'NDUFB7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P17568" }},
+{data: { id: 'CAVIN3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q969G5" }},
+{data: { id: 'GOLT1B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y3E0" }},
+{data: { id: 'NDUFA7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95182" }},
+{data: { id: 'BCAP31', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P51572" }},
+{data: { id: 'NDUFA2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43678" }}], 
+ edges: [{ data: { source: 'CAVIN3', target: 'GOLT1B', directed: 'false', weight: 0.217736} },
+{ data: { source: 'CAVIN3', target: 'NDUFA7', directed: 'false', weight: 0.381938} },
+{ data: { source: 'CAVIN3', target: 'NDUFA2', directed: 'false', weight: 0.270726} },
+{ data: { source: 'CAVIN3', target: 'NDUFB7', directed: 'false', weight: 0.222002} },
+{ data: { source: 'GOLT1B', target: 'NDUFA7', directed: 'false', weight: 0.8779440000000001} },
+{ data: { source: 'GOLT1B', target: 'NDUFA2', directed: 'false', weight: 0.8778030000000001} },
+{ data: { source: 'GOLT1B', target: 'NDUFB7', directed: 'false', weight: 0.766526} },
+{ data: { source: 'GOLT1B', target: 'BCAP31', directed: 'false', weight: 0.579427} },
+{ data: { source: 'NDUFA7', target: 'NDUFA2', directed: 'false', weight: 0.819256} },
+{ data: { source: 'NDUFA7', target: 'NDUFB7', directed: 'false', weight: 0.738801} },
+{ data: { source: 'NDUFB7', target: 'NDUFA2', directed: 'false', weight: 0.321441} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}                                
+  return 'rectangle';
+  },            
+            'background-color': 'mapData(score, 0, 5, yellow, green)',
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'line-color': 'blue',
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    Complex Score  = 0.37500
+    </section>
+    </body>
+    </html>
+    

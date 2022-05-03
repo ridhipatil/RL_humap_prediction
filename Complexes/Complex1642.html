@@ -1,0 +1,109 @@
+
+<!doctype html>
+<html>
+<head>
+<title> Complex 1642</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex1643.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'MPRIP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6WCQ1" }},
+{data: { id: 'ANXA2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P07355" }},
+{data: { id: 'TRAF4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BUZ4" }},
+{data: { id: 'CORO1C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9ULV4" }},
+{data: { id: 'CALM1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P0DP23" }},
+{data: { id: 'PLEKHG3', score: 3, type: '', href: "https://www.uniprot.org/uniprot/A1L390" }},
+{data: { id: 'TWF1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q12792" }},
+{data: { id: 'BASP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P80723" }}], 
+ edges: [{ data: { source: 'MPRIP', target: 'CORO1C', directed: 'false', weight: 0.685062} },
+{ data: { source: 'MPRIP', target: 'TRAF4', directed: 'false', weight: 0.0901617} },
+{ data: { source: 'ANXA2', target: 'TWF1', directed: 'false', weight: 0.323515} },
+{ data: { source: 'ANXA2', target: 'BASP1', directed: 'false', weight: 0.25297} },
+{ data: { source: 'ANXA2', target: 'CALM1', directed: 'false', weight: 0.224423} },
+{ data: { source: 'ANXA2', target: 'PLEKHG3', directed: 'false', weight: 0.224423} },
+{ data: { source: 'ANXA2', target: 'CORO1C', directed: 'false', weight: 0.08976460000000001} },
+{ data: { source: 'CORO1C', target: 'CALM1', directed: 'false', weight: 0.22456399999999999} },
+{ data: { source: 'CORO1C', target: 'TWF1', directed: 'false', weight: 0.955015} },
+{ data: { source: 'CORO1C', target: 'PLEKHG3', directed: 'false', weight: 0.811393} },
+{ data: { source: 'CORO1C', target: 'BASP1', directed: 'false', weight: 0.229075} },
+{ data: { source: 'CALM1', target: 'TWF1', directed: 'false', weight: 0.350529} },
+{ data: { source: 'CALM1', target: 'PLEKHG3', directed: 'false', weight: 0.350529} },
+{ data: { source: 'CALM1', target: 'BASP1', directed: 'false', weight: 0.314735} },
+{ data: { source: 'PLEKHG3', target: 'TWF1', directed: 'false', weight: 0.769183} },
+{ data: { source: 'PLEKHG3', target: 'BASP1', directed: 'false', weight: 0.5777100000000001} },
+{ data: { source: 'TWF1', target: 'BASP1', directed: 'false', weight: 0.5777100000000001} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}                                
+  return 'rectangle';
+  },            
+            'background-color': 'mapData(score, 0, 5, yellow, green)',
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'line-color': 'blue',
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    Complex Score  = 0.37500
+    </section>
+    </body>
+    </html>
+    

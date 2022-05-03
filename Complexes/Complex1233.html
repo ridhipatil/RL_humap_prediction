@@ -1,0 +1,127 @@
+
+<!doctype html>
+<html>
+<head>
+<title> Complex 1233</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex1234.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'PSMA4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P25789" }},
+{data: { id: 'C9orf78', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q9NZ63" }},
+{data: { id: 'POMP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y244" }},
+{data: { id: 'CEP120', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N960" }},
+{data: { id: 'PSMA6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P60900" }},
+{data: { id: 'PSMB6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P28072" }},
+{data: { id: 'CDK18', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q07002" }},
+{data: { id: 'PSMG3', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9BT73" }},
+{data: { id: 'PSME4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14997" }},
+{data: { id: 'PSMA2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P25787" }},
+{data: { id: 'PSMB4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P28070" }}], 
+ edges: [{ data: { source: 'PSMA4', target: 'POMP', directed: 'false', weight: 0.9999889999999999} },
+{ data: { source: 'PSMA4', target: 'PSME4', directed: 'false', weight: 0.716436} },
+{ data: { source: 'PSMA4', target: 'PSMG3', directed: 'false', weight: 0.439122} },
+{ data: { source: 'PSMA4', target: 'PSMA2', directed: 'false', weight: 0.35591} },
+{ data: { source: 'PSMA4', target: 'PSMB6', directed: 'false', weight: 0.33852899999999997} },
+{ data: { source: 'PSMA4', target: 'PSMB4', directed: 'false', weight: 0.21365599999999998} },
+{ data: { source: 'PSMA4', target: 'PSMA6', directed: 'false', weight: 0.0780411} },
+{ data: { source: 'C9orf78', target: 'CEP120', directed: 'false', weight: 0.578206} },
+{ data: { source: 'POMP', target: 'PSMA6', directed: 'false', weight: 0.7282689999999999} },
+{ data: { source: 'POMP', target: 'PSME4', directed: 'false', weight: 0.538582} },
+{ data: { source: 'POMP', target: 'PSMB4', directed: 'false', weight: 0.5261600000000001} },
+{ data: { source: 'POMP', target: 'PSMG3', directed: 'false', weight: 0.39405999999999997} },
+{ data: { source: 'POMP', target: 'PSMA2', directed: 'false', weight: 0.352711} },
+{ data: { source: 'POMP', target: 'PSMB6', directed: 'false', weight: 0.352171} },
+{ data: { source: 'CEP120', target: 'PSMB4', directed: 'false', weight: 0.9899309999999999} },
+{ data: { source: 'CEP120', target: 'CDK18', directed: 'false', weight: 0.09480110000000001} },
+{ data: { source: 'PSMA6', target: 'PSMB4', directed: 'false', weight: 0.06856989999999999} },
+{ data: { source: 'PSMA6', target: 'PSMB6', directed: 'false', weight: 0.0406375} },
+{ data: { source: 'PSMA6', target: 'PSMA2', directed: 'false', weight: 0.032026900000000004} },
+{ data: { source: 'PSMA6', target: 'PSME4', directed: 'false', weight: 0.7296159999999999} },
+{ data: { source: 'PSMA6', target: 'PSMG3', directed: 'false', weight: 0.5} },
+{ data: { source: 'PSMB6', target: 'PSMB4', directed: 'false', weight: 0.09627460000000002} },
+{ data: { source: 'PSMB6', target: 'PSME4', directed: 'false', weight: 0.972297} },
+{ data: { source: 'PSMB6', target: 'PSMG3', directed: 'false', weight: 0.184918} },
+{ data: { source: 'PSMB6', target: 'PSMA2', directed: 'false', weight: 0.151151} },
+{ data: { source: 'CDK18', target: 'PSMB4', directed: 'false', weight: 0.8317950000000001} },
+{ data: { source: 'PSMG3', target: 'PSMB4', directed: 'false', weight: 0.24423000000000003} },
+{ data: { source: 'PSMG3', target: 'PSMA2', directed: 'false', weight: 0.222874} },
+{ data: { source: 'PSMG3', target: 'PSME4', directed: 'false', weight: 0.313012} },
+{ data: { source: 'PSME4', target: 'PSMB4', directed: 'false', weight: 0.93434} },
+{ data: { source: 'PSME4', target: 'PSMA2', directed: 'false', weight: 0.65178} },
+{ data: { source: 'PSMA2', target: 'PSMB4', directed: 'false', weight: 0.106879} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}                                
+  return 'rectangle';
+  },            
+            'background-color': 'mapData(score, 0, 5, yellow, green)',
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'line-color': 'blue',
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    Complex Score  = 0.37500
+    </section>
+    </body>
+    </html>
+    

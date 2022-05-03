@@ -1,0 +1,135 @@
+
+<!doctype html>
+<html>
+<head>
+<title> Complex 2043</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex2044.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'ASAP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9ULH1" }},
+{data: { id: 'BRK1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WUW1" }},
+{data: { id: 'WIPF3', score: 4, type: '', href: "https://www.uniprot.org/uniprot/A6NGB9" }},
+{data: { id: 'ABL2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P42684" }},
+{data: { id: 'NCK2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43639" }},
+{data: { id: 'PIK3AP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6ZUJ8" }},
+{data: { id: 'CBL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P22681" }},
+{data: { id: 'WASF3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UPY6" }},
+{data: { id: 'TTC28', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96AY4" }},
+{data: { id: 'WIPF1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43516" }},
+{data: { id: 'SEMA6A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H2E6" }},
+{data: { id: 'RAPH1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q70E73" }}], 
+ edges: [{ data: { source: 'ASAP1', target: 'NCK2', directed: 'false', weight: 0.560236} },
+{ data: { source: 'ASAP1', target: 'WIPF3', directed: 'false', weight: 0.171414} },
+{ data: { source: 'ASAP1', target: 'PIK3AP1', directed: 'false', weight: 0.171414} },
+{ data: { source: 'ASAP1', target: 'CBL', directed: 'false', weight: 0.151455} },
+{ data: { source: 'ASAP1', target: 'ABL2', directed: 'false', weight: 0.151455} },
+{ data: { source: 'ASAP1', target: 'SEMA6A', directed: 'false', weight: 0.140692} },
+{ data: { source: 'ASAP1', target: 'TTC28', directed: 'false', weight: 0.128057} },
+{ data: { source: 'BRK1', target: 'RAPH1', directed: 'false', weight: 0.254732} },
+{ data: { source: 'WIPF3', target: 'NCK2', directed: 'false', weight: 0.979942} },
+{ data: { source: 'WIPF3', target: 'WIPF1', directed: 'false', weight: 0.171414} },
+{ data: { source: 'WIPF3', target: 'PIK3AP1', directed: 'false', weight: 0.171414} },
+{ data: { source: 'WIPF3', target: 'WASF3', directed: 'false', weight: 0.171414} },
+{ data: { source: 'WIPF3', target: 'CBL', directed: 'false', weight: 0.151455} },
+{ data: { source: 'WIPF3', target: 'ABL2', directed: 'false', weight: 0.151455} },
+{ data: { source: 'WIPF3', target: 'SEMA6A', directed: 'false', weight: 0.140692} },
+{ data: { source: 'WIPF3', target: 'TTC28', directed: 'false', weight: 0.128057} },
+{ data: { source: 'NCK2', target: 'PIK3AP1', directed: 'false', weight: 0.972194} },
+{ data: { source: 'NCK2', target: 'RAPH1', directed: 'false', weight: 0.970038} },
+{ data: { source: 'NCK2', target: 'WIPF1', directed: 'false', weight: 0.9650290000000001} },
+{ data: { source: 'NCK2', target: 'CBL', directed: 'false', weight: 0.946723} },
+{ data: { source: 'NCK2', target: 'ABL2', directed: 'false', weight: 0.9315459999999999} },
+{ data: { source: 'NCK2', target: 'WASF3', directed: 'false', weight: 0.891223} },
+{ data: { source: 'NCK2', target: 'SEMA6A', directed: 'false', weight: 0.796636} },
+{ data: { source: 'NCK2', target: 'TTC28', directed: 'false', weight: 0.643189} },
+{ data: { source: 'ABL2', target: 'PIK3AP1', directed: 'false', weight: 0.151455} },
+{ data: { source: 'ABL2', target: 'CBL', directed: 'false', weight: 0.133456} },
+{ data: { source: 'ABL2', target: 'SEMA6A', directed: 'false', weight: 0.123797} },
+{ data: { source: 'ABL2', target: 'TTC28', directed: 'false', weight: 0.112499} },
+{ data: { source: 'PIK3AP1', target: 'WIPF1', directed: 'false', weight: 0.171414} },
+{ data: { source: 'PIK3AP1', target: 'WASF3', directed: 'false', weight: 0.171414} },
+{ data: { source: 'PIK3AP1', target: 'CBL', directed: 'false', weight: 0.151455} },
+{ data: { source: 'PIK3AP1', target: 'SEMA6A', directed: 'false', weight: 0.140692} },
+{ data: { source: 'PIK3AP1', target: 'TTC28', directed: 'false', weight: 0.128057} },
+{ data: { source: 'CBL', target: 'SEMA6A', directed: 'false', weight: 0.123797} },
+{ data: { source: 'CBL', target: 'TTC28', directed: 'false', weight: 0.112499} },
+{ data: { source: 'WASF3', target: 'RAPH1', directed: 'false', weight: 0.151455} },
+{ data: { source: 'WASF3', target: 'WIPF1', directed: 'false', weight: 0.171414} },
+{ data: { source: 'TTC28', target: 'SEMA6A', directed: 'false', weight: 0.104198} },
+{ data: { source: 'WIPF1', target: 'RAPH1', directed: 'false', weight: 0.151455} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}                                
+  return 'rectangle';
+  },            
+            'background-color': 'mapData(score, 0, 5, yellow, green)',
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'line-color': 'blue',
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    Complex Score  = 0.37500
+    </section>
+    </body>
+    </html>
+    

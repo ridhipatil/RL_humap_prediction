@@ -1,0 +1,102 @@
+
+<!doctype html>
+<html>
+<head>
+<title> Complex 2066</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex2067.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'SEPTIN7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16181" }},
+{data: { id: 'SEPTIN5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99719" }},
+{data: { id: 'SEPTIN3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UH03" }},
+{data: { id: 'ANLN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NQW6" }},
+{data: { id: 'SEPTIN10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9P0V9" }},
+{data: { id: 'SEPTIN14', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6ZU15" }}], 
+ edges: [{ data: { source: 'SEPTIN7', target: 'SEPTIN10', directed: 'false', weight: 1.0} },
+{ data: { source: 'SEPTIN7', target: 'SEPTIN5', directed: 'false', weight: 0.9961040000000001} },
+{ data: { source: 'SEPTIN7', target: 'SEPTIN3', directed: 'false', weight: 0.8768459999999999} },
+{ data: { source: 'SEPTIN7', target: 'ANLN', directed: 'false', weight: 0.24015100000000003} },
+{ data: { source: 'SEPTIN7', target: 'SEPTIN14', directed: 'false', weight: 0.238157} },
+{ data: { source: 'SEPTIN5', target: 'SEPTIN10', directed: 'false', weight: 0.999857} },
+{ data: { source: 'SEPTIN5', target: 'SEPTIN3', directed: 'false', weight: 0.705835} },
+{ data: { source: 'SEPTIN5', target: 'SEPTIN14', directed: 'false', weight: 0.238157} },
+{ data: { source: 'SEPTIN3', target: 'SEPTIN10', directed: 'false', weight: 0.8786879999999999} },
+{ data: { source: 'SEPTIN3', target: 'SEPTIN14', directed: 'false', weight: 0.9609110000000001} },
+{ data: { source: 'SEPTIN10', target: 'SEPTIN14', directed: 'false', weight: 0.238157} },
+{ data: { source: 'SEPTIN10', target: 'ANLN', directed: 'false', weight: 0.0716123} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}                                
+  return 'rectangle';
+  },            
+            'background-color': 'mapData(score, 0, 5, yellow, green)',
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'line-color': 'blue',
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    Complex Score  = 0.37500
+    </section>
+    </body>
+    </html>
+    

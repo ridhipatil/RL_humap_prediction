@@ -1,0 +1,130 @@
+
+<!doctype html>
+<html>
+<head>
+<title> Complex 1260</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex1261.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'MAPT', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P10636" }},
+{data: { id: 'GNG2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P59768" }},
+{data: { id: 'DGUOK', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16854" }},
+{data: { id: 'GPM6A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P51674" }},
+{data: { id: 'MGAT5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q09328" }},
+{data: { id: 'AMPH', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49418" }},
+{data: { id: 'DCLK1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15075" }},
+{data: { id: 'L1CAM', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P32004" }},
+{data: { id: 'DCX', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43602" }},
+{data: { id: 'NCAM1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P13591" }}], 
+ edges: [{ data: { source: 'GNG2', target: 'DGUOK', directed: 'false', weight: 0.356174} },
+{ data: { source: 'GNG2', target: 'DCX', directed: 'false', weight: 0.23624299999999998} },
+{ data: { source: 'GNG2', target: 'DCLK1', directed: 'false', weight: 0.643612} },
+{ data: { source: 'GNG2', target: 'GPM6A', directed: 'false', weight: 0.352711} },
+{ data: { source: 'GNG2', target: 'MAPT', directed: 'false', weight: 0.950232} },
+{ data: { source: 'GNG2', target: 'L1CAM', directed: 'false', weight: 0.538582} },
+{ data: { source: 'GNG2', target: 'AMPH', directed: 'false', weight: 0.538582} },
+{ data: { source: 'GNG2', target: 'NCAM1', directed: 'false', weight: 0.49127} },
+{ data: { source: 'MAPT', target: 'DGUOK', directed: 'false', weight: 0.150329} },
+{ data: { source: 'MAPT', target: 'DCX', directed: 'false', weight: 0.23624299999999998} },
+{ data: { source: 'MAPT', target: 'DCLK1', directed: 'false', weight: 0.643612} },
+{ data: { source: 'MAPT', target: 'GPM6A', directed: 'false', weight: 0.352711} },
+{ data: { source: 'MAPT', target: 'L1CAM', directed: 'false', weight: 0.538582} },
+{ data: { source: 'MAPT', target: 'AMPH', directed: 'false', weight: 0.538582} },
+{ data: { source: 'MAPT', target: 'NCAM1', directed: 'false', weight: 0.49127} },
+{ data: { source: 'MGAT5', target: 'GPM6A', directed: 'false', weight: 0.306174} },
+{ data: { source: 'GPM6A', target: 'DCX', directed: 'false', weight: 0.146788} },
+{ data: { source: 'GPM6A', target: 'DCLK1', directed: 'false', weight: 0.222874} },
+{ data: { source: 'GPM6A', target: 'L1CAM', directed: 'false', weight: 0.287896} },
+{ data: { source: 'GPM6A', target: 'AMPH', directed: 'false', weight: 0.287896} },
+{ data: { source: 'GPM6A', target: 'NCAM1', directed: 'false', weight: 0.122696} },
+{ data: { source: 'DGUOK', target: 'L1CAM', directed: 'false', weight: 0.544434} },
+{ data: { source: 'DGUOK', target: 'AMPH', directed: 'false', weight: 0.330884} },
+{ data: { source: 'DGUOK', target: 'DCLK1', directed: 'false', weight: 0.193859} },
+{ data: { source: 'DGUOK', target: 'NCAM1', directed: 'false', weight: 0.165178} },
+{ data: { source: 'DGUOK', target: 'DCX', directed: 'false', weight: 0.12197999999999999} },
+{ data: { source: 'AMPH', target: 'DCX', directed: 'false', weight: 0.397095} },
+{ data: { source: 'AMPH', target: 'DCLK1', directed: 'false', weight: 0.5830649999999999} },
+{ data: { source: 'AMPH', target: 'L1CAM', directed: 'false', weight: 0.714739} },
+{ data: { source: 'AMPH', target: 'NCAM1', directed: 'false', weight: 0.22956999999999997} },
+{ data: { source: 'DCLK1', target: 'DCX', directed: 'false', weight: 0.9785959999999999} },
+{ data: { source: 'DCLK1', target: 'L1CAM', directed: 'false', weight: 0.5830649999999999} },
+{ data: { source: 'DCLK1', target: 'NCAM1', directed: 'false', weight: 0.229094} },
+{ data: { source: 'L1CAM', target: 'DCX', directed: 'false', weight: 0.397095} },
+{ data: { source: 'L1CAM', target: 'NCAM1', directed: 'false', weight: 0.22956999999999997} },
+{ data: { source: 'DCX', target: 'NCAM1', directed: 'false', weight: 0.07415039999999999} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}                                
+  return 'rectangle';
+  },            
+            'background-color': 'mapData(score, 0, 5, yellow, green)',
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'line-color': 'blue',
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    Complex Score  = 0.37500
+    </section>
+    </body>
+    </html>
+    
