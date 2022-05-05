@@ -30,17 +30,21 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'NME2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P22392" }},
-{data: { id: 'CBS', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P35520" }},
-{data: { id: 'SOD2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P04179" }},
-{data: { id: 'FKBP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P26885" }},
-{data: { id: 'ATP6V1C1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P21283" }}], 
- edges: [{ data: { source: 'FKBP2', target: 'ATP6V1C1', directed: 'false', weight: 0.78192} },
-{ data: { source: 'FKBP2', target: 'NME2', directed: 'false', weight: 0.9877319999999999} },
-{ data: { source: 'FKBP2', target: 'SOD2', directed: 'false', weight: 0.587595} },
-{ data: { source: 'SOD2', target: 'ATP6V1C1', directed: 'false', weight: 0.5} },
-{ data: { source: 'SOD2', target: 'CBS', directed: 'false', weight: 0.406361} },
-{ data: { source: 'NME2', target: 'ATP6V1C1', directed: 'false', weight: 0.7182609999999999} }]},
+elements:{nodes: [{data: { id: 'IFT20', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IY31" }},
+{data: { id: 'IFT22', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9H7X7" }},
+{data: { id: 'HIP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00291" }},
+{data: { id: 'TTC30B', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q8N4P2" }},
+{data: { id: 'IFT172', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UG01" }},
+{data: { id: 'IFT57', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NWB7" }}], 
+ edges: [{ data: { source: 'IFT22', target: 'IFT57', directed: 'false', weight: 0.601388} },
+{ data: { source: 'IFT22', target: 'TTC30B', directed: 'false', weight: 0.123797} },
+{ data: { source: 'HIP1', target: 'IFT20', directed: 'false', weight: 0.140692} },
+{ data: { source: 'TTC30B', target: 'IFT57', directed: 'false', weight: 0.879188} },
+{ data: { source: 'TTC30B', target: 'IFT172', directed: 'false', weight: 0.112499} },
+{ data: { source: 'TTC30B', target: 'IFT20', directed: 'false', weight: 0.123797} },
+{ data: { source: 'IFT57', target: 'IFT172', directed: 'false', weight: 0.949752} },
+{ data: { source: 'IFT57', target: 'IFT20', directed: 'false', weight: 0.9198940000000001} },
+{ data: { source: 'IFT20', target: 'IFT172', directed: 'false', weight: 0.198303} }]},
 
 style: [
     {
@@ -88,7 +92,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.37500
+    Complex Score  = 0.38750
     </section>
     </body>
     </html>

@@ -30,20 +30,16 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'GPN3', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9UHW5" }},
-{data: { id: 'POLR2M', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P0CAP2" }},
-{data: { id: 'POLR3C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BUI4" }},
-{data: { id: 'POLR2L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62875" }},
-{data: { id: 'POLR2G', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62487" }},
-{data: { id: 'POLR2J', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P52435" }}], 
- edges: [{ data: { source: 'POLR2G', target: 'POLR2M', directed: 'false', weight: 0.900385} },
-{ data: { source: 'POLR2G', target: 'GPN3', directed: 'false', weight: 0.755877} },
-{ data: { source: 'POLR2G', target: 'POLR2J', directed: 'false', weight: 0.682712} },
-{ data: { source: 'GPN3', target: 'POLR3C', directed: 'false', weight: 0.248073} },
-{ data: { source: 'GPN3', target: 'POLR2J', directed: 'false', weight: 0.199419} },
-{ data: { source: 'GPN3', target: 'POLR2L', directed: 'false', weight: 0.260768} },
-{ data: { source: 'GPN3', target: 'POLR2M', directed: 'false', weight: 0.41842299999999993} },
-{ data: { source: 'POLR2M', target: 'POLR2J', directed: 'false', weight: 0.609409} }]},
+elements:{nodes: [{data: { id: 'DDX53', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86TM3" }},
+{data: { id: 'IMPDH2', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P12268" }},
+{data: { id: 'PDE8B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95263" }},
+{data: { id: 'SLC25A44', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q96H78" }},
+{data: { id: 'IMPDH1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P20839" }}], 
+ edges: [{ data: { source: 'IMPDH1', target: 'IMPDH2', directed: 'false', weight: 0.9999549999999999} },
+{ data: { source: 'IMPDH1', target: 'DDX53', directed: 'false', weight: 0.505722} },
+{ data: { source: 'DDX53', target: 'IMPDH2', directed: 'false', weight: 0.769696} },
+{ data: { source: 'IMPDH2', target: 'SLC25A44', directed: 'false', weight: 0.481997} },
+{ data: { source: 'IMPDH2', target: 'PDE8B', directed: 'false', weight: 0.363483} }]},
 
 style: [
     {
@@ -92,6 +88,11 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.37500
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>IMPDH2
     </section>
     </body>
     </html>

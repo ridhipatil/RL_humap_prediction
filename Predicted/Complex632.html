@@ -30,26 +30,26 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'RCOR3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9P2K3" }},
-{data: { id: 'RCOR1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UKL0" }},
-{data: { id: 'KDM1A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60341" }},
-{data: { id: 'MTA2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O94776" }},
-{data: { id: 'HDAC2', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q92769" }},
-{data: { id: 'HDAC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13547" }},
-{data: { id: 'GSE1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14687" }}], 
- edges: [{ data: { source: 'RCOR3', target: 'HDAC1', directed: 'false', weight: 0.521836} },
-{ data: { source: 'RCOR3', target: 'KDM1A', directed: 'false', weight: 0.9999959999999999} },
-{ data: { source: 'RCOR3', target: 'RCOR1', directed: 'false', weight: 0.994741} },
-{ data: { source: 'RCOR3', target: 'GSE1', directed: 'false', weight: 0.7229} },
-{ data: { source: 'RCOR1', target: 'HDAC1', directed: 'false', weight: 0.9042190000000001} },
-{ data: { source: 'RCOR1', target: 'KDM1A', directed: 'false', weight: 0.9999969999999999} },
-{ data: { source: 'RCOR1', target: 'GSE1', directed: 'false', weight: 0.8126800000000001} },
-{ data: { source: 'KDM1A', target: 'HDAC1', directed: 'false', weight: 0.8338209999999999} },
-{ data: { source: 'KDM1A', target: 'GSE1', directed: 'false', weight: 0.706178} },
-{ data: { source: 'HDAC2', target: 'HDAC1', directed: 'false', weight: 1.0} },
-{ data: { source: 'HDAC2', target: 'MTA2', directed: 'false', weight: 0.999833} },
-{ data: { source: 'MTA2', target: 'HDAC1', directed: 'false', weight: 0.999965} },
-{ data: { source: 'HDAC1', target: 'GSE1', directed: 'false', weight: 0.49390100000000003} }]},
+elements:{nodes: [{data: { id: 'PHRF1', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9P1Y6" }},
+{data: { id: 'CSNK2A2', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P19784" }},
+{data: { id: 'SRSF12', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WXF0" }},
+{data: { id: 'C18orf25', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q96B23" }},
+{data: { id: 'NKAPD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6ZUT1" }},
+{data: { id: 'NKAP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N5F7" }},
+{data: { id: 'HIRIP3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BW71" }}], 
+ edges: [{ data: { source: 'HIRIP3', target: 'CSNK2A2', directed: 'false', weight: 0.761039} },
+{ data: { source: 'HIRIP3', target: 'PHRF1', directed: 'false', weight: 0.171414} },
+{ data: { source: 'HIRIP3', target: 'NKAPD1', directed: 'false', weight: 0.140692} },
+{ data: { source: 'HIRIP3', target: 'C18orf25', directed: 'false', weight: 0.12378900000000001} },
+{ data: { source: 'PHRF1', target: 'CSNK2A2', directed: 'false', weight: 0.9654360000000001} },
+{ data: { source: 'PHRF1', target: 'NKAPD1', directed: 'false', weight: 0.140692} },
+{ data: { source: 'PHRF1', target: 'NKAP', directed: 'false', weight: 0.12378900000000001} },
+{ data: { source: 'PHRF1', target: 'C18orf25', directed: 'false', weight: 0.12378900000000001} },
+{ data: { source: 'CSNK2A2', target: 'NKAP', directed: 'false', weight: 0.7466659999999999} },
+{ data: { source: 'CSNK2A2', target: 'NKAPD1', directed: 'false', weight: 0.6701779999999999} },
+{ data: { source: 'CSNK2A2', target: 'C18orf25', directed: 'false', weight: 0.459138} },
+{ data: { source: 'C18orf25', target: 'NKAPD1', directed: 'false', weight: 0.100649} },
+{ data: { source: 'SRSF12', target: 'NKAP', directed: 'false', weight: 0.163688} }]},
 
 style: [
     {
@@ -97,12 +97,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.37500
+    Complex Score  = 0.38750
         <br> 
         <br>
         Connection to SARS-COV2: 
         <br>
-        1 interacting protein(s): <br>HDAC2
+        1 interacting protein(s): <br>CSNK2A2
     </section>
     </body>
     </html>

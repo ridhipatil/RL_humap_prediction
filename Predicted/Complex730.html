@@ -30,29 +30,18 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'ATP2A2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P16615" }},
-{data: { id: 'ATP5PB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P24539" }},
-{data: { id: 'ATP5MG', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/O75964" }},
-{data: { id: 'ATP5F1B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P06576" }},
-{data: { id: 'ATP5MF', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P56134" }},
-{data: { id: 'ATP5PD', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75947" }},
-{data: { id: 'ABCD3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P28288" }}], 
- edges: [{ data: { source: 'ATP2A2', target: 'ATP5PD', directed: 'false', weight: 0.089264} },
-{ data: { source: 'ATP2A2', target: 'ATP5PB', directed: 'false', weight: 0.0266835} },
-{ data: { source: 'ATP2A2', target: 'ATP5F1B', directed: 'false', weight: 0.957987} },
-{ data: { source: 'ATP2A2', target: 'ATP5MG', directed: 'false', weight: 0.19399} },
-{ data: { source: 'ATP2A2', target: 'ATP5MF', directed: 'false', weight: 0.18981199999999998} },
-{ data: { source: 'ATP2A2', target: 'ABCD3', directed: 'false', weight: 0.791374} },
-{ data: { source: 'ATP5PB', target: 'ATP5PD', directed: 'false', weight: 0.999999} },
-{ data: { source: 'ATP5PB', target: 'ATP5F1B', directed: 'false', weight: 0.9978459999999999} },
-{ data: { source: 'ATP5PB', target: 'ATP5MG', directed: 'false', weight: 0.574084} },
-{ data: { source: 'ATP5PB', target: 'ATP5MF', directed: 'false', weight: 0.1554} },
-{ data: { source: 'ATP5MG', target: 'ATP5PD', directed: 'false', weight: 0.9920129999999999} },
-{ data: { source: 'ATP5MG', target: 'ATP5F1B', directed: 'false', weight: 0.951416} },
-{ data: { source: 'ATP5MG', target: 'ATP5MF', directed: 'false', weight: 0.14089000000000002} },
-{ data: { source: 'ATP5F1B', target: 'ATP5PD', directed: 'false', weight: 0.992978} },
-{ data: { source: 'ATP5F1B', target: 'ATP5MF', directed: 'false', weight: 0.518648} },
-{ data: { source: 'ATP5MF', target: 'ATP5PD', directed: 'false', weight: 0.200625} }]},
+elements:{nodes: [{data: { id: 'COL2A1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P02458" }},
+{data: { id: 'PTPN2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P17706" }},
+{data: { id: 'COL4A5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P29400" }},
+{data: { id: 'COL5A1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P20908" }},
+{data: { id: 'COL8A2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P25067" }}], 
+ edges: [{ data: { source: 'PTPN2', target: 'COL5A1', directed: 'false', weight: 0.681534} },
+{ data: { source: 'COL5A1', target: 'COL4A5', directed: 'false', weight: 0.133451} },
+{ data: { source: 'COL5A1', target: 'COL8A2', directed: 'false', weight: 0.861261} },
+{ data: { source: 'COL5A1', target: 'COL2A1', directed: 'false', weight: 0.175861} },
+{ data: { source: 'COL8A2', target: 'COL4A5', directed: 'false', weight: 0.9342280000000001} },
+{ data: { source: 'COL8A2', target: 'COL2A1', directed: 'false', weight: 0.695153} },
+{ data: { source: 'COL2A1', target: 'COL4A5', directed: 'false', weight: 0.128057} }]},
 
 style: [
     {
@@ -100,12 +89,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.37500
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>ATP5MG
+    Complex Score  = 0.38750
     </section>
     </body>
     </html>

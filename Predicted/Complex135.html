@@ -30,27 +30,31 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'DNAJC18', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q9H819" }},
-{data: { id: 'ZIC2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95409" }},
-{data: { id: 'CHEK1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O14757" }},
-{data: { id: 'DNAJC30', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96LL9" }},
-{data: { id: 'CHRNA9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UGM1" }}], 
- edges: [{ data: { source: 'DNAJC18', target: 'CHRNA9', directed: 'false', weight: 0.804603} },
-{ data: { source: 'DNAJC18', target: 'ZIC2', directed: 'false', weight: 0.171414} },
-{ data: { source: 'DNAJC18', target: 'DNAJC30', directed: 'false', weight: 0.151455} },
-{ data: { source: 'DNAJC18', target: 'CHEK1', directed: 'false', weight: 0.11248399999999999} },
-{ data: { source: 'CHEK1', target: 'CHRNA9', directed: 'false', weight: 0.639065} },
-{ data: { source: 'CHEK1', target: 'ZIC2', directed: 'false', weight: 0.11248399999999999} },
-{ data: { source: 'CHEK1', target: 'DNAJC30', directed: 'false', weight: 0.098638} },
-{ data: { source: 'CHRNA9', target: 'ZIC2', directed: 'false', weight: 0.8541489999999999} },
-{ data: { source: 'CHRNA9', target: 'DNAJC30', directed: 'false', weight: 0.506577} },
-{ data: { source: 'ZIC2', target: 'DNAJC30', directed: 'false', weight: 0.151455} }]},
+elements:{nodes: [{data: { id: 'NDUFAF1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9Y375" }},
+{data: { id: 'NDUFS2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75306" }},
+{data: { id: 'NDUFA3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95167" }},
+{data: { id: 'ECSIT', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9BQ95" }},
+{data: { id: 'NDUFB10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O96000" }},
+{data: { id: 'NDUFB9', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9Y6M9" }}], 
+ edges: [{ data: { source: 'NDUFAF1', target: 'ECSIT', directed: 'false', weight: 0.985202} },
+{ data: { source: 'NDUFS2', target: 'ECSIT', directed: 'false', weight: 0.236511} },
+{ data: { source: 'NDUFS2', target: 'NDUFB10', directed: 'false', weight: 0.23121599999999998} },
+{ data: { source: 'NDUFS2', target: 'NDUFA3', directed: 'false', weight: 0.142005} },
+{ data: { source: 'NDUFS2', target: 'NDUFB9', directed: 'false', weight: 0.059398} },
+{ data: { source: 'NDUFB10', target: 'ECSIT', directed: 'false', weight: 0.23263000000000003} },
+{ data: { source: 'NDUFB10', target: 'NDUFB9', directed: 'false', weight: 0.149338} },
+{ data: { source: 'NDUFB10', target: 'NDUFA3', directed: 'false', weight: 0.19279100000000002} },
+{ data: { source: 'NDUFB9', target: 'ECSIT', directed: 'false', weight: 0.256669} },
+{ data: { source: 'NDUFB9', target: 'NDUFA3', directed: 'false', weight: 0.108921} },
+{ data: { source: 'NDUFA3', target: 'ECSIT', directed: 'false', weight: 0.187644} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 30,
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}                                
@@ -62,7 +66,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
 								'line-color': 'blue',
 								'opacity': 0.5
 							}
@@ -71,7 +75,10 @@ style: [
 
 });
 cy.layout({
-    name: 'circle'
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -88,6 +95,11 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.39375
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        3 interacting protein(s): <br>NDUFAF1 ECSIT NDUFB9
     </section>
     </body>
     </html>

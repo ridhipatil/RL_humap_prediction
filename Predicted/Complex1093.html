@@ -30,22 +30,14 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'KMT2A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q03164" }},
-{data: { id: 'FAM199X', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q6PEV8" }},
-{data: { id: 'RBBP5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15291" }},
-{data: { id: 'WDR5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P61964" }},
-{data: { id: 'ZXDC', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q2QGD7" }},
-{data: { id: 'KMT2B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UMN6" }}], 
- edges: [{ data: { source: 'FAM199X', target: 'WDR5', directed: 'false', weight: 0.87913} },
-{ data: { source: 'FAM199X', target: 'KMT2B', directed: 'false', weight: 0.133451} },
-{ data: { source: 'FAM199X', target: 'ZXDC', directed: 'false', weight: 0.133451} },
-{ data: { source: 'FAM199X', target: 'KMT2A', directed: 'false', weight: 0.102931} },
-{ data: { source: 'RBBP5', target: 'WDR5', directed: 'false', weight: 0.7104} },
-{ data: { source: 'ZXDC', target: 'WDR5', directed: 'false', weight: 0.475641} },
-{ data: { source: 'ZXDC', target: 'KMT2B', directed: 'false', weight: 0.171414} },
-{ data: { source: 'KMT2A', target: 'WDR5', directed: 'false', weight: 0.783981} },
-{ data: { source: 'KMT2A', target: 'KMT2B', directed: 'false', weight: 0.133451} },
-{ data: { source: 'WDR5', target: 'KMT2B', directed: 'false', weight: 0.9600420000000001} }]},
+elements:{nodes: [{data: { id: 'GPATCH8', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9UKJ3" }},
+{data: { id: 'RNPS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15287" }},
+{data: { id: 'SRSF3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P84103" }},
+{data: { id: 'RBM39', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14498" }}], 
+ edges: [{ data: { source: 'GPATCH8', target: 'RNPS1', directed: 'false', weight: 0.9967739999999999} },
+{ data: { source: 'RBM39', target: 'RNPS1', directed: 'false', weight: 0.986384} },
+{ data: { source: 'RBM39', target: 'SRSF3', directed: 'false', weight: 0.798505} },
+{ data: { source: 'SRSF3', target: 'RNPS1', directed: 'false', weight: 0.127151} }]},
 
 style: [
     {
@@ -93,7 +85,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.37500
+    Complex Score  = 0.30000
     </section>
     </body>
     </html>

@@ -30,17 +30,19 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'CEP78', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5JTW2" }},
-{data: { id: 'KIAA0753', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q2KHM9" }},
-{data: { id: 'PPP2R3C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q969Q6" }},
-{data: { id: 'CCDC14', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q49A88" }},
-{data: { id: 'CEP72', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9P209" }}], 
- edges: [{ data: { source: 'KIAA0753', target: 'PPP2R3C', directed: 'false', weight: 0.745815} },
-{ data: { source: 'KIAA0753', target: 'CCDC14', directed: 'false', weight: 0.5} },
-{ data: { source: 'KIAA0753', target: 'CEP72', directed: 'false', weight: 0.0760309} },
-{ data: { source: 'KIAA0753', target: 'CEP78', directed: 'false', weight: 0.0669434} },
-{ data: { source: 'CEP78', target: 'PPP2R3C', directed: 'false', weight: 0.08011660000000001} },
-{ data: { source: 'PPP2R3C', target: 'CEP72', directed: 'false', weight: 0.35420100000000004} }]},
+elements:{nodes: [{data: { id: 'PEPD', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P12955" }},
+{data: { id: 'ENO3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P13929" }},
+{data: { id: 'FKBP1A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62942" }},
+{data: { id: 'TAGLN3', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q9UI15" }},
+{data: { id: 'TALDO1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P37837" }},
+{data: { id: 'FKBP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P26885" }}], 
+ edges: [{ data: { source: 'TAGLN3', target: 'FKBP1A', directed: 'false', weight: 0.998099} },
+{ data: { source: 'TAGLN3', target: 'ENO3', directed: 'false', weight: 0.8680959999999999} },
+{ data: { source: 'TAGLN3', target: 'TALDO1', directed: 'false', weight: 0.864368} },
+{ data: { source: 'ENO3', target: 'FKBP1A', directed: 'false', weight: 0.66335} },
+{ data: { source: 'ENO3', target: 'FKBP2', directed: 'false', weight: 0.619925} },
+{ data: { source: 'FKBP1A', target: 'FKBP2', directed: 'false', weight: 0.959016} },
+{ data: { source: 'PEPD', target: 'TALDO1', directed: 'false', weight: 0.808639} }]},
 
 style: [
     {

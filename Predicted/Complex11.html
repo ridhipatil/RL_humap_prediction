@@ -30,12 +30,25 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'DCN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P07585" }},
-{data: { id: 'CHSY1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86X52" }},
-{data: { id: 'KLHL17', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q6TDP4" }}], 
- edges: [{ data: { source: 'DCN', target: 'KLHL17', directed: 'false', weight: 0.906207} },
-{ data: { source: 'DCN', target: 'CHSY1', directed: 'false', weight: 0.5674859999999999} },
-{ data: { source: 'CHSY1', target: 'KLHL17', directed: 'false', weight: 0.098638} }]},
+elements:{nodes: [{data: { id: 'RTF2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BY42" }},
+{data: { id: 'TBK1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9UHD2" }},
+{data: { id: 'BBOX1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75936" }},
+{data: { id: 'AZI2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H6S1" }},
+{data: { id: 'CASP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P42575" }},
+{data: { id: 'TANK', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92844" }}], 
+ edges: [{ data: { source: 'RTF2', target: 'BBOX1', directed: 'false', weight: 0.820233} },
+{ data: { source: 'RTF2', target: 'AZI2', directed: 'false', weight: 0.133451} },
+{ data: { source: 'RTF2', target: 'CASP2', directed: 'false', weight: 0.117318} },
+{ data: { source: 'TBK1', target: 'BBOX1', directed: 'false', weight: 0.658095} },
+{ data: { source: 'TBK1', target: 'AZI2', directed: 'false', weight: 0.11473699999999999} },
+{ data: { source: 'TBK1', target: 'CASP2', directed: 'false', weight: 0.10064} },
+{ data: { source: 'TBK1', target: 'TANK', directed: 'false', weight: 0.11473699999999999} },
+{ data: { source: 'CASP2', target: 'BBOX1', directed: 'false', weight: 0.9728209999999999} },
+{ data: { source: 'CASP2', target: 'AZI2', directed: 'false', weight: 0.151455} },
+{ data: { source: 'CASP2', target: 'TANK', directed: 'false', weight: 0.151455} },
+{ data: { source: 'BBOX1', target: 'AZI2', directed: 'false', weight: 0.9804510000000001} },
+{ data: { source: 'BBOX1', target: 'TANK', directed: 'false', weight: 0.967692} },
+{ data: { source: 'AZI2', target: 'TANK', directed: 'false', weight: 0.171414} }]},
 
 style: [
     {
@@ -78,7 +91,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.39375
+    Complex Score  = 0.39688
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>TBK1
     </section>
     </body>
     </html>

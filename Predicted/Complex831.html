@@ -30,25 +30,11 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'FLYWCH1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q4VC44" }},
-{data: { id: 'ABHD6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BV23" }},
-{data: { id: 'FABP7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15540" }},
-{data: { id: 'UFM1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P61960" }},
-{data: { id: 'UBA5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9GZZ9" }},
-{data: { id: 'DDRGK1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96HY6" }},
-{data: { id: 'UFL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O94874" }}], 
- edges: [{ data: { source: 'FLYWCH1', target: 'DDRGK1', directed: 'false', weight: 0.11585699999999999} },
-{ data: { source: 'FLYWCH1', target: 'UFL1', directed: 'false', weight: 0.371052} },
-{ data: { source: 'FLYWCH1', target: 'UFM1', directed: 'false', weight: 0.100579} },
-{ data: { source: 'FLYWCH1', target: 'ABHD6', directed: 'false', weight: 0.11585699999999999} },
-{ data: { source: 'ABHD6', target: 'DDRGK1', directed: 'false', weight: 0.165074} },
-{ data: { source: 'ABHD6', target: 'UFL1', directed: 'false', weight: 0.69462} },
-{ data: { source: 'ABHD6', target: 'UFM1', directed: 'false', weight: 0.144297} },
-{ data: { source: 'FABP7', target: 'UFM1', directed: 'false', weight: 0.356064} },
-{ data: { source: 'UFM1', target: 'DDRGK1', directed: 'false', weight: 0.494576} },
-{ data: { source: 'UFM1', target: 'UFL1', directed: 'false', weight: 0.8839290000000001} },
-{ data: { source: 'UFM1', target: 'UBA5', directed: 'false', weight: 0.981557} },
-{ data: { source: 'DDRGK1', target: 'UFL1', directed: 'false', weight: 0.9930899999999999} }]},
+elements:{nodes: [{data: { id: '403313', score: 0, type: '' }},
+{data: { id: 'CIT', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/O14578" }},
+{data: { id: 'PPM1F', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49593" }}], 
+ edges: [{ data: { source: '403313', target: 'PPM1F', directed: 'false', weight: 0.33813200000000004} },
+{ data: { source: 'CIT', target: 'PPM1F', directed: 'false', weight: 0.42753500000000005} }]},
 
 style: [
     {
@@ -97,6 +83,11 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.37500
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>CIT
     </section>
     </body>
     </html>

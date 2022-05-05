@@ -30,21 +30,22 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'NMNAT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HAN9" }},
-{data: { id: 'ZNF668', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96K58" }},
-{data: { id: 'EEF1G', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P26641" }},
-{data: { id: 'GNL2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13823" }},
-{data: { id: 'RPL3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P39023" }},
-{data: { id: 'RRP8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43159" }}], 
- edges: [{ data: { source: 'ZNF668', target: 'GNL2', directed: 'false', weight: 0.645754} },
-{ data: { source: 'ZNF668', target: 'RRP8', directed: 'false', weight: 0.939894} },
-{ data: { source: 'ZNF668', target: 'NMNAT1', directed: 'false', weight: 0.116085} },
-{ data: { source: 'EEF1G', target: 'RPL3', directed: 'false', weight: 0.861699} },
-{ data: { source: 'EEF1G', target: 'NMNAT1', directed: 'false', weight: 0.0768359} },
-{ data: { source: 'NMNAT1', target: 'RPL3', directed: 'false', weight: 0.141992} },
-{ data: { source: 'NMNAT1', target: 'GNL2', directed: 'false', weight: 0.3332} },
-{ data: { source: 'NMNAT1', target: 'RRP8', directed: 'false', weight: 0.16370099999999999} },
-{ data: { source: 'GNL2', target: 'RRP8', directed: 'false', weight: 0.825959} }]},
+elements:{nodes: [{data: { id: 'BAZ1B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UIG0" }},
+{data: { id: 'MAK16', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9BXY0" }},
+{data: { id: 'RPL11', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62913" }},
+{data: { id: 'PUM3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15397" }},
+{data: { id: 'FTSJ3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IY81" }},
+{data: { id: 'RPL10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P27635" }},
+{data: { id: 'RRS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15050" }}], 
+ edges: [{ data: { source: 'BAZ1B', target: 'RPL11', directed: 'false', weight: 0.13281099999999998} },
+{ data: { source: 'BAZ1B', target: 'RPL10', directed: 'false', weight: 0.8605510000000001} },
+{ data: { source: 'MAK16', target: 'RRS1', directed: 'false', weight: 0.145739} },
+{ data: { source: 'MAK16', target: 'FTSJ3', directed: 'false', weight: 0.863884} },
+{ data: { source: 'RPL11', target: 'RPL10', directed: 'false', weight: 1.0} },
+{ data: { source: 'RPL11', target: 'PUM3', directed: 'false', weight: 0.8556030000000001} },
+{ data: { source: 'PUM3', target: 'RRS1', directed: 'false', weight: 0.998236} },
+{ data: { source: 'PUM3', target: 'FTSJ3', directed: 'false', weight: 0.9982840000000001} },
+{ data: { source: 'FTSJ3', target: 'RRS1', directed: 'false', weight: 0.9999} }]},
 
 style: [
     {
@@ -92,7 +93,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.37500
+    Complex Score  = 0.35000
     </section>
     </body>
     </html>

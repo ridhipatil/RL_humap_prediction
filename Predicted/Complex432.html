@@ -30,19 +30,18 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'TCF3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P15923" }},
-{data: { id: 'TCF4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P15884" }},
-{data: { id: 'TCF12', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q99081" }},
-{data: { id: 'ID1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P41134" }},
-{data: { id: 'NEUROD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13562" }}], 
- edges: [{ data: { source: 'TCF4', target: 'TCF3', directed: 'false', weight: 0.463714} },
-{ data: { source: 'TCF4', target: 'TCF12', directed: 'false', weight: 0.714739} },
-{ data: { source: 'TCF4', target: 'NEUROD1', directed: 'false', weight: 0.763899} },
-{ data: { source: 'TCF12', target: 'TCF3', directed: 'false', weight: 0.631472} },
-{ data: { source: 'TCF12', target: 'ID1', directed: 'false', weight: 0.9329209999999999} },
-{ data: { source: 'TCF12', target: 'NEUROD1', directed: 'false', weight: 0.8481559999999999} },
-{ data: { source: 'TCF3', target: 'ID1', directed: 'false', weight: 0.941651} },
-{ data: { source: 'TCF3', target: 'NEUROD1', directed: 'false', weight: 0.753492} }]},
+elements:{nodes: [{data: { id: 'CDH1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P12830" }},
+{data: { id: 'CTNNA2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P26232" }},
+{data: { id: 'CTNNB1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P35222" }},
+{data: { id: 'CDH10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y6N8" }},
+{data: { id: 'CTNNA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P35221" }}], 
+ edges: [{ data: { source: 'CDH1', target: 'CTNNB1', directed: 'false', weight: 0.889547} },
+{ data: { source: 'CDH1', target: 'CDH10', directed: 'false', weight: 0.237166} },
+{ data: { source: 'CTNNB1', target: 'CTNNA1', directed: 'false', weight: 0.998742} },
+{ data: { source: 'CTNNB1', target: 'CDH10', directed: 'false', weight: 0.9932620000000001} },
+{ data: { source: 'CTNNB1', target: 'CTNNA2', directed: 'false', weight: 0.939585} },
+{ data: { source: 'CDH10', target: 'CTNNA1', directed: 'false', weight: 0.142378} },
+{ data: { source: 'CTNNA1', target: 'CTNNA2', directed: 'false', weight: 0.00486286} }]},
 
 style: [
     {
@@ -91,11 +90,6 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.38750
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>TCF12
     </section>
     </body>
     </html>

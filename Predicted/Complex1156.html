@@ -30,21 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'FAM83B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5T0W9" }},
-{data: { id: 'SLC30A7', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q8NEW0" }},
-{data: { id: 'SLC30A5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TAD4" }},
-{data: { id: 'SLC30A6', score: 4, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q6NXT4" }},
-{data: { id: 'BTBD3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y2F9" }},
-{data: { id: 'USO1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60763" }}], 
- edges: [{ data: { source: 'FAM83B', target: 'USO1', directed: 'false', weight: 0.7030430000000001} },
-{ data: { source: 'FAM83B', target: 'BTBD3', directed: 'false', weight: 0.37043899999999996} },
-{ data: { source: 'FAM83B', target: 'SLC30A6', directed: 'false', weight: 0.09888419999999999} },
-{ data: { source: 'SLC30A7', target: 'SLC30A6', directed: 'false', weight: 0.130385} },
-{ data: { source: 'SLC30A7', target: 'SLC30A5', directed: 'false', weight: 0.29496700000000003} },
-{ data: { source: 'SLC30A6', target: 'USO1', directed: 'false', weight: 0.735486} },
-{ data: { source: 'SLC30A6', target: 'BTBD3', directed: 'false', weight: 0.11228099999999999} },
-{ data: { source: 'SLC30A6', target: 'SLC30A5', directed: 'false', weight: 0.345713} },
-{ data: { source: 'USO1', target: 'BTBD3', directed: 'false', weight: 0.842242} }]},
+elements:{nodes: [{data: { id: 'MRPL50', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q8N5N7" }},
+{data: { id: 'THAP9', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9H5L6" }},
+{data: { id: 'KCTD17', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N5Z5" }},
+{data: { id: 'MRPL14', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q6P1L8" }}], 
+ edges: [{ data: { source: 'MRPL50', target: 'MRPL14', directed: 'false', weight: 0.999915} },
+{ data: { source: 'MRPL50', target: 'THAP9', directed: 'false', weight: 0.9406479999999999} },
+{ data: { source: 'THAP9', target: 'KCTD17', directed: 'false', weight: 0.9694780000000001} }]},
 
 style: [
     {
@@ -92,12 +84,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.37500
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        2 interacting protein(s): <br>SLC30A7 SLC30A6
+    Complex Score  = 0.30000
     </section>
     </body>
     </html>

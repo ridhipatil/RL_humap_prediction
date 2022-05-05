@@ -30,20 +30,16 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'PMF1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6P1K2" }},
-{data: { id: 'SPC24', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NBT2" }},
-{data: { id: 'PMF1-BGLAP', score: 2, type: '', href: "https://www.uniprot.org/uniprot/U3KQ54" }},
-{data: { id: 'DSN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H410" }},
-{data: { id: 'SPC25', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HBM1" }}], 
- edges: [{ data: { source: 'PMF1', target: 'DSN1', directed: 'false', weight: 0.963355} },
-{ data: { source: 'PMF1', target: 'SPC25', directed: 'false', weight: 0.917531} },
-{ data: { source: 'PMF1', target: 'SPC24', directed: 'false', weight: 0.645363} },
-{ data: { source: 'SPC24', target: 'DSN1', directed: 'false', weight: 0.999964} },
-{ data: { source: 'SPC24', target: 'SPC25', directed: 'false', weight: 0.999999} },
-{ data: { source: 'SPC24', target: 'PMF1-BGLAP', directed: 'false', weight: 0.9229360000000001} },
-{ data: { source: 'PMF1-BGLAP', target: 'DSN1', directed: 'false', weight: 0.94173} },
-{ data: { source: 'PMF1-BGLAP', target: 'SPC25', directed: 'false', weight: 0.519755} },
-{ data: { source: 'DSN1', target: 'SPC25', directed: 'false', weight: 0.999771} }]},
+elements:{nodes: [{data: { id: 'COX20', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5RI15" }},
+{data: { id: 'C16orf91', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q4G0I0" }},
+{data: { id: 'UQCC2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BRT2" }},
+{data: { id: 'UQCC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NVA1" }}], 
+ edges: [{ data: { source: 'UQCC1', target: 'COX20', directed: 'false', weight: 0.635393} },
+{ data: { source: 'UQCC1', target: 'C16orf91', directed: 'false', weight: 0.12378900000000001} },
+{ data: { source: 'UQCC1', target: 'UQCC2', directed: 'false', weight: 0.184918} },
+{ data: { source: 'C16orf91', target: 'COX20', directed: 'false', weight: 0.9096479999999999} },
+{ data: { source: 'C16orf91', target: 'UQCC2', directed: 'false', weight: 0.140692} },
+{ data: { source: 'UQCC2', target: 'COX20', directed: 'false', weight: 0.415545} }]},
 
 style: [
     {
@@ -86,7 +82,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.37500
+    Complex Score  = 0.38750
     </section>
     </body>
     </html>

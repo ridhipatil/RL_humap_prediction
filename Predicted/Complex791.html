@@ -30,29 +30,20 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'FUT11', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q495W5" }},
-{data: { id: 'FOXRED2', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q8IWF2" }},
-{data: { id: 'SLIT2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O94813" }},
-{data: { id: 'TXNDC16', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9P2K2" }},
-{data: { id: 'POGLUT2', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q6UW63" }},
-{data: { id: 'CACNA2D1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P54289" }},
-{data: { id: 'HYAL2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q12891" }}], 
- edges: [{ data: { source: 'FUT11', target: 'TXNDC16', directed: 'false', weight: 0.837802} },
-{ data: { source: 'FUT11', target: 'FOXRED2', directed: 'false', weight: 0.6835060000000001} },
-{ data: { source: 'FUT11', target: 'POGLUT2', directed: 'false', weight: 0.553883} },
-{ data: { source: 'FUT11', target: 'SLIT2', directed: 'false', weight: 0.43463999999999997} },
-{ data: { source: 'FUT11', target: 'HYAL2', directed: 'false', weight: 0.388379} },
-{ data: { source: 'FOXRED2', target: 'TXNDC16', directed: 'false', weight: 0.237551} },
-{ data: { source: 'FOXRED2', target: 'HYAL2', directed: 'false', weight: 0.292948} },
-{ data: { source: 'FOXRED2', target: 'SLIT2', directed: 'false', weight: 0.28913} },
-{ data: { source: 'FOXRED2', target: 'POGLUT2', directed: 'false', weight: 0.170675} },
-{ data: { source: 'SLIT2', target: 'TXNDC16', directed: 'false', weight: 0.195149} },
-{ data: { source: 'SLIT2', target: 'POGLUT2', directed: 'false', weight: 0.11635899999999999} },
-{ data: { source: 'SLIT2', target: 'HYAL2', directed: 'false', weight: 0.159734} },
-{ data: { source: 'POGLUT2', target: 'TXNDC16', directed: 'false', weight: 0.324765} },
-{ data: { source: 'POGLUT2', target: 'HYAL2', directed: 'false', weight: 0.23167} },
-{ data: { source: 'TXNDC16', target: 'HYAL2', directed: 'false', weight: 0.34641700000000003} },
-{ data: { source: 'CACNA2D1', target: 'HYAL2', directed: 'false', weight: 0.27714} }]},
+elements:{nodes: [{data: { id: 'SINHCAF', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9NP50" }},
+{data: { id: 'FOXK1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P85037" }},
+{data: { id: 'SAP30', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75446" }},
+{data: { id: 'SUDS3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H7L9" }},
+{data: { id: 'MTA3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BTC8" }},
+{data: { id: 'RBBP7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16576" }}], 
+ edges: [{ data: { source: 'MTA3', target: 'RBBP7', directed: 'false', weight: 0.999835} },
+{ data: { source: 'SINHCAF', target: 'SUDS3', directed: 'false', weight: 0.7878350000000001} },
+{ data: { source: 'SINHCAF', target: 'SAP30', directed: 'false', weight: 0.9655530000000001} },
+{ data: { source: 'SINHCAF', target: 'FOXK1', directed: 'false', weight: 0.0220984} },
+{ data: { source: 'FOXK1', target: 'RBBP7', directed: 'false', weight: 0.514286} },
+{ data: { source: 'FOXK1', target: 'SUDS3', directed: 'false', weight: 0.323491} },
+{ data: { source: 'FOXK1', target: 'SAP30', directed: 'false', weight: 0.330895} },
+{ data: { source: 'SAP30', target: 'SUDS3', directed: 'false', weight: 0.911219} }]},
 
 style: [
     {
@@ -101,11 +92,6 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.37500
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        2 interacting protein(s): <br>FOXRED2 POGLUT2
     </section>
     </body>
     </html>

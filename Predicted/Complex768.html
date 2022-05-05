@@ -30,23 +30,20 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'DCAF1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y4B6" }},
-{data: { id: 'DCAF11', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TEB1" }},
-{data: { id: 'CUL4A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13619" }},
-{data: { id: 'DDA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BW61" }},
-{data: { id: 'CUL2', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q13617" }},
-{data: { id: 'CUL4B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13620" }}], 
- edges: [{ data: { source: 'DDA1', target: 'CUL4A', directed: 'false', weight: 0.607033} },
-{ data: { source: 'DDA1', target: 'CUL4B', directed: 'false', weight: 0.110074} },
-{ data: { source: 'DDA1', target: 'DCAF1', directed: 'false', weight: 0.9956520000000001} },
-{ data: { source: 'DDA1', target: 'DCAF11', directed: 'false', weight: 0.391579} },
-{ data: { source: 'DDA1', target: 'CUL2', directed: 'false', weight: 0.0781529} },
-{ data: { source: 'CUL4A', target: 'CUL4B', directed: 'false', weight: 0.9981969999999999} },
-{ data: { source: 'CUL4A', target: 'DCAF11', directed: 'false', weight: 0.383011} },
-{ data: { source: 'CUL4A', target: 'CUL2', directed: 'false', weight: 0.118663} },
-{ data: { source: 'DCAF11', target: 'CUL4B', directed: 'false', weight: 0.732533} },
-{ data: { source: 'DCAF11', target: 'CUL2', directed: 'false', weight: 0.13301300000000002} },
-{ data: { source: 'CUL2', target: 'CUL4B', directed: 'false', weight: 0.0598447} }]},
+elements:{nodes: [{data: { id: 'SNRNP40', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96DI7" }},
+{data: { id: 'CDK12', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NYV4" }},
+{data: { id: 'AQR', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60306" }},
+{data: { id: 'USB1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BQ65" }},
+{data: { id: 'DHX35', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H5Z1" }},
+{data: { id: 'CCDC12', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q8WUD4" }}], 
+ edges: [{ data: { source: 'USB1', target: 'AQR', directed: 'false', weight: 0.18111} },
+{ data: { source: 'USB1', target: 'CCDC12', directed: 'false', weight: 0.263264} },
+{ data: { source: 'USB1', target: 'DHX35', directed: 'false', weight: 0.5} },
+{ data: { source: 'SNRNP40', target: 'AQR', directed: 'false', weight: 0.9759030000000001} },
+{ data: { source: 'SNRNP40', target: 'CDK12', directed: 'false', weight: 0.6319520000000001} },
+{ data: { source: 'AQR', target: 'CCDC12', directed: 'false', weight: 0.999906} },
+{ data: { source: 'AQR', target: 'DHX35', directed: 'false', weight: 0.708861} },
+{ data: { source: 'DHX35', target: 'CCDC12', directed: 'false', weight: 0.998125} }]},
 
 style: [
     {
@@ -95,11 +92,6 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.37500
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>CUL2
     </section>
     </body>
     </html>

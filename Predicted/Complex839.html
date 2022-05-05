@@ -30,32 +30,11 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'CEP68', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q76N32" }},
-{data: { id: 'PRKAR2A', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P13861" }},
-{data: { id: 'CDK5RAP2', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q96SN8" }},
-{data: { id: 'PRKACB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P22694" }},
-{data: { id: 'PRKACA', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P17252" }},
-{data: { id: 'AKAP9', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q99996" }},
-{data: { id: 'PRKAR1A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P10644" }},
-{data: { id: 'PKLR', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P30613" }}], 
- edges: [{ data: { source: 'CEP68', target: 'PRKAR2A', directed: 'false', weight: 0.8552209999999999} },
-{ data: { source: 'CEP68', target: 'PRKACA', directed: 'false', weight: 0.313765} },
-{ data: { source: 'CEP68', target: 'PRKACB', directed: 'false', weight: 0.900258} },
-{ data: { source: 'CEP68', target: 'PRKAR1A', directed: 'false', weight: 0.18832100000000002} },
-{ data: { source: 'CEP68', target: 'AKAP9', directed: 'false', weight: 0.35867} },
-{ data: { source: 'CEP68', target: 'CDK5RAP2', directed: 'false', weight: 0.313765} },
-{ data: { source: 'PRKAR2A', target: 'PRKACA', directed: 'false', weight: 0.9999530000000001} },
-{ data: { source: 'PRKAR2A', target: 'PRKACB', directed: 'false', weight: 0.931866} },
-{ data: { source: 'PRKAR2A', target: 'AKAP9', directed: 'false', weight: 0.9271739999999999} },
-{ data: { source: 'PRKAR2A', target: 'CDK5RAP2', directed: 'false', weight: 0.5653779999999999} },
-{ data: { source: 'CDK5RAP2', target: 'PRKACA', directed: 'false', weight: 0.180578} },
-{ data: { source: 'CDK5RAP2', target: 'PRKACB', directed: 'false', weight: 0.599672} },
-{ data: { source: 'CDK5RAP2', target: 'AKAP9', directed: 'false', weight: 0.796438} },
-{ data: { source: 'PRKACB', target: 'PRKACA', directed: 'false', weight: 0.999026} },
-{ data: { source: 'PRKACB', target: 'AKAP9', directed: 'false', weight: 0.9776100000000001} },
-{ data: { source: 'PRKACB', target: 'PRKAR1A', directed: 'false', weight: 0.974497} },
-{ data: { source: 'PRKACA', target: 'PKLR', directed: 'false', weight: 0.647798} },
-{ data: { source: 'PRKACA', target: 'AKAP9', directed: 'false', weight: 0.571231} }]},
+elements:{nodes: [{data: { id: 'PCID2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5JVF3" }},
+{data: { id: 'UPB1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UBR1" }},
+{data: { id: 'ADPRHL2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NX46" }}], 
+ edges: [{ data: { source: 'PCID2', target: 'ADPRHL2', directed: 'false', weight: 0.701113} },
+{ data: { source: 'PCID2', target: 'UPB1', directed: 'false', weight: 0.68797} }]},
 
 style: [
     {
@@ -104,11 +83,6 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.37500
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        5 interacting protein(s): <br>CEP68 PRKAR2A CDK5RAP2 PRKACA AKAP9
     </section>
     </body>
     </html>

@@ -30,19 +30,18 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'PARP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P09874" }},
-{data: { id: 'ATE1', score: 4, type: 'cov_link', href: "https://www.uniprot.org/uniprot/O95260" }},
-{data: { id: 'BANF1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75531" }}], 
- edges: [{ data: { source: 'PARP1', target: 'BANF1', directed: 'false', weight: 0.579476} },
-{ data: { source: 'PARP1', target: 'ATE1', directed: 'false', weight: 0.5} }]},
+elements:{nodes: [{data: { id: 'SPATA6L', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q8N4H0" }},
+{data: { id: 'KIF4A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95239" }},
+{data: { id: 'ZBTB1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y2K1" }}], 
+ edges: [{ data: { source: 'SPATA6L', target: 'KIF4A', directed: 'false', weight: 0.9801489999999999} },
+{ data: { source: 'SPATA6L', target: 'ZBTB1', directed: 'false', weight: 0.8150350000000001} },
+{ data: { source: 'KIF4A', target: 'ZBTB1', directed: 'false', weight: 0.151455} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 10,
-		'width':'10',
-		'height': '10',	
+		'font-size': 30,
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}                                
@@ -54,7 +53,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
 								'line-color': 'blue',
 								'opacity': 0.5
 							}
@@ -63,10 +62,7 @@ style: [
 
 });
 cy.layout({
-    'name': 'fcose',
-		'animate':false,
-	'nodeDimensionsIncludeLabels':true,
-	'nodeSeparation': 1000
+    name: 'circle'
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -83,11 +79,6 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.38750
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>ATE1
     </section>
     </body>
     </html>

@@ -30,18 +30,36 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'RIC3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q7Z5B4" }},
-{data: { id: 'ERLIN2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O94905" }},
-{data: { id: 'TAPT1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q6NXT6" }}], 
- edges: [{ data: { source: 'RIC3', target: 'TAPT1', directed: 'false', weight: 0.8953459999999999} },
-{ data: { source: 'RIC3', target: 'ERLIN2', directed: 'false', weight: 0.54557} },
-{ data: { source: 'ERLIN2', target: 'TAPT1', directed: 'false', weight: 0.133456} }]},
+elements:{nodes: [{data: { id: 'USO1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60763" }},
+{data: { id: 'SEC13', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P55735" }},
+{data: { id: 'SEC24C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P53992" }},
+{data: { id: 'SEC23B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15437" }},
+{data: { id: 'SEC24B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95487" }},
+{data: { id: 'SEC24D', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O94855" }},
+{data: { id: 'FAM83H', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6ZRV2" }}], 
+ edges: [{ data: { source: 'USO1', target: 'SEC24C', directed: 'false', weight: 0.285727} },
+{ data: { source: 'USO1', target: 'SEC24B', directed: 'false', weight: 0.224431} },
+{ data: { source: 'USO1', target: 'FAM83H', directed: 'false', weight: 0.179514} },
+{ data: { source: 'SEC13', target: 'SEC23B', directed: 'false', weight: 0.7157720000000001} },
+{ data: { source: 'SEC13', target: 'SEC24D', directed: 'false', weight: 0.047635500000000004} },
+{ data: { source: 'SEC13', target: 'FAM83H', directed: 'false', weight: 0.925248} },
+{ data: { source: 'SEC13', target: 'SEC24B', directed: 'false', weight: 0.799714} },
+{ data: { source: 'SEC24C', target: 'SEC23B', directed: 'false', weight: 0.990466} },
+{ data: { source: 'SEC24C', target: 'SEC24D', directed: 'false', weight: 0.827932} },
+{ data: { source: 'SEC24C', target: 'SEC24B', directed: 'false', weight: 0.884281} },
+{ data: { source: 'SEC24C', target: 'FAM83H', directed: 'false', weight: 0.182515} },
+{ data: { source: 'SEC23B', target: 'SEC24D', directed: 'false', weight: 0.9915129999999999} },
+{ data: { source: 'SEC23B', target: 'SEC24B', directed: 'false', weight: 0.964398} },
+{ data: { source: 'SEC24B', target: 'SEC24D', directed: 'false', weight: 0.030289299999999998} },
+{ data: { source: 'SEC24B', target: 'FAM83H', directed: 'false', weight: 0.359668} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 30,
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}                                
@@ -53,7 +71,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
 								'line-color': 'blue',
 								'opacity': 0.5
 							}
@@ -62,7 +80,10 @@ style: [
 
 });
 cy.layout({
-    name: 'circle'
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -79,11 +100,6 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.39375
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>TAPT1
     </section>
     </body>
     </html>

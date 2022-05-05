@@ -30,14 +30,18 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'CD200R1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TD46" }},
-{data: { id: 'TCP10', score: 5.0, type: '', href: "https://www.uniprot.org/uniprot/Q8TDR4" }},
-{data: { id: 'TCP10L2', score: 1, type: '', href: "https://www.uniprot.org/uniprot/F5GYV4" }},
-{data: { id: 'GRIPAP1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q4V328" }}], 
- edges: [{ data: { source: 'CD200R1', target: 'TCP10L2', directed: 'false', weight: 0.439921} },
-{ data: { source: 'TCP10', target: 'TCP10L2', directed: 'false', weight: 0.980618} },
-{ data: { source: 'TCP10', target: 'GRIPAP1', directed: 'false', weight: 0.140692} },
-{ data: { source: 'TCP10L2', target: 'GRIPAP1', directed: 'false', weight: 0.793308} }]},
+elements:{nodes: [{data: { id: 'ZNF747', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q9BV97" }},
+{data: { id: 'ZNF707', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q96C28" }},
+{data: { id: 'ZNF273', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q14593" }},
+{data: { id: 'TOR2A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N2E6" }},
+{data: { id: 'TOR1A', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/O14656" }}], 
+ edges: [{ data: { source: 'TOR2A', target: 'ZNF747', directed: 'false', weight: 0.140692} },
+{ data: { source: 'TOR2A', target: 'ZNF707', directed: 'false', weight: 0.818757} },
+{ data: { source: 'TOR2A', target: 'TOR1A', directed: 'false', weight: 0.5363939999999999} },
+{ data: { source: 'TOR2A', target: 'ZNF273', directed: 'false', weight: 0.140692} },
+{ data: { source: 'ZNF707', target: 'ZNF747', directed: 'false', weight: 0.9027930000000001} },
+{ data: { source: 'ZNF707', target: 'ZNF273', directed: 'false', weight: 0.685465} },
+{ data: { source: 'ZNF273', target: 'ZNF747', directed: 'false', weight: 0.171414} }]},
 
 style: [
     {
@@ -90,7 +94,7 @@ cy.on('tap', 'node', function(){
         <br>
         Connection to SARS-COV2: 
         <br>
-        1 interacting protein(s): <br>GRIPAP1
+        1 interacting protein(s): <br>TOR1A
     </section>
     </body>
     </html>

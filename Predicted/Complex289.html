@@ -30,14 +30,21 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'RNF166', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96A37" }},
-{data: { id: 'PARP11', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NR21" }},
-{data: { id: 'KIF1A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q12756" }},
-{data: { id: 'HECTD2', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q5U5R9" }}], 
- edges: [{ data: { source: 'RNF166', target: 'HECTD2', directed: 'false', weight: 0.9740840000000001} },
-{ data: { source: 'RNF166', target: 'KIF1A', directed: 'false', weight: 0.348523} },
-{ data: { source: 'RNF166', target: 'PARP11', directed: 'false', weight: 0.333723} },
-{ data: { source: 'KIF1A', target: 'HECTD2', directed: 'false', weight: 0.151455} }]},
+elements:{nodes: [{data: { id: 'TPI1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P60174" }},
+{data: { id: 'TKT', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P29401" }},
+{data: { id: 'GAPDH', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P04406" }},
+{data: { id: 'PGK1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P00558" }},
+{data: { id: 'MPI', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P34949" }},
+{data: { id: 'SRI', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P30626" }}], 
+ edges: [{ data: { source: 'TPI1', target: 'PGK1', directed: 'false', weight: 0.27197} },
+{ data: { source: 'TPI1', target: 'GAPDH', directed: 'false', weight: 0.861877} },
+{ data: { source: 'TPI1', target: 'TKT', directed: 'false', weight: 0.97372} },
+{ data: { source: 'TPI1', target: 'SRI', directed: 'false', weight: 0.561191} },
+{ data: { source: 'TKT', target: 'GAPDH', directed: 'false', weight: 0.00538335} },
+{ data: { source: 'TKT', target: 'MPI', directed: 'false', weight: 0.737691} },
+{ data: { source: 'GAPDH', target: 'PGK1', directed: 'false', weight: 0.987232} },
+{ data: { source: 'GAPDH', target: 'SRI', directed: 'false', weight: 0.09405880000000001} },
+{ data: { source: 'MPI', target: 'SRI', directed: 'false', weight: 0.808258} }]},
 
 style: [
     {

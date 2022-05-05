@@ -30,16 +30,20 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'SHARPIN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H0F6" }},
-{data: { id: 'LRSAM1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6UWE0" }},
-{data: { id: 'RNF31', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96EP0" }},
-{data: { id: 'LIPF', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P07098" }}], 
- edges: [{ data: { source: 'SHARPIN', target: 'LIPF', directed: 'false', weight: 0.9741709999999999} },
-{ data: { source: 'SHARPIN', target: 'RNF31', directed: 'false', weight: 0.222827} },
-{ data: { source: 'SHARPIN', target: 'LRSAM1', directed: 'false', weight: 0.133456} },
-{ data: { source: 'LRSAM1', target: 'LIPF', directed: 'false', weight: 0.9687459999999999} },
-{ data: { source: 'LRSAM1', target: 'RNF31', directed: 'false', weight: 0.108694} },
-{ data: { source: 'RNF31', target: 'LIPF', directed: 'false', weight: 0.813453} }]},
+elements:{nodes: [{data: { id: 'GINS4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BRT9" }},
+{data: { id: 'TIMELESS', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UNS1" }},
+{data: { id: 'GINS3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BRX5" }},
+{data: { id: 'TIPIN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BVW5" }},
+{data: { id: 'CLSPN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HAW4" }}], 
+ edges: [{ data: { source: 'GINS4', target: 'TIPIN', directed: 'false', weight: 0.986808} },
+{ data: { source: 'GINS4', target: 'TIMELESS', directed: 'false', weight: 0.8841959999999999} },
+{ data: { source: 'GINS4', target: 'GINS3', directed: 'false', weight: 0.9985780000000001} },
+{ data: { source: 'TIMELESS', target: 'TIPIN', directed: 'false', weight: 0.999973} },
+{ data: { source: 'TIMELESS', target: 'GINS3', directed: 'false', weight: 0.714755} },
+{ data: { source: 'TIMELESS', target: 'CLSPN', directed: 'false', weight: 0.24882600000000002} },
+{ data: { source: 'GINS3', target: 'TIPIN', directed: 'false', weight: 0.9714459999999999} },
+{ data: { source: 'GINS3', target: 'CLSPN', directed: 'false', weight: 0.796709} },
+{ data: { source: 'CLSPN', target: 'TIPIN', directed: 'false', weight: 0.43237} }]},
 
 style: [
     {
@@ -82,7 +86,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.39375
+    Complex Score  = 0.39688
     </section>
     </body>
     </html>

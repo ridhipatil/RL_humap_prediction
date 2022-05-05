@@ -30,18 +30,59 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'YIPF5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q969M3" }},
-{data: { id: 'YIF1A', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/O95070" }},
-{data: { id: 'YIF1B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5BJH7" }}], 
- edges: [{ data: { source: 'YIF1B', target: 'YIF1A', directed: 'false', weight: 0.193571} },
-{ data: { source: 'YIF1B', target: 'YIPF5', directed: 'false', weight: 0.5} },
-{ data: { source: 'YIF1A', target: 'YIPF5', directed: 'false', weight: 0.854605} }]},
+elements:{nodes: [{data: { id: 'SEPTIN3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UH03" }},
+{data: { id: 'SEPTIN4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43236" }},
+{data: { id: 'SEPTIN6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14141" }},
+{data: { id: 'PCMTD2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NV79" }},
+{data: { id: 'SEPTIN12', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IYM1" }},
+{data: { id: 'SEPTIN2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15019" }},
+{data: { id: 'SEPTIN9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UHD8" }},
+{data: { id: 'SEPTIN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WYJ6" }},
+{data: { id: 'SEPTIN11', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NVA2" }},
+{data: { id: 'SEPTIN14', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6ZU15" }}], 
+ edges: [{ data: { source: 'SEPTIN4', target: 'SEPTIN9', directed: 'false', weight: 0.778296} },
+{ data: { source: 'SEPTIN4', target: 'SEPTIN2', directed: 'false', weight: 0.778296} },
+{ data: { source: 'SEPTIN4', target: 'SEPTIN6', directed: 'false', weight: 0.621321} },
+{ data: { source: 'SEPTIN4', target: 'SEPTIN11', directed: 'false', weight: 0.9812299999999999} },
+{ data: { source: 'SEPTIN4', target: 'SEPTIN1', directed: 'false', weight: 0.9694360000000001} },
+{ data: { source: 'SEPTIN4', target: 'SEPTIN3', directed: 'false', weight: 0.581171} },
+{ data: { source: 'SEPTIN4', target: 'SEPTIN14', directed: 'false', weight: 0.238157} },
+{ data: { source: 'SEPTIN4', target: 'SEPTIN12', directed: 'false', weight: 0.094113} },
+{ data: { source: 'SEPTIN14', target: 'SEPTIN9', directed: 'false', weight: 0.222827} },
+{ data: { source: 'SEPTIN14', target: 'SEPTIN2', directed: 'false', weight: 0.222827} },
+{ data: { source: 'SEPTIN14', target: 'SEPTIN6', directed: 'false', weight: 0.567948} },
+{ data: { source: 'SEPTIN14', target: 'SEPTIN11', directed: 'false', weight: 0.200625} },
+{ data: { source: 'SEPTIN14', target: 'SEPTIN3', directed: 'false', weight: 0.9609110000000001} },
+{ data: { source: 'SEPTIN14', target: 'PCMTD2', directed: 'false', weight: 0.10556600000000001} },
+{ data: { source: 'SEPTIN6', target: 'SEPTIN9', directed: 'false', weight: 0.9999889999999999} },
+{ data: { source: 'SEPTIN6', target: 'SEPTIN2', directed: 'false', weight: 0.9999299999999999} },
+{ data: { source: 'SEPTIN6', target: 'SEPTIN11', directed: 'false', weight: 0.9999809999999999} },
+{ data: { source: 'SEPTIN6', target: 'SEPTIN3', directed: 'false', weight: 0.860115} },
+{ data: { source: 'SEPTIN6', target: 'SEPTIN1', directed: 'false', weight: 0.400644} },
+{ data: { source: 'SEPTIN6', target: 'SEPTIN12', directed: 'false', weight: 0.346996} },
+{ data: { source: 'PCMTD2', target: 'SEPTIN3', directed: 'false', weight: 0.435543} },
+{ data: { source: 'SEPTIN12', target: 'SEPTIN9', directed: 'false', weight: 0.13042} },
+{ data: { source: 'SEPTIN12', target: 'SEPTIN2', directed: 'false', weight: 0.426575} },
+{ data: { source: 'SEPTIN12', target: 'SEPTIN11', directed: 'false', weight: 0.250232} },
+{ data: { source: 'SEPTIN12', target: 'SEPTIN3', directed: 'false', weight: 0.155749} },
+{ data: { source: 'SEPTIN2', target: 'SEPTIN9', directed: 'false', weight: 1.0} },
+{ data: { source: 'SEPTIN2', target: 'SEPTIN11', directed: 'false', weight: 0.998223} },
+{ data: { source: 'SEPTIN2', target: 'SEPTIN3', directed: 'false', weight: 0.6377229999999999} },
+{ data: { source: 'SEPTIN2', target: 'SEPTIN1', directed: 'false', weight: 0.09873910000000001} },
+{ data: { source: 'SEPTIN9', target: 'SEPTIN11', directed: 'false', weight: 0.999885} },
+{ data: { source: 'SEPTIN9', target: 'SEPTIN3', directed: 'false', weight: 0.704365} },
+{ data: { source: 'SEPTIN9', target: 'SEPTIN1', directed: 'false', weight: 0.455888} },
+{ data: { source: 'SEPTIN1', target: 'SEPTIN11', directed: 'false', weight: 0.402524} },
+{ data: { source: 'SEPTIN1', target: 'SEPTIN3', directed: 'false', weight: 0.359371} },
+{ data: { source: 'SEPTIN11', target: 'SEPTIN3', directed: 'false', weight: 0.7786850000000001} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 30,
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}                                
@@ -53,7 +94,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
 								'line-color': 'blue',
 								'opacity': 0.5
 							}
@@ -62,7 +103,10 @@ style: [
 
 });
 cy.layout({
-    name: 'circle'
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -79,11 +123,6 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.39375
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>YIF1A
     </section>
     </body>
     </html>

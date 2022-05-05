@@ -30,36 +30,18 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'GALK1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P51570" }},
-{data: { id: 'CTBP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13363" }},
-{data: { id: 'HIC2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96JB3" }},
-{data: { id: 'ZEB1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P37275" }},
-{data: { id: 'ZNF217', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75362" }},
-{data: { id: 'ZNF516', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q92618" }},
-{data: { id: 'C15orf39', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q6ZRI6" }},
-{data: { id: 'CTBP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P56545" }}], 
- edges: [{ data: { source: 'GALK1', target: 'CTBP1', directed: 'false', weight: 0.37205900000000003} },
-{ data: { source: 'CTBP1', target: 'ZNF217', directed: 'false', weight: 0.991474} },
-{ data: { source: 'CTBP1', target: 'CTBP2', directed: 'false', weight: 0.960866} },
-{ data: { source: 'CTBP1', target: 'ZNF516', directed: 'false', weight: 0.958958} },
-{ data: { source: 'CTBP1', target: 'ZEB1', directed: 'false', weight: 0.945881} },
-{ data: { source: 'CTBP1', target: 'HIC2', directed: 'false', weight: 0.7730020000000001} },
-{ data: { source: 'CTBP1', target: 'C15orf39', directed: 'false', weight: 0.614613} },
-{ data: { source: 'HIC2', target: 'ZNF217', directed: 'false', weight: 0.133456} },
-{ data: { source: 'HIC2', target: 'CTBP2', directed: 'false', weight: 0.108694} },
-{ data: { source: 'HIC2', target: 'ZNF516', directed: 'false', weight: 0.151455} },
-{ data: { source: 'HIC2', target: 'ZEB1', directed: 'false', weight: 0.133456} },
-{ data: { source: 'HIC2', target: 'C15orf39', directed: 'false', weight: 0.112499} },
-{ data: { source: 'ZEB1', target: 'ZNF217', directed: 'false', weight: 0.133456} },
-{ data: { source: 'ZEB1', target: 'CTBP2', directed: 'false', weight: 0.108694} },
-{ data: { source: 'ZEB1', target: 'ZNF516', directed: 'false', weight: 0.151455} },
-{ data: { source: 'ZEB1', target: 'C15orf39', directed: 'false', weight: 0.112499} },
-{ data: { source: 'ZNF217', target: 'CTBP2', directed: 'false', weight: 0.6392909999999999} },
-{ data: { source: 'ZNF217', target: 'ZNF516', directed: 'false', weight: 0.151455} },
-{ data: { source: 'ZNF217', target: 'C15orf39', directed: 'false', weight: 0.112499} },
-{ data: { source: 'ZNF516', target: 'CTBP2', directed: 'false', weight: 0.12378900000000001} },
-{ data: { source: 'ZNF516', target: 'C15orf39', directed: 'false', weight: 0.128057} },
-{ data: { source: 'C15orf39', target: 'CTBP2', directed: 'false', weight: 0.09128789999999999} }]},
+elements:{nodes: [{data: { id: 'NAT10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H0A0" }},
+{data: { id: 'FBL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P22087" }},
+{data: { id: 'ZNF768', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H5H4" }},
+{data: { id: 'RPL15', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P61313" }},
+{data: { id: 'DHX37', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IY37" }},
+{data: { id: 'TUFM', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49411" }}], 
+ edges: [{ data: { source: 'NAT10', target: 'FBL', directed: 'false', weight: 0.179753} },
+{ data: { source: 'NAT10', target: 'DHX37', directed: 'false', weight: 0.9302799999999999} },
+{ data: { source: 'NAT10', target: 'ZNF768', directed: 'false', weight: 0.34641700000000003} },
+{ data: { source: 'ZNF768', target: 'RPL15', directed: 'false', weight: 0.8817870000000001} },
+{ data: { source: 'FBL', target: 'TUFM', directed: 'false', weight: 0.0158657} },
+{ data: { source: 'TUFM', target: 'RPL15', directed: 'false', weight: 0.988244} }]},
 
 style: [
     {
@@ -107,7 +89,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.37500
+    Complex Score  = 0.35000
     </section>
     </body>
     </html>

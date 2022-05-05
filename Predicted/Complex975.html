@@ -30,21 +30,16 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'SIPA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96FS4" }},
-{data: { id: 'CALM1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P0DP23" }},
-{data: { id: 'HMGB2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P26583" }},
-{data: { id: 'ARHGAP11A', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q6P4F7" }},
-{data: { id: 'CALML3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P27482" }},
-{data: { id: 'CORO2A', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q92828" }}], 
- edges: [{ data: { source: 'SIPA1', target: 'CALML3', directed: 'false', weight: 0.654466} },
-{ data: { source: 'SIPA1', target: 'CALM1', directed: 'false', weight: 0.2159} },
-{ data: { source: 'SIPA1', target: 'HMGB2', directed: 'false', weight: 0.0783855} },
-{ data: { source: 'SIPA1', target: 'ARHGAP11A', directed: 'false', weight: 0.383602} },
-{ data: { source: 'SIPA1', target: 'CORO2A', directed: 'false', weight: 0.26243299999999997} },
-{ data: { source: 'ARHGAP11A', target: 'CORO2A', directed: 'false', weight: 0.27329499999999995} },
-{ data: { source: 'HMGB2', target: 'CALML3', directed: 'false', weight: 0.8419129999999999} },
-{ data: { source: 'HMGB2', target: 'CALM1', directed: 'false', weight: 0.12291500000000001} },
-{ data: { source: 'CALM1', target: 'CALML3', directed: 'false', weight: 0.986293} }]},
+elements:{nodes: [{data: { id: 'ATP6V1E1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P36543" }},
+{data: { id: 'ASPDH', score: 3, type: '', href: "https://www.uniprot.org/uniprot/A6ND91" }},
+{data: { id: 'SPATC1L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H0A9" }},
+{data: { id: 'RAB8A', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P61006" }},
+{data: { id: 'HK1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P19367" }}], 
+ edges: [{ data: { source: 'ATP6V1E1', target: 'HK1', directed: 'false', weight: 0.512648} },
+{ data: { source: 'ASPDH', target: 'RAB8A', directed: 'false', weight: 0.664029} },
+{ data: { source: 'ASPDH', target: 'HK1', directed: 'false', weight: 0.30816} },
+{ data: { source: 'ASPDH', target: 'SPATC1L', directed: 'false', weight: 0.265727} },
+{ data: { source: 'RAB8A', target: 'HK1', directed: 'false', weight: 0.00791552} }]},
 
 style: [
     {
@@ -93,6 +88,11 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.37500
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>RAB8A
     </section>
     </body>
     </html>

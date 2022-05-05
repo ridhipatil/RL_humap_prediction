@@ -30,11 +30,25 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'ADD2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P35612" }},
-{data: { id: 'DPPA4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q7L190" }},
-{data: { id: 'SNX9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y5X1" }}], 
- edges: [{ data: { source: 'ADD2', target: 'DPPA4', directed: 'false', weight: 0.618409} },
-{ data: { source: 'DPPA4', target: 'SNX9', directed: 'false', weight: 0.53198} }]},
+elements:{nodes: [{data: { id: 'TMEM63A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O94886" }},
+{data: { id: 'SLC17A5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NRA2" }},
+{data: { id: 'PTPRZ1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P23471" }},
+{data: { id: 'LGALS3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P17931" }},
+{data: { id: 'HEG1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9ULI3" }},
+{data: { id: 'SDK1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q7Z5N4" }},
+{data: { id: 'LGALS8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00214" }}], 
+ edges: [{ data: { source: 'LGALS8', target: 'SLC17A5', directed: 'false', weight: 0.835073} },
+{ data: { source: 'SLC17A5', target: 'SDK1', directed: 'false', weight: 0.33813200000000004} },
+{ data: { source: 'SLC17A5', target: 'HEG1', directed: 'false', weight: 0.33813200000000004} },
+{ data: { source: 'SLC17A5', target: 'TMEM63A', directed: 'false', weight: 0.28781100000000004} },
+{ data: { source: 'PTPRZ1', target: 'SDK1', directed: 'false', weight: 0.151455} },
+{ data: { source: 'PTPRZ1', target: 'LGALS3', directed: 'false', weight: 0.8449260000000001} },
+{ data: { source: 'PTPRZ1', target: 'HEG1', directed: 'false', weight: 0.151455} },
+{ data: { source: 'LGALS3', target: 'SDK1', directed: 'false', weight: 0.8939290000000001} },
+{ data: { source: 'LGALS3', target: 'HEG1', directed: 'false', weight: 0.336084} },
+{ data: { source: 'HEG1', target: 'SDK1', directed: 'false', weight: 0.33813200000000004} },
+{ data: { source: 'HEG1', target: 'TMEM63A', directed: 'false', weight: 0.28781100000000004} },
+{ data: { source: 'SDK1', target: 'TMEM63A', directed: 'false', weight: 0.28781100000000004} }]},
 
 style: [
     {

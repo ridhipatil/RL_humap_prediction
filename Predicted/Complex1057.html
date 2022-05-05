@@ -30,20 +30,15 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'RAB12', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6IQ22" }},
-{data: { id: 'RAB6A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P20340" }},
-{data: { id: 'RAB4A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P20338" }},
-{data: { id: 'YES1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P07947" }},
-{data: { id: 'RAB2A', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P61019" }},
-{data: { id: 'GDI1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P31150" }}], 
- edges: [{ data: { source: 'RAB6A', target: 'GDI1', directed: 'false', weight: 0.713303} },
-{ data: { source: 'RAB6A', target: 'RAB12', directed: 'false', weight: 0.165074} },
-{ data: { source: 'RAB6A', target: 'RAB4A', directed: 'false', weight: 0.165074} },
-{ data: { source: 'RAB6A', target: 'RAB2A', directed: 'false', weight: 0.477562} },
-{ data: { source: 'YES1', target: 'RAB2A', directed: 'false', weight: 0.061757799999999995} },
-{ data: { source: 'RAB4A', target: 'GDI1', directed: 'false', weight: 0.963937} },
-{ data: { source: 'RAB4A', target: 'RAB12', directed: 'false', weight: 0.165074} },
-{ data: { source: 'GDI1', target: 'RAB12', directed: 'false', weight: 0.980401} }]},
+elements:{nodes: [{data: { id: 'BCAS2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75934" }},
+{data: { id: 'UBL5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BZL1" }},
+{data: { id: 'C1orf52', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q8N6N3" }},
+{data: { id: 'PDIA5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14554" }},
+{data: { id: 'MCM2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P33993" }}], 
+ edges: [{ data: { source: 'C1orf52', target: 'BCAS2', directed: 'false', weight: 0.0770887} },
+{ data: { source: 'BCAS2', target: 'MCM2', directed: 'false', weight: 0.325198} },
+{ data: { source: 'BCAS2', target: 'PDIA5', directed: 'false', weight: 0.9043889999999999} },
+{ data: { source: 'BCAS2', target: 'UBL5', directed: 'false', weight: 0.591747} }]},
 
 style: [
     {
@@ -91,12 +86,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.37500
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>RAB2A
+    Complex Score  = 0.35000
     </section>
     </body>
     </html>

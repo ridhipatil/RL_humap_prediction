@@ -30,17 +30,20 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'AKAP17A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q02040" }},
-{data: { id: 'USP39', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q53GS9" }},
-{data: { id: 'SMU1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q2TAY7" }},
-{data: { id: 'IK', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13123" }},
-{data: { id: 'PRPF6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O94906" }}], 
- edges: [{ data: { source: 'IK', target: 'PRPF6', directed: 'false', weight: 0.35625100000000004} },
-{ data: { source: 'IK', target: 'SMU1', directed: 'false', weight: 0.9999879999999999} },
-{ data: { source: 'IK', target: 'USP39', directed: 'false', weight: 0.112499} },
-{ data: { source: 'USP39', target: 'PRPF6', directed: 'false', weight: 0.9943790000000001} },
-{ data: { source: 'PRPF6', target: 'SMU1', directed: 'false', weight: 0.08011660000000001} },
-{ data: { source: 'AKAP17A', target: 'SMU1', directed: 'false', weight: 0.2823} }]},
+elements:{nodes: [{data: { id: 'DLD', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P09622" }},
+{data: { id: 'IGF2BP3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00425" }},
+{data: { id: 'DLST', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P36957" }},
+{data: { id: 'NACA2', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q9H009" }},
+{data: { id: 'OGDH', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q02218" }},
+{data: { id: 'MRPS36', score: 4, type: '', href: "https://www.uniprot.org/uniprot/P82909" }}], 
+ edges: [{ data: { source: 'IGF2BP3', target: 'NACA2', directed: 'false', weight: 0.0812777} },
+{ data: { source: 'MRPS36', target: 'OGDH', directed: 'false', weight: 0.211796} },
+{ data: { source: 'MRPS36', target: 'DLST', directed: 'false', weight: 0.373051} },
+{ data: { source: 'MRPS36', target: 'DLD', directed: 'false', weight: 0.9799530000000001} },
+{ data: { source: 'DLD', target: 'OGDH', directed: 'false', weight: 0.9984559999999999} },
+{ data: { source: 'DLD', target: 'DLST', directed: 'false', weight: 0.9986430000000001} },
+{ data: { source: 'DLST', target: 'OGDH', directed: 'false', weight: 0.999834} },
+{ data: { source: 'DLST', target: 'NACA2', directed: 'false', weight: 0.591349} }]},
 
 style: [
     {

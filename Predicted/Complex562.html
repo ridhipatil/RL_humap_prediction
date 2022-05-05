@@ -30,25 +30,17 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'ERCC2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P18074" }},
-{data: { id: 'EIF2A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P05198" }},
-{data: { id: 'CCNH', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P51946" }},
-{data: { id: 'CDK7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P50613" }},
-{data: { id: 'TOPBP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92547" }},
-{data: { id: 'MNAT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P51948" }},
-{data: { id: 'ERCC5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P28715" }}], 
- edges: [{ data: { source: 'ERCC2', target: 'MNAT1', directed: 'false', weight: 0.6261899999999999} },
-{ data: { source: 'ERCC2', target: 'CDK7', directed: 'false', weight: 0.819623} },
-{ data: { source: 'ERCC2', target: 'CCNH', directed: 'false', weight: 0.872467} },
-{ data: { source: 'ERCC2', target: 'ERCC5', directed: 'false', weight: 0.20436700000000002} },
-{ data: { source: 'ERCC2', target: 'TOPBP1', directed: 'false', weight: 0.433579} },
-{ data: { source: 'EIF2A', target: 'TOPBP1', directed: 'false', weight: 0.790989} },
-{ data: { source: 'CCNH', target: 'MNAT1', directed: 'false', weight: 0.999893} },
-{ data: { source: 'CCNH', target: 'CDK7', directed: 'false', weight: 0.9999129999999999} },
-{ data: { source: 'CCNH', target: 'ERCC5', directed: 'false', weight: 0.991977} },
-{ data: { source: 'CDK7', target: 'MNAT1', directed: 'false', weight: 0.9999979999999999} },
-{ data: { source: 'CDK7', target: 'ERCC5', directed: 'false', weight: 0.2099} },
-{ data: { source: 'MNAT1', target: 'ERCC5', directed: 'false', weight: 0.175994} }]},
+elements:{nodes: [{data: { id: 'AKAP14', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86UN6" }},
+{data: { id: 'EFCAB7', score: 4, type: '', href: "https://www.uniprot.org/uniprot/A8K855" }},
+{data: { id: 'ROPN1L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96C74" }},
+{data: { id: 'SPA17', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15506" }},
+{data: { id: 'PRKAR2B', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P31323" }}], 
+ edges: [{ data: { source: 'AKAP14', target: 'PRKAR2B', directed: 'false', weight: 0.824614} },
+{ data: { source: 'AKAP14', target: 'SPA17', directed: 'false', weight: 0.9289040000000001} },
+{ data: { source: 'AKAP14', target: 'EFCAB7', directed: 'false', weight: 0.0936635} },
+{ data: { source: 'EFCAB7', target: 'SPA17', directed: 'false', weight: 0.9582809999999999} },
+{ data: { source: 'EFCAB7', target: 'ROPN1L', directed: 'false', weight: 0.117318} },
+{ data: { source: 'ROPN1L', target: 'SPA17', directed: 'false', weight: 0.808106} }]},
 
 style: [
     {
@@ -96,7 +88,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.37500
+    Complex Score  = 0.38750
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>PRKAR2B
     </section>
     </body>
     </html>

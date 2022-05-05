@@ -30,37 +30,16 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'PEX19', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P40855" }},
-{data: { id: 'SLC44A2', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q8IWA5" }},
-{data: { id: 'MUL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q969V5" }},
-{data: { id: 'RDH12', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96NR8" }},
-{data: { id: 'GLCE', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O94923" }},
-{data: { id: 'MARC2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q969Z3" }},
-{data: { id: 'RP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75695" }},
-{data: { id: 'GALNT16', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N428" }},
-{data: { id: 'FAM174A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TBP5" }}], 
- edges: [{ data: { source: 'PEX19', target: 'MUL1', directed: 'false', weight: 0.899618} },
-{ data: { source: 'PEX19', target: 'FAM174A', directed: 'false', weight: 0.8782260000000001} },
-{ data: { source: 'PEX19', target: 'RDH12', directed: 'false', weight: 0.736259} },
-{ data: { source: 'PEX19', target: 'GALNT16', directed: 'false', weight: 0.612638} },
-{ data: { source: 'PEX19', target: 'MARC2', directed: 'false', weight: 0.49180100000000004} },
-{ data: { source: 'PEX19', target: 'GLCE', directed: 'false', weight: 0.306035} },
-{ data: { source: 'SLC44A2', target: 'RP2', directed: 'false', weight: 0.9531200000000001} },
-{ data: { source: 'SLC44A2', target: 'MARC2', directed: 'false', weight: 0.151455} },
-{ data: { source: 'MUL1', target: 'GLCE', directed: 'false', weight: 0.216185} },
-{ data: { source: 'MUL1', target: 'GALNT16', directed: 'false', weight: 0.133451} },
-{ data: { source: 'MUL1', target: 'FAM174A', directed: 'false', weight: 0.133451} },
-{ data: { source: 'MUL1', target: 'MARC2', directed: 'false', weight: 0.117318} },
-{ data: { source: 'MUL1', target: 'RDH12', directed: 'false', weight: 0.108699} },
-{ data: { source: 'RDH12', target: 'FAM174A', directed: 'false', weight: 0.140692} },
-{ data: { source: 'RDH12', target: 'GALNT16', directed: 'false', weight: 0.140692} },
-{ data: { source: 'RDH12', target: 'MARC2', directed: 'false', weight: 0.123797} },
-{ data: { source: 'GLCE', target: 'FAM174A', directed: 'false', weight: 0.140692} },
-{ data: { source: 'GLCE', target: 'GALNT16', directed: 'false', weight: 0.140692} },
-{ data: { source: 'MARC2', target: 'RP2', directed: 'false', weight: 0.36932800000000005} },
-{ data: { source: 'MARC2', target: 'FAM174A', directed: 'false', weight: 0.151455} },
-{ data: { source: 'MARC2', target: 'GALNT16', directed: 'false', weight: 0.151455} },
-{ data: { source: 'GALNT16', target: 'FAM174A', directed: 'false', weight: 0.171414} }]},
+elements:{nodes: [{data: { id: 'REEP6', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q96HR9" }},
+{data: { id: 'ATP1B3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P54709" }},
+{data: { id: 'SCAMP4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q969E2" }},
+{data: { id: 'IL2RG', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P31785" }},
+{data: { id: 'REEP5', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q00765" }}], 
+ edges: [{ data: { source: 'ATP1B3', target: 'REEP5', directed: 'false', weight: 0.7400399999999999} },
+{ data: { source: 'IL2RG', target: 'REEP6', directed: 'false', weight: 0.609776} },
+{ data: { source: 'REEP5', target: 'REEP6', directed: 'false', weight: 0.997417} },
+{ data: { source: 'REEP5', target: 'SCAMP4', directed: 'false', weight: 0.981615} },
+{ data: { source: 'REEP6', target: 'SCAMP4', directed: 'false', weight: 0.165074} }]},
 
 style: [
     {
@@ -113,7 +92,7 @@ cy.on('tap', 'node', function(){
         <br>
         Connection to SARS-COV2: 
         <br>
-        1 interacting protein(s): <br>SLC44A2
+        2 interacting protein(s): <br>REEP6 REEP5
     </section>
     </body>
     </html>

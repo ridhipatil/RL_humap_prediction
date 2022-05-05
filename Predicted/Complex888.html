@@ -30,21 +30,16 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'DDX21', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9NR30" }},
-{data: { id: 'NMNAT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HAN9" }},
-{data: { id: 'GNL2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13823" }},
-{data: { id: 'EEF1G', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P26641" }},
-{data: { id: 'PURA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q00577" }},
-{data: { id: 'RPL3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P39023" }}], 
- edges: [{ data: { source: 'DDX21', target: 'PURA', directed: 'false', weight: 0.999288} },
-{ data: { source: 'DDX21', target: 'GNL2', directed: 'false', weight: 0.999258} },
-{ data: { source: 'DDX21', target: 'NMNAT1', directed: 'false', weight: 0.149834} },
-{ data: { source: 'EEF1G', target: 'RPL3', directed: 'false', weight: 0.861699} },
-{ data: { source: 'EEF1G', target: 'NMNAT1', directed: 'false', weight: 0.0768359} },
-{ data: { source: 'PURA', target: 'GNL2', directed: 'false', weight: 0.991727} },
-{ data: { source: 'PURA', target: 'NMNAT1', directed: 'false', weight: 0.130079} },
-{ data: { source: 'NMNAT1', target: 'RPL3', directed: 'false', weight: 0.141992} },
-{ data: { source: 'NMNAT1', target: 'GNL2', directed: 'false', weight: 0.3332} }]},
+elements:{nodes: [{data: { id: 'SFXN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H9B4" }},
+{data: { id: 'WDR46', score: 4, type: '', href: "https://www.uniprot.org/uniprot/O15213" }},
+{data: { id: 'RAP1B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P61224" }},
+{data: { id: 'FARSA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y285" }},
+{data: { id: 'EPHA7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15375" }}], 
+ edges: [{ data: { source: 'SFXN1', target: 'FARSA', directed: 'false', weight: 0.265216} },
+{ data: { source: 'SFXN1', target: 'EPHA7', directed: 'false', weight: 0.0952728} },
+{ data: { source: 'RAP1B', target: 'FARSA', directed: 'false', weight: 0.33276100000000003} },
+{ data: { source: 'FARSA', target: 'EPHA7', directed: 'false', weight: 0.37827} },
+{ data: { source: 'FARSA', target: 'WDR46', directed: 'false', weight: 0.267967} }]},
 
 style: [
     {
@@ -93,11 +88,6 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.37500
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>DDX21
     </section>
     </body>
     </html>

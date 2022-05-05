@@ -30,20 +30,16 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'ECM1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16610" }},
-{data: { id: 'KPRP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5T749" }},
-{data: { id: 'CPA4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UI42" }},
-{data: { id: 'TGM1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P22735" }},
-{data: { id: 'S100A14', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HCY8" }},
-{data: { id: 'CDSN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15517" }}], 
- edges: [{ data: { source: 'TGM1', target: 'S100A14', directed: 'false', weight: 0.9379790000000001} },
-{ data: { source: 'TGM1', target: 'KPRP', directed: 'false', weight: 0.815565} },
-{ data: { source: 'TGM1', target: 'CPA4', directed: 'false', weight: 0.460449} },
-{ data: { source: 'S100A14', target: 'CPA4', directed: 'false', weight: 0.48261800000000005} },
-{ data: { source: 'S100A14', target: 'KPRP', directed: 'false', weight: 0.46766899999999995} },
-{ data: { source: 'ECM1', target: 'KPRP', directed: 'false', weight: 0.45983999999999997} },
-{ data: { source: 'ECM1', target: 'CDSN', directed: 'false', weight: 0.395366} },
-{ data: { source: 'KPRP', target: 'CPA4', directed: 'false', weight: 0.176802} }]},
+elements:{nodes: [{data: { id: 'NOC4L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BVI4" }},
+{data: { id: 'DHPS', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49366" }},
+{data: { id: 'NOP14', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P78316" }},
+{data: { id: 'SUSD4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5VX71" }},
+{data: { id: 'MAPK3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P27361" }}], 
+ edges: [{ data: { source: 'DHPS', target: 'MAPK3', directed: 'false', weight: 0.9956870000000001} },
+{ data: { source: 'DHPS', target: 'SUSD4', directed: 'false', weight: 0.397516} },
+{ data: { source: 'DHPS', target: 'NOC4L', directed: 'false', weight: 0.0809576} },
+{ data: { source: 'DHPS', target: 'NOP14', directed: 'false', weight: 0.075571} },
+{ data: { source: 'NOP14', target: 'NOC4L', directed: 'false', weight: 0.657651} }]},
 
 style: [
     {

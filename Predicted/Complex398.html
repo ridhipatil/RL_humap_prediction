@@ -30,26 +30,33 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'USP28', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96RU2" }},
-{data: { id: 'MIGA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NAN2" }},
-{data: { id: 'COMTD1', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q86VU5" }},
-{data: { id: 'IFRD1', score: 3, type: '', href: "https://www.uniprot.org/uniprot/O00458" }},
-{data: { id: 'TP53BP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q12888" }}], 
- edges: [{ data: { source: 'MIGA1', target: 'USP28', directed: 'false', weight: 0.140692} },
-{ data: { source: 'MIGA1', target: 'COMTD1', directed: 'false', weight: 0.5} },
-{ data: { source: 'MIGA1', target: 'IFRD1', directed: 'false', weight: 0.140692} },
-{ data: { source: 'IFRD1', target: 'USP28', directed: 'false', weight: 0.171414} },
-{ data: { source: 'IFRD1', target: 'COMTD1', directed: 'false', weight: 0.927182} },
-{ data: { source: 'COMTD1', target: 'USP28', directed: 'false', weight: 0.970143} },
-{ data: { source: 'USP28', target: 'TP53BP1', directed: 'false', weight: 0.628974} }]},
+elements:{nodes: [{data: { id: 'TRMT2B', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q96GJ1" }},
+{data: { id: 'MTG2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H4K7" }},
+{data: { id: 'OXLD1', score: 1, type: '', href: "https://www.uniprot.org/uniprot/Q5BKU9" }},
+{data: { id: 'MOCS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NZB8" }},
+{data: { id: 'PDSS2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86YH6" }},
+{data: { id: 'FMC1', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q96HJ9" }}], 
+ edges: [{ data: { source: 'TRMT2B', target: 'OXLD1', directed: 'false', weight: 0.961917} },
+{ data: { source: 'TRMT2B', target: 'PDSS2', directed: 'false', weight: 0.151455} },
+{ data: { source: 'TRMT2B', target: 'MTG2', directed: 'false', weight: 0.133456} },
+{ data: { source: 'TRMT2B', target: 'MOCS1', directed: 'false', weight: 0.117318} },
+{ data: { source: 'TRMT2B', target: 'FMC1', directed: 'false', weight: 0.112499} },
+{ data: { source: 'MTG2', target: 'OXLD1', directed: 'false', weight: 0.689606} },
+{ data: { source: 'MTG2', target: 'PDSS2', directed: 'false', weight: 0.151455} },
+{ data: { source: 'MTG2', target: 'MOCS1', directed: 'false', weight: 0.117318} },
+{ data: { source: 'MTG2', target: 'FMC1', directed: 'false', weight: 0.112499} },
+{ data: { source: 'OXLD1', target: 'PDSS2', directed: 'false', weight: 0.822559} },
+{ data: { source: 'OXLD1', target: 'MOCS1', directed: 'false', weight: 0.815876} },
+{ data: { source: 'OXLD1', target: 'FMC1', directed: 'false', weight: 0.397652} },
+{ data: { source: 'MOCS1', target: 'PDSS2', directed: 'false', weight: 0.133451} },
+{ data: { source: 'MOCS1', target: 'FMC1', directed: 'false', weight: 0.0986491} },
+{ data: { source: 'PDSS2', target: 'FMC1', directed: 'false', weight: 0.128057} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 10,
-		'width':'10',
-		'height': '10',	
+		'font-size': 30,
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}                                
@@ -61,7 +68,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
 								'line-color': 'blue',
 								'opacity': 0.5
 							}
@@ -70,10 +77,7 @@ style: [
 
 });
 cy.layout({
-    'name': 'fcose',
-		'animate':false,
-	'nodeDimensionsIncludeLabels':true,
-	'nodeSeparation': 1000
+    name: 'circle'
 }).run();
 
 cy.on('tap', 'node', function(){

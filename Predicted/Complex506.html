@@ -30,68 +30,18 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'RSBN1L', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q6PCB5" }},
-{data: { id: 'RPL9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P32969" }},
-{data: { id: 'RPL5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P46777" }},
-{data: { id: 'MYH7B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/A7E2Y1" }},
-{data: { id: 'CCDC124', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q96CT7" }},
-{data: { id: 'RPLP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P05386" }},
-{data: { id: 'CEBPZ', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q03701" }},
-{data: { id: 'NAP1L1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P55209" }},
-{data: { id: 'RPL8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62917" }},
-{data: { id: 'RPS25', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62851" }},
-{data: { id: 'RPL32', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62910" }},
-{data: { id: 'RPS27A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62979" }}], 
- edges: [{ data: { source: 'RSBN1L', target: 'CEBPZ', directed: 'false', weight: 0.21061300000000002} },
-{ data: { source: 'RPL9', target: 'RPS25', directed: 'false', weight: 1.0} },
-{ data: { source: 'RPL9', target: 'RPL5', directed: 'false', weight: 1.0} },
-{ data: { source: 'RPL9', target: 'RPL8', directed: 'false', weight: 0.9999879999999999} },
-{ data: { source: 'RPL9', target: 'RPL32', directed: 'false', weight: 0.9998870000000001} },
-{ data: { source: 'RPL9', target: 'RPS27A', directed: 'false', weight: 0.992043} },
-{ data: { source: 'RPL9', target: 'RPLP1', directed: 'false', weight: 0.9865950000000001} },
-{ data: { source: 'RPL9', target: 'NAP1L1', directed: 'false', weight: 0.90312} },
-{ data: { source: 'RPL9', target: 'MYH7B', directed: 'false', weight: 0.15751300000000001} },
-{ data: { source: 'RPL9', target: 'CCDC124', directed: 'false', weight: 0.0341715} },
-{ data: { source: 'MYH7B', target: 'RPL8', directed: 'false', weight: 0.178285} },
-{ data: { source: 'MYH7B', target: 'RPL5', directed: 'false', weight: 0.651688} },
-{ data: { source: 'MYH7B', target: 'RPS27A', directed: 'false', weight: 0.216088} },
-{ data: { source: 'MYH7B', target: 'RPLP1', directed: 'false', weight: 0.726554} },
-{ data: { source: 'MYH7B', target: 'NAP1L1', directed: 'false', weight: 0.193795} },
-{ data: { source: 'CCDC124', target: 'RPS25', directed: 'false', weight: 0.492703} },
-{ data: { source: 'CCDC124', target: 'RPL8', directed: 'false', weight: 0.134326} },
-{ data: { source: 'CCDC124', target: 'RPL32', directed: 'false', weight: 0.17858800000000002} },
-{ data: { source: 'CCDC124', target: 'RPL5', directed: 'false', weight: 0.121616} },
-{ data: { source: 'CCDC124', target: 'RPS27A', directed: 'false', weight: 0.12287999999999999} },
-{ data: { source: 'CCDC124', target: 'NAP1L1', directed: 'false', weight: 0.0577872} },
-{ data: { source: 'CCDC124', target: 'CEBPZ', directed: 'false', weight: 0.0768359} },
-{ data: { source: 'RPL5', target: 'RPS25', directed: 'false', weight: 0.999999} },
-{ data: { source: 'RPL5', target: 'RPL8', directed: 'false', weight: 1.0} },
-{ data: { source: 'RPL5', target: 'RPL32', directed: 'false', weight: 1.0} },
-{ data: { source: 'RPL5', target: 'RPS27A', directed: 'false', weight: 0.999991} },
-{ data: { source: 'RPL5', target: 'RPLP1', directed: 'false', weight: 0.9999870000000001} },
-{ data: { source: 'RPL5', target: 'NAP1L1', directed: 'false', weight: 0.9886299999999999} },
-{ data: { source: 'RPLP1', target: 'RPS25', directed: 'false', weight: 0.9999319999999999} },
-{ data: { source: 'RPLP1', target: 'RPL32', directed: 'false', weight: 0.97998} },
-{ data: { source: 'RPLP1', target: 'RPS27A', directed: 'false', weight: 0.975915} },
-{ data: { source: 'RPLP1', target: 'NAP1L1', directed: 'false', weight: 0.646336} },
-{ data: { source: 'NAP1L1', target: 'RPS25', directed: 'false', weight: 0.106851} },
-{ data: { source: 'NAP1L1', target: 'RPL8', directed: 'false', weight: 0.542115} },
-{ data: { source: 'NAP1L1', target: 'RPL32', directed: 'false', weight: 0.951974} },
-{ data: { source: 'NAP1L1', target: 'RPS27A', directed: 'false', weight: 0.22652399999999998} },
-{ data: { source: 'RPS25', target: 'RPL8', directed: 'false', weight: 1.0} },
-{ data: { source: 'RPS25', target: 'RPS27A', directed: 'false', weight: 0.999999} },
-{ data: { source: 'RPS25', target: 'RPL32', directed: 'false', weight: 0.9999959999999999} },
-{ data: { source: 'RPS27A', target: 'RPL8', directed: 'false', weight: 0.9999979999999999} },
-{ data: { source: 'RPS27A', target: 'RPL32', directed: 'false', weight: 0.131557} },
-{ data: { source: 'RPL32', target: 'RPL8', directed: 'false', weight: 1.0} }]},
+elements:{nodes: [{data: { id: 'ADGRL3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HAR2" }},
+{data: { id: 'ASGR2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P07307" }},
+{data: { id: 'SERINC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NRX5" }}], 
+ edges: [{ data: { source: 'ADGRL3', target: 'ASGR2', directed: 'false', weight: 0.521277} },
+{ data: { source: 'ADGRL3', target: 'SERINC1', directed: 'false', weight: 0.133451} },
+{ data: { source: 'ASGR2', target: 'SERINC1', directed: 'false', weight: 0.382869} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 10,
-		'width':'10',
-		'height': '10',	
+		'font-size': 30,
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}                                
@@ -103,7 +53,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
 								'line-color': 'blue',
 								'opacity': 0.5
 							}
@@ -112,10 +62,7 @@ style: [
 
 });
 cy.layout({
-    'name': 'fcose',
-		'animate':false,
-	'nodeDimensionsIncludeLabels':true,
-	'nodeSeparation': 1000
+    name: 'circle'
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -131,7 +78,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.37500
+    Complex Score  = 0.38750
     </section>
     </body>
     </html>

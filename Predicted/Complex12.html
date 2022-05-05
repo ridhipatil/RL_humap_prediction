@@ -30,12 +30,25 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'CNNM1', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9NRU3" }},
-{data: { id: 'CNNM3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NE01" }},
-{data: { id: 'HLA-DQB1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P01920" }}], 
- edges: [{ data: { source: 'CNNM1', target: 'CNNM3', directed: 'false', weight: 0.41561800000000004} },
-{ data: { source: 'CNNM1', target: 'HLA-DQB1', directed: 'false', weight: 0.26776300000000003} },
-{ data: { source: 'CNNM3', target: 'HLA-DQB1', directed: 'false', weight: 0.175861} }]},
+elements:{nodes: [{data: { id: 'NUP188', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5SRE5" }},
+{data: { id: 'NUP43', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NFH3" }},
+{data: { id: 'NUP133', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WUM0" }},
+{data: { id: 'NUP42', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15504" }},
+{data: { id: 'NUP205', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92621" }},
+{data: { id: 'NUP214', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P35658" }}], 
+ edges: [{ data: { source: 'NUP188', target: 'NUP43', directed: 'false', weight: 0.586757} },
+{ data: { source: 'NUP188', target: 'NUP133', directed: 'false', weight: 0.313316} },
+{ data: { source: 'NUP188', target: 'NUP214', directed: 'false', weight: 0.6112989999999999} },
+{ data: { source: 'NUP188', target: 'NUP205', directed: 'false', weight: 0.9793129999999999} },
+{ data: { source: 'NUP188', target: 'NUP42', directed: 'false', weight: 0.301227} },
+{ data: { source: 'NUP43', target: 'NUP133', directed: 'false', weight: 0.9999889999999999} },
+{ data: { source: 'NUP43', target: 'NUP205', directed: 'false', weight: 0.920406} },
+{ data: { source: 'NUP43', target: 'NUP42', directed: 'false', weight: 0.353402} },
+{ data: { source: 'NUP133', target: 'NUP205', directed: 'false', weight: 0.660604} },
+{ data: { source: 'NUP133', target: 'NUP42', directed: 'false', weight: 0.282964} },
+{ data: { source: 'NUP42', target: 'NUP214', directed: 'false', weight: 0.386706} },
+{ data: { source: 'NUP42', target: 'NUP205', directed: 'false', weight: 0.48273299999999997} },
+{ data: { source: 'NUP205', target: 'NUP214', directed: 'false', weight: 0.946535} }]},
 
 style: [
     {
@@ -78,7 +91,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.39375
+    Complex Score  = 0.39688
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>NUP214
     </section>
     </body>
     </html>

@@ -30,11 +30,25 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'DLG4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P78352" }},
-{data: { id: 'UFC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y3C8" }},
-{data: { id: 'PTK2B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14289" }}], 
- edges: [{ data: { source: 'PTK2B', target: 'UFC1', directed: 'false', weight: 0.402886} },
-{ data: { source: 'DLG4', target: 'UFC1', directed: 'false', weight: 0.409738} }]},
+elements:{nodes: [{data: { id: 'MCPH1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NEM0" }},
+{data: { id: 'IFT57', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NWB7" }},
+{data: { id: 'CLUAP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96AJ1" }},
+{data: { id: 'TRAF3IP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TDR0" }},
+{data: { id: 'IFT20', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IY31" }},
+{data: { id: 'CRACR2A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BSW2" }},
+{data: { id: 'RABEP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H5N1" }}], 
+ edges: [{ data: { source: 'MCPH1', target: 'CRACR2A', directed: 'false', weight: 0.5266930000000001} },
+{ data: { source: 'IFT57', target: 'TRAF3IP1', directed: 'false', weight: 0.9803719999999999} },
+{ data: { source: 'IFT57', target: 'CLUAP1', directed: 'false', weight: 0.975908} },
+{ data: { source: 'IFT57', target: 'RABEP2', directed: 'false', weight: 0.9639770000000001} },
+{ data: { source: 'IFT57', target: 'IFT20', directed: 'false', weight: 0.9198940000000001} },
+{ data: { source: 'CLUAP1', target: 'TRAF3IP1', directed: 'false', weight: 0.151455} },
+{ data: { source: 'CLUAP1', target: 'CRACR2A', directed: 'false', weight: 0.34892199999999995} },
+{ data: { source: 'CLUAP1', target: 'RABEP2', directed: 'false', weight: 0.151455} },
+{ data: { source: 'CLUAP1', target: 'IFT20', directed: 'false', weight: 0.123797} },
+{ data: { source: 'TRAF3IP1', target: 'RABEP2', directed: 'false', weight: 0.171414} },
+{ data: { source: 'TRAF3IP1', target: 'IFT20', directed: 'false', weight: 0.140692} },
+{ data: { source: 'IFT20', target: 'RABEP2', directed: 'false', weight: 0.140692} }]},
 
 style: [
     {

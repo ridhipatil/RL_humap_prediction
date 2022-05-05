@@ -30,20 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'MAGEA4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P43358" }},
-{data: { id: 'FAM216A', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q8WUB2" }},
-{data: { id: 'MAGEB16', score: 2, type: '', href: "https://www.uniprot.org/uniprot/A2A368" }},
-{data: { id: 'FOXJ2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9P0K8" }},
-{data: { id: 'CRTC3', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q6UUV7" }},
-{data: { id: 'MAGEA10', score: 3, type: '', href: "https://www.uniprot.org/uniprot/P43363" }}], 
- edges: [{ data: { source: 'FAM216A', target: 'MAGEA10', directed: 'false', weight: 0.999934} },
-{ data: { source: 'FAM216A', target: 'FOXJ2', directed: 'false', weight: 0.373051} },
-{ data: { source: 'FAM216A', target: 'CRTC3', directed: 'false', weight: 0.151455} },
-{ data: { source: 'MAGEB16', target: 'MAGEA4', directed: 'false', weight: 0.989534} },
-{ data: { source: 'CRTC3', target: 'MAGEA10', directed: 'false', weight: 0.979416} },
-{ data: { source: 'CRTC3', target: 'FOXJ2', directed: 'false', weight: 0.151455} },
-{ data: { source: 'MAGEA4', target: 'MAGEA10', directed: 'false', weight: 0.965569} },
-{ data: { source: 'FOXJ2', target: 'MAGEA10', directed: 'false', weight: 0.9998549999999999} }]},
+elements:{nodes: [{data: { id: 'CEP120', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N960" }},
+{data: { id: 'C9orf78', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q9NZ63" }},
+{data: { id: 'PSMA3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P25788" }},
+{data: { id: 'AKIRIN2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q53H80" }}], 
+ edges: [{ data: { source: 'CEP120', target: 'AKIRIN2', directed: 'false', weight: 0.109293} },
+{ data: { source: 'CEP120', target: 'C9orf78', directed: 'false', weight: 0.578206} },
+{ data: { source: 'AKIRIN2', target: 'PSMA3', directed: 'false', weight: 0.352925} }]},
 
 style: [
     {
@@ -91,12 +84,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.37500
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>CRTC3
+    Complex Score  = 0.30000
     </section>
     </body>
     </html>

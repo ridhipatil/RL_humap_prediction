@@ -30,11 +30,17 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'ALDH6A1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q02252" }},
-{data: { id: 'ALDH8A1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H2A2" }},
-{data: { id: 'ACAD10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6JQN1" }}], 
- edges: [{ data: { source: 'ALDH6A1', target: 'ALDH8A1', directed: 'false', weight: 0.6064} },
-{ data: { source: 'ALDH8A1', target: 'ACAD10', directed: 'false', weight: 0.330414} }]},
+elements:{nodes: [{data: { id: 'TACC2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95359" }},
+{data: { id: 'SLAIN2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9P270" }},
+{data: { id: 'TOX4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O94842" }},
+{data: { id: 'CKAP5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14008" }},
+{data: { id: 'ALKBH5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6P6C2" }}], 
+ edges: [{ data: { source: 'TOX4', target: 'CKAP5', directed: 'false', weight: 0.816292} },
+{ data: { source: 'TOX4', target: 'ALKBH5', directed: 'false', weight: 0.364846} },
+{ data: { source: 'TOX4', target: 'TACC2', directed: 'false', weight: 0.0736423} },
+{ data: { source: 'TACC2', target: 'CKAP5', directed: 'false', weight: 0.689547} },
+{ data: { source: 'TACC2', target: 'SLAIN2', directed: 'false', weight: 0.141783} },
+{ data: { source: 'SLAIN2', target: 'CKAP5', directed: 'false', weight: 0.364498} }]},
 
 style: [
     {

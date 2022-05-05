@@ -30,25 +30,19 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'HSP90AB3P', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q58FF7" }},
-{data: { id: 'MARK2', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q7KZI7" }},
-{data: { id: 'CDK15', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96Q40" }},
-{data: { id: 'FKBP5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13451" }},
-{data: { id: 'RNF138', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WVD3" }},
-{data: { id: 'HSP90AB4P', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q58FF6" }},
-{data: { id: 'HSP90AA5P', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q58FG0" }}], 
- edges: [{ data: { source: 'HSP90AB3P', target: 'HSP90AA5P', directed: 'false', weight: 0.779978} },
-{ data: { source: 'HSP90AB3P', target: 'FKBP5', directed: 'false', weight: 0.42064399999999996} },
-{ data: { source: 'HSP90AB3P', target: 'HSP90AB4P', directed: 'false', weight: 0.8468110000000001} },
-{ data: { source: 'HSP90AB3P', target: 'CDK15', directed: 'false', weight: 0.315237} },
-{ data: { source: 'MARK2', target: 'CDK15', directed: 'false', weight: 0.619775} },
-{ data: { source: 'MARK2', target: 'RNF138', directed: 'false', weight: 0.112499} },
-{ data: { source: 'CDK15', target: 'HSP90AA5P', directed: 'false', weight: 0.272488} },
-{ data: { source: 'CDK15', target: 'FKBP5', directed: 'false', weight: 0.352681} },
-{ data: { source: 'CDK15', target: 'HSP90AB4P', directed: 'false', weight: 0.34676} },
-{ data: { source: 'FKBP5', target: 'HSP90AA5P', directed: 'false', weight: 0.856678} },
-{ data: { source: 'FKBP5', target: 'HSP90AB4P', directed: 'false', weight: 0.280667} },
-{ data: { source: 'HSP90AB4P', target: 'HSP90AA5P', directed: 'false', weight: 0.571833} }]},
+elements:{nodes: [{data: { id: 'NXN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6DKJ4" }},
+{data: { id: 'DTD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TEA8" }},
+{data: { id: 'TRIP12', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14669" }},
+{data: { id: 'LRRC47', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q8N1G4" }},
+{data: { id: 'EIF1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P41567" }},
+{data: { id: 'TAOK1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q7L7X3" }}], 
+ edges: [{ data: { source: 'NXN', target: 'TAOK1', directed: 'false', weight: 0.170594} },
+{ data: { source: 'NXN', target: 'DTD1', directed: 'false', weight: 0.32729899999999995} },
+{ data: { source: 'NXN', target: 'EIF1', directed: 'false', weight: 0.0938283} },
+{ data: { source: 'DTD1', target: 'TAOK1', directed: 'false', weight: 0.45231400000000005} },
+{ data: { source: 'DTD1', target: 'EIF1', directed: 'false', weight: 0.725036} },
+{ data: { source: 'TRIP12', target: 'EIF1', directed: 'false', weight: 0.403783} },
+{ data: { source: 'TAOK1', target: 'LRRC47', directed: 'false', weight: 0.8658530000000001} }]},
 
 style: [
     {
@@ -97,11 +91,6 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.37500
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>MARK2
     </section>
     </body>
     </html>

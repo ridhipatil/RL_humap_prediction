@@ -30,21 +30,16 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'FGB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P02675" }},
-{data: { id: 'RDX', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P35241" }},
-{data: { id: 'LCP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P13796" }},
-{data: { id: 'IL36RN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UBH0" }},
-{data: { id: 'DDX19B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UMR2" }},
-{data: { id: 'FCGBP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y6R7" }}], 
- edges: [{ data: { source: 'IL36RN', target: 'DDX19B', directed: 'false', weight: 0.742422} },
-{ data: { source: 'IL36RN', target: 'LCP1', directed: 'false', weight: 0.151455} },
-{ data: { source: 'IL36RN', target: 'FCGBP', directed: 'false', weight: 0.171414} },
-{ data: { source: 'IL36RN', target: 'FGB', directed: 'false', weight: 0.133451} },
-{ data: { source: 'DDX19B', target: 'LCP1', directed: 'false', weight: 0.854086} },
-{ data: { source: 'DDX19B', target: 'FCGBP', directed: 'false', weight: 0.494968} },
-{ data: { source: 'DDX19B', target: 'FGB', directed: 'false', weight: 0.473832} },
-{ data: { source: 'LCP1', target: 'RDX', directed: 'false', weight: 0.40922800000000004} },
-{ data: { source: 'FGB', target: 'FCGBP', directed: 'false', weight: 0.133451} }]},
+elements:{nodes: [{data: { id: 'FCN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00602" }},
+{data: { id: 'SEZ6L2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6UXD5" }},
+{data: { id: 'PODXL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00592" }},
+{data: { id: 'SUSD5', score: 3, type: '', href: "https://www.uniprot.org/uniprot/O60279" }},
+{data: { id: 'A2M', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P01023" }}], 
+ edges: [{ data: { source: 'FCN1', target: 'SUSD5', directed: 'false', weight: 0.904803} },
+{ data: { source: 'FCN1', target: 'SEZ6L2', directed: 'false', weight: 0.447308} },
+{ data: { source: 'SEZ6L2', target: 'SUSD5', directed: 'false', weight: 0.28781100000000004} },
+{ data: { source: 'PODXL', target: 'SUSD5', directed: 'false', weight: 0.414998} },
+{ data: { source: 'PODXL', target: 'A2M', directed: 'false', weight: 0.27255} }]},
 
 style: [
     {
@@ -93,11 +88,6 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.37500
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>RDX
     </section>
     </body>
     </html>

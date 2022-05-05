@@ -30,17 +30,19 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'RINT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6NUQ1" }},
-{data: { id: 'GCN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92616" }},
-{data: { id: 'NBAS', score: 5, type: '', href: "https://www.uniprot.org/uniprot/A2RRP1" }},
-{data: { id: 'ATR', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P20848" }},
-{data: { id: 'XPO7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UIA9" }}], 
- edges: [{ data: { source: 'GCN1', target: 'RINT1', directed: 'false', weight: 0.194752} },
-{ data: { source: 'GCN1', target: 'XPO7', directed: 'false', weight: 0.581176} },
-{ data: { source: 'GCN1', target: 'ATR', directed: 'false', weight: 0.401391} },
-{ data: { source: 'NBAS', target: 'RINT1', directed: 'false', weight: 0.150326} },
-{ data: { source: 'RINT1', target: 'ATR', directed: 'false', weight: 0.12340999999999999} },
-{ data: { source: 'ATR', target: 'XPO7', directed: 'false', weight: 0.61695} }]},
+elements:{nodes: [{data: { id: 'HSPA2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P54652" }},
+{data: { id: 'HSPA1L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P34931" }},
+{data: { id: 'HSPA1B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P0DMV9" }},
+{data: { id: 'STIP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P31948" }},
+{data: { id: 'HSPH1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92598" }},
+{data: { id: 'BAG2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95816" }}], 
+ edges: [{ data: { source: 'HSPA2', target: 'HSPA1B', directed: 'false', weight: 0.487829} },
+{ data: { source: 'HSPA2', target: 'BAG2', directed: 'false', weight: 0.64179} },
+{ data: { source: 'HSPA1L', target: 'HSPA1B', directed: 'false', weight: 0.39842} },
+{ data: { source: 'STIP1', target: 'HSPA1B', directed: 'false', weight: 0.850669} },
+{ data: { source: 'STIP1', target: 'HSPH1', directed: 'false', weight: 0.468325} },
+{ data: { source: 'HSPH1', target: 'HSPA1B', directed: 'false', weight: 0.761379} },
+{ data: { source: 'BAG2', target: 'HSPA1B', directed: 'false', weight: 0.20629299999999998} }]},
 
 style: [
     {

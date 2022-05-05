@@ -30,11 +30,25 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'PCID2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5JVF3" }},
-{data: { id: 'UPB1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UBR1" }},
-{data: { id: 'ADPRHL2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NX46" }}], 
- edges: [{ data: { source: 'PCID2', target: 'ADPRHL2', directed: 'false', weight: 0.701113} },
-{ data: { source: 'PCID2', target: 'UPB1', directed: 'false', weight: 0.68797} }]},
+elements:{nodes: [{data: { id: 'ITGA6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P23229" }},
+{data: { id: 'ITGAV', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P06756" }},
+{data: { id: 'INSR', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P06213" }},
+{data: { id: 'ITGA3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P26006" }},
+{data: { id: 'ITGB1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P05556" }},
+{data: { id: 'PTGFRN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9P2B2" }},
+{data: { id: 'IGF1R', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P08069" }}], 
+ edges: [{ data: { source: 'ITGA6', target: 'ITGB1', directed: 'false', weight: 0.961311} },
+{ data: { source: 'ITGA6', target: 'ITGAV', directed: 'false', weight: 0.241196} },
+{ data: { source: 'ITGA6', target: 'IGF1R', directed: 'false', weight: 0.321912} },
+{ data: { source: 'ITGA6', target: 'INSR', directed: 'false', weight: 0.29633400000000004} },
+{ data: { source: 'ITGA6', target: 'ITGA3', directed: 'false', weight: 0.25801} },
+{ data: { source: 'ITGA6', target: 'PTGFRN', directed: 'false', weight: 0.181046} },
+{ data: { source: 'PTGFRN', target: 'IGF1R', directed: 'false', weight: 0.24852800000000003} },
+{ data: { source: 'PTGFRN', target: 'INSR', directed: 'false', weight: 0.671901} },
+{ data: { source: 'ITGA3', target: 'ITGB1', directed: 'false', weight: 0.948802} },
+{ data: { source: 'ITGA3', target: 'ITGAV', directed: 'false', weight: 0.190412} },
+{ data: { source: 'INSR', target: 'IGF1R', directed: 'false', weight: 0.921316} },
+{ data: { source: 'ITGB1', target: 'ITGAV', directed: 'false', weight: 0.975927} }]},
 
 style: [
     {
@@ -83,6 +97,11 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.38750
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>ITGB1
     </section>
     </body>
     </html>

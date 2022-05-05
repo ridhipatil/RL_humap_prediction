@@ -30,18 +30,36 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'SLC7A6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92536" }},
-{data: { id: 'SLC5A3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P53794" }},
-{data: { id: 'PXMP2', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9NR77" }}], 
- edges: [{ data: { source: 'SLC7A6', target: 'PXMP2', directed: 'false', weight: 0.08169860000000001} },
-{ data: { source: 'SLC7A6', target: 'SLC5A3', directed: 'false', weight: 0.422575} },
-{ data: { source: 'SLC5A3', target: 'PXMP2', directed: 'false', weight: 0.5750109999999999} }]},
+elements:{nodes: [{data: { id: 'C3orf33', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q6P1S2" }},
+{data: { id: 'FASTKD5', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q7L8L6" }},
+{data: { id: 'TARBP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13395" }},
+{data: { id: 'TBCD', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BTW9" }},
+{data: { id: 'HSPA12B', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q96MM6" }},
+{data: { id: 'DDC', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P20711" }},
+{data: { id: 'BSG', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P35613" }}], 
+ edges: [{ data: { source: 'C3orf33', target: 'DDC', directed: 'false', weight: 0.133451} },
+{ data: { source: 'C3orf33', target: 'BSG', directed: 'false', weight: 0.329957} },
+{ data: { source: 'C3orf33', target: 'TARBP1', directed: 'false', weight: 0.0986491} },
+{ data: { source: 'C3orf33', target: 'FASTKD5', directed: 'false', weight: 0.0901617} },
+{ data: { source: 'FASTKD5', target: 'DDC', directed: 'false', weight: 0.11730499999999999} },
+{ data: { source: 'FASTKD5', target: 'BSG', directed: 'false', weight: 0.344007} },
+{ data: { source: 'FASTKD5', target: 'TARBP1', directed: 'false', weight: 0.086378} },
+{ data: { source: 'FASTKD5', target: 'HSPA12B', directed: 'false', weight: 0.102922} },
+{ data: { source: 'TARBP1', target: 'DDC', directed: 'false', weight: 0.128057} },
+{ data: { source: 'TARBP1', target: 'BSG', directed: 'false', weight: 0.878058} },
+{ data: { source: 'TARBP1', target: 'TBCD', directed: 'false', weight: 0.61002} },
+{ data: { source: 'TARBP1', target: 'HSPA12B', directed: 'false', weight: 0.112499} },
+{ data: { source: 'HSPA12B', target: 'DDC', directed: 'false', weight: 0.151455} },
+{ data: { source: 'HSPA12B', target: 'BSG', directed: 'false', weight: 0.312786} },
+{ data: { source: 'DDC', target: 'BSG', directed: 'false', weight: 0.9897790000000001} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 30,
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}                                
@@ -53,7 +71,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
 								'line-color': 'blue',
 								'opacity': 0.5
 							}
@@ -62,7 +80,10 @@ style: [
 
 });
 cy.layout({
-    name: 'circle'
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -79,6 +100,11 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.39375
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>FASTKD5
     </section>
     </body>
     </html>

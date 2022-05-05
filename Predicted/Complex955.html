@@ -30,21 +30,16 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'SPDL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96EA4" }},
-{data: { id: 'DYRK1A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13627" }},
-{data: { id: 'FNTB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49356" }},
-{data: { id: 'CENPF', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P49454" }},
-{data: { id: 'DYRK1B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y463" }},
-{data: { id: 'FNTA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49354" }}], 
- edges: [{ data: { source: 'DYRK1A', target: 'DYRK1B', directed: 'false', weight: 0.11473699999999999} },
-{ data: { source: 'DYRK1A', target: 'FNTB', directed: 'false', weight: 0.4795} },
-{ data: { source: 'FNTB', target: 'DYRK1B', directed: 'false', weight: 0.128057} },
-{ data: { source: 'FNTB', target: 'FNTA', directed: 'false', weight: 0.9737370000000001} },
-{ data: { source: 'FNTB', target: 'CENPF', directed: 'false', weight: 0.745133} },
-{ data: { source: 'FNTB', target: 'SPDL1', directed: 'false', weight: 0.7400359999999999} },
-{ data: { source: 'CENPF', target: 'FNTA', directed: 'false', weight: 0.0952728} },
-{ data: { source: 'CENPF', target: 'SPDL1', directed: 'false', weight: 0.0986491} },
-{ data: { source: 'FNTA', target: 'SPDL1', directed: 'false', weight: 0.09128789999999999} }]},
+elements:{nodes: [{data: { id: 'MYH8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P13535" }},
+{data: { id: 'ACTN2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P35609" }},
+{data: { id: 'PSMC3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P17980" }},
+{data: { id: 'TPM1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P09493" }},
+{data: { id: 'MPRIP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6WCQ1" }}], 
+ edges: [{ data: { source: 'PSMC3', target: 'MPRIP', directed: 'false', weight: 0.65885} },
+{ data: { source: 'MPRIP', target: 'TPM1', directed: 'false', weight: 0.6995899999999999} },
+{ data: { source: 'MYH8', target: 'TPM1', directed: 'false', weight: 0.9438549999999999} },
+{ data: { source: 'MYH8', target: 'ACTN2', directed: 'false', weight: 0.5586979999999999} },
+{ data: { source: 'ACTN2', target: 'TPM1', directed: 'false', weight: 0.787251} }]},
 
 style: [
     {
@@ -93,11 +88,6 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.37500
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>CENPF
     </section>
     </body>
     </html>

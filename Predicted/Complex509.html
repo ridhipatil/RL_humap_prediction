@@ -30,26 +30,22 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'PJA2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43164" }},
-{data: { id: 'AP2M1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q96CW1" }},
-{data: { id: 'SNX29', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q8TEQ0" }},
-{data: { id: 'CLMN', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q96JQ2" }},
-{data: { id: 'RALBP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15311" }}], 
- edges: [{ data: { source: 'AP2M1', target: 'RALBP1', directed: 'false', weight: 0.9800639999999999} },
-{ data: { source: 'AP2M1', target: 'SNX29', directed: 'false', weight: 0.856979} },
-{ data: { source: 'AP2M1', target: 'CLMN', directed: 'false', weight: 0.7858569999999999} },
-{ data: { source: 'AP2M1', target: 'PJA2', directed: 'false', weight: 0.32614099999999996} },
-{ data: { source: 'PJA2', target: 'SNX29', directed: 'false', weight: 0.133451} },
-{ data: { source: 'SNX29', target: 'RALBP1', directed: 'false', weight: 0.151455} },
-{ data: { source: 'SNX29', target: 'CLMN', directed: 'false', weight: 0.171414} }]},
+elements:{nodes: [{data: { id: 'SPCS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y6A9" }},
+{data: { id: 'SPCS2', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q15005" }},
+{data: { id: 'SPCS3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P61009" }},
+{data: { id: 'SEC11A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P67812" }}], 
+ edges: [{ data: { source: 'SPCS1', target: 'SPCS2', directed: 'false', weight: 0.710073} },
+{ data: { source: 'SPCS1', target: 'SEC11A', directed: 'false', weight: 0.3383} },
+{ data: { source: 'SPCS1', target: 'SPCS3', directed: 'false', weight: 0.12378900000000001} },
+{ data: { source: 'SPCS2', target: 'SEC11A', directed: 'false', weight: 0.9991329999999999} },
+{ data: { source: 'SPCS2', target: 'SPCS3', directed: 'false', weight: 0.8931020000000001} },
+{ data: { source: 'SEC11A', target: 'SPCS3', directed: 'false', weight: 0.217783} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 10,
-		'width':'10',
-		'height': '10',	
+		'font-size': 30,
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}                                
@@ -61,7 +57,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
 								'line-color': 'blue',
 								'opacity': 0.5
 							}
@@ -70,10 +66,7 @@ style: [
 
 });
 cy.layout({
-    'name': 'fcose',
-		'animate':false,
-	'nodeDimensionsIncludeLabels':true,
-	'nodeSeparation': 1000
+    name: 'circle'
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -89,12 +82,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.37500
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>AP2M1
+    Complex Score  = 0.38750
     </section>
     </body>
     </html>

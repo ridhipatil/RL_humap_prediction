@@ -30,14 +30,22 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'SDHB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P21912" }},
-{data: { id: 'SDHAF2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NX18" }},
-{data: { id: 'SDHA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P31040" }},
-{data: { id: 'PDHA2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P29803" }}], 
- edges: [{ data: { source: 'SDHB', target: 'SDHA', directed: 'false', weight: 0.996382} },
-{ data: { source: 'SDHB', target: 'PDHA2', directed: 'false', weight: 0.576159} },
-{ data: { source: 'SDHAF2', target: 'SDHA', directed: 'false', weight: 0.623471} },
-{ data: { source: 'SDHA', target: 'PDHA2', directed: 'false', weight: 0.416279} }]},
+elements:{nodes: [{data: { id: 'NSD3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BZ95" }},
+{data: { id: 'MBD6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96DN6" }},
+{data: { id: 'MBD5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9P267" }},
+{data: { id: 'ASXL2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q76L83" }},
+{data: { id: 'KDM1B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NB78" }},
+{data: { id: 'BAP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92560" }}], 
+ edges: [{ data: { source: 'MBD6', target: 'ASXL2', directed: 'false', weight: 0.986426} },
+{ data: { source: 'MBD6', target: 'BAP1', directed: 'false', weight: 0.151455} },
+{ data: { source: 'MBD6', target: 'MBD5', directed: 'false', weight: 0.151455} },
+{ data: { source: 'MBD6', target: 'KDM1B', directed: 'false', weight: 0.128057} },
+{ data: { source: 'MBD5', target: 'ASXL2', directed: 'false', weight: 0.9742870000000001} },
+{ data: { source: 'MBD5', target: 'BAP1', directed: 'false', weight: 0.133456} },
+{ data: { source: 'MBD5', target: 'KDM1B', directed: 'false', weight: 0.112499} },
+{ data: { source: 'BAP1', target: 'ASXL2', directed: 'false', weight: 0.849835} },
+{ data: { source: 'NSD3', target: 'KDM1B', directed: 'false', weight: 0.704059} },
+{ data: { source: 'ASXL2', target: 'KDM1B', directed: 'false', weight: 0.9717969999999999} }]},
 
 style: [
     {

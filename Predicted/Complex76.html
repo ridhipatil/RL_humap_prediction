@@ -30,27 +30,32 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'GTF3C4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UKN8" }},
-{data: { id: 'GTF3C3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y5Q9" }},
-{data: { id: 'GTF3C2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WUA4" }},
-{data: { id: 'GTF3C1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q12789" }},
-{data: { id: 'GTF3C5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y5Q8" }}], 
- edges: [{ data: { source: 'GTF3C4', target: 'GTF3C3', directed: 'false', weight: 0.676659} },
-{ data: { source: 'GTF3C4', target: 'GTF3C1', directed: 'false', weight: 0.611536} },
-{ data: { source: 'GTF3C4', target: 'GTF3C5', directed: 'false', weight: 0.832943} },
-{ data: { source: 'GTF3C4', target: 'GTF3C2', directed: 'false', weight: 0.49054200000000003} },
-{ data: { source: 'GTF3C3', target: 'GTF3C1', directed: 'false', weight: 0.999901} },
-{ data: { source: 'GTF3C3', target: 'GTF3C5', directed: 'false', weight: 0.9988229999999999} },
-{ data: { source: 'GTF3C3', target: 'GTF3C2', directed: 'false', weight: 0.945421} },
-{ data: { source: 'GTF3C2', target: 'GTF3C1', directed: 'false', weight: 0.9854930000000001} },
-{ data: { source: 'GTF3C2', target: 'GTF3C5', directed: 'false', weight: 0.9064989999999999} },
-{ data: { source: 'GTF3C1', target: 'GTF3C5', directed: 'false', weight: 0.591075} }]},
+elements:{nodes: [{data: { id: 'NUP155', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75694" }},
+{data: { id: 'NUP85', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BW27" }},
+{data: { id: 'NUP210', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q8TEM1" }},
+{data: { id: 'NUP35', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NFH5" }},
+{data: { id: 'NXF1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UBU9" }},
+{data: { id: 'NUP214', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P35658" }}], 
+ edges: [{ data: { source: 'NUP155', target: 'NUP85', directed: 'false', weight: 0.881956} },
+{ data: { source: 'NUP155', target: 'NUP214', directed: 'false', weight: 0.983358} },
+{ data: { source: 'NUP155', target: 'NXF1', directed: 'false', weight: 0.6848069999999999} },
+{ data: { source: 'NUP155', target: 'NUP35', directed: 'false', weight: 0.993239} },
+{ data: { source: 'NUP155', target: 'NUP210', directed: 'false', weight: 0.776556} },
+{ data: { source: 'NUP85', target: 'NUP210', directed: 'false', weight: 0.8659129999999999} },
+{ data: { source: 'NUP85', target: 'NUP35', directed: 'false', weight: 0.8215520000000001} },
+{ data: { source: 'NUP85', target: 'NXF1', directed: 'false', weight: 0.801828} },
+{ data: { source: 'NUP210', target: 'NXF1', directed: 'false', weight: 0.676471} },
+{ data: { source: 'NUP210', target: 'NUP35', directed: 'false', weight: 0.7331770000000001} },
+{ data: { source: 'NUP35', target: 'NUP214', directed: 'false', weight: 0.8764639999999999} },
+{ data: { source: 'NUP35', target: 'NXF1', directed: 'false', weight: 0.630363} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 30,
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}                                
@@ -62,7 +67,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
 								'line-color': 'blue',
 								'opacity': 0.5
 							}
@@ -71,7 +76,10 @@ style: [
 
 });
 cy.layout({
-    name: 'circle'
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -88,6 +96,11 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.39375
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        2 interacting protein(s): <br>NUP210 NUP214
     </section>
     </body>
     </html>

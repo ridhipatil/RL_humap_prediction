@@ -30,18 +30,18 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: '90850', score: 0, type: '' }},
-{data: { id: 'KIF20A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95235" }},
-{data: { id: 'STK25', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00506" }},
-{data: { id: 'C4orf19', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q8IY42" }},
-{data: { id: 'PDCD10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BUL8" }}], 
- edges: [{ data: { source: 'STK25', target: 'PDCD10', directed: 'false', weight: 0.999925} },
-{ data: { source: 'STK25', target: 'C4orf19', directed: 'false', weight: 0.507413} },
-{ data: { source: 'STK25', target: '90850', directed: 'false', weight: 0.49140100000000003} },
-{ data: { source: 'STK25', target: 'KIF20A', directed: 'false', weight: 0.41368900000000003} },
-{ data: { source: 'PDCD10', target: 'C4orf19', directed: 'false', weight: 0.737308} },
-{ data: { source: 'PDCD10', target: '90850', directed: 'false', weight: 0.140692} },
-{ data: { source: 'PDCD10', target: 'KIF20A', directed: 'false', weight: 0.140692} }]},
+elements:{nodes: [{data: { id: 'EIF2S3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P41091" }},
+{data: { id: 'CAD', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O76075" }},
+{data: { id: 'PRMT7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NVM4" }},
+{data: { id: 'ACSL4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60488" }},
+{data: { id: 'FAXC', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q5TGI0" }},
+{data: { id: 'CLUH', score: 4, type: '', href: "https://www.uniprot.org/uniprot/O75153" }}], 
+ edges: [{ data: { source: 'CAD', target: 'EIF2S3', directed: 'false', weight: 0.524057} },
+{ data: { source: 'CAD', target: 'CLUH', directed: 'false', weight: 0.842126} },
+{ data: { source: 'CAD', target: 'FAXC', directed: 'false', weight: 0.272688} },
+{ data: { source: 'CAD', target: 'ACSL4', directed: 'false', weight: 0.0230289} },
+{ data: { source: 'PRMT7', target: 'EIF2S3', directed: 'false', weight: 0.133456} },
+{ data: { source: 'EIF2S3', target: 'ACSL4', directed: 'false', weight: 0.654017} }]},
 
 style: [
     {
@@ -89,7 +89,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.37500
+    Complex Score  = 0.35000
     </section>
     </body>
     </html>

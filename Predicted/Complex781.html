@@ -30,17 +30,19 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'AKAP14', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86UN6" }},
-{data: { id: 'EFCAB7', score: 4, type: '', href: "https://www.uniprot.org/uniprot/A8K855" }},
-{data: { id: 'ROPN1L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96C74" }},
-{data: { id: 'PRKAR2B', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P31323" }},
-{data: { id: 'SPA17', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15506" }}], 
- edges: [{ data: { source: 'EFCAB7', target: 'SPA17', directed: 'false', weight: 0.9582809999999999} },
-{ data: { source: 'EFCAB7', target: 'ROPN1L', directed: 'false', weight: 0.117318} },
-{ data: { source: 'EFCAB7', target: 'AKAP14', directed: 'false', weight: 0.0936635} },
-{ data: { source: 'SPA17', target: 'AKAP14', directed: 'false', weight: 0.9289040000000001} },
-{ data: { source: 'SPA17', target: 'ROPN1L', directed: 'false', weight: 0.808106} },
-{ data: { source: 'AKAP14', target: 'PRKAR2B', directed: 'false', weight: 0.824614} }]},
+elements:{nodes: [{data: { id: 'ACTR3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P61158" }},
+{data: { id: 'BHMT2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H2M3" }},
+{data: { id: 'HNRNPLL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WVV9" }},
+{data: { id: 'TBCE', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15813" }},
+{data: { id: 'PHLDB2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86SQ0" }},
+{data: { id: 'CAPZB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P47756" }}], 
+ edges: [{ data: { source: 'BHMT2', target: 'TBCE', directed: 'false', weight: 0.938884} },
+{ data: { source: 'ACTR3', target: 'CAPZB', directed: 'false', weight: 0.9177120000000001} },
+{ data: { source: 'ACTR3', target: 'HNRNPLL', directed: 'false', weight: 0.7315470000000001} },
+{ data: { source: 'ACTR3', target: 'TBCE', directed: 'false', weight: 0.669205} },
+{ data: { source: 'ACTR3', target: 'PHLDB2', directed: 'false', weight: 0.0337325} },
+{ data: { source: 'HNRNPLL', target: 'CAPZB', directed: 'false', weight: 0.0185263} },
+{ data: { source: 'PHLDB2', target: 'CAPZB', directed: 'false', weight: 0.0123256} }]},
 
 style: [
     {
@@ -89,11 +91,6 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.37500
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>PRKAR2B
     </section>
     </body>
     </html>

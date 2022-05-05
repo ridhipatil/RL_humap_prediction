@@ -30,21 +30,11 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'RPL8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62917" }},
-{data: { id: 'STAU2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NUL3" }},
-{data: { id: 'ABT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9ULW3" }},
-{data: { id: 'TSR1', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q2NL82" }},
-{data: { id: 'RPS3A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P61247" }},
-{data: { id: 'RPS18', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62269" }}], 
- edges: [{ data: { source: 'STAU2', target: 'TSR1', directed: 'false', weight: 0.349132} },
-{ data: { source: 'STAU2', target: 'ABT1', directed: 'false', weight: 0.34045} },
-{ data: { source: 'ABT1', target: 'TSR1', directed: 'false', weight: 0.341402} },
-{ data: { source: 'RPS3A', target: 'RPS18', directed: 'false', weight: 1.0} },
-{ data: { source: 'RPS3A', target: 'RPL8', directed: 'false', weight: 1.0} },
-{ data: { source: 'RPS3A', target: 'TSR1', directed: 'false', weight: 0.998822} },
-{ data: { source: 'RPS18', target: 'RPL8', directed: 'false', weight: 1.0} },
-{ data: { source: 'RPS18', target: 'TSR1', directed: 'false', weight: 0.989758} },
-{ data: { source: 'TSR1', target: 'RPL8', directed: 'false', weight: 0.707505} }]},
+elements:{nodes: [{data: { id: '54504', score: 0, type: '' }},
+{data: { id: 'CYB5R3', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P00387" }},
+{data: { id: 'TROAP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q12815" }}], 
+ edges: [{ data: { source: '54504', target: 'CYB5R3', directed: 'false', weight: 0.355137} },
+{ data: { source: '54504', target: 'TROAP', directed: 'false', weight: 0.309131} }]},
 
 style: [
     {
@@ -93,6 +83,11 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.37500
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>CYB5R3
     </section>
     </body>
     </html>

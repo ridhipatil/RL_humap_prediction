@@ -30,61 +30,24 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'RSBN1L', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q6PCB5" }},
-{data: { id: 'MPHOSPH10', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/O00566" }},
-{data: { id: 'DDX50', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9BQ39" }},
-{data: { id: 'PHAX', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H814" }},
-{data: { id: 'MAK16', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9BXY0" }},
-{data: { id: 'CEBPZ', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q03701" }},
-{data: { id: 'NOP53', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NZM5" }},
-{data: { id: 'MRPS22', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P82650" }},
-{data: { id: 'SKIV2L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15477" }},
-{data: { id: 'GNL2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13823" }},
-{data: { id: 'BUD13', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BRD0" }}], 
- edges: [{ data: { source: 'RSBN1L', target: 'MRPS22', directed: 'false', weight: 0.200541} },
-{ data: { source: 'RSBN1L', target: 'GNL2', directed: 'false', weight: 0.270858} },
-{ data: { source: 'RSBN1L', target: 'DDX50', directed: 'false', weight: 0.37390300000000004} },
-{ data: { source: 'RSBN1L', target: 'MPHOSPH10', directed: 'false', weight: 0.15046199999999998} },
-{ data: { source: 'RSBN1L', target: 'NOP53', directed: 'false', weight: 0.39563000000000004} },
-{ data: { source: 'RSBN1L', target: 'CEBPZ', directed: 'false', weight: 0.21061300000000002} },
-{ data: { source: 'RSBN1L', target: 'BUD13', directed: 'false', weight: 0.23121599999999998} },
-{ data: { source: 'RSBN1L', target: 'PHAX', directed: 'false', weight: 0.09346689999999999} },
-{ data: { source: 'MPHOSPH10', target: 'MRPS22', directed: 'false', weight: 0.208098} },
-{ data: { source: 'MPHOSPH10', target: 'GNL2', directed: 'false', weight: 0.825959} },
-{ data: { source: 'MPHOSPH10', target: 'DDX50', directed: 'false', weight: 0.429026} },
-{ data: { source: 'MPHOSPH10', target: 'NOP53', directed: 'false', weight: 0.9959100000000001} },
-{ data: { source: 'MPHOSPH10', target: 'CEBPZ', directed: 'false', weight: 0.118623} },
-{ data: { source: 'MPHOSPH10', target: 'BUD13', directed: 'false', weight: 0.103192} },
-{ data: { source: 'DDX50', target: 'MRPS22', directed: 'false', weight: 0.845728} },
-{ data: { source: 'DDX50', target: 'GNL2', directed: 'false', weight: 0.960183} },
-{ data: { source: 'DDX50', target: 'NOP53', directed: 'false', weight: 0.936789} },
-{ data: { source: 'DDX50', target: 'CEBPZ', directed: 'false', weight: 0.46599700000000005} },
-{ data: { source: 'DDX50', target: 'SKIV2L', directed: 'false', weight: 0.251742} },
-{ data: { source: 'DDX50', target: 'BUD13', directed: 'false', weight: 0.240954} },
-{ data: { source: 'DDX50', target: 'PHAX', directed: 'false', weight: 0.22193600000000002} },
-{ data: { source: 'DDX50', target: 'MAK16', directed: 'false', weight: 0.14871800000000002} },
-{ data: { source: 'PHAX', target: 'GNL2', directed: 'false', weight: 0.218996} },
-{ data: { source: 'PHAX', target: 'NOP53', directed: 'false', weight: 0.159301} },
-{ data: { source: 'PHAX', target: 'CEBPZ', directed: 'false', weight: 0.10436199999999998} },
-{ data: { source: 'PHAX', target: 'MAK16', directed: 'false', weight: 0.0952594} },
-{ data: { source: 'PHAX', target: 'BUD13', directed: 'false', weight: 0.07988250000000001} },
-{ data: { source: 'MAK16', target: 'GNL2', directed: 'false', weight: 0.13144} },
-{ data: { source: 'MAK16', target: 'NOP53', directed: 'false', weight: 0.151927} },
-{ data: { source: 'MAK16', target: 'CEBPZ', directed: 'false', weight: 0.17288699999999999} },
-{ data: { source: 'MAK16', target: 'BUD13', directed: 'false', weight: 0.112499} },
-{ data: { source: 'BUD13', target: 'MRPS22', directed: 'false', weight: 0.10188} },
-{ data: { source: 'BUD13', target: 'GNL2', directed: 'false', weight: 0.332071} },
-{ data: { source: 'BUD13', target: 'NOP53', directed: 'false', weight: 0.44086899999999996} },
-{ data: { source: 'BUD13', target: 'CEBPZ', directed: 'false', weight: 0.319108} },
-{ data: { source: 'CEBPZ', target: 'MRPS22', directed: 'false', weight: 0.10656800000000001} },
-{ data: { source: 'CEBPZ', target: 'GNL2', directed: 'false', weight: 0.7746810000000001} },
-{ data: { source: 'CEBPZ', target: 'NOP53', directed: 'false', weight: 0.274793} },
-{ data: { source: 'CEBPZ', target: 'SKIV2L', directed: 'false', weight: 0.0273337} },
-{ data: { source: 'NOP53', target: 'MRPS22', directed: 'false', weight: 0.596006} },
-{ data: { source: 'NOP53', target: 'GNL2', directed: 'false', weight: 0.981405} },
-{ data: { source: 'NOP53', target: 'SKIV2L', directed: 'false', weight: 0.0925168} },
-{ data: { source: 'SKIV2L', target: 'GNL2', directed: 'false', weight: 0.214858} },
-{ data: { source: 'GNL2', target: 'MRPS22', directed: 'false', weight: 0.92594} }]},
+elements:{nodes: [{data: { id: 'ABCA7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IZY2" }},
+{data: { id: 'ALDOC', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P09972" }},
+{data: { id: 'ARHGAP32', score: 5, type: '', href: "https://www.uniprot.org/uniprot/A7KAX9" }},
+{data: { id: 'RET', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P07949" }},
+{data: { id: 'DNAJA4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WW22" }},
+{data: { id: 'HEXA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P06865" }},
+{data: { id: 'ZNF286B', score: 3, type: '', href: "https://www.uniprot.org/uniprot/P0CG31" }}], 
+ edges: [{ data: { source: 'ABCA7', target: 'HEXA', directed: 'false', weight: 0.171006} },
+{ data: { source: 'ABCA7', target: 'RET', directed: 'false', weight: 0.33265500000000003} },
+{ data: { source: 'ABCA7', target: 'ZNF286B', directed: 'false', weight: 0.189659} },
+{ data: { source: 'ABCA7', target: 'ARHGAP32', directed: 'false', weight: 0.292026} },
+{ data: { source: 'RET', target: 'HEXA', directed: 'false', weight: 0.292026} },
+{ data: { source: 'RET', target: 'DNAJA4', directed: 'false', weight: 0.47707700000000003} },
+{ data: { source: 'RET', target: 'ZNF286B', directed: 'false', weight: 0.33265500000000003} },
+{ data: { source: 'RET', target: 'ARHGAP32', directed: 'false', weight: 0.292026} },
+{ data: { source: 'ALDOC', target: 'HEXA', directed: 'false', weight: 0.5} },
+{ data: { source: 'ARHGAP32', target: 'ZNF286B', directed: 'false', weight: 0.171006} },
+{ data: { source: 'HEXA', target: 'ZNF286B', directed: 'false', weight: 0.292026} }]},
 
 style: [
     {
@@ -133,11 +96,6 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.37500
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>MPHOSPH10
     </section>
     </body>
     </html>

@@ -30,22 +30,31 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'TBX20', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UMR3" }},
-{data: { id: 'TLE1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q04724" }},
-{data: { id: 'DNASE1L2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92874" }},
-{data: { id: 'TLE4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q04727" }}], 
- edges: [{ data: { source: 'DNASE1L2', target: 'TBX20', directed: 'false', weight: 0.592609} },
-{ data: { source: 'DNASE1L2', target: 'TLE4', directed: 'false', weight: 0.0925023} },
-{ data: { source: 'DNASE1L2', target: 'TLE1', directed: 'false', weight: 0.0855723} },
-{ data: { source: 'TBX20', target: 'TLE4', directed: 'false', weight: 0.88481} },
-{ data: { source: 'TBX20', target: 'TLE1', directed: 'false', weight: 0.685321} },
-{ data: { source: 'TLE1', target: 'TLE4', directed: 'false', weight: 0.163688} }]},
+elements:{nodes: [{data: { id: 'THOC6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86W42" }},
+{data: { id: 'THOC5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13769" }},
+{data: { id: 'DDX39B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13838" }},
+{data: { id: 'NCBP3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q53F19" }},
+{data: { id: 'DHX38', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92620" }},
+{data: { id: 'THOC3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96J01" }}], 
+ edges: [{ data: { source: 'DDX39B', target: 'THOC3', directed: 'false', weight: 0.548399} },
+{ data: { source: 'DDX39B', target: 'THOC5', directed: 'false', weight: 0.974117} },
+{ data: { source: 'DDX39B', target: 'THOC6', directed: 'false', weight: 0.563882} },
+{ data: { source: 'DDX39B', target: 'NCBP3', directed: 'false', weight: 0.985511} },
+{ data: { source: 'DDX39B', target: 'DHX38', directed: 'false', weight: 0.975916} },
+{ data: { source: 'THOC3', target: 'THOC5', directed: 'false', weight: 0.999992} },
+{ data: { source: 'THOC3', target: 'THOC6', directed: 'false', weight: 0.9963069999999999} },
+{ data: { source: 'THOC3', target: 'NCBP3', directed: 'false', weight: 0.33265500000000003} },
+{ data: { source: 'THOC6', target: 'THOC5', directed: 'false', weight: 0.999956} },
+{ data: { source: 'THOC6', target: 'NCBP3', directed: 'false', weight: 0.912436} },
+{ data: { source: 'THOC5', target: 'NCBP3', directed: 'false', weight: 0.926586} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 30,
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}                                
@@ -57,7 +66,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
 								'line-color': 'blue',
 								'opacity': 0.5
 							}
@@ -66,7 +75,10 @@ style: [
 
 });
 cy.layout({
-    name: 'circle'
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -83,11 +95,6 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.39375
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>TLE1
     </section>
     </body>
     </html>

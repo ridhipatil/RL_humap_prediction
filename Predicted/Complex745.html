@@ -30,21 +30,16 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'SGSH', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P51688" }},
-{data: { id: 'NAGLU', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P54802" }},
-{data: { id: 'CHPF', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q8IZ52" }},
-{data: { id: 'TTC13', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q8NBP0" }},
-{data: { id: 'LRIG1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96JA1" }},
-{data: { id: 'EDEM3', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9BZQ6" }}], 
- edges: [{ data: { source: 'SGSH', target: 'NAGLU', directed: 'false', weight: 0.8897149999999999} },
-{ data: { source: 'SGSH', target: 'EDEM3', directed: 'false', weight: 0.466721} },
-{ data: { source: 'SGSH', target: 'CHPF', directed: 'false', weight: 0.278121} },
-{ data: { source: 'CHPF', target: 'NAGLU', directed: 'false', weight: 0.204468} },
-{ data: { source: 'CHPF', target: 'LRIG1', directed: 'false', weight: 0.445546} },
-{ data: { source: 'CHPF', target: 'EDEM3', directed: 'false', weight: 0.24685700000000002} },
-{ data: { source: 'CHPF', target: 'TTC13', directed: 'false', weight: 0.353128} },
-{ data: { source: 'NAGLU', target: 'EDEM3', directed: 'false', weight: 0.589751} },
-{ data: { source: 'TTC13', target: 'LRIG1', directed: 'false', weight: 0.08441010000000002} }]},
+elements:{nodes: [{data: { id: 'FADD', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13158" }},
+{data: { id: 'PAFAH1B1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P43034" }},
+{data: { id: 'PAFAH1B3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15102" }},
+{data: { id: 'PAFAH1B2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P68402" }},
+{data: { id: 'IL37', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NZH6" }}], 
+ edges: [{ data: { source: 'FADD', target: 'PAFAH1B2', directed: 'false', weight: 0.407102} },
+{ data: { source: 'FADD', target: 'IL37', directed: 'false', weight: 0.831765} },
+{ data: { source: 'PAFAH1B1', target: 'PAFAH1B3', directed: 'false', weight: 0.9770280000000001} },
+{ data: { source: 'PAFAH1B1', target: 'PAFAH1B2', directed: 'false', weight: 0.6186119999999999} },
+{ data: { source: 'PAFAH1B2', target: 'PAFAH1B3', directed: 'false', weight: 0.999592} }]},
 
 style: [
     {
@@ -93,11 +88,6 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.37500
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        2 interacting protein(s): <br>CHPF EDEM3
     </section>
     </body>
     </html>

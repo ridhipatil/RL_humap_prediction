@@ -30,18 +30,68 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'MBNL2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5VZF2" }},
-{data: { id: 'MBNL3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NUK0" }},
-{data: { id: 'MBNL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NR56" }}], 
- edges: [{ data: { source: 'MBNL2', target: 'MBNL3', directed: 'false', weight: 0.140692} },
-{ data: { source: 'MBNL2', target: 'MBNL1', directed: 'false', weight: 0.954015} },
-{ data: { source: 'MBNL3', target: 'MBNL1', directed: 'false', weight: 0.984067} }]},
+elements:{nodes: [{data: { id: 'SNAP23', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00161" }},
+{data: { id: 'STX7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15400" }},
+{data: { id: 'SNAP29', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95721" }},
+{data: { id: 'VTI1B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UEU0" }},
+{data: { id: 'STX16', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O14662" }},
+{data: { id: 'STX12', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86Y82" }},
+{data: { id: 'GOSR2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O14653" }},
+{data: { id: 'BET1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15155" }},
+{data: { id: 'NAPA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P54920" }},
+{data: { id: 'SKA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96BD8" }},
+{data: { id: 'STX10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60499" }}], 
+ edges: [{ data: { source: 'SNAP23', target: 'SNAP29', directed: 'false', weight: 0.101947} },
+{ data: { source: 'SNAP23', target: 'NAPA', directed: 'false', weight: 0.09956260000000001} },
+{ data: { source: 'SNAP23', target: 'STX7', directed: 'false', weight: 0.187168} },
+{ data: { source: 'SNAP23', target: 'VTI1B', directed: 'false', weight: 0.12285399999999999} },
+{ data: { source: 'SNAP23', target: 'STX12', directed: 'false', weight: 0.0949404} },
+{ data: { source: 'SNAP23', target: 'STX10', directed: 'false', weight: 0.28171199999999996} },
+{ data: { source: 'SNAP23', target: 'GOSR2', directed: 'false', weight: 0.377443} },
+{ data: { source: 'SNAP23', target: 'STX16', directed: 'false', weight: 0.10703800000000001} },
+{ data: { source: 'STX7', target: 'SNAP29', directed: 'false', weight: 0.998008} },
+{ data: { source: 'STX7', target: 'NAPA', directed: 'false', weight: 0.41068699999999997} },
+{ data: { source: 'STX7', target: 'STX10', directed: 'false', weight: 0.891966} },
+{ data: { source: 'STX7', target: 'GOSR2', directed: 'false', weight: 0.671405} },
+{ data: { source: 'STX7', target: 'VTI1B', directed: 'false', weight: 0.655357} },
+{ data: { source: 'STX7', target: 'STX16', directed: 'false', weight: 0.630587} },
+{ data: { source: 'STX7', target: 'BET1', directed: 'false', weight: 0.539833} },
+{ data: { source: 'STX7', target: 'STX12', directed: 'false', weight: 0.24961799999999998} },
+{ data: { source: 'SNAP29', target: 'SKA1', directed: 'false', weight: 0.992822} },
+{ data: { source: 'SNAP29', target: 'NAPA', directed: 'false', weight: 0.9990129999999999} },
+{ data: { source: 'SNAP29', target: 'STX10', directed: 'false', weight: 0.48356099999999996} },
+{ data: { source: 'SNAP29', target: 'VTI1B', directed: 'false', weight: 0.164605} },
+{ data: { source: 'SNAP29', target: 'GOSR2', directed: 'false', weight: 0.145337} },
+{ data: { source: 'SNAP29', target: 'STX16', directed: 'false', weight: 0.0952194} },
+{ data: { source: 'SNAP29', target: 'STX12', directed: 'false', weight: 0.0764291} },
+{ data: { source: 'SNAP29', target: 'BET1', directed: 'false', weight: 0.0104572} },
+{ data: { source: 'VTI1B', target: 'NAPA', directed: 'false', weight: 0.352453} },
+{ data: { source: 'VTI1B', target: 'STX12', directed: 'false', weight: 0.458121} },
+{ data: { source: 'VTI1B', target: 'STX10', directed: 'false', weight: 0.392646} },
+{ data: { source: 'VTI1B', target: 'GOSR2', directed: 'false', weight: 0.359342} },
+{ data: { source: 'VTI1B', target: 'BET1', directed: 'false', weight: 0.175529} },
+{ data: { source: 'VTI1B', target: 'STX16', directed: 'false', weight: 0.10554300000000001} },
+{ data: { source: 'STX16', target: 'NAPA', directed: 'false', weight: 0.599388} },
+{ data: { source: 'STX16', target: 'STX12', directed: 'false', weight: 0.09600089999999999} },
+{ data: { source: 'STX16', target: 'STX10', directed: 'false', weight: 0.11473699999999999} },
+{ data: { source: 'STX16', target: 'GOSR2', directed: 'false', weight: 0.133451} },
+{ data: { source: 'STX12', target: 'NAPA', directed: 'false', weight: 0.386768} },
+{ data: { source: 'STX12', target: 'STX10', directed: 'false', weight: 0.574395} },
+{ data: { source: 'STX12', target: 'BET1', directed: 'false', weight: 0.478029} },
+{ data: { source: 'STX12', target: 'GOSR2', directed: 'false', weight: 0.45719099999999996} },
+{ data: { source: 'GOSR2', target: 'NAPA', directed: 'false', weight: 0.1711} },
+{ data: { source: 'GOSR2', target: 'STX10', directed: 'false', weight: 0.46998900000000005} },
+{ data: { source: 'BET1', target: 'NAPA', directed: 'false', weight: 0.5} },
+{ data: { source: 'BET1', target: 'STX10', directed: 'false', weight: 0.125737} },
+{ data: { source: 'NAPA', target: 'STX10', directed: 'false', weight: 0.20732899999999999} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 30,
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}                                
@@ -53,7 +103,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
 								'line-color': 'blue',
 								'opacity': 0.5
 							}
@@ -62,7 +112,10 @@ style: [
 
 });
 cy.layout({
-    name: 'circle'
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
 }).run();
 
 cy.on('tap', 'node', function(){

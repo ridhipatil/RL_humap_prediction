@@ -30,18 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'CFB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P00751" }},
-{data: { id: 'HBB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P68871" }},
-{data: { id: 'ORM2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P19652" }},
-{data: { id: 'ITIH2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P19823" }},
-{data: { id: 'GDPD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N9F7" }}], 
- edges: [{ data: { source: 'HBB', target: 'GDPD1', directed: 'false', weight: 0.712691} },
-{ data: { source: 'HBB', target: 'ORM2', directed: 'false', weight: 0.101714} },
-{ data: { source: 'ITIH2', target: 'GDPD1', directed: 'false', weight: 0.530993} },
-{ data: { source: 'ITIH2', target: 'ORM2', directed: 'false', weight: 0.120276} },
-{ data: { source: 'GDPD1', target: 'ORM2', directed: 'false', weight: 0.984191} },
-{ data: { source: 'GDPD1', target: 'CFB', directed: 'false', weight: 0.779312} },
-{ data: { source: 'CFB', target: 'ORM2', directed: 'false', weight: 0.151455} }]},
+elements:{nodes: [{data: { id: 'ARSK', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q6UWY0" }},
+{data: { id: 'MBTPS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14703" }},
+{data: { id: 'ADAM9', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q13443" }},
+{data: { id: 'GALNT13', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IUC8" }}], 
+ edges: [{ data: { source: 'ARSK', target: 'MBTPS1', directed: 'false', weight: 0.560215} },
+{ data: { source: 'MBTPS1', target: 'GALNT13', directed: 'false', weight: 0.61717} },
+{ data: { source: 'MBTPS1', target: 'ADAM9', directed: 'false', weight: 0.237195} }]},
 
 style: [
     {
@@ -89,7 +84,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.37500
+    Complex Score  = 0.30000
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>ADAM9
     </section>
     </body>
     </html>

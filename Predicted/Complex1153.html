@@ -30,23 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'PIK3R3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92569" }},
-{data: { id: 'PKN3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6P5Z2" }},
-{data: { id: 'DIP2A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14689" }},
-{data: { id: 'PIK3R1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P27986" }},
-{data: { id: 'PIK3CD', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00329" }},
-{data: { id: 'PIK3R2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00459" }}], 
- edges: [{ data: { source: 'PIK3R3', target: 'PIK3R1', directed: 'false', weight: 0.581568} },
-{ data: { source: 'PIK3R3', target: 'PIK3R2', directed: 'false', weight: 0.9806229999999999} },
-{ data: { source: 'PIK3R3', target: 'PKN3', directed: 'false', weight: 0.206527} },
-{ data: { source: 'PIK3R3', target: 'DIP2A', directed: 'false', weight: 0.10447999999999999} },
-{ data: { source: 'PKN3', target: 'PIK3R1', directed: 'false', weight: 0.342777} },
-{ data: { source: 'PKN3', target: 'PIK3R2', directed: 'false', weight: 0.35416} },
-{ data: { source: 'PKN3', target: 'DIP2A', directed: 'false', weight: 0.391893} },
-{ data: { source: 'DIP2A', target: 'PIK3R1', directed: 'false', weight: 0.138653} },
-{ data: { source: 'DIP2A', target: 'PIK3R2', directed: 'false', weight: 0.149314} },
-{ data: { source: 'PIK3CD', target: 'PIK3R1', directed: 'false', weight: 0.672139} },
-{ data: { source: 'PIK3R1', target: 'PIK3R2', directed: 'false', weight: 0.983784} }]},
+elements:{nodes: [{data: { id: 'RPS9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P46781" }},
+{data: { id: 'HIST1H1D', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P16402" }},
+{data: { id: 'UBR5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95071" }},
+{data: { id: 'HADHB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P55084" }}], 
+ edges: [{ data: { source: 'RPS9', target: 'HIST1H1D', directed: 'false', weight: 0.0871576} },
+{ data: { source: 'UBR5', target: 'HADHB', directed: 'false', weight: 0.637157} },
+{ data: { source: 'HIST1H1D', target: 'HADHB', directed: 'false', weight: 0.16156099999999998} }]},
 
 style: [
     {
@@ -94,7 +84,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.37500
+    Complex Score  = 0.30000
     </section>
     </body>
     </html>

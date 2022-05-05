@@ -30,31 +30,19 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'FUT4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P22083" }},
-{data: { id: 'ATP13A2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NQ11" }},
-{data: { id: 'FGFRL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N441" }},
-{data: { id: 'WDR3', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9UNX4" }},
-{data: { id: 'IL27RA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6UWB1" }},
-{data: { id: 'DCBLD1', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q8N8Z6" }},
-{data: { id: 'HLA-DPA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P20036" }},
-{data: { id: 'NOB1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9ULX3" }}], 
- edges: [{ data: { source: 'FUT4', target: 'HLA-DPA1', directed: 'false', weight: 0.8725629999999999} },
-{ data: { source: 'FUT4', target: 'DCBLD1', directed: 'false', weight: 0.171414} },
-{ data: { source: 'FUT4', target: 'IL27RA', directed: 'false', weight: 0.171414} },
-{ data: { source: 'FUT4', target: 'FGFRL1', directed: 'false', weight: 0.171414} },
-{ data: { source: 'FUT4', target: 'ATP13A2', directed: 'false', weight: 0.12378900000000001} },
-{ data: { source: 'ATP13A2', target: 'HLA-DPA1', directed: 'false', weight: 0.5359079999999999} },
-{ data: { source: 'ATP13A2', target: 'DCBLD1', directed: 'false', weight: 0.12378900000000001} },
-{ data: { source: 'ATP13A2', target: 'FGFRL1', directed: 'false', weight: 0.12378900000000001} },
-{ data: { source: 'ATP13A2', target: 'IL27RA', directed: 'false', weight: 0.12378900000000001} },
-{ data: { source: 'FGFRL1', target: 'HLA-DPA1', directed: 'false', weight: 0.747196} },
-{ data: { source: 'FGFRL1', target: 'DCBLD1', directed: 'false', weight: 0.171414} },
-{ data: { source: 'FGFRL1', target: 'IL27RA', directed: 'false', weight: 0.171414} },
-{ data: { source: 'WDR3', target: 'NOB1', directed: 'false', weight: 0.569609} },
-{ data: { source: 'IL27RA', target: 'HLA-DPA1', directed: 'false', weight: 0.49271800000000004} },
-{ data: { source: 'IL27RA', target: 'DCBLD1', directed: 'false', weight: 0.171414} },
-{ data: { source: 'DCBLD1', target: 'HLA-DPA1', directed: 'false', weight: 0.8911190000000001} },
-{ data: { source: 'HLA-DPA1', target: 'NOB1', directed: 'false', weight: 0.547085} }]},
+elements:{nodes: [{data: { id: 'MAT1A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q00266" }},
+{data: { id: 'MAT2A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P31153" }},
+{data: { id: 'HNRNPH1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P31943" }},
+{data: { id: 'HNRNPF', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P52597" }},
+{data: { id: 'RHOC', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P08134" }},
+{data: { id: 'MAT2B', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9NZL9" }}], 
+ edges: [{ data: { source: 'MAT1A', target: 'MAT2A', directed: 'false', weight: 0.853417} },
+{ data: { source: 'MAT1A', target: 'MAT2B', directed: 'false', weight: 0.7502909999999999} },
+{ data: { source: 'MAT1A', target: 'RHOC', directed: 'false', weight: 0.29022} },
+{ data: { source: 'HNRNPH1', target: 'HNRNPF', directed: 'false', weight: 0.9759459999999999} },
+{ data: { source: 'HNRNPH1', target: 'MAT2A', directed: 'false', weight: 0.779637} },
+{ data: { source: 'HNRNPF', target: 'MAT2A', directed: 'false', weight: 0.755949} },
+{ data: { source: 'MAT2A', target: 'MAT2B', directed: 'false', weight: 0.878325} }]},
 
 style: [
     {
@@ -103,6 +91,11 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.37500
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>MAT2B
     </section>
     </body>
     </html>

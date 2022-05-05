@@ -30,11 +30,17 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'RAB38', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P57729" }},
-{data: { id: 'SHROOM3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TF72" }},
-{data: { id: 'RAB32', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13637" }}], 
- edges: [{ data: { source: 'RAB38', target: 'RAB32', directed: 'false', weight: 0.984345} },
-{ data: { source: 'SHROOM3', target: 'RAB32', directed: 'false', weight: 0.591491} }]},
+elements:{nodes: [{data: { id: 'FAM90A1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86YD7" }},
+{data: { id: 'FARP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y4F1" }},
+{data: { id: 'BRD4', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/O60885" }},
+{data: { id: 'BRD2', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P25440" }},
+{data: { id: 'MTMR14', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NCE2" }}], 
+ edges: [{ data: { source: 'FAM90A1', target: 'BRD2', directed: 'false', weight: 0.97585} },
+{ data: { source: 'FAM90A1', target: 'MTMR14', directed: 'false', weight: 0.956266} },
+{ data: { source: 'FAM90A1', target: 'BRD4', directed: 'false', weight: 0.952197} },
+{ data: { source: 'BRD4', target: 'BRD2', directed: 'false', weight: 0.253703} },
+{ data: { source: 'BRD4', target: 'MTMR14', directed: 'false', weight: 0.123797} },
+{ data: { source: 'BRD2', target: 'FARP1', directed: 'false', weight: 0.8587049999999999} }]},
 
 style: [
     {
@@ -83,6 +89,11 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.38750
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        2 interacting protein(s): <br>BRD4 BRD2
     </section>
     </body>
     </html>

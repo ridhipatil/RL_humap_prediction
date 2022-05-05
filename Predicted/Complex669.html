@@ -30,20 +30,38 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'ZNF845', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q96IR2" }},
-{data: { id: 'ABT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9ULW3" }},
-{data: { id: 'REPIN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BWE0" }},
-{data: { id: 'ZNF574', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6ZN55" }},
-{data: { id: 'MEN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00255" }},
-{data: { id: 'SET', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q01105" }}], 
- edges: [{ data: { source: 'REPIN1', target: 'SET', directed: 'false', weight: 0.841199} },
-{ data: { source: 'REPIN1', target: 'ZNF845', directed: 'false', weight: 0.0974347} },
-{ data: { source: 'REPIN1', target: 'MEN1', directed: 'false', weight: 0.0775955} },
-{ data: { source: 'ABT1', target: 'ZNF574', directed: 'false', weight: 0.413725} },
-{ data: { source: 'MEN1', target: 'SET', directed: 'false', weight: 0.487216} },
-{ data: { source: 'MEN1', target: 'ZNF845', directed: 'false', weight: 0.100579} },
-{ data: { source: 'ZNF845', target: 'SET', directed: 'false', weight: 0.633113} },
-{ data: { source: 'ZNF574', target: 'SET', directed: 'false', weight: 0.5667840000000001} }]},
+elements:{nodes: [{data: { id: 'DCBLD1', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q8N8Z6" }},
+{data: { id: 'FUT4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P22083" }},
+{data: { id: 'UTP14C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5TAP6" }},
+{data: { id: 'IL27RA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6UWB1" }},
+{data: { id: 'HS3ST3B1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y662" }},
+{data: { id: 'HLA-DPA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P20036" }},
+{data: { id: 'ATP13A2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NQ11" }},
+{data: { id: 'FGFRL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N441" }},
+{data: { id: 'NOB1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9ULX3" }}], 
+ edges: [{ data: { source: 'DCBLD1', target: 'HLA-DPA1', directed: 'false', weight: 0.8911190000000001} },
+{ data: { source: 'DCBLD1', target: 'HS3ST3B1', directed: 'false', weight: 0.171414} },
+{ data: { source: 'DCBLD1', target: 'IL27RA', directed: 'false', weight: 0.171414} },
+{ data: { source: 'DCBLD1', target: 'FGFRL1', directed: 'false', weight: 0.171414} },
+{ data: { source: 'DCBLD1', target: 'FUT4', directed: 'false', weight: 0.171414} },
+{ data: { source: 'DCBLD1', target: 'ATP13A2', directed: 'false', weight: 0.12378900000000001} },
+{ data: { source: 'FUT4', target: 'HLA-DPA1', directed: 'false', weight: 0.8725629999999999} },
+{ data: { source: 'FUT4', target: 'HS3ST3B1', directed: 'false', weight: 0.171414} },
+{ data: { source: 'FUT4', target: 'IL27RA', directed: 'false', weight: 0.171414} },
+{ data: { source: 'FUT4', target: 'FGFRL1', directed: 'false', weight: 0.171414} },
+{ data: { source: 'FUT4', target: 'ATP13A2', directed: 'false', weight: 0.12378900000000001} },
+{ data: { source: 'UTP14C', target: 'NOB1', directed: 'false', weight: 0.128057} },
+{ data: { source: 'HS3ST3B1', target: 'HLA-DPA1', directed: 'false', weight: 0.907113} },
+{ data: { source: 'HS3ST3B1', target: 'IL27RA', directed: 'false', weight: 0.171414} },
+{ data: { source: 'HS3ST3B1', target: 'FGFRL1', directed: 'false', weight: 0.171414} },
+{ data: { source: 'HS3ST3B1', target: 'ATP13A2', directed: 'false', weight: 0.12378900000000001} },
+{ data: { source: 'ATP13A2', target: 'HLA-DPA1', directed: 'false', weight: 0.5359079999999999} },
+{ data: { source: 'ATP13A2', target: 'FGFRL1', directed: 'false', weight: 0.12378900000000001} },
+{ data: { source: 'ATP13A2', target: 'IL27RA', directed: 'false', weight: 0.12378900000000001} },
+{ data: { source: 'FGFRL1', target: 'HLA-DPA1', directed: 'false', weight: 0.747196} },
+{ data: { source: 'FGFRL1', target: 'IL27RA', directed: 'false', weight: 0.171414} },
+{ data: { source: 'HLA-DPA1', target: 'NOB1', directed: 'false', weight: 0.547085} },
+{ data: { source: 'HLA-DPA1', target: 'IL27RA', directed: 'false', weight: 0.49271800000000004} }]},
 
 style: [
     {
@@ -91,7 +109,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.37500
+    Complex Score  = 0.38750
     </section>
     </body>
     </html>

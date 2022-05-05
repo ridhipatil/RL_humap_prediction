@@ -30,19 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'BACH1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O14867" }},
-{data: { id: 'MAFF', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9ULX9" }},
-{data: { id: 'NFE2L1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14494" }},
-{data: { id: 'NFE2L3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y4A8" }},
-{data: { id: 'RTL6', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q6ICC9" }}], 
- edges: [{ data: { source: 'NFE2L3', target: 'MAFF', directed: 'false', weight: 0.9752139999999999} },
-{ data: { source: 'NFE2L3', target: 'NFE2L1', directed: 'false', weight: 0.171414} },
-{ data: { source: 'NFE2L3', target: 'RTL6', directed: 'false', weight: 0.151455} },
-{ data: { source: 'BACH1', target: 'MAFF', directed: 'false', weight: 0.9951690000000001} },
-{ data: { source: 'BACH1', target: 'NFE2L1', directed: 'false', weight: 0.140692} },
-{ data: { source: 'MAFF', target: 'NFE2L1', directed: 'false', weight: 0.9823719999999999} },
-{ data: { source: 'MAFF', target: 'RTL6', directed: 'false', weight: 0.910055} },
-{ data: { source: 'NFE2L1', target: 'RTL6', directed: 'false', weight: 0.151455} }]},
+elements:{nodes: [{data: { id: 'RWDD2B', score: 3, type: '', href: "https://www.uniprot.org/uniprot/P57060" }},
+{data: { id: 'MYH11', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P35749" }},
+{data: { id: 'ATF6B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99941" }},
+{data: { id: 'OVCA2', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q8WZ82" }}], 
+ edges: [{ data: { source: 'ATF6B', target: 'RWDD2B', directed: 'false', weight: 0.298492} },
+{ data: { source: 'RWDD2B', target: 'MYH11', directed: 'false', weight: 0.718675} },
+{ data: { source: 'MYH11', target: 'OVCA2', directed: 'false', weight: 0.44023500000000004} }]},
 
 style: [
     {
@@ -90,7 +84,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.37500
+    Complex Score  = 0.30000
     </section>
     </body>
     </html>

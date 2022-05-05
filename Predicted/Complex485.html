@@ -30,20 +30,17 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'CNTNAP3', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9BZ76" }},
-{data: { id: 'MAN2A1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16706" }},
-{data: { id: 'B3GLCT', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6Y288" }},
-{data: { id: 'GALNT13', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IUC8" }},
-{data: { id: 'FAM234B', score: 2, type: '', href: "https://www.uniprot.org/uniprot/A2RU67" }},
-{data: { id: 'ITGA8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P53708" }}], 
- edges: [{ data: { source: 'CNTNAP3', target: 'GALNT13', directed: 'false', weight: 0.742854} },
-{ data: { source: 'CNTNAP3', target: 'ITGA8', directed: 'false', weight: 0.412631} },
-{ data: { source: 'CNTNAP3', target: 'FAM234B', directed: 'false', weight: 0.149978} },
-{ data: { source: 'MAN2A1', target: 'ITGA8', directed: 'false', weight: 0.28913} },
-{ data: { source: 'MAN2A1', target: 'B3GLCT', directed: 'false', weight: 0.252449} },
-{ data: { source: 'GALNT13', target: 'FAM234B', directed: 'false', weight: 0.537492} },
-{ data: { source: 'GALNT13', target: 'ITGA8', directed: 'false', weight: 0.220348} },
-{ data: { source: 'FAM234B', target: 'ITGA8', directed: 'false', weight: 0.121618} }]},
+elements:{nodes: [{data: { id: 'ST3GAL4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q11206" }},
+{data: { id: 'DHFR2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86XF0" }},
+{data: { id: '25864', score: 0, type: '' }},
+{data: { id: 'FAM3C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92520" }},
+{data: { id: 'HYAL2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q12891" }}], 
+ edges: [{ data: { source: '25864', target: 'FAM3C', directed: 'false', weight: 0.364713} },
+{ data: { source: 'FAM3C', target: 'DHFR2', directed: 'false', weight: 0.0741937} },
+{ data: { source: 'FAM3C', target: 'ST3GAL4', directed: 'false', weight: 0.41850699999999996} },
+{ data: { source: 'HYAL2', target: 'DHFR2', directed: 'false', weight: 0.10220900000000001} },
+{ data: { source: 'HYAL2', target: 'ST3GAL4', directed: 'false', weight: 0.130382} },
+{ data: { source: 'ST3GAL4', target: 'DHFR2', directed: 'false', weight: 0.613608} }]},
 
 style: [
     {
@@ -91,7 +88,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.37500
+    Complex Score  = 0.38750
     </section>
     </body>
     </html>

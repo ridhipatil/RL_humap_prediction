@@ -30,17 +30,20 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'UBL5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BZL1" }},
-{data: { id: 'PQBP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60828" }},
-{data: { id: 'WBP11', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y2W2" }},
-{data: { id: 'USP39', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q53GS9" }},
-{data: { id: 'PRPF6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O94906" }}], 
- edges: [{ data: { source: 'UBL5', target: 'PQBP1', directed: 'false', weight: 0.554682} },
-{ data: { source: 'PQBP1', target: 'PRPF6', directed: 'false', weight: 0.395991} },
-{ data: { source: 'PQBP1', target: 'WBP11', directed: 'false', weight: 0.9999629999999999} },
-{ data: { source: 'USP39', target: 'PRPF6', directed: 'false', weight: 0.9943790000000001} },
-{ data: { source: 'USP39', target: 'WBP11', directed: 'false', weight: 0.225766} },
-{ data: { source: 'PRPF6', target: 'WBP11', directed: 'false', weight: 0.9914069999999999} }]},
+elements:{nodes: [{data: { id: 'API5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BZZ5" }},
+{data: { id: 'PRMT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99873" }},
+{data: { id: 'RBM12B', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q8IXT5" }},
+{data: { id: 'RBMX', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P38159" }},
+{data: { id: 'HNRNPR', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43390" }},
+{data: { id: 'NCOA5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HCD5" }}], 
+ edges: [{ data: { source: 'API5', target: 'HNRNPR', directed: 'false', weight: 0.792322} },
+{ data: { source: 'API5', target: 'PRMT1', directed: 'false', weight: 0.293091} },
+{ data: { source: 'RBM12B', target: 'RBMX', directed: 'false', weight: 0.563882} },
+{ data: { source: 'RBM12B', target: 'NCOA5', directed: 'false', weight: 0.273147} },
+{ data: { source: 'NCOA5', target: 'RBMX', directed: 'false', weight: 0.9738629999999999} },
+{ data: { source: 'PRMT1', target: 'HNRNPR', directed: 'false', weight: 0.98749} },
+{ data: { source: 'PRMT1', target: 'RBMX', directed: 'false', weight: 0.0730895} },
+{ data: { source: 'RBMX', target: 'HNRNPR', directed: 'false', weight: 0.975899} }]},
 
 style: [
     {

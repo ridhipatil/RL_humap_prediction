@@ -30,12 +30,25 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'SYT10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6XYQ8" }},
-{data: { id: 'SYT3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BQG1" }},
-{data: { id: 'SYT6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5T7P8" }}], 
- edges: [{ data: { source: 'SYT10', target: 'SYT3', directed: 'false', weight: 0.171414} },
-{ data: { source: 'SYT10', target: 'SYT6', directed: 'false', weight: 0.9821129999999999} },
-{ data: { source: 'SYT3', target: 'SYT6', directed: 'false', weight: 0.990577} }]},
+elements:{nodes: [{data: { id: 'PRKCA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P17252" }},
+{data: { id: 'RRAS2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62070" }},
+{data: { id: 'ERICH5', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q6P6B1" }},
+{data: { id: 'PALM', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75781" }},
+{data: { id: 'YES1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P07947" }},
+{data: { id: 'RALA', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P11233" }}], 
+ edges: [{ data: { source: 'PRKCA', target: 'YES1', directed: 'false', weight: 0.210089} },
+{ data: { source: 'PRKCA', target: 'RRAS2', directed: 'false', weight: 0.289393} },
+{ data: { source: 'PRKCA', target: 'PALM', directed: 'false', weight: 0.153571} },
+{ data: { source: 'PRKCA', target: 'ERICH5', directed: 'false', weight: 0.196937} },
+{ data: { source: 'RRAS2', target: 'YES1', directed: 'false', weight: 0.942351} },
+{ data: { source: 'RRAS2', target: 'PALM', directed: 'false', weight: 0.608244} },
+{ data: { source: 'RRAS2', target: 'ERICH5', directed: 'false', weight: 0.320818} },
+{ data: { source: 'RRAS2', target: 'RALA', directed: 'false', weight: 0.320156} },
+{ data: { source: 'RALA', target: 'YES1', directed: 'false', weight: 0.104931} },
+{ data: { source: 'RALA', target: 'PALM', directed: 'false', weight: 0.206763} },
+{ data: { source: 'ERICH5', target: 'YES1', directed: 'false', weight: 0.19596} },
+{ data: { source: 'ERICH5', target: 'PALM', directed: 'false', weight: 0.347301} },
+{ data: { source: 'PALM', target: 'YES1', directed: 'false', weight: 0.698074} }]},
 
 style: [
     {
@@ -78,7 +91,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.39375
+    Complex Score  = 0.39688
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>RALA
     </section>
     </body>
     </html>

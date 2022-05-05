@@ -30,20 +30,19 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'GNG12', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UBI6" }},
-{data: { id: 'GNAL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P38405" }},
-{data: { id: 'GNAS', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95467" }},
-{data: { id: 'GNG4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P50150" }},
-{data: { id: 'OCIAD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NX40" }},
-{data: { id: 'GNB1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P62873" }}], 
- edges: [{ data: { source: 'GNG12', target: 'GNB1', directed: 'false', weight: 0.462776} },
-{ data: { source: 'GNG12', target: 'GNAS', directed: 'false', weight: 0.313452} },
-{ data: { source: 'GNG12', target: 'GNAL', directed: 'false', weight: 0.151455} },
-{ data: { source: 'GNG12', target: 'OCIAD1', directed: 'false', weight: 0.0952194} },
-{ data: { source: 'GNG4', target: 'GNB1', directed: 'false', weight: 0.714739} },
-{ data: { source: 'OCIAD1', target: 'GNAS', directed: 'false', weight: 0.42815299999999995} },
-{ data: { source: 'OCIAD1', target: 'GNAL', directed: 'false', weight: 0.0833615} },
-{ data: { source: 'GNAL', target: 'GNAS', directed: 'false', weight: 0.939933} }]},
+elements:{nodes: [{data: { id: 'RBM25', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49756" }},
+{data: { id: 'CCDC12', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q8WUD4" }},
+{data: { id: 'CLASRP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N2M8" }},
+{data: { id: 'PPIL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y3C6" }},
+{data: { id: 'SNW1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13573" }},
+{data: { id: 'SLU7', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/O95391" }}], 
+ edges: [{ data: { source: 'RBM25', target: 'SNW1', directed: 'false', weight: 0.637428} },
+{ data: { source: 'CLASRP', target: 'SNW1', directed: 'false', weight: 0.996878} },
+{ data: { source: 'CLASRP', target: 'PPIL1', directed: 'false', weight: 0.144297} },
+{ data: { source: 'PPIL1', target: 'SNW1', directed: 'false', weight: 0.9957229999999999} },
+{ data: { source: 'SNW1', target: 'CCDC12', directed: 'false', weight: 0.999634} },
+{ data: { source: 'SNW1', target: 'SLU7', directed: 'false', weight: 0.973123} },
+{ data: { source: 'SLU7', target: 'CCDC12', directed: 'false', weight: 0.2823} }]},
 
 style: [
     {
@@ -96,7 +95,7 @@ cy.on('tap', 'node', function(){
         <br>
         Connection to SARS-COV2: 
         <br>
-        1 interacting protein(s): <br>GNB1
+        1 interacting protein(s): <br>SLU7
     </section>
     </body>
     </html>

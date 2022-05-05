@@ -30,16 +30,20 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'RAB3IP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96QF0" }},
-{data: { id: 'RAB3IL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TBN0" }},
-{data: { id: 'PPFIA3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75145" }},
-{data: { id: 'TMEM102', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N9M5" }}], 
- edges: [{ data: { source: 'RAB3IP', target: 'RAB3IL1', directed: 'false', weight: 0.967507} },
-{ data: { source: 'RAB3IP', target: 'TMEM102', directed: 'false', weight: 0.463714} },
-{ data: { source: 'RAB3IP', target: 'PPFIA3', directed: 'false', weight: 0.117318} },
-{ data: { source: 'RAB3IL1', target: 'TMEM102', directed: 'false', weight: 0.940917} },
-{ data: { source: 'RAB3IL1', target: 'PPFIA3', directed: 'false', weight: 0.898891} },
-{ data: { source: 'PPFIA3', target: 'TMEM102', directed: 'false', weight: 0.123797} }]},
+elements:{nodes: [{data: { id: 'FARP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O94887" }},
+{data: { id: 'PPP1R15B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5SWA1" }},
+{data: { id: 'TYW1B', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q6NUM6" }},
+{data: { id: 'PLCB1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NQ66" }},
+{data: { id: 'PTGER3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P43115" }}], 
+ edges: [{ data: { source: 'PPP1R15B', target: 'FARP2', directed: 'false', weight: 0.133451} },
+{ data: { source: 'PPP1R15B', target: 'PTGER3', directed: 'false', weight: 0.329839} },
+{ data: { source: 'PPP1R15B', target: 'PLCB1', directed: 'false', weight: 0.117318} },
+{ data: { source: 'FARP2', target: 'PTGER3', directed: 'false', weight: 0.5484359999999999} },
+{ data: { source: 'FARP2', target: 'PLCB1', directed: 'false', weight: 0.151455} },
+{ data: { source: 'FARP2', target: 'TYW1B', directed: 'false', weight: 0.128057} },
+{ data: { source: 'TYW1B', target: 'PTGER3', directed: 'false', weight: 0.33050300000000005} },
+{ data: { source: 'TYW1B', target: 'PLCB1', directed: 'false', weight: 0.112499} },
+{ data: { source: 'PLCB1', target: 'PTGER3', directed: 'false', weight: 0.404364} }]},
 
 style: [
     {
@@ -82,7 +86,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.39375
+    Complex Score  = 0.39688
     </section>
     </body>
     </html>

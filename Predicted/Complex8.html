@@ -30,16 +30,20 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'MECOM', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q03112" }},
-{data: { id: 'SPDEF', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95238" }},
-{data: { id: 'PRDM16', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HAZ2" }},
-{data: { id: 'C5orf30', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96GV9" }}], 
- edges: [{ data: { source: 'PRDM16', target: 'SPDEF', directed: 'false', weight: 0.9802350000000001} },
-{ data: { source: 'PRDM16', target: 'C5orf30', directed: 'false', weight: 0.151455} },
-{ data: { source: 'PRDM16', target: 'MECOM', directed: 'false', weight: 0.151455} },
-{ data: { source: 'MECOM', target: 'SPDEF', directed: 'false', weight: 0.587341} },
-{ data: { source: 'MECOM', target: 'C5orf30', directed: 'false', weight: 0.133456} },
-{ data: { source: 'SPDEF', target: 'C5orf30', directed: 'false', weight: 0.821459} }]},
+elements:{nodes: [{data: { id: 'STAT5A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P42229" }},
+{data: { id: 'PDHA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P08559" }},
+{data: { id: 'DLAT', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P10515" }},
+{data: { id: 'PDHX', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00330" }},
+{data: { id: 'STAT5B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P51692" }}], 
+ edges: [{ data: { source: 'PDHX', target: 'PDHA1', directed: 'false', weight: 0.933788} },
+{ data: { source: 'PDHX', target: 'DLAT', directed: 'false', weight: 0.840566} },
+{ data: { source: 'PDHX', target: 'STAT5A', directed: 'false', weight: 0.9594379999999999} },
+{ data: { source: 'PDHX', target: 'STAT5B', directed: 'false', weight: 0.8918950000000001} },
+{ data: { source: 'STAT5B', target: 'PDHA1', directed: 'false', weight: 0.6547029999999999} },
+{ data: { source: 'STAT5B', target: 'DLAT', directed: 'false', weight: 0.734251} },
+{ data: { source: 'STAT5A', target: 'PDHA1', directed: 'false', weight: 0.948998} },
+{ data: { source: 'STAT5A', target: 'DLAT', directed: 'false', weight: 0.898526} },
+{ data: { source: 'PDHA1', target: 'DLAT', directed: 'false', weight: 0.999826} }]},
 
 style: [
     {
@@ -82,7 +86,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.39375
+    Complex Score  = 0.39688
     </section>
     </body>
     </html>

@@ -30,17 +30,15 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'ELL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P55199" }},
-{data: { id: 'ELL3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HB65" }},
-{data: { id: 'MLLT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q03111" }},
-{data: { id: 'CDK9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P50750" }},
-{data: { id: 'AFF4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UHB7" }}], 
- edges: [{ data: { source: 'ELL', target: 'ELL3', directed: 'false', weight: 0.256725} },
-{ data: { source: 'MLLT1', target: 'CDK9', directed: 'false', weight: 0.8799110000000001} },
-{ data: { source: 'MLLT1', target: 'AFF4', directed: 'false', weight: 0.9978290000000001} },
-{ data: { source: 'MLLT1', target: 'ELL3', directed: 'false', weight: 0.8862959999999999} },
-{ data: { source: 'AFF4', target: 'CDK9', directed: 'false', weight: 0.970325} },
-{ data: { source: 'AFF4', target: 'ELL3', directed: 'false', weight: 0.914861} }]},
+elements:{nodes: [{data: { id: 'PTBP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P26599" }},
+{data: { id: 'MARCKSL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49006" }},
+{data: { id: 'HNRNPD', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14103" }},
+{data: { id: 'ELAVL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15717" }},
+{data: { id: 'SUGP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IX01" }}], 
+ edges: [{ data: { source: 'PTBP1', target: 'HNRNPD', directed: 'false', weight: 0.7077359999999999} },
+{ data: { source: 'PTBP1', target: 'ELAVL1', directed: 'false', weight: 0.790536} },
+{ data: { source: 'PTBP1', target: 'SUGP2', directed: 'false', weight: 0.387997} },
+{ data: { source: 'MARCKSL1', target: 'HNRNPD', directed: 'false', weight: 0.28526799999999997} }]},
 
 style: [
     {
@@ -88,7 +86,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.37500
+    Complex Score  = 0.35000
     </section>
     </body>
     </html>

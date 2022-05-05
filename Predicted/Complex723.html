@@ -30,19 +30,17 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'GALNS', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P34059" }},
-{data: { id: 'CHID1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BWS9" }},
-{data: { id: 'ARSB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P15848" }},
-{data: { id: 'ARSA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43681" }},
-{data: { id: 'SIAE', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HAT2" }}], 
- edges: [{ data: { source: 'GALNS', target: 'SIAE', directed: 'false', weight: 0.382211} },
-{ data: { source: 'GALNS', target: 'ARSA', directed: 'false', weight: 0.6984670000000001} },
-{ data: { source: 'GALNS', target: 'ARSB', directed: 'false', weight: 0.240954} },
-{ data: { source: 'GALNS', target: 'CHID1', directed: 'false', weight: 0.10701400000000001} },
-{ data: { source: 'ARSB', target: 'SIAE', directed: 'false', weight: 0.554096} },
-{ data: { source: 'ARSA', target: 'SIAE', directed: 'false', weight: 0.34045} },
-{ data: { source: 'ARSA', target: 'CHID1', directed: 'false', weight: 0.0998485} },
-{ data: { source: 'SIAE', target: 'CHID1', directed: 'false', weight: 0.21736799999999998} }]},
+elements:{nodes: [{data: { id: 'HNRNPDL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O14979" }},
+{data: { id: 'SYNCRIP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60506" }},
+{data: { id: 'HNRNPA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P09651" }},
+{data: { id: '6832', score: 0, type: '' }},
+{data: { id: 'HNRNPH1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P31943" }}], 
+ edges: [{ data: { source: 'SYNCRIP', target: 'HNRNPA1', directed: 'false', weight: 0.975932} },
+{ data: { source: 'SYNCRIP', target: 'HNRNPH1', directed: 'false', weight: 0.975958} },
+{ data: { source: 'HNRNPH1', target: 'HNRNPA1', directed: 'false', weight: 0.993719} },
+{ data: { source: 'HNRNPH1', target: 'HNRNPDL', directed: 'false', weight: 0.8810100000000001} },
+{ data: { source: '6832', target: 'HNRNPDL', directed: 'false', weight: 0.268613} },
+{ data: { source: 'HNRNPA1', target: 'HNRNPDL', directed: 'false', weight: 0.194139} }]},
 
 style: [
     {
@@ -90,7 +88,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.37500
+    Complex Score  = 0.38750
     </section>
     </body>
     </html>

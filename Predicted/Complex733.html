@@ -30,19 +30,25 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'FAM189B', score: 4, type: '', href: "https://www.uniprot.org/uniprot/P81408" }},
-{data: { id: 'SREBF2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q12772" }},
-{data: { id: '339457', score: 0, type: '' }},
-{data: { id: 'TMEM201', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5SNT2" }},
-{data: { id: 'TBL2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y4P3" }},
-{data: { id: 'PNPLA6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IY17" }}], 
- edges: [{ data: { source: 'SREBF2', target: 'PNPLA6', directed: 'false', weight: 0.299025} },
-{ data: { source: 'SREBF2', target: 'TMEM201', directed: 'false', weight: 0.283637} },
-{ data: { source: 'SREBF2', target: 'TBL2', directed: 'false', weight: 0.155434} },
-{ data: { source: 'TBL2', target: 'FAM189B', directed: 'false', weight: 0.47161899999999995} },
-{ data: { source: 'TBL2', target: 'PNPLA6', directed: 'false', weight: 0.510368} },
-{ data: { source: 'TBL2', target: 'TMEM201', directed: 'false', weight: 0.104861} },
-{ data: { source: 'PNPLA6', target: 'TMEM201', directed: 'false', weight: 0.521016} }]},
+elements:{nodes: [{data: { id: 'KANK2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q63ZY3" }},
+{data: { id: 'SEC13', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P55735" }},
+{data: { id: 'BTBD3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y2F9" }},
+{data: { id: 'FAM83B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5T0W9" }},
+{data: { id: 'SEC23B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15437" }},
+{data: { id: 'SEC16A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15027" }},
+{data: { id: 'PKP2', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q99959" }}], 
+ edges: [{ data: { source: 'KANK2', target: 'FAM83B', directed: 'false', weight: 0.0897674} },
+{ data: { source: 'KANK2', target: 'PKP2', directed: 'false', weight: 0.13574} },
+{ data: { source: 'KANK2', target: 'SEC16A', directed: 'false', weight: 0.282269} },
+{ data: { source: 'SEC13', target: 'SEC23B', directed: 'false', weight: 0.7157720000000001} },
+{ data: { source: 'BTBD3', target: 'SEC23B', directed: 'false', weight: 0.18296800000000002} },
+{ data: { source: 'BTBD3', target: 'FAM83B', directed: 'false', weight: 0.37043899999999996} },
+{ data: { source: 'BTBD3', target: 'PKP2', directed: 'false', weight: 0.34521799999999997} },
+{ data: { source: 'BTBD3', target: 'SEC16A', directed: 'false', weight: 0.189226} },
+{ data: { source: 'FAM83B', target: 'PKP2', directed: 'false', weight: 0.512919} },
+{ data: { source: 'FAM83B', target: 'SEC16A', directed: 'false', weight: 0.378909} },
+{ data: { source: 'SEC23B', target: 'PKP2', directed: 'false', weight: 0.20959099999999997} },
+{ data: { source: 'SEC16A', target: 'PKP2', directed: 'false', weight: 0.278225} }]},
 
 style: [
     {
@@ -90,7 +96,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.37500
+    Complex Score  = 0.38750
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>PKP2
     </section>
     </body>
     </html>

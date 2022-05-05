@@ -30,20 +30,16 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'MCM2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P33993" }},
-{data: { id: 'RAD21', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60216" }},
-{data: { id: 'DNMT1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P26358" }},
-{data: { id: 'PDS5A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q29RF7" }},
-{data: { id: 'WAPL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q7Z5K2" }},
-{data: { id: 'CDCA5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96FF9" }}], 
- edges: [{ data: { source: 'MCM2', target: 'PDS5A', directed: 'false', weight: 0.12446800000000001} },
-{ data: { source: 'MCM2', target: 'DNMT1', directed: 'false', weight: 0.0597354} },
-{ data: { source: 'RAD21', target: 'PDS5A', directed: 'false', weight: 0.439143} },
-{ data: { source: 'RAD21', target: 'CDCA5', directed: 'false', weight: 0.999189} },
-{ data: { source: 'RAD21', target: 'WAPL', directed: 'false', weight: 0.9446129999999999} },
-{ data: { source: 'PDS5A', target: 'WAPL', directed: 'false', weight: 0.43431400000000003} },
-{ data: { source: 'PDS5A', target: 'CDCA5', directed: 'false', weight: 0.26425} },
-{ data: { source: 'WAPL', target: 'CDCA5', directed: 'false', weight: 0.35547399999999996} }]},
+elements:{nodes: [{data: { id: 'GPR35', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HC97" }},
+{data: { id: 'PMM2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15305" }},
+{data: { id: 'PMM1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92871" }},
+{data: { id: 'POTEE', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q6S8J3" }},
+{data: { id: 'HMOX2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P30519" }}], 
+ edges: [{ data: { source: 'GPR35', target: 'POTEE', directed: 'false', weight: 0.7173609999999999} },
+{ data: { source: 'PMM2', target: 'PMM1', directed: 'false', weight: 0.9851559999999999} },
+{ data: { source: 'PMM2', target: 'POTEE', directed: 'false', weight: 0.133451} },
+{ data: { source: 'PMM1', target: 'POTEE', directed: 'false', weight: 0.6695949999999999} },
+{ data: { source: 'HMOX2', target: 'POTEE', directed: 'false', weight: 0.486915} }]},
 
 style: [
     {
@@ -92,11 +88,6 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.37500
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>DNMT1
     </section>
     </body>
     </html>

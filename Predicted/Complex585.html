@@ -30,19 +30,14 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'PPP3CB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P16298" }},
-{data: { id: 'RCAN2', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q14206" }},
-{data: { id: 'NFATC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95644" }},
-{data: { id: 'PPP3CC', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P48454" }},
-{data: { id: 'PPP3CA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q08209" }}], 
- edges: [{ data: { source: 'PPP3CB', target: 'PPP3CC', directed: 'false', weight: 0.5} },
-{ data: { source: 'PPP3CB', target: 'NFATC1', directed: 'false', weight: 0.11047699999999999} },
-{ data: { source: 'PPP3CB', target: 'PPP3CA', directed: 'false', weight: 0.355147} },
-{ data: { source: 'PPP3CB', target: 'RCAN2', directed: 'false', weight: 0.301571} },
-{ data: { source: 'NFATC1', target: 'PPP3CC', directed: 'false', weight: 0.9783280000000001} },
-{ data: { source: 'PPP3CA', target: 'PPP3CC', directed: 'false', weight: 0.205204} },
-{ data: { source: 'PPP3CA', target: 'RCAN2', directed: 'false', weight: 0.319637} },
-{ data: { source: 'RCAN2', target: 'PPP3CC', directed: 'false', weight: 0.31799499999999997} }]},
+elements:{nodes: [{data: { id: 'OS9', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q13438" }},
+{data: { id: 'FRMPD2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q68DX3" }},
+{data: { id: 'SEL1L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UBV2" }},
+{data: { id: 'ERLEC1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q96DZ1" }}], 
+ edges: [{ data: { source: 'OS9', target: 'SEL1L', directed: 'false', weight: 0.9999790000000001} },
+{ data: { source: 'OS9', target: 'ERLEC1', directed: 'false', weight: 0.826836} },
+{ data: { source: 'FRMPD2', target: 'ERLEC1', directed: 'false', weight: 0.345684} },
+{ data: { source: 'SEL1L', target: 'ERLEC1', directed: 'false', weight: 0.9998030000000001} }]},
 
 style: [
     {
@@ -90,7 +85,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.37500
+    Complex Score  = 0.38750
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        2 interacting protein(s): <br>OS9 ERLEC1
     </section>
     </body>
     </html>

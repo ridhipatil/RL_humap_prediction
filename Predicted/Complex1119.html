@@ -30,23 +30,16 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'AKAP14', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86UN6" }},
-{data: { id: 'PDE4DIP', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q5VU43" }},
-{data: { id: 'PRKX', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P51817" }},
-{data: { id: 'PALM2-AKAP2', score: 0, type: '' }},
-{data: { id: 'CRYBG3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q68DQ2" }},
-{data: { id: 'PRKAR2B', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P31323" }}], 
- edges: [{ data: { source: 'PDE4DIP', target: 'PRKAR2B', directed: 'false', weight: 0.939984} },
-{ data: { source: 'PDE4DIP', target: 'PRKX', directed: 'false', weight: 0.151455} },
-{ data: { source: 'PDE4DIP', target: 'PALM2-AKAP2', directed: 'false', weight: 0.133456} },
-{ data: { source: 'PDE4DIP', target: 'CRYBG3', directed: 'false', weight: 0.123797} },
-{ data: { source: 'PRKX', target: 'PRKAR2B', directed: 'false', weight: 0.979115} },
-{ data: { source: 'PRKX', target: 'PALM2-AKAP2', directed: 'false', weight: 0.151455} },
-{ data: { source: 'PRKX', target: 'CRYBG3', directed: 'false', weight: 0.140692} },
-{ data: { source: 'PALM2-AKAP2', target: 'PRKAR2B', directed: 'false', weight: 0.8735229999999999} },
-{ data: { source: 'PALM2-AKAP2', target: 'CRYBG3', directed: 'false', weight: 0.123797} },
-{ data: { source: 'AKAP14', target: 'PRKAR2B', directed: 'false', weight: 0.824614} },
-{ data: { source: 'CRYBG3', target: 'PRKAR2B', directed: 'false', weight: 0.783139} }]},
+elements:{nodes: [{data: { id: 'EGFR', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P00533" }},
+{data: { id: 'SGSH', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P51688" }},
+{data: { id: 'DPEP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H4A9" }},
+{data: { id: 'ERFE', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q4G0M1" }},
+{data: { id: 'HYAL2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q12891" }}], 
+ edges: [{ data: { source: 'EGFR', target: 'HYAL2', directed: 'false', weight: 0.21395} },
+{ data: { source: 'DPEP2', target: 'ERFE', directed: 'false', weight: 0.0703976} },
+{ data: { source: 'DPEP2', target: 'HYAL2', directed: 'false', weight: 0.311872} },
+{ data: { source: 'ERFE', target: 'HYAL2', directed: 'false', weight: 0.46953599999999995} },
+{ data: { source: 'HYAL2', target: 'SGSH', directed: 'false', weight: 0.27714} }]},
 
 style: [
     {
@@ -94,12 +87,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.37500
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        2 interacting protein(s): <br>PDE4DIP PRKAR2B
+    Complex Score  = 0.30000
     </section>
     </body>
     </html>

@@ -30,11 +30,26 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'NFATC2IP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NCF5" }},
-{data: { id: 'ZCCHC8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6NZY4" }},
-{data: { id: 'RBM7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y580" }}], 
- edges: [{ data: { source: 'NFATC2IP', target: 'ZCCHC8', directed: 'false', weight: 0.302525} },
-{ data: { source: 'ZCCHC8', target: 'RBM7', directed: 'false', weight: 0.999657} }]},
+elements:{nodes: [{data: { id: 'GEMIN7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H840" }},
+{data: { id: 'GEMIN4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P57678" }},
+{data: { id: 'SZRD1', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q7Z422" }},
+{data: { id: 'GEMIN6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WXD5" }},
+{data: { id: 'STRAP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y3F4" }},
+{data: { id: 'CIP2A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TCG1" }},
+{data: { id: 'SMN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16637" }}], 
+ edges: [{ data: { source: 'CIP2A', target: 'GEMIN4', directed: 'false', weight: 0.764292} },
+{ data: { source: 'GEMIN7', target: 'GEMIN4', directed: 'false', weight: 0.275792} },
+{ data: { source: 'GEMIN7', target: 'GEMIN6', directed: 'false', weight: 0.18085} },
+{ data: { source: 'GEMIN7', target: 'SMN1', directed: 'false', weight: 0.8537520000000001} },
+{ data: { source: 'GEMIN7', target: 'STRAP', directed: 'false', weight: 0.849706} },
+{ data: { source: 'GEMIN7', target: 'SZRD1', directed: 'false', weight: 0.11228099999999999} },
+{ data: { source: 'GEMIN4', target: 'GEMIN6', directed: 'false', weight: 0.582547} },
+{ data: { source: 'SZRD1', target: 'GEMIN6', directed: 'false', weight: 0.104379} },
+{ data: { source: 'SZRD1', target: 'SMN1', directed: 'false', weight: 0.12021300000000001} },
+{ data: { source: 'SZRD1', target: 'STRAP', directed: 'false', weight: 0.669928} },
+{ data: { source: 'STRAP', target: 'GEMIN6', directed: 'false', weight: 0.45418500000000006} },
+{ data: { source: 'STRAP', target: 'SMN1', directed: 'false', weight: 0.561554} },
+{ data: { source: 'GEMIN6', target: 'SMN1', directed: 'false', weight: 0.9641360000000001} }]},
 
 style: [
     {

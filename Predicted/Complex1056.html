@@ -30,19 +30,15 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'ABI1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IZP0" }},
-{data: { id: 'CYFIP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q7L576" }},
-{data: { id: 'ABI2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NYB9" }},
-{data: { id: 'RAPH1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q70E73" }},
-{data: { id: 'NHS', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6T4R5" }}], 
- edges: [{ data: { source: 'ABI1', target: 'CYFIP1', directed: 'false', weight: 0.999984} },
-{ data: { source: 'ABI1', target: 'ABI2', directed: 'false', weight: 0.9967729999999999} },
-{ data: { source: 'ABI1', target: 'NHS', directed: 'false', weight: 0.860293} },
-{ data: { source: 'ABI1', target: 'RAPH1', directed: 'false', weight: 0.775015} },
-{ data: { source: 'ABI2', target: 'CYFIP1', directed: 'false', weight: 0.813399} },
-{ data: { source: 'ABI2', target: 'NHS', directed: 'false', weight: 0.0904993} },
-{ data: { source: 'CYFIP1', target: 'NHS', directed: 'false', weight: 0.06356990000000001} },
-{ data: { source: 'RAPH1', target: 'NHS', directed: 'false', weight: 0.0832043} }]},
+elements:{nodes: [{data: { id: 'CLIC4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y696" }},
+{data: { id: 'RABIF', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P47224" }},
+{data: { id: 'CSK', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P41240" }},
+{data: { id: 'CLIC6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96NY7" }},
+{data: { id: 'KYNU', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16719" }}], 
+ edges: [{ data: { source: 'CLIC4', target: 'CLIC6', directed: 'false', weight: 0.983991} },
+{ data: { source: 'CLIC4', target: 'CSK', directed: 'false', weight: 0.940105} },
+{ data: { source: 'CLIC4', target: 'KYNU', directed: 'false', weight: 0.868985} },
+{ data: { source: 'CLIC4', target: 'RABIF', directed: 'false', weight: 0.5} }]},
 
 style: [
     {
@@ -90,7 +86,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.37500
+    Complex Score  = 0.35000
     </section>
     </body>
     </html>

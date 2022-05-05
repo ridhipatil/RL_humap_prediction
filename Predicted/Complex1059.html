@@ -30,19 +30,15 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'RPS4X', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62701" }},
-{data: { id: 'RPL23', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62829" }},
-{data: { id: 'PWP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13610" }},
-{data: { id: 'MTHFD1L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6UB35" }},
-{data: { id: 'RPS15A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62244" }}], 
- edges: [{ data: { source: 'RPS4X', target: 'RPL23', directed: 'false', weight: 1.0} },
-{ data: { source: 'RPS4X', target: 'RPS15A', directed: 'false', weight: 0.999999} },
-{ data: { source: 'RPS4X', target: 'PWP1', directed: 'false', weight: 0.08842380000000001} },
-{ data: { source: 'RPS4X', target: 'MTHFD1L', directed: 'false', weight: 0.06772} },
-{ data: { source: 'RPL23', target: 'RPS15A', directed: 'false', weight: 1.0} },
-{ data: { source: 'RPL23', target: 'PWP1', directed: 'false', weight: 0.762163} },
-{ data: { source: 'RPL23', target: 'MTHFD1L', directed: 'false', weight: 0.570817} },
-{ data: { source: 'RPS15A', target: 'PWP1', directed: 'false', weight: 0.9759479999999999} }]},
+elements:{nodes: [{data: { id: 'CDK5R1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15078" }},
+{data: { id: 'CDK20', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IZL9" }},
+{data: { id: 'MOB3A', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q96BX8" }},
+{data: { id: 'CCNI2', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q6ZMN8" }},
+{data: { id: 'CDK5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q00535" }}], 
+ edges: [{ data: { source: 'CDK5R1', target: 'CDK5', directed: 'false', weight: 0.395566} },
+{ data: { source: 'CDK20', target: 'CDK5', directed: 'false', weight: 0.9513469999999999} },
+{ data: { source: 'CCNI2', target: 'CDK5', directed: 'false', weight: 0.5} },
+{ data: { source: 'CDK5', target: 'MOB3A', directed: 'false', weight: 0.419397} }]},
 
 style: [
     {
@@ -90,7 +86,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.37500
+    Complex Score  = 0.35000
     </section>
     </body>
     </html>

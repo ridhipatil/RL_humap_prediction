@@ -30,32 +30,16 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'TMEM199', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N511" }},
-{data: { id: 'ATP6AP1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q15904" }},
-{data: { id: 'ATP6AP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75787" }},
-{data: { id: 'NDUFA7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95182" }},
-{data: { id: 'TMEM43', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BTV4" }},
-{data: { id: 'VMA21', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q3ZAQ7" }},
-{data: { id: 'CCDC115', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96NT0" }},
-{data: { id: 'ATP6V0C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P27449" }}], 
- edges: [{ data: { source: 'TMEM199', target: 'ATP6AP2', directed: 'false', weight: 0.787425} },
-{ data: { source: 'TMEM199', target: 'VMA21', directed: 'false', weight: 0.133456} },
-{ data: { source: 'TMEM199', target: 'NDUFA7', directed: 'false', weight: 0.267115} },
-{ data: { source: 'TMEM199', target: 'CCDC115', directed: 'false', weight: 0.578742} },
-{ data: { source: 'TMEM199', target: 'ATP6AP1', directed: 'false', weight: 0.17868399999999998} },
-{ data: { source: 'TMEM199', target: 'TMEM43', directed: 'false', weight: 0.275883} },
-{ data: { source: 'TMEM199', target: 'ATP6V0C', directed: 'false', weight: 0.151455} },
-{ data: { source: 'ATP6AP1', target: 'ATP6AP2', directed: 'false', weight: 0.867134} },
-{ data: { source: 'ATP6AP1', target: 'VMA21', directed: 'false', weight: 0.0924841} },
-{ data: { source: 'ATP6AP1', target: 'CCDC115', directed: 'false', weight: 0.736879} },
-{ data: { source: 'ATP6AP1', target: 'ATP6V0C', directed: 'false', weight: 0.10554300000000001} },
-{ data: { source: 'ATP6AP2', target: 'VMA21', directed: 'false', weight: 0.9415549999999999} },
-{ data: { source: 'ATP6AP2', target: 'CCDC115', directed: 'false', weight: 0.9048719999999999} },
-{ data: { source: 'ATP6AP2', target: 'ATP6V0C', directed: 'false', weight: 0.46447700000000003} },
-{ data: { source: 'NDUFA7', target: 'TMEM43', directed: 'false', weight: 0.563882} },
-{ data: { source: 'VMA21', target: 'ATP6V0C', directed: 'false', weight: 0.151455} },
-{ data: { source: 'VMA21', target: 'CCDC115', directed: 'false', weight: 0.133456} },
-{ data: { source: 'CCDC115', target: 'ATP6V0C', directed: 'false', weight: 0.151455} }]},
+elements:{nodes: [{data: { id: 'GRPEL2', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q8TAA5" }},
+{data: { id: 'CAMK2D', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13557" }},
+{data: { id: 'CAMK2G', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13555" }},
+{data: { id: 'WARS', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P23381" }},
+{data: { id: 'MMUT', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P22033" }}], 
+ edges: [{ data: { source: 'GRPEL2', target: 'MMUT', directed: 'false', weight: 0.342802} },
+{ data: { source: 'MMUT', target: 'CAMK2G', directed: 'false', weight: 0.13081099999999998} },
+{ data: { source: 'MMUT', target: 'CAMK2D', directed: 'false', weight: 0.730376} },
+{ data: { source: 'MMUT', target: 'WARS', directed: 'false', weight: 0.641473} },
+{ data: { source: 'CAMK2D', target: 'CAMK2G', directed: 'false', weight: 0.867557} }]},
 
 style: [
     {
@@ -104,11 +88,6 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.37500
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>ATP6AP1
     </section>
     </body>
     </html>

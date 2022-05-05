@@ -30,24 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'CA10', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q9NS85" }},
-{data: { id: 'WDHD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75717" }},
-{data: { id: 'MTERF4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q7Z6M4" }},
-{data: { id: 'ASS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P00966" }},
-{data: { id: 'KCTD15', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96SI1" }},
-{data: { id: 'PPRC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5VV67" }}], 
- edges: [{ data: { source: 'ASS1', target: 'CA10', directed: 'false', weight: 0.8762770000000001} },
-{ data: { source: 'ASS1', target: 'PPRC1', directed: 'false', weight: 0.140692} },
-{ data: { source: 'ASS1', target: 'KCTD15', directed: 'false', weight: 0.140692} },
-{ data: { source: 'ASS1', target: 'MTERF4', directed: 'false', weight: 0.123797} },
-{ data: { source: 'CA10', target: 'PPRC1', directed: 'false', weight: 0.891602} },
-{ data: { source: 'CA10', target: 'WDHD1', directed: 'false', weight: 0.83226} },
-{ data: { source: 'CA10', target: 'MTERF4', directed: 'false', weight: 0.634555} },
-{ data: { source: 'CA10', target: 'KCTD15', directed: 'false', weight: 0.49291} },
-{ data: { source: 'KCTD15', target: 'PPRC1', directed: 'false', weight: 0.171414} },
-{ data: { source: 'KCTD15', target: 'MTERF4', directed: 'false', weight: 0.151455} },
-{ data: { source: 'PPRC1', target: 'WDHD1', directed: 'false', weight: 0.140692} },
-{ data: { source: 'PPRC1', target: 'MTERF4', directed: 'false', weight: 0.151455} }]},
+elements:{nodes: [{data: { id: 'MEPCE', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q7L2J0" }},
+{data: { id: 'DHX33', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H6R0" }},
+{data: { id: 'USP36', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9P275" }},
+{data: { id: 'RPL30', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62888" }}], 
+ edges: [{ data: { source: 'RPL30', target: 'MEPCE', directed: 'false', weight: 0.481667} },
+{ data: { source: 'USP36', target: 'DHX33', directed: 'false', weight: 0.983296} },
+{ data: { source: 'MEPCE', target: 'DHX33', directed: 'false', weight: 0.33265500000000003} }]},
 
 style: [
     {
@@ -95,7 +84,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.37500
+    Complex Score  = 0.30000
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>MEPCE
     </section>
     </body>
     </html>

@@ -30,20 +30,16 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'RPL18A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q02543" }},
-{data: { id: 'EIF3F', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00303" }},
-{data: { id: 'EIF3A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P56537" }},
-{data: { id: 'PRRC2B', score: 4, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q5JSZ5" }},
-{data: { id: 'EIF3E', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P60228" }},
-{data: { id: 'EIF1AX', score: 4, type: '', href: "https://www.uniprot.org/uniprot/P47813" }}], 
- edges: [{ data: { source: 'RPL18A', target: 'EIF1AX', directed: 'false', weight: 0.39536} },
-{ data: { source: 'EIF3A', target: 'EIF3F', directed: 'false', weight: 0.999553} },
-{ data: { source: 'EIF3A', target: 'EIF3E', directed: 'false', weight: 0.985819} },
-{ data: { source: 'EIF3A', target: 'PRRC2B', directed: 'false', weight: 0.901424} },
-{ data: { source: 'EIF3E', target: 'EIF3F', directed: 'false', weight: 0.983089} },
-{ data: { source: 'EIF3E', target: 'EIF1AX', directed: 'false', weight: 0.962619} },
-{ data: { source: 'EIF3E', target: 'PRRC2B', directed: 'false', weight: 0.8989229999999999} },
-{ data: { source: 'EIF3F', target: 'PRRC2B', directed: 'false', weight: 0.8838360000000001} }]},
+elements:{nodes: [{data: { id: 'PRPSAP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60256" }},
+{data: { id: 'CPNE2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96FN4" }},
+{data: { id: 'NAA50', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9GZZ1" }},
+{data: { id: 'NAA11', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BSU3" }},
+{data: { id: 'DNAJC7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99615" }}], 
+ edges: [{ data: { source: 'PRPSAP2', target: 'NAA50', directed: 'false', weight: 0.7959229999999999} },
+{ data: { source: 'PRPSAP2', target: 'DNAJC7', directed: 'false', weight: 0.459662} },
+{ data: { source: 'CPNE2', target: 'NAA11', directed: 'false', weight: 0.287681} },
+{ data: { source: 'NAA11', target: 'NAA50', directed: 'false', weight: 0.9467450000000001} },
+{ data: { source: 'NAA50', target: 'DNAJC7', directed: 'false', weight: 0.66092} }]},
 
 style: [
     {
@@ -92,11 +88,6 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.37500
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>PRRC2B
     </section>
     </body>
     </html>

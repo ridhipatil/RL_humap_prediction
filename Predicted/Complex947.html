@@ -30,17 +30,20 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'DDX51', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q8N8A6" }},
-{data: { id: 'PWP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13610" }},
-{data: { id: 'NOP56', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00567" }},
-{data: { id: 'URB1', score: 3, type: '', href: "https://www.uniprot.org/uniprot/O60287" }},
-{data: { id: 'URB2', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q14146" }}], 
- edges: [{ data: { source: 'NOP56', target: 'PWP1', directed: 'false', weight: 0.998099} },
-{ data: { source: 'NOP56', target: 'URB2', directed: 'false', weight: 0.655673} },
-{ data: { source: 'NOP56', target: 'URB1', directed: 'false', weight: 0.33414} },
-{ data: { source: 'URB2', target: 'DDX51', directed: 'false', weight: 0.30917} },
-{ data: { source: 'URB2', target: 'URB1', directed: 'false', weight: 0.519065} },
-{ data: { source: 'DDX51', target: 'URB1', directed: 'false', weight: 0.30287800000000004} }]},
+elements:{nodes: [{data: { id: 'CDC123', score: 3, type: '', href: "https://www.uniprot.org/uniprot/O75794" }},
+{data: { id: 'CD2BP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95400" }},
+{data: { id: 'EIF2S2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P20042" }},
+{data: { id: 'SNRPA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P09661" }},
+{data: { id: 'SNRPN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P63162" }},
+{data: { id: 'CDC5L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99459" }}], 
+ edges: [{ data: { source: 'CDC123', target: 'EIF2S2', directed: 'false', weight: 0.530143} },
+{ data: { source: 'CD2BP2', target: 'SNRPA1', directed: 'false', weight: 0.18575} },
+{ data: { source: 'CD2BP2', target: 'CDC5L', directed: 'false', weight: 0.655616} },
+{ data: { source: 'CD2BP2', target: 'EIF2S2', directed: 'false', weight: 0.042951199999999995} },
+{ data: { source: 'CDC5L', target: 'SNRPA1', directed: 'false', weight: 0.9758899999999999} },
+{ data: { source: 'CDC5L', target: 'EIF2S2', directed: 'false', weight: 0.8843260000000001} },
+{ data: { source: 'EIF2S2', target: 'SNRPA1', directed: 'false', weight: 0.510518} },
+{ data: { source: 'SNRPA1', target: 'SNRPN', directed: 'false', weight: 0.978398} }]},
 
 style: [
     {

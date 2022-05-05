@@ -30,21 +30,14 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'PHTF1', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q9UMS5" }},
-{data: { id: 'STXBP4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6ZWJ1" }},
-{data: { id: 'DPY19L1', score: 3, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q2PZI1" }},
-{data: { id: 'LDLRAD4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15165" }},
-{data: { id: 'LYPD3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95274" }},
-{data: { id: 'SMURF2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HAU4" }}], 
- edges: [{ data: { source: 'SMURF2', target: 'LDLRAD4', directed: 'false', weight: 0.991762} },
-{ data: { source: 'SMURF2', target: 'DPY19L1', directed: 'false', weight: 0.140692} },
-{ data: { source: 'SMURF2', target: 'STXBP4', directed: 'false', weight: 0.11730499999999999} },
-{ data: { source: 'PHTF1', target: 'LYPD3', directed: 'false', weight: 0.951139} },
-{ data: { source: 'PHTF1', target: 'DPY19L1', directed: 'false', weight: 0.140692} },
-{ data: { source: 'STXBP4', target: 'LDLRAD4', directed: 'false', weight: 0.8342} },
-{ data: { source: 'STXBP4', target: 'DPY19L1', directed: 'false', weight: 0.0952688} },
-{ data: { source: 'DPY19L1', target: 'LDLRAD4', directed: 'false', weight: 0.9104049999999999} },
-{ data: { source: 'DPY19L1', target: 'LYPD3', directed: 'false', weight: 0.8207549999999999} }]},
+elements:{nodes: [{data: { id: 'SAAL1', score: 3, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q96ER3" }},
+{data: { id: 'KIF14', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15058" }},
+{data: { id: 'TNPO3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y5L0" }},
+{data: { id: 'EIF2B4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UI10" }}], 
+ edges: [{ data: { source: 'EIF2B4', target: 'SAAL1', directed: 'false', weight: 0.5507380000000001} },
+{ data: { source: 'SAAL1', target: 'TNPO3', directed: 'false', weight: 0.809679} },
+{ data: { source: 'SAAL1', target: 'KIF14', directed: 'false', weight: 0.443201} },
+{ data: { source: 'KIF14', target: 'TNPO3', directed: 'false', weight: 0.170675} }]},
 
 style: [
     {
@@ -92,12 +85,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.37500
+    Complex Score  = 0.30000
         <br> 
         <br>
         Connection to SARS-COV2: 
         <br>
-        1 interacting protein(s): <br>DPY19L1
+        1 interacting protein(s): <br>SAAL1
     </section>
     </body>
     </html>

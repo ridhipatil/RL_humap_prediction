@@ -30,17 +30,20 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'CALR', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P27797" }},
-{data: { id: 'RPL3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P39023" }},
-{data: { id: 'NOP10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NPE3" }},
-{data: { id: 'RPL37', score: 4, type: '', href: "https://www.uniprot.org/uniprot/P61927" }},
-{data: { id: 'RPLP0', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P05388" }}], 
- edges: [{ data: { source: 'CALR', target: 'RPLP0', directed: 'false', weight: 0.187432} },
-{ data: { source: 'CALR', target: 'RPL3', directed: 'false', weight: 0.783975} },
-{ data: { source: 'NOP10', target: 'RPLP0', directed: 'false', weight: 0.9959870000000001} },
-{ data: { source: 'NOP10', target: 'RPL3', directed: 'false', weight: 0.218552} },
-{ data: { source: 'RPLP0', target: 'RPL3', directed: 'false', weight: 1.0} },
-{ data: { source: 'RPL3', target: 'RPL37', directed: 'false', weight: 0.93811} }]},
+elements:{nodes: [{data: { id: 'THAP3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WTV1" }},
+{data: { id: 'RPL11', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62913" }},
+{data: { id: 'RPL29', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P47914" }},
+{data: { id: 'LTBR', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P36941" }},
+{data: { id: 'SPATS2', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q86XZ4" }},
+{data: { id: 'TNIK', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UKE5" }}], 
+ edges: [{ data: { source: 'THAP3', target: 'LTBR', directed: 'false', weight: 0.9594659999999999} },
+{ data: { source: 'THAP3', target: 'SPATS2', directed: 'false', weight: 0.140692} },
+{ data: { source: 'THAP3', target: 'TNIK', directed: 'false', weight: 0.151455} },
+{ data: { source: 'RPL11', target: 'RPL29', directed: 'false', weight: 0.158403} },
+{ data: { source: 'RPL29', target: 'SPATS2', directed: 'false', weight: 0.10441700000000001} },
+{ data: { source: 'LTBR', target: 'SPATS2', directed: 'false', weight: 0.87664} },
+{ data: { source: 'LTBR', target: 'TNIK', directed: 'false', weight: 0.705989} },
+{ data: { source: 'SPATS2', target: 'TNIK', directed: 'false', weight: 0.123797} }]},
 
 style: [
     {

@@ -30,18 +30,27 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'PCSK1N', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UHG2" }},
-{data: { id: 'SAV1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H4B6" }},
-{data: { id: 'ADCYAP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P18509" }}], 
- edges: [{ data: { source: 'PCSK1N', target: 'ADCYAP1', directed: 'false', weight: 0.737271} },
-{ data: { source: 'PCSK1N', target: 'SAV1', directed: 'false', weight: 0.108694} },
-{ data: { source: 'SAV1', target: 'ADCYAP1', directed: 'false', weight: 0.679816} }]},
+elements:{nodes: [{data: { id: 'HLA-H', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P01893" }},
+{data: { id: 'HLA-F', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P30511" }},
+{data: { id: 'HLA-C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P10321" }},
+{data: { id: 'HLA-E', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P13747" }},
+{data: { id: 'ECEL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95672" }}], 
+ edges: [{ data: { source: 'HLA-F', target: 'HLA-C', directed: 'false', weight: 0.42035900000000004} },
+{ data: { source: 'HLA-F', target: 'HLA-H', directed: 'false', weight: 0.15090599999999998} },
+{ data: { source: 'HLA-E', target: 'HLA-C', directed: 'false', weight: 0.42016899999999996} },
+{ data: { source: 'HLA-E', target: 'HLA-H', directed: 'false', weight: 0.561453} },
+{ data: { source: 'HLA-E', target: 'ECEL1', directed: 'false', weight: 0.48900200000000005} },
+{ data: { source: 'ECEL1', target: 'HLA-C', directed: 'false', weight: 0.105939} },
+{ data: { source: 'ECEL1', target: 'HLA-H', directed: 'false', weight: 0.123797} },
+{ data: { source: 'HLA-C', target: 'HLA-H', directed: 'false', weight: 0.29441999999999996} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 30,
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}                                
@@ -53,7 +62,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
 								'line-color': 'blue',
 								'opacity': 0.5
 							}
@@ -62,7 +71,10 @@ style: [
 
 });
 cy.layout({
-    name: 'circle'
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
 }).run();
 
 cy.on('tap', 'node', function(){

@@ -30,20 +30,32 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'UGT8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16880" }},
-{data: { id: 'CD244', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BZW8" }},
-{data: { id: 'CARD19', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96LW7" }},
-{data: { id: 'POMT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y6A1" }},
-{data: { id: 'POMT2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UKY4" }},
-{data: { id: 'PDXDC1', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q6P996" }}], 
- edges: [{ data: { source: 'UGT8', target: 'POMT2', directed: 'false', weight: 0.275357} },
-{ data: { source: 'CD244', target: 'CARD19', directed: 'false', weight: 0.5455949999999999} },
-{ data: { source: 'CD244', target: 'POMT2', directed: 'false', weight: 0.777593} },
-{ data: { source: 'CD244', target: 'POMT1', directed: 'false', weight: 0.595434} },
-{ data: { source: 'CD244', target: 'PDXDC1', directed: 'false', weight: 0.301819} },
-{ data: { source: 'PDXDC1', target: 'POMT2', directed: 'false', weight: 0.06747439999999999} },
-{ data: { source: 'PDXDC1', target: 'POMT1', directed: 'false', weight: 0.0646543} },
-{ data: { source: 'POMT1', target: 'POMT2', directed: 'false', weight: 0.134819} }]},
+elements:{nodes: [{data: { id: 'MRPS2', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9Y399" }},
+{data: { id: 'MRPS11', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P82912" }},
+{data: { id: 'MRPS17', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9Y2R5" }},
+{data: { id: 'MRPS22', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P82650" }},
+{data: { id: 'DDX55', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NHQ9" }},
+{data: { id: 'RSBN1L', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q6PCB5" }},
+{data: { id: 'MRPS5', score: 4, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P82675" }},
+{data: { id: 'MRPS27', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q92552" }}], 
+ edges: [{ data: { source: 'MRPS2', target: 'MRPS22', directed: 'false', weight: 0.999828} },
+{ data: { source: 'MRPS2', target: 'MRPS27', directed: 'false', weight: 0.998149} },
+{ data: { source: 'MRPS2', target: 'MRPS5', directed: 'false', weight: 0.9928530000000001} },
+{ data: { source: 'MRPS2', target: 'MRPS11', directed: 'false', weight: 0.9708690000000001} },
+{ data: { source: 'MRPS2', target: 'MRPS17', directed: 'false', weight: 0.91619} },
+{ data: { source: 'MRPS11', target: 'MRPS22', directed: 'false', weight: 0.9905229999999999} },
+{ data: { source: 'MRPS11', target: 'MRPS27', directed: 'false', weight: 0.829073} },
+{ data: { source: 'MRPS11', target: 'MRPS5', directed: 'false', weight: 0.9909389999999999} },
+{ data: { source: 'MRPS11', target: 'MRPS17', directed: 'false', weight: 0.565299} },
+{ data: { source: 'MRPS17', target: 'MRPS22', directed: 'false', weight: 0.980281} },
+{ data: { source: 'MRPS17', target: 'MRPS27', directed: 'false', weight: 0.9917819999999999} },
+{ data: { source: 'MRPS17', target: 'MRPS5', directed: 'false', weight: 0.9164690000000001} },
+{ data: { source: 'MRPS22', target: 'MRPS27', directed: 'false', weight: 0.999999} },
+{ data: { source: 'MRPS22', target: 'MRPS5', directed: 'false', weight: 0.9931450000000001} },
+{ data: { source: 'MRPS22', target: 'RSBN1L', directed: 'false', weight: 0.200541} },
+{ data: { source: 'MRPS22', target: 'DDX55', directed: 'false', weight: 0.07837569999999999} },
+{ data: { source: 'DDX55', target: 'RSBN1L', directed: 'false', weight: 0.102922} },
+{ data: { source: 'MRPS5', target: 'MRPS27', directed: 'false', weight: 0.984283} }]},
 
 style: [
     {
@@ -91,7 +103,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.37500
+    Complex Score  = 0.38750
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        3 interacting protein(s): <br>MRPS2 MRPS5 MRPS27
     </section>
     </body>
     </html>

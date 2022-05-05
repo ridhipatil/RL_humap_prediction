@@ -30,12 +30,25 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'KCTD13', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WZ19" }},
-{data: { id: 'KCTD10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H3F6" }},
-{data: { id: 'TNFAIP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13829" }}], 
- edges: [{ data: { source: 'KCTD10', target: 'TNFAIP1', directed: 'false', weight: 0.9985} },
-{ data: { source: 'KCTD10', target: 'KCTD13', directed: 'false', weight: 0.5495260000000001} },
-{ data: { source: 'KCTD13', target: 'TNFAIP1', directed: 'false', weight: 0.917306} }]},
+elements:{nodes: [{data: { id: 'CDKN2C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P42773" }},
+{data: { id: 'CDK4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P11802" }},
+{data: { id: 'OGFRL1', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q5TC84" }},
+{data: { id: 'CDKN2A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P42771" }},
+{data: { id: 'CCND2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P30279" }},
+{data: { id: 'CDKN2B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P42772" }}], 
+ edges: [{ data: { source: 'CDKN2C', target: 'CDK4', directed: 'false', weight: 0.676475} },
+{ data: { source: 'CDKN2C', target: 'OGFRL1', directed: 'false', weight: 0.128057} },
+{ data: { source: 'CDKN2C', target: 'CDKN2A', directed: 'false', weight: 0.198303} },
+{ data: { source: 'CDKN2C', target: 'CDKN2B', directed: 'false', weight: 0.238157} },
+{ data: { source: 'CDKN2A', target: 'CDK4', directed: 'false', weight: 0.980915} },
+{ data: { source: 'CDKN2A', target: 'OGFRL1', directed: 'false', weight: 0.140692} },
+{ data: { source: 'CDKN2A', target: 'CDKN2B', directed: 'false', weight: 0.402805} },
+{ data: { source: 'CDKN2A', target: 'CCND2', directed: 'false', weight: 0.123797} },
+{ data: { source: 'CCND2', target: 'CDK4', directed: 'false', weight: 0.692639} },
+{ data: { source: 'CCND2', target: 'OGFRL1', directed: 'false', weight: 0.151455} },
+{ data: { source: 'CDK4', target: 'OGFRL1', directed: 'false', weight: 0.983915} },
+{ data: { source: 'CDK4', target: 'CDKN2B', directed: 'false', weight: 0.7832399999999999} },
+{ data: { source: 'OGFRL1', target: 'CDKN2B', directed: 'false', weight: 0.151455} }]},
 
 style: [
     {
@@ -78,7 +91,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.39375
+    Complex Score  = 0.39688
     </section>
     </body>
     </html>

@@ -30,20 +30,24 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'NPAT', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14207" }},
-{data: { id: 'FOXK1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P85037" }},
-{data: { id: 'SIN3A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96ST3" }},
-{data: { id: 'RBBP7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16576" }},
-{data: { id: 'SINHCAF', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9NP50" }},
-{data: { id: 'SUDS3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H7L9" }}], 
- edges: [{ data: { source: 'NPAT', target: 'RBBP7', directed: 'false', weight: 0.624805} },
-{ data: { source: 'SIN3A', target: 'SUDS3', directed: 'false', weight: 0.9996229999999999} },
-{ data: { source: 'SIN3A', target: 'SINHCAF', directed: 'false', weight: 0.7899510000000001} },
-{ data: { source: 'SIN3A', target: 'FOXK1', directed: 'false', weight: 0.164877} },
-{ data: { source: 'RBBP7', target: 'FOXK1', directed: 'false', weight: 0.514286} },
-{ data: { source: 'SINHCAF', target: 'SUDS3', directed: 'false', weight: 0.7878350000000001} },
-{ data: { source: 'SINHCAF', target: 'FOXK1', directed: 'false', weight: 0.0220984} },
-{ data: { source: 'FOXK1', target: 'SUDS3', directed: 'false', weight: 0.323491} }]},
+elements:{nodes: [{data: { id: 'RDX', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P35241" }},
+{data: { id: 'SRSF5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13243" }},
+{data: { id: 'DDX3X', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00571" }},
+{data: { id: 'RCC2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9P258" }},
+{data: { id: 'SNRPD2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62316" }},
+{data: { id: 'SF3B3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15393" }},
+{data: { id: 'RAN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62826" }}], 
+ edges: [{ data: { source: 'RDX', target: 'DDX3X', directed: 'false', weight: 0.987685} },
+{ data: { source: 'SRSF5', target: 'SNRPD2', directed: 'false', weight: 0.918172} },
+{ data: { source: 'SRSF5', target: 'RCC2', directed: 'false', weight: 0.568441} },
+{ data: { source: 'SRSF5', target: 'RAN', directed: 'false', weight: 0.106959} },
+{ data: { source: 'DDX3X', target: 'SNRPD2', directed: 'false', weight: 0.909848} },
+{ data: { source: 'DDX3X', target: 'RAN', directed: 'false', weight: 0.00458992} },
+{ data: { source: 'DDX3X', target: 'RCC2', directed: 'false', weight: 0.10328399999999999} },
+{ data: { source: 'RCC2', target: 'SNRPD2', directed: 'false', weight: 0.912316} },
+{ data: { source: 'RCC2', target: 'RAN', directed: 'false', weight: 0.00275968} },
+{ data: { source: 'SNRPD2', target: 'SF3B3', directed: 'false', weight: 0.9997459999999999} },
+{ data: { source: 'SNRPD2', target: 'RAN', directed: 'false', weight: 0.993611} }]},
 
 style: [
     {
@@ -92,6 +96,11 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.37500
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>RDX
     </section>
     </body>
     </html>

@@ -30,20 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'FBXL16', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q8N461" }},
-{data: { id: 'PPP2R1B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P30154" }},
-{data: { id: 'FAM122A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96E09" }},
-{data: { id: 'PPP2CA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P67775" }},
-{data: { id: 'PPP2R1A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P30153" }},
-{data: { id: 'PPP2R5C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13362" }}], 
- edges: [{ data: { source: 'PPP2R1B', target: 'PPP2R1A', directed: 'false', weight: 0.999999} },
-{ data: { source: 'PPP2R1B', target: 'PPP2CA', directed: 'false', weight: 0.9759389999999999} },
-{ data: { source: 'PPP2R1B', target: 'PPP2R5C', directed: 'false', weight: 0.609234} },
-{ data: { source: 'FAM122A', target: 'PPP2R1A', directed: 'false', weight: 0.9236770000000001} },
-{ data: { source: 'FAM122A', target: 'FBXL16', directed: 'false', weight: 0.325934} },
-{ data: { source: 'PPP2CA', target: 'PPP2R1A', directed: 'false', weight: 0.993812} },
-{ data: { source: 'PPP2CA', target: 'PPP2R5C', directed: 'false', weight: 0.8094210000000001} },
-{ data: { source: 'PPP2R5C', target: 'PPP2R1A', directed: 'false', weight: 0.9192319999999999} }]},
+elements:{nodes: [{data: { id: 'PRKACA', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P17252" }},
+{data: { id: 'PKLR', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P30613" }},
+{data: { id: 'PRKAR2A', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P13861" }},
+{data: { id: 'NT5DC1', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q5TFE4" }}], 
+ edges: [{ data: { source: 'PRKAR2A', target: 'PRKACA', directed: 'false', weight: 0.9999530000000001} },
+{ data: { source: 'NT5DC1', target: 'PKLR', directed: 'false', weight: 0.970417} },
+{ data: { source: 'PRKACA', target: 'PKLR', directed: 'false', weight: 0.647798} }]},
 
 style: [
     {
@@ -91,7 +84,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.37500
+    Complex Score  = 0.30000
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        2 interacting protein(s): <br>PRKACA PRKAR2A
     </section>
     </body>
     </html>

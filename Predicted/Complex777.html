@@ -30,19 +30,16 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'FOS', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P01100" }},
-{data: { id: 'CREB5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q02930" }},
-{data: { id: 'ATF3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P18847" }},
-{data: { id: 'JUN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P05412" }},
-{data: { id: 'FOSL2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P15408" }}], 
- edges: [{ data: { source: 'FOS', target: 'JUN', directed: 'false', weight: 0.941967} },
-{ data: { source: 'FOS', target: 'CREB5', directed: 'false', weight: 0.478662} },
-{ data: { source: 'CREB5', target: 'JUN', directed: 'false', weight: 0.99466} },
-{ data: { source: 'CREB5', target: 'FOSL2', directed: 'false', weight: 0.9808309999999999} },
-{ data: { source: 'CREB5', target: 'ATF3', directed: 'false', weight: 0.165074} },
-{ data: { source: 'ATF3', target: 'JUN', directed: 'false', weight: 0.861864} },
-{ data: { source: 'ATF3', target: 'FOSL2', directed: 'false', weight: 0.125737} },
-{ data: { source: 'JUN', target: 'FOSL2', directed: 'false', weight: 0.992426} }]},
+elements:{nodes: [{data: { id: 'SIRT6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N6T7" }},
+{data: { id: 'ACADM', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P11310" }},
+{data: { id: 'GFPT2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O94808" }},
+{data: { id: 'GFPT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q06210" }},
+{data: { id: 'TARSL2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/A2RTX5" }}], 
+ edges: [{ data: { source: 'SIRT6', target: 'GFPT2', directed: 'false', weight: 0.9026799999999999} },
+{ data: { source: 'SIRT6', target: 'GFPT1', directed: 'false', weight: 0.6234430000000001} },
+{ data: { source: 'GFPT2', target: 'TARSL2', directed: 'false', weight: 0.6229279999999999} },
+{ data: { source: 'GFPT2', target: 'ACADM', directed: 'false', weight: 0.39523600000000003} },
+{ data: { source: 'TARSL2', target: 'GFPT1', directed: 'false', weight: 0.46690200000000004} }]},
 
 style: [
     {
@@ -91,6 +88,11 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.37500
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>ACADM
     </section>
     </body>
     </html>

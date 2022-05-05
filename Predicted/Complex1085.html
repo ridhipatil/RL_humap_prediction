@@ -30,19 +30,14 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'AUP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y679" }},
-{data: { id: 'ATP1A1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P05023" }},
-{data: { id: 'TUBA1C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BQE3" }},
-{data: { id: 'TUBB6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BUF5" }},
-{data: { id: 'TUBB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P07437" }}], 
- edges: [{ data: { source: 'AUP1', target: 'TUBA1C', directed: 'false', weight: 0.43848100000000007} },
-{ data: { source: 'AUP1', target: 'TUBB6', directed: 'false', weight: 0.12529} },
-{ data: { source: 'ATP1A1', target: 'TUBB', directed: 'false', weight: 0.18645} },
-{ data: { source: 'ATP1A1', target: 'TUBA1C', directed: 'false', weight: 0.5341670000000001} },
-{ data: { source: 'ATP1A1', target: 'TUBB6', directed: 'false', weight: 0.09289410000000001} },
-{ data: { source: 'TUBB', target: 'TUBA1C', directed: 'false', weight: 0.999994} },
-{ data: { source: 'TUBB', target: 'TUBB6', directed: 'false', weight: 0.16405899999999998} },
-{ data: { source: 'TUBB6', target: 'TUBA1C', directed: 'false', weight: 0.8143229999999999} }]},
+elements:{nodes: [{data: { id: 'MTPAP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NVV4" }},
+{data: { id: 'MUS81', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96NY9" }},
+{data: { id: 'EME1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96AY2" }},
+{data: { id: 'H2AFV', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q71UI9" }}], 
+ edges: [{ data: { source: 'H2AFV', target: 'MUS81', directed: 'false', weight: 0.08441860000000001} },
+{ data: { source: 'H2AFV', target: 'MTPAP', directed: 'false', weight: 0.100589} },
+{ data: { source: 'MUS81', target: 'EME1', directed: 'false', weight: 0.34177199999999996} },
+{ data: { source: 'MUS81', target: 'MTPAP', directed: 'false', weight: 0.14852200000000002} }]},
 
 style: [
     {
@@ -90,7 +85,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.37500
+    Complex Score  = 0.30000
     </section>
     </body>
     </html>

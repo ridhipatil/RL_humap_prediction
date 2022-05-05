@@ -30,33 +30,56 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'MEX3B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6ZN04" }},
-{data: { id: 'ENPP6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6UWR7" }},
-{data: { id: 'DIAPH3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NSV4" }},
-{data: { id: 'SACS', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NZJ4" }},
-{data: { id: 'AGTRAP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6RW13" }},
-{data: { id: 'CRLF3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IUI8" }}], 
- edges: [{ data: { source: 'ENPP6', target: 'CRLF3', directed: 'false', weight: 0.985002} },
-{ data: { source: 'ENPP6', target: 'MEX3B', directed: 'false', weight: 0.9784299999999999} },
-{ data: { source: 'ENPP6', target: 'AGTRAP', directed: 'false', weight: 0.9322020000000001} },
-{ data: { source: 'ENPP6', target: 'SACS', directed: 'false', weight: 0.92448} },
-{ data: { source: 'ENPP6', target: 'DIAPH3', directed: 'false', weight: 0.8702340000000001} },
-{ data: { source: 'AGTRAP', target: 'CRLF3', directed: 'false', weight: 0.171414} },
-{ data: { source: 'AGTRAP', target: 'MEX3B', directed: 'false', weight: 0.171414} },
-{ data: { source: 'AGTRAP', target: 'SACS', directed: 'false', weight: 0.171414} },
-{ data: { source: 'AGTRAP', target: 'DIAPH3', directed: 'false', weight: 0.12378900000000001} },
-{ data: { source: 'CRLF3', target: 'MEX3B', directed: 'false', weight: 0.171414} },
-{ data: { source: 'CRLF3', target: 'SACS', directed: 'false', weight: 0.171414} },
-{ data: { source: 'CRLF3', target: 'DIAPH3', directed: 'false', weight: 0.12378900000000001} },
-{ data: { source: 'MEX3B', target: 'SACS', directed: 'false', weight: 0.171414} },
-{ data: { source: 'MEX3B', target: 'DIAPH3', directed: 'false', weight: 0.12378900000000001} },
-{ data: { source: 'SACS', target: 'DIAPH3', directed: 'false', weight: 0.12378900000000001} }]},
+elements:{nodes: [{data: { id: 'PSMD6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15008" }},
+{data: { id: 'CCDC92', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q53HC0" }},
+{data: { id: 'PSMD5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16401" }},
+{data: { id: 'PSMC3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P17980" }},
+{data: { id: 'PSMD4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P55036" }},
+{data: { id: 'PSMB8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P28062" }},
+{data: { id: 'PSMD9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00233" }},
+{data: { id: 'PSMA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P25786" }},
+{data: { id: 'PSMC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62191" }},
+{data: { id: 'USP14', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P54578" }}], 
+ edges: [{ data: { source: 'PSMD6', target: 'PSMC1', directed: 'false', weight: 1.0} },
+{ data: { source: 'PSMD6', target: 'PSMC3', directed: 'false', weight: 0.9999979999999999} },
+{ data: { source: 'PSMD6', target: 'PSMD4', directed: 'false', weight: 0.999974} },
+{ data: { source: 'PSMD6', target: 'PSMD5', directed: 'false', weight: 0.9937729999999999} },
+{ data: { source: 'PSMD6', target: 'PSMD9', directed: 'false', weight: 0.73945} },
+{ data: { source: 'PSMD6', target: 'CCDC92', directed: 'false', weight: 0.343948} },
+{ data: { source: 'PSMD6', target: 'PSMB8', directed: 'false', weight: 0.310339} },
+{ data: { source: 'PSMD6', target: 'USP14', directed: 'false', weight: 0.0375179} },
+{ data: { source: 'CCDC92', target: 'PSMC1', directed: 'false', weight: 0.325454} },
+{ data: { source: 'CCDC92', target: 'PSMD4', directed: 'false', weight: 0.379958} },
+{ data: { source: 'CCDC92', target: 'PSMC3', directed: 'false', weight: 0.355617} },
+{ data: { source: 'CCDC92', target: 'USP14', directed: 'false', weight: 0.108699} },
+{ data: { source: 'PSMD5', target: 'PSMC1', directed: 'false', weight: 0.998616} },
+{ data: { source: 'PSMD5', target: 'PSMD4', directed: 'false', weight: 0.0638192} },
+{ data: { source: 'PSMD5', target: 'PSMC3', directed: 'false', weight: 0.923889} },
+{ data: { source: 'PSMD5', target: 'PSMD9', directed: 'false', weight: 0.749908} },
+{ data: { source: 'PSMD5', target: 'PSMB8', directed: 'false', weight: 0.44266099999999997} },
+{ data: { source: 'PSMD5', target: 'USP14', directed: 'false', weight: 0.00351696} },
+{ data: { source: 'PSMC3', target: 'PSMC1', directed: 'false', weight: 0.996042} },
+{ data: { source: 'PSMC3', target: 'PSMD4', directed: 'false', weight: 0.999965} },
+{ data: { source: 'PSMC3', target: 'PSMD9', directed: 'false', weight: 0.989949} },
+{ data: { source: 'PSMC3', target: 'USP14', directed: 'false', weight: 0.9183110000000001} },
+{ data: { source: 'PSMC3', target: 'PSMB8', directed: 'false', weight: 0.00749873} },
+{ data: { source: 'PSMD4', target: 'PSMC1', directed: 'false', weight: 0.999647} },
+{ data: { source: 'PSMD4', target: 'PSMD9', directed: 'false', weight: 0.609154} },
+{ data: { source: 'PSMD4', target: 'USP14', directed: 'false', weight: 0.202472} },
+{ data: { source: 'PSMD4', target: 'PSMB8', directed: 'false', weight: 0.0166532} },
+{ data: { source: 'PSMB8', target: 'PSMC1', directed: 'false', weight: 0.00465693} },
+{ data: { source: 'PSMB8', target: 'PSMA1', directed: 'false', weight: 0.471138} },
+{ data: { source: 'PSMD9', target: 'PSMC1', directed: 'false', weight: 0.121121} },
+{ data: { source: 'PSMD9', target: 'USP14', directed: 'false', weight: 0.09818919999999999} },
+{ data: { source: 'PSMC1', target: 'USP14', directed: 'false', weight: 0.635024} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 30,
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}                                
@@ -68,7 +91,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
 								'line-color': 'blue',
 								'opacity': 0.5
 							}
@@ -77,7 +100,10 @@ style: [
 
 });
 cy.layout({
-    name: 'circle'
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
 }).run();
 
 cy.on('tap', 'node', function(){

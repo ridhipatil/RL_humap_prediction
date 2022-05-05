@@ -30,35 +30,18 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'AKAP10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43572" }},
-{data: { id: 'UBE2I', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P63279" }},
-{data: { id: 'GAB1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13480" }},
-{data: { id: 'GAB2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UQC2" }},
-{data: { id: 'GAREM1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H706" }},
-{data: { id: 'GRAP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75791" }},
-{data: { id: 'USP8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P40818" }},
-{data: { id: 'SUMO1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P63165" }},
-{data: { id: 'PTPN23', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H3S7" }}], 
- edges: [{ data: { source: 'AKAP10', target: 'GRAP2', directed: 'false', weight: 0.8368260000000001} },
-{ data: { source: 'AKAP10', target: 'GAREM1', directed: 'false', weight: 0.171414} },
-{ data: { source: 'AKAP10', target: 'GAB2', directed: 'false', weight: 0.171414} },
-{ data: { source: 'AKAP10', target: 'PTPN23', directed: 'false', weight: 0.151455} },
-{ data: { source: 'AKAP10', target: 'GAB1', directed: 'false', weight: 0.151455} },
-{ data: { source: 'UBE2I', target: 'USP8', directed: 'false', weight: 0.861613} },
-{ data: { source: 'UBE2I', target: 'SUMO1', directed: 'false', weight: 0.395466} },
-{ data: { source: 'GAB1', target: 'GRAP2', directed: 'false', weight: 0.9405389999999999} },
-{ data: { source: 'GAB1', target: 'GAREM1', directed: 'false', weight: 0.151455} },
-{ data: { source: 'GAB1', target: 'GAB2', directed: 'false', weight: 0.151455} },
-{ data: { source: 'GAB1', target: 'PTPN23', directed: 'false', weight: 0.133456} },
-{ data: { source: 'GAB2', target: 'GRAP2', directed: 'false', weight: 0.9742709999999999} },
-{ data: { source: 'GAB2', target: 'GAREM1', directed: 'false', weight: 0.171414} },
-{ data: { source: 'GAB2', target: 'USP8', directed: 'false', weight: 0.171414} },
-{ data: { source: 'GAB2', target: 'PTPN23', directed: 'false', weight: 0.151455} },
-{ data: { source: 'GAREM1', target: 'GRAP2', directed: 'false', weight: 0.9760989999999999} },
-{ data: { source: 'GAREM1', target: 'USP8', directed: 'false', weight: 0.171414} },
-{ data: { source: 'GAREM1', target: 'PTPN23', directed: 'false', weight: 0.151455} },
-{ data: { source: 'GRAP2', target: 'PTPN23', directed: 'false', weight: 0.9593440000000001} },
-{ data: { source: 'GRAP2', target: 'USP8', directed: 'false', weight: 0.8438040000000001} }]},
+elements:{nodes: [{data: { id: 'MRPL50', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q8N5N7" }},
+{data: { id: 'MRPL51', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q4U2R6" }},
+{data: { id: 'GADD45GIP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TAE8" }},
+{data: { id: 'MRPL2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BZE1" }},
+{data: { id: 'TBC1D8', score: 4, type: '', href: "https://www.uniprot.org/uniprot/O95759" }}], 
+ edges: [{ data: { source: 'MRPL50', target: 'MRPL2', directed: 'false', weight: 0.9999950000000001} },
+{ data: { source: 'MRPL50', target: 'MRPL51', directed: 'false', weight: 0.999878} },
+{ data: { source: 'MRPL50', target: 'GADD45GIP1', directed: 'false', weight: 0.9998319999999999} },
+{ data: { source: 'MRPL50', target: 'TBC1D8', directed: 'false', weight: 0.804286} },
+{ data: { source: 'MRPL51', target: 'MRPL2', directed: 'false', weight: 0.94844} },
+{ data: { source: 'MRPL51', target: 'GADD45GIP1', directed: 'false', weight: 0.6934859999999999} },
+{ data: { source: 'GADD45GIP1', target: 'MRPL2', directed: 'false', weight: 0.969784} }]},
 
 style: [
     {
@@ -106,7 +89,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.37500
+    Complex Score  = 0.38750
     </section>
     </body>
     </html>

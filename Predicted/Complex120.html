@@ -30,22 +30,31 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'UQCC2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BRT2" }},
-{data: { id: 'UQCC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NVA1" }},
-{data: { id: 'C16orf91', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q4G0I0" }},
-{data: { id: 'COX20', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5RI15" }}], 
- edges: [{ data: { source: 'COX20', target: 'C16orf91', directed: 'false', weight: 0.9096479999999999} },
-{ data: { source: 'COX20', target: 'UQCC1', directed: 'false', weight: 0.635393} },
-{ data: { source: 'COX20', target: 'UQCC2', directed: 'false', weight: 0.415545} },
-{ data: { source: 'UQCC1', target: 'C16orf91', directed: 'false', weight: 0.12378900000000001} },
-{ data: { source: 'UQCC1', target: 'UQCC2', directed: 'false', weight: 0.184918} },
-{ data: { source: 'C16orf91', target: 'UQCC2', directed: 'false', weight: 0.140692} }]},
+elements:{nodes: [{data: { id: 'CEP170B', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9Y4F5" }},
+{data: { id: 'CEP170', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5SW79" }},
+{data: { id: 'RUFY2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WXA3" }},
+{data: { id: 'CEP170P1', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q96L14" }},
+{data: { id: 'SYNE2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WXH0" }},
+{data: { id: 'BEGAIN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BUH8" }}], 
+ edges: [{ data: { source: 'RUFY2', target: 'CEP170', directed: 'false', weight: 0.9436950000000001} },
+{ data: { source: 'RUFY2', target: 'BEGAIN', directed: 'false', weight: 0.151455} },
+{ data: { source: 'RUFY2', target: 'CEP170P1', directed: 'false', weight: 0.133456} },
+{ data: { source: 'RUFY2', target: 'CEP170B', directed: 'false', weight: 0.133456} },
+{ data: { source: 'CEP170P1', target: 'CEP170', directed: 'false', weight: 0.9530360000000001} },
+{ data: { source: 'CEP170P1', target: 'BEGAIN', directed: 'false', weight: 0.151455} },
+{ data: { source: 'CEP170P1', target: 'CEP170B', directed: 'false', weight: 0.133456} },
+{ data: { source: 'SYNE2', target: 'CEP170', directed: 'false', weight: 0.902016} },
+{ data: { source: 'BEGAIN', target: 'CEP170', directed: 'false', weight: 0.9714020000000001} },
+{ data: { source: 'BEGAIN', target: 'CEP170B', directed: 'false', weight: 0.151455} },
+{ data: { source: 'CEP170B', target: 'CEP170', directed: 'false', weight: 0.8287100000000001} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 30,
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}                                
@@ -57,7 +66,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
 								'line-color': 'blue',
 								'opacity': 0.5
 							}
@@ -66,7 +75,10 @@ style: [
 
 });
 cy.layout({
-    name: 'circle'
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
 }).run();
 
 cy.on('tap', 'node', function(){

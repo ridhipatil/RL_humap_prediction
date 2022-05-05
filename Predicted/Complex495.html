@@ -30,23 +30,14 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'RELA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q04206" }},
-{data: { id: 'NFKBIB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15653" }},
-{data: { id: 'NFKBIA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P25963" }},
-{data: { id: 'NFKB1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P19838" }},
-{data: { id: 'MCC', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P23508" }},
-{data: { id: 'CHUK', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15111" }}], 
- edges: [{ data: { source: 'NFKBIA', target: 'NFKB1', directed: 'false', weight: 0.997028} },
-{ data: { source: 'NFKBIA', target: 'RELA', directed: 'false', weight: 0.9952340000000001} },
-{ data: { source: 'NFKBIA', target: 'CHUK', directed: 'false', weight: 0.97355} },
-{ data: { source: 'NFKBIA', target: 'NFKBIB', directed: 'false', weight: 0.492005} },
-{ data: { source: 'NFKB1', target: 'NFKBIB', directed: 'false', weight: 0.691271} },
-{ data: { source: 'NFKB1', target: 'RELA', directed: 'false', weight: 0.6554449999999999} },
-{ data: { source: 'NFKB1', target: 'CHUK', directed: 'false', weight: 0.128057} },
-{ data: { source: 'MCC', target: 'NFKBIB', directed: 'false', weight: 0.798927} },
-{ data: { source: 'CHUK', target: 'RELA', directed: 'false', weight: 0.140692} },
-{ data: { source: 'CHUK', target: 'NFKBIB', directed: 'false', weight: 0.140692} },
-{ data: { source: 'RELA', target: 'NFKBIB', directed: 'false', weight: 0.677338} }]},
+elements:{nodes: [{data: { id: 'NEU2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y3R4" }},
+{data: { id: 'PEX5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P50542" }},
+{data: { id: 'TFAP4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q01664" }},
+{data: { id: 'FAM217B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NTX9" }}], 
+ edges: [{ data: { source: 'NEU2', target: 'TFAP4', directed: 'false', weight: 0.811322} },
+{ data: { source: 'NEU2', target: 'FAM217B', directed: 'false', weight: 0.665932} },
+{ data: { source: 'NEU2', target: 'PEX5', directed: 'false', weight: 0.566451} },
+{ data: { source: 'PEX5', target: 'TFAP4', directed: 'false', weight: 0.140692} }]},
 
 style: [
     {
@@ -94,7 +85,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.37500
+    Complex Score  = 0.38750
     </section>
     </body>
     </html>

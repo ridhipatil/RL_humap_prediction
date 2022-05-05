@@ -30,26 +30,19 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'CXXC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9P0U4" }},
-{data: { id: 'WDR5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P61964" }},
-{data: { id: 'NCOA6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14686" }},
-{data: { id: 'ATN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P54259" }},
-{data: { id: 'KMT2B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UMN6" }}], 
- edges: [{ data: { source: 'ATN1', target: 'WDR5', directed: 'false', weight: 0.982352} },
-{ data: { source: 'ATN1', target: 'CXXC1', directed: 'false', weight: 0.12378900000000001} },
-{ data: { source: 'ATN1', target: 'KMT2B', directed: 'false', weight: 0.171414} },
-{ data: { source: 'ATN1', target: 'NCOA6', directed: 'false', weight: 0.171414} },
-{ data: { source: 'CXXC1', target: 'WDR5', directed: 'false', weight: 0.9610209999999999} },
-{ data: { source: 'CXXC1', target: 'NCOA6', directed: 'false', weight: 0.12378900000000001} },
-{ data: { source: 'WDR5', target: 'NCOA6', directed: 'false', weight: 0.964608} },
-{ data: { source: 'WDR5', target: 'KMT2B', directed: 'false', weight: 0.9600420000000001} },
-{ data: { source: 'NCOA6', target: 'KMT2B', directed: 'false', weight: 0.171414} }]},
+elements:{nodes: [{data: { id: '5723', score: 0, type: '' }},
+{data: { id: 'IVNS1ABP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y6Y0" }},
+{data: { id: 'PRPSAP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14558" }}], 
+ edges: [{ data: { source: '5723', target: 'PRPSAP1', directed: 'false', weight: 0.396039} },
+{ data: { source: 'IVNS1ABP', target: 'PRPSAP1', directed: 'false', weight: 0.9269629999999999} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 30,
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}                                
@@ -61,7 +54,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
 								'line-color': 'blue',
 								'opacity': 0.5
 							}
@@ -70,7 +63,10 @@ style: [
 
 });
 cy.layout({
-    name: 'circle'
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
 }).run();
 
 cy.on('tap', 'node', function(){

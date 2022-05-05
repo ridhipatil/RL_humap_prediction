@@ -30,18 +30,44 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'MLLT6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P55198" }},
-{data: { id: 'DOT1L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TEK3" }},
-{data: { id: 'MLLT10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P55197" }}], 
- edges: [{ data: { source: 'MLLT6', target: 'DOT1L', directed: 'false', weight: 0.707759} },
-{ data: { source: 'MLLT6', target: 'MLLT10', directed: 'false', weight: 0.110576} },
-{ data: { source: 'DOT1L', target: 'MLLT10', directed: 'false', weight: 0.8322709999999999} }]},
+elements:{nodes: [{data: { id: 'RMND5A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H871" }},
+{data: { id: 'MKLN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UL63" }},
+{data: { id: 'RANBP10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6VN20" }},
+{data: { id: 'WDR26', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H7D7" }},
+{data: { id: 'GID8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NWU2" }},
+{data: { id: 'ZMYND19', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96E35" }},
+{data: { id: 'WARS2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UGM6" }},
+{data: { id: 'RANBP9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96P70" }}], 
+ edges: [{ data: { source: 'RMND5A', target: 'RANBP9', directed: 'false', weight: 0.999482} },
+{ data: { source: 'RMND5A', target: 'MKLN1', directed: 'false', weight: 0.9993290000000001} },
+{ data: { source: 'RMND5A', target: 'GID8', directed: 'false', weight: 0.999179} },
+{ data: { source: 'RMND5A', target: 'RANBP10', directed: 'false', weight: 0.99925} },
+{ data: { source: 'RMND5A', target: 'WDR26', directed: 'false', weight: 0.9810700000000001} },
+{ data: { source: 'RMND5A', target: 'WARS2', directed: 'false', weight: 0.975628} },
+{ data: { source: 'RMND5A', target: 'ZMYND19', directed: 'false', weight: 0.697557} },
+{ data: { source: 'MKLN1', target: 'RANBP9', directed: 'false', weight: 0.9999979999999999} },
+{ data: { source: 'MKLN1', target: 'GID8', directed: 'false', weight: 0.9999969999999999} },
+{ data: { source: 'MKLN1', target: 'RANBP10', directed: 'false', weight: 0.999518} },
+{ data: { source: 'MKLN1', target: 'WDR26', directed: 'false', weight: 0.968059} },
+{ data: { source: 'MKLN1', target: 'ZMYND19', directed: 'false', weight: 0.35717899999999997} },
+{ data: { source: 'WDR26', target: 'RANBP9', directed: 'false', weight: 0.9881629999999999} },
+{ data: { source: 'WDR26', target: 'GID8', directed: 'false', weight: 0.961405} },
+{ data: { source: 'WDR26', target: 'RANBP10', directed: 'false', weight: 0.9993629999999999} },
+{ data: { source: 'WDR26', target: 'ZMYND19', directed: 'false', weight: 0.518185} },
+{ data: { source: 'RANBP10', target: 'RANBP9', directed: 'false', weight: 0.99764} },
+{ data: { source: 'RANBP10', target: 'GID8', directed: 'false', weight: 0.999991} },
+{ data: { source: 'RANBP10', target: 'ZMYND19', directed: 'false', weight: 0.34641700000000003} },
+{ data: { source: 'GID8', target: 'RANBP9', directed: 'false', weight: 0.9999959999999999} },
+{ data: { source: 'GID8', target: 'ZMYND19', directed: 'false', weight: 0.34641700000000003} },
+{ data: { source: 'ZMYND19', target: 'RANBP9', directed: 'false', weight: 0.34641700000000003} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 30,
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}                                
@@ -53,7 +79,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
 								'line-color': 'blue',
 								'opacity': 0.5
 							}
@@ -62,7 +88,10 @@ style: [
 
 });
 cy.layout({
-    name: 'circle'
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
 }).run();
 
 cy.on('tap', 'node', function(){

@@ -30,11 +30,26 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'TYMS', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P04818" }},
-{data: { id: 'DHFR', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P00374" }},
-{data: { id: 'WDR45B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5MNZ6" }}], 
- edges: [{ data: { source: 'TYMS', target: 'WDR45B', directed: 'false', weight: 0.49377} },
-{ data: { source: 'DHFR', target: 'WDR45B', directed: 'false', weight: 0.407762} }]},
+elements:{nodes: [{data: { id: 'TRIM29', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14134" }},
+{data: { id: 'GM2A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P17900" }},
+{data: { id: 'TYMP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P19971" }},
+{data: { id: 'ANXA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P04083" }},
+{data: { id: 'S100A9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P06702" }},
+{data: { id: 'S100A8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P05109" }},
+{data: { id: 'IVL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P07476" }}], 
+ edges: [{ data: { source: 'TRIM29', target: 'IVL', directed: 'false', weight: 0.41868} },
+{ data: { source: 'TRIM29', target: 'S100A9', directed: 'false', weight: 0.287896} },
+{ data: { source: 'TRIM29', target: 'TYMP', directed: 'false', weight: 0.5830649999999999} },
+{ data: { source: 'TRIM29', target: 'ANXA1', directed: 'false', weight: 0.200087} },
+{ data: { source: 'GM2A', target: 'IVL', directed: 'false', weight: 0.384596} },
+{ data: { source: 'GM2A', target: 'S100A8', directed: 'false', weight: 0.270404} },
+{ data: { source: 'TYMP', target: 'IVL', directed: 'false', weight: 0.483943} },
+{ data: { source: 'TYMP', target: 'S100A9', directed: 'false', weight: 0.222874} },
+{ data: { source: 'TYMP', target: 'ANXA1', directed: 'false', weight: 0.329022} },
+{ data: { source: 'ANXA1', target: 'IVL', directed: 'false', weight: 0.250654} },
+{ data: { source: 'ANXA1', target: 'S100A9', directed: 'false', weight: 0.154077} },
+{ data: { source: 'S100A9', target: 'IVL', directed: 'false', weight: 0.417108} },
+{ data: { source: 'S100A8', target: 'IVL', directed: 'false', weight: 0.28783800000000004} }]},
 
 style: [
     {

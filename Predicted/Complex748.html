@@ -30,21 +30,19 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'DDX21', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9NR30" }},
-{data: { id: 'RPS8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62241" }},
-{data: { id: 'EBNA1BP2', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q99848" }},
-{data: { id: 'PWP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13610" }},
-{data: { id: 'SPOUT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5T280" }},
-{data: { id: 'RPS15A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62244" }}], 
- edges: [{ data: { source: 'DDX21', target: 'EBNA1BP2', directed: 'false', weight: 0.999999} },
-{ data: { source: 'DDX21', target: 'PWP1', directed: 'false', weight: 0.725654} },
-{ data: { source: 'DDX21', target: 'SPOUT1', directed: 'false', weight: 0.18466} },
-{ data: { source: 'PWP1', target: 'RPS15A', directed: 'false', weight: 0.9759479999999999} },
-{ data: { source: 'PWP1', target: 'RPS8', directed: 'false', weight: 0.9758959999999999} },
-{ data: { source: 'PWP1', target: 'EBNA1BP2', directed: 'false', weight: 0.9556520000000001} },
-{ data: { source: 'EBNA1BP2', target: 'RPS15A', directed: 'false', weight: 0.9934860000000001} },
-{ data: { source: 'EBNA1BP2', target: 'RPS8', directed: 'false', weight: 1.0} },
-{ data: { source: 'RPS15A', target: 'RPS8', directed: 'false', weight: 1.0} }]},
+elements:{nodes: [{data: { id: 'FCGR2A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P12318" }},
+{data: { id: 'NFYC', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13952" }},
+{data: { id: 'GTPBP1', score: 4, type: '', href: "https://www.uniprot.org/uniprot/O00178" }},
+{data: { id: 'NFYB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P25208" }},
+{data: { id: 'NFYA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P23511" }},
+{data: { id: 'PLCB3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q01970" }}], 
+ edges: [{ data: { source: 'NFYC', target: 'NFYA', directed: 'false', weight: 0.999741} },
+{ data: { source: 'NFYC', target: 'NFYB', directed: 'false', weight: 0.975952} },
+{ data: { source: 'NFYC', target: 'FCGR2A', directed: 'false', weight: 0.7222350000000001} },
+{ data: { source: 'NFYB', target: 'NFYA', directed: 'false', weight: 0.9759549999999999} },
+{ data: { source: 'NFYA', target: 'GTPBP1', directed: 'false', weight: 0.6776989999999999} },
+{ data: { source: 'NFYA', target: 'PLCB3', directed: 'false', weight: 0.179222} },
+{ data: { source: 'GTPBP1', target: 'PLCB3', directed: 'false', weight: 0.886209} }]},
 
 style: [
     {
@@ -93,11 +91,6 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.37500
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>DDX21
     </section>
     </body>
     </html>
