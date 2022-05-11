@@ -30,34 +30,19 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'CCDC9B', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q6ZUT6" }},
-{data: { id: 'RBM25', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49756" }},
-{data: { id: 'DDX39A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00148" }},
-{data: { id: 'THOC7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6I9Y2" }},
-{data: { id: 'THOC2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NI27" }},
-{data: { id: 'THOC6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86W42" }},
-{data: { id: 'CHTOP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y3Y2" }},
-{data: { id: 'THOC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96FV9" }},
-{data: { id: 'WBP11', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y2W2" }}], 
- edges: [{ data: { source: 'CCDC9B', target: 'THOC7', directed: 'false', weight: 0.950182} },
-{ data: { source: 'CCDC9B', target: 'THOC6', directed: 'false', weight: 0.173369} },
-{ data: { source: 'CCDC9B', target: 'THOC1', directed: 'false', weight: 0.9419959999999999} },
-{ data: { source: 'CCDC9B', target: 'CHTOP', directed: 'false', weight: 0.16530799999999998} },
-{ data: { source: 'RBM25', target: 'THOC2', directed: 'false', weight: 0.926293} },
-{ data: { source: 'RBM25', target: 'WBP11', directed: 'false', weight: 0.420187} },
-{ data: { source: 'DDX39A', target: 'THOC7', directed: 'false', weight: 0.539341} },
-{ data: { source: 'DDX39A', target: 'THOC6', directed: 'false', weight: 0.373726} },
-{ data: { source: 'DDX39A', target: 'THOC1', directed: 'false', weight: 0.599692} },
-{ data: { source: 'DDX39A', target: 'THOC2', directed: 'false', weight: 0.96141} },
-{ data: { source: 'THOC7', target: 'THOC1', directed: 'false', weight: 0.999933} },
-{ data: { source: 'THOC7', target: 'THOC6', directed: 'false', weight: 0.999923} },
-{ data: { source: 'THOC7', target: 'THOC2', directed: 'false', weight: 0.9999170000000001} },
-{ data: { source: 'THOC7', target: 'CHTOP', directed: 'false', weight: 0.975683} },
-{ data: { source: 'CHTOP', target: 'THOC6', directed: 'false', weight: 0.226525} },
-{ data: { source: 'CHTOP', target: 'THOC1', directed: 'false', weight: 0.9558700000000001} },
-{ data: { source: 'THOC6', target: 'THOC1', directed: 'false', weight: 0.9999520000000001} },
-{ data: { source: 'THOC6', target: 'THOC2', directed: 'false', weight: 0.9998360000000001} },
-{ data: { source: 'THOC2', target: 'THOC1', directed: 'false', weight: 0.999951} }]},
+elements:{nodes: [{data: { id: 'GSS', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P48637" }},
+{data: { id: 'ADA2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NZK5" }},
+{data: { id: 'IDE', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P14735" }},
+{data: { id: 'MRI1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BV20" }},
+{data: { id: 'SERPINB8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P50452" }},
+{data: { id: 'RMDN1', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q96DB5" }}], 
+ edges: [{ data: { source: 'GSS', target: 'MRI1', directed: 'false', weight: 0.814638} },
+{ data: { source: 'GSS', target: 'SERPINB8', directed: 'false', weight: 0.7901779999999999} },
+{ data: { source: 'GSS', target: 'ADA2', directed: 'false', weight: 0.334767} },
+{ data: { source: 'GSS', target: 'RMDN1', directed: 'false', weight: 0.171308} },
+{ data: { source: 'SERPINB8', target: 'MRI1', directed: 'false', weight: 0.648859} },
+{ data: { source: 'SERPINB8', target: 'IDE', directed: 'false', weight: 0.6832020000000001} },
+{ data: { source: 'SERPINB8', target: 'RMDN1', directed: 'false', weight: 0.429691} }]},
 
 style: [
     {
@@ -106,6 +91,11 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.37500
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>IDE
     </section>
     </body>
     </html>

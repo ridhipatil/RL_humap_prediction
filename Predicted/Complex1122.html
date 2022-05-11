@@ -30,14 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'ZNF26', score: 4, type: '', href: "https://www.uniprot.org/uniprot/P17031" }},
-{data: { id: 'ZSCAN23', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q3MJ62" }},
-{data: { id: 'ZNF397', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NF99" }},
-{data: { id: 'ZSCAN32', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NX65" }}], 
- edges: [{ data: { source: 'ZNF397', target: 'ZNF26', directed: 'false', weight: 0.980369} },
-{ data: { source: 'ZNF397', target: 'ZSCAN32', directed: 'false', weight: 0.354197} },
-{ data: { source: 'ZNF397', target: 'ZSCAN23', directed: 'false', weight: 0.28781100000000004} },
-{ data: { source: 'ZSCAN23', target: 'ZSCAN32', directed: 'false', weight: 0.8041119999999999} }]},
+elements:{nodes: [{data: { id: 'MEPCE', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q7L2J0" }},
+{data: { id: 'TSR2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q969E8" }},
+{data: { id: 'H1FX', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92522" }},
+{data: { id: 'RIOK2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BVS4" }}], 
+ edges: [{ data: { source: 'MEPCE', target: 'H1FX', directed: 'false', weight: 0.359668} },
+{ data: { source: 'TSR2', target: 'RIOK2', directed: 'false', weight: 0.277082} },
+{ data: { source: 'RIOK2', target: 'H1FX', directed: 'false', weight: 0.078377} }]},
 
 style: [
     {
@@ -86,6 +85,11 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.30000
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>MEPCE
     </section>
     </body>
     </html>

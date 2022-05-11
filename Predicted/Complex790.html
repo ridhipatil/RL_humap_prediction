@@ -30,11 +30,27 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'ALDH3A1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P30838" }},
-{data: { id: 'GPR18', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14330" }},
-{data: { id: 'UCP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P55851" }}], 
- edges: [{ data: { source: 'ALDH3A1', target: 'UCP2', directed: 'false', weight: 0.5} },
-{ data: { source: 'ALDH3A1', target: 'GPR18', directed: 'false', weight: 0.489746} }]},
+elements:{nodes: [{data: { id: 'GOT2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P00505" }},
+{data: { id: 'HMGCL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P35914" }},
+{data: { id: 'TAGLN', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q01995" }},
+{data: { id: 'ISOC1', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q96CN7" }},
+{data: { id: 'OXCT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P55809" }},
+{data: { id: 'PCBP3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P57721" }},
+{data: { id: 'UPP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16831" }},
+{data: { id: 'TIAL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q01085" }}], 
+ edges: [{ data: { source: 'HMGCL', target: 'TAGLN', directed: 'false', weight: 0.0469978} },
+{ data: { source: 'HMGCL', target: 'TIAL1', directed: 'false', weight: 0.335361} },
+{ data: { source: 'HMGCL', target: 'ISOC1', directed: 'false', weight: 0.013108700000000001} },
+{ data: { source: 'HMGCL', target: 'PCBP3', directed: 'false', weight: 0.0531033} },
+{ data: { source: 'GOT2', target: 'OXCT1', directed: 'false', weight: 0.850384} },
+{ data: { source: 'GOT2', target: 'TIAL1', directed: 'false', weight: 0.0772808} },
+{ data: { source: 'TAGLN', target: 'TIAL1', directed: 'false', weight: 0.631026} },
+{ data: { source: 'TAGLN', target: 'PCBP3', directed: 'false', weight: 0.0717232} },
+{ data: { source: 'TAGLN', target: 'ISOC1', directed: 'false', weight: 0.0039448999999999994} },
+{ data: { source: 'ISOC1', target: 'TIAL1', directed: 'false', weight: 0.8560530000000001} },
+{ data: { source: 'ISOC1', target: 'PCBP3', directed: 'false', weight: 0.0613066} },
+{ data: { source: 'PCBP3', target: 'TIAL1', directed: 'false', weight: 0.323892} },
+{ data: { source: 'UPP1', target: 'TIAL1', directed: 'false', weight: 0.042867199999999994} }]},
 
 style: [
     {

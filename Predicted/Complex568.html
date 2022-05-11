@@ -30,25 +30,27 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'CHST10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43529" }},
-{data: { id: 'PLXNA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UIW2" }},
-{data: { id: 'PLXNA3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P51805" }},
-{data: { id: 'POGLUT2', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q6UW63" }},
-{data: { id: 'FUT11', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q495W5" }}], 
- edges: [{ data: { source: 'CHST10', target: 'PLXNA3', directed: 'false', weight: 0.5805} },
-{ data: { source: 'CHST10', target: 'PLXNA1', directed: 'false', weight: 0.636196} },
-{ data: { source: 'PLXNA1', target: 'PLXNA3', directed: 'false', weight: 0.9164610000000001} },
-{ data: { source: 'PLXNA1', target: 'FUT11', directed: 'false', weight: 0.252151} },
-{ data: { source: 'PLXNA1', target: 'POGLUT2', directed: 'false', weight: 0.0619679} },
-{ data: { source: 'FUT11', target: 'POGLUT2', directed: 'false', weight: 0.553883} }]},
+elements:{nodes: [{data: { id: 'TP53BP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13625" }},
+{data: { id: 'FRMD6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96NE9" }},
+{data: { id: 'RASSF8', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q8NHQ8" }},
+{data: { id: 'PPP1R13B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96KQ4" }},
+{data: { id: 'RASSF7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q02833" }}], 
+ edges: [{ data: { source: 'TP53BP2', target: 'RASSF8', directed: 'false', weight: 0.9932049999999999} },
+{ data: { source: 'TP53BP2', target: 'RASSF7', directed: 'false', weight: 0.95096} },
+{ data: { source: 'TP53BP2', target: 'PPP1R13B', directed: 'false', weight: 0.553466} },
+{ data: { source: 'TP53BP2', target: 'FRMD6', directed: 'false', weight: 0.119817} },
+{ data: { source: 'FRMD6', target: 'RASSF8', directed: 'false', weight: 0.691381} },
+{ data: { source: 'FRMD6', target: 'RASSF7', directed: 'false', weight: 0.0716783} },
+{ data: { source: 'FRMD6', target: 'PPP1R13B', directed: 'false', weight: 0.100649} },
+{ data: { source: 'RASSF8', target: 'PPP1R13B', directed: 'false', weight: 0.611731} },
+{ data: { source: 'RASSF8', target: 'RASSF7', directed: 'false', weight: 0.406441} },
+{ data: { source: 'PPP1R13B', target: 'RASSF7', directed: 'false', weight: 0.33770500000000003} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 10,
-		'width':'10',
-		'height': '10',	
+		'font-size': 30,
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}                                
@@ -60,7 +62,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
 								'line-color': 'blue',
 								'opacity': 0.5
 							}
@@ -69,10 +71,7 @@ style: [
 
 });
 cy.layout({
-    'name': 'fcose',
-		'animate':false,
-	'nodeDimensionsIncludeLabels':true,
-	'nodeSeparation': 1000
+    name: 'circle'
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -89,11 +88,6 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.38750
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>POGLUT2
     </section>
     </body>
     </html>

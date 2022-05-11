@@ -30,23 +30,11 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'SET', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q01105" }},
-{data: { id: 'KIF19', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q2TAC6" }},
-{data: { id: 'ZNF331', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9NQX6" }},
-{data: { id: 'ZFP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6P2D0" }},
-{data: { id: 'ZNF845', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q96IR2" }},
-{data: { id: 'ZNF7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P17097" }},
-{data: { id: 'REPIN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BWE0" }}], 
- edges: [{ data: { source: 'SET', target: 'REPIN1', directed: 'false', weight: 0.841199} },
-{ data: { source: 'SET', target: 'ZNF845', directed: 'false', weight: 0.633113} },
-{ data: { source: 'KIF19', target: 'ZNF7', directed: 'false', weight: 0.42913199999999996} },
-{ data: { source: 'ZNF331', target: 'ZNF7', directed: 'false', weight: 0.144297} },
-{ data: { source: 'ZNF331', target: 'ZFP1', directed: 'false', weight: 0.165074} },
-{ data: { source: 'ZNF331', target: 'REPIN1', directed: 'false', weight: 0.11228099999999999} },
-{ data: { source: 'ZFP1', target: 'ZNF7', directed: 'false', weight: 0.144297} },
-{ data: { source: 'ZFP1', target: 'REPIN1', directed: 'false', weight: 0.11228099999999999} },
-{ data: { source: 'ZNF845', target: 'REPIN1', directed: 'false', weight: 0.0974347} },
-{ data: { source: 'ZNF7', target: 'REPIN1', directed: 'false', weight: 0.0974347} }]},
+elements:{nodes: [{data: { id: 'ATE1', score: 4, type: 'cov_link', href: "https://www.uniprot.org/uniprot/O95260" }},
+{data: { id: 'BANF1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75531" }},
+{data: { id: 'PARP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P09874" }}], 
+ edges: [{ data: { source: 'ATE1', target: 'PARP1', directed: 'false', weight: 0.5} },
+{ data: { source: 'BANF1', target: 'PARP1', directed: 'false', weight: 0.579476} }]},
 
 style: [
     {
@@ -95,6 +83,11 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.37500
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>ATE1
     </section>
     </body>
     </html>

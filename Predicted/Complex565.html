@@ -30,22 +30,29 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'COX20', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5RI15" }},
-{data: { id: 'C16orf91', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q4G0I0" }},
-{data: { id: 'UQCC2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BRT2" }},
-{data: { id: 'UQCC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NVA1" }}], 
- edges: [{ data: { source: 'UQCC1', target: 'COX20', directed: 'false', weight: 0.635393} },
-{ data: { source: 'UQCC1', target: 'C16orf91', directed: 'false', weight: 0.12378900000000001} },
-{ data: { source: 'UQCC1', target: 'UQCC2', directed: 'false', weight: 0.184918} },
-{ data: { source: 'C16orf91', target: 'COX20', directed: 'false', weight: 0.9096479999999999} },
-{ data: { source: 'C16orf91', target: 'UQCC2', directed: 'false', weight: 0.140692} },
-{ data: { source: 'UQCC2', target: 'COX20', directed: 'false', weight: 0.415545} }]},
+elements:{nodes: [{data: { id: 'CEP19', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96LK0" }},
+{data: { id: 'FGFR1OP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95684" }},
+{data: { id: 'CEP350', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q5VT06" }},
+{data: { id: 'CEP78', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5JTW2" }},
+{data: { id: 'CCDC77', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q9BR77" }},
+{data: { id: 'CSPP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q1MSJ5" }}], 
+ edges: [{ data: { source: 'CEP78', target: 'CEP350', directed: 'false', weight: 0.0044635} },
+{ data: { source: 'CEP78', target: 'FGFR1OP', directed: 'false', weight: 0.43543000000000004} },
+{ data: { source: 'CCDC77', target: 'CEP350', directed: 'false', weight: 0.0828443} },
+{ data: { source: 'CCDC77', target: 'FGFR1OP', directed: 'false', weight: 0.55155} },
+{ data: { source: 'CCDC77', target: 'CSPP1', directed: 'false', weight: 0.507455} },
+{ data: { source: 'FGFR1OP', target: 'CEP350', directed: 'false', weight: 0.999898} },
+{ data: { source: 'FGFR1OP', target: 'CEP19', directed: 'false', weight: 0.976284} },
+{ data: { source: 'FGFR1OP', target: 'CSPP1', directed: 'false', weight: 0.8945379999999999} },
+{ data: { source: 'CEP350', target: 'CEP19', directed: 'false', weight: 0.151455} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 30,
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}                                
@@ -57,7 +64,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
 								'line-color': 'blue',
 								'opacity': 0.5
 							}
@@ -66,7 +73,10 @@ style: [
 
 });
 cy.layout({
-    name: 'circle'
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -83,6 +93,11 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.38750
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>CEP350
     </section>
     </body>
     </html>

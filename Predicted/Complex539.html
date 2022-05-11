@@ -30,27 +30,34 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'KPTN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y664" }},
-{data: { id: 'ITFG2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q969R8" }},
-{data: { id: 'SZT2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5T011" }},
-{data: { id: 'TMCO4', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q5TGY1" }},
-{data: { id: 'C12orf66', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q96MD2" }}], 
- edges: [{ data: { source: 'TMCO4', target: 'ITFG2', directed: 'false', weight: 0.12378900000000001} },
-{ data: { source: 'TMCO4', target: 'KPTN', directed: 'false', weight: 0.9703709999999999} },
-{ data: { source: 'TMCO4', target: 'C12orf66', directed: 'false', weight: 0.171414} },
-{ data: { source: 'TMCO4', target: 'SZT2', directed: 'false', weight: 0.151455} },
-{ data: { source: 'C12orf66', target: 'ITFG2', directed: 'false', weight: 0.12378900000000001} },
-{ data: { source: 'C12orf66', target: 'KPTN', directed: 'false', weight: 0.971303} },
-{ data: { source: 'C12orf66', target: 'SZT2', directed: 'false', weight: 0.151455} },
-{ data: { source: 'KPTN', target: 'ITFG2', directed: 'false', weight: 0.979634} },
-{ data: { source: 'KPTN', target: 'SZT2', directed: 'false', weight: 0.901673} },
-{ data: { source: 'ITFG2', target: 'SZT2', directed: 'false', weight: 0.222827} }]},
+elements:{nodes: [{data: { id: 'PRPF3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43395" }},
+{data: { id: 'SNRPD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62314" }},
+{data: { id: 'SART1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43290" }},
+{data: { id: 'SNRPA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P09661" }},
+{data: { id: 'PQBP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60828" }},
+{data: { id: 'CDK12', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NYV4" }},
+{data: { id: 'RSBN1', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q5VWQ0" }}], 
+ edges: [{ data: { source: 'PRPF3', target: 'SNRPD1', directed: 'false', weight: 0.100538} },
+{ data: { source: 'PRPF3', target: 'SART1', directed: 'false', weight: 0.9999979999999999} },
+{ data: { source: 'PRPF3', target: 'PQBP1', directed: 'false', weight: 0.7237359999999999} },
+{ data: { source: 'PRPF3', target: 'CDK12', directed: 'false', weight: 0.108598} },
+{ data: { source: 'SNRPD1', target: 'SNRPA1', directed: 'false', weight: 1.0} },
+{ data: { source: 'SNRPD1', target: 'CDK12', directed: 'false', weight: 0.336094} },
+{ data: { source: 'SNRPD1', target: 'SART1', directed: 'false', weight: 0.180678} },
+{ data: { source: 'SART1', target: 'SNRPA1', directed: 'false', weight: 0.9759450000000001} },
+{ data: { source: 'SART1', target: 'PQBP1', directed: 'false', weight: 0.8558889999999999} },
+{ data: { source: 'SART1', target: 'CDK12', directed: 'false', weight: 0.0321709} },
+{ data: { source: 'SNRPA1', target: 'CDK12', directed: 'false', weight: 0.192329} },
+{ data: { source: 'PQBP1', target: 'CDK12', directed: 'false', weight: 0.2659} },
+{ data: { source: 'CDK12', target: 'RSBN1', directed: 'false', weight: 0.570802} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 30,
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}                                
@@ -62,7 +69,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
 								'line-color': 'blue',
 								'opacity': 0.5
 							}
@@ -71,7 +78,10 @@ style: [
 
 });
 cy.layout({
-    name: 'circle'
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
 }).run();
 
 cy.on('tap', 'node', function(){

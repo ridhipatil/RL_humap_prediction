@@ -30,19 +30,19 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'DDX1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92499" }},
-{data: { id: 'HNRNPDL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O14979" }},
-{data: { id: 'HNRNPH3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P31942" }},
-{data: { id: 'HNRNPA3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P51991" }},
-{data: { id: 'MESD', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14696" }},
-{data: { id: 'HNRNPL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P14866" }}], 
- edges: [{ data: { source: 'DDX1', target: 'HNRNPH3', directed: 'false', weight: 0.522872} },
-{ data: { source: 'DDX1', target: 'HNRNPDL', directed: 'false', weight: 0.246432} },
-{ data: { source: 'HNRNPA3', target: 'HNRNPH3', directed: 'false', weight: 0.999949} },
-{ data: { source: 'HNRNPL', target: 'HNRNPH3', directed: 'false', weight: 0.10694300000000001} },
-{ data: { source: 'HNRNPL', target: 'HNRNPDL', directed: 'false', weight: 0.801848} },
-{ data: { source: 'MESD', target: 'HNRNPDL', directed: 'false', weight: 0.338873} },
-{ data: { source: 'HNRNPDL', target: 'HNRNPH3', directed: 'false', weight: 0.736586} }]},
+elements:{nodes: [{data: { id: 'EXOSC8', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q96B26" }},
+{data: { id: 'EXOSC2', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q13868" }},
+{data: { id: 'EXOSC9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q06265" }},
+{data: { id: 'FARSB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NSD9" }},
+{data: { id: 'FARSA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y285" }},
+{data: { id: 'DIS3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y2L1" }}], 
+ edges: [{ data: { source: 'EXOSC2', target: 'EXOSC8', directed: 'false', weight: 0.999008} },
+{ data: { source: 'EXOSC2', target: 'DIS3', directed: 'false', weight: 0.9980969999999999} },
+{ data: { source: 'EXOSC2', target: 'EXOSC9', directed: 'false', weight: 0.995849} },
+{ data: { source: 'FARSA', target: 'FARSB', directed: 'false', weight: 0.892999} },
+{ data: { source: 'EXOSC8', target: 'EXOSC9', directed: 'false', weight: 0.999765} },
+{ data: { source: 'EXOSC9', target: 'DIS3', directed: 'false', weight: 0.9759120000000001} },
+{ data: { source: 'FARSB', target: 'DIS3', directed: 'false', weight: 0.7892239999999999} }]},
 
 style: [
     {
@@ -91,6 +91,11 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.37500
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        2 interacting protein(s): <br>EXOSC8 EXOSC2
     </section>
     </body>
     </html>

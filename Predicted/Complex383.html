@@ -30,21 +30,17 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'PRPF4B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13523" }},
-{data: { id: 'U2AF2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P26368" }},
-{data: { id: 'SRRT', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BXP5" }},
-{data: { id: 'PUF60', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UHX1" }},
-{data: { id: 'BCLAF1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NYF8" }},
-{data: { id: 'U2AF1L4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WU68" }}], 
- edges: [{ data: { source: 'PUF60', target: 'BCLAF1', directed: 'false', weight: 0.715464} },
-{ data: { source: 'PUF60', target: 'U2AF2', directed: 'false', weight: 0.999785} },
-{ data: { source: 'PUF60', target: 'PRPF4B', directed: 'false', weight: 0.9759049999999999} },
-{ data: { source: 'PUF60', target: 'SRRT', directed: 'false', weight: 0.948569} },
-{ data: { source: 'PRPF4B', target: 'BCLAF1', directed: 'false', weight: 0.15375899999999998} },
-{ data: { source: 'PRPF4B', target: 'U2AF2', directed: 'false', weight: 0.975949} },
-{ data: { source: 'U2AF2', target: 'BCLAF1', directed: 'false', weight: 0.909826} },
-{ data: { source: 'U2AF2', target: 'SRRT', directed: 'false', weight: 0.9838129999999999} },
-{ data: { source: 'U2AF2', target: 'U2AF1L4', directed: 'false', weight: 0.33849} }]},
+elements:{nodes: [{data: { id: 'HOMER1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86YM7" }},
+{data: { id: 'HOMER3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NSC5" }},
+{data: { id: 'LMAN2L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H0V9" }},
+{data: { id: 'TRAF5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00463" }},
+{data: { id: 'SPTBN4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H254" }}], 
+ edges: [{ data: { source: 'LMAN2L', target: 'HOMER1', directed: 'false', weight: 0.5} },
+{ data: { source: 'TRAF5', target: 'HOMER1', directed: 'false', weight: 0.9311290000000001} },
+{ data: { source: 'TRAF5', target: 'SPTBN4', directed: 'false', weight: 0.151455} },
+{ data: { source: 'HOMER1', target: 'HOMER3', directed: 'false', weight: 0.9999450000000001} },
+{ data: { source: 'HOMER1', target: 'SPTBN4', directed: 'false', weight: 0.966875} },
+{ data: { source: 'HOMER3', target: 'SPTBN4', directed: 'false', weight: 0.151455} }]},
 
 style: [
     {

@@ -30,16 +30,16 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'TBX20', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UMR3" }},
-{data: { id: 'TLE1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q04724" }},
-{data: { id: 'DNASE1L2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92874" }},
-{data: { id: 'TLE4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q04727" }}], 
- edges: [{ data: { source: 'TBX20', target: 'TLE4', directed: 'false', weight: 0.88481} },
-{ data: { source: 'TBX20', target: 'TLE1', directed: 'false', weight: 0.685321} },
-{ data: { source: 'TBX20', target: 'DNASE1L2', directed: 'false', weight: 0.592609} },
-{ data: { source: 'TLE1', target: 'TLE4', directed: 'false', weight: 0.163688} },
-{ data: { source: 'TLE1', target: 'DNASE1L2', directed: 'false', weight: 0.0855723} },
-{ data: { source: 'TLE4', target: 'DNASE1L2', directed: 'false', weight: 0.0925023} }]},
+elements:{nodes: [{data: { id: 'LRRC46', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q96FV0" }},
+{data: { id: 'PACS2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86VP3" }},
+{data: { id: 'SIX4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UIU6" }},
+{data: { id: 'PLCD3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N3E9" }}], 
+ edges: [{ data: { source: 'LRRC46', target: 'SIX4', directed: 'false', weight: 0.9854299999999999} },
+{ data: { source: 'LRRC46', target: 'PACS2', directed: 'false', weight: 0.9364889999999999} },
+{ data: { source: 'LRRC46', target: 'PLCD3', directed: 'false', weight: 0.787159} },
+{ data: { source: 'PACS2', target: 'SIX4', directed: 'false', weight: 0.151455} },
+{ data: { source: 'PACS2', target: 'PLCD3', directed: 'false', weight: 0.123797} },
+{ data: { source: 'PLCD3', target: 'SIX4', directed: 'false', weight: 0.140692} }]},
 
 style: [
     {
@@ -83,11 +83,6 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.38750
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>TLE1
     </section>
     </body>
     </html>

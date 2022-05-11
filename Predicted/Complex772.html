@@ -30,16 +30,19 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'TRA2B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62995" }},
-{data: { id: 'RNPS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15287" }},
-{data: { id: 'BCLAF1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NYF8" }},
-{data: { id: 'ZRANB2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95218" }},
-{data: { id: 'H2AFZ', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P0C0S5" }}], 
- edges: [{ data: { source: 'RNPS1', target: 'BCLAF1', directed: 'false', weight: 0.964673} },
-{ data: { source: 'RNPS1', target: 'TRA2B', directed: 'false', weight: 0.9769610000000001} },
-{ data: { source: 'RNPS1', target: 'ZRANB2', directed: 'false', weight: 0.9732299999999999} },
-{ data: { source: 'RNPS1', target: 'H2AFZ', directed: 'false', weight: 0.48214300000000004} },
-{ data: { source: 'TRA2B', target: 'BCLAF1', directed: 'false', weight: 0.989144} }]},
+elements:{nodes: [{data: { id: 'TALDO1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P37837" }},
+{data: { id: 'PEPD', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P12955" }},
+{data: { id: 'TAGLN3', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q9UI15" }},
+{data: { id: 'ENO3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P13929" }},
+{data: { id: 'FKBP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P26885" }},
+{data: { id: 'FKBP1A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62942" }}], 
+ edges: [{ data: { source: 'PEPD', target: 'TALDO1', directed: 'false', weight: 0.808639} },
+{ data: { source: 'TAGLN3', target: 'FKBP1A', directed: 'false', weight: 0.998099} },
+{ data: { source: 'TAGLN3', target: 'ENO3', directed: 'false', weight: 0.8680959999999999} },
+{ data: { source: 'TAGLN3', target: 'TALDO1', directed: 'false', weight: 0.864368} },
+{ data: { source: 'ENO3', target: 'FKBP1A', directed: 'false', weight: 0.66335} },
+{ data: { source: 'ENO3', target: 'FKBP2', directed: 'false', weight: 0.619925} },
+{ data: { source: 'FKBP2', target: 'FKBP1A', directed: 'false', weight: 0.959016} }]},
 
 style: [
     {

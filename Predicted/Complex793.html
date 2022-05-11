@@ -30,11 +30,24 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'CD96', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P40200" }},
-{data: { id: 'HSPA1A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P0DMV8" }},
-{data: { id: 'LDB3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75112" }}], 
- edges: [{ data: { source: 'CD96', target: 'HSPA1A', directed: 'false', weight: 0.905401} },
-{ data: { source: 'LDB3', target: 'HSPA1A', directed: 'false', weight: 0.411278} }]},
+elements:{nodes: [{data: { id: 'CD2BP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95400" }},
+{data: { id: 'SNRNP200', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75643" }},
+{data: { id: 'PDS5A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q29RF7" }},
+{data: { id: 'CDC5L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99459" }},
+{data: { id: 'RAB43', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86YS6" }},
+{data: { id: 'XAB2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HCS7" }},
+{data: { id: 'PDS5B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NTI5" }}], 
+ edges: [{ data: { source: 'CD2BP2', target: 'XAB2', directed: 'false', weight: 0.377443} },
+{ data: { source: 'CD2BP2', target: 'SNRNP200', directed: 'false', weight: 0.9999819999999999} },
+{ data: { source: 'CD2BP2', target: 'CDC5L', directed: 'false', weight: 0.655616} },
+{ data: { source: 'SNRNP200', target: 'XAB2', directed: 'false', weight: 0.9983709999999999} },
+{ data: { source: 'SNRNP200', target: 'CDC5L', directed: 'false', weight: 0.995715} },
+{ data: { source: 'PDS5A', target: 'CDC5L', directed: 'false', weight: 0.324994} },
+{ data: { source: 'PDS5A', target: 'PDS5B', directed: 'false', weight: 0.9996200000000001} },
+{ data: { source: 'CDC5L', target: 'XAB2', directed: 'false', weight: 0.9904280000000001} },
+{ data: { source: 'CDC5L', target: 'PDS5B', directed: 'false', weight: 0.521779} },
+{ data: { source: 'CDC5L', target: 'RAB43', directed: 'false', weight: 0.116478} },
+{ data: { source: 'RAB43', target: 'XAB2', directed: 'false', weight: 0.996348} }]},
 
 style: [
     {

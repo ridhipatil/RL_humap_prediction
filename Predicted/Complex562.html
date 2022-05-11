@@ -30,25 +30,18 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'AKAP14', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86UN6" }},
-{data: { id: 'EFCAB7', score: 4, type: '', href: "https://www.uniprot.org/uniprot/A8K855" }},
-{data: { id: 'ROPN1L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96C74" }},
-{data: { id: 'SPA17', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15506" }},
-{data: { id: 'PRKAR2B', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P31323" }}], 
- edges: [{ data: { source: 'AKAP14', target: 'PRKAR2B', directed: 'false', weight: 0.824614} },
-{ data: { source: 'AKAP14', target: 'SPA17', directed: 'false', weight: 0.9289040000000001} },
-{ data: { source: 'AKAP14', target: 'EFCAB7', directed: 'false', weight: 0.0936635} },
-{ data: { source: 'EFCAB7', target: 'SPA17', directed: 'false', weight: 0.9582809999999999} },
-{ data: { source: 'EFCAB7', target: 'ROPN1L', directed: 'false', weight: 0.117318} },
-{ data: { source: 'ROPN1L', target: 'SPA17', directed: 'false', weight: 0.808106} }]},
+elements:{nodes: [{data: { id: 'IREB2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P48200" }},
+{data: { id: 'CCNL2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96S94" }},
+{data: { id: 'ZBTB43', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43298" }}], 
+ edges: [{ data: { source: 'IREB2', target: 'ZBTB43', directed: 'false', weight: 0.123797} },
+{ data: { source: 'IREB2', target: 'CCNL2', directed: 'false', weight: 0.330808} },
+{ data: { source: 'CCNL2', target: 'ZBTB43', directed: 'false', weight: 0.772646} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 10,
-		'width':'10',
-		'height': '10',	
+		'font-size': 30,
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}                                
@@ -60,7 +53,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
 								'line-color': 'blue',
 								'opacity': 0.5
 							}
@@ -69,10 +62,7 @@ style: [
 
 });
 cy.layout({
-    'name': 'fcose',
-		'animate':false,
-	'nodeDimensionsIncludeLabels':true,
-	'nodeSeparation': 1000
+    name: 'circle'
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -89,11 +79,6 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.38750
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>PRKAR2B
     </section>
     </body>
     </html>

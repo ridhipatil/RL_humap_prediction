@@ -30,29 +30,24 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'PRKAR1A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P10644" }},
-{data: { id: 'PRKACA', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P17252" }},
-{data: { id: 'PRKAR1B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P31321" }},
-{data: { id: 'AKAP11', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UKA4" }},
-{data: { id: 'CDK5RAP2', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q96SN8" }},
-{data: { id: 'GPR161', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N6U8" }},
-{data: { id: 'CEP68', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q76N32" }}], 
- edges: [{ data: { source: 'PRKAR1A', target: 'PRKAR1B', directed: 'false', weight: 0.9936229999999999} },
-{ data: { source: 'PRKAR1A', target: 'GPR161', directed: 'false', weight: 0.977131} },
-{ data: { source: 'PRKAR1A', target: 'AKAP11', directed: 'false', weight: 0.89405} },
-{ data: { source: 'PRKAR1A', target: 'CEP68', directed: 'false', weight: 0.18832100000000002} },
-{ data: { source: 'PRKACA', target: 'AKAP11', directed: 'false', weight: 0.558666} },
-{ data: { source: 'PRKACA', target: 'PRKAR1B', directed: 'false', weight: 0.315841} },
-{ data: { source: 'PRKACA', target: 'CEP68', directed: 'false', weight: 0.313765} },
-{ data: { source: 'PRKACA', target: 'CDK5RAP2', directed: 'false', weight: 0.180578} },
-{ data: { source: 'PRKAR1B', target: 'AKAP11', directed: 'false', weight: 0.991933} },
-{ data: { source: 'PRKAR1B', target: 'CDK5RAP2', directed: 'false', weight: 0.14189300000000002} },
-{ data: { source: 'PRKAR1B', target: 'CEP68', directed: 'false', weight: 0.125737} },
-{ data: { source: 'PRKAR1B', target: 'GPR161', directed: 'false', weight: 0.0976894} },
-{ data: { source: 'AKAP11', target: 'CDK5RAP2', directed: 'false', weight: 0.195967} },
-{ data: { source: 'AKAP11', target: 'CEP68', directed: 'false', weight: 0.125737} },
-{ data: { source: 'AKAP11', target: 'GPR161', directed: 'false', weight: 0.10554300000000001} },
-{ data: { source: 'CDK5RAP2', target: 'CEP68', directed: 'false', weight: 0.313765} }]},
+elements:{nodes: [{data: { id: 'CSRNP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96S65" }},
+{data: { id: 'C2orf74', score: 2, type: '', href: "https://www.uniprot.org/uniprot/A8MZ97" }},
+{data: { id: 'PPP1R3D', score: 4, type: '', href: "https://www.uniprot.org/uniprot/O95685" }},
+{data: { id: 'PPP1R8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q12972" }},
+{data: { id: 'AGL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P35573" }},
+{data: { id: 'PPP1R3B', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q86XI6" }}], 
+ edges: [{ data: { source: 'CSRNP1', target: 'PPP1R3B', directed: 'false', weight: 0.140692} },
+{ data: { source: 'CSRNP1', target: 'PPP1R3D', directed: 'false', weight: 0.133451} },
+{ data: { source: 'CSRNP1', target: 'C2orf74', directed: 'false', weight: 0.171414} },
+{ data: { source: 'CSRNP1', target: 'PPP1R8', directed: 'false', weight: 0.140692} },
+{ data: { source: 'C2orf74', target: 'PPP1R3B', directed: 'false', weight: 0.140692} },
+{ data: { source: 'C2orf74', target: 'PPP1R3D', directed: 'false', weight: 0.133451} },
+{ data: { source: 'C2orf74', target: 'PPP1R8', directed: 'false', weight: 0.140692} },
+{ data: { source: 'PPP1R3D', target: 'PPP1R3B', directed: 'false', weight: 0.9906360000000001} },
+{ data: { source: 'PPP1R3D', target: 'AGL', directed: 'false', weight: 0.30685500000000004} },
+{ data: { source: 'PPP1R3D', target: 'PPP1R8', directed: 'false', weight: 0.216185} },
+{ data: { source: 'PPP1R8', target: 'PPP1R3B', directed: 'false', weight: 0.24226599999999998} },
+{ data: { source: 'AGL', target: 'PPP1R3B', directed: 'false', weight: 0.759571} }]},
 
 style: [
     {
@@ -101,11 +96,6 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.39375
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        3 interacting protein(s): <br>PRKACA CDK5RAP2 CEP68
     </section>
     </body>
     </html>

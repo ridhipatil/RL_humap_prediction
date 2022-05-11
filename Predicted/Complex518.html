@@ -30,12 +30,12 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'RD3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q7Z3Z2" }},
-{data: { id: 'NBEA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NFP9" }},
-{data: { id: 'LRBA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P50851" }}], 
- edges: [{ data: { source: 'RD3', target: 'NBEA', directed: 'false', weight: 0.8411290000000001} },
-{ data: { source: 'RD3', target: 'LRBA', directed: 'false', weight: 0.400767} },
-{ data: { source: 'NBEA', target: 'LRBA', directed: 'false', weight: 0.108694} }]},
+elements:{nodes: [{data: { id: 'TSPAN33', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86UF1" }},
+{data: { id: 'PDZD11', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q5EBL8" }},
+{data: { id: 'PLEKHA7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6IQ23" }}], 
+ edges: [{ data: { source: 'PLEKHA7', target: 'TSPAN33', directed: 'false', weight: 0.980775} },
+{ data: { source: 'PLEKHA7', target: 'PDZD11', directed: 'false', weight: 0.133456} },
+{ data: { source: 'PDZD11', target: 'TSPAN33', directed: 'false', weight: 0.5307609999999999} }]},
 
 style: [
     {
@@ -79,6 +79,11 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.38750
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>PDZD11
     </section>
     </body>
     </html>

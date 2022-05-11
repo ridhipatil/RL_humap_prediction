@@ -30,12 +30,12 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'CNNM1', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9NRU3" }},
-{data: { id: 'HLA-DQB1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P01920" }},
-{data: { id: 'CNNM3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NE01" }}], 
- edges: [{ data: { source: 'CNNM1', target: 'CNNM3', directed: 'false', weight: 0.41561800000000004} },
-{ data: { source: 'CNNM1', target: 'HLA-DQB1', directed: 'false', weight: 0.26776300000000003} },
-{ data: { source: 'HLA-DQB1', target: 'CNNM3', directed: 'false', weight: 0.175861} }]},
+elements:{nodes: [{data: { id: 'MFGE8', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q08431" }},
+{data: { id: 'FAM3A', score: 4, type: '', href: "https://www.uniprot.org/uniprot/P98173" }},
+{data: { id: 'ITGB5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P18084" }}], 
+ edges: [{ data: { source: 'MFGE8', target: 'ITGB5', directed: 'false', weight: 0.422306} },
+{ data: { source: 'MFGE8', target: 'FAM3A', directed: 'false', weight: 0.280667} },
+{ data: { source: 'FAM3A', target: 'ITGB5', directed: 'false', weight: 0.0809483} }]},
 
 style: [
     {
@@ -79,6 +79,11 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.38750
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>MFGE8
     </section>
     </body>
     </html>

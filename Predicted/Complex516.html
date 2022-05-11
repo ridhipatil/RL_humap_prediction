@@ -30,34 +30,27 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'MRTFB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9ULH7" }},
-{data: { id: 'KCTD3', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q9Y597" }},
-{data: { id: 'MTUS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9ULD2" }},
-{data: { id: 'CORO6', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q6QEF8" }},
-{data: { id: 'CORO1A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P31146" }},
-{data: { id: 'FHL3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13643" }},
-{data: { id: 'TJAP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5JTD0" }}], 
- edges: [{ data: { source: 'MRTFB', target: 'FHL3', directed: 'false', weight: 0.891294} },
-{ data: { source: 'MRTFB', target: 'MTUS1', directed: 'false', weight: 0.151455} },
-{ data: { source: 'MRTFB', target: 'TJAP1', directed: 'false', weight: 0.133456} },
-{ data: { source: 'MRTFB', target: 'KCTD3', directed: 'false', weight: 0.10556600000000001} },
-{ data: { source: 'KCTD3', target: 'FHL3', directed: 'false', weight: 0.356158} },
-{ data: { source: 'KCTD3', target: 'MTUS1', directed: 'false', weight: 0.120276} },
-{ data: { source: 'KCTD3', target: 'TJAP1', directed: 'false', weight: 0.10556600000000001} },
-{ data: { source: 'MTUS1', target: 'FHL3', directed: 'false', weight: 0.8265450000000001} },
-{ data: { source: 'MTUS1', target: 'TJAP1', directed: 'false', weight: 0.151455} },
-{ data: { source: 'CORO6', target: 'CORO1A', directed: 'false', weight: 0.983248} },
-{ data: { source: 'CORO6', target: 'TJAP1', directed: 'false', weight: 0.151455} },
-{ data: { source: 'CORO1A', target: 'TJAP1', directed: 'false', weight: 0.8215950000000001} },
-{ data: { source: 'FHL3', target: 'TJAP1', directed: 'false', weight: 0.607147} }]},
+elements:{nodes: [{data: { id: 'IGHMBP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P38935" }},
+{data: { id: 'NELFE', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P18615" }},
+{data: { id: 'NELFB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WX92" }},
+{data: { id: 'NELFCD', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IXH7" }},
+{data: { id: 'NELFA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H3P2" }}], 
+ edges: [{ data: { source: 'IGHMBP2', target: 'NELFA', directed: 'false', weight: 0.171414} },
+{ data: { source: 'IGHMBP2', target: 'NELFE', directed: 'false', weight: 0.79956} },
+{ data: { source: 'IGHMBP2', target: 'NELFB', directed: 'false', weight: 0.171414} },
+{ data: { source: 'IGHMBP2', target: 'NELFCD', directed: 'false', weight: 0.171414} },
+{ data: { source: 'NELFB', target: 'NELFA', directed: 'false', weight: 0.967915} },
+{ data: { source: 'NELFB', target: 'NELFE', directed: 'false', weight: 0.999934} },
+{ data: { source: 'NELFB', target: 'NELFCD', directed: 'false', weight: 0.975941} },
+{ data: { source: 'NELFE', target: 'NELFA', directed: 'false', weight: 0.999951} },
+{ data: { source: 'NELFE', target: 'NELFCD', directed: 'false', weight: 0.9759110000000001} },
+{ data: { source: 'NELFCD', target: 'NELFA', directed: 'false', weight: 0.71812} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 10,
-		'width':'10',
-		'height': '10',	
+		'font-size': 30,
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}                                
@@ -69,7 +62,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
 								'line-color': 'blue',
 								'opacity': 0.5
 							}
@@ -78,10 +71,7 @@ style: [
 
 });
 cy.layout({
-    'name': 'fcose',
-		'animate':false,
-	'nodeDimensionsIncludeLabels':true,
-	'nodeSeparation': 1000
+    name: 'circle'
 }).run();
 
 cy.on('tap', 'node', function(){

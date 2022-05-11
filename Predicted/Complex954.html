@@ -30,11 +30,16 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'ATE1', score: 4, type: 'cov_link', href: "https://www.uniprot.org/uniprot/O95260" }},
-{data: { id: 'PARP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P09874" }},
-{data: { id: 'BANF1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75531" }}], 
- edges: [{ data: { source: 'PARP1', target: 'BANF1', directed: 'false', weight: 0.579476} },
-{ data: { source: 'PARP1', target: 'ATE1', directed: 'false', weight: 0.5} }]},
+elements:{nodes: [{data: { id: 'CROCC', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5TZA2" }},
+{data: { id: 'ELAC2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BQ52" }},
+{data: { id: 'HARS2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49590" }},
+{data: { id: 'GTPBP6', score: 3, type: '', href: "https://www.uniprot.org/uniprot/O43824" }},
+{data: { id: 'SARS2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NP81" }}], 
+ edges: [{ data: { source: 'ELAC2', target: 'SARS2', directed: 'false', weight: 0.42663199999999996} },
+{ data: { source: 'ELAC2', target: 'GTPBP6', directed: 'false', weight: 0.35504} },
+{ data: { source: 'HARS2', target: 'CROCC', directed: 'false', weight: 0.55698} },
+{ data: { source: 'HARS2', target: 'SARS2', directed: 'false', weight: 0.361782} },
+{ data: { source: 'GTPBP6', target: 'SARS2', directed: 'false', weight: 0.384596} }]},
 
 style: [
     {
@@ -83,11 +88,6 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.37500
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>ATE1
     </section>
     </body>
     </html>

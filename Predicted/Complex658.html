@@ -30,33 +30,18 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'ARNT', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P27540" }},
-{data: { id: 'VPS72', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15906" }},
-{data: { id: 'YEATS4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95619" }},
-{data: { id: 'SRCAP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6ZRS2" }},
-{data: { id: 'EPC2', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q52LR7" }},
-{data: { id: 'MYC', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P01106" }},
-{data: { id: 'HIF1A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16665" }}], 
- edges: [{ data: { source: 'ARNT', target: 'HIF1A', directed: 'false', weight: 0.974464} },
-{ data: { source: 'ARNT', target: 'MYC', directed: 'false', weight: 0.108699} },
-{ data: { source: 'VPS72', target: 'YEATS4', directed: 'false', weight: 1.0} },
-{ data: { source: 'VPS72', target: 'EPC2', directed: 'false', weight: 0.9981610000000001} },
-{ data: { source: 'VPS72', target: 'SRCAP', directed: 'false', weight: 0.33883} },
-{ data: { source: 'VPS72', target: 'MYC', directed: 'false', weight: 0.294644} },
-{ data: { source: 'YEATS4', target: 'EPC2', directed: 'false', weight: 0.999999} },
-{ data: { source: 'YEATS4', target: 'SRCAP', directed: 'false', weight: 0.9590559999999999} },
-{ data: { source: 'YEATS4', target: 'MYC', directed: 'false', weight: 0.292335} },
-{ data: { source: 'SRCAP', target: 'EPC2', directed: 'false', weight: 0.179088} },
-{ data: { source: 'SRCAP', target: 'MYC', directed: 'false', weight: 0.0896254} },
-{ data: { source: 'EPC2', target: 'MYC', directed: 'false', weight: 0.352171} }]},
+elements:{nodes: [{data: { id: 'VPS25', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BRG1" }},
+{data: { id: 'SNF8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96H20" }},
+{data: { id: 'VPS36', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86VN1" }}], 
+ edges: [{ data: { source: 'SNF8', target: 'VPS25', directed: 'false', weight: 0.9823} },
+{ data: { source: 'SNF8', target: 'VPS36', directed: 'false', weight: 0.436906} },
+{ data: { source: 'VPS25', target: 'VPS36', directed: 'false', weight: 0.634412} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 10,
-		'width':'10',
-		'height': '10',	
+		'font-size': 30,
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}                                
@@ -68,7 +53,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
 								'line-color': 'blue',
 								'opacity': 0.5
 							}
@@ -77,10 +62,7 @@ style: [
 
 });
 cy.layout({
-    'name': 'fcose',
-		'animate':false,
-	'nodeDimensionsIncludeLabels':true,
-	'nodeSeparation': 1000
+    name: 'circle'
 }).run();
 
 cy.on('tap', 'node', function(){

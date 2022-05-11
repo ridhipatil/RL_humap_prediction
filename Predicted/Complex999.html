@@ -30,22 +30,20 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'IMP3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00425" }},
-{data: { id: 'NOP53', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NZM5" }},
-{data: { id: 'FOCAD', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q5VW36" }},
-{data: { id: 'MPHOSPH10', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/O00566" }},
-{data: { id: 'RPL10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P27635" }},
-{data: { id: 'PRKRA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75569" }},
-{data: { id: 'SRP72', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/O76094" }}], 
- edges: [{ data: { source: 'IMP3', target: 'MPHOSPH10', directed: 'false', weight: 0.99982} },
-{ data: { source: 'IMP3', target: 'NOP53', directed: 'false', weight: 0.704543} },
-{ data: { source: 'IMP3', target: 'SRP72', directed: 'false', weight: 0.455086} },
-{ data: { source: 'NOP53', target: 'MPHOSPH10', directed: 'false', weight: 0.9959100000000001} },
-{ data: { source: 'NOP53', target: 'SRP72', directed: 'false', weight: 0.662852} },
-{ data: { source: 'NOP53', target: 'FOCAD', directed: 'false', weight: 0.0960696} },
-{ data: { source: 'MPHOSPH10', target: 'SRP72', directed: 'false', weight: 0.516483} },
-{ data: { source: 'MPHOSPH10', target: 'PRKRA', directed: 'false', weight: 0.130908} },
-{ data: { source: 'RPL10', target: 'SRP72', directed: 'false', weight: 0.981125} }]},
+elements:{nodes: [{data: { id: 'TRA2B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62995" }},
+{data: { id: 'LUC7L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NQ29" }},
+{data: { id: 'LUC7L3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95232" }},
+{data: { id: 'ZC3H14', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6PJT7" }},
+{data: { id: 'RSRC2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q7L4I2" }},
+{data: { id: 'TRA2A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13595" }}], 
+ edges: [{ data: { source: 'LUC7L', target: 'TRA2B', directed: 'false', weight: 0.203084} },
+{ data: { source: 'LUC7L', target: 'TRA2A', directed: 'false', weight: 0.0748879} },
+{ data: { source: 'LUC7L', target: 'LUC7L3', directed: 'false', weight: 0.9669399999999999} },
+{ data: { source: 'ZC3H14', target: 'TRA2A', directed: 'false', weight: 0.12153499999999999} },
+{ data: { source: 'ZC3H14', target: 'RSRC2', directed: 'false', weight: 0.0327211} },
+{ data: { source: 'TRA2B', target: 'TRA2A', directed: 'false', weight: 0.9993620000000001} },
+{ data: { source: 'TRA2B', target: 'LUC7L3', directed: 'false', weight: 0.8551979999999999} },
+{ data: { source: 'LUC7L3', target: 'TRA2A', directed: 'false', weight: 0.222255} }]},
 
 style: [
     {
@@ -94,11 +92,6 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.35000
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        2 interacting protein(s): <br>MPHOSPH10 SRP72
     </section>
     </body>
     </html>

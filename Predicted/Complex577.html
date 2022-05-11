@@ -30,18 +30,64 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'RGCC', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H4X1" }},
-{data: { id: 'CARS2', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9HA77" }},
-{data: { id: 'TLN2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y4G6" }}], 
- edges: [{ data: { source: 'RGCC', target: 'TLN2', directed: 'false', weight: 0.973183} },
-{ data: { source: 'RGCC', target: 'CARS2', directed: 'false', weight: 0.7519779999999999} },
-{ data: { source: 'CARS2', target: 'TLN2', directed: 'false', weight: 0.151455} }]},
+elements:{nodes: [{data: { id: 'MBD3L1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WWY6" }},
+{data: { id: 'LDLR', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P01130" }},
+{data: { id: 'LTBP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14766" }},
+{data: { id: 'ZFP41', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q8N8Y5" }},
+{data: { id: 'LRP1B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NZR2" }},
+{data: { id: 'FBN1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P35555" }},
+{data: { id: 'FBLN5', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9UBX5" }},
+{data: { id: 'GGNBP2', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9H3C7" }},
+{data: { id: 'ZNF296', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WUU4" }},
+{data: { id: 'BEND7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N7W2" }},
+{data: { id: 'LRP4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75096" }},
+{data: { id: 'AGRN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00468" }}], 
+ edges: [{ data: { source: 'MBD3L1', target: 'BEND7', directed: 'false', weight: 0.809003} },
+{ data: { source: 'MBD3L1', target: 'ZNF296', directed: 'false', weight: 0.779224} },
+{ data: { source: 'ZFP41', target: 'FBN1', directed: 'false', weight: 0.927283} },
+{ data: { source: 'ZFP41', target: 'LDLR', directed: 'false', weight: 0.848017} },
+{ data: { source: 'ZFP41', target: 'GGNBP2', directed: 'false', weight: 0.8305790000000001} },
+{ data: { source: 'ZFP41', target: 'FBLN5', directed: 'false', weight: 0.809764} },
+{ data: { source: 'ZFP41', target: 'LRP1B', directed: 'false', weight: 0.80057} },
+{ data: { source: 'ZFP41', target: 'LTBP1', directed: 'false', weight: 0.796165} },
+{ data: { source: 'ZFP41', target: 'LRP4', directed: 'false', weight: 0.775986} },
+{ data: { source: 'ZFP41', target: 'AGRN', directed: 'false', weight: 0.519942} },
+{ data: { source: 'LDLR', target: 'FBN1', directed: 'false', weight: 0.133451} },
+{ data: { source: 'LDLR', target: 'LTBP1', directed: 'false', weight: 0.1922} },
+{ data: { source: 'LDLR', target: 'AGRN', directed: 'false', weight: 0.133451} },
+{ data: { source: 'LDLR', target: 'FBLN5', directed: 'false', weight: 0.133451} },
+{ data: { source: 'LDLR', target: 'GGNBP2', directed: 'false', weight: 0.117318} },
+{ data: { source: 'LDLR', target: 'LRP4', directed: 'false', weight: 0.0986491} },
+{ data: { source: 'LDLR', target: 'LRP1B', directed: 'false', weight: 0.0901617} },
+{ data: { source: 'LTBP1', target: 'FBN1', directed: 'false', weight: 0.133451} },
+{ data: { source: 'LTBP1', target: 'GGNBP2', directed: 'false', weight: 0.117318} },
+{ data: { source: 'LTBP1', target: 'FBLN5', directed: 'false', weight: 0.133451} },
+{ data: { source: 'LTBP1', target: 'LRP1B', directed: 'false', weight: 0.0901617} },
+{ data: { source: 'LTBP1', target: 'AGRN', directed: 'false', weight: 0.133451} },
+{ data: { source: 'LTBP1', target: 'LRP4', directed: 'false', weight: 0.0986491} },
+{ data: { source: 'LRP1B', target: 'FBN1', directed: 'false', weight: 0.11730499999999999} },
+{ data: { source: 'LRP1B', target: 'GGNBP2', directed: 'false', weight: 0.102922} },
+{ data: { source: 'LRP1B', target: 'FBLN5', directed: 'false', weight: 0.11730499999999999} },
+{ data: { source: 'LRP1B', target: 'LRP4', directed: 'false', weight: 0.086378} },
+{ data: { source: 'FBN1', target: 'AGRN', directed: 'false', weight: 0.171414} },
+{ data: { source: 'FBN1', target: 'FBLN5', directed: 'false', weight: 0.171414} },
+{ data: { source: 'FBN1', target: 'GGNBP2', directed: 'false', weight: 0.151455} },
+{ data: { source: 'FBN1', target: 'LRP4', directed: 'false', weight: 0.128057} },
+{ data: { source: 'FBLN5', target: 'GGNBP2', directed: 'false', weight: 0.151455} },
+{ data: { source: 'FBLN5', target: 'AGRN', directed: 'false', weight: 0.171414} },
+{ data: { source: 'FBLN5', target: 'LRP4', directed: 'false', weight: 0.128057} },
+{ data: { source: 'GGNBP2', target: 'AGRN', directed: 'false', weight: 0.151455} },
+{ data: { source: 'GGNBP2', target: 'LRP4', directed: 'false', weight: 0.112499} },
+{ data: { source: 'ZNF296', target: 'BEND7', directed: 'false', weight: 0.140692} },
+{ data: { source: 'BEND7', target: 'LRP4', directed: 'false', weight: 0.435675} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 30,
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}                                
@@ -53,7 +99,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
 								'line-color': 'blue',
 								'opacity': 0.5
 							}
@@ -62,7 +108,10 @@ style: [
 
 });
 cy.layout({
-    name: 'circle'
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -79,6 +128,11 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.38750
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        2 interacting protein(s): <br>FBN1 FBLN5
     </section>
     </body>
     </html>

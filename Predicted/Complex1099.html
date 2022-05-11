@@ -30,13 +30,14 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'ARSK', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q6UWY0" }},
-{data: { id: 'MBTPS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14703" }},
-{data: { id: 'ADAM9', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q13443" }},
-{data: { id: 'GALNT13', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IUC8" }}], 
- edges: [{ data: { source: 'ARSK', target: 'MBTPS1', directed: 'false', weight: 0.560215} },
-{ data: { source: 'MBTPS1', target: 'GALNT13', directed: 'false', weight: 0.61717} },
-{ data: { source: 'MBTPS1', target: 'ADAM9', directed: 'false', weight: 0.237195} }]},
+elements:{nodes: [{data: { id: 'USP15', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y4E8" }},
+{data: { id: 'MBD2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UBB5" }},
+{data: { id: 'GATAD2A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86YP4" }},
+{data: { id: 'MTA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13330" }}], 
+ edges: [{ data: { source: 'MBD2', target: 'MTA1', directed: 'false', weight: 0.9995129999999999} },
+{ data: { source: 'MBD2', target: 'GATAD2A', directed: 'false', weight: 0.999499} },
+{ data: { source: 'GATAD2A', target: 'MTA1', directed: 'false', weight: 0.56242} },
+{ data: { source: 'MTA1', target: 'USP15', directed: 'false', weight: 0.5} }]},
 
 style: [
     {
@@ -85,11 +86,6 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.30000
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>ADAM9
     </section>
     </body>
     </html>

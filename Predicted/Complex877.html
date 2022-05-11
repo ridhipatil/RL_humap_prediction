@@ -30,19 +30,16 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'GPT2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TD30" }},
-{data: { id: 'PGM5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15124" }},
-{data: { id: 'GPHA2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96T91" }},
-{data: { id: 'DBI', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P07108" }},
-{data: { id: 'OXCT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P55809" }},
-{data: { id: 'HIBCH', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6NVY1" }}], 
- edges: [{ data: { source: 'GPHA2', target: 'GPT2', directed: 'false', weight: 0.93809} },
-{ data: { source: 'GPT2', target: 'HIBCH', directed: 'false', weight: 0.0824613} },
-{ data: { source: 'GPT2', target: 'OXCT1', directed: 'false', weight: 0.763948} },
-{ data: { source: 'GPT2', target: 'DBI', directed: 'false', weight: 0.5} },
-{ data: { source: 'PGM5', target: 'OXCT1', directed: 'false', weight: 0.938725} },
-{ data: { source: 'PGM5', target: 'DBI', directed: 'false', weight: 0.87764} },
-{ data: { source: 'DBI', target: 'OXCT1', directed: 'false', weight: 0.544892} }]},
+elements:{nodes: [{data: { id: 'PAFAH1B3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15102" }},
+{data: { id: 'FADD', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13158" }},
+{data: { id: 'IL37', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NZH6" }},
+{data: { id: 'PAFAH1B1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P43034" }},
+{data: { id: 'PAFAH1B2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P68402" }}], 
+ edges: [{ data: { source: 'FADD', target: 'PAFAH1B2', directed: 'false', weight: 0.407102} },
+{ data: { source: 'FADD', target: 'IL37', directed: 'false', weight: 0.831765} },
+{ data: { source: 'PAFAH1B1', target: 'PAFAH1B3', directed: 'false', weight: 0.9770280000000001} },
+{ data: { source: 'PAFAH1B1', target: 'PAFAH1B2', directed: 'false', weight: 0.6186119999999999} },
+{ data: { source: 'PAFAH1B3', target: 'PAFAH1B2', directed: 'false', weight: 0.999592} }]},
 
 style: [
     {

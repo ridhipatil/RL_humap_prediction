@@ -30,15 +30,18 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'ETFB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P38117" }},
-{data: { id: 'BPNT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95861" }},
-{data: { id: 'CTSA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P10619" }},
-{data: { id: 'CTSD', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P07339" }},
-{data: { id: 'ETFA', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P13804" }}], 
- edges: [{ data: { source: 'ETFB', target: 'ETFA', directed: 'false', weight: 0.9852040000000001} },
-{ data: { source: 'CTSD', target: 'ETFA', directed: 'false', weight: 0.933117} },
-{ data: { source: 'CTSD', target: 'CTSA', directed: 'false', weight: 0.9080360000000001} },
-{ data: { source: 'BPNT1', target: 'ETFA', directed: 'false', weight: 0.84272} }]},
+elements:{nodes: [{data: { id: 'PLEC', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15149" }},
+{data: { id: 'RAI14', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9P0K7" }},
+{data: { id: 'TMOD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P28289" }},
+{data: { id: 'TRIOBP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H2D6" }},
+{data: { id: 'CFL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P23528" }},
+{data: { id: 'CAP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q01518" }}], 
+ edges: [{ data: { source: 'TMOD1', target: 'RAI14', directed: 'false', weight: 0.45638999999999996} },
+{ data: { source: 'TRIOBP', target: 'RAI14', directed: 'false', weight: 0.8704069999999999} },
+{ data: { source: 'CFL1', target: 'CAP1', directed: 'false', weight: 0.975943} },
+{ data: { source: 'CFL1', target: 'RAI14', directed: 'false', weight: 0.541837} },
+{ data: { source: 'CFL1', target: 'PLEC', directed: 'false', weight: 0.287991} },
+{ data: { source: 'RAI14', target: 'PLEC', directed: 'false', weight: 0.29843400000000003} }]},
 
 style: [
     {
@@ -87,11 +90,6 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.35000
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>ETFA
     </section>
     </body>
     </html>

@@ -30,18 +30,15 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'VMA21', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q3ZAQ7" }},
-{data: { id: 'FLOT2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14254" }},
-{data: { id: 'ATP6V0D1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P61421" }},
-{data: { id: 'ATP6AP1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q15904" }},
-{data: { id: 'ATP6V0A1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q93050" }},
-{data: { id: 'FLOT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75955" }}], 
- edges: [{ data: { source: 'FLOT2', target: 'FLOT1', directed: 'false', weight: 0.940961} },
-{ data: { source: 'ATP6V0D1', target: 'ATP6V0A1', directed: 'false', weight: 0.999999} },
-{ data: { source: 'ATP6V0D1', target: 'FLOT1', directed: 'false', weight: 0.0653985} },
-{ data: { source: 'FLOT1', target: 'ATP6V0A1', directed: 'false', weight: 0.887267} },
-{ data: { source: 'VMA21', target: 'ATP6AP1', directed: 'false', weight: 0.0924841} },
-{ data: { source: 'ATP6AP1', target: 'ATP6V0A1', directed: 'false', weight: 0.268637} }]},
+elements:{nodes: [{data: { id: 'NRXN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P58400" }},
+{data: { id: 'PGM5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15124" }},
+{data: { id: 'GLOD4', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9HC38" }},
+{data: { id: 'SOD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P00441" }},
+{data: { id: 'C4BPA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P04003" }}], 
+ edges: [{ data: { source: 'GLOD4', target: 'SOD1', directed: 'false', weight: 0.9162100000000001} },
+{ data: { source: 'GLOD4', target: 'NRXN1', directed: 'false', weight: 0.416688} },
+{ data: { source: 'SOD1', target: 'PGM5', directed: 'false', weight: 0.949585} },
+{ data: { source: 'SOD1', target: 'C4BPA', directed: 'false', weight: 0.32705700000000004} }]},
 
 style: [
     {
@@ -90,11 +87,6 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.35000
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>ATP6AP1
     </section>
     </body>
     </html>

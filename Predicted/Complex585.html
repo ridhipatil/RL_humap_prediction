@@ -30,14 +30,25 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'OS9', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q13438" }},
-{data: { id: 'FRMPD2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q68DX3" }},
-{data: { id: 'SEL1L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UBV2" }},
-{data: { id: 'ERLEC1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q96DZ1" }}], 
- edges: [{ data: { source: 'OS9', target: 'SEL1L', directed: 'false', weight: 0.9999790000000001} },
-{ data: { source: 'OS9', target: 'ERLEC1', directed: 'false', weight: 0.826836} },
-{ data: { source: 'FRMPD2', target: 'ERLEC1', directed: 'false', weight: 0.345684} },
-{ data: { source: 'SEL1L', target: 'ERLEC1', directed: 'false', weight: 0.9998030000000001} }]},
+elements:{nodes: [{data: { id: 'FAM174A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TBP5" }},
+{data: { id: 'MUL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q969V5" }},
+{data: { id: 'RP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75695" }},
+{data: { id: 'OSTF1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92882" }},
+{data: { id: 'SLC44A2', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q8IWA5" }},
+{data: { id: 'MARC2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q969Z3" }},
+{data: { id: 'RDH12', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96NR8" }}], 
+ edges: [{ data: { source: 'FAM174A', target: 'MUL1', directed: 'false', weight: 0.133451} },
+{ data: { source: 'FAM174A', target: 'MARC2', directed: 'false', weight: 0.151455} },
+{ data: { source: 'FAM174A', target: 'RDH12', directed: 'false', weight: 0.140692} },
+{ data: { source: 'MUL1', target: 'MARC2', directed: 'false', weight: 0.117318} },
+{ data: { source: 'MUL1', target: 'RDH12', directed: 'false', weight: 0.108699} },
+{ data: { source: 'OSTF1', target: 'RP2', directed: 'false', weight: 0.983613} },
+{ data: { source: 'OSTF1', target: 'SLC44A2', directed: 'false', weight: 0.151455} },
+{ data: { source: 'OSTF1', target: 'MARC2', directed: 'false', weight: 0.133456} },
+{ data: { source: 'RP2', target: 'SLC44A2', directed: 'false', weight: 0.9531200000000001} },
+{ data: { source: 'RP2', target: 'MARC2', directed: 'false', weight: 0.36932800000000005} },
+{ data: { source: 'SLC44A2', target: 'MARC2', directed: 'false', weight: 0.151455} },
+{ data: { source: 'MARC2', target: 'RDH12', directed: 'false', weight: 0.123797} }]},
 
 style: [
     {
@@ -90,7 +101,7 @@ cy.on('tap', 'node', function(){
         <br>
         Connection to SARS-COV2: 
         <br>
-        2 interacting protein(s): <br>OS9 ERLEC1
+        1 interacting protein(s): <br>SLC44A2
     </section>
     </body>
     </html>

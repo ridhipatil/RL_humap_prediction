@@ -30,34 +30,48 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'SLC12A7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y666" }},
-{data: { id: 'SLC12A9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BXP2" }},
-{data: { id: 'SLC4A7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y6M7" }},
-{data: { id: 'SLC12A4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UP95" }},
-{data: { id: 'SLC12A2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P55011" }},
-{data: { id: 'SLC12A6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UHW9" }},
-{data: { id: 'ATP11C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NB49" }}], 
- edges: [{ data: { source: 'SLC12A7', target: 'SLC12A6', directed: 'false', weight: 0.5} },
-{ data: { source: 'SLC12A7', target: 'SLC12A4', directed: 'false', weight: 0.643612} },
-{ data: { source: 'SLC12A7', target: 'SLC12A2', directed: 'false', weight: 0.510842} },
-{ data: { source: 'SLC12A7', target: 'SLC4A7', directed: 'false', weight: 0.28783800000000004} },
-{ data: { source: 'SLC12A9', target: 'SLC12A2', directed: 'false', weight: 0.365568} },
-{ data: { source: 'SLC12A9', target: 'ATP11C', directed: 'false', weight: 0.494176} },
-{ data: { source: 'SLC4A7', target: 'SLC12A6', directed: 'false', weight: 0.579203} },
-{ data: { source: 'SLC4A7', target: 'SLC12A4', directed: 'false', weight: 0.417108} },
-{ data: { source: 'SLC4A7', target: 'SLC12A2', directed: 'false', weight: 0.279082} },
-{ data: { source: 'SLC12A4', target: 'SLC12A6', directed: 'false', weight: 0.7282689999999999} },
-{ data: { source: 'SLC12A4', target: 'SLC12A2', directed: 'false', weight: 0.6836840000000001} },
-{ data: { source: 'SLC12A2', target: 'SLC12A6', directed: 'false', weight: 0.40725100000000003} },
-{ data: { source: 'SLC12A2', target: 'ATP11C', directed: 'false', weight: 0.17381300000000002} }]},
+elements:{nodes: [{data: { id: 'PBX2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P40425" }},
+{data: { id: 'MEIS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00470" }},
+{data: { id: 'MAB21L1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13394" }},
+{data: { id: 'PBX3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P40426" }},
+{data: { id: 'MEIS2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O14770" }},
+{data: { id: 'MEIS3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99687" }},
+{data: { id: 'PBX1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P40424" }},
+{data: { id: 'PIGL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y2B2" }}], 
+ edges: [{ data: { source: 'PBX2', target: 'MEIS2', directed: 'false', weight: 0.930668} },
+{ data: { source: 'PBX2', target: 'MEIS3', directed: 'false', weight: 0.11473699999999999} },
+{ data: { source: 'PBX2', target: 'MAB21L1', directed: 'false', weight: 0.385114} },
+{ data: { source: 'PBX2', target: 'PIGL', directed: 'false', weight: 0.11473699999999999} },
+{ data: { source: 'PBX2', target: 'PBX1', directed: 'false', weight: 0.9583370000000001} },
+{ data: { source: 'PBX2', target: 'PBX3', directed: 'false', weight: 0.6435810000000001} },
+{ data: { source: 'PBX2', target: 'MEIS1', directed: 'false', weight: 0.46998900000000005} },
+{ data: { source: 'PIGL', target: 'MEIS2', directed: 'false', weight: 0.9690270000000001} },
+{ data: { source: 'PIGL', target: 'MEIS3', directed: 'false', weight: 0.171414} },
+{ data: { source: 'PIGL', target: 'MAB21L1', directed: 'false', weight: 0.140692} },
+{ data: { source: 'PIGL', target: 'MEIS1', directed: 'false', weight: 0.133451} },
+{ data: { source: 'PIGL', target: 'PBX3', directed: 'false', weight: 0.128057} },
+{ data: { source: 'PIGL', target: 'PBX1', directed: 'false', weight: 0.11047699999999999} },
+{ data: { source: 'MAB21L1', target: 'MEIS2', directed: 'false', weight: 0.970283} },
+{ data: { source: 'MAB21L1', target: 'MEIS3', directed: 'false', weight: 0.140692} },
+{ data: { source: 'MAB21L1', target: 'MEIS1', directed: 'false', weight: 0.817917} },
+{ data: { source: 'MAB21L1', target: 'PBX3', directed: 'false', weight: 0.5} },
+{ data: { source: 'MAB21L1', target: 'PBX1', directed: 'false', weight: 0.275252} },
+{ data: { source: 'PBX3', target: 'MEIS2', directed: 'false', weight: 0.9369569999999999} },
+{ data: { source: 'PBX3', target: 'MEIS3', directed: 'false', weight: 0.128057} },
+{ data: { source: 'PBX3', target: 'PBX1', directed: 'false', weight: 0.579203} },
+{ data: { source: 'PBX3', target: 'MEIS1', directed: 'false', weight: 0.6375390000000001} },
+{ data: { source: 'MEIS2', target: 'MEIS3', directed: 'false', weight: 0.981441} },
+{ data: { source: 'MEIS2', target: 'MEIS1', directed: 'false', weight: 0.838651} },
+{ data: { source: 'MEIS2', target: 'PBX1', directed: 'false', weight: 0.831751} },
+{ data: { source: 'MEIS3', target: 'MEIS1', directed: 'false', weight: 0.133451} },
+{ data: { source: 'MEIS3', target: 'PBX1', directed: 'false', weight: 0.11047699999999999} },
+{ data: { source: 'PBX1', target: 'MEIS1', directed: 'false', weight: 0.41868} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 10,
-		'width':'10',
-		'height': '10',	
+		'font-size': 30,
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}                                
@@ -69,7 +83,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
 								'line-color': 'blue',
 								'opacity': 0.5
 							}
@@ -78,10 +92,7 @@ style: [
 
 });
 cy.layout({
-    'name': 'fcose',
-		'animate':false,
-	'nodeDimensionsIncludeLabels':true,
-	'nodeSeparation': 1000
+    name: 'circle'
 }).run();
 
 cy.on('tap', 'node', function(){

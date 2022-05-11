@@ -30,16 +30,11 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'SKA3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IX90" }},
-{data: { id: 'SKA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96BD8" }},
-{data: { id: 'SNAP29', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95721" }},
-{data: { id: 'SKA2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WVK7" }},
-{data: { id: 'SEC22B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75396" }}], 
- edges: [{ data: { source: 'SKA3', target: 'SKA1', directed: 'false', weight: 0.999373} },
-{ data: { source: 'SKA3', target: 'SKA2', directed: 'false', weight: 0.99121} },
-{ data: { source: 'SNAP29', target: 'SKA1', directed: 'false', weight: 0.992822} },
-{ data: { source: 'SNAP29', target: 'SEC22B', directed: 'false', weight: 0.0376143} },
-{ data: { source: 'SKA2', target: 'SKA1', directed: 'false', weight: 0.9944049999999999} }]},
+elements:{nodes: [{data: { id: 'CYB5R3', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P00387" }},
+{data: { id: 'TROAP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q12815" }},
+{data: { id: 'CPVL', score: 5.0, type: '', href: "https://www.uniprot.org/uniprot/Q9H3G5" }}], 
+ edges: [{ data: { source: 'CYB5R3', target: 'CPVL', directed: 'false', weight: 0.355137} },
+{ data: { source: 'TROAP', target: 'CPVL', directed: 'false', weight: 0.309131} }]},
 
 style: [
     {
@@ -88,6 +83,11 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.37500
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>CYB5R3
     </section>
     </body>
     </html>

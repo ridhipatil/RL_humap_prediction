@@ -30,16 +30,19 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'WDR36', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NI36" }},
-{data: { id: 'TENT2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6PIY7" }},
-{data: { id: 'BCCIP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9P287" }},
-{data: { id: 'PWP2', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q15269" }},
-{data: { id: 'NKRF', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15226" }}], 
- edges: [{ data: { source: 'TENT2', target: 'BCCIP', directed: 'false', weight: 0.982785} },
-{ data: { source: 'PWP2', target: 'WDR36', directed: 'false', weight: 0.999934} },
-{ data: { source: 'PWP2', target: 'BCCIP', directed: 'false', weight: 0.32501399999999997} },
-{ data: { source: 'WDR36', target: 'BCCIP', directed: 'false', weight: 0.9457270000000001} },
-{ data: { source: 'WDR36', target: 'NKRF', directed: 'false', weight: 0.129685} }]},
+elements:{nodes: [{data: { id: 'RPL10A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62906" }},
+{data: { id: 'RPS26P11', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q5JNZ5" }},
+{data: { id: 'HIST1H1A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q02539" }},
+{data: { id: 'SLC25A6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P12236" }},
+{data: { id: 'SLC25A20', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43772" }},
+{data: { id: 'NSUN2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q08J23" }}], 
+ edges: [{ data: { source: 'RPL10A', target: 'SLC25A6', directed: 'false', weight: 0.599507} },
+{ data: { source: 'RPL10A', target: 'HIST1H1A', directed: 'false', weight: 0.14313199999999998} },
+{ data: { source: 'RPL10A', target: 'NSUN2', directed: 'false', weight: 0.11783099999999999} },
+{ data: { source: 'RPS26P11', target: 'HIST1H1A', directed: 'false', weight: 0.749078} },
+{ data: { source: 'SLC25A6', target: 'NSUN2', directed: 'false', weight: 0.0477689} },
+{ data: { source: 'SLC25A6', target: 'SLC25A20', directed: 'false', weight: 0.43174300000000004} },
+{ data: { source: 'HIST1H1A', target: 'NSUN2', directed: 'false', weight: 0.0480747} }]},
 
 style: [
     {

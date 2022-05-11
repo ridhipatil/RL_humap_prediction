@@ -30,11 +30,23 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'EP300', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q09472" }},
-{data: { id: 'CITED2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99967" }},
-{data: { id: 'C3orf62', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q6ZUJ4" }}], 
- edges: [{ data: { source: 'EP300', target: 'CITED2', directed: 'false', weight: 0.908162} },
-{ data: { source: 'EP300', target: 'C3orf62', directed: 'false', weight: 0.7921229999999999} }]},
+elements:{nodes: [{data: { id: 'REPIN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BWE0" }},
+{data: { id: 'ZFP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6P2D0" }},
+{data: { id: 'SET', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q01105" }},
+{data: { id: 'ZNF7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P17097" }},
+{data: { id: 'KIF19', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q2TAC6" }},
+{data: { id: 'ZNF845', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q96IR2" }},
+{data: { id: 'ZNF331', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9NQX6" }}], 
+ edges: [{ data: { source: 'REPIN1', target: 'ZNF7', directed: 'false', weight: 0.0974347} },
+{ data: { source: 'REPIN1', target: 'ZFP1', directed: 'false', weight: 0.11228099999999999} },
+{ data: { source: 'REPIN1', target: 'SET', directed: 'false', weight: 0.841199} },
+{ data: { source: 'REPIN1', target: 'ZNF331', directed: 'false', weight: 0.11228099999999999} },
+{ data: { source: 'REPIN1', target: 'ZNF845', directed: 'false', weight: 0.0974347} },
+{ data: { source: 'ZFP1', target: 'ZNF7', directed: 'false', weight: 0.144297} },
+{ data: { source: 'ZFP1', target: 'ZNF331', directed: 'false', weight: 0.165074} },
+{ data: { source: 'SET', target: 'ZNF845', directed: 'false', weight: 0.633113} },
+{ data: { source: 'ZNF7', target: 'KIF19', directed: 'false', weight: 0.42913199999999996} },
+{ data: { source: 'ZNF7', target: 'ZNF331', directed: 'false', weight: 0.144297} }]},
 
 style: [
     {

@@ -30,46 +30,18 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'VPS37B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H9H4" }},
-{data: { id: 'UBAP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NZ09" }},
-{data: { id: 'VPS28', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UK41" }},
-{data: { id: 'MVB12A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96EY5" }},
-{data: { id: 'VPS37C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/A5D8V6" }},
-{data: { id: 'VTA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NP79" }},
-{data: { id: 'VPS37A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NEZ2" }},
-{data: { id: 'TSG101', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99816" }},
-{data: { id: 'CHMP5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NZZ3" }}], 
- edges: [{ data: { source: 'VPS37B', target: 'MVB12A', directed: 'false', weight: 0.997244} },
-{ data: { source: 'VPS37B', target: 'TSG101', directed: 'false', weight: 0.9561709999999999} },
-{ data: { source: 'VPS37B', target: 'VPS28', directed: 'false', weight: 0.9994770000000001} },
-{ data: { source: 'VPS37B', target: 'VPS37A', directed: 'false', weight: 0.5523239999999999} },
-{ data: { source: 'VPS37B', target: 'UBAP1', directed: 'false', weight: 0.590437} },
-{ data: { source: 'VPS37B', target: 'VPS37C', directed: 'false', weight: 0.229492} },
-{ data: { source: 'UBAP1', target: 'MVB12A', directed: 'false', weight: 0.321033} },
-{ data: { source: 'UBAP1', target: 'TSG101', directed: 'false', weight: 0.998718} },
-{ data: { source: 'UBAP1', target: 'VPS28', directed: 'false', weight: 0.9968110000000001} },
-{ data: { source: 'UBAP1', target: 'VPS37A', directed: 'false', weight: 0.5523239999999999} },
-{ data: { source: 'UBAP1', target: 'VPS37C', directed: 'false', weight: 0.229492} },
-{ data: { source: 'VPS28', target: 'MVB12A', directed: 'false', weight: 0.997492} },
-{ data: { source: 'VPS28', target: 'TSG101', directed: 'false', weight: 0.988642} },
-{ data: { source: 'VPS28', target: 'VPS37A', directed: 'false', weight: 0.999566} },
-{ data: { source: 'VPS28', target: 'VPS37C', directed: 'false', weight: 0.9819040000000001} },
-{ data: { source: 'MVB12A', target: 'TSG101', directed: 'false', weight: 0.9999979999999999} },
-{ data: { source: 'MVB12A', target: 'VPS37C', directed: 'false', weight: 0.572934} },
-{ data: { source: 'MVB12A', target: 'VPS37A', directed: 'false', weight: 0.288208} },
-{ data: { source: 'VPS37C', target: 'TSG101', directed: 'false', weight: 0.9220440000000001} },
-{ data: { source: 'VPS37C', target: 'VPS37A', directed: 'false', weight: 0.229492} },
-{ data: { source: 'VTA1', target: 'CHMP5', directed: 'false', weight: 0.102352} },
-{ data: { source: 'VPS37A', target: 'TSG101', directed: 'false', weight: 0.9888680000000001} },
-{ data: { source: 'TSG101', target: 'CHMP5', directed: 'false', weight: 0.911365} }]},
+elements:{nodes: [{data: { id: 'PXDC1', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q5TGL8" }},
+{data: { id: 'RABGAP1L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5R372" }},
+{data: { id: 'RABGAP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y3P9" }}], 
+ edges: [{ data: { source: 'RABGAP1', target: 'RABGAP1L', directed: 'false', weight: 0.5828770000000001} },
+{ data: { source: 'RABGAP1', target: 'PXDC1', directed: 'false', weight: 0.9294020000000001} },
+{ data: { source: 'RABGAP1L', target: 'PXDC1', directed: 'false', weight: 0.9341809999999999} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 10,
-		'width':'10',
-		'height': '10',	
+		'font-size': 30,
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}                                
@@ -81,7 +53,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
 								'line-color': 'blue',
 								'opacity': 0.5
 							}
@@ -90,10 +62,7 @@ style: [
 
 });
 cy.layout({
-    'name': 'fcose',
-		'animate':false,
-	'nodeDimensionsIncludeLabels':true,
-	'nodeSeparation': 1000
+    name: 'circle'
 }).run();
 
 cy.on('tap', 'node', function(){

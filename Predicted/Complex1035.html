@@ -30,15 +30,15 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'ATP1B4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UN42" }},
-{data: { id: 'P2RY8', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q86VZ1" }},
-{data: { id: 'ATP1A4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13733" }},
-{data: { id: 'ATP1A2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P50993" }},
-{data: { id: 'TMEM8A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HCN3" }}], 
- edges: [{ data: { source: 'ATP1B4', target: 'ATP1A4', directed: 'false', weight: 0.791518} },
-{ data: { source: 'ATP1B4', target: 'TMEM8A', directed: 'false', weight: 0.895466} },
-{ data: { source: 'ATP1A4', target: 'P2RY8', directed: 'false', weight: 0.916675} },
-{ data: { source: 'P2RY8', target: 'ATP1A2', directed: 'false', weight: 0.9563309999999999} }]},
+elements:{nodes: [{data: { id: 'ARHGAP44', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q17R89" }},
+{data: { id: 'RTCB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y3I0" }},
+{data: { id: 'SRP72', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/O76094" }},
+{data: { id: 'RTRAF', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y224" }},
+{data: { id: 'REXO4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9GZR2" }}], 
+ edges: [{ data: { source: 'RTCB', target: 'REXO4', directed: 'false', weight: 0.11228099999999999} },
+{ data: { source: 'RTCB', target: 'RTRAF', directed: 'false', weight: 0.964147} },
+{ data: { source: 'RTCB', target: 'ARHGAP44', directed: 'false', weight: 0.33561799999999997} },
+{ data: { source: 'SRP72', target: 'REXO4', directed: 'false', weight: 0.564619} }]},
 
 style: [
     {
@@ -87,6 +87,11 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.35000
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>SRP72
     </section>
     </body>
     </html>

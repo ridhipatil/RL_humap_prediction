@@ -30,16 +30,20 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'SAR1A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NR31" }},
-{data: { id: 'ACOT7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00154" }},
-{data: { id: 'FSCN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16658" }},
-{data: { id: 'NECAP2', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9NVZ3" }},
-{data: { id: 'NECAP1', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q8NC96" }}], 
- edges: [{ data: { source: 'ACOT7', target: 'NECAP2', directed: 'false', weight: 0.31705700000000003} },
-{ data: { source: 'FSCN1', target: 'NECAP2', directed: 'false', weight: 0.777504} },
-{ data: { source: 'FSCN1', target: 'NECAP1', directed: 'false', weight: 0.038931099999999996} },
-{ data: { source: 'SAR1A', target: 'NECAP1', directed: 'false', weight: 0.6697069999999999} },
-{ data: { source: 'NECAP2', target: 'NECAP1', directed: 'false', weight: 0.962525} }]},
+elements:{nodes: [{data: { id: 'SPTBN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q01082" }},
+{data: { id: 'CORO1B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BR76" }},
+{data: { id: 'ACTN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P12814" }},
+{data: { id: 'UNC119B', score: 5.0, type: '', href: "https://www.uniprot.org/uniprot/A6NIH7" }},
+{data: { id: 'CFL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P23528" }},
+{data: { id: 'PDIA4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P13667" }}], 
+ edges: [{ data: { source: 'SPTBN1', target: 'CORO1B', directed: 'false', weight: 0.905069} },
+{ data: { source: 'SPTBN1', target: 'CFL1', directed: 'false', weight: 0.350134} },
+{ data: { source: 'SPTBN1', target: 'ACTN1', directed: 'false', weight: 0.0628288} },
+{ data: { source: 'CORO1B', target: 'CFL1', directed: 'false', weight: 0.635586} },
+{ data: { source: 'CORO1B', target: 'ACTN1', directed: 'false', weight: 0.303101} },
+{ data: { source: 'CORO1B', target: 'UNC119B', directed: 'false', weight: 0.326388} },
+{ data: { source: 'ACTN1', target: 'CFL1', directed: 'false', weight: 0.035711400000000004} },
+{ data: { source: 'ACTN1', target: 'PDIA4', directed: 'false', weight: 0.96147} }]},
 
 style: [
     {

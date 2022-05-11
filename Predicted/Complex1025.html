@@ -30,18 +30,15 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'PHB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P35232" }},
-{data: { id: 'CDC37', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16543" }},
-{data: { id: 'TXLNA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P40222" }},
-{data: { id: 'SLC25A5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P05141" }},
-{data: { id: 'ZFAND5', score: 4, type: '', href: "https://www.uniprot.org/uniprot/O76080" }},
-{data: { id: 'ACADVL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49748" }}], 
- edges: [{ data: { source: 'PHB', target: 'SLC25A5', directed: 'false', weight: 0.763726} },
-{ data: { source: 'PHB', target: 'ACADVL', directed: 'false', weight: 0.352451} },
-{ data: { source: 'CDC37', target: 'TXLNA', directed: 'false', weight: 0.9759629999999999} },
-{ data: { source: 'TXLNA', target: 'ACADVL', directed: 'false', weight: 0.780431} },
-{ data: { source: 'TXLNA', target: 'ZFAND5', directed: 'false', weight: 0.291525} },
-{ data: { source: 'ACADVL', target: 'SLC25A5', directed: 'false', weight: 0.147626} }]},
+elements:{nodes: [{data: { id: 'CCNI2', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q6ZMN8" }},
+{data: { id: 'MOB3A', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q96BX8" }},
+{data: { id: 'CDK5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q00535" }},
+{data: { id: 'CDK20', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IZL9" }},
+{data: { id: 'CDK5R1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15078" }}], 
+ edges: [{ data: { source: 'CCNI2', target: 'CDK5', directed: 'false', weight: 0.5} },
+{ data: { source: 'MOB3A', target: 'CDK5', directed: 'false', weight: 0.419397} },
+{ data: { source: 'CDK5', target: 'CDK20', directed: 'false', weight: 0.9513469999999999} },
+{ data: { source: 'CDK5', target: 'CDK5R1', directed: 'false', weight: 0.395566} }]},
 
 style: [
     {

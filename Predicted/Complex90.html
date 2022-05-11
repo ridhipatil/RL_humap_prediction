@@ -30,36 +30,27 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'NUP155', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75694" }},
-{data: { id: 'AAAS', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NRG9" }},
-{data: { id: 'NUP85', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BW27" }},
-{data: { id: 'GLE1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q53GS7" }},
-{data: { id: 'SUMO2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P61956" }},
-{data: { id: 'UBE2I', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P63279" }},
-{data: { id: 'TMEM214', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6NUQ4" }}], 
- edges: [{ data: { source: 'NUP155', target: 'NUP85', directed: 'false', weight: 0.881956} },
-{ data: { source: 'NUP155', target: 'AAAS', directed: 'false', weight: 0.776556} },
-{ data: { source: 'NUP155', target: 'TMEM214', directed: 'false', weight: 0.776556} },
-{ data: { source: 'NUP155', target: 'GLE1', directed: 'false', weight: 0.666568} },
-{ data: { source: 'AAAS', target: 'NUP85', directed: 'false', weight: 0.873986} },
-{ data: { source: 'AAAS', target: 'UBE2I', directed: 'false', weight: 0.9518709999999999} },
-{ data: { source: 'AAAS', target: 'TMEM214', directed: 'false', weight: 0.927004} },
-{ data: { source: 'AAAS', target: 'GLE1', directed: 'false', weight: 0.819174} },
-{ data: { source: 'AAAS', target: 'SUMO2', directed: 'false', weight: 0.594016} },
-{ data: { source: 'NUP85', target: 'TMEM214', directed: 'false', weight: 0.8805379999999999} },
-{ data: { source: 'NUP85', target: 'GLE1', directed: 'false', weight: 0.766149} },
-{ data: { source: 'GLE1', target: 'UBE2I', directed: 'false', weight: 0.934591} },
-{ data: { source: 'GLE1', target: 'SUMO2', directed: 'false', weight: 0.42776000000000003} },
-{ data: { source: 'GLE1', target: 'TMEM214', directed: 'false', weight: 0.819174} },
-{ data: { source: 'SUMO2', target: 'UBE2I', directed: 'false', weight: 0.945939} },
-{ data: { source: 'SUMO2', target: 'TMEM214', directed: 'false', weight: 0.594016} },
-{ data: { source: 'UBE2I', target: 'TMEM214', directed: 'false', weight: 0.774383} }]},
+elements:{nodes: [{data: { id: 'PARVG', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HBI0" }},
+{data: { id: 'ILK', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13418" }},
+{data: { id: 'PARVA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NVD7" }},
+{data: { id: 'PARVB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HBI1" }},
+{data: { id: 'LIMS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P48059" }}], 
+ edges: [{ data: { source: 'PARVG', target: 'ILK', directed: 'false', weight: 0.691753} },
+{ data: { source: 'PARVG', target: 'LIMS1', directed: 'false', weight: 0.64842} },
+{ data: { source: 'ILK', target: 'PARVA', directed: 'false', weight: 0.9999959999999999} },
+{ data: { source: 'ILK', target: 'PARVB', directed: 'false', weight: 0.9999870000000001} },
+{ data: { source: 'ILK', target: 'LIMS1', directed: 'false', weight: 0.993452} },
+{ data: { source: 'PARVA', target: 'PARVB', directed: 'false', weight: 0.992238} },
+{ data: { source: 'PARVA', target: 'LIMS1', directed: 'false', weight: 0.8321620000000001} },
+{ data: { source: 'PARVB', target: 'LIMS1', directed: 'false', weight: 0.801466} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 30,
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}                                
@@ -71,7 +62,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
 								'line-color': 'blue',
 								'opacity': 0.5
 							}
@@ -80,7 +71,10 @@ style: [
 
 });
 cy.layout({
-    name: 'circle'
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
 }).run();
 
 cy.on('tap', 'node', function(){

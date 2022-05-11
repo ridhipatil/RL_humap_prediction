@@ -30,22 +30,31 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'CALCOCO1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9P1Z2" }},
-{data: { id: 'ACTB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P60709" }},
-{data: { id: 'AP2S1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P53680" }},
-{data: { id: 'MYO6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UM54" }},
-{data: { id: 'AP2M1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q96CW1" }},
-{data: { id: 'AP2A1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95782" }}], 
- edges: [{ data: { source: 'CALCOCO1', target: 'AP2M1', directed: 'false', weight: 0.808557} },
-{ data: { source: 'CALCOCO1', target: 'AP2A1', directed: 'false', weight: 0.0692242} },
-{ data: { source: 'CALCOCO1', target: 'AP2S1', directed: 'false', weight: 0.0855723} },
-{ data: { source: 'MYO6', target: 'AP2M1', directed: 'false', weight: 0.399855} },
-{ data: { source: 'MYO6', target: 'AP2A1', directed: 'false', weight: 0.22855100000000003} },
-{ data: { source: 'MYO6', target: 'ACTB', directed: 'false', weight: 0.9464600000000001} },
-{ data: { source: 'MYO6', target: 'AP2S1', directed: 'false', weight: 0.0693095} },
-{ data: { source: 'AP2M1', target: 'AP2A1', directed: 'false', weight: 0.9999889999999999} },
-{ data: { source: 'AP2M1', target: 'AP2S1', directed: 'false', weight: 0.9469559999999999} },
-{ data: { source: 'AP2A1', target: 'AP2S1', directed: 'false', weight: 0.953032} }]},
+elements:{nodes: [{data: { id: 'PSMD12', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00232" }},
+{data: { id: 'PSMD2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13200" }},
+{data: { id: 'PSMD3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43242" }},
+{data: { id: 'INO80E', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NBZ0" }},
+{data: { id: 'PSMD10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75832" }},
+{data: { id: 'INO80C', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q6PI98" }},
+{data: { id: 'PSMC6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62333" }},
+{data: { id: 'UCHL5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y5K5" }}], 
+ edges: [{ data: { source: 'PSMD12', target: 'PSMC6', directed: 'false', weight: 1.0} },
+{ data: { source: 'PSMD12', target: 'PSMD10', directed: 'false', weight: 0.973091} },
+{ data: { source: 'PSMD12', target: 'PSMD2', directed: 'false', weight: 0.9997860000000001} },
+{ data: { source: 'PSMD12', target: 'PSMD3', directed: 'false', weight: 0.999008} },
+{ data: { source: 'PSMD12', target: 'UCHL5', directed: 'false', weight: 0.768942} },
+{ data: { source: 'PSMD2', target: 'PSMC6', directed: 'false', weight: 0.9969520000000001} },
+{ data: { source: 'PSMD2', target: 'PSMD10', directed: 'false', weight: 1.0} },
+{ data: { source: 'PSMD2', target: 'PSMD3', directed: 'false', weight: 0.997518} },
+{ data: { source: 'PSMD2', target: 'UCHL5', directed: 'false', weight: 0.779856} },
+{ data: { source: 'PSMD3', target: 'PSMC6', directed: 'false', weight: 0.9999959999999999} },
+{ data: { source: 'PSMD3', target: 'PSMD10', directed: 'false', weight: 0.9999979999999999} },
+{ data: { source: 'PSMD3', target: 'UCHL5', directed: 'false', weight: 0.33212800000000003} },
+{ data: { source: 'INO80E', target: 'UCHL5', directed: 'false', weight: 0.963216} },
+{ data: { source: 'INO80E', target: 'INO80C', directed: 'false', weight: 0.666782} },
+{ data: { source: 'PSMD10', target: 'PSMC6', directed: 'false', weight: 1.0} },
+{ data: { source: 'PSMD10', target: 'UCHL5', directed: 'false', weight: 0.611633} },
+{ data: { source: 'PSMC6', target: 'UCHL5', directed: 'false', weight: 0.25524600000000003} }]},
 
 style: [
     {
@@ -94,11 +103,6 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.38750
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>AP2M1
     </section>
     </body>
     </html>

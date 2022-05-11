@@ -30,16 +30,19 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'ELAC2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BQ52" }},
-{data: { id: 'SARS2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NP81" }},
-{data: { id: 'GTPBP6', score: 3, type: '', href: "https://www.uniprot.org/uniprot/O43824" }},
-{data: { id: 'CROCC', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5TZA2" }},
-{data: { id: 'HARS2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49590" }}], 
- edges: [{ data: { source: 'SARS2', target: 'HARS2', directed: 'false', weight: 0.361782} },
-{ data: { source: 'SARS2', target: 'ELAC2', directed: 'false', weight: 0.42663199999999996} },
-{ data: { source: 'SARS2', target: 'GTPBP6', directed: 'false', weight: 0.384596} },
-{ data: { source: 'GTPBP6', target: 'ELAC2', directed: 'false', weight: 0.35504} },
-{ data: { source: 'HARS2', target: 'CROCC', directed: 'false', weight: 0.55698} }]},
+elements:{nodes: [{data: { id: 'PRPF40A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75400" }},
+{data: { id: 'RBM25', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49756" }},
+{data: { id: 'PRPF40B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6NWY9" }},
+{data: { id: 'U2SURP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15042" }},
+{data: { id: 'SRSF9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13242" }},
+{data: { id: 'PPHLN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NEY8" }}], 
+ edges: [{ data: { source: 'PRPF40A', target: 'SRSF9', directed: 'false', weight: 0.77509} },
+{ data: { source: 'PRPF40A', target: 'RBM25', directed: 'false', weight: 0.99998} },
+{ data: { source: 'PRPF40A', target: 'U2SURP', directed: 'false', weight: 0.0844279} },
+{ data: { source: 'U2SURP', target: 'RBM25', directed: 'false', weight: 0.54999} },
+{ data: { source: 'SRSF9', target: 'RBM25', directed: 'false', weight: 0.7484430000000001} },
+{ data: { source: 'SRSF9', target: 'PPHLN1', directed: 'false', weight: 0.08011660000000001} },
+{ data: { source: 'RBM25', target: 'PRPF40B', directed: 'false', weight: 0.71139} }]},
 
 style: [
     {

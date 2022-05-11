@@ -30,13 +30,14 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'PRKACA', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P17252" }},
-{data: { id: 'PKLR', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P30613" }},
-{data: { id: 'PRKAR2A', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P13861" }},
-{data: { id: 'NT5DC1', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q5TFE4" }}], 
- edges: [{ data: { source: 'PRKAR2A', target: 'PRKACA', directed: 'false', weight: 0.9999530000000001} },
-{ data: { source: 'NT5DC1', target: 'PKLR', directed: 'false', weight: 0.970417} },
-{ data: { source: 'PRKACA', target: 'PKLR', directed: 'false', weight: 0.647798} }]},
+elements:{nodes: [{data: { id: 'RANBP3L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86VV4" }},
+{data: { id: 'CCDC93', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q567U6" }},
+{data: { id: 'VPS29', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UBQ0" }},
+{data: { id: 'RANBP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P43487" }}], 
+ edges: [{ data: { source: 'RANBP3L', target: 'RANBP1', directed: 'false', weight: 0.593562} },
+{ data: { source: 'CCDC93', target: 'VPS29', directed: 'false', weight: 0.270362} },
+{ data: { source: 'CCDC93', target: 'RANBP1', directed: 'false', weight: 0.883498} },
+{ data: { source: 'VPS29', target: 'RANBP1', directed: 'false', weight: 0.30775} }]},
 
 style: [
     {
@@ -85,11 +86,6 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.30000
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        2 interacting protein(s): <br>PRKACA PRKAR2A
     </section>
     </body>
     </html>

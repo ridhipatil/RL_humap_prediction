@@ -30,12 +30,21 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'S100P', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P25815" }},
-{data: { id: 'S100B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P04271" }},
-{data: { id: 'S100A4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P26447" }}], 
- edges: [{ data: { source: 'S100P', target: 'S100B', directed: 'false', weight: 0.968191} },
-{ data: { source: 'S100P', target: 'S100A4', directed: 'false', weight: 0.102352} },
-{ data: { source: 'S100B', target: 'S100A4', directed: 'false', weight: 0.643828} }]},
+elements:{nodes: [{data: { id: 'GTF3C3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y5Q9" }},
+{data: { id: 'GTF3C1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q12789" }},
+{data: { id: 'GTF3C5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y5Q8" }},
+{data: { id: 'GTF3C2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WUA4" }},
+{data: { id: 'GTF3C4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UKN8" }}], 
+ edges: [{ data: { source: 'GTF3C3', target: 'GTF3C1', directed: 'false', weight: 0.999901} },
+{ data: { source: 'GTF3C3', target: 'GTF3C5', directed: 'false', weight: 0.9988229999999999} },
+{ data: { source: 'GTF3C3', target: 'GTF3C2', directed: 'false', weight: 0.945421} },
+{ data: { source: 'GTF3C3', target: 'GTF3C4', directed: 'false', weight: 0.676659} },
+{ data: { source: 'GTF3C2', target: 'GTF3C1', directed: 'false', weight: 0.9854930000000001} },
+{ data: { source: 'GTF3C2', target: 'GTF3C5', directed: 'false', weight: 0.9064989999999999} },
+{ data: { source: 'GTF3C2', target: 'GTF3C4', directed: 'false', weight: 0.49054200000000003} },
+{ data: { source: 'GTF3C4', target: 'GTF3C1', directed: 'false', weight: 0.611536} },
+{ data: { source: 'GTF3C4', target: 'GTF3C5', directed: 'false', weight: 0.832943} },
+{ data: { source: 'GTF3C1', target: 'GTF3C5', directed: 'false', weight: 0.591075} }]},
 
 style: [
     {

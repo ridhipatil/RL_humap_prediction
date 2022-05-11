@@ -30,16 +30,20 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'USO1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60763" }},
-{data: { id: 'TNK2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q07912" }},
-{data: { id: 'GORASP1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9BQQ3" }},
-{data: { id: 'OCRL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q01968" }},
-{data: { id: 'GOLGA2', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q08379" }}], 
- edges: [{ data: { source: 'USO1', target: 'GOLGA2', directed: 'false', weight: 0.7641939999999999} },
-{ data: { source: 'USO1', target: 'TNK2', directed: 'false', weight: 0.352677} },
-{ data: { source: 'USO1', target: 'OCRL', directed: 'false', weight: 0.334976} },
-{ data: { source: 'TNK2', target: 'OCRL', directed: 'false', weight: 0.288379} },
-{ data: { source: 'GORASP1', target: 'GOLGA2', directed: 'false', weight: 0.990994} }]},
+elements:{nodes: [{data: { id: 'ARSB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P15848" }},
+{data: { id: 'ARSA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43681" }},
+{data: { id: 'CTSF', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UBX1" }},
+{data: { id: 'MEGF8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q7Z7M0" }},
+{data: { id: 'GALNS', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P34059" }},
+{data: { id: 'MGRN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60291" }}], 
+ edges: [{ data: { source: 'ARSB', target: 'MEGF8', directed: 'false', weight: 0.265049} },
+{ data: { source: 'ARSB', target: 'GALNS', directed: 'false', weight: 0.240954} },
+{ data: { source: 'ARSB', target: 'CTSF', directed: 'false', weight: 0.30286} },
+{ data: { source: 'MEGF8', target: 'MGRN1', directed: 'false', weight: 0.643514} },
+{ data: { source: 'MEGF8', target: 'GALNS', directed: 'false', weight: 0.38145300000000004} },
+{ data: { source: 'MEGF8', target: 'CTSF', directed: 'false', weight: 0.154246} },
+{ data: { source: 'MEGF8', target: 'ARSA', directed: 'false', weight: 0.13944} },
+{ data: { source: 'GALNS', target: 'ARSA', directed: 'false', weight: 0.6984670000000001} }]},
 
 style: [
     {
@@ -88,11 +92,6 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.37500
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        2 interacting protein(s): <br>GORASP1 GOLGA2
     </section>
     </body>
     </html>

@@ -30,23 +30,29 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'NDUFAF1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9Y375" }},
-{data: { id: 'NDUFS2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75306" }},
-{data: { id: 'NDUFA3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95167" }},
-{data: { id: 'ECSIT', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9BQ95" }},
-{data: { id: 'NDUFB10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O96000" }},
-{data: { id: 'NDUFB9', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9Y6M9" }}], 
- edges: [{ data: { source: 'NDUFAF1', target: 'ECSIT', directed: 'false', weight: 0.985202} },
-{ data: { source: 'NDUFS2', target: 'ECSIT', directed: 'false', weight: 0.236511} },
-{ data: { source: 'NDUFS2', target: 'NDUFB10', directed: 'false', weight: 0.23121599999999998} },
-{ data: { source: 'NDUFS2', target: 'NDUFA3', directed: 'false', weight: 0.142005} },
-{ data: { source: 'NDUFS2', target: 'NDUFB9', directed: 'false', weight: 0.059398} },
-{ data: { source: 'NDUFB10', target: 'ECSIT', directed: 'false', weight: 0.23263000000000003} },
-{ data: { source: 'NDUFB10', target: 'NDUFB9', directed: 'false', weight: 0.149338} },
-{ data: { source: 'NDUFB10', target: 'NDUFA3', directed: 'false', weight: 0.19279100000000002} },
-{ data: { source: 'NDUFB9', target: 'ECSIT', directed: 'false', weight: 0.256669} },
-{ data: { source: 'NDUFB9', target: 'NDUFA3', directed: 'false', weight: 0.108921} },
-{ data: { source: 'NDUFA3', target: 'ECSIT', directed: 'false', weight: 0.187644} }]},
+elements:{nodes: [{data: { id: 'ATP6V0D2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N8Y2" }},
+{data: { id: 'AIDA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96BJ3" }},
+{data: { id: 'CSNK1G1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HCP0" }},
+{data: { id: 'TBC1D24', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9ULP9" }},
+{data: { id: 'TMEM185B', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q9H7F4" }},
+{data: { id: 'TMEM185A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NFB2" }},
+{data: { id: 'C1orf21', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q9H246" }}], 
+ edges: [{ data: { source: 'ATP6V0D2', target: 'TMEM185A', directed: 'false', weight: 0.354358} },
+{ data: { source: 'ATP6V0D2', target: 'TMEM185B', directed: 'false', weight: 0.140692} },
+{ data: { source: 'ATP6V0D2', target: 'C1orf21', directed: 'false', weight: 0.140692} },
+{ data: { source: 'ATP6V0D2', target: 'TBC1D24', directed: 'false', weight: 0.123797} },
+{ data: { source: 'AIDA', target: 'TMEM185A', directed: 'false', weight: 0.5682149999999999} },
+{ data: { source: 'AIDA', target: 'TMEM185B', directed: 'false', weight: 0.133451} },
+{ data: { source: 'CSNK1G1', target: 'TMEM185A', directed: 'false', weight: 0.354612} },
+{ data: { source: 'CSNK1G1', target: 'TMEM185B', directed: 'false', weight: 0.140692} },
+{ data: { source: 'CSNK1G1', target: 'C1orf21', directed: 'false', weight: 0.140692} },
+{ data: { source: 'CSNK1G1', target: 'TBC1D24', directed: 'false', weight: 0.123797} },
+{ data: { source: 'TBC1D24', target: 'TMEM185A', directed: 'false', weight: 0.5196029999999999} },
+{ data: { source: 'TBC1D24', target: 'TMEM185B', directed: 'false', weight: 0.151455} },
+{ data: { source: 'TBC1D24', target: 'C1orf21', directed: 'false', weight: 0.151455} },
+{ data: { source: 'TMEM185B', target: 'TMEM185A', directed: 'false', weight: 0.981564} },
+{ data: { source: 'TMEM185B', target: 'C1orf21', directed: 'false', weight: 0.171414} },
+{ data: { source: 'TMEM185A', target: 'C1orf21', directed: 'false', weight: 0.759613} }]},
 
 style: [
     {
@@ -95,11 +101,6 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.39375
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        3 interacting protein(s): <br>NDUFAF1 ECSIT NDUFB9
     </section>
     </body>
     </html>

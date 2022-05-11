@@ -30,11 +30,11 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: '65260', score: 0, type: '' }},
-{data: { id: 'CD109', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6YHK3" }},
-{data: { id: '112483', score: 0, type: '' }}], 
- edges: [{ data: { source: '65260', target: 'CD109', directed: 'false', weight: 0.366698} },
-{ data: { source: 'CD109', target: '112483', directed: 'false', weight: 0.273204} }]},
+elements:{nodes: [{data: { id: 'CLVS2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5SYC1" }},
+{data: { id: 'PITRM1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q5JRX3" }},
+{data: { id: 'DDX41', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UJV9" }}], 
+ edges: [{ data: { source: 'CLVS2', target: 'DDX41', directed: 'false', weight: 0.552906} },
+{ data: { source: 'PITRM1', target: 'DDX41', directed: 'false', weight: 0.523963} }]},
 
 style: [
     {
@@ -83,6 +83,11 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.37500
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>PITRM1
     </section>
     </body>
     </html>

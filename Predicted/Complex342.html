@@ -30,17 +30,21 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'B3GLCT', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6Y288" }},
-{data: { id: 'IDS', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P22304" }},
-{data: { id: 'ARSA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43681" }},
-{data: { id: 'SUMF1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NBK3" }},
-{data: { id: 'FBXO21', score: 3, type: '', href: "https://www.uniprot.org/uniprot/O94952" }}], 
- edges: [{ data: { source: 'B3GLCT', target: 'ARSA', directed: 'false', weight: 0.128473} },
-{ data: { source: 'B3GLCT', target: 'IDS', directed: 'false', weight: 0.0764967} },
-{ data: { source: 'FBXO21', target: 'IDS', directed: 'false', weight: 0.666353} },
-{ data: { source: 'FBXO21', target: 'SUMF1', directed: 'false', weight: 0.07988250000000001} },
-{ data: { source: 'IDS', target: 'SUMF1', directed: 'false', weight: 0.443539} },
-{ data: { source: 'ARSA', target: 'SUMF1', directed: 'false', weight: 0.583444} }]},
+elements:{nodes: [{data: { id: 'PRPF3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43395" }},
+{data: { id: 'TFIP11', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UBB9" }},
+{data: { id: 'USP39', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q53GS9" }},
+{data: { id: 'SNRPA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P09661" }},
+{data: { id: 'SF3B3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15393" }},
+{data: { id: 'PAXBP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y5B6" }}], 
+ edges: [{ data: { source: 'PRPF3', target: 'SF3B3', directed: 'false', weight: 0.975925} },
+{ data: { source: 'PRPF3', target: 'TFIP11', directed: 'false', weight: 0.9195840000000001} },
+{ data: { source: 'PRPF3', target: 'USP39', directed: 'false', weight: 0.410739} },
+{ data: { source: 'USP39', target: 'SNRPA1', directed: 'false', weight: 0.155383} },
+{ data: { source: 'USP39', target: 'SF3B3', directed: 'false', weight: 0.26664899999999997} },
+{ data: { source: 'USP39', target: 'TFIP11', directed: 'false', weight: 0.192166} },
+{ data: { source: 'SNRPA1', target: 'SF3B3', directed: 'false', weight: 0.9999959999999999} },
+{ data: { source: 'SNRPA1', target: 'TFIP11', directed: 'false', weight: 0.115879} },
+{ data: { source: 'TFIP11', target: 'PAXBP1', directed: 'false', weight: 0.996035} }]},
 
 style: [
     {

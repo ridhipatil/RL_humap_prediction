@@ -30,16 +30,16 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'IP6K1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92551" }},
-{data: { id: 'UBE4A', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q14139" }},
-{data: { id: 'VPS13A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96RL7" }},
-{data: { id: 'UBXN4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92575" }},
-{data: { id: 'VPS13C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q709C8" }}], 
- edges: [{ data: { source: 'UBE4A', target: 'IP6K1', directed: 'false', weight: 0.133451} },
-{ data: { source: 'UBE4A', target: 'UBXN4', directed: 'false', weight: 0.9433739999999999} },
-{ data: { source: 'VPS13C', target: 'VPS13A', directed: 'false', weight: 0.752821} },
-{ data: { source: 'IP6K1', target: 'UBXN4', directed: 'false', weight: 0.983368} },
-{ data: { source: 'VPS13A', target: 'UBXN4', directed: 'false', weight: 0.536126} }]},
+elements:{nodes: [{data: { id: 'SASS6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6UVJ0" }},
+{data: { id: 'MLYCD', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95822" }},
+{data: { id: 'CCDC68', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H2F9" }},
+{data: { id: 'NFIB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00712" }},
+{data: { id: 'FYCO1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9BQS8" }}], 
+ edges: [{ data: { source: 'MLYCD', target: 'FYCO1', directed: 'false', weight: 0.633092} },
+{ data: { source: 'MLYCD', target: 'SASS6', directed: 'false', weight: 0.140692} },
+{ data: { source: 'NFIB', target: 'SASS6', directed: 'false', weight: 0.281142} },
+{ data: { source: 'FYCO1', target: 'SASS6', directed: 'false', weight: 0.764461} },
+{ data: { source: 'FYCO1', target: 'CCDC68', directed: 'false', weight: 0.29920399999999997} }]},
 
 style: [
     {
@@ -88,6 +88,11 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.37500
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>FYCO1
     </section>
     </body>
     </html>

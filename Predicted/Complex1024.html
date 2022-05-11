@@ -30,15 +30,15 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'TPI1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P60174" }},
-{data: { id: 'HEXA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P06865" }},
-{data: { id: 'ALDOC', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P09972" }},
-{data: { id: 'NIT2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NQR4" }},
-{data: { id: 'GSTO2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H4Y5" }}], 
- edges: [{ data: { source: 'ALDOC', target: 'GSTO2', directed: 'false', weight: 0.793399} },
-{ data: { source: 'ALDOC', target: 'HEXA', directed: 'false', weight: 0.5} },
-{ data: { source: 'GSTO2', target: 'NIT2', directed: 'false', weight: 0.03209} },
-{ data: { source: 'TPI1', target: 'NIT2', directed: 'false', weight: 0.00771721} }]},
+elements:{nodes: [{data: { id: 'CSNK2B', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P67870" }},
+{data: { id: 'SUPT4H1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P63272" }},
+{data: { id: 'RBM46', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q8TBY0" }},
+{data: { id: 'DOK4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TEW6" }},
+{data: { id: 'GTF2F2', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P13984" }}], 
+ edges: [{ data: { source: 'SUPT4H1', target: 'CSNK2B', directed: 'false', weight: 0.15437} },
+{ data: { source: 'SUPT4H1', target: 'GTF2F2', directed: 'false', weight: 0.97641} },
+{ data: { source: 'SUPT4H1', target: 'DOK4', directed: 'false', weight: 0.547657} },
+{ data: { source: 'RBM46', target: 'GTF2F2', directed: 'false', weight: 0.11354600000000001} }]},
 
 style: [
     {
@@ -87,6 +87,11 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.35000
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        2 interacting protein(s): <br>CSNK2B GTF2F2
     </section>
     </body>
     </html>

@@ -30,22 +30,25 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'GRN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P28799" }},
-{data: { id: 'OTUD5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96G74" }},
-{data: { id: 'ZC3HC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86WB0" }},
-{data: { id: 'RAPGEF6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TEU7" }}], 
- edges: [{ data: { source: 'ZC3HC1', target: 'GRN', directed: 'false', weight: 0.5} },
-{ data: { source: 'ZC3HC1', target: 'OTUD5', directed: 'false', weight: 0.140692} },
-{ data: { source: 'ZC3HC1', target: 'RAPGEF6', directed: 'false', weight: 0.123797} },
-{ data: { source: 'GRN', target: 'OTUD5', directed: 'false', weight: 0.780604} },
-{ data: { source: 'GRN', target: 'RAPGEF6', directed: 'false', weight: 0.6712} },
-{ data: { source: 'RAPGEF6', target: 'OTUD5', directed: 'false', weight: 0.151455} }]},
+elements:{nodes: [{data: { id: 'SPIN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H2V7" }},
+{data: { id: 'TMA7', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q9Y2S6" }},
+{data: { id: 'CGGBP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UFW8" }},
+{data: { id: 'SPINDOC', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9BUA3" }},
+{data: { id: 'SPIN2B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BPZ2" }}], 
+ edges: [{ data: { source: 'SPIN1', target: 'SPINDOC', directed: 'false', weight: 0.954945} },
+{ data: { source: 'SPIN1', target: 'SPIN2B', directed: 'false', weight: 0.8879229999999999} },
+{ data: { source: 'SPIN1', target: 'CGGBP1', directed: 'false', weight: 0.719133} },
+{ data: { source: 'SPINDOC', target: 'SPIN2B', directed: 'false', weight: 0.7089979999999999} },
+{ data: { source: 'SPIN2B', target: 'CGGBP1', directed: 'false', weight: 0.925947} },
+{ data: { source: 'TMA7', target: 'CGGBP1', directed: 'false', weight: 0.431019} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 30,
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}                                
@@ -57,7 +60,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
 								'line-color': 'blue',
 								'opacity': 0.5
 							}
@@ -66,7 +69,10 @@ style: [
 
 });
 cy.layout({
-    name: 'circle'
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
 }).run();
 
 cy.on('tap', 'node', function(){

@@ -30,13 +30,14 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'PCNA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P12004" }},
-{data: { id: 'MEPCE', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q7L2J0" }},
-{data: { id: 'PCLAF', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15004" }},
-{data: { id: 'RFC4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P35249" }}], 
- edges: [{ data: { source: 'PCNA', target: 'RFC4', directed: 'false', weight: 0.038694} },
-{ data: { source: 'PCNA', target: 'PCLAF', directed: 'false', weight: 0.984856} },
-{ data: { source: 'MEPCE', target: 'RFC4', directed: 'false', weight: 0.398094} }]},
+elements:{nodes: [{data: { id: 'XAB2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HCS7" }},
+{data: { id: 'SLU7', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/O95391" }},
+{data: { id: 'LSM8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95777" }},
+{data: { id: 'C1orf52', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q8N6N3" }}], 
+ edges: [{ data: { source: 'XAB2', target: 'SLU7', directed: 'false', weight: 0.228715} },
+{ data: { source: 'XAB2', target: 'C1orf52', directed: 'false', weight: 0.101793} },
+{ data: { source: 'LSM8', target: 'SLU7', directed: 'false', weight: 0.815326} },
+{ data: { source: 'SLU7', target: 'C1orf52', directed: 'false', weight: 0.155754} }]},
 
 style: [
     {
@@ -89,7 +90,7 @@ cy.on('tap', 'node', function(){
         <br>
         Connection to SARS-COV2: 
         <br>
-        1 interacting protein(s): <br>MEPCE
+        1 interacting protein(s): <br>SLU7
     </section>
     </body>
     </html>

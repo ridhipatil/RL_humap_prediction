@@ -30,16 +30,11 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'MVD', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P53602" }},
-{data: { id: 'GSTK1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y2Q3" }},
-{data: { id: 'CYB5B', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/O43169" }},
-{data: { id: 'ACSS2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NR19" }},
-{data: { id: 'CYCS', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P99999" }}], 
- edges: [{ data: { source: 'CYB5B', target: 'CYCS', directed: 'false', weight: 0.387406} },
-{ data: { source: 'CYB5B', target: 'GSTK1', directed: 'false', weight: 0.00816064} },
-{ data: { source: 'ACSS2', target: 'MVD', directed: 'false', weight: 0.972982} },
-{ data: { source: 'CYCS', target: 'MVD', directed: 'false', weight: 0.6830970000000001} },
-{ data: { source: 'CYCS', target: 'GSTK1', directed: 'false', weight: 0.33565100000000003} }]},
+elements:{nodes: [{data: { id: 'KRT6A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P02538" }},
+{data: { id: 'KRT8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P05787" }},
+{data: { id: 'KRT17', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q04695" }}], 
+ edges: [{ data: { source: 'KRT6A', target: 'KRT17', directed: 'false', weight: 0.7925} },
+{ data: { source: 'KRT8', target: 'KRT17', directed: 'false', weight: 0.788067} }]},
 
 style: [
     {
@@ -88,11 +83,6 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.37500
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>CYB5B
     </section>
     </body>
     </html>

@@ -30,21 +30,22 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'RPIA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49247" }},
-{data: { id: 'GMPR', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P36959" }},
-{data: { id: 'ADHFE1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IWW8" }},
-{data: { id: 'KCTD14', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q9BQ13" }},
-{data: { id: 'ACSF3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q4G176" }},
-{data: { id: 'GMPR2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9P2T1" }}], 
- edges: [{ data: { source: 'RPIA', target: 'GMPR2', directed: 'false', weight: 0.701434} },
-{ data: { source: 'RPIA', target: 'GMPR', directed: 'false', weight: 0.629831} },
-{ data: { source: 'RPIA', target: 'ADHFE1', directed: 'false', weight: 0.056223199999999994} },
-{ data: { source: 'ADHFE1', target: 'GMPR2', directed: 'false', weight: 0.599662} },
-{ data: { source: 'ADHFE1', target: 'GMPR', directed: 'false', weight: 0.7787} },
-{ data: { source: 'KCTD14', target: 'ACSF3', directed: 'false', weight: 0.373316} },
-{ data: { source: 'GMPR2', target: 'GMPR', directed: 'false', weight: 0.980734} },
-{ data: { source: 'GMPR2', target: 'ACSF3', directed: 'false', weight: 0.347958} },
-{ data: { source: 'GMPR', target: 'ACSF3', directed: 'false', weight: 0.355956} }]},
+elements:{nodes: [{data: { id: 'TMUB1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BVT8" }},
+{data: { id: 'DNAJC11', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9NVH1" }},
+{data: { id: 'ACBD5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5T8D3" }},
+{data: { id: 'RMDN3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96TC7" }},
+{data: { id: 'MBOAT7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96N66" }},
+{data: { id: 'FAM8A1', score: 4, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9UBU6" }}], 
+ edges: [{ data: { source: 'DNAJC11', target: 'FAM8A1', directed: 'false', weight: 0.247491} },
+{ data: { source: 'DNAJC11', target: 'RMDN3', directed: 'false', weight: 0.389824} },
+{ data: { source: 'DNAJC11', target: 'ACBD5', directed: 'false', weight: 0.12287999999999999} },
+{ data: { source: 'ACBD5', target: 'FAM8A1', directed: 'false', weight: 0.152394} },
+{ data: { source: 'ACBD5', target: 'RMDN3', directed: 'false', weight: 0.46153999999999995} },
+{ data: { source: 'FAM8A1', target: 'RMDN3', directed: 'false', weight: 0.555599} },
+{ data: { source: 'FAM8A1', target: 'TMUB1', directed: 'false', weight: 0.31501} },
+{ data: { source: 'FAM8A1', target: 'MBOAT7', directed: 'false', weight: 0.266948} },
+{ data: { source: 'TMUB1', target: 'RMDN3', directed: 'false', weight: 0.5} },
+{ data: { source: 'TMUB1', target: 'MBOAT7', directed: 'false', weight: 0.44583599999999995} }]},
 
 style: [
     {
@@ -93,6 +94,11 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.38750
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        2 interacting protein(s): <br>DNAJC11 FAM8A1
     </section>
     </body>
     </html>

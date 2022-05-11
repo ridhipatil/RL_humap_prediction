@@ -30,13 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'CFLAR', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15519" }},
-{data: { id: 'SAPCD2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86UD0" }},
-{data: { id: 'PLIN5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q00G26" }},
-{data: { id: 'GPSM1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86YR5" }}], 
- edges: [{ data: { source: 'CFLAR', target: 'PLIN5', directed: 'false', weight: 0.322711} },
-{ data: { source: 'SAPCD2', target: 'GPSM1', directed: 'false', weight: 0.913566} },
-{ data: { source: 'SAPCD2', target: 'PLIN5', directed: 'false', weight: 0.278721} }]},
+elements:{nodes: [{data: { id: 'RETREG3', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q86VR2" }},
+{data: { id: 'PLSCR1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15162" }},
+{data: { id: 'FAM210B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96KR6" }},
+{data: { id: 'SPRY2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43597" }}], 
+ edges: [{ data: { source: 'RETREG3', target: 'PLSCR1', directed: 'false', weight: 0.924651} },
+{ data: { source: 'RETREG3', target: 'FAM210B', directed: 'false', weight: 0.298498} },
+{ data: { source: 'SPRY2', target: 'PLSCR1', directed: 'false', weight: 0.305336} }]},
 
 style: [
     {
@@ -85,6 +85,11 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.30000
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>RETREG3
     </section>
     </body>
     </html>

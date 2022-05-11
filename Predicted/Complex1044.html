@@ -30,18 +30,18 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'GRHPR', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UBQ7" }},
-{data: { id: 'GLOD4', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9HC38" }},
-{data: { id: 'AKR1B1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P15121" }},
-{data: { id: 'PRDX6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P30041" }},
-{data: { id: 'PRDX5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P30044" }},
-{data: { id: 'GLO1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q04760" }}], 
- edges: [{ data: { source: 'GRHPR', target: 'GLO1', directed: 'false', weight: 0.270848} },
-{ data: { source: 'GRHPR', target: 'AKR1B1', directed: 'false', weight: 0.5828180000000001} },
-{ data: { source: 'GRHPR', target: 'PRDX5', directed: 'false', weight: 0.57134} },
-{ data: { source: 'GLOD4', target: 'GLO1', directed: 'false', weight: 0.810163} },
-{ data: { source: 'GLO1', target: 'PRDX6', directed: 'false', weight: 0.861082} },
-{ data: { source: 'GLO1', target: 'AKR1B1', directed: 'false', weight: 0.748754} }]},
+elements:{nodes: [{data: { id: 'ATP6V0D1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P61421" }},
+{data: { id: 'VMA21', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q3ZAQ7" }},
+{data: { id: 'ATP6V0A1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q93050" }},
+{data: { id: 'FLOT2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14254" }},
+{data: { id: 'ATP6AP1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q15904" }},
+{data: { id: 'FLOT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75955" }}], 
+ edges: [{ data: { source: 'VMA21', target: 'ATP6AP1', directed: 'false', weight: 0.0924841} },
+{ data: { source: 'ATP6V0A1', target: 'ATP6V0D1', directed: 'false', weight: 0.999999} },
+{ data: { source: 'ATP6V0A1', target: 'FLOT1', directed: 'false', weight: 0.887267} },
+{ data: { source: 'ATP6V0A1', target: 'ATP6AP1', directed: 'false', weight: 0.268637} },
+{ data: { source: 'FLOT2', target: 'FLOT1', directed: 'false', weight: 0.940961} },
+{ data: { source: 'FLOT1', target: 'ATP6V0D1', directed: 'false', weight: 0.0653985} }]},
 
 style: [
     {
@@ -90,6 +90,11 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.35000
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>ATP6AP1
     </section>
     </body>
     </html>

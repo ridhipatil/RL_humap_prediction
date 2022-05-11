@@ -30,15 +30,15 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'PUM3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15397" }},
-{data: { id: 'URB2', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q14146" }},
-{data: { id: 'SRP72', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/O76094" }},
-{data: { id: 'HIST2H3C', score: 5.0, type: '', href: "https://www.uniprot.org/uniprot/Q71DI3" }},
-{data: { id: 'HIST1H3B', score: 0, type: '' }}], 
- edges: [{ data: { source: 'PUM3', target: 'SRP72', directed: 'false', weight: 0.374528} },
-{ data: { source: 'URB2', target: 'SRP72', directed: 'false', weight: 0.639153} },
-{ data: { source: 'HIST2H3C', target: 'SRP72', directed: 'false', weight: 0.696487} },
-{ data: { source: 'SRP72', target: 'HIST1H3B', directed: 'false', weight: 0.333933} }]},
+elements:{nodes: [{data: { id: 'TMEM255A', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q5JRV8" }},
+{data: { id: 'CBR1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P16152" }},
+{data: { id: 'GCA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P28676" }},
+{data: { id: 'CSTB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P04080" }},
+{data: { id: 'DENND3', score: 4, type: '', href: "https://www.uniprot.org/uniprot/A2RUS2" }}], 
+ edges: [{ data: { source: 'CBR1', target: 'CSTB', directed: 'false', weight: 0.8633850000000001} },
+{ data: { source: 'CBR1', target: 'DENND3', directed: 'false', weight: 0.638201} },
+{ data: { source: 'CBR1', target: 'GCA', directed: 'false', weight: 0.296392} },
+{ data: { source: 'TMEM255A', target: 'GCA', directed: 'false', weight: 0.9044620000000001} }]},
 
 style: [
     {
@@ -87,11 +87,6 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.35000
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>SRP72
     </section>
     </body>
     </html>

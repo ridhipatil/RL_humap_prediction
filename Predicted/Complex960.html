@@ -30,16 +30,19 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'RAB40AL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P0C0E4" }},
-{data: { id: 'ZNF507', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q8TCN5" }},
-{data: { id: 'SOCS6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O14512" }},
-{data: { id: 'RAB40A', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q8WXH6" }},
-{data: { id: 'ARIH2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95376" }}], 
- edges: [{ data: { source: 'ZNF507', target: 'SOCS6', directed: 'false', weight: 0.397057} },
-{ data: { source: 'ZNF507', target: 'ARIH2', directed: 'false', weight: 0.0848034} },
-{ data: { source: 'SOCS6', target: 'ARIH2', directed: 'false', weight: 0.458582} },
-{ data: { source: 'RAB40A', target: 'RAB40AL', directed: 'false', weight: 0.95394} },
-{ data: { source: 'RAB40A', target: 'ARIH2', directed: 'false', weight: 0.266017} }]},
+elements:{nodes: [{data: { id: 'CWC15', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9P013" }},
+{data: { id: 'GPATCH1', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9BRR8" }},
+{data: { id: 'EXO1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UQ84" }},
+{data: { id: 'RBM22', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NW64" }},
+{data: { id: 'RIMS4', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9H426" }},
+{data: { id: 'WDR83', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BRX9" }}], 
+ edges: [{ data: { source: 'RIMS4', target: 'WDR83', directed: 'false', weight: 0.972101} },
+{ data: { source: 'RIMS4', target: 'EXO1', directed: 'false', weight: 0.171414} },
+{ data: { source: 'RBM22', target: 'CWC15', directed: 'false', weight: 0.3401} },
+{ data: { source: 'RBM22', target: 'GPATCH1', directed: 'false', weight: 0.16233599999999998} },
+{ data: { source: 'GPATCH1', target: 'CWC15', directed: 'false', weight: 0.24423000000000003} },
+{ data: { source: 'GPATCH1', target: 'WDR83', directed: 'false', weight: 0.988376} },
+{ data: { source: 'EXO1', target: 'WDR83', directed: 'false', weight: 0.976735} }]},
 
 style: [
     {

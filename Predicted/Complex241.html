@@ -30,17 +30,18 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'NUFIP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UHK0" }},
-{data: { id: 'SYT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P21579" }},
-{data: { id: 'CLPB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H078" }},
-{data: { id: 'GPM6A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P51674" }},
-{data: { id: 'HAX1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00165" }}], 
- edges: [{ data: { source: 'NUFIP1', target: 'GPM6A', directed: 'false', weight: 0.261341} },
-{ data: { source: 'NUFIP1', target: 'SYT1', directed: 'false', weight: 0.0854067} },
-{ data: { source: 'SYT1', target: 'GPM6A', directed: 'false', weight: 0.319639} },
-{ data: { source: 'SYT1', target: 'HAX1', directed: 'false', weight: 0.10594200000000001} },
-{ data: { source: 'GPM6A', target: 'HAX1', directed: 'false', weight: 0.30901799999999996} },
-{ data: { source: 'CLPB', target: 'HAX1', directed: 'false', weight: 0.762718} }]},
+elements:{nodes: [{data: { id: 'AP3B1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/O00203" }},
+{data: { id: 'AP3M1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y2T2" }},
+{data: { id: 'AP3M2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P53677" }},
+{data: { id: 'EDA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92838" }},
+{data: { id: 'AP3D1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O14617" }}], 
+ edges: [{ data: { source: 'AP3B1', target: 'AP3D1', directed: 'false', weight: 0.975922} },
+{ data: { source: 'AP3B1', target: 'AP3M1', directed: 'false', weight: 0.975907} },
+{ data: { source: 'AP3B1', target: 'AP3M2', directed: 'false', weight: 0.25311} },
+{ data: { source: 'AP3M1', target: 'AP3D1', directed: 'false', weight: 0.9894639999999999} },
+{ data: { source: 'AP3M1', target: 'AP3M2', directed: 'false', weight: 0.0995769} },
+{ data: { source: 'AP3M2', target: 'AP3D1', directed: 'false', weight: 0.62752} },
+{ data: { source: 'AP3M2', target: 'EDA', directed: 'false', weight: 0.834976} }]},
 
 style: [
     {
@@ -89,6 +90,11 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.38750
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>AP3B1
     </section>
     </body>
     </html>

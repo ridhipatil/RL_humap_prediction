@@ -30,19 +30,11 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'GSS', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P48637" }},
-{data: { id: 'IDE', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P14735" }},
-{data: { id: 'SERPINB8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P50452" }},
-{data: { id: 'MRI1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BV20" }},
-{data: { id: 'RMDN1', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q96DB5" }},
-{data: { id: 'ADA2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NZK5" }}], 
- edges: [{ data: { source: 'GSS', target: 'MRI1', directed: 'false', weight: 0.814638} },
-{ data: { source: 'GSS', target: 'SERPINB8', directed: 'false', weight: 0.7901779999999999} },
-{ data: { source: 'GSS', target: 'ADA2', directed: 'false', weight: 0.334767} },
-{ data: { source: 'GSS', target: 'RMDN1', directed: 'false', weight: 0.171308} },
-{ data: { source: 'IDE', target: 'SERPINB8', directed: 'false', weight: 0.6832020000000001} },
-{ data: { source: 'MRI1', target: 'SERPINB8', directed: 'false', weight: 0.648859} },
-{ data: { source: 'RMDN1', target: 'SERPINB8', directed: 'false', weight: 0.429691} }]},
+elements:{nodes: [{data: { id: 'TBC1D22A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WUA7" }},
+{data: { id: 'CERK', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TCT0" }},
+{data: { id: 'EFNB3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15768" }}], 
+ edges: [{ data: { source: 'TBC1D22A', target: 'CERK', directed: 'false', weight: 0.990237} },
+{ data: { source: 'TBC1D22A', target: 'EFNB3', directed: 'false', weight: 0.456189} }]},
 
 style: [
     {
@@ -91,11 +83,6 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.37500
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>IDE
     </section>
     </body>
     </html>

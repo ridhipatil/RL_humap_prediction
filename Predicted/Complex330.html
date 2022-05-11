@@ -30,12 +30,21 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'ADH1B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P00325" }},
-{data: { id: 'XYLT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86Y38" }},
-{data: { id: 'ADH1C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P00326" }}], 
- edges: [{ data: { source: 'ADH1B', target: 'XYLT1', directed: 'false', weight: 0.171414} },
-{ data: { source: 'ADH1B', target: 'ADH1C', directed: 'false', weight: 0.9559780000000001} },
-{ data: { source: 'XYLT1', target: 'ADH1C', directed: 'false', weight: 0.991059} }]},
+elements:{nodes: [{data: { id: 'RAB3GAP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15042" }},
+{data: { id: 'MTDH', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86UE4" }},
+{data: { id: 'GPAM', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HCL2" }},
+{data: { id: 'RAB3GAP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H2M9" }},
+{data: { id: 'SIRT2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IXJ6" }}], 
+ edges: [{ data: { source: 'RAB3GAP1', target: 'SIRT2', directed: 'false', weight: 0.9304969999999999} },
+{ data: { source: 'RAB3GAP1', target: 'GPAM', directed: 'false', weight: 0.133451} },
+{ data: { source: 'RAB3GAP1', target: 'RAB3GAP2', directed: 'false', weight: 0.29138000000000003} },
+{ data: { source: 'RAB3GAP1', target: 'MTDH', directed: 'false', weight: 0.0952728} },
+{ data: { source: 'SIRT2', target: 'GPAM', directed: 'false', weight: 0.964918} },
+{ data: { source: 'SIRT2', target: 'MTDH', directed: 'false', weight: 0.6558350000000001} },
+{ data: { source: 'SIRT2', target: 'RAB3GAP2', directed: 'false', weight: 0.6362909999999999} },
+{ data: { source: 'GPAM', target: 'RAB3GAP2', directed: 'false', weight: 0.171414} },
+{ data: { source: 'GPAM', target: 'MTDH', directed: 'false', weight: 0.12378900000000001} },
+{ data: { source: 'MTDH', target: 'RAB3GAP2', directed: 'false', weight: 0.12378900000000001} }]},
 
 style: [
     {

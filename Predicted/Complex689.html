@@ -30,18 +30,21 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'MRPL50', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q8N5N7" }},
-{data: { id: 'MRPL51', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q4U2R6" }},
-{data: { id: 'GADD45GIP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TAE8" }},
-{data: { id: 'MRPL2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BZE1" }},
-{data: { id: 'TBC1D8', score: 4, type: '', href: "https://www.uniprot.org/uniprot/O95759" }}], 
- edges: [{ data: { source: 'MRPL50', target: 'MRPL2', directed: 'false', weight: 0.9999950000000001} },
-{ data: { source: 'MRPL50', target: 'MRPL51', directed: 'false', weight: 0.999878} },
-{ data: { source: 'MRPL50', target: 'GADD45GIP1', directed: 'false', weight: 0.9998319999999999} },
-{ data: { source: 'MRPL50', target: 'TBC1D8', directed: 'false', weight: 0.804286} },
-{ data: { source: 'MRPL51', target: 'MRPL2', directed: 'false', weight: 0.94844} },
-{ data: { source: 'MRPL51', target: 'GADD45GIP1', directed: 'false', weight: 0.6934859999999999} },
-{ data: { source: 'GADD45GIP1', target: 'MRPL2', directed: 'false', weight: 0.969784} }]},
+elements:{nodes: [{data: { id: 'PSMB1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P20618" }},
+{data: { id: 'PSME1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q06323" }},
+{data: { id: 'AGA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P20933" }},
+{data: { id: 'PSMA4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P25789" }},
+{data: { id: 'PSME2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UL46" }},
+{data: { id: 'LAMB1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P07942" }}], 
+ edges: [{ data: { source: 'PSMA4', target: 'PSME2', directed: 'false', weight: 0.853985} },
+{ data: { source: 'PSMA4', target: 'PSMB1', directed: 'false', weight: 0.8450690000000001} },
+{ data: { source: 'PSMA4', target: 'PSME1', directed: 'false', weight: 0.8448190000000001} },
+{ data: { source: 'PSMA4', target: 'LAMB1', directed: 'false', weight: 0.144091} },
+{ data: { source: 'PSMB1', target: 'PSME2', directed: 'false', weight: 0.853985} },
+{ data: { source: 'PSMB1', target: 'PSME1', directed: 'false', weight: 0.703699} },
+{ data: { source: 'PSMB1', target: 'LAMB1', directed: 'false', weight: 0.34820999999999996} },
+{ data: { source: 'PSME1', target: 'PSME2', directed: 'false', weight: 0.967461} },
+{ data: { source: 'AGA', target: 'LAMB1', directed: 'false', weight: 0.617566} }]},
 
 style: [
     {

@@ -30,11 +30,20 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: '403313', score: 0, type: '' }},
-{data: { id: 'CIT', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/O14578" }},
-{data: { id: 'PPM1F', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49593" }}], 
- edges: [{ data: { source: '403313', target: 'PPM1F', directed: 'false', weight: 0.33813200000000004} },
-{ data: { source: 'CIT', target: 'PPM1F', directed: 'false', weight: 0.42753500000000005} }]},
+elements:{nodes: [{data: { id: 'RHPN2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IUC4" }},
+{data: { id: 'BCL2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P10415" }},
+{data: { id: 'BAX', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q07812" }},
+{data: { id: 'BCL2L1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q07817" }},
+{data: { id: 'BAD', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92934" }},
+{data: { id: 'BCL2L11', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43521" }}], 
+ edges: [{ data: { source: 'BAX', target: 'BCL2L1', directed: 'false', weight: 0.952636} },
+{ data: { source: 'BAX', target: 'BAD', directed: 'false', weight: 0.11473699999999999} },
+{ data: { source: 'BAX', target: 'BCL2', directed: 'false', weight: 0.192166} },
+{ data: { source: 'BCL2L1', target: 'BAD', directed: 'false', weight: 0.9832989999999999} },
+{ data: { source: 'BCL2L1', target: 'BCL2', directed: 'false', weight: 0.982734} },
+{ data: { source: 'RHPN2', target: 'BCL2L11', directed: 'false', weight: 0.941167} },
+{ data: { source: 'BCL2', target: 'BAD', directed: 'false', weight: 0.151455} },
+{ data: { source: 'BCL2', target: 'BCL2L11', directed: 'false', weight: 0.663101} }]},
 
 style: [
     {
@@ -83,11 +92,6 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.37500
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>CIT
     </section>
     </body>
     </html>

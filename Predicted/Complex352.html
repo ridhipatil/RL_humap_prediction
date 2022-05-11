@@ -30,12 +30,21 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'KLK4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y5K2" }},
-{data: { id: 'HLA-DMB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P28068" }},
-{data: { id: 'HLA-DRA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P01903" }}], 
- edges: [{ data: { source: 'KLK4', target: 'HLA-DRA', directed: 'false', weight: 0.345528} },
-{ data: { source: 'KLK4', target: 'HLA-DMB', directed: 'false', weight: 0.133456} },
-{ data: { source: 'HLA-DMB', target: 'HLA-DRA', directed: 'false', weight: 0.28668699999999997} }]},
+elements:{nodes: [{data: { id: 'DNAJC18', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q9H819" }},
+{data: { id: 'DNAJC30', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96LL9" }},
+{data: { id: 'CHRNA9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UGM1" }},
+{data: { id: 'ZIC2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95409" }},
+{data: { id: 'CHEK1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O14757" }}], 
+ edges: [{ data: { source: 'CHRNA9', target: 'ZIC2', directed: 'false', weight: 0.8541489999999999} },
+{ data: { source: 'CHRNA9', target: 'DNAJC18', directed: 'false', weight: 0.804603} },
+{ data: { source: 'CHRNA9', target: 'CHEK1', directed: 'false', weight: 0.639065} },
+{ data: { source: 'CHRNA9', target: 'DNAJC30', directed: 'false', weight: 0.506577} },
+{ data: { source: 'DNAJC18', target: 'ZIC2', directed: 'false', weight: 0.171414} },
+{ data: { source: 'DNAJC18', target: 'DNAJC30', directed: 'false', weight: 0.151455} },
+{ data: { source: 'DNAJC18', target: 'CHEK1', directed: 'false', weight: 0.11248399999999999} },
+{ data: { source: 'DNAJC30', target: 'ZIC2', directed: 'false', weight: 0.151455} },
+{ data: { source: 'DNAJC30', target: 'CHEK1', directed: 'false', weight: 0.098638} },
+{ data: { source: 'ZIC2', target: 'CHEK1', directed: 'false', weight: 0.11248399999999999} }]},
 
 style: [
     {

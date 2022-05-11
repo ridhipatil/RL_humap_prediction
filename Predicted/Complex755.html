@@ -30,16 +30,20 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'GRPEL2', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q8TAA5" }},
-{data: { id: 'CAMK2D', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13557" }},
-{data: { id: 'CAMK2G', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13555" }},
-{data: { id: 'WARS', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P23381" }},
-{data: { id: 'MMUT', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P22033" }}], 
- edges: [{ data: { source: 'GRPEL2', target: 'MMUT', directed: 'false', weight: 0.342802} },
-{ data: { source: 'MMUT', target: 'CAMK2G', directed: 'false', weight: 0.13081099999999998} },
-{ data: { source: 'MMUT', target: 'CAMK2D', directed: 'false', weight: 0.730376} },
-{ data: { source: 'MMUT', target: 'WARS', directed: 'false', weight: 0.641473} },
-{ data: { source: 'CAMK2D', target: 'CAMK2G', directed: 'false', weight: 0.867557} }]},
+elements:{nodes: [{data: { id: 'PRDX2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P32119" }},
+{data: { id: 'PRDX3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P30048" }},
+{data: { id: 'DAZAP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96EP5" }},
+{data: { id: 'PRDX1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q06830" }},
+{data: { id: 'DTYMK', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P23919" }},
+{data: { id: 'TTN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WZ42" }}], 
+ edges: [{ data: { source: 'DTYMK', target: 'PRDX1', directed: 'false', weight: 0.48338000000000003} },
+{ data: { source: 'DTYMK', target: 'TTN', directed: 'false', weight: 0.047300199999999994} },
+{ data: { source: 'TTN', target: 'PRDX2', directed: 'false', weight: 0.585413} },
+{ data: { source: 'TTN', target: 'PRDX1', directed: 'false', weight: 0.89807} },
+{ data: { source: 'PRDX2', target: 'DAZAP1', directed: 'false', weight: 0.35665} },
+{ data: { source: 'PRDX2', target: 'PRDX1', directed: 'false', weight: 0.932924} },
+{ data: { source: 'PRDX2', target: 'PRDX3', directed: 'false', weight: 0.790762} },
+{ data: { source: 'DAZAP1', target: 'PRDX1', directed: 'false', weight: 0.815498} }]},
 
 style: [
     {

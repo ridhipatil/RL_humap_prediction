@@ -30,18 +30,18 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'PCGF5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86SE9" }},
-{data: { id: 'RING1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q06587" }},
-{data: { id: 'MORC4', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q8TE76" }},
-{data: { id: 'AUTS2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WXX7" }},
-{data: { id: 'DCAF7', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P61962" }}], 
- edges: [{ data: { source: 'PCGF5', target: 'RING1', directed: 'false', weight: 0.5877819999999999} },
-{ data: { source: 'PCGF5', target: 'MORC4', directed: 'false', weight: 0.140692} },
-{ data: { source: 'PCGF5', target: 'AUTS2', directed: 'false', weight: 0.8733860000000001} },
-{ data: { source: 'PCGF5', target: 'DCAF7', directed: 'false', weight: 0.54776} },
-{ data: { source: 'MORC4', target: 'AUTS2', directed: 'false', weight: 0.133451} },
-{ data: { source: 'MORC4', target: 'DCAF7', directed: 'false', weight: 0.133451} },
-{ data: { source: 'AUTS2', target: 'DCAF7', directed: 'false', weight: 0.390018} }]},
+elements:{nodes: [{data: { id: 'TTC30A', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q86WT1" }},
+{data: { id: 'IFT52', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y366" }},
+{data: { id: 'TTC30B', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q8N4P2" }},
+{data: { id: 'ANKRD55', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q3KP44" }},
+{data: { id: 'IFT27', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BW83" }}], 
+ edges: [{ data: { source: 'TTC30A', target: 'TTC30B', directed: 'false', weight: 0.28781100000000004} },
+{ data: { source: 'TTC30A', target: 'IFT52', directed: 'false', weight: 0.5378149999999999} },
+{ data: { source: 'TTC30A', target: 'ANKRD55', directed: 'false', weight: 0.349554} },
+{ data: { source: 'IFT52', target: 'TTC30B', directed: 'false', weight: 0.28781100000000004} },
+{ data: { source: 'IFT52', target: 'ANKRD55', directed: 'false', weight: 0.7813060000000001} },
+{ data: { source: 'IFT52', target: 'IFT27', directed: 'false', weight: 0.28781100000000004} },
+{ data: { source: 'TTC30B', target: 'ANKRD55', directed: 'false', weight: 0.615665} }]},
 
 style: [
     {
@@ -90,11 +90,6 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.38750
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>DCAF7
     </section>
     </body>
     </html>

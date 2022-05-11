@@ -30,16 +30,19 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'C1orf50', score: 4, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9BV19" }},
-{data: { id: 'TBCA', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/O75347" }},
-{data: { id: 'AHCY', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P23526" }},
-{data: { id: 'FH', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P07954" }},
-{data: { id: 'FKBP1B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P68106" }}], 
- edges: [{ data: { source: 'FH', target: 'AHCY', directed: 'false', weight: 0.40507600000000005} },
-{ data: { source: 'C1orf50', target: 'AHCY', directed: 'false', weight: 0.9852989999999999} },
-{ data: { source: 'AHCY', target: 'FKBP1B', directed: 'false', weight: 0.5513859999999999} },
-{ data: { source: 'AHCY', target: 'TBCA', directed: 'false', weight: 0.9942850000000001} },
-{ data: { source: 'TBCA', target: 'FKBP1B', directed: 'false', weight: 0.943319} }]},
+elements:{nodes: [{data: { id: 'PTPN11', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q06124" }},
+{data: { id: 'RAB5A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P20339" }},
+{data: { id: 'RAB5C', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P51148" }},
+{data: { id: 'SUN2', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9UH99" }},
+{data: { id: 'CHM', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P24386" }},
+{data: { id: 'RAB5B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P61020" }}], 
+ edges: [{ data: { source: 'PTPN11', target: 'RAB5C', directed: 'false', weight: 0.6350439999999999} },
+{ data: { source: 'CHM', target: 'RAB5C', directed: 'false', weight: 0.819044} },
+{ data: { source: 'CHM', target: 'RAB5B', directed: 'false', weight: 0.115879} },
+{ data: { source: 'CHM', target: 'RAB5A', directed: 'false', weight: 0.0886254} },
+{ data: { source: 'RAB5A', target: 'RAB5C', directed: 'false', weight: 0.16464} },
+{ data: { source: 'RAB5C', target: 'RAB5B', directed: 'false', weight: 0.631423} },
+{ data: { source: 'RAB5C', target: 'SUN2', directed: 'false', weight: 0.941565} }]},
 
 style: [
     {
@@ -92,7 +95,7 @@ cy.on('tap', 'node', function(){
         <br>
         Connection to SARS-COV2: 
         <br>
-        2 interacting protein(s): <br>C1orf50 TBCA
+        2 interacting protein(s): <br>RAB5C SUN2
     </section>
     </body>
     </html>

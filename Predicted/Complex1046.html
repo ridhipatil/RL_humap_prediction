@@ -30,15 +30,18 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'ELOF1', score: 2, type: '', href: "https://www.uniprot.org/uniprot/P60002" }},
-{data: { id: 'CGNL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q0VF96" }},
-{data: { id: 'PDIA6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15084" }},
-{data: { id: 'CUX1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P39880" }},
-{data: { id: 'HNRNPF', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P52597" }}], 
- edges: [{ data: { source: 'CGNL1', target: 'ELOF1', directed: 'false', weight: 0.5093409999999999} },
-{ data: { source: 'PDIA6', target: 'ELOF1', directed: 'false', weight: 0.71226} },
-{ data: { source: 'PDIA6', target: 'CUX1', directed: 'false', weight: 0.310098} },
-{ data: { source: 'CUX1', target: 'HNRNPF', directed: 'false', weight: 0.153444} }]},
+elements:{nodes: [{data: { id: 'CAT', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P04040" }},
+{data: { id: 'CHST7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NS84" }},
+{data: { id: 'CLYBL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N0X4" }},
+{data: { id: 'QSOX1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00391" }},
+{data: { id: 'GLT8D2', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q9H1C3" }},
+{data: { id: 'BPNT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95861" }}], 
+ edges: [{ data: { source: 'CAT', target: 'BPNT1', directed: 'false', weight: 0.62584} },
+{ data: { source: 'CAT', target: 'CLYBL', directed: 'false', weight: 0.307199} },
+{ data: { source: 'CAT', target: 'QSOX1', directed: 'false', weight: 0.28257600000000005} },
+{ data: { source: 'CHST7', target: 'GLT8D2', directed: 'false', weight: 0.327496} },
+{ data: { source: 'CHST7', target: 'QSOX1', directed: 'false', weight: 0.112499} },
+{ data: { source: 'GLT8D2', target: 'QSOX1', directed: 'false', weight: 0.299212} }]},
 
 style: [
     {

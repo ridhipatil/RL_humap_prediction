@@ -30,16 +30,19 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'PYGL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P06737" }},
-{data: { id: 'PNPO', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NVS9" }},
-{data: { id: 'CS', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75390" }},
-{data: { id: 'FUCA2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BTY2" }},
-{data: { id: 'GIPC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O14908" }}], 
- edges: [{ data: { source: 'CS', target: 'PYGL', directed: 'false', weight: 0.494134} },
-{ data: { source: 'CS', target: 'GIPC1', directed: 'false', weight: 0.460178} },
-{ data: { source: 'CS', target: 'FUCA2', directed: 'false', weight: 0.265795} },
-{ data: { source: 'GIPC1', target: 'PNPO', directed: 'false', weight: 0.492936} },
-{ data: { source: 'PYGL', target: 'FUCA2', directed: 'false', weight: 0.0680133} }]},
+elements:{nodes: [{data: { id: 'ZFP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6P2D0" }},
+{data: { id: 'AKR1C2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P52895" }},
+{data: { id: 'PLXDC2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6UX71" }},
+{data: { id: 'AKR1C1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q04828" }},
+{data: { id: 'AKR1C3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P42330" }},
+{data: { id: 'AKR1C4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P17516" }}], 
+ edges: [{ data: { source: 'ZFP1', target: 'AKR1C1', directed: 'false', weight: 0.114755} },
+{ data: { source: 'ZFP1', target: 'AKR1C2', directed: 'false', weight: 0.887265} },
+{ data: { source: 'AKR1C2', target: 'AKR1C1', directed: 'false', weight: 0.911819} },
+{ data: { source: 'PLXDC2', target: 'AKR1C4', directed: 'false', weight: 0.291566} },
+{ data: { source: 'AKR1C1', target: 'AKR1C3', directed: 'false', weight: 0.92601} },
+{ data: { source: 'AKR1C1', target: 'AKR1C4', directed: 'false', weight: 0.24226599999999998} },
+{ data: { source: 'AKR1C4', target: 'AKR1C3', directed: 'false', weight: 0.9226479999999999} }]},
 
 style: [
     {

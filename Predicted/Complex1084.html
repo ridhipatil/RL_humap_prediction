@@ -30,13 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'CSNK2A1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P68400" }},
-{data: { id: 'CDK12', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NYV4" }},
-{data: { id: 'PAF1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P28328" }},
-{data: { id: 'CDC73', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6P1J9" }}], 
- edges: [{ data: { source: 'PAF1', target: 'CDC73', directed: 'false', weight: 0.9998819999999999} },
-{ data: { source: 'PAF1', target: 'CSNK2A1', directed: 'false', weight: 0.9191290000000001} },
-{ data: { source: 'CDC73', target: 'CDK12', directed: 'false', weight: 0.144431} }]},
+elements:{nodes: [{data: { id: 'NT5DC1', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q5TFE4" }},
+{data: { id: 'PRKACA', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P17252" }},
+{data: { id: 'PKLR', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P30613" }},
+{data: { id: 'PRKAR2A', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P13861" }}], 
+ edges: [{ data: { source: 'NT5DC1', target: 'PKLR', directed: 'false', weight: 0.970417} },
+{ data: { source: 'PRKACA', target: 'PRKAR2A', directed: 'false', weight: 0.9999530000000001} },
+{ data: { source: 'PRKACA', target: 'PKLR', directed: 'false', weight: 0.647798} }]},
 
 style: [
     {
@@ -85,6 +85,11 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.30000
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        2 interacting protein(s): <br>PRKACA PRKAR2A
     </section>
     </body>
     </html>

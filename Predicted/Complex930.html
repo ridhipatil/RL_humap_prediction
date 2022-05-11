@@ -30,16 +30,19 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'HSD17B8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92506" }},
-{data: { id: 'ACOT9', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9Y305" }},
-{data: { id: 'MACROD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BQ69" }},
-{data: { id: 'CBR4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N4T8" }},
-{data: { id: 'MOCOS', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96EN8" }}], 
- edges: [{ data: { source: 'HSD17B8', target: 'ACOT9', directed: 'false', weight: 0.553407} },
-{ data: { source: 'HSD17B8', target: 'CBR4', directed: 'false', weight: 0.723895} },
-{ data: { source: 'HSD17B8', target: 'MOCOS', directed: 'false', weight: 0.654044} },
-{ data: { source: 'ACOT9', target: 'MACROD1', directed: 'false', weight: 0.033052899999999996} },
-{ data: { source: 'CBR4', target: 'MOCOS', directed: 'false', weight: 0.0896254} }]},
+elements:{nodes: [{data: { id: 'NUFIP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UHK0" }},
+{data: { id: 'STX1B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P61266" }},
+{data: { id: 'DGUOK', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16854" }},
+{data: { id: 'CADM2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N3J6" }},
+{data: { id: 'ANK2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q01484" }},
+{data: { id: 'DCK', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P27707" }}], 
+ edges: [{ data: { source: 'NUFIP1', target: 'CADM2', directed: 'false', weight: 0.721429} },
+{ data: { source: 'NUFIP1', target: 'STX1B', directed: 'false', weight: 0.471488} },
+{ data: { source: 'NUFIP1', target: 'ANK2', directed: 'false', weight: 0.128322} },
+{ data: { source: 'ANK2', target: 'DGUOK', directed: 'false', weight: 0.136572} },
+{ data: { source: 'ANK2', target: 'STX1B', directed: 'false', weight: 0.45249700000000004} },
+{ data: { source: 'DCK', target: 'DGUOK', directed: 'false', weight: 0.980611} },
+{ data: { source: 'STX1B', target: 'DGUOK', directed: 'false', weight: 0.391815} }]},
 
 style: [
     {

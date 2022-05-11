@@ -30,17 +30,21 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'ZDHHC21', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IVQ6" }},
-{data: { id: 'CELA2B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P08218" }},
-{data: { id: 'TSPAN5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62079" }},
-{data: { id: 'RPUSD2', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q8IZ73" }},
-{data: { id: 'MRM2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UI43" }}], 
- edges: [{ data: { source: 'CELA2B', target: 'RPUSD2', directed: 'false', weight: 0.922092} },
-{ data: { source: 'CELA2B', target: 'MRM2', directed: 'false', weight: 0.579732} },
-{ data: { source: 'TSPAN5', target: 'ZDHHC21', directed: 'false', weight: 0.631577} },
-{ data: { source: 'TSPAN5', target: 'MRM2', directed: 'false', weight: 0.5828939999999999} },
-{ data: { source: 'ZDHHC21', target: 'MRM2', directed: 'false', weight: 0.133456} },
-{ data: { source: 'RPUSD2', target: 'MRM2', directed: 'false', weight: 0.133456} }]},
+elements:{nodes: [{data: { id: 'GMPR', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P36959" }},
+{data: { id: 'KCTD14', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q9BQ13" }},
+{data: { id: 'ADHFE1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IWW8" }},
+{data: { id: 'RPIA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49247" }},
+{data: { id: 'GMPR2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9P2T1" }},
+{data: { id: 'ACSF3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q4G176" }}], 
+ edges: [{ data: { source: 'GMPR', target: 'GMPR2', directed: 'false', weight: 0.980734} },
+{ data: { source: 'GMPR', target: 'ADHFE1', directed: 'false', weight: 0.7787} },
+{ data: { source: 'GMPR', target: 'RPIA', directed: 'false', weight: 0.629831} },
+{ data: { source: 'GMPR', target: 'ACSF3', directed: 'false', weight: 0.355956} },
+{ data: { source: 'KCTD14', target: 'ACSF3', directed: 'false', weight: 0.373316} },
+{ data: { source: 'ACSF3', target: 'GMPR2', directed: 'false', weight: 0.347958} },
+{ data: { source: 'ADHFE1', target: 'GMPR2', directed: 'false', weight: 0.599662} },
+{ data: { source: 'ADHFE1', target: 'RPIA', directed: 'false', weight: 0.056223199999999994} },
+{ data: { source: 'RPIA', target: 'GMPR2', directed: 'false', weight: 0.701434} }]},
 
 style: [
     {

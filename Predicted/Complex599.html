@@ -30,21 +30,16 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'MTDH', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86UE4" }},
-{data: { id: 'GPAM', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HCL2" }},
-{data: { id: 'SIRT2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IXJ6" }},
-{data: { id: 'RAB3GAP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H2M9" }},
-{data: { id: 'RAB3GAP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15042" }}], 
- edges: [{ data: { source: 'RAB3GAP1', target: 'SIRT2', directed: 'false', weight: 0.9304969999999999} },
-{ data: { source: 'RAB3GAP1', target: 'GPAM', directed: 'false', weight: 0.133451} },
-{ data: { source: 'RAB3GAP1', target: 'RAB3GAP2', directed: 'false', weight: 0.29138000000000003} },
-{ data: { source: 'RAB3GAP1', target: 'MTDH', directed: 'false', weight: 0.0952728} },
-{ data: { source: 'MTDH', target: 'SIRT2', directed: 'false', weight: 0.6558350000000001} },
-{ data: { source: 'MTDH', target: 'GPAM', directed: 'false', weight: 0.12378900000000001} },
-{ data: { source: 'MTDH', target: 'RAB3GAP2', directed: 'false', weight: 0.12378900000000001} },
-{ data: { source: 'GPAM', target: 'SIRT2', directed: 'false', weight: 0.964918} },
-{ data: { source: 'GPAM', target: 'RAB3GAP2', directed: 'false', weight: 0.171414} },
-{ data: { source: 'SIRT2', target: 'RAB3GAP2', directed: 'false', weight: 0.6362909999999999} }]},
+elements:{nodes: [{data: { id: 'CTDSP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O14595" }},
+{data: { id: 'CTDSPL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15194" }},
+{data: { id: 'CDCA3', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q99618" }},
+{data: { id: 'CTDSP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9GZU7" }}], 
+ edges: [{ data: { source: 'CTDSP1', target: 'CTDSP2', directed: 'false', weight: 0.98587} },
+{ data: { source: 'CTDSP1', target: 'CTDSPL', directed: 'false', weight: 0.977641} },
+{ data: { source: 'CTDSP1', target: 'CDCA3', directed: 'false', weight: 0.338378} },
+{ data: { source: 'CTDSPL', target: 'CTDSP2', directed: 'false', weight: 0.28781100000000004} },
+{ data: { source: 'CTDSPL', target: 'CDCA3', directed: 'false', weight: 0.25006100000000003} },
+{ data: { source: 'CDCA3', target: 'CTDSP2', directed: 'false', weight: 0.48120100000000005} }]},
 
 style: [
     {

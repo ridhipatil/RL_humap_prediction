@@ -30,25 +30,18 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'FRAT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92837" }},
-{data: { id: 'GSK3A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49840" }},
-{data: { id: 'AXIN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15169" }},
-{data: { id: 'APC', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P25054" }},
-{data: { id: 'GSK3B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49841" }}], 
- edges: [{ data: { source: 'GSK3A', target: 'GSK3B', directed: 'false', weight: 0.5745439999999999} },
-{ data: { source: 'GSK3A', target: 'FRAT1', directed: 'false', weight: 0.965234} },
-{ data: { source: 'GSK3A', target: 'AXIN1', directed: 'false', weight: 0.577001} },
-{ data: { source: 'AXIN1', target: 'GSK3B', directed: 'false', weight: 0.844852} },
-{ data: { source: 'AXIN1', target: 'APC', directed: 'false', weight: 0.724195} },
-{ data: { source: 'GSK3B', target: 'FRAT1', directed: 'false', weight: 0.971023} }]},
+elements:{nodes: [{data: { id: 'GNPDA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P46926" }},
+{data: { id: 'GNPDA2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TDQ7" }},
+{data: { id: 'AMDHD2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y303" }}], 
+ edges: [{ data: { source: 'GNPDA1', target: 'AMDHD2', directed: 'false', weight: 0.9975280000000001} },
+{ data: { source: 'GNPDA1', target: 'GNPDA2', directed: 'false', weight: 0.484098} },
+{ data: { source: 'GNPDA2', target: 'AMDHD2', directed: 'false', weight: 0.9439549999999999} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 10,
-		'width':'10',
-		'height': '10',	
+		'font-size': 30,
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}                                
@@ -60,7 +53,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
 								'line-color': 'blue',
 								'opacity': 0.5
 							}
@@ -69,10 +62,7 @@ style: [
 
 });
 cy.layout({
-    'name': 'fcose',
-		'animate':false,
-	'nodeDimensionsIncludeLabels':true,
-	'nodeSeparation': 1000
+    name: 'circle'
 }).run();
 
 cy.on('tap', 'node', function(){

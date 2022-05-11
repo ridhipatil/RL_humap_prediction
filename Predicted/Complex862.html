@@ -30,16 +30,19 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'GAL3ST1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99999" }},
-{data: { id: 'PSG4', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q00888" }},
-{data: { id: 'CHCHD2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y6H1" }},
-{data: { id: 'CHST8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H2A9" }},
-{data: { id: 'PSG11', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q00887" }}], 
- edges: [{ data: { source: 'PSG4', target: 'PSG11', directed: 'false', weight: 0.8257129999999999} },
-{ data: { source: 'PSG4', target: 'GAL3ST1', directed: 'false', weight: 0.5529609999999999} },
-{ data: { source: 'CHCHD2', target: 'CHST8', directed: 'false', weight: 0.9839450000000001} },
-{ data: { source: 'CHCHD2', target: 'GAL3ST1', directed: 'false', weight: 0.151455} },
-{ data: { source: 'GAL3ST1', target: 'CHST8', directed: 'false', weight: 0.556067} }]},
+elements:{nodes: [{data: { id: 'NFYA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P23511" }},
+{data: { id: 'FCGR2A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P12318" }},
+{data: { id: 'PLCB3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q01970" }},
+{data: { id: 'GTPBP1', score: 4, type: '', href: "https://www.uniprot.org/uniprot/O00178" }},
+{data: { id: 'NFYC', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13952" }},
+{data: { id: 'NFYB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P25208" }}], 
+ edges: [{ data: { source: 'PLCB3', target: 'NFYA', directed: 'false', weight: 0.179222} },
+{ data: { source: 'PLCB3', target: 'GTPBP1', directed: 'false', weight: 0.886209} },
+{ data: { source: 'GTPBP1', target: 'NFYA', directed: 'false', weight: 0.6776989999999999} },
+{ data: { source: 'NFYA', target: 'NFYC', directed: 'false', weight: 0.999741} },
+{ data: { source: 'NFYA', target: 'NFYB', directed: 'false', weight: 0.9759549999999999} },
+{ data: { source: 'FCGR2A', target: 'NFYC', directed: 'false', weight: 0.7222350000000001} },
+{ data: { source: 'NFYC', target: 'NFYB', directed: 'false', weight: 0.975952} }]},
 
 style: [
     {

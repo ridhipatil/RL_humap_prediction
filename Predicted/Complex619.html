@@ -30,18 +30,17 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'NHSL1', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q5SYE7" }},
-{data: { id: 'GTF2E1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P29083" }},
-{data: { id: 'SPOCK1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q08629" }},
-{data: { id: 'EPB41L2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43491" }},
-{data: { id: 'GTF2E2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P29084" }}], 
- edges: [{ data: { source: 'GTF2E2', target: 'GTF2E1', directed: 'false', weight: 0.999942} },
-{ data: { source: 'GTF2E2', target: 'SPOCK1', directed: 'false', weight: 0.993043} },
-{ data: { source: 'GTF2E2', target: 'NHSL1', directed: 'false', weight: 0.943055} },
-{ data: { source: 'GTF2E2', target: 'EPB41L2', directed: 'false', weight: 0.40713} },
-{ data: { source: 'NHSL1', target: 'GTF2E1', directed: 'false', weight: 0.125737} },
-{ data: { source: 'NHSL1', target: 'SPOCK1', directed: 'false', weight: 0.125737} },
-{ data: { source: 'GTF2E1', target: 'SPOCK1', directed: 'false', weight: 0.165074} }]},
+elements:{nodes: [{data: { id: 'CSNK2B', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P67870" }},
+{data: { id: 'CSNK2A2', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P19784" }},
+{data: { id: 'NKAPD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6ZUT1" }},
+{data: { id: 'CFDP1', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9UEE9" }},
+{data: { id: 'GPATCH2L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NWQ4" }}], 
+ edges: [{ data: { source: 'CSNK2A2', target: 'CSNK2B', directed: 'false', weight: 0.9965440000000001} },
+{ data: { source: 'CSNK2A2', target: 'GPATCH2L', directed: 'false', weight: 0.947767} },
+{ data: { source: 'CSNK2A2', target: 'CFDP1', directed: 'false', weight: 0.7992199999999999} },
+{ data: { source: 'CSNK2A2', target: 'NKAPD1', directed: 'false', weight: 0.6701779999999999} },
+{ data: { source: 'CSNK2B', target: 'NKAPD1', directed: 'false', weight: 0.152523} },
+{ data: { source: 'NKAPD1', target: 'GPATCH2L', directed: 'false', weight: 0.140692} }]},
 
 style: [
     {
@@ -90,6 +89,11 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.38750
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        2 interacting protein(s): <br>CSNK2B CSNK2A2
     </section>
     </body>
     </html>

@@ -30,27 +30,34 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'LHX6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UPM6" }},
-{data: { id: 'ATG2B', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q96BY7" }},
-{data: { id: 'WDR45', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y484" }},
-{data: { id: 'ARID3B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IVW6" }},
-{data: { id: 'NUDT22', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BRQ3" }}], 
- edges: [{ data: { source: 'ARID3B', target: 'ATG2B', directed: 'false', weight: 0.114755} },
-{ data: { source: 'ARID3B', target: 'LHX6', directed: 'false', weight: 0.720252} },
-{ data: { source: 'ARID3B', target: 'NUDT22', directed: 'false', weight: 0.140692} },
-{ data: { source: 'ARID3B', target: 'WDR45', directed: 'false', weight: 0.114755} },
-{ data: { source: 'LHX6', target: 'ATG2B', directed: 'false', weight: 0.962491} },
-{ data: { source: 'LHX6', target: 'NUDT22', directed: 'false', weight: 0.906848} },
-{ data: { source: 'LHX6', target: 'WDR45', directed: 'false', weight: 0.788471} },
-{ data: { source: 'ATG2B', target: 'WDR45', directed: 'false', weight: 0.24226599999999998} },
-{ data: { source: 'ATG2B', target: 'NUDT22', directed: 'false', weight: 0.140692} },
-{ data: { source: 'WDR45', target: 'NUDT22', directed: 'false', weight: 0.140692} }]},
+elements:{nodes: [{data: { id: 'RPL10A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62906" }},
+{data: { id: 'WDR18', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BV38" }},
+{data: { id: 'TEX10', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9NXF1" }},
+{data: { id: 'LAS1L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y4W2" }},
+{data: { id: 'PELP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IZL8" }},
+{data: { id: 'NPM3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75607" }},
+{data: { id: 'NOL9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5SY16" }}], 
+ edges: [{ data: { source: 'RPL10A', target: 'NPM3', directed: 'false', weight: 0.387907} },
+{ data: { source: 'WDR18', target: 'PELP1', directed: 'false', weight: 0.9999389999999999} },
+{ data: { source: 'WDR18', target: 'TEX10', directed: 'false', weight: 0.9998739999999999} },
+{ data: { source: 'WDR18', target: 'NOL9', directed: 'false', weight: 0.989361} },
+{ data: { source: 'WDR18', target: 'LAS1L', directed: 'false', weight: 0.6717350000000001} },
+{ data: { source: 'TEX10', target: 'PELP1', directed: 'false', weight: 0.999958} },
+{ data: { source: 'TEX10', target: 'LAS1L', directed: 'false', weight: 0.983856} },
+{ data: { source: 'TEX10', target: 'NOL9', directed: 'false', weight: 0.9467409999999999} },
+{ data: { source: 'TEX10', target: 'NPM3', directed: 'false', weight: 0.174905} },
+{ data: { source: 'LAS1L', target: 'PELP1', directed: 'false', weight: 0.9758979999999999} },
+{ data: { source: 'LAS1L', target: 'NOL9', directed: 'false', weight: 0.945572} },
+{ data: { source: 'PELP1', target: 'NOL9', directed: 'false', weight: 0.8864719999999999} },
+{ data: { source: 'PELP1', target: 'NPM3', directed: 'false', weight: 0.153256} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 30,
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}                                
@@ -62,7 +69,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
 								'line-color': 'blue',
 								'opacity': 0.5
 							}
@@ -71,7 +78,10 @@ style: [
 
 });
 cy.layout({
-    name: 'circle'
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
 }).run();
 
 cy.on('tap', 'node', function(){

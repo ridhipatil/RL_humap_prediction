@@ -30,17 +30,17 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'CFDP1', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9UEE9" }},
-{data: { id: 'CSNK2B', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P67870" }},
-{data: { id: 'CSNK2A2', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P19784" }},
-{data: { id: 'GPATCH2L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NWQ4" }},
-{data: { id: 'NKAPD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6ZUT1" }}], 
- edges: [{ data: { source: 'CSNK2A2', target: 'CSNK2B', directed: 'false', weight: 0.9965440000000001} },
-{ data: { source: 'CSNK2A2', target: 'GPATCH2L', directed: 'false', weight: 0.947767} },
-{ data: { source: 'CSNK2A2', target: 'CFDP1', directed: 'false', weight: 0.7992199999999999} },
-{ data: { source: 'CSNK2A2', target: 'NKAPD1', directed: 'false', weight: 0.6701779999999999} },
-{ data: { source: 'CSNK2B', target: 'NKAPD1', directed: 'false', weight: 0.152523} },
-{ data: { source: 'GPATCH2L', target: 'NKAPD1', directed: 'false', weight: 0.140692} }]},
+elements:{nodes: [{data: { id: 'TM9SF3', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q9HD45" }},
+{data: { id: 'MBOAT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6ZNC8" }},
+{data: { id: 'PTDSS2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BVG9" }},
+{data: { id: 'DERL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BUN8" }},
+{data: { id: 'TMEM87A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NBN3" }}], 
+ edges: [{ data: { source: 'TM9SF3', target: 'TMEM87A', directed: 'false', weight: 0.273912} },
+{ data: { source: 'MBOAT1', target: 'PTDSS2', directed: 'false', weight: 0.423509} },
+{ data: { source: 'MBOAT1', target: 'DERL1', directed: 'false', weight: 0.030887900000000003} },
+{ data: { source: 'DERL1', target: 'PTDSS2', directed: 'false', weight: 0.290321} },
+{ data: { source: 'DERL1', target: 'TMEM87A', directed: 'false', weight: 0.22982800000000003} },
+{ data: { source: 'PTDSS2', target: 'TMEM87A', directed: 'false', weight: 0.652694} }]},
 
 style: [
     {
@@ -89,11 +89,6 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.38750
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        2 interacting protein(s): <br>CSNK2B CSNK2A2
     </section>
     </body>
     </html>

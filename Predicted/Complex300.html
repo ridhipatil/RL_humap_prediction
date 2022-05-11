@@ -30,22 +30,18 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'SDHAF2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NX18" }},
-{data: { id: 'PDHA2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P29803" }},
-{data: { id: 'SDHB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P21912" }},
-{data: { id: 'SDHA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P31040" }}], 
- edges: [{ data: { source: 'PDHA2', target: 'SDHB', directed: 'false', weight: 0.576159} },
-{ data: { source: 'PDHA2', target: 'SDHA', directed: 'false', weight: 0.416279} },
-{ data: { source: 'SDHA', target: 'SDHB', directed: 'false', weight: 0.996382} },
-{ data: { source: 'SDHA', target: 'SDHAF2', directed: 'false', weight: 0.623471} }]},
+elements:{nodes: [{data: { id: 'ITLN2', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q8WWU7" }},
+{data: { id: 'ITLN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WWA0" }},
+{data: { id: 'NACC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96RE7" }}], 
+ edges: [{ data: { source: 'ITLN1', target: 'ITLN2', directed: 'false', weight: 0.9833149999999999} },
+{ data: { source: 'ITLN1', target: 'NACC1', directed: 'false', weight: 0.8796379999999999} },
+{ data: { source: 'NACC1', target: 'ITLN2', directed: 'false', weight: 0.133456} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 10,
-		'width':'10',
-		'height': '10',	
+		'font-size': 30,
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}                                
@@ -57,7 +53,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
 								'line-color': 'blue',
 								'opacity': 0.5
 							}
@@ -66,10 +62,7 @@ style: [
 
 });
 cy.layout({
-    'name': 'fcose',
-		'animate':false,
-	'nodeDimensionsIncludeLabels':true,
-	'nodeSeparation': 1000
+    name: 'circle'
 }).run();
 
 cy.on('tap', 'node', function(){

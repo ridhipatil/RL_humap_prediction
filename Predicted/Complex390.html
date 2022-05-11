@@ -30,12 +30,12 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: '51449', score: 0, type: '' }},
-{data: { id: 'BLVRA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P53004" }},
-{data: { id: 'RTN4IP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WWV3" }}], 
- edges: [{ data: { source: '51449', target: 'RTN4IP1', directed: 'false', weight: 0.0486545} },
-{ data: { source: '51449', target: 'BLVRA', directed: 'false', weight: 0.322706} },
-{ data: { source: 'BLVRA', target: 'RTN4IP1', directed: 'false', weight: 0.795268} }]},
+elements:{nodes: [{data: { id: 'ERLIN2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O94905" }},
+{data: { id: 'TAPT1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q6NXT6" }},
+{data: { id: 'RIC3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q7Z5B4" }}], 
+ edges: [{ data: { source: 'ERLIN2', target: 'TAPT1', directed: 'false', weight: 0.133456} },
+{ data: { source: 'ERLIN2', target: 'RIC3', directed: 'false', weight: 0.54557} },
+{ data: { source: 'TAPT1', target: 'RIC3', directed: 'false', weight: 0.8953459999999999} }]},
 
 style: [
     {
@@ -79,6 +79,11 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.38750
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>TAPT1
     </section>
     </body>
     </html>

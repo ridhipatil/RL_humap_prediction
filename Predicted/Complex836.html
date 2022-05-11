@@ -30,16 +30,16 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'ENO3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P13929" }},
-{data: { id: 'PGK2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P07205" }},
-{data: { id: 'TSFM', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P43897" }},
-{data: { id: 'PGK1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P00558" }},
-{data: { id: 'FKBP1B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P68106" }}], 
- edges: [{ data: { source: 'ENO3', target: 'FKBP1B', directed: 'false', weight: 0.853216} },
-{ data: { source: 'ENO3', target: 'PGK2', directed: 'false', weight: 0.998452} },
-{ data: { source: 'ENO3', target: 'PGK1', directed: 'false', weight: 0.981416} },
-{ data: { source: 'PGK2', target: 'TSFM', directed: 'false', weight: 0.9175979999999999} },
-{ data: { source: 'TSFM', target: 'PGK1', directed: 'false', weight: 0.778949} }]},
+elements:{nodes: [{data: { id: 'RPL10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P27635" }},
+{data: { id: 'SRP72', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/O76094" }},
+{data: { id: 'MRPS27', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q92552" }},
+{data: { id: 'MRPS18B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y676" }},
+{data: { id: 'MRPS22', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P82650" }}], 
+ edges: [{ data: { source: 'RPL10', target: 'SRP72', directed: 'false', weight: 0.981125} },
+{ data: { source: 'MRPS22', target: 'MRPS27', directed: 'false', weight: 0.999999} },
+{ data: { source: 'MRPS22', target: 'MRPS18B', directed: 'false', weight: 0.99995} },
+{ data: { source: 'MRPS22', target: 'SRP72', directed: 'false', weight: 0.276446} },
+{ data: { source: 'MRPS27', target: 'MRPS18B', directed: 'false', weight: 0.8359719999999999} }]},
 
 style: [
     {
@@ -88,6 +88,11 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.37500
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        2 interacting protein(s): <br>SRP72 MRPS27
     </section>
     </body>
     </html>

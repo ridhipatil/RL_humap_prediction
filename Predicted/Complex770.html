@@ -30,20 +30,19 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'EGFR', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P00533" }},
-{data: { id: 'LMLN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96KR4" }},
-{data: { id: 'GALNT7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86SF2" }},
-{data: { id: 'ADAM17', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P78536" }},
-{data: { id: 'ADAM10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O14672" }},
-{data: { id: 'AMIGO1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86WK6" }}], 
- edges: [{ data: { source: 'EGFR', target: 'ADAM10', directed: 'false', weight: 0.43747600000000003} },
-{ data: { source: 'EGFR', target: 'ADAM17', directed: 'false', weight: 0.195149} },
-{ data: { source: 'EGFR', target: 'AMIGO1', directed: 'false', weight: 0.18088800000000002} },
-{ data: { source: 'EGFR', target: 'LMLN', directed: 'false', weight: 0.145337} },
-{ data: { source: 'ADAM10', target: 'ADAM17', directed: 'false', weight: 0.42721400000000004} },
-{ data: { source: 'ADAM10', target: 'AMIGO1', directed: 'false', weight: 0.35340900000000003} },
-{ data: { source: 'AMIGO1', target: 'ADAM17', directed: 'false', weight: 0.0762842} },
-{ data: { source: 'ADAM17', target: 'GALNT7', directed: 'false', weight: 0.276586} }]},
+elements:{nodes: [{data: { id: 'NKRF', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15226" }},
+{data: { id: 'FOCAD', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q5VW36" }},
+{data: { id: 'MRTO4', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9UKD2" }},
+{data: { id: 'SLC25A51', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9H1U9" }},
+{data: { id: 'SCN2B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60939" }},
+{data: { id: 'PWP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13610" }}], 
+ edges: [{ data: { source: 'NKRF', target: 'MRTO4', directed: 'false', weight: 0.728955} },
+{ data: { source: 'NKRF', target: 'PWP1', directed: 'false', weight: 0.888558} },
+{ data: { source: 'NKRF', target: 'FOCAD', directed: 'false', weight: 0.194323} },
+{ data: { source: 'FOCAD', target: 'MRTO4', directed: 'false', weight: 0.44872399999999996} },
+{ data: { source: 'FOCAD', target: 'SCN2B', directed: 'false', weight: 0.8563120000000001} },
+{ data: { source: 'MRTO4', target: 'PWP1', directed: 'false', weight: 0.999768} },
+{ data: { source: 'SCN2B', target: 'SLC25A51', directed: 'false', weight: 0.44555100000000003} }]},
 
 style: [
     {

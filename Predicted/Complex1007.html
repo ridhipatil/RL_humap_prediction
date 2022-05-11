@@ -30,15 +30,18 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'SAE1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UBE0" }},
-{data: { id: 'PRPF39', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q86UA1" }},
-{data: { id: 'UBA2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UBT2" }},
-{data: { id: 'PYROXD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WU10" }},
-{data: { id: 'GDF15', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q99988" }}], 
- edges: [{ data: { source: 'SAE1', target: 'UBA2', directed: 'false', weight: 0.8908959999999999} },
-{ data: { source: 'SAE1', target: 'PRPF39', directed: 'false', weight: 0.711391} },
-{ data: { source: 'SAE1', target: 'PYROXD1', directed: 'false', weight: 0.314058} },
-{ data: { source: 'SAE1', target: 'GDF15', directed: 'false', weight: 0.283681} }]},
+elements:{nodes: [{data: { id: 'UACA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BZF9" }},
+{data: { id: 'BORCS6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96GS4" }},
+{data: { id: 'MANF', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P55145" }},
+{data: { id: 'DISC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NRI5" }},
+{data: { id: 'CEP250', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9BV73" }},
+{data: { id: 'LASP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14847" }}], 
+ edges: [{ data: { source: 'UACA', target: 'BORCS6', directed: 'false', weight: 0.9266989999999999} },
+{ data: { source: 'UACA', target: 'MANF', directed: 'false', weight: 0.42229399999999995} },
+{ data: { source: 'UACA', target: 'LASP1', directed: 'false', weight: 0.273312} },
+{ data: { source: 'MANF', target: 'LASP1', directed: 'false', weight: 0.5080279999999999} },
+{ data: { source: 'DISC1', target: 'BORCS6', directed: 'false', weight: 0.46274899999999997} },
+{ data: { source: 'BORCS6', target: 'CEP250', directed: 'false', weight: 0.583225} }]},
 
 style: [
     {
@@ -91,7 +94,7 @@ cy.on('tap', 'node', function(){
         <br>
         Connection to SARS-COV2: 
         <br>
-        1 interacting protein(s): <br>GDF15
+        1 interacting protein(s): <br>CEP250
     </section>
     </body>
     </html>

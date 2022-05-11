@@ -30,17 +30,18 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'TIA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P31483" }},
-{data: { id: 'ALDH5A1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P51649" }},
-{data: { id: 'ADK', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P55263" }},
-{data: { id: 'PCBP3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P57721" }},
-{data: { id: 'DSTN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P60981" }}], 
- edges: [{ data: { source: 'PCBP3', target: 'TIA1', directed: 'false', weight: 0.03465530000000001} },
-{ data: { source: 'ALDH5A1', target: 'ADK', directed: 'false', weight: 0.2264} },
-{ data: { source: 'ALDH5A1', target: 'DSTN', directed: 'false', weight: 0.8849049999999999} },
-{ data: { source: 'ALDH5A1', target: 'TIA1', directed: 'false', weight: 0.414994} },
-{ data: { source: 'TIA1', target: 'DSTN', directed: 'false', weight: 0.0255212} },
-{ data: { source: 'ADK', target: 'DSTN', directed: 'false', weight: 0.0448125} }]},
+elements:{nodes: [{data: { id: 'FAM161B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96MY7" }},
+{data: { id: 'FKBP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P26885" }},
+{data: { id: 'SOD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P00441" }},
+{data: { id: 'ADI1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BV57" }},
+{data: { id: 'TRABD', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q9H4I3" }},
+{data: { id: 'NME2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P22392" }}], 
+ edges: [{ data: { source: 'SOD1', target: 'NME2', directed: 'false', weight: 0.924004} },
+{ data: { source: 'SOD1', target: 'FKBP2', directed: 'false', weight: 0.27879899999999996} },
+{ data: { source: 'SOD1', target: 'FAM161B', directed: 'false', weight: 0.31805900000000004} },
+{ data: { source: 'TRABD', target: 'NME2', directed: 'false', weight: 0.984411} },
+{ data: { source: 'NME2', target: 'FKBP2', directed: 'false', weight: 0.9877319999999999} },
+{ data: { source: 'ADI1', target: 'FKBP2', directed: 'false', weight: 0.8772700000000001} }]},
 
 style: [
     {

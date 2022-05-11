@@ -30,16 +30,20 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'DDI2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5TDH0" }},
-{data: { id: 'LZIC', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q8WZA0" }},
-{data: { id: 'CAST', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P20810" }},
-{data: { id: 'LIX1L', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q8IVB5" }},
-{data: { id: 'CAPNS2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96L46" }}], 
- edges: [{ data: { source: 'LIX1L', target: 'CAPNS2', directed: 'false', weight: 0.97326} },
-{ data: { source: 'LIX1L', target: 'CAST', directed: 'false', weight: 0.11473699999999999} },
-{ data: { source: 'DDI2', target: 'LZIC', directed: 'false', weight: 0.655511} },
-{ data: { source: 'LZIC', target: 'CAST', directed: 'false', weight: 0.595109} },
-{ data: { source: 'CAST', target: 'CAPNS2', directed: 'false', weight: 0.723154} }]},
+elements:{nodes: [{data: { id: 'SUV39H2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H5I1" }},
+{data: { id: 'CBX1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P83916" }},
+{data: { id: 'RLF', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P51460" }},
+{data: { id: 'CBX3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13185" }},
+{data: { id: 'CENPV', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q7Z7K6" }},
+{data: { id: 'MDC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14676" }}], 
+ edges: [{ data: { source: 'CBX1', target: 'CENPV', directed: 'false', weight: 0.578715} },
+{ data: { source: 'CBX1', target: 'CBX3', directed: 'false', weight: 0.5924659999999999} },
+{ data: { source: 'CBX1', target: 'RLF', directed: 'false', weight: 0.47709399999999996} },
+{ data: { source: 'CBX1', target: 'MDC1', directed: 'false', weight: 0.403461} },
+{ data: { source: 'MDC1', target: 'CBX3', directed: 'false', weight: 0.100579} },
+{ data: { source: 'SUV39H2', target: 'CBX3', directed: 'false', weight: 0.394847} },
+{ data: { source: 'RLF', target: 'CBX3', directed: 'false', weight: 0.11585699999999999} },
+{ data: { source: 'CBX3', target: 'CENPV', directed: 'false', weight: 0.0754692} }]},
 
 style: [
     {

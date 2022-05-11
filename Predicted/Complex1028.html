@@ -30,15 +30,20 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'PDIA3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P30101" }},
-{data: { id: 'MNS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NEH6" }},
-{data: { id: 'CALR', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P27797" }},
-{data: { id: 'INHA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P05111" }},
-{data: { id: 'BTF3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00478" }}], 
- edges: [{ data: { source: 'PDIA3', target: 'INHA', directed: 'false', weight: 0.8122729999999999} },
-{ data: { source: 'PDIA3', target: 'MNS1', directed: 'false', weight: 0.310709} },
-{ data: { source: 'CALR', target: 'BTF3', directed: 'false', weight: 0.06986} },
-{ data: { source: 'CALR', target: 'INHA', directed: 'false', weight: 0.6686270000000001} }]},
+elements:{nodes: [{data: { id: 'THOC3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96J01" }},
+{data: { id: 'RBM15', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96T37" }},
+{data: { id: 'ZC3H11A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75152" }},
+{data: { id: 'THOC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96FV9" }},
+{data: { id: 'SF3B3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15393" }},
+{data: { id: 'SNRPB2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P08579" }}], 
+ edges: [{ data: { source: 'THOC3', target: 'THOC1', directed: 'false', weight: 0.9998540000000001} },
+{ data: { source: 'THOC3', target: 'ZC3H11A', directed: 'false', weight: 0.5903510000000001} },
+{ data: { source: 'THOC3', target: 'RBM15', directed: 'false', weight: 0.464397} },
+{ data: { source: 'RBM15', target: 'THOC1', directed: 'false', weight: 0.882602} },
+{ data: { source: 'RBM15', target: 'SNRPB2', directed: 'false', weight: 0.237249} },
+{ data: { source: 'RBM15', target: 'ZC3H11A', directed: 'false', weight: 0.127887} },
+{ data: { source: 'ZC3H11A', target: 'THOC1', directed: 'false', weight: 0.992101} },
+{ data: { source: 'SF3B3', target: 'SNRPB2', directed: 'false', weight: 0.9960389999999999} }]},
 
 style: [
     {

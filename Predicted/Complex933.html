@@ -30,16 +30,19 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'RNMT', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43148" }},
-{data: { id: 'TOMM34', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15785" }},
-{data: { id: 'TARS', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P26639" }},
-{data: { id: 'MYL9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P24844" }},
-{data: { id: 'EPS8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q12929" }}], 
- edges: [{ data: { source: 'MYL9', target: 'TARS', directed: 'false', weight: 0.47470100000000004} },
-{ data: { source: 'TOMM34', target: 'EPS8', directed: 'false', weight: 0.474213} },
-{ data: { source: 'TOMM34', target: 'TARS', directed: 'false', weight: 0.754758} },
-{ data: { source: 'TOMM34', target: 'RNMT', directed: 'false', weight: 0.45808699999999997} },
-{ data: { source: 'TARS', target: 'EPS8', directed: 'false', weight: 0.7746069999999999} }]},
+elements:{nodes: [{data: { id: 'MAT2A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P31153" }},
+{data: { id: 'HNRNPH1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P31943" }},
+{data: { id: 'MAT1A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q00266" }},
+{data: { id: 'HNRNPF', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P52597" }},
+{data: { id: 'MAT2B', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9NZL9" }},
+{data: { id: 'RHOC', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P08134" }}], 
+ edges: [{ data: { source: 'HNRNPH1', target: 'HNRNPF', directed: 'false', weight: 0.9759459999999999} },
+{ data: { source: 'HNRNPH1', target: 'MAT2A', directed: 'false', weight: 0.779637} },
+{ data: { source: 'MAT1A', target: 'MAT2A', directed: 'false', weight: 0.853417} },
+{ data: { source: 'MAT1A', target: 'MAT2B', directed: 'false', weight: 0.7502909999999999} },
+{ data: { source: 'MAT1A', target: 'RHOC', directed: 'false', weight: 0.29022} },
+{ data: { source: 'MAT2B', target: 'MAT2A', directed: 'false', weight: 0.878325} },
+{ data: { source: 'MAT2A', target: 'HNRNPF', directed: 'false', weight: 0.755949} }]},
 
 style: [
     {
@@ -88,6 +91,11 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.37500
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>MAT2B
     </section>
     </body>
     </html>

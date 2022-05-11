@@ -30,16 +30,19 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'ZNF140', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P52738" }},
-{data: { id: 'WDR83', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BRX9" }},
-{data: { id: 'DHX35', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H5Z1" }},
-{data: { id: 'CWC15', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9P013" }},
-{data: { id: 'ZBTB49', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6ZSB9" }}], 
- edges: [{ data: { source: 'WDR83', target: 'DHX35', directed: 'false', weight: 0.962182} },
-{ data: { source: 'WDR83', target: 'ZNF140', directed: 'false', weight: 0.973989} },
-{ data: { source: 'WDR83', target: 'ZBTB49', directed: 'false', weight: 0.867553} },
-{ data: { source: 'ZNF140', target: 'ZBTB49', directed: 'false', weight: 0.171414} },
-{ data: { source: 'DHX35', target: 'CWC15', directed: 'false', weight: 0.27255} }]},
+elements:{nodes: [{data: { id: 'HAAO', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P46952" }},
+{data: { id: 'UBQLN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UMX0" }},
+{data: { id: 'IDH1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75874" }},
+{data: { id: 'PHGDH', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43175" }},
+{data: { id: 'UBQLN2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UHD9" }},
+{data: { id: 'IDH2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P48735" }}], 
+ edges: [{ data: { source: 'UBQLN2', target: 'UBQLN1', directed: 'false', weight: 0.941853} },
+{ data: { source: 'UBQLN2', target: 'HAAO', directed: 'false', weight: 0.6365069999999999} },
+{ data: { source: 'UBQLN2', target: 'IDH2', directed: 'false', weight: 0.451531} },
+{ data: { source: 'HAAO', target: 'IDH1', directed: 'false', weight: 0.572655} },
+{ data: { source: 'HAAO', target: 'IDH2', directed: 'false', weight: 0.5662020000000001} },
+{ data: { source: 'UBQLN1', target: 'PHGDH', directed: 'false', weight: 0.8143600000000001} },
+{ data: { source: 'IDH1', target: 'IDH2', directed: 'false', weight: 0.822733} }]},
 
 style: [
     {

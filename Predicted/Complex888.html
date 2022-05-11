@@ -30,16 +30,23 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'SFXN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H9B4" }},
-{data: { id: 'WDR46', score: 4, type: '', href: "https://www.uniprot.org/uniprot/O15213" }},
-{data: { id: 'RAP1B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P61224" }},
-{data: { id: 'FARSA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y285" }},
-{data: { id: 'EPHA7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15375" }}], 
- edges: [{ data: { source: 'SFXN1', target: 'FARSA', directed: 'false', weight: 0.265216} },
-{ data: { source: 'SFXN1', target: 'EPHA7', directed: 'false', weight: 0.0952728} },
-{ data: { source: 'RAP1B', target: 'FARSA', directed: 'false', weight: 0.33276100000000003} },
-{ data: { source: 'FARSA', target: 'EPHA7', directed: 'false', weight: 0.37827} },
-{ data: { source: 'FARSA', target: 'WDR46', directed: 'false', weight: 0.267967} }]},
+elements:{nodes: [{data: { id: 'UBQLN4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NRR5" }},
+{data: { id: 'UBQLN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UMX0" }},
+{data: { id: 'PHGDH', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43175" }},
+{data: { id: 'RIDA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P52758" }},
+{data: { id: 'GLRX', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P35754" }},
+{data: { id: 'RAD23B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P54727" }},
+{data: { id: 'HIBADH', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P31937" }}], 
+ edges: [{ data: { source: 'UBQLN4', target: 'RAD23B', directed: 'false', weight: 0.855642} },
+{ data: { source: 'UBQLN4', target: 'UBQLN1', directed: 'false', weight: 0.0567064} },
+{ data: { source: 'UBQLN4', target: 'PHGDH', directed: 'false', weight: 0.866591} },
+{ data: { source: 'UBQLN1', target: 'RAD23B', directed: 'false', weight: 0.9829969999999999} },
+{ data: { source: 'UBQLN1', target: 'PHGDH', directed: 'false', weight: 0.8143600000000001} },
+{ data: { source: 'UBQLN1', target: 'RIDA', directed: 'false', weight: 0.448805} },
+{ data: { source: 'PHGDH', target: 'RAD23B', directed: 'false', weight: 0.0121182} },
+{ data: { source: 'RIDA', target: 'RAD23B', directed: 'false', weight: 0.108372} },
+{ data: { source: 'RIDA', target: 'GLRX', directed: 'false', weight: 0.41782700000000006} },
+{ data: { source: 'RIDA', target: 'HIBADH', directed: 'false', weight: 0.547449} }]},
 
 style: [
     {

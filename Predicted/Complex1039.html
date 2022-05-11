@@ -30,15 +30,22 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'STMN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P16949" }},
-{data: { id: 'CDC42', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P60953" }},
-{data: { id: 'CDC42SE2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NRR3" }},
-{data: { id: 'ENSA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43768" }},
-{data: { id: 'ANXA3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P12429" }}], 
- edges: [{ data: { source: 'STMN1', target: 'CDC42', directed: 'false', weight: 0.872324} },
-{ data: { source: 'STMN1', target: 'ANXA3', directed: 'false', weight: 0.4094} },
-{ data: { source: 'CDC42', target: 'CDC42SE2', directed: 'false', weight: 0.47453} },
-{ data: { source: 'CDC42', target: 'ENSA', directed: 'false', weight: 0.454462} }]},
+elements:{nodes: [{data: { id: 'RPL10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P27635" }},
+{data: { id: 'PUM3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15397" }},
+{data: { id: 'BAZ1B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UIG0" }},
+{data: { id: 'MAK16', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9BXY0" }},
+{data: { id: 'RPL11', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62913" }},
+{data: { id: 'FTSJ3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IY81" }},
+{data: { id: 'RRS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15050" }}], 
+ edges: [{ data: { source: 'RPL10', target: 'RPL11', directed: 'false', weight: 1.0} },
+{ data: { source: 'RPL10', target: 'BAZ1B', directed: 'false', weight: 0.8605510000000001} },
+{ data: { source: 'PUM3', target: 'RPL11', directed: 'false', weight: 0.8556030000000001} },
+{ data: { source: 'PUM3', target: 'RRS1', directed: 'false', weight: 0.998236} },
+{ data: { source: 'PUM3', target: 'FTSJ3', directed: 'false', weight: 0.9982840000000001} },
+{ data: { source: 'BAZ1B', target: 'RPL11', directed: 'false', weight: 0.13281099999999998} },
+{ data: { source: 'MAK16', target: 'RRS1', directed: 'false', weight: 0.145739} },
+{ data: { source: 'MAK16', target: 'FTSJ3', directed: 'false', weight: 0.863884} },
+{ data: { source: 'FTSJ3', target: 'RRS1', directed: 'false', weight: 0.9999} }]},
 
 style: [
     {

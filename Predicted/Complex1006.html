@@ -30,15 +30,18 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'NIF3L1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9GZT8" }},
-{data: { id: 'HNRNPD', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14103" }},
-{data: { id: 'ROBO1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y6N7" }},
-{data: { id: 'SFPQ', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P23246" }},
-{data: { id: 'PFAS', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15067" }}], 
- edges: [{ data: { source: 'NIF3L1', target: 'PFAS', directed: 'false', weight: 0.614124} },
-{ data: { source: 'ROBO1', target: 'PFAS', directed: 'false', weight: 0.277906} },
-{ data: { source: 'HNRNPD', target: 'SFPQ', directed: 'false', weight: 0.650316} },
-{ data: { source: 'SFPQ', target: 'PFAS', directed: 'false', weight: 0.584696} }]},
+elements:{nodes: [{data: { id: 'RBM25', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49756" }},
+{data: { id: 'SLC4A1AP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BWU0" }},
+{data: { id: 'PRKRIP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H875" }},
+{data: { id: 'SF3B5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BWJ5" }},
+{data: { id: 'RBM11', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P57052" }},
+{data: { id: 'SNRPA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P09661" }}], 
+ edges: [{ data: { source: 'PRKRIP1', target: 'SNRPA1', directed: 'false', weight: 0.940148} },
+{ data: { source: 'PRKRIP1', target: 'SLC4A1AP', directed: 'false', weight: 0.0445491} },
+{ data: { source: 'SNRPA1', target: 'SF3B5', directed: 'false', weight: 0.9870389999999999} },
+{ data: { source: 'SNRPA1', target: 'RBM25', directed: 'false', weight: 0.7885850000000001} },
+{ data: { source: 'SNRPA1', target: 'SLC4A1AP', directed: 'false', weight: 0.775396} },
+{ data: { source: 'SLC4A1AP', target: 'RBM11', directed: 'false', weight: 0.412743} }]},
 
 style: [
     {

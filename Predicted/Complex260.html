@@ -30,25 +30,18 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'NUFIP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UHK0" }},
-{data: { id: 'GNG3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P63215" }},
-{data: { id: 'ZNHIT3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15649" }},
-{data: { id: 'NCALD', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P61601" }},
-{data: { id: 'RAB14', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P61106" }}], 
- edges: [{ data: { source: 'NUFIP1', target: 'ZNHIT3', directed: 'false', weight: 0.98654} },
-{ data: { source: 'NUFIP1', target: 'GNG3', directed: 'false', weight: 0.7495539999999999} },
-{ data: { source: 'NUFIP1', target: 'NCALD', directed: 'false', weight: 0.51883} },
-{ data: { source: 'NUFIP1', target: 'RAB14', directed: 'false', weight: 0.19361199999999998} },
-{ data: { source: 'GNG3', target: 'ZNHIT3', directed: 'false', weight: 0.140692} },
-{ data: { source: 'NCALD', target: 'RAB14', directed: 'false', weight: 0.41561800000000004} }]},
+elements:{nodes: [{data: { id: 'TIMM9', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9Y5J7" }},
+{data: { id: 'TIMM8A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60220" }},
+{data: { id: 'TIMM10', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P62072" }}], 
+ edges: [{ data: { source: 'TIMM9', target: 'TIMM10', directed: 'false', weight: 0.975943} },
+{ data: { source: 'TIMM9', target: 'TIMM8A', directed: 'false', weight: 0.630654} },
+{ data: { source: 'TIMM8A', target: 'TIMM10', directed: 'false', weight: 0.15279} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 10,
-		'width':'10',
-		'height': '10',	
+		'font-size': 30,
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}                                
@@ -60,7 +53,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
 								'line-color': 'blue',
 								'opacity': 0.5
 							}
@@ -69,10 +62,7 @@ style: [
 
 });
 cy.layout({
-    'name': 'fcose',
-		'animate':false,
-	'nodeDimensionsIncludeLabels':true,
-	'nodeSeparation': 1000
+    name: 'circle'
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -93,7 +83,7 @@ cy.on('tap', 'node', function(){
         <br>
         Connection to SARS-COV2: 
         <br>
-        1 interacting protein(s): <br>RAB14
+        2 interacting protein(s): <br>TIMM9 TIMM10
     </section>
     </body>
     </html>

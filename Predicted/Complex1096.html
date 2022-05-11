@@ -30,13 +30,14 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'RBSN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H1K0" }},
-{data: { id: 'DTD2', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q96FN9" }},
-{data: { id: 'ACOT13', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NPJ3" }},
-{data: { id: 'VPS45', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NRW7" }}], 
- edges: [{ data: { source: 'RBSN', target: 'VPS45', directed: 'false', weight: 0.679966} },
-{ data: { source: 'DTD2', target: 'VPS45', directed: 'false', weight: 0.27837199999999995} },
-{ data: { source: 'ACOT13', target: 'VPS45', directed: 'false', weight: 0.416839} }]},
+elements:{nodes: [{data: { id: 'PLXNA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UIW2" }},
+{data: { id: 'ITGA8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P53708" }},
+{data: { id: 'PTPRU', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92729" }},
+{data: { id: 'FOXRED2', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q8IWF2" }}], 
+ edges: [{ data: { source: 'PLXNA1', target: 'PTPRU', directed: 'false', weight: 0.48453900000000005} },
+{ data: { source: 'PLXNA1', target: 'FOXRED2', directed: 'false', weight: 0.28491500000000003} },
+{ data: { source: 'PLXNA1', target: 'ITGA8', directed: 'false', weight: 0.184863} },
+{ data: { source: 'ITGA8', target: 'PTPRU', directed: 'false', weight: 0.163396} }]},
 
 style: [
     {
@@ -85,6 +86,11 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.30000
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>FOXRED2
     </section>
     </body>
     </html>

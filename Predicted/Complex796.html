@@ -30,19 +30,16 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'EXOSC2', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q13868" }},
-{data: { id: 'EXOSC8', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q96B26" }},
-{data: { id: 'FARSA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y285" }},
-{data: { id: 'EXOSC9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q06265" }},
-{data: { id: 'DIS3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y2L1" }},
-{data: { id: 'FARSB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NSD9" }}], 
- edges: [{ data: { source: 'EXOSC2', target: 'EXOSC8', directed: 'false', weight: 0.999008} },
-{ data: { source: 'EXOSC2', target: 'DIS3', directed: 'false', weight: 0.9980969999999999} },
-{ data: { source: 'EXOSC2', target: 'EXOSC9', directed: 'false', weight: 0.995849} },
-{ data: { source: 'FARSA', target: 'FARSB', directed: 'false', weight: 0.892999} },
-{ data: { source: 'EXOSC9', target: 'EXOSC8', directed: 'false', weight: 0.999765} },
-{ data: { source: 'EXOSC9', target: 'DIS3', directed: 'false', weight: 0.9759120000000001} },
-{ data: { source: 'DIS3', target: 'FARSB', directed: 'false', weight: 0.7892239999999999} }]},
+elements:{nodes: [{data: { id: 'NKRF', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15226" }},
+{data: { id: 'BCCIP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9P287" }},
+{data: { id: 'WDR36', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NI36" }},
+{data: { id: 'TENT2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6PIY7" }},
+{data: { id: 'PWP2', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q15269" }}], 
+ edges: [{ data: { source: 'NKRF', target: 'WDR36', directed: 'false', weight: 0.129685} },
+{ data: { source: 'BCCIP', target: 'WDR36', directed: 'false', weight: 0.9457270000000001} },
+{ data: { source: 'BCCIP', target: 'PWP2', directed: 'false', weight: 0.32501399999999997} },
+{ data: { source: 'BCCIP', target: 'TENT2', directed: 'false', weight: 0.982785} },
+{ data: { source: 'WDR36', target: 'PWP2', directed: 'false', weight: 0.999934} }]},
 
 style: [
     {
@@ -91,11 +88,6 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.37500
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        2 interacting protein(s): <br>EXOSC2 EXOSC8
     </section>
     </body>
     </html>

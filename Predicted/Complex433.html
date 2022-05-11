@@ -30,25 +30,14 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'GNA12', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q03113" }},
-{data: { id: 'GNB2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62879" }},
-{data: { id: 'GNB1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P62873" }},
-{data: { id: 'GNAQ', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P50148" }},
-{data: { id: 'TRO', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q12816" }},
-{data: { id: 'GNAS', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95467" }},
-{data: { id: 'GNAL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P38405" }}], 
- edges: [{ data: { source: 'GNA12', target: 'GNAS', directed: 'false', weight: 0.29581399999999997} },
-{ data: { source: 'GNA12', target: 'GNAL', directed: 'false', weight: 0.151455} },
-{ data: { source: 'GNA12', target: 'TRO', directed: 'false', weight: 0.11473699999999999} },
-{ data: { source: 'GNB2', target: 'GNB1', directed: 'false', weight: 0.196802} },
-{ data: { source: 'GNB2', target: 'GNAS', directed: 'false', weight: 0.817196} },
-{ data: { source: 'GNB2', target: 'GNAL', directed: 'false', weight: 0.163304} },
-{ data: { source: 'GNB2', target: 'GNAQ', directed: 'false', weight: 0.825166} },
-{ data: { source: 'GNB2', target: 'TRO', directed: 'false', weight: 0.0692291} },
-{ data: { source: 'GNB1', target: 'GNAQ', directed: 'false', weight: 0.9383940000000001} },
-{ data: { source: 'TRO', target: 'GNAS', directed: 'false', weight: 0.418645} },
-{ data: { source: 'TRO', target: 'GNAL', directed: 'false', weight: 0.10064} },
-{ data: { source: 'GNAS', target: 'GNAL', directed: 'false', weight: 0.939933} }]},
+elements:{nodes: [{data: { id: 'PDHA2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P29803" }},
+{data: { id: 'SDHAF2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NX18" }},
+{data: { id: 'SDHB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P21912" }},
+{data: { id: 'SDHA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P31040" }}], 
+ edges: [{ data: { source: 'SDHAF2', target: 'SDHA', directed: 'false', weight: 0.623471} },
+{ data: { source: 'SDHB', target: 'SDHA', directed: 'false', weight: 0.996382} },
+{ data: { source: 'SDHB', target: 'PDHA2', directed: 'false', weight: 0.576159} },
+{ data: { source: 'SDHA', target: 'PDHA2', directed: 'false', weight: 0.416279} }]},
 
 style: [
     {
@@ -97,11 +86,6 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.38750
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>GNB1
     </section>
     </body>
     </html>

@@ -30,13 +30,14 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'POLR1C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15160" }},
-{data: { id: 'POLR3D', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P05423" }},
-{data: { id: 'UXT', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UBK9" }},
-{data: { id: 'POLR3E', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NVU0" }}], 
- edges: [{ data: { source: 'UXT', target: 'POLR3E', directed: 'false', weight: 0.150085} },
-{ data: { source: 'POLR1C', target: 'POLR3D', directed: 'false', weight: 0.9997090000000001} },
-{ data: { source: 'POLR3D', target: 'POLR3E', directed: 'false', weight: 0.980567} }]},
+elements:{nodes: [{data: { id: 'ECSIT', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9BQ95" }},
+{data: { id: 'NDUFB11', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NX14" }},
+{data: { id: 'NDUFB6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95139" }},
+{data: { id: 'ACAD9', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9H845" }}], 
+ edges: [{ data: { source: 'NDUFB6', target: 'ECSIT', directed: 'false', weight: 0.167849} },
+{ data: { source: 'NDUFB6', target: 'NDUFB11', directed: 'false', weight: 0.25848000000000004} },
+{ data: { source: 'ECSIT', target: 'ACAD9', directed: 'false', weight: 0.979089} },
+{ data: { source: 'ECSIT', target: 'NDUFB11', directed: 'false', weight: 0.121121} }]},
 
 style: [
     {
@@ -85,6 +86,11 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.30000
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        2 interacting protein(s): <br>ECSIT ACAD9
     </section>
     </body>
     </html>

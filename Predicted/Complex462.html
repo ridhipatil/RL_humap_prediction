@@ -30,18 +30,17 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'MAD1L1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y6D9" }},
-{data: { id: 'EPM2AIP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q7L775" }},
-{data: { id: 'MAD2L1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13257" }},
-{data: { id: 'BAG5', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9UL15" }},
-{data: { id: 'MAD2L1BP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15013" }}], 
- edges: [{ data: { source: 'MAD1L1', target: 'MAD2L1', directed: 'false', weight: 0.64625} },
-{ data: { source: 'MAD1L1', target: 'MAD2L1BP', directed: 'false', weight: 0.715875} },
-{ data: { source: 'MAD1L1', target: 'BAG5', directed: 'false', weight: 0.806249} },
-{ data: { source: 'MAD1L1', target: 'EPM2AIP1', directed: 'false', weight: 0.133179} },
-{ data: { source: 'MAD2L1BP', target: 'MAD2L1', directed: 'false', weight: 0.941802} },
-{ data: { source: 'MAD2L1BP', target: 'EPM2AIP1', directed: 'false', weight: 0.144297} },
-{ data: { source: 'EPM2AIP1', target: 'MAD2L1', directed: 'false', weight: 0.579746} }]},
+elements:{nodes: [{data: { id: 'FARP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y4F1" }},
+{data: { id: 'BRD4', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/O60885" }},
+{data: { id: 'FAM90A1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86YD7" }},
+{data: { id: 'BRD2', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P25440" }},
+{data: { id: 'MTMR14', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NCE2" }}], 
+ edges: [{ data: { source: 'FARP1', target: 'BRD2', directed: 'false', weight: 0.8587049999999999} },
+{ data: { source: 'FAM90A1', target: 'BRD2', directed: 'false', weight: 0.97585} },
+{ data: { source: 'FAM90A1', target: 'MTMR14', directed: 'false', weight: 0.956266} },
+{ data: { source: 'FAM90A1', target: 'BRD4', directed: 'false', weight: 0.952197} },
+{ data: { source: 'BRD2', target: 'BRD4', directed: 'false', weight: 0.253703} },
+{ data: { source: 'BRD4', target: 'MTMR14', directed: 'false', weight: 0.123797} }]},
 
 style: [
     {
@@ -94,7 +93,7 @@ cy.on('tap', 'node', function(){
         <br>
         Connection to SARS-COV2: 
         <br>
-        1 interacting protein(s): <br>BAG5
+        2 interacting protein(s): <br>BRD4 BRD2
     </section>
     </body>
     </html>

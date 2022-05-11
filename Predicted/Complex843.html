@@ -30,16 +30,11 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'ITGA3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P26006" }},
-{data: { id: 'SLC1A1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P43005" }},
-{data: { id: 'ITGB1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P05556" }},
-{data: { id: 'SLC3A2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P08195" }},
-{data: { id: 'ITGA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P56199" }}], 
- edges: [{ data: { source: 'SLC3A2', target: 'ITGB1', directed: 'false', weight: 0.950625} },
-{ data: { source: 'ITGA1', target: 'ITGB1', directed: 'false', weight: 0.9406399999999999} },
-{ data: { source: 'ITGA1', target: 'ITGA3', directed: 'false', weight: 0.239852} },
-{ data: { source: 'ITGA1', target: 'SLC1A1', directed: 'false', weight: 0.133456} },
-{ data: { source: 'ITGA3', target: 'ITGB1', directed: 'false', weight: 0.948802} }]},
+elements:{nodes: [{data: { id: 'RAB32', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13637" }},
+{data: { id: 'SHROOM3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TF72" }},
+{data: { id: 'RAB38', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P57729" }}], 
+ edges: [{ data: { source: 'RAB32', target: 'RAB38', directed: 'false', weight: 0.984345} },
+{ data: { source: 'RAB32', target: 'SHROOM3', directed: 'false', weight: 0.591491} }]},
 
 style: [
     {
@@ -88,11 +83,6 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.37500
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>ITGB1
     </section>
     </body>
     </html>

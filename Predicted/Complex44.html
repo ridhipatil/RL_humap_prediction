@@ -30,20 +30,32 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'TMEFF1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IYR6" }},
-{data: { id: 'BCS1L', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9Y276" }},
-{data: { id: 'DHRS2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13268" }},
-{data: { id: 'FGF2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P09038" }},
-{data: { id: 'STEAP3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q658P3" }}], 
- edges: [{ data: { source: 'TMEFF1', target: 'FGF2', directed: 'false', weight: 0.976686} },
-{ data: { source: 'TMEFF1', target: 'DHRS2', directed: 'false', weight: 0.8764430000000001} },
-{ data: { source: 'TMEFF1', target: 'BCS1L', directed: 'false', weight: 0.736571} },
-{ data: { source: 'TMEFF1', target: 'STEAP3', directed: 'false', weight: 0.728106} },
-{ data: { source: 'FGF2', target: 'BCS1L', directed: 'false', weight: 0.151455} },
-{ data: { source: 'FGF2', target: 'DHRS2', directed: 'false', weight: 0.151455} },
-{ data: { source: 'FGF2', target: 'STEAP3', directed: 'false', weight: 0.11730499999999999} },
-{ data: { source: 'STEAP3', target: 'DHRS2', directed: 'false', weight: 0.102922} },
-{ data: { source: 'BCS1L', target: 'DHRS2', directed: 'false', weight: 0.133456} }]},
+elements:{nodes: [{data: { id: 'CASK', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O14936" }},
+{data: { id: 'APBA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q02410" }},
+{data: { id: 'MPP6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99547" }},
+{data: { id: 'LIN7C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NUP9" }},
+{data: { id: 'MPDZ', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75970" }},
+{data: { id: 'ABLIM2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6H8Q1" }},
+{data: { id: 'MPP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14168" }}], 
+ edges: [{ data: { source: 'CASK', target: 'LIN7C', directed: 'false', weight: 0.996451} },
+{ data: { source: 'CASK', target: 'MPP6', directed: 'false', weight: 0.168469} },
+{ data: { source: 'CASK', target: 'ABLIM2', directed: 'false', weight: 0.151455} },
+{ data: { source: 'CASK', target: 'MPP2', directed: 'false', weight: 0.151455} },
+{ data: { source: 'CASK', target: 'APBA1', directed: 'false', weight: 0.151455} },
+{ data: { source: 'CASK', target: 'MPDZ', directed: 'false', weight: 0.147307} },
+{ data: { source: 'APBA1', target: 'LIN7C', directed: 'false', weight: 0.966167} },
+{ data: { source: 'APBA1', target: 'MPP6', directed: 'false', weight: 0.12378900000000001} },
+{ data: { source: 'APBA1', target: 'ABLIM2', directed: 'false', weight: 0.171414} },
+{ data: { source: 'APBA1', target: 'MPP2', directed: 'false', weight: 0.171414} },
+{ data: { source: 'APBA1', target: 'MPDZ', directed: 'false', weight: 0.151455} },
+{ data: { source: 'MPP6', target: 'LIN7C', directed: 'false', weight: 0.9996860000000001} },
+{ data: { source: 'MPP6', target: 'ABLIM2', directed: 'false', weight: 0.12378900000000001} },
+{ data: { source: 'MPP6', target: 'MPP2', directed: 'false', weight: 0.12378900000000001} },
+{ data: { source: 'MPDZ', target: 'LIN7C', directed: 'false', weight: 0.832593} },
+{ data: { source: 'MPDZ', target: 'ABLIM2', directed: 'false', weight: 0.151455} },
+{ data: { source: 'LIN7C', target: 'ABLIM2', directed: 'false', weight: 0.973673} },
+{ data: { source: 'LIN7C', target: 'MPP2', directed: 'false', weight: 0.8433299999999999} },
+{ data: { source: 'ABLIM2', target: 'MPP2', directed: 'false', weight: 0.171414} }]},
 
 style: [
     {
@@ -87,11 +99,6 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.39688
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>BCS1L
     </section>
     </body>
     </html>

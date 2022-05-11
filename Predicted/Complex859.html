@@ -30,20 +30,16 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'RNF10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N5U6" }},
-{data: { id: 'NUDC', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y266" }},
-{data: { id: 'RNF25', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96BH1" }},
-{data: { id: 'CD2AP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y5K6" }},
-{data: { id: 'ERC1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q8IUD2" }},
-{data: { id: 'ERC2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15083" }}], 
- edges: [{ data: { source: 'RNF10', target: 'CD2AP', directed: 'false', weight: 0.564099} },
-{ data: { source: 'RNF10', target: 'RNF25', directed: 'false', weight: 0.151455} },
-{ data: { source: 'RNF10', target: 'ERC2', directed: 'false', weight: 0.144297} },
-{ data: { source: 'RNF10', target: 'ERC1', directed: 'false', weight: 0.0856923} },
-{ data: { source: 'NUDC', target: 'CD2AP', directed: 'false', weight: 0.9399790000000001} },
-{ data: { source: 'CD2AP', target: 'ERC2', directed: 'false', weight: 0.5} },
-{ data: { source: 'CD2AP', target: 'ERC1', directed: 'false', weight: 0.288825} },
-{ data: { source: 'ERC1', target: 'ERC2', directed: 'false', weight: 0.09888419999999999} }]},
+elements:{nodes: [{data: { id: 'HK1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P19367" }},
+{data: { id: 'ASPDH', score: 3, type: '', href: "https://www.uniprot.org/uniprot/A6ND91" }},
+{data: { id: 'ATP6V1E1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P36543" }},
+{data: { id: 'RAB8A', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P61006" }},
+{data: { id: 'SPATC1L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H0A9" }}], 
+ edges: [{ data: { source: 'HK1', target: 'ATP6V1E1', directed: 'false', weight: 0.512648} },
+{ data: { source: 'HK1', target: 'RAB8A', directed: 'false', weight: 0.00791552} },
+{ data: { source: 'HK1', target: 'ASPDH', directed: 'false', weight: 0.30816} },
+{ data: { source: 'ASPDH', target: 'RAB8A', directed: 'false', weight: 0.664029} },
+{ data: { source: 'ASPDH', target: 'SPATC1L', directed: 'false', weight: 0.265727} }]},
 
 style: [
     {
@@ -96,7 +92,7 @@ cy.on('tap', 'node', function(){
         <br>
         Connection to SARS-COV2: 
         <br>
-        1 interacting protein(s): <br>ERC1
+        1 interacting protein(s): <br>RAB8A
     </section>
     </body>
     </html>

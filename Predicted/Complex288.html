@@ -30,12 +30,12 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'PDK1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15530" }},
-{data: { id: 'PDK3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15120" }},
-{data: { id: 'PDK2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15119" }}], 
- edges: [{ data: { source: 'PDK1', target: 'PDK2', directed: 'false', weight: 0.994239} },
-{ data: { source: 'PDK1', target: 'PDK3', directed: 'false', weight: 0.987559} },
-{ data: { source: 'PDK3', target: 'PDK2', directed: 'false', weight: 0.318209} }]},
+elements:{nodes: [{data: { id: 'MREG', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N565" }},
+{data: { id: 'CHCHD4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N4Q1" }},
+{data: { id: 'TOR1AIP1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q5JTV8" }}], 
+ edges: [{ data: { source: 'MREG', target: 'TOR1AIP1', directed: 'false', weight: 0.5172439999999999} },
+{ data: { source: 'MREG', target: 'CHCHD4', directed: 'false', weight: 0.109293} },
+{ data: { source: 'CHCHD4', target: 'TOR1AIP1', directed: 'false', weight: 0.710132} }]},
 
 style: [
     {
@@ -79,6 +79,11 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.38750
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>TOR1AIP1
     </section>
     </body>
     </html>

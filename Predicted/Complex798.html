@@ -30,19 +30,20 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'HIST1H1A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q02539" }},
-{data: { id: 'RPL10A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62906" }},
-{data: { id: 'SLC25A6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P12236" }},
-{data: { id: 'SLC25A20', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43772" }},
-{data: { id: 'NSUN2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q08J23" }},
-{data: { id: 'RPS26P11', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q5JNZ5" }}], 
- edges: [{ data: { source: 'HIST1H1A', target: 'RPL10A', directed: 'false', weight: 0.14313199999999998} },
-{ data: { source: 'HIST1H1A', target: 'NSUN2', directed: 'false', weight: 0.0480747} },
-{ data: { source: 'HIST1H1A', target: 'RPS26P11', directed: 'false', weight: 0.749078} },
-{ data: { source: 'SLC25A6', target: 'RPL10A', directed: 'false', weight: 0.599507} },
-{ data: { source: 'SLC25A6', target: 'NSUN2', directed: 'false', weight: 0.0477689} },
-{ data: { source: 'SLC25A6', target: 'SLC25A20', directed: 'false', weight: 0.43174300000000004} },
-{ data: { source: 'RPL10A', target: 'NSUN2', directed: 'false', weight: 0.11783099999999999} }]},
+elements:{nodes: [{data: { id: 'ATP6V1F', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16864" }},
+{data: { id: 'PPM1A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P35813" }},
+{data: { id: 'INPPL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15357" }},
+{data: { id: 'MTHFR', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P42898" }},
+{data: { id: 'ATP6V1H', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UI12" }},
+{data: { id: 'PPM1B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75688" }}], 
+ edges: [{ data: { source: 'ATP6V1F', target: 'ATP6V1H', directed: 'false', weight: 0.9799040000000001} },
+{ data: { source: 'PPM1A', target: 'ATP6V1H', directed: 'false', weight: 0.29123699999999997} },
+{ data: { source: 'PPM1A', target: 'PPM1B', directed: 'false', weight: 0.9583709999999999} },
+{ data: { source: 'PPM1A', target: 'INPPL1', directed: 'false', weight: 0.338806} },
+{ data: { source: 'PPM1A', target: 'MTHFR', directed: 'false', weight: 0.30456500000000003} },
+{ data: { source: 'MTHFR', target: 'PPM1B', directed: 'false', weight: 0.0582045} },
+{ data: { source: 'PPM1B', target: 'ATP6V1H', directed: 'false', weight: 0.480897} },
+{ data: { source: 'PPM1B', target: 'INPPL1', directed: 'false', weight: 0.060491199999999995} }]},
 
 style: [
     {

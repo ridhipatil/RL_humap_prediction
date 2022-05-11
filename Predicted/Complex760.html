@@ -30,16 +30,16 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'C11orf49', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9H6J7" }},
-{data: { id: 'TTLL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95922" }},
-{data: { id: 'TPGS1', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q6ZTW0" }},
-{data: { id: 'LRRC49', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q8IUZ0" }},
-{data: { id: 'TPGS2', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q68CL5" }}], 
- edges: [{ data: { source: 'C11orf49', target: 'LRRC49', directed: 'false', weight: 0.986748} },
-{ data: { source: 'C11orf49', target: 'TPGS2', directed: 'false', weight: 0.677945} },
-{ data: { source: 'TTLL1', target: 'TPGS2', directed: 'false', weight: 0.659048} },
-{ data: { source: 'TTLL1', target: 'TPGS1', directed: 'false', weight: 0.522915} },
-{ data: { source: 'TPGS2', target: 'LRRC49', directed: 'false', weight: 0.28781100000000004} }]},
+elements:{nodes: [{data: { id: 'ITGA3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P26006" }},
+{data: { id: 'SLC3A2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P08195" }},
+{data: { id: 'ITGB1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P05556" }},
+{data: { id: 'ITGA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P56199" }},
+{data: { id: 'SLC1A1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P43005" }}], 
+ edges: [{ data: { source: 'ITGB1', target: 'SLC3A2', directed: 'false', weight: 0.950625} },
+{ data: { source: 'ITGB1', target: 'ITGA3', directed: 'false', weight: 0.948802} },
+{ data: { source: 'ITGB1', target: 'ITGA1', directed: 'false', weight: 0.9406399999999999} },
+{ data: { source: 'SLC1A1', target: 'ITGA1', directed: 'false', weight: 0.133456} },
+{ data: { source: 'ITGA3', target: 'ITGA1', directed: 'false', weight: 0.239852} }]},
 
 style: [
     {
@@ -88,6 +88,11 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.37500
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>ITGB1
     </section>
     </body>
     </html>

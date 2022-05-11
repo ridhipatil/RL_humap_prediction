@@ -30,20 +30,20 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'CORO1B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BR76" }},
-{data: { id: 'ACTN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P12814" }},
-{data: { id: 'PDIA4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P13667" }},
-{data: { id: 'CFL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P23528" }},
-{data: { id: '84747', score: 0, type: '' }},
-{data: { id: 'SPTBN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q01082" }}], 
- edges: [{ data: { source: 'CORO1B', target: 'SPTBN1', directed: 'false', weight: 0.905069} },
-{ data: { source: 'CORO1B', target: 'CFL1', directed: 'false', weight: 0.635586} },
-{ data: { source: 'CORO1B', target: 'ACTN1', directed: 'false', weight: 0.303101} },
-{ data: { source: 'CORO1B', target: '84747', directed: 'false', weight: 0.326388} },
-{ data: { source: 'PDIA4', target: 'ACTN1', directed: 'false', weight: 0.96147} },
-{ data: { source: 'CFL1', target: 'SPTBN1', directed: 'false', weight: 0.350134} },
-{ data: { source: 'CFL1', target: 'ACTN1', directed: 'false', weight: 0.035711400000000004} },
-{ data: { source: 'SPTBN1', target: 'ACTN1', directed: 'false', weight: 0.0628288} }]},
+elements:{nodes: [{data: { id: 'BMP7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P18075" }},
+{data: { id: 'GSTCD', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q8NEC7" }},
+{data: { id: 'TTC13', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q8NBP0" }},
+{data: { id: 'B3GLCT', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6Y288" }},
+{data: { id: 'CHPF', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q8IZ52" }},
+{data: { id: 'POGLUT2', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q6UW63" }}], 
+ edges: [{ data: { source: 'TTC13', target: 'CHPF', directed: 'false', weight: 0.353128} },
+{ data: { source: 'B3GLCT', target: 'BMP7', directed: 'false', weight: 0.116085} },
+{ data: { source: 'B3GLCT', target: 'POGLUT2', directed: 'false', weight: 0.23167} },
+{ data: { source: 'B3GLCT', target: 'CHPF', directed: 'false', weight: 0.126269} },
+{ data: { source: 'BMP7', target: 'GSTCD', directed: 'false', weight: 0.945549} },
+{ data: { source: 'BMP7', target: 'POGLUT2', directed: 'false', weight: 0.308962} },
+{ data: { source: 'BMP7', target: 'CHPF', directed: 'false', weight: 0.110952} },
+{ data: { source: 'CHPF', target: 'POGLUT2', directed: 'false', weight: 0.127646} }]},
 
 style: [
     {
@@ -92,6 +92,11 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.37500
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        2 interacting protein(s): <br>CHPF POGLUT2
     </section>
     </body>
     </html>

@@ -30,17 +30,18 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: '100294276', score: 0, type: '', href: "https://www.ncbi.nlm.nih.gov/protein/XP_002344055.1?report=genpept" }},
-{data: { id: 'HLA-DRB1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P01911" }},
-{data: { id: 'RNF130', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86XS8" }},
-{data: { id: 'TMEM219', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q86XT9" }},
-{data: { id: 'NETO2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NC67" }},
-{data: { id: 'TMEM131L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/A2VDJ0" }}], 
- edges: [{ data: { source: 'RNF130', target: 'NETO2', directed: 'false', weight: 0.40603} },
-{ data: { source: 'NETO2', target: 'HLA-DRB1', directed: 'false', weight: 0.365568} },
-{ data: { source: 'TMEM131L', target: 'HLA-DRB1', directed: 'false', weight: 0.11044200000000001} },
-{ data: { source: 'TMEM131L', target: 'TMEM219', directed: 'false', weight: 0.16145} },
-{ data: { source: 'HLA-DRB1', target: 'TMEM219', directed: 'false', weight: 0.123851} }]},
+elements:{nodes: [{data: { id: 'HMGB1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P09429" }},
+{data: { id: 'SORBS2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O94875" }},
+{data: { id: 'S100A10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P60903" }},
+{data: { id: 'TMOD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P28289" }},
+{data: { id: 'ANXA2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P07355" }},
+{data: { id: 'HMGB2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P26583" }}], 
+ edges: [{ data: { source: 'SORBS2', target: 'TMOD1', directed: 'false', weight: 0.39519699999999996} },
+{ data: { source: 'SORBS2', target: 'ANXA2', directed: 'false', weight: 0.224423} },
+{ data: { source: 'SORBS2', target: 'HMGB2', directed: 'false', weight: 0.12291500000000001} },
+{ data: { source: 'S100A10', target: 'ANXA2', directed: 'false', weight: 0.999605} },
+{ data: { source: 'HMGB2', target: 'ANXA2', directed: 'false', weight: 0.0891191} },
+{ data: { source: 'HMGB2', target: 'HMGB1', directed: 'false', weight: 0.938623} }]},
 
 style: [
     {
