@@ -1,0 +1,118 @@
+
+<!doctype html>
+<html>
+<head>
+<title> EDIL3 NUFIP1 NCALD DGUOK CALB2 SLC12A5 CAMKV</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex135.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'NUFIP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UHK0" }},
+{data: { id: 'CALB2', score: 4, type: '', href: "https://www.uniprot.org/uniprot/P22676" }},
+{data: { id: 'NCALD', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P61601" }},
+{data: { id: 'CAMKV', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NCB2" }},
+{data: { id: 'SLC12A5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H2X9" }},
+{data: { id: 'DGUOK', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16854" }},
+{data: { id: 'EDIL3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43854" }}], 
+ edges: [{ data: { source: 'NUFIP1', target: 'NCALD', directed: 'false', weight: 0.51883} },
+{ data: { source: 'NUFIP1', target: 'CAMKV', directed: 'false', weight: 0.336572} },
+{ data: { source: 'NUFIP1', target: 'CALB2', directed: 'false', weight: 0.31650500000000004} },
+{ data: { source: 'NUFIP1', target: 'EDIL3', directed: 'false', weight: 0.136991} },
+{ data: { source: 'CALB2', target: 'DGUOK', directed: 'false', weight: 0.198416} },
+{ data: { source: 'CALB2', target: 'NCALD', directed: 'false', weight: 0.6375390000000001} },
+{ data: { source: 'CALB2', target: 'CAMKV', directed: 'false', weight: 0.6375390000000001} },
+{ data: { source: 'CALB2', target: 'EDIL3', directed: 'false', weight: 0.390018} },
+{ data: { source: 'NCALD', target: 'DGUOK', directed: 'false', weight: 0.341652} },
+{ data: { source: 'NCALD', target: 'CAMKV', directed: 'false', weight: 0.837815} },
+{ data: { source: 'NCALD', target: 'EDIL3', directed: 'false', weight: 0.345713} },
+{ data: { source: 'CAMKV', target: 'DGUOK', directed: 'false', weight: 0.402617} },
+{ data: { source: 'CAMKV', target: 'EDIL3', directed: 'false', weight: 0.345713} },
+{ data: { source: 'SLC12A5', target: 'DGUOK', directed: 'false', weight: 0.367581} },
+{ data: { source: 'DGUOK', target: 'EDIL3', directed: 'false', weight: 0.171543} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}  
+                                 if ( ele.data('type') == 'sars' ){return 'triangle'}   
+  return 'rectangle';
+  },            
+             'background-color': function( ele ){ 
+                                if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
+								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
+                                 if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
+                                 if ( ele.data('score') == 4 ){return 'rgb(78, 148, 70)'}   
+                                 if ( ele.data('score') == 5 ){return 'rgb(52, 136, 74)'} 
+								                                  if ( ele.data('type') == 'sars' ){return 'rgb(255, 0, 0)'}   
+  return 'rgb(180, 131, 40)';
+  },
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'line-color': function( ele ){ 
+                                 if ( ele.data('type') == 'sars' ){return 'red'}   
+  return 'blue';
+  },
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    EDIL3 NUFIP1 NCALD DGUOK CALB2 SLC12A5 CAMKV<br> Complex Score = 0.39375<br> Unweighted Density = 0.71
+    </section>
+    </body>
+    </html>
+    

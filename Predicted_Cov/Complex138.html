@@ -1,0 +1,113 @@
+
+<!doctype html>
+<html>
+<head>
+<title> 0.1 RNA polymerase II (RNAPII)</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex139.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'GPN3', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9UHW5" }},
+{data: { id: 'POLR2J2', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q9GZM3" }},
+{data: { id: 'CTDP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y5B0" }},
+{data: { id: 'GPN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HCN4" }},
+{data: { id: 'POLR2I', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P36954" }},
+{data: { id: 'POLR2G', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62487" }}], 
+ edges: [{ data: { source: 'GPN3', target: 'POLR2G', directed: 'false', weight: 0.755877} },
+{ data: { source: 'GPN3', target: 'POLR2I', directed: 'false', weight: 0.661057} },
+{ data: { source: 'GPN3', target: 'GPN1', directed: 'false', weight: 0.980087} },
+{ data: { source: 'POLR2J2', target: 'POLR2G', directed: 'false', weight: 0.960627} },
+{ data: { source: 'POLR2J2', target: 'POLR2I', directed: 'false', weight: 0.387818} },
+{ data: { source: 'POLR2J2', target: 'CTDP1', directed: 'false', weight: 0.154415} },
+{ data: { source: 'GPN1', target: 'POLR2G', directed: 'false', weight: 0.9732350000000001} },
+{ data: { source: 'GPN1', target: 'POLR2I', directed: 'false', weight: 0.628188} },
+{ data: { source: 'POLR2G', target: 'POLR2I', directed: 'false', weight: 0.999927} },
+{ data: { source: 'POLR2G', target: 'CTDP1', directed: 'false', weight: 0.9184889999999999} },
+{ data: { source: 'CTDP1', target: 'POLR2I', directed: 'false', weight: 0.231307} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}  
+                                 if ( ele.data('type') == 'sars' ){return 'triangle'}   
+  return 'rectangle';
+  },            
+             'background-color': function( ele ){ 
+                                if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
+								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
+                                 if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
+                                 if ( ele.data('score') == 4 ){return 'rgb(78, 148, 70)'}   
+                                 if ( ele.data('score') == 5 ){return 'rgb(52, 136, 74)'} 
+								                                  if ( ele.data('type') == 'sars' ){return 'rgb(255, 0, 0)'}   
+  return 'rgb(180, 131, 40)';
+  },
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'line-color': function( ele ){ 
+                                 if ( ele.data('type') == 'sars' ){return 'red'}   
+  return 'blue';
+  },
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    0.1 RNA polymerase II (RNAPII)<br> Complex Score = 0.39375<br> Unweighted Density = 0.73
+    </section>
+    </body>
+    </html>
+    

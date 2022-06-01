@@ -1,0 +1,131 @@
+
+<!doctype html>
+<html>
+<head>
+<title> 0.3 PA28-20S proteasome</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex15.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'PSMA5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P28066" }},
+{data: { id: 'PSMA4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P25789" }},
+{data: { id: 'AMT', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P48728" }},
+{data: { id: 'PSMA2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P25787" }},
+{data: { id: 'PSMB6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P28072" }},
+{data: { id: 'PSMF1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92530" }},
+{data: { id: 'PSME1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q06323" }},
+{data: { id: 'PSMB10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P40306" }},
+{data: { id: 'PSMB2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49721" }}], 
+ edges: [{ data: { source: 'PSMA4', target: 'PSME1', directed: 'false', weight: 0.8448190000000001} },
+{ data: { source: 'PSMA4', target: 'PSMF1', directed: 'false', weight: 0.7833439999999999} },
+{ data: { source: 'PSMA4', target: 'PSMA5', directed: 'false', weight: 0.61463} },
+{ data: { source: 'PSMA4', target: 'PSMB2', directed: 'false', weight: 0.508436} },
+{ data: { source: 'PSMA4', target: 'PSMB10', directed: 'false', weight: 0.44483599999999995} },
+{ data: { source: 'PSMA4', target: 'PSMA2', directed: 'false', weight: 0.35591} },
+{ data: { source: 'PSMA4', target: 'PSMB6', directed: 'false', weight: 0.33852899999999997} },
+{ data: { source: 'PSMA4', target: 'AMT', directed: 'false', weight: 0.297774} },
+{ data: { source: 'PSMA5', target: 'PSME1', directed: 'false', weight: 0.804844} },
+{ data: { source: 'PSMA5', target: 'PSMF1', directed: 'false', weight: 0.80173} },
+{ data: { source: 'PSMA5', target: 'PSMB10', directed: 'false', weight: 0.517492} },
+{ data: { source: 'PSMA5', target: 'AMT', directed: 'false', weight: 0.282327} },
+{ data: { source: 'PSMA5', target: 'PSMB2', directed: 'false', weight: 0.26758000000000004} },
+{ data: { source: 'PSMA5', target: 'PSMB6', directed: 'false', weight: 0.217061} },
+{ data: { source: 'PSMA5', target: 'PSMA2', directed: 'false', weight: 0.0815146} },
+{ data: { source: 'AMT', target: 'PSMA2', directed: 'false', weight: 0.810713} },
+{ data: { source: 'PSMA2', target: 'PSMB2', directed: 'false', weight: 0.335123} },
+{ data: { source: 'PSMA2', target: 'PSMB6', directed: 'false', weight: 0.151151} },
+{ data: { source: 'PSMA2', target: 'PSME1', directed: 'false', weight: 0.598846} },
+{ data: { source: 'PSMA2', target: 'PSMB10', directed: 'false', weight: 0.581919} },
+{ data: { source: 'PSMA2', target: 'PSMF1', directed: 'false', weight: 0.5} },
+{ data: { source: 'PSMB6', target: 'PSMB2', directed: 'false', weight: 0.447639} },
+{ data: { source: 'PSMB6', target: 'PSME1', directed: 'false', weight: 0.64662} },
+{ data: { source: 'PSMB6', target: 'PSMB10', directed: 'false', weight: 0.646137} },
+{ data: { source: 'PSMB6', target: 'PSMF1', directed: 'false', weight: 0.5} },
+{ data: { source: 'PSMF1', target: 'PSMB2', directed: 'false', weight: 0.682034} },
+{ data: { source: 'PSMF1', target: 'PSME1', directed: 'false', weight: 0.398478} },
+{ data: { source: 'PSMF1', target: 'PSMB10', directed: 'false', weight: 0.11730499999999999} },
+{ data: { source: 'PSME1', target: 'PSMB2', directed: 'false', weight: 0.770115} },
+{ data: { source: 'PSME1', target: 'PSMB10', directed: 'false', weight: 0.102896} },
+{ data: { source: 'PSMB10', target: 'PSMB2', directed: 'false', weight: 0.9429} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 30,
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}  
+                                 if ( ele.data('type') == 'sars' ){return 'triangle'}   
+  return 'rectangle';
+  },            
+            'background-color': function( ele ){ 
+                                if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
+								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
+                                 if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
+                                 if ( ele.data('score') == 4 ){return 'rgb(78, 148, 70)'}   
+                                 if ( ele.data('score') == 5 ){return 'rgb(52, 136, 74)'} 
+								                                  if ( ele.data('type') == 'sars' ){return 'rgb(255, 0, 0)'}   
+  return 'rgb(180, 131, 40)';
+  },
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
+								'line-color': function( ele ){ 
+                                 if ( ele.data('type') == 'sars' ){return 'red'}   
+  return 'blue';
+  },
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'circle'
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    0.3 PA28-20S proteasome<br> Complex Score = 0.39688<br> Unweighted Density = 0.86
+    </section>
+    </body>
+    </html>
+    

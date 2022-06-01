@@ -1,0 +1,112 @@
+
+<!doctype html>
+<html>
+<head>
+<title> 0.1 WICH complex</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex1040.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'RPL10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P27635" }},
+{data: { id: 'PUM3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15397" }},
+{data: { id: 'BAZ1B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UIG0" }},
+{data: { id: 'MAK16', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9BXY0" }},
+{data: { id: 'RPL11', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62913" }},
+{data: { id: 'FTSJ3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IY81" }},
+{data: { id: 'RRS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15050" }}], 
+ edges: [{ data: { source: 'RPL10', target: 'RPL11', directed: 'false', weight: 1.0} },
+{ data: { source: 'RPL10', target: 'BAZ1B', directed: 'false', weight: 0.8605510000000001} },
+{ data: { source: 'PUM3', target: 'RPL11', directed: 'false', weight: 0.8556030000000001} },
+{ data: { source: 'PUM3', target: 'RRS1', directed: 'false', weight: 0.998236} },
+{ data: { source: 'PUM3', target: 'FTSJ3', directed: 'false', weight: 0.9982840000000001} },
+{ data: { source: 'BAZ1B', target: 'RPL11', directed: 'false', weight: 0.13281099999999998} },
+{ data: { source: 'MAK16', target: 'RRS1', directed: 'false', weight: 0.145739} },
+{ data: { source: 'MAK16', target: 'FTSJ3', directed: 'false', weight: 0.863884} },
+{ data: { source: 'FTSJ3', target: 'RRS1', directed: 'false', weight: 0.9999} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}  
+                                 if ( ele.data('type') == 'sars' ){return 'triangle'}   
+  return 'rectangle';
+  },            
+             'background-color': function( ele ){ 
+                                if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
+								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
+                                 if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
+                                 if ( ele.data('score') == 4 ){return 'rgb(78, 148, 70)'}   
+                                 if ( ele.data('score') == 5 ){return 'rgb(52, 136, 74)'} 
+								                                  if ( ele.data('type') == 'sars' ){return 'rgb(255, 0, 0)'}   
+  return 'rgb(180, 131, 40)';
+  },
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'line-color': function( ele ){ 
+                                 if ( ele.data('type') == 'sars' ){return 'red'}   
+  return 'blue';
+  },
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    0.1 WICH complex<br> Complex Score = 0.35000<br> Unweighted Density = 0.43
+    </section>
+    </body>
+    </html>
+    

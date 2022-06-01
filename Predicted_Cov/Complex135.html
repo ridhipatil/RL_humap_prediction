@@ -1,0 +1,119 @@
+
+<!doctype html>
+<html>
+<head>
+<title> CSNK1G1 TMEM185B ATP6V0D2 AIDA TBC1D24 C1orf21 TMEM185A</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex136.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'ATP6V0D2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N8Y2" }},
+{data: { id: 'AIDA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96BJ3" }},
+{data: { id: 'CSNK1G1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HCP0" }},
+{data: { id: 'TBC1D24', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9ULP9" }},
+{data: { id: 'TMEM185B', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q9H7F4" }},
+{data: { id: 'TMEM185A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NFB2" }},
+{data: { id: 'C1orf21', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q9H246" }}], 
+ edges: [{ data: { source: 'ATP6V0D2', target: 'TMEM185A', directed: 'false', weight: 0.354358} },
+{ data: { source: 'ATP6V0D2', target: 'TMEM185B', directed: 'false', weight: 0.140692} },
+{ data: { source: 'ATP6V0D2', target: 'C1orf21', directed: 'false', weight: 0.140692} },
+{ data: { source: 'ATP6V0D2', target: 'TBC1D24', directed: 'false', weight: 0.123797} },
+{ data: { source: 'AIDA', target: 'TMEM185A', directed: 'false', weight: 0.5682149999999999} },
+{ data: { source: 'AIDA', target: 'TMEM185B', directed: 'false', weight: 0.133451} },
+{ data: { source: 'CSNK1G1', target: 'TMEM185A', directed: 'false', weight: 0.354612} },
+{ data: { source: 'CSNK1G1', target: 'TMEM185B', directed: 'false', weight: 0.140692} },
+{ data: { source: 'CSNK1G1', target: 'C1orf21', directed: 'false', weight: 0.140692} },
+{ data: { source: 'CSNK1G1', target: 'TBC1D24', directed: 'false', weight: 0.123797} },
+{ data: { source: 'TBC1D24', target: 'TMEM185A', directed: 'false', weight: 0.5196029999999999} },
+{ data: { source: 'TBC1D24', target: 'TMEM185B', directed: 'false', weight: 0.151455} },
+{ data: { source: 'TBC1D24', target: 'C1orf21', directed: 'false', weight: 0.151455} },
+{ data: { source: 'TMEM185B', target: 'TMEM185A', directed: 'false', weight: 0.981564} },
+{ data: { source: 'TMEM185B', target: 'C1orf21', directed: 'false', weight: 0.171414} },
+{ data: { source: 'TMEM185A', target: 'C1orf21', directed: 'false', weight: 0.759613} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}  
+                                 if ( ele.data('type') == 'sars' ){return 'triangle'}   
+  return 'rectangle';
+  },            
+             'background-color': function( ele ){ 
+                                if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
+								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
+                                 if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
+                                 if ( ele.data('score') == 4 ){return 'rgb(78, 148, 70)'}   
+                                 if ( ele.data('score') == 5 ){return 'rgb(52, 136, 74)'} 
+								                                  if ( ele.data('type') == 'sars' ){return 'rgb(255, 0, 0)'}   
+  return 'rgb(180, 131, 40)';
+  },
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'line-color': function( ele ){ 
+                                 if ( ele.data('type') == 'sars' ){return 'red'}   
+  return 'blue';
+  },
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    CSNK1G1 TMEM185B ATP6V0D2 AIDA TBC1D24 C1orf21 TMEM185A<br> Complex Score = 0.39375<br> Unweighted Density = 0.76
+    </section>
+    </body>
+    </html>
+    

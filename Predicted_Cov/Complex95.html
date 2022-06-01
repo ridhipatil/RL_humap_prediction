@@ -1,0 +1,146 @@
+
+<!doctype html>
+<html>
+<head>
+<title> 0.1 MRIP-RHOA complex</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex96.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'SPTBN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q01082" }},
+{data: { id: 'ACTN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P12814" }},
+{data: { id: 'TWF1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q12792" }},
+{data: { id: 'SIPA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96FS4" }},
+{data: { id: 'MPRIP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6WCQ1" }},
+{data: { id: 'ACTG1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P63261" }},
+{data: { id: 'CFL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P23528" }},
+{data: { id: 'FRS2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WU20" }},
+{data: { id: 'CORO1C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9ULV4" }},
+{data: { id: 'CALM1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P0DP23" }},
+{data: { id: 'NEXN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q0ZGT2" }}], 
+ edges: [{ data: { source: 'SPTBN1', target: 'ACTG1', directed: 'false', weight: 0.99685} },
+{ data: { source: 'SPTBN1', target: 'CORO1C', directed: 'false', weight: 0.7567729999999999} },
+{ data: { source: 'SPTBN1', target: 'NEXN', directed: 'false', weight: 0.627761} },
+{ data: { source: 'SPTBN1', target: 'CALM1', directed: 'false', weight: 0.43689700000000004} },
+{ data: { source: 'SPTBN1', target: 'TWF1', directed: 'false', weight: 0.43689700000000004} },
+{ data: { source: 'SPTBN1', target: 'CFL1', directed: 'false', weight: 0.350134} },
+{ data: { source: 'SPTBN1', target: 'SIPA1', directed: 'false', weight: 0.217545} },
+{ data: { source: 'SPTBN1', target: 'ACTN1', directed: 'false', weight: 0.0628288} },
+{ data: { source: 'ACTN1', target: 'ACTG1', directed: 'false', weight: 0.22894899999999999} },
+{ data: { source: 'ACTN1', target: 'CFL1', directed: 'false', weight: 0.035711400000000004} },
+{ data: { source: 'ACTN1', target: 'CALM1', directed: 'false', weight: 0.45939300000000005} },
+{ data: { source: 'ACTN1', target: 'SIPA1', directed: 'false', weight: 0.76928} },
+{ data: { source: 'ACTN1', target: 'TWF1', directed: 'false', weight: 0.45939300000000005} },
+{ data: { source: 'ACTN1', target: 'NEXN', directed: 'false', weight: 0.42011400000000004} },
+{ data: { source: 'ACTN1', target: 'CORO1C', directed: 'false', weight: 0.029450999999999998} },
+{ data: { source: 'TWF1', target: 'ACTG1', directed: 'false', weight: 0.483363} },
+{ data: { source: 'TWF1', target: 'CFL1', directed: 'false', weight: 0.862424} },
+{ data: { source: 'TWF1', target: 'CALM1', directed: 'false', weight: 0.350529} },
+{ data: { source: 'TWF1', target: 'NEXN', directed: 'false', weight: 0.564779} },
+{ data: { source: 'TWF1', target: 'CORO1C', directed: 'false', weight: 0.955015} },
+{ data: { source: 'TWF1', target: 'SIPA1', directed: 'false', weight: 0.6313439999999999} },
+{ data: { source: 'SIPA1', target: 'ACTG1', directed: 'false', weight: 0.29843400000000003} },
+{ data: { source: 'SIPA1', target: 'CFL1', directed: 'false', weight: 0.42011400000000004} },
+{ data: { source: 'SIPA1', target: 'CALM1', directed: 'false', weight: 0.2159} },
+{ data: { source: 'SIPA1', target: 'NEXN', directed: 'false', weight: 0.42011400000000004} },
+{ data: { source: 'SIPA1', target: 'CORO1C', directed: 'false', weight: 0.29843400000000003} },
+{ data: { source: 'MPRIP', target: 'CORO1C', directed: 'false', weight: 0.685062} },
+{ data: { source: 'MPRIP', target: 'FRS2', directed: 'false', weight: 0.125737} },
+{ data: { source: 'ACTG1', target: 'CFL1', directed: 'false', weight: 0.541837} },
+{ data: { source: 'ACTG1', target: 'NEXN', directed: 'false', weight: 0.40589400000000003} },
+{ data: { source: 'ACTG1', target: 'CALM1', directed: 'false', weight: 0.354354} },
+{ data: { source: 'ACTG1', target: 'CORO1C', directed: 'false', weight: 0.308283} },
+{ data: { source: 'CFL1', target: 'CORO1C', directed: 'false', weight: 0.606744} },
+{ data: { source: 'CFL1', target: 'CALM1', directed: 'false', weight: 0.422824} },
+{ data: { source: 'CFL1', target: 'NEXN', directed: 'false', weight: 0.36391100000000004} },
+{ data: { source: 'FRS2', target: 'CORO1C', directed: 'false', weight: 0.352619} },
+{ data: { source: 'CORO1C', target: 'CALM1', directed: 'false', weight: 0.22456399999999999} },
+{ data: { source: 'CORO1C', target: 'NEXN', directed: 'false', weight: 0.940217} },
+{ data: { source: 'CALM1', target: 'NEXN', directed: 'false', weight: 0.422824} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}  
+                                 if ( ele.data('type') == 'sars' ){return 'triangle'}   
+  return 'rectangle';
+  },            
+             'background-color': function( ele ){ 
+                                if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
+								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
+                                 if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
+                                 if ( ele.data('score') == 4 ){return 'rgb(78, 148, 70)'}   
+                                 if ( ele.data('score') == 5 ){return 'rgb(52, 136, 74)'} 
+								                                  if ( ele.data('type') == 'sars' ){return 'rgb(255, 0, 0)'}   
+  return 'rgb(180, 131, 40)';
+  },
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'line-color': function( ele ){ 
+                                 if ( ele.data('type') == 'sars' ){return 'red'}   
+  return 'blue';
+  },
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    0.1 MRIP-RHOA complex<br> Complex Score = 0.39375<br> Unweighted Density = 0.71
+    </section>
+    </body>
+    </html>
+    

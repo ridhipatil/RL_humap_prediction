@@ -1,0 +1,115 @@
+
+<!doctype html>
+<html>
+<head>
+<title> 0.1 Histone-2-Histone-4-ASF1-MCM2 complex</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex76.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'LUC7L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NQ29" }},
+{data: { id: 'MKRN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UHC7" }},
+{data: { id: 'SNRNP70', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P08621" }},
+{data: { id: 'SRSF9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13242" }},
+{data: { id: 'SRSF1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q07955" }},
+{data: { id: 'DDX46', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q7L014" }},
+{data: { id: 'CWC22', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HCG8" }}], 
+ edges: [{ data: { source: 'LUC7L', target: 'SRSF9', directed: 'false', weight: 0.08425650000000001} },
+{ data: { source: 'LUC7L', target: 'SRSF1', directed: 'false', weight: 0.8486899999999999} },
+{ data: { source: 'LUC7L', target: 'SNRNP70', directed: 'false', weight: 0.9982120000000001} },
+{ data: { source: 'LUC7L', target: 'DDX46', directed: 'false', weight: 0.42057100000000003} },
+{ data: { source: 'LUC7L', target: 'CWC22', directed: 'false', weight: 0.36218} },
+{ data: { source: 'MKRN1', target: 'SRSF9', directed: 'false', weight: 0.538582} },
+{ data: { source: 'MKRN1', target: 'SRSF1', directed: 'false', weight: 0.538582} },
+{ data: { source: 'SNRNP70', target: 'SRSF9', directed: 'false', weight: 0.47504399999999997} },
+{ data: { source: 'SNRNP70', target: 'SRSF1', directed: 'false', weight: 0.9971530000000001} },
+{ data: { source: 'SNRNP70', target: 'CWC22', directed: 'false', weight: 0.108921} },
+{ data: { source: 'SNRNP70', target: 'DDX46', directed: 'false', weight: 0.0952728} },
+{ data: { source: 'SRSF9', target: 'SRSF1', directed: 'false', weight: 1.0} },
+{ data: { source: 'SRSF9', target: 'DDX46', directed: 'false', weight: 0.337376} },
+{ data: { source: 'SRSF9', target: 'CWC22', directed: 'false', weight: 0.22579699999999997} },
+{ data: { source: 'SRSF1', target: 'CWC22', directed: 'false', weight: 0.632054} },
+{ data: { source: 'SRSF1', target: 'DDX46', directed: 'false', weight: 0.542899} },
+{ data: { source: 'DDX46', target: 'CWC22', directed: 'false', weight: 0.637712} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 30,
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}  
+                                 if ( ele.data('type') == 'sars' ){return 'triangle'}   
+  return 'rectangle';
+  },            
+            'background-color': function( ele ){ 
+                                if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
+								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
+                                 if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
+                                 if ( ele.data('score') == 4 ){return 'rgb(78, 148, 70)'}   
+                                 if ( ele.data('score') == 5 ){return 'rgb(52, 136, 74)'} 
+								                                  if ( ele.data('type') == 'sars' ){return 'rgb(255, 0, 0)'}   
+  return 'rgb(180, 131, 40)';
+  },
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
+								'line-color': function( ele ){ 
+                                 if ( ele.data('type') == 'sars' ){return 'red'}   
+  return 'blue';
+  },
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'circle'
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    0.1 Histone-2-Histone-4-ASF1-MCM2 complex<br> Complex Score = 0.39375<br> Unweighted Density = 0.81
+    </section>
+    </body>
+    </html>
+    

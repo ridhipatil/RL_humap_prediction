@@ -1,0 +1,114 @@
+
+<!doctype html>
+<html>
+<head>
+<title> VCPKMT SIPA1L3 UBXN6 UBXN2A LRRFIP2 TMOD3 CEP162</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex945.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'LRRFIP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y608" }},
+{data: { id: 'SIPA1L3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60292" }},
+{data: { id: 'VCPKMT', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H867" }},
+{data: { id: 'UBXN2A', score: 4, type: '', href: "https://www.uniprot.org/uniprot/P68543" }},
+{data: { id: 'UBXN6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BZV1" }},
+{data: { id: 'TMOD3', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9NYL9" }},
+{data: { id: 'CEP162', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5TB80" }}], 
+ edges: [{ data: { source: 'LRRFIP2', target: 'TMOD3', directed: 'false', weight: 0.874611} },
+{ data: { source: 'LRRFIP2', target: 'UBXN2A', directed: 'false', weight: 0.12775599999999998} },
+{ data: { source: 'LRRFIP2', target: 'SIPA1L3', directed: 'false', weight: 0.0991889} },
+{ data: { source: 'LRRFIP2', target: 'CEP162', directed: 'false', weight: 0.05122} },
+{ data: { source: 'SIPA1L3', target: 'TMOD3', directed: 'false', weight: 0.08878480000000001} },
+{ data: { source: 'SIPA1L3', target: 'CEP162', directed: 'false', weight: 0.040946300000000005} },
+{ data: { source: 'VCPKMT', target: 'UBXN6', directed: 'false', weight: 0.989974} },
+{ data: { source: 'VCPKMT', target: 'UBXN2A', directed: 'false', weight: 0.151455} },
+{ data: { source: 'UBXN2A', target: 'UBXN6', directed: 'false', weight: 0.9672430000000001} },
+{ data: { source: 'UBXN2A', target: 'TMOD3', directed: 'false', weight: 0.627835} },
+{ data: { source: 'TMOD3', target: 'CEP162', directed: 'false', weight: 0.338477} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}  
+                                 if ( ele.data('type') == 'sars' ){return 'triangle'}   
+  return 'rectangle';
+  },            
+             'background-color': function( ele ){ 
+                                if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
+								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
+                                 if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
+                                 if ( ele.data('score') == 4 ){return 'rgb(78, 148, 70)'}   
+                                 if ( ele.data('score') == 5 ){return 'rgb(52, 136, 74)'} 
+								                                  if ( ele.data('type') == 'sars' ){return 'rgb(255, 0, 0)'}   
+  return 'rgb(180, 131, 40)';
+  },
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'line-color': function( ele ){ 
+                                 if ( ele.data('type') == 'sars' ){return 'red'}   
+  return 'blue';
+  },
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    VCPKMT SIPA1L3 UBXN6 UBXN2A LRRFIP2 TMOD3 CEP162<br> Complex Score = 0.37500<br> Unweighted Density = 0.52
+    </section>
+    </body>
+    </html>
+    

@@ -1,0 +1,129 @@
+
+<!doctype html>
+<html>
+<head>
+<title> 0.2 ATRX-DAXX complex</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex153.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'FBXW8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N3Y1" }},
+{data: { id: 'EPB41L4B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H329" }},
+{data: { id: 'CASQ2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O14958" }},
+{data: { id: 'ASB1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y576" }},
+{data: { id: 'ZFP91', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96JP5" }},
+{data: { id: 'PRDM10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NQV6" }},
+{data: { id: 'ATRX', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P46100" }},
+{data: { id: 'TSNARE1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/A0AVG3" }},
+{data: { id: 'DAXX', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UER7" }}], 
+ edges: [{ data: { source: 'EPB41L4B', target: 'TSNARE1', directed: 'false', weight: 0.133456} },
+{ data: { source: 'EPB41L4B', target: 'CASQ2', directed: 'false', weight: 0.68818} },
+{ data: { source: 'EPB41L4B', target: 'ASB1', directed: 'false', weight: 0.151455} },
+{ data: { source: 'EPB41L4B', target: 'DAXX', directed: 'false', weight: 0.133456} },
+{ data: { source: 'EPB41L4B', target: 'ZFP91', directed: 'false', weight: 0.123797} },
+{ data: { source: 'EPB41L4B', target: 'PRDM10', directed: 'false', weight: 0.123797} },
+{ data: { source: 'EPB41L4B', target: 'FBXW8', directed: 'false', weight: 0.123797} },
+{ data: { source: 'TSNARE1', target: 'CASQ2', directed: 'false', weight: 0.982448} },
+{ data: { source: 'TSNARE1', target: 'ASB1', directed: 'false', weight: 0.151455} },
+{ data: { source: 'TSNARE1', target: 'DAXX', directed: 'false', weight: 0.133456} },
+{ data: { source: 'TSNARE1', target: 'ZFP91', directed: 'false', weight: 0.123797} },
+{ data: { source: 'TSNARE1', target: 'PRDM10', directed: 'false', weight: 0.123797} },
+{ data: { source: 'TSNARE1', target: 'FBXW8', directed: 'false', weight: 0.123797} },
+{ data: { source: 'CASQ2', target: 'ASB1', directed: 'false', weight: 0.9698479999999999} },
+{ data: { source: 'CASQ2', target: 'DAXX', directed: 'false', weight: 0.697066} },
+{ data: { source: 'CASQ2', target: 'PRDM10', directed: 'false', weight: 0.651452} },
+{ data: { source: 'CASQ2', target: 'FBXW8', directed: 'false', weight: 0.626761} },
+{ data: { source: 'CASQ2', target: 'ZFP91', directed: 'false', weight: 0.49471099999999996} },
+{ data: { source: 'ASB1', target: 'DAXX', directed: 'false', weight: 0.151455} },
+{ data: { source: 'ASB1', target: 'ZFP91', directed: 'false', weight: 0.140692} },
+{ data: { source: 'ASB1', target: 'PRDM10', directed: 'false', weight: 0.140692} },
+{ data: { source: 'ASB1', target: 'FBXW8', directed: 'false', weight: 0.140692} },
+{ data: { source: 'ZFP91', target: 'DAXX', directed: 'false', weight: 0.123797} },
+{ data: { source: 'ZFP91', target: 'PRDM10', directed: 'false', weight: 0.17737999999999998} },
+{ data: { source: 'ZFP91', target: 'FBXW8', directed: 'false', weight: 0.114755} },
+{ data: { source: 'PRDM10', target: 'DAXX', directed: 'false', weight: 0.123797} },
+{ data: { source: 'PRDM10', target: 'FBXW8', directed: 'false', weight: 0.114755} },
+{ data: { source: 'ATRX', target: 'DAXX', directed: 'false', weight: 0.529366} },
+{ data: { source: 'FBXW8', target: 'DAXX', directed: 'false', weight: 0.123797} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 30,
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}  
+                                 if ( ele.data('type') == 'sars' ){return 'triangle'}   
+  return 'rectangle';
+  },            
+            'background-color': function( ele ){ 
+                                if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
+								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
+                                 if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
+                                 if ( ele.data('score') == 4 ){return 'rgb(78, 148, 70)'}   
+                                 if ( ele.data('score') == 5 ){return 'rgb(52, 136, 74)'} 
+								                                  if ( ele.data('type') == 'sars' ){return 'rgb(255, 0, 0)'}   
+  return 'rgb(180, 131, 40)';
+  },
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
+								'line-color': function( ele ){ 
+                                 if ( ele.data('type') == 'sars' ){return 'red'}   
+  return 'blue';
+  },
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'circle'
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    0.2 ATRX-DAXX complex<br> Complex Score = 0.39375<br> Unweighted Density = 0.81
+    </section>
+    </body>
+    </html>
+    

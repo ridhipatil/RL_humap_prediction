@@ -1,0 +1,119 @@
+
+<!doctype html>
+<html>
+<head>
+<title> CHPF BMP7 POGLUT2 TTC13 B3GLCT GSTCD</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex964.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'BMP7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P18075" }},
+{data: { id: 'GSTCD', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q8NEC7" }},
+{data: { id: 'TTC13', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q8NBP0" }},
+{data: { id: 'B3GLCT', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6Y288" }},
+{data: { id: 'SARS-CoV2 orf8', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 orf8.html" }},
+{data: { id: 'CHPF', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q8IZ52" }},
+{data: { id: 'SARS-CoV2 orf8', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 orf8.html" }},
+{data: { id: 'POGLUT2', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q6UW63" }}], 
+ edges: [{ data: { source: 'SARS-CoV2 orf8', target: 'CHPF', directed: 'false', weight: 0.989068101, type: 'sars'} },
+{ data: { source: 'SARS-CoV2 orf8', target: 'POGLUT2', directed: 'false', weight: 0.95793072, type: 'sars'} },
+{ data: { source: 'TTC13', target: 'CHPF', directed: 'false', weight: 0.353128} },
+{ data: { source: 'B3GLCT', target: 'BMP7', directed: 'false', weight: 0.116085} },
+{ data: { source: 'B3GLCT', target: 'POGLUT2', directed: 'false', weight: 0.23167} },
+{ data: { source: 'B3GLCT', target: 'CHPF', directed: 'false', weight: 0.126269} },
+{ data: { source: 'BMP7', target: 'GSTCD', directed: 'false', weight: 0.945549} },
+{ data: { source: 'BMP7', target: 'POGLUT2', directed: 'false', weight: 0.308962} },
+{ data: { source: 'BMP7', target: 'CHPF', directed: 'false', weight: 0.110952} },
+{ data: { source: 'CHPF', target: 'POGLUT2', directed: 'false', weight: 0.127646} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}  
+                                 if ( ele.data('type') == 'sars' ){return 'triangle'}   
+  return 'rectangle';
+  },            
+             'background-color': function( ele ){ 
+                                if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
+								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
+                                 if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
+                                 if ( ele.data('score') == 4 ){return 'rgb(78, 148, 70)'}   
+                                 if ( ele.data('score') == 5 ){return 'rgb(52, 136, 74)'} 
+								                                  if ( ele.data('type') == 'sars' ){return 'rgb(255, 0, 0)'}   
+  return 'rgb(180, 131, 40)';
+  },
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'line-color': function( ele ){ 
+                                 if ( ele.data('type') == 'sars' ){return 'red'}   
+  return 'blue';
+  },
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    CHPF BMP7 POGLUT2 TTC13 B3GLCT GSTCD<br> Complex Score = 0.37500<br> Unweighted Density = 0.53
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        2 interacting protein(s): <br>CHPF POGLUT2
+    </section>
+    </body>
+    </html>
+    

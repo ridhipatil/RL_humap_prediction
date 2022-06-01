@@ -1,0 +1,143 @@
+
+<!doctype html>
+<html>
+<head>
+<title> 0.1 CTFC-TAF1 complex match 2</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex260.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'REPIN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BWE0" }},
+{data: { id: 'ZNF408', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H9D4" }},
+{data: { id: 'PWWP2A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96N64" }},
+{data: { id: 'FAM111B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6SJ93" }},
+{data: { id: 'SET', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q01105" }},
+{data: { id: 'SARS-CoV2 N', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 N.html" }},
+{data: { id: 'RBM28', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9NW13" }},
+{data: { id: 'ZNF770', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q6IQ21" }},
+{data: { id: 'MEN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00255" }},
+{data: { id: 'IKZF5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H5V7" }},
+{data: { id: 'C14orf93', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q9H972" }}], 
+ edges: [{ data: { source: 'SARS-CoV2 N', target: 'RBM28', directed: 'false', weight: 0.628043125, type: 'sars'} },
+{ data: { source: 'REPIN1', target: 'SET', directed: 'false', weight: 0.841199} },
+{ data: { source: 'REPIN1', target: 'ZNF408', directed: 'false', weight: 0.11228099999999999} },
+{ data: { source: 'REPIN1', target: 'C14orf93', directed: 'false', weight: 0.11228099999999999} },
+{ data: { source: 'REPIN1', target: 'IKZF5', directed: 'false', weight: 0.11228099999999999} },
+{ data: { source: 'REPIN1', target: 'PWWP2A', directed: 'false', weight: 0.0805937} },
+{ data: { source: 'REPIN1', target: 'MEN1', directed: 'false', weight: 0.0775955} },
+{ data: { source: 'REPIN1', target: 'FAM111B', directed: 'false', weight: 0.0730895} },
+{ data: { source: 'ZNF408', target: 'SET', directed: 'false', weight: 0.465016} },
+{ data: { source: 'ZNF408', target: 'IKZF5', directed: 'false', weight: 0.165074} },
+{ data: { source: 'ZNF408', target: 'C14orf93', directed: 'false', weight: 0.165074} },
+{ data: { source: 'ZNF408', target: 'MEN1', directed: 'false', weight: 0.11585699999999999} },
+{ data: { source: 'ZNF408', target: 'PWWP2A', directed: 'false', weight: 0.12021300000000001} },
+{ data: { source: 'ZNF408', target: 'FAM111B', directed: 'false', weight: 0.10926300000000001} },
+{ data: { source: 'SET', target: 'IKZF5', directed: 'false', weight: 0.838254} },
+{ data: { source: 'SET', target: 'ZNF770', directed: 'false', weight: 0.7035060000000001} },
+{ data: { source: 'SET', target: 'C14orf93', directed: 'false', weight: 0.572087} },
+{ data: { source: 'SET', target: 'MEN1', directed: 'false', weight: 0.487216} },
+{ data: { source: 'SET', target: 'FAM111B', directed: 'false', weight: 0.302551} },
+{ data: { source: 'SET', target: 'PWWP2A', directed: 'false', weight: 0.282866} },
+{ data: { source: 'PWWP2A', target: 'IKZF5', directed: 'false', weight: 0.12021300000000001} },
+{ data: { source: 'PWWP2A', target: 'C14orf93', directed: 'false', weight: 0.12021300000000001} },
+{ data: { source: 'PWWP2A', target: 'MEN1', directed: 'false', weight: 0.0832202} },
+{ data: { source: 'PWWP2A', target: 'FAM111B', directed: 'false', weight: 0.0783845} },
+{ data: { source: 'FAM111B', target: 'IKZF5', directed: 'false', weight: 0.10926300000000001} },
+{ data: { source: 'FAM111B', target: 'C14orf93', directed: 'false', weight: 0.10926300000000001} },
+{ data: { source: 'FAM111B', target: 'MEN1', directed: 'false', weight: 0.0754692} },
+{ data: { source: 'RBM28', target: 'ZNF770', directed: 'false', weight: 0.639135} },
+{ data: { source: 'MEN1', target: 'IKZF5', directed: 'false', weight: 0.11585699999999999} },
+{ data: { source: 'MEN1', target: 'C14orf93', directed: 'false', weight: 0.11585699999999999} },
+{ data: { source: 'IKZF5', target: 'C14orf93', directed: 'false', weight: 0.165074} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}  
+                                 if ( ele.data('type') == 'sars' ){return 'triangle'}   
+  return 'rectangle';
+  },            
+             'background-color': function( ele ){ 
+                                if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
+								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
+                                 if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
+                                 if ( ele.data('score') == 4 ){return 'rgb(78, 148, 70)'}   
+                                 if ( ele.data('score') == 5 ){return 'rgb(52, 136, 74)'} 
+								                                  if ( ele.data('type') == 'sars' ){return 'rgb(255, 0, 0)'}   
+  return 'rgb(180, 131, 40)';
+  },
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'line-color': function( ele ){ 
+                                 if ( ele.data('type') == 'sars' ){return 'red'}   
+  return 'blue';
+  },
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    0.1 CTFC-TAF1 complex match 2<br> Complex Score = 0.38750<br> Unweighted Density = 0.67
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>RBM28
+    </section>
+    </body>
+    </html>
+    

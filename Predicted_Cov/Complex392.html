@@ -1,0 +1,128 @@
+
+<!doctype html>
+<html>
+<head>
+<title> FGFRL1 HS3ST3B1 NOB1 FUT4 HLA-DPA1 UTP14C DCBLD1 ATP13A2 IL27RA</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex393.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'DCBLD1', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q8N8Z6" }},
+{data: { id: 'ATP13A2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NQ11" }},
+{data: { id: 'UTP14C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5TAP6" }},
+{data: { id: 'FUT4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P22083" }},
+{data: { id: 'IL27RA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6UWB1" }},
+{data: { id: 'HS3ST3B1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y662" }},
+{data: { id: 'NOB1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9ULX3" }},
+{data: { id: 'HLA-DPA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P20036" }},
+{data: { id: 'FGFRL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N441" }}], 
+ edges: [{ data: { source: 'DCBLD1', target: 'HLA-DPA1', directed: 'false', weight: 0.8911190000000001} },
+{ data: { source: 'DCBLD1', target: 'HS3ST3B1', directed: 'false', weight: 0.171414} },
+{ data: { source: 'DCBLD1', target: 'IL27RA', directed: 'false', weight: 0.171414} },
+{ data: { source: 'DCBLD1', target: 'FGFRL1', directed: 'false', weight: 0.171414} },
+{ data: { source: 'DCBLD1', target: 'FUT4', directed: 'false', weight: 0.171414} },
+{ data: { source: 'DCBLD1', target: 'ATP13A2', directed: 'false', weight: 0.12378900000000001} },
+{ data: { source: 'ATP13A2', target: 'HLA-DPA1', directed: 'false', weight: 0.5359079999999999} },
+{ data: { source: 'ATP13A2', target: 'HS3ST3B1', directed: 'false', weight: 0.12378900000000001} },
+{ data: { source: 'ATP13A2', target: 'FUT4', directed: 'false', weight: 0.12378900000000001} },
+{ data: { source: 'ATP13A2', target: 'FGFRL1', directed: 'false', weight: 0.12378900000000001} },
+{ data: { source: 'ATP13A2', target: 'IL27RA', directed: 'false', weight: 0.12378900000000001} },
+{ data: { source: 'UTP14C', target: 'NOB1', directed: 'false', weight: 0.128057} },
+{ data: { source: 'FUT4', target: 'HLA-DPA1', directed: 'false', weight: 0.8725629999999999} },
+{ data: { source: 'FUT4', target: 'HS3ST3B1', directed: 'false', weight: 0.171414} },
+{ data: { source: 'FUT4', target: 'IL27RA', directed: 'false', weight: 0.171414} },
+{ data: { source: 'FUT4', target: 'FGFRL1', directed: 'false', weight: 0.171414} },
+{ data: { source: 'IL27RA', target: 'HLA-DPA1', directed: 'false', weight: 0.49271800000000004} },
+{ data: { source: 'IL27RA', target: 'HS3ST3B1', directed: 'false', weight: 0.171414} },
+{ data: { source: 'IL27RA', target: 'FGFRL1', directed: 'false', weight: 0.171414} },
+{ data: { source: 'HS3ST3B1', target: 'HLA-DPA1', directed: 'false', weight: 0.907113} },
+{ data: { source: 'HS3ST3B1', target: 'FGFRL1', directed: 'false', weight: 0.171414} },
+{ data: { source: 'NOB1', target: 'HLA-DPA1', directed: 'false', weight: 0.547085} },
+{ data: { source: 'HLA-DPA1', target: 'FGFRL1', directed: 'false', weight: 0.747196} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}  
+                                 if ( ele.data('type') == 'sars' ){return 'triangle'}   
+  return 'rectangle';
+  },            
+             'background-color': function( ele ){ 
+                                if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
+								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
+                                 if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
+                                 if ( ele.data('score') == 4 ){return 'rgb(78, 148, 70)'}   
+                                 if ( ele.data('score') == 5 ){return 'rgb(52, 136, 74)'} 
+								                                  if ( ele.data('type') == 'sars' ){return 'rgb(255, 0, 0)'}   
+  return 'rgb(180, 131, 40)';
+  },
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'line-color': function( ele ){ 
+                                 if ( ele.data('type') == 'sars' ){return 'red'}   
+  return 'blue';
+  },
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    FGFRL1 HS3ST3B1 NOB1 FUT4 HLA-DPA1 UTP14C DCBLD1 ATP13A2 IL27RA<br> Complex Score = 0.38750<br> Unweighted Density = 0.64
+    </section>
+    </body>
+    </html>
+    

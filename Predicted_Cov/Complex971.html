@@ -1,0 +1,117 @@
+
+<!doctype html>
+<html>
+<head>
+<title> TNNI1 SH2B2 MYH6 SIPA1L3 ACTA1 LIMA1 TPM1 TPM2</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex972.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'SIPA1L3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60292" }},
+{data: { id: 'MYH6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P13533" }},
+{data: { id: 'TPM2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P07951" }},
+{data: { id: 'SH2B2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O14492" }},
+{data: { id: 'LIMA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UHB6" }},
+{data: { id: 'ACTA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P68133" }},
+{data: { id: 'TPM1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P09493" }},
+{data: { id: 'TNNI1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P19237" }}], 
+ edges: [{ data: { source: 'TPM1', target: 'TPM2', directed: 'false', weight: 0.99813} },
+{ data: { source: 'TPM1', target: 'MYH6', directed: 'false', weight: 0.9239209999999999} },
+{ data: { source: 'TPM1', target: 'TNNI1', directed: 'false', weight: 0.79635} },
+{ data: { source: 'SIPA1L3', target: 'TPM2', directed: 'false', weight: 0.157851} },
+{ data: { source: 'SIPA1L3', target: 'LIMA1', directed: 'false', weight: 0.0844154} },
+{ data: { source: 'SIPA1L3', target: 'ACTA1', directed: 'false', weight: 0.364663} },
+{ data: { source: 'SIPA1L3', target: 'SH2B2', directed: 'false', weight: 0.171414} },
+{ data: { source: 'TPM2', target: 'MYH6', directed: 'false', weight: 0.949902} },
+{ data: { source: 'TPM2', target: 'TNNI1', directed: 'false', weight: 0.657299} },
+{ data: { source: 'TPM2', target: 'ACTA1', directed: 'false', weight: 0.399751} },
+{ data: { source: 'TPM2', target: 'LIMA1', directed: 'false', weight: 0.206181} },
+{ data: { source: 'LIMA1', target: 'ACTA1', directed: 'false', weight: 0.9349780000000001} },
+{ data: { source: 'MYH6', target: 'TNNI1', directed: 'false', weight: 0.0663082} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}  
+                                 if ( ele.data('type') == 'sars' ){return 'triangle'}   
+  return 'rectangle';
+  },            
+             'background-color': function( ele ){ 
+                                if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
+								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
+                                 if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
+                                 if ( ele.data('score') == 4 ){return 'rgb(78, 148, 70)'}   
+                                 if ( ele.data('score') == 5 ){return 'rgb(52, 136, 74)'} 
+								                                  if ( ele.data('type') == 'sars' ){return 'rgb(255, 0, 0)'}   
+  return 'rgb(180, 131, 40)';
+  },
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'line-color': function( ele ){ 
+                                 if ( ele.data('type') == 'sars' ){return 'red'}   
+  return 'blue';
+  },
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    TNNI1 SH2B2 MYH6 SIPA1L3 ACTA1 LIMA1 TPM1 TPM2<br> Complex Score = 0.37500<br> Unweighted Density = 0.46
+    </section>
+    </body>
+    </html>
+    

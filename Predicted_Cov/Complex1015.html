@@ -1,0 +1,108 @@
+
+<!doctype html>
+<html>
+<head>
+<title> 0.1 CTNNB1-DDX5-HDGF complex match 3</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex1016.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'ADARB1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P78563" }},
+{data: { id: 'USP39', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q53GS9" }},
+{data: { id: 'PRPF4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43172" }},
+{data: { id: 'DDX5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P17844" }},
+{data: { id: 'NMT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P30419" }},
+{data: { id: 'SF3B6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y3B4" }}], 
+ edges: [{ data: { source: 'USP39', target: 'PRPF4', directed: 'false', weight: 0.940139} },
+{ data: { source: 'USP39', target: 'SF3B6', directed: 'false', weight: 0.106188} },
+{ data: { source: 'USP39', target: 'DDX5', directed: 'false', weight: 0.761811} },
+{ data: { source: 'USP39', target: 'NMT1', directed: 'false', weight: 0.800991} },
+{ data: { source: 'USP39', target: 'ADARB1', directed: 'false', weight: 0.275382} },
+{ data: { source: 'SF3B6', target: 'PRPF4', directed: 'false', weight: 0.3218} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}  
+                                 if ( ele.data('type') == 'sars' ){return 'triangle'}   
+  return 'rectangle';
+  },            
+             'background-color': function( ele ){ 
+                                if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
+								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
+                                 if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
+                                 if ( ele.data('score') == 4 ){return 'rgb(78, 148, 70)'}   
+                                 if ( ele.data('score') == 5 ){return 'rgb(52, 136, 74)'} 
+								                                  if ( ele.data('type') == 'sars' ){return 'rgb(255, 0, 0)'}   
+  return 'rgb(180, 131, 40)';
+  },
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'line-color': function( ele ){ 
+                                 if ( ele.data('type') == 'sars' ){return 'red'}   
+  return 'blue';
+  },
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    0.1 CTNNB1-DDX5-HDGF complex match 3<br> Complex Score = 0.35000<br> Unweighted Density = 0.40
+    </section>
+    </body>
+    </html>
+    

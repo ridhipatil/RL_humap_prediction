@@ -1,0 +1,124 @@
+
+<!doctype html>
+<html>
+<head>
+<title> 0.4 THO complex</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex870.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'CHTOP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y3Y2" }},
+{data: { id: 'THOC7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6I9Y2" }},
+{data: { id: 'WBP11', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y2W2" }},
+{data: { id: 'THOC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96FV9" }},
+{data: { id: 'CCDC9B', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q6ZUT6" }},
+{data: { id: 'THOC2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NI27" }},
+{data: { id: 'RBM25', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49756" }},
+{data: { id: 'DDX39A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00148" }},
+{data: { id: 'THOC6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86W42" }}], 
+ edges: [{ data: { source: 'CHTOP', target: 'THOC7', directed: 'false', weight: 0.975683} },
+{ data: { source: 'CHTOP', target: 'THOC6', directed: 'false', weight: 0.226525} },
+{ data: { source: 'CHTOP', target: 'THOC1', directed: 'false', weight: 0.9558700000000001} },
+{ data: { source: 'CHTOP', target: 'CCDC9B', directed: 'false', weight: 0.16530799999999998} },
+{ data: { source: 'THOC7', target: 'THOC1', directed: 'false', weight: 0.999933} },
+{ data: { source: 'THOC7', target: 'THOC6', directed: 'false', weight: 0.999923} },
+{ data: { source: 'THOC7', target: 'THOC2', directed: 'false', weight: 0.9999170000000001} },
+{ data: { source: 'THOC7', target: 'CCDC9B', directed: 'false', weight: 0.950182} },
+{ data: { source: 'THOC7', target: 'DDX39A', directed: 'false', weight: 0.539341} },
+{ data: { source: 'WBP11', target: 'RBM25', directed: 'false', weight: 0.420187} },
+{ data: { source: 'THOC1', target: 'THOC6', directed: 'false', weight: 0.9999520000000001} },
+{ data: { source: 'THOC1', target: 'THOC2', directed: 'false', weight: 0.999951} },
+{ data: { source: 'THOC1', target: 'CCDC9B', directed: 'false', weight: 0.9419959999999999} },
+{ data: { source: 'THOC1', target: 'DDX39A', directed: 'false', weight: 0.599692} },
+{ data: { source: 'CCDC9B', target: 'THOC6', directed: 'false', weight: 0.173369} },
+{ data: { source: 'THOC2', target: 'RBM25', directed: 'false', weight: 0.926293} },
+{ data: { source: 'THOC2', target: 'THOC6', directed: 'false', weight: 0.9998360000000001} },
+{ data: { source: 'THOC2', target: 'DDX39A', directed: 'false', weight: 0.96141} },
+{ data: { source: 'DDX39A', target: 'THOC6', directed: 'false', weight: 0.373726} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}  
+                                 if ( ele.data('type') == 'sars' ){return 'triangle'}   
+  return 'rectangle';
+  },            
+             'background-color': function( ele ){ 
+                                if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
+								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
+                                 if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
+                                 if ( ele.data('score') == 4 ){return 'rgb(78, 148, 70)'}   
+                                 if ( ele.data('score') == 5 ){return 'rgb(52, 136, 74)'} 
+								                                  if ( ele.data('type') == 'sars' ){return 'rgb(255, 0, 0)'}   
+  return 'rgb(180, 131, 40)';
+  },
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'line-color': function( ele ){ 
+                                 if ( ele.data('type') == 'sars' ){return 'red'}   
+  return 'blue';
+  },
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    0.4 THO complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.53
+    </section>
+    </body>
+    </html>
+    

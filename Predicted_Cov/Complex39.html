@@ -1,0 +1,117 @@
+
+<!doctype html>
+<html>
+<head>
+<title> 0.1 PKC-alpha-PLD1-PLC-gamma-2 signaling complex, lacritin stimulated</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex40.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'YES1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P07947" }},
+{data: { id: 'PRKCA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P17252" }},
+{data: { id: 'ERICH5', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q6P6B1" }},
+{data: { id: 'SARS-CoV2 nsp7', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp7.html" }},
+{data: { id: 'RALA', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P11233" }},
+{data: { id: 'PALM', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75781" }},
+{data: { id: 'RRAS2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62070" }}], 
+ edges: [{ data: { source: 'SARS-CoV2 nsp7', target: 'RALA', directed: 'false', weight: 0.750366485, type: 'sars'} },
+{ data: { source: 'YES1', target: 'RRAS2', directed: 'false', weight: 0.942351} },
+{ data: { source: 'YES1', target: 'PALM', directed: 'false', weight: 0.698074} },
+{ data: { source: 'YES1', target: 'PRKCA', directed: 'false', weight: 0.210089} },
+{ data: { source: 'YES1', target: 'ERICH5', directed: 'false', weight: 0.19596} },
+{ data: { source: 'YES1', target: 'RALA', directed: 'false', weight: 0.104931} },
+{ data: { source: 'PALM', target: 'RRAS2', directed: 'false', weight: 0.608244} },
+{ data: { source: 'PALM', target: 'ERICH5', directed: 'false', weight: 0.347301} },
+{ data: { source: 'PALM', target: 'RALA', directed: 'false', weight: 0.206763} },
+{ data: { source: 'PALM', target: 'PRKCA', directed: 'false', weight: 0.153571} },
+{ data: { source: 'PRKCA', target: 'RRAS2', directed: 'false', weight: 0.289393} },
+{ data: { source: 'PRKCA', target: 'ERICH5', directed: 'false', weight: 0.196937} },
+{ data: { source: 'RALA', target: 'RRAS2', directed: 'false', weight: 0.320156} },
+{ data: { source: 'ERICH5', target: 'RRAS2', directed: 'false', weight: 0.320818} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 30,
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}  
+                                 if ( ele.data('type') == 'sars' ){return 'triangle'}   
+  return 'rectangle';
+  },            
+            'background-color': function( ele ){ 
+                                if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
+								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
+                                 if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
+                                 if ( ele.data('score') == 4 ){return 'rgb(78, 148, 70)'}   
+                                 if ( ele.data('score') == 5 ){return 'rgb(52, 136, 74)'} 
+								                                  if ( ele.data('type') == 'sars' ){return 'rgb(255, 0, 0)'}   
+  return 'rgb(180, 131, 40)';
+  },
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
+								'line-color': function( ele ){ 
+                                 if ( ele.data('type') == 'sars' ){return 'red'}   
+  return 'blue';
+  },
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'circle'
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    0.1 PKC-alpha-PLD1-PLC-gamma-2 signaling complex, lacritin stimulated<br> Complex Score = 0.39688<br> Unweighted Density = 0.87
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>RALA
+    </section>
+    </body>
+    </html>
+    
