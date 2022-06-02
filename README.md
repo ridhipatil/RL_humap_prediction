@@ -25,3 +25,6 @@ https://marcottelab.github.io/RL_humap_prediction/Protein2complex_covid.html
 
 SARS-CoV-2 interacting Hu.MAP proteins and their corresponding protein complexes, sorted in ascending  annotation score order:
 https://marcottelab.github.io/RL_humap_prediction/Protein2complex_annotated_covid.html
+
+Complexes interacting with SARS-CoV-2 proteins can be visualized by exploring different complexes in the directory /Predicted_Cov, for example:
+https://marcottelab.github.io/RL_humap_prediction/Predicted_Cov/Complex1.html
