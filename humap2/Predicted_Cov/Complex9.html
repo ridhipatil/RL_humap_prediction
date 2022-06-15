@@ -1,0 +1,112 @@
+
+<!doctype html>
+<html>
+<head>
+<title> 0.2 CRSP-Mediator 2 complex</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex10.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'MED30', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96HR3" }},
+{data: { id: 'MED23', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9ULK4" }},
+{data: { id: 'CRSP9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43513" }},
+{data: { id: 'CRSP8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6P2C8" }},
+{data: { id: 'MED4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NPJ6" }},
+{data: { id: 'MED18', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BUE0" }}], 
+ edges: [{ data: { source: 'MED30', target: 'MED18', directed: 'false', weight: 0.433331} },
+{ data: { source: 'MED30', target: 'MED4', directed: 'false', weight: 0.0344166} },
+{ data: { source: 'MED30', target: 'MED23', directed: 'false', weight: 0.0346871} },
+{ data: { source: 'MED30', target: 'CRSP8', directed: 'false', weight: 0.999448} },
+{ data: { source: 'MED30', target: 'CRSP9', directed: 'false', weight: 0.548927} },
+{ data: { source: 'MED23', target: 'MED18', directed: 'false', weight: 0.9999709999999999} },
+{ data: { source: 'MED23', target: 'MED4', directed: 'false', weight: 0.0406201} },
+{ data: { source: 'MED23', target: 'CRSP9', directed: 'false', weight: 0.407744} },
+{ data: { source: 'MED23', target: 'CRSP8', directed: 'false', weight: 0.0397579} },
+{ data: { source: 'CRSP9', target: 'MED18', directed: 'false', weight: 0.944891} },
+{ data: { source: 'CRSP9', target: 'MED4', directed: 'false', weight: 0.9056280000000001} },
+{ data: { source: 'CRSP9', target: 'CRSP8', directed: 'false', weight: 0.927292} },
+{ data: { source: 'CRSP8', target: 'MED18', directed: 'false', weight: 0.998724} },
+{ data: { source: 'CRSP8', target: 'MED4', directed: 'false', weight: 0.999654} },
+{ data: { source: 'MED4', target: 'MED18', directed: 'false', weight: 0.9999870000000001} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 30,
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}  
+                                 if ( ele.data('type') == 'sars' ){return 'triangle'}   
+  return 'rectangle';
+  },            
+            'background-color': function( ele ){ 
+                                if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
+								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
+                                 if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
+                                 if ( ele.data('score') == 4 ){return 'rgb(78, 148, 70)'}   
+                                 if ( ele.data('score') == 5 ){return 'rgb(52, 136, 74)'} 
+								                                  if ( ele.data('type') == 'sars' ){return 'rgb(255, 0, 0)'}   
+  return 'rgb(180, 131, 40)';
+  },
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
+								'line-color': function( ele ){ 
+                                 if ( ele.data('type') == 'sars' ){return 'red'}   
+  return 'blue';
+  },
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'circle'
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    0.2 CRSP-Mediator 2 complex<br> Complex Score = 0.39700<br> Unweighted Density = 1.00
+    </section>
+    </body>
+    </html>
+    

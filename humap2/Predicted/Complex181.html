@@ -1,0 +1,113 @@
+
+<!doctype html>
+<html>
+<head>
+<title> Complex 181</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex182.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'PSMC4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P43686" }},
+{data: { id: 'ADRM1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16186" }},
+{data: { id: 'RUVBL2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y230" }},
+{data: { id: 'TFPT', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P0C1Z6" }},
+{data: { id: 'PSMD6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15008" }},
+{data: { id: 'UCHL5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y5K5" }},
+{data: { id: 'PSMD10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75832" }},
+{data: { id: 'PSMD3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43242" }},
+{data: { id: 'PSMD5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16401" }}], 
+ edges: [{ data: { source: 'PSMC4', target: 'PSMD6', directed: 'false', weight: 1.0} },
+{ data: { source: 'PSMC4', target: 'ADRM1', directed: 'false', weight: 0.9995930000000001} },
+{ data: { source: 'PSMC4', target: 'PSMD3', directed: 'false', weight: 1.0} },
+{ data: { source: 'PSMC4', target: 'PSMD10', directed: 'false', weight: 0.9999959999999999} },
+{ data: { source: 'PSMC4', target: 'PSMD5', directed: 'false', weight: 0.997589} },
+{ data: { source: 'PSMC4', target: 'UCHL5', directed: 'false', weight: 0.781266} },
+{ data: { source: 'ADRM1', target: 'PSMD6', directed: 'false', weight: 1.0} },
+{ data: { source: 'ADRM1', target: 'UCHL5', directed: 'false', weight: 0.9999030000000001} },
+{ data: { source: 'ADRM1', target: 'PSMD10', directed: 'false', weight: 0.913048} },
+{ data: { source: 'ADRM1', target: 'PSMD3', directed: 'false', weight: 0.873042} },
+{ data: { source: 'RUVBL2', target: 'TFPT', directed: 'false', weight: 0.24261999999999997} },
+{ data: { source: 'TFPT', target: 'UCHL5', directed: 'false', weight: 0.343445} },
+{ data: { source: 'PSMD6', target: 'PSMD3', directed: 'false', weight: 1.0} },
+{ data: { source: 'PSMD6', target: 'PSMD10', directed: 'false', weight: 0.99998} },
+{ data: { source: 'PSMD6', target: 'PSMD5', directed: 'false', weight: 0.997717} },
+{ data: { source: 'PSMD6', target: 'UCHL5', directed: 'false', weight: 0.5589609999999999} },
+{ data: { source: 'UCHL5', target: 'PSMD3', directed: 'false', weight: 0.971433} },
+{ data: { source: 'UCHL5', target: 'PSMD10', directed: 'false', weight: 0.0674596} },
+{ data: { source: 'PSMD10', target: 'PSMD3', directed: 'false', weight: 0.999984} },
+{ data: { source: 'PSMD3', target: 'PSMD5', directed: 'false', weight: 0.996935} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}                                
+  return 'rectangle';
+  },            
+            'background-color': 'mapData(score, 0, 5, yellow, green)',
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'line-color': 'blue',
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    Complex Score  = 0.38800
+    </section>
+    </body>
+    </html>
+    

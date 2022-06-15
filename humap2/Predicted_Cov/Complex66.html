@@ -1,0 +1,125 @@
+
+<!doctype html>
+<html>
+<head>
+<title> 0.3 PA28-20S proteasome</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex67.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'PSMB1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P20618" }},
+{data: { id: 'POMP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y244" }},
+{data: { id: 'PSMA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P25786" }},
+{data: { id: 'PSME2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UL46" }},
+{data: { id: 'PSMB7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99436" }},
+{data: { id: 'PSMG1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95456" }},
+{data: { id: 'PSMC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62191" }},
+{data: { id: 'PSMB5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P28074" }}], 
+ edges: [{ data: { source: 'PSMB1', target: 'PSMA1', directed: 'false', weight: 1.0} },
+{ data: { source: 'PSMB1', target: 'PSMB5', directed: 'false', weight: 1.0} },
+{ data: { source: 'PSMB1', target: 'PSMB7', directed: 'false', weight: 1.0} },
+{ data: { source: 'PSMB1', target: 'POMP', directed: 'false', weight: 0.750156} },
+{ data: { source: 'PSMB1', target: 'PSMC1', directed: 'false', weight: 0.557344} },
+{ data: { source: 'PSMB1', target: 'PSME2', directed: 'false', weight: 0.180793} },
+{ data: { source: 'PSMB1', target: 'PSMG1', directed: 'false', weight: 0.09550410000000001} },
+{ data: { source: 'POMP', target: 'PSMB5', directed: 'false', weight: 0.023661500000000002} },
+{ data: { source: 'POMP', target: 'PSMB7', directed: 'false', weight: 0.9933379999999999} },
+{ data: { source: 'POMP', target: 'PSMG1', directed: 'false', weight: 0.04348219999999999} },
+{ data: { source: 'PSMA1', target: 'PSMB5', directed: 'false', weight: 1.0} },
+{ data: { source: 'PSMA1', target: 'PSMB7', directed: 'false', weight: 1.0} },
+{ data: { source: 'PSMA1', target: 'PSMC1', directed: 'false', weight: 0.957742} },
+{ data: { source: 'PSME2', target: 'PSMB5', directed: 'false', weight: 0.774291} },
+{ data: { source: 'PSME2', target: 'PSMB7', directed: 'false', weight: 0.562759} },
+{ data: { source: 'PSME2', target: 'PSMG1', directed: 'false', weight: 0.020286900000000004} },
+{ data: { source: 'PSMB7', target: 'PSMB5', directed: 'false', weight: 1.0} },
+{ data: { source: 'PSMB7', target: 'PSMC1', directed: 'false', weight: 0.94865} },
+{ data: { source: 'PSMB7', target: 'PSMG1', directed: 'false', weight: 0.5225} },
+{ data: { source: 'PSMG1', target: 'PSMB5', directed: 'false', weight: 0.816184} },
+{ data: { source: 'PSMC1', target: 'PSMB5', directed: 'false', weight: 0.994685} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}  
+                                 if ( ele.data('type') == 'sars' ){return 'triangle'}   
+  return 'rectangle';
+  },            
+             'background-color': function( ele ){ 
+                                if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
+								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
+                                 if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
+                                 if ( ele.data('score') == 4 ){return 'rgb(78, 148, 70)'}   
+                                 if ( ele.data('score') == 5 ){return 'rgb(52, 136, 74)'} 
+								                                  if ( ele.data('type') == 'sars' ){return 'rgb(255, 0, 0)'}   
+  return 'rgb(180, 131, 40)';
+  },
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'line-color': function( ele ){ 
+                                 if ( ele.data('type') == 'sars' ){return 'red'}   
+  return 'blue';
+  },
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    0.3 PA28-20S proteasome<br> Complex Score = 0.39400<br> Unweighted Density = 0.75
+    </section>
+    </body>
+    </html>
+    

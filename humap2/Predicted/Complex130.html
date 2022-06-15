@@ -1,0 +1,101 @@
+
+<!doctype html>
+<html>
+<head>
+<title> Complex 130</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex131.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'CEP350', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q5VT06" }},
+{data: { id: 'PPP2CB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62714" }},
+{data: { id: 'CSPP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q1MSJ5" }},
+{data: { id: 'PPP2R3C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q969Q6" }},
+{data: { id: 'CEP43', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/O95684" }}], 
+ edges: [{ data: { source: 'CEP350', target: 'CEP43', directed: 'false', weight: 1.0} },
+{ data: { source: 'CEP350', target: 'PPP2R3C', directed: 'false', weight: 0.0897119} },
+{ data: { source: 'CEP350', target: 'PPP2CB', directed: 'false', weight: 0.990448} },
+{ data: { source: 'PPP2CB', target: 'CEP43', directed: 'false', weight: 0.355556} },
+{ data: { source: 'PPP2CB', target: 'PPP2R3C', directed: 'false', weight: 0.37227} },
+{ data: { source: 'CSPP1', target: 'CEP43', directed: 'false', weight: 0.280457} },
+{ data: { source: 'PPP2R3C', target: 'CEP43', directed: 'false', weight: 1.0} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}                                
+  return 'rectangle';
+  },            
+            'background-color': 'mapData(score, 0, 5, yellow, green)',
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'line-color': 'blue',
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    Complex Score  = 0.38800
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        2 interacting protein(s): <br>CEP350 CEP43
+    </section>
+    </body>
+    </html>
+    

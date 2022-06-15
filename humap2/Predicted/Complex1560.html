@@ -1,0 +1,103 @@
+
+<!doctype html>
+<html>
+<head>
+<title> Complex 1560</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex1561.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'RPL35', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P42766" }},
+{data: { id: 'SLC25A5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P05141" }},
+{data: { id: 'RPL22', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P35268" }},
+{data: { id: 'RPL14', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P50914" }},
+{data: { id: 'RPL10A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62906" }},
+{data: { id: 'CLTC', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q00610" }},
+{data: { id: 'MYH7B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/A7E2Y1" }}], 
+ edges: [{ data: { source: 'RPL35', target: 'RPL14', directed: 'false', weight: 1.0} },
+{ data: { source: 'RPL35', target: 'RPL10A', directed: 'false', weight: 1.0} },
+{ data: { source: 'RPL35', target: 'RPL22', directed: 'false', weight: 1.0} },
+{ data: { source: 'RPL35', target: 'SLC25A5', directed: 'false', weight: 0.0424591} },
+{ data: { source: 'SLC25A5', target: 'RPL14', directed: 'false', weight: 0.15424100000000002} },
+{ data: { source: 'SLC25A5', target: 'RPL10A', directed: 'false', weight: 0.48358} },
+{ data: { source: 'SLC25A5', target: 'RPL22', directed: 'false', weight: 0.08648389999999999} },
+{ data: { source: 'SLC25A5', target: 'MYH7B', directed: 'false', weight: 0.022671} },
+{ data: { source: 'RPL22', target: 'RPL14', directed: 'false', weight: 1.0} },
+{ data: { source: 'RPL22', target: 'RPL10A', directed: 'false', weight: 1.0} },
+{ data: { source: 'RPL14', target: 'RPL10A', directed: 'false', weight: 1.0} },
+{ data: { source: 'CLTC', target: 'MYH7B', directed: 'false', weight: 0.030420299999999997} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}                                
+  return 'rectangle';
+  },            
+            'background-color': 'mapData(score, 0, 5, yellow, green)',
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'line-color': 'blue',
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    Complex Score  = 0.35000
+    </section>
+    </body>
+    </html>
+    

@@ -1,0 +1,96 @@
+
+<!doctype html>
+<html>
+<head>
+<title> Complex 1775</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex1776.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'THAP2', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q9H0W7" }},
+{data: { id: 'HCFC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P51610" }},
+{data: { id: 'LSM12', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q3MHD2" }},
+{data: { id: 'G3BP2', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9UN86" }}], 
+ edges: [{ data: { source: 'THAP2', target: 'HCFC1', directed: 'false', weight: 0.0354472} },
+{ data: { source: 'HCFC1', target: 'LSM12', directed: 'false', weight: 0.05577719999999999} },
+{ data: { source: 'LSM12', target: 'G3BP2', directed: 'false', weight: 0.0285226} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}                                
+  return 'rectangle';
+  },            
+            'background-color': 'mapData(score, 0, 5, yellow, green)',
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'line-color': 'blue',
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    Complex Score  = 0.30000
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>G3BP2
+    </section>
+    </body>
+    </html>
+    

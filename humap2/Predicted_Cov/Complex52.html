@@ -1,0 +1,124 @@
+
+<!doctype html>
+<html>
+<head>
+<title> 0.1 TRBP containing complex (DICER, RPL7A, EIF6, MOV10 and subunits of the 60S ribosomal particle) match 3</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex53.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'hCG_1994130', score: 1, type: '', href: "https://www.uniprot.org/uniprot/B2R4W8" }},
+{data: { id: 'RPS27', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P42677" }},
+{data: { id: 'RPL7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P18124" }},
+{data: { id: 'PWP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13610" }},
+{data: { id: 'SURF6', score: 4, type: '', href: "https://www.uniprot.org/uniprot/O75683" }},
+{data: { id: 'RPL30', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62888" }},
+{data: { id: 'RPS14', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62263" }},
+{data: { id: 'RPL28', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P46779" }}], 
+ edges: [{ data: { source: 'hCG_1994130', target: 'RPL7', directed: 'false', weight: 1.0} },
+{ data: { source: 'hCG_1994130', target: 'RPL30', directed: 'false', weight: 0.996266} },
+{ data: { source: 'hCG_1994130', target: 'RPS14', directed: 'false', weight: 0.9999979999999999} },
+{ data: { source: 'hCG_1994130', target: 'RPL28', directed: 'false', weight: 0.995822} },
+{ data: { source: 'hCG_1994130', target: 'RPS27', directed: 'false', weight: 0.0216098} },
+{ data: { source: 'RPS27', target: 'RPL7', directed: 'false', weight: 0.981664} },
+{ data: { source: 'RPS27', target: 'RPL30', directed: 'false', weight: 0.9953299999999999} },
+{ data: { source: 'RPS27', target: 'RPS14', directed: 'false', weight: 0.9736790000000001} },
+{ data: { source: 'RPL7', target: 'RPL30', directed: 'false', weight: 1.0} },
+{ data: { source: 'RPL7', target: 'RPS14', directed: 'false', weight: 1.0} },
+{ data: { source: 'RPL7', target: 'RPL28', directed: 'false', weight: 0.999999} },
+{ data: { source: 'RPL7', target: 'SURF6', directed: 'false', weight: 0.192168} },
+{ data: { source: 'RPL7', target: 'PWP1', directed: 'false', weight: 0.116283} },
+{ data: { source: 'PWP1', target: 'RPL30', directed: 'false', weight: 0.749653} },
+{ data: { source: 'PWP1', target: 'SURF6', directed: 'false', weight: 0.020291299999999998} },
+{ data: { source: 'SURF6', target: 'RPL30', directed: 'false', weight: 0.918067} },
+{ data: { source: 'SURF6', target: 'RPL28', directed: 'false', weight: 0.0259752} },
+{ data: { source: 'RPL30', target: 'RPS14', directed: 'false', weight: 1.0} },
+{ data: { source: 'RPL30', target: 'RPL28', directed: 'false', weight: 0.44496099999999994} },
+{ data: { source: 'RPS14', target: 'RPL28', directed: 'false', weight: 0.995035} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}  
+                                 if ( ele.data('type') == 'sars' ){return 'triangle'}   
+  return 'rectangle';
+  },            
+             'background-color': function( ele ){ 
+                                if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
+								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
+                                 if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
+                                 if ( ele.data('score') == 4 ){return 'rgb(78, 148, 70)'}   
+                                 if ( ele.data('score') == 5 ){return 'rgb(52, 136, 74)'} 
+								                                  if ( ele.data('type') == 'sars' ){return 'rgb(255, 0, 0)'}   
+  return 'rgb(180, 131, 40)';
+  },
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'line-color': function( ele ){ 
+                                 if ( ele.data('type') == 'sars' ){return 'red'}   
+  return 'blue';
+  },
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    0.1 TRBP containing complex (DICER, RPL7A, EIF6, MOV10 and subunits of the 60S ribosomal particle) match 3<br> Complex Score = 0.39400<br> Unweighted Density = 0.71
+    </section>
+    </body>
+    </html>
+    

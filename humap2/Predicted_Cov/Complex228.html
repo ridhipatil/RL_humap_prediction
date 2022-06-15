@@ -1,0 +1,119 @@
+
+<!doctype html>
+<html>
+<head>
+<title> 0.1 DDX27-PeBoW complex</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex229.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'KNOP1', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q1ED39" }},
+{data: { id: 'ZNF512', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q96ME7" }},
+{data: { id: 'PWP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13610" }},
+{data: { id: 'STAU1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95793" }},
+{data: { id: 'DDX27', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96GQ7" }},
+{data: { id: 'RBM34', score: 4, type: '', href: "https://www.uniprot.org/uniprot/P42696" }},
+{data: { id: 'HP1BP3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5SSJ5" }}], 
+ edges: [{ data: { source: 'KNOP1', target: 'HP1BP3', directed: 'false', weight: 0.068385} },
+{ data: { source: 'KNOP1', target: 'RBM34', directed: 'false', weight: 0.06252730000000001} },
+{ data: { source: 'KNOP1', target: 'DDX27', directed: 'false', weight: 0.132139} },
+{ data: { source: 'KNOP1', target: 'PWP1', directed: 'false', weight: 0.0687492} },
+{ data: { source: 'KNOP1', target: 'ZNF512', directed: 'false', weight: 0.165296} },
+{ data: { source: 'KNOP1', target: 'STAU1', directed: 'false', weight: 0.07532} },
+{ data: { source: 'ZNF512', target: 'HP1BP3', directed: 'false', weight: 0.431675} },
+{ data: { source: 'ZNF512', target: 'RBM34', directed: 'false', weight: 0.385349} },
+{ data: { source: 'ZNF512', target: 'DDX27', directed: 'false', weight: 0.783224} },
+{ data: { source: 'ZNF512', target: 'PWP1', directed: 'false', weight: 0.13280899999999998} },
+{ data: { source: 'ZNF512', target: 'STAU1', directed: 'false', weight: 0.219784} },
+{ data: { source: 'HP1BP3', target: 'RBM34', directed: 'false', weight: 0.640475} },
+{ data: { source: 'HP1BP3', target: 'STAU1', directed: 'false', weight: 0.0583256} },
+{ data: { source: 'HP1BP3', target: 'DDX27', directed: 'false', weight: 0.055885500000000005} },
+{ data: { source: 'HP1BP3', target: 'PWP1', directed: 'false', weight: 0.0251083} },
+{ data: { source: 'PWP1', target: 'RBM34', directed: 'false', weight: 0.9524950000000001} },
+{ data: { source: 'PWP1', target: 'DDX27', directed: 'false', weight: 0.0448606} },
+{ data: { source: 'PWP1', target: 'STAU1', directed: 'false', weight: 0.152274} },
+{ data: { source: 'STAU1', target: 'RBM34', directed: 'false', weight: 0.07159489999999999} },
+{ data: { source: 'STAU1', target: 'DDX27', directed: 'false', weight: 0.0324925} },
+{ data: { source: 'DDX27', target: 'RBM34', directed: 'false', weight: 0.9944059999999999} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 30,
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}  
+                                 if ( ele.data('type') == 'sars' ){return 'triangle'}   
+  return 'rectangle';
+  },            
+            'background-color': function( ele ){ 
+                                if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
+								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
+                                 if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
+                                 if ( ele.data('score') == 4 ){return 'rgb(78, 148, 70)'}   
+                                 if ( ele.data('score') == 5 ){return 'rgb(52, 136, 74)'} 
+								                                  if ( ele.data('type') == 'sars' ){return 'rgb(255, 0, 0)'}   
+  return 'rgb(180, 131, 40)';
+  },
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
+								'line-color': function( ele ){ 
+                                 if ( ele.data('type') == 'sars' ){return 'red'}   
+  return 'blue';
+  },
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'circle'
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    0.1 DDX27-PeBoW complex<br> Complex Score = 0.38800<br> Unweighted Density = 1.00
+    </section>
+    </body>
+    </html>
+    
