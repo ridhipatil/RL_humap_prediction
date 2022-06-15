@@ -1,0 +1,110 @@
+
+<!doctype html>
+<html>
+<head>
+<title> 0.2 RNA polymerase II core complex</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex1452.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'RCP9', score: 2, type: '', href: "https://www.uniprot.org/uniprot/A0A024RDL0" }},
+{data: { id: 'POLR2M', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P0CAP2" }},
+{data: { id: 'POLR2D', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15514" }},
+{data: { id: 'POLR2C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P19387" }},
+{data: { id: 'POLR2F', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P61218" }},
+{data: { id: 'LOC101060521', score: 0, type: '', href: "https://www.ncbi.nlm.nih.gov/gene/101060521" }}], 
+ edges: [{ data: { source: 'RCP9', target: 'LOC101060521', directed: 'false', weight: 0.9918620000000001} },
+{ data: { source: 'RCP9', target: 'POLR2F', directed: 'false', weight: 0.0342052} },
+{ data: { source: 'POLR2M', target: 'POLR2C', directed: 'false', weight: 0.547284} },
+{ data: { source: 'POLR2M', target: 'POLR2D', directed: 'false', weight: 0.884732} },
+{ data: { source: 'POLR2M', target: 'POLR2F', directed: 'false', weight: 0.0984125} },
+{ data: { source: 'POLR2D', target: 'POLR2C', directed: 'false', weight: 0.9999389999999999} },
+{ data: { source: 'POLR2D', target: 'POLR2F', directed: 'false', weight: 0.024993400000000002} },
+{ data: { source: 'POLR2C', target: 'POLR2F', directed: 'false', weight: 0.927494} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}  
+                                 if ( ele.data('type') == 'sars' ){return 'triangle'}   
+  return 'rectangle';
+  },            
+             'background-color': function( ele ){ 
+                                if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
+								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
+                                 if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
+                                 if ( ele.data('score') == 4 ){return 'rgb(78, 148, 70)'}   
+                                 if ( ele.data('score') == 5 ){return 'rgb(52, 136, 74)'} 
+								                                  if ( ele.data('type') == 'sars' ){return 'rgb(255, 0, 0)'}   
+  return 'rgb(180, 131, 40)';
+  },
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'line-color': function( ele ){ 
+                                 if ( ele.data('type') == 'sars' ){return 'red'}   
+  return 'blue';
+  },
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    0.2 RNA polymerase II core complex<br> Complex Score = 0.35000<br> Unweighted Density = 0.53
+    </section>
+    </body>
+    </html>
+    

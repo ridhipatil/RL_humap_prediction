@@ -1,0 +1,107 @@
+
+<!doctype html>
+<html>
+<head>
+<title> Complex 67</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex68.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'MED14', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60244" }},
+{data: { id: 'TRFP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H944" }},
+{data: { id: 'MED17', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NVC6" }},
+{data: { id: 'MED8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96G25" }},
+{data: { id: 'CDK8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49336" }},
+{data: { id: 'MED15', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96RN5" }},
+{data: { id: 'MED10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BTT4" }}], 
+ edges: [{ data: { source: 'MED14', target: 'MED17', directed: 'false', weight: 0.9998959999999999} },
+{ data: { source: 'MED14', target: 'MED8', directed: 'false', weight: 0.999965} },
+{ data: { source: 'MED14', target: 'MED15', directed: 'false', weight: 0.997022} },
+{ data: { source: 'MED14', target: 'TRFP', directed: 'false', weight: 0.9956959999999999} },
+{ data: { source: 'MED14', target: 'CDK8', directed: 'false', weight: 0.987043} },
+{ data: { source: 'MED14', target: 'MED10', directed: 'false', weight: 0.924228} },
+{ data: { source: 'MED17', target: 'MED8', directed: 'false', weight: 0.999999} },
+{ data: { source: 'MED17', target: 'TRFP', directed: 'false', weight: 0.9984799999999999} },
+{ data: { source: 'MED17', target: 'MED15', directed: 'false', weight: 0.9977360000000001} },
+{ data: { source: 'MED17', target: 'CDK8', directed: 'false', weight: 0.905085} },
+{ data: { source: 'MED17', target: 'MED10', directed: 'false', weight: 0.7840060000000001} },
+{ data: { source: 'TRFP', target: 'MED8', directed: 'false', weight: 0.999527} },
+{ data: { source: 'TRFP', target: 'MED10', directed: 'false', weight: 0.987541} },
+{ data: { source: 'TRFP', target: 'MED15', directed: 'false', weight: 0.632456} },
+{ data: { source: 'TRFP', target: 'CDK8', directed: 'false', weight: 0.272208} },
+{ data: { source: 'MED8', target: 'MED10', directed: 'false', weight: 0.999713} },
+{ data: { source: 'MED8', target: 'CDK8', directed: 'false', weight: 0.9988959999999999} },
+{ data: { source: 'MED8', target: 'MED15', directed: 'false', weight: 0.9724139999999999} },
+{ data: { source: 'MED10', target: 'CDK8', directed: 'false', weight: 0.9876159999999999} },
+{ data: { source: 'MED10', target: 'MED15', directed: 'false', weight: 0.925002} },
+{ data: { source: 'MED15', target: 'CDK8', directed: 'false', weight: 0.940628} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 30,
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}                                
+  return 'rectangle';
+  },            
+            'background-color': 'mapData(score, 0, 5, yellow, green)',
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
+								'line-color': 'blue',
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    name: 'circle'
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    Complex Score  = 0.39400
+    </section>
+    </body>
+    </html>
+    

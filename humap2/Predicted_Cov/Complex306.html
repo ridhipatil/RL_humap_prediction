@@ -1,0 +1,110 @@
+
+<!doctype html>
+<html>
+<head>
+<title> ACOX1 DKFZp727E011 ENO3 WBP2 HEL-S-21 ADSL</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex307.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'ENO3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P13929" }},
+{data: { id: 'HEL-S-21', score: 3, type: '', href: "https://www.uniprot.org/uniprot/V9HWG9" }},
+{data: { id: 'DKFZp727E011', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q9NTF0" }},
+{data: { id: 'ACOX1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15067" }},
+{data: { id: 'WBP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q969T9" }},
+{data: { id: 'ADSL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P30566" }}], 
+ edges: [{ data: { source: 'ENO3', target: 'ADSL', directed: 'false', weight: 0.5} },
+{ data: { source: 'ENO3', target: 'DKFZp727E011', directed: 'false', weight: 0.760149} },
+{ data: { source: 'ENO3', target: 'HEL-S-21', directed: 'false', weight: 0.951939} },
+{ data: { source: 'HEL-S-21', target: 'DKFZp727E011', directed: 'false', weight: 0.434229} },
+{ data: { source: 'DKFZp727E011', target: 'ADSL', directed: 'false', weight: 0.977658} },
+{ data: { source: 'DKFZp727E011', target: 'WBP2', directed: 'false', weight: 0.48439899999999997} },
+{ data: { source: 'DKFZp727E011', target: 'ACOX1', directed: 'false', weight: 0.193118} },
+{ data: { source: 'ACOX1', target: 'ADSL', directed: 'false', weight: 0.138218} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}  
+                                 if ( ele.data('type') == 'sars' ){return 'triangle'}   
+  return 'rectangle';
+  },            
+             'background-color': function( ele ){ 
+                                if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
+								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
+                                 if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
+                                 if ( ele.data('score') == 4 ){return 'rgb(78, 148, 70)'}   
+                                 if ( ele.data('score') == 5 ){return 'rgb(52, 136, 74)'} 
+								                                  if ( ele.data('type') == 'sars' ){return 'rgb(255, 0, 0)'}   
+  return 'rgb(180, 131, 40)';
+  },
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'line-color': function( ele ){ 
+                                 if ( ele.data('type') == 'sars' ){return 'red'}   
+  return 'blue';
+  },
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    ACOX1 DKFZp727E011 ENO3 WBP2 HEL-S-21 ADSL<br> Complex Score = 0.38800<br> Unweighted Density = 0.53
+    </section>
+    </body>
+    </html>
+    
