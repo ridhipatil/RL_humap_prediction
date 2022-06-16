@@ -30,21 +30,18 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'ATP6V1C1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P21283" }},
-{data: { id: 'GCNT4', score: 5, type: '', href: "https://www.ncbi.nlm.nih.gov/gene/51301" }},
-{data: { id: 'AK2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P54819" }},
-{data: { id: 'SARS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49591" }}], 
- edges: [{ data: { source: 'ATP6V1C1', target: 'AK2', directed: 'false', weight: 0.132392} },
-{ data: { source: 'GCNT4', target: 'AK2', directed: 'false', weight: 0.16541199999999998} },
-{ data: { source: 'AK2', target: 'SARS1', directed: 'false', weight: 0.258784} }]},
+elements:{nodes: [{data: { id: 'COLEC10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y6Z7" }},
+{data: { id: 'PTX3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75364" }},
+{data: { id: 'INHBE', score: 4, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P58166" }}], 
+ edges: [{ data: { source: 'COLEC10', target: 'PTX3', directed: 'false', weight: 0.766653} },
+{ data: { source: 'COLEC10', target: 'INHBE', directed: 'false', weight: 0.30688200000000004} },
+{ data: { source: 'PTX3', target: 'INHBE', directed: 'false', weight: 0.151455} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 10,
-		'width':'10',
-		'height': '10',	
+		'font-size': 30,
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}                                
@@ -56,7 +53,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
 								'line-color': 'blue',
 								'opacity': 0.5
 							}
@@ -65,10 +62,7 @@ style: [
 
 });
 cy.layout({
-    'name': 'fcose',
-		'animate':false,
-	'nodeDimensionsIncludeLabels':true,
-	'nodeSeparation': 1000
+    name: 'circle'
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -84,7 +78,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.37500
+    Complex Score  = 0.38750
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>INHBE
     </section>
     </body>
     </html>

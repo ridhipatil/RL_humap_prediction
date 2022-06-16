@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> SPG21 FMC1 ATPAF2</title>
+<title> ADAMTS12 SNRK FKBP9</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,26 +30,25 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'ATPAF2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N5M1" }},
-{data: { id: 'FMC1', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q96HJ9" }},
-{data: { id: 'SPG21', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NZD8" }}], 
- edges: [{ data: { source: 'ATPAF2', target: 'FMC1', directed: 'false', weight: 0.337217} },
-{ data: { source: 'ATPAF2', target: 'SPG21', directed: 'false', weight: 0.169548} }]},
+elements:{nodes: [{data: { id: 'FKBP9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95302" }},
+{data: { id: 'ADAMTS12', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P58397" }},
+{data: { id: 'SNRK', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NRH2" }}], 
+ edges: [{ data: { source: 'FKBP9', target: 'ADAMTS12', directed: 'false', weight: 0.906909} },
+{ data: { source: 'FKBP9', target: 'SNRK', directed: 'false', weight: 0.171414} },
+{ data: { source: 'ADAMTS12', target: 'SNRK', directed: 'false', weight: 0.984182} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 10,
-		'width':'10',
-		'height': '10',	
+		'font-size': 30,
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}  
                                  if ( ele.data('type') == 'sars' ){return 'triangle'}   
   return 'rectangle';
   },            
-             'background-color': function( ele ){ 
+            'background-color': function( ele ){ 
                                 if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
 								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
                                  if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
@@ -63,7 +62,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
 								'line-color': function( ele ){ 
                                  if ( ele.data('type') == 'sars' ){return 'red'}   
   return 'blue';
@@ -75,10 +74,7 @@ style: [
 
 });
 cy.layout({
-    'name': 'fcose',
-		'animate':false,
-	'nodeDimensionsIncludeLabels':true,
-	'nodeSeparation': 1000
+    'name': 'circle'
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -94,7 +90,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    SPG21 FMC1 ATPAF2<br> Complex Score = 0.38800<br> Unweighted Density = 0.67
+    ADAMTS12 SNRK FKBP9<br> Complex Score = 0.38750<br> Unweighted Density = 1.00
     </section>
     </body>
     </html>

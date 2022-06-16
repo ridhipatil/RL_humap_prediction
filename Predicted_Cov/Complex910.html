@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 Ubiquilin-VCP-erasin complex</title>
+<title> IMPDH1 SLC25A44 DDX53 PDE8B IMPDH2</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,18 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'BCL11A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H165" }},
-{data: { id: 'MTA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13330" }},
-{data: { id: 'UBE4A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14139" }},
-{data: { id: 'UBXN4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92575" }}], 
- edges: [{ data: { source: 'BCL11A', target: 'MTA1', directed: 'false', weight: 0.9051030000000001} },
-{ data: { source: 'BCL11A', target: 'UBXN4', directed: 'false', weight: 0.998135} },
-{ data: { source: 'UBXN4', target: 'UBE4A', directed: 'false', weight: 0.9867030000000001} }]},
+elements:{nodes: [{data: { id: 'SARS-CoV2 nsp14', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp14.html" }},
+{data: { id: 'IMPDH2', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P12268" }},
+{data: { id: 'SLC25A44', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q96H78" }},
+{data: { id: 'PDE8B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95263" }},
+{data: { id: 'IMPDH1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P20839" }},
+{data: { id: 'DDX53', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86TM3" }}], 
+ edges: [{ data: { source: 'SARS-CoV2 nsp14', target: 'IMPDH2', directed: 'false', weight: 0.989667608, type: 'sars'} },
+{ data: { source: 'IMPDH2', target: 'IMPDH1', directed: 'false', weight: 0.9999549999999999} },
+{ data: { source: 'IMPDH2', target: 'DDX53', directed: 'false', weight: 0.769696} },
+{ data: { source: 'IMPDH2', target: 'SLC25A44', directed: 'false', weight: 0.481997} },
+{ data: { source: 'IMPDH2', target: 'PDE8B', directed: 'false', weight: 0.363483} },
+{ data: { source: 'IMPDH1', target: 'DDX53', directed: 'false', weight: 0.505722} }]},
 
 style: [
     {
@@ -96,7 +101,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 Ubiquilin-VCP-erasin complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    IMPDH1 SLC25A44 DDX53 PDE8B IMPDH2<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>IMPDH2
     </section>
     </body>
     </html>

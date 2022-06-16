@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> PEX13 PEX7 PHYH C6orf226</title>
+<title> SHROOM1 57213 NYX</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,28 +30,25 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'PHYH', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O14832" }},
-{data: { id: 'PEX7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00628" }},
-{data: { id: 'PEX13', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92968" }},
-{data: { id: 'C6orf226', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q5I0X4" }}], 
- edges: [{ data: { source: 'PHYH', target: 'C6orf226', directed: 'false', weight: 0.23372300000000001} },
-{ data: { source: 'PEX7', target: 'C6orf226', directed: 'false', weight: 0.99634} },
-{ data: { source: 'PEX7', target: 'PEX13', directed: 'false', weight: 0.986874} }]},
+elements:{nodes: [{data: { id: 'SHROOM1', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q2M3G4" }},
+{data: { id: 'C13orf1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5W111" }},
+{data: { id: 'NYX', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9GZU5" }}], 
+ edges: [{ data: { source: 'C13orf1', target: 'NYX', directed: 'false', weight: 0.456093} },
+{ data: { source: 'C13orf1', target: 'SHROOM1', directed: 'false', weight: 0.151455} },
+{ data: { source: 'SHROOM1', target: 'NYX', directed: 'false', weight: 0.532499} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 10,
-		'width':'10',
-		'height': '10',	
+		'font-size': 30,
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}  
                                  if ( ele.data('type') == 'sars' ){return 'triangle'}   
   return 'rectangle';
   },            
-             'background-color': function( ele ){ 
+            'background-color': function( ele ){ 
                                 if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
 								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
                                  if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
@@ -65,7 +62,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
 								'line-color': function( ele ){ 
                                  if ( ele.data('type') == 'sars' ){return 'red'}   
   return 'blue';
@@ -77,10 +74,7 @@ style: [
 
 });
 cy.layout({
-    'name': 'fcose',
-		'animate':false,
-	'nodeDimensionsIncludeLabels':true,
-	'nodeSeparation': 1000
+    'name': 'circle'
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -96,7 +90,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    PEX13 PEX7 PHYH C6orf226<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    SHROOM1 57213 NYX<br> Complex Score = 0.38750<br> Unweighted Density = 1.00
     </section>
     </body>
     </html>

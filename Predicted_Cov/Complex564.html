@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> LURAP1L NEFM CDC42BPB CDC42BPA</title>
+<title> 0.1 Retrotranslocation complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,17 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'NEFM', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P07197" }},
-{data: { id: 'LURAP1L', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q8IV03" }},
-{data: { id: 'CDC42BPA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5VT25" }},
-{data: { id: 'CDC42BPB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y5S2" }}], 
- edges: [{ data: { source: 'NEFM', target: 'LURAP1L', directed: 'false', weight: 0.19328399999999998} },
-{ data: { source: 'LURAP1L', target: 'CDC42BPA', directed: 'false', weight: 0.9989450000000001} },
-{ data: { source: 'LURAP1L', target: 'CDC42BPB', directed: 'false', weight: 0.991683} }]},
+elements:{nodes: [{data: { id: 'TM9SF3', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q9HD45" }},
+{data: { id: 'MBOAT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6ZNC8" }},
+{data: { id: 'PTDSS2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BVG9" }},
+{data: { id: 'DERL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BUN8" }},
+{data: { id: 'TMEM87A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NBN3" }}], 
+ edges: [{ data: { source: 'TM9SF3', target: 'TMEM87A', directed: 'false', weight: 0.273912} },
+{ data: { source: 'MBOAT1', target: 'PTDSS2', directed: 'false', weight: 0.423509} },
+{ data: { source: 'MBOAT1', target: 'DERL1', directed: 'false', weight: 0.030887900000000003} },
+{ data: { source: 'DERL1', target: 'PTDSS2', directed: 'false', weight: 0.290321} },
+{ data: { source: 'DERL1', target: 'TMEM87A', directed: 'false', weight: 0.22982800000000003} },
+{ data: { source: 'PTDSS2', target: 'TMEM87A', directed: 'false', weight: 0.652694} }]},
 
 style: [
     {
@@ -96,7 +100,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    LURAP1L NEFM CDC42BPB CDC42BPA<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.1 Retrotranslocation complex<br> Complex Score = 0.38750<br> Unweighted Density = 0.60
     </section>
     </body>
     </html>

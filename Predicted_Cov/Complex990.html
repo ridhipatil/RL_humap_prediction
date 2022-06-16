@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 CRSP complex</title>
+<title> ARIH2 RAB40AL ZNF507 SOCS6 RAB40A</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,16 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'MED26', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95402" }},
-{data: { id: 'RPAP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IXW5" }},
-{data: { id: 'POLR2G', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62487" }},
-{data: { id: 'SRM', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P19623" }}], 
- edges: [{ data: { source: 'MED26', target: 'POLR2G', directed: 'false', weight: 0.191851} },
-{ data: { source: 'RPAP2', target: 'POLR2G', directed: 'false', weight: 0.9999950000000001} },
-{ data: { source: 'POLR2G', target: 'SRM', directed: 'false', weight: 0.166001} }]},
+elements:{nodes: [{data: { id: 'ZNF507', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q8TCN5" }},
+{data: { id: 'RAB40AL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P0C0E4" }},
+{data: { id: 'ARIH2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95376" }},
+{data: { id: 'RAB40A', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q8WXH6" }},
+{data: { id: 'SOCS6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O14512" }}], 
+ edges: [{ data: { source: 'RAB40AL', target: 'RAB40A', directed: 'false', weight: 0.95394} },
+{ data: { source: 'ARIH2', target: 'RAB40A', directed: 'false', weight: 0.266017} },
+{ data: { source: 'ARIH2', target: 'SOCS6', directed: 'false', weight: 0.458582} },
+{ data: { source: 'ARIH2', target: 'ZNF507', directed: 'false', weight: 0.0848034} },
+{ data: { source: 'ZNF507', target: 'SOCS6', directed: 'false', weight: 0.397057} }]},
 
 style: [
     {
@@ -96,7 +99,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 CRSP complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    ARIH2 RAB40AL ZNF507 SOCS6 RAB40A<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

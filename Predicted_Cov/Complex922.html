@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> ZNF644 XAGE2 XAGE3 METAP1D</title>
+<title> SEMG2 SIRT3 C9orf64 POLL SEMG1 LSM14B</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,20 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'XAGE2', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q96GT9" }},
-{data: { id: 'XAGE3', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q8WTP9" }},
-{data: { id: 'METAP1D', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6UB28" }},
-{data: { id: 'ZNF644', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H582" }}], 
- edges: [{ data: { source: 'XAGE2', target: 'ZNF644', directed: 'false', weight: 0.37104899999999996} },
-{ data: { source: 'XAGE3', target: 'ZNF644', directed: 'false', weight: 0.12928199999999998} },
-{ data: { source: 'XAGE3', target: 'METAP1D', directed: 'false', weight: 0.128572} }]},
+elements:{nodes: [{data: { id: 'SIRT3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NTG7" }},
+{data: { id: 'POLL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UGP5" }},
+{data: { id: 'SEMG1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P04279" }},
+{data: { id: 'C9orf64', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q5T6V5" }},
+{data: { id: 'LSM14B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BX40" }},
+{data: { id: 'SEMG2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q02383" }}], 
+ edges: [{ data: { source: 'POLL', target: 'C9orf64', directed: 'false', weight: 0.9854870000000001} },
+{ data: { source: 'POLL', target: 'SEMG1', directed: 'false', weight: 0.438263} },
+{ data: { source: 'SIRT3', target: 'SEMG2', directed: 'false', weight: 0.0952728} },
+{ data: { source: 'SIRT3', target: 'LSM14B', directed: 'false', weight: 0.34730900000000003} },
+{ data: { source: 'SIRT3', target: 'SEMG1', directed: 'false', weight: 0.0815261} },
+{ data: { source: 'SEMG1', target: 'SEMG2', directed: 'false', weight: 0.46998900000000005} },
+{ data: { source: 'SEMG1', target: 'LSM14B', directed: 'false', weight: 0.42897799999999997} },
+{ data: { source: 'LSM14B', target: 'SEMG2', directed: 'false', weight: 0.895186} }]},
 
 style: [
     {
@@ -96,7 +103,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    ZNF644 XAGE2 XAGE3 METAP1D<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    SEMG2 SIRT3 C9orf64 POLL SEMG1 LSM14B<br> Complex Score = 0.37500<br> Unweighted Density = 0.53
     </section>
     </body>
     </html>

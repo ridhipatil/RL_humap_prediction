@@ -30,14 +30,19 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'SNRPN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P63162" }},
-{data: { id: 'DENND4B', score: 4, type: '', href: "https://www.uniprot.org/uniprot/O75064" }},
-{data: { id: 'ZRSR2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15696" }},
-{data: { id: 'ZMAT5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UDW3" }}], 
- edges: [{ data: { source: 'ZMAT5', target: 'SNRPN', directed: 'false', weight: 0.23032800000000003} },
-{ data: { source: 'ZMAT5', target: 'ZRSR2', directed: 'false', weight: 0.9945729999999999} },
-{ data: { source: 'ZMAT5', target: 'DENND4B', directed: 'false', weight: 0.13548} },
-{ data: { source: 'ZRSR2', target: 'SNRPN', directed: 'false', weight: 0.221383} }]},
+elements:{nodes: [{data: { id: 'FABP5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q01469" }},
+{data: { id: 'RAB33A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14088" }},
+{data: { id: 'DCXR', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q7Z4W1" }},
+{data: { id: 'UPP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16831" }},
+{data: { id: 'QDPR', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P09417" }},
+{data: { id: 'BPNT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95861" }}], 
+ edges: [{ data: { source: 'BPNT1', target: 'FABP5', directed: 'false', weight: 0.0156089} },
+{ data: { source: 'BPNT1', target: 'QDPR', directed: 'false', weight: 0.061542999999999994} },
+{ data: { source: 'BPNT1', target: 'DCXR', directed: 'false', weight: 0.195579} },
+{ data: { source: 'RAB33A', target: 'DCXR', directed: 'false', weight: 0.37848200000000004} },
+{ data: { source: 'FABP5', target: 'QDPR', directed: 'false', weight: 0.433359} },
+{ data: { source: 'FABP5', target: 'UPP1', directed: 'false', weight: 0.0149959} },
+{ data: { source: 'DCXR', target: 'QDPR', directed: 'false', weight: 0.892508} }]},
 
 style: [
     {

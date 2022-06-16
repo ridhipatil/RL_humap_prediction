@@ -30,13 +30,22 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'POLE3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NRF9" }},
-{data: { id: 'POLE2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P56282" }},
-{data: { id: 'POLE', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q07864" }},
-{data: { id: 'POLA1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P09884" }}], 
- edges: [{ data: { source: 'POLE3', target: 'POLE', directed: 'false', weight: 0.270331} },
-{ data: { source: 'POLA1', target: 'POLE', directed: 'false', weight: 0.579335} },
-{ data: { source: 'POLE2', target: 'POLE', directed: 'false', weight: 0.215642} }]},
+elements:{nodes: [{data: { id: 'SPTBN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q01082" }},
+{data: { id: 'LRRFIP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y608" }},
+{data: { id: 'ACTB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P60709" }},
+{data: { id: 'CALM1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P0DP23" }},
+{data: { id: 'AFAP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N556" }},
+{data: { id: 'CFL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P23528" }}], 
+ edges: [{ data: { source: 'SPTBN1', target: 'ACTB', directed: 'false', weight: 0.894284} },
+{ data: { source: 'SPTBN1', target: 'AFAP1', directed: 'false', weight: 0.571179} },
+{ data: { source: 'SPTBN1', target: 'CALM1', directed: 'false', weight: 0.43689700000000004} },
+{ data: { source: 'SPTBN1', target: 'CFL1', directed: 'false', weight: 0.350134} },
+{ data: { source: 'LRRFIP2', target: 'ACTB', directed: 'false', weight: 0.971942} },
+{ data: { source: 'LRRFIP2', target: 'AFAP1', directed: 'false', weight: 0.17125} },
+{ data: { source: 'ACTB', target: 'AFAP1', directed: 'false', weight: 0.9781629999999999} },
+{ data: { source: 'ACTB', target: 'CALM1', directed: 'false', weight: 0.25874899999999995} },
+{ data: { source: 'AFAP1', target: 'CALM1', directed: 'false', weight: 0.43689700000000004} },
+{ data: { source: 'CFL1', target: 'CALM1', directed: 'false', weight: 0.422824} }]},
 
 style: [
     {
@@ -84,12 +93,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.37500
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>POLA1
+    Complex Score  = 0.38750
     </section>
     </body>
     </html>

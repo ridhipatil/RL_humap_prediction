@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.4 RNA polymerase II core complex</title>
+<title> MBNL2 MBNL1 MBNL3</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,39 +30,25 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'YBX1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P67809" }},
-{data: { id: 'POLR2G', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62487" }},
-{data: { id: 'POLR2A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P24928" }},
-{data: { id: 'CSDA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P16989" }},
-{data: { id: 'POLR2C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P19387" }},
-{data: { id: 'POLR2L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62875" }},
-{data: { id: 'POLR2F', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P61218" }}], 
- edges: [{ data: { source: 'YBX1', target: 'POLR2A', directed: 'false', weight: 0.1443} },
-{ data: { source: 'YBX1', target: 'CSDA', directed: 'false', weight: 0.9750639999999999} },
-{ data: { source: 'POLR2G', target: 'POLR2A', directed: 'false', weight: 1.0} },
-{ data: { source: 'POLR2G', target: 'POLR2C', directed: 'false', weight: 1.0} },
-{ data: { source: 'POLR2G', target: 'POLR2L', directed: 'false', weight: 0.999767} },
-{ data: { source: 'POLR2G', target: 'POLR2F', directed: 'false', weight: 0.9246690000000001} },
-{ data: { source: 'POLR2A', target: 'POLR2C', directed: 'false', weight: 1.0} },
-{ data: { source: 'POLR2A', target: 'POLR2L', directed: 'false', weight: 0.999825} },
-{ data: { source: 'POLR2A', target: 'POLR2F', directed: 'false', weight: 0.998085} },
-{ data: { source: 'POLR2C', target: 'POLR2L', directed: 'false', weight: 0.999761} },
-{ data: { source: 'POLR2C', target: 'POLR2F', directed: 'false', weight: 0.927494} }]},
+elements:{nodes: [{data: { id: 'MBNL2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5VZF2" }},
+{data: { id: 'MBNL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NR56" }},
+{data: { id: 'MBNL3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NUK0" }}], 
+ edges: [{ data: { source: 'MBNL2', target: 'MBNL3', directed: 'false', weight: 0.140692} },
+{ data: { source: 'MBNL2', target: 'MBNL1', directed: 'false', weight: 0.954015} },
+{ data: { source: 'MBNL3', target: 'MBNL1', directed: 'false', weight: 0.984067} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 10,
-		'width':'10',
-		'height': '10',	
+		'font-size': 30,
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}  
                                  if ( ele.data('type') == 'sars' ){return 'triangle'}   
   return 'rectangle';
   },            
-             'background-color': function( ele ){ 
+            'background-color': function( ele ){ 
                                 if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
 								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
                                  if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
@@ -76,7 +62,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
 								'line-color': function( ele ){ 
                                  if ( ele.data('type') == 'sars' ){return 'red'}   
   return 'blue';
@@ -88,10 +74,7 @@ style: [
 
 });
 cy.layout({
-    'name': 'fcose',
-		'animate':false,
-	'nodeDimensionsIncludeLabels':true,
-	'nodeSeparation': 1000
+    'name': 'circle'
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -107,7 +90,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.4 RNA polymerase II core complex<br> Complex Score = 0.38800<br> Unweighted Density = 0.52
+    MBNL2 MBNL1 MBNL3<br> Complex Score = 0.38750<br> Unweighted Density = 1.00
     </section>
     </body>
     </html>

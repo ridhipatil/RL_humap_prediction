@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 TRIM25-G3BP2 complex match 2</title>
+<title> GPD1L GORASP2 GALE PGD ALDOC</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,15 +30,18 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'HEL-S-22', score: 3, type: '', href: "https://www.uniprot.org/uniprot/V9HWE9" }},
-{data: { id: 'HEL-S-2', score: 1, type: '', href: "https://www.uniprot.org/uniprot/A0A0K0K1J1" }},
-{data: { id: 'CAPRIN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14444" }},
-{data: { id: 'SARS-CoV2 N', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 N.html" }},
-{data: { id: 'G3BP2', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9UN86" }}], 
- edges: [{ data: { source: 'SARS-CoV2 N', target: 'G3BP2', directed: 'false', weight: 0.958133672, type: 'sars'} },
-{ data: { source: 'HEL-S-22', target: 'G3BP2', directed: 'false', weight: 0.100108} },
-{ data: { source: 'HEL-S-22', target: 'HEL-S-2', directed: 'false', weight: 0.240844} },
-{ data: { source: 'G3BP2', target: 'CAPRIN1', directed: 'false', weight: 0.9999979999999999} }]},
+elements:{nodes: [{data: { id: 'GORASP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H8Y8" }},
+{data: { id: 'ALDOC', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P09972" }},
+{data: { id: 'GALE', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14376" }},
+{data: { id: 'GPD1L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N335" }},
+{data: { id: 'PGD', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P52209" }}], 
+ edges: [{ data: { source: 'GALE', target: 'GPD1L', directed: 'false', weight: 0.052387800000000005} },
+{ data: { source: 'GALE', target: 'ALDOC', directed: 'false', weight: 0.83836} },
+{ data: { source: 'GALE', target: 'PGD', directed: 'false', weight: 0.819348} },
+{ data: { source: 'GPD1L', target: 'ALDOC', directed: 'false', weight: 0.9169149999999999} },
+{ data: { source: 'GPD1L', target: 'PGD', directed: 'false', weight: 0.0632839} },
+{ data: { source: 'PGD', target: 'ALDOC', directed: 'false', weight: 0.765273} },
+{ data: { source: 'GORASP2', target: 'ALDOC', directed: 'false', weight: 0.847726} }]},
 
 style: [
     {
@@ -98,12 +101,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 TRIM25-G3BP2 complex match 2<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>G3BP2
+    GPD1L GORASP2 GALE PGD ALDOC<br> Complex Score = 0.38750<br> Unweighted Density = 0.70
     </section>
     </body>
     </html>

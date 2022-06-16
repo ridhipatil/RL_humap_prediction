@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.5 TSC1-TSC2 complex</title>
+<title> 0.2 MIB complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,14 +30,41 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'TSC2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49815" }},
-{data: { id: 'DKFZp686N2317', score: 1, type: '', href: "https://www.uniprot.org/uniprot/Q5JPB9" }},
-{data: { id: 'KIF27', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86VH2" }},
-{data: { id: 'TSC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92574" }}], 
- edges: [{ data: { source: 'TSC2', target: 'DKFZp686N2317', directed: 'false', weight: 0.977073} },
-{ data: { source: 'TSC2', target: 'TSC1', directed: 'false', weight: 0.107676} },
-{ data: { source: 'DKFZp686N2317', target: 'TSC1', directed: 'false', weight: 0.9999889999999999} },
-{ data: { source: 'DKFZp686N2317', target: 'KIF27', directed: 'false', weight: 0.334782} }]},
+elements:{nodes: [{data: { id: 'CHCHD3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NX63" }},
+{data: { id: 'MTX3', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q5HYI7" }},
+{data: { id: 'MTX2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75431" }},
+{data: { id: 'PDXDC1', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q6P996" }},
+{data: { id: 'SAMM50', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y512" }},
+{data: { id: 'IMMT', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16891" }},
+{data: { id: 'POMT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y6A1" }},
+{data: { id: 'CCDC127', score: 1, type: '', href: "https://www.uniprot.org/uniprot/Q96BQ5" }},
+{data: { id: 'CD244', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BZW8" }},
+{data: { id: 'CARD19', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96LW7" }}], 
+ edges: [{ data: { source: 'CHCHD3', target: 'CARD19', directed: 'false', weight: 0.166686} },
+{ data: { source: 'CHCHD3', target: 'MTX2', directed: 'false', weight: 0.64166} },
+{ data: { source: 'CHCHD3', target: 'IMMT', directed: 'false', weight: 0.208853} },
+{ data: { source: 'CHCHD3', target: 'MTX3', directed: 'false', weight: 0.13608399999999998} },
+{ data: { source: 'CHCHD3', target: 'SAMM50', directed: 'false', weight: 0.154052} },
+{ data: { source: 'CHCHD3', target: 'CCDC127', directed: 'false', weight: 0.12030199999999999} },
+{ data: { source: 'MTX3', target: 'CARD19', directed: 'false', weight: 0.22550599999999998} },
+{ data: { source: 'MTX3', target: 'MTX2', directed: 'false', weight: 0.997007} },
+{ data: { source: 'MTX3', target: 'IMMT', directed: 'false', weight: 0.248928} },
+{ data: { source: 'MTX3', target: 'SAMM50', directed: 'false', weight: 0.322238} },
+{ data: { source: 'MTX3', target: 'CCDC127', directed: 'false', weight: 0.11585699999999999} },
+{ data: { source: 'MTX2', target: 'CARD19', directed: 'false', weight: 0.9979309999999999} },
+{ data: { source: 'MTX2', target: 'IMMT', directed: 'false', weight: 0.997603} },
+{ data: { source: 'MTX2', target: 'SAMM50', directed: 'false', weight: 0.9589290000000001} },
+{ data: { source: 'MTX2', target: 'CCDC127', directed: 'false', weight: 0.8038609999999999} },
+{ data: { source: 'PDXDC1', target: 'CD244', directed: 'false', weight: 0.301819} },
+{ data: { source: 'PDXDC1', target: 'POMT1', directed: 'false', weight: 0.0646543} },
+{ data: { source: 'SAMM50', target: 'CARD19', directed: 'false', weight: 0.239448} },
+{ data: { source: 'SAMM50', target: 'IMMT', directed: 'false', weight: 0.333518} },
+{ data: { source: 'SAMM50', target: 'CCDC127', directed: 'false', weight: 0.100579} },
+{ data: { source: 'IMMT', target: 'CARD19', directed: 'false', weight: 0.226713} },
+{ data: { source: 'IMMT', target: 'CCDC127', directed: 'false', weight: 0.0925168} },
+{ data: { source: 'POMT1', target: 'CD244', directed: 'false', weight: 0.595434} },
+{ data: { source: 'CCDC127', target: 'CARD19', directed: 'false', weight: 0.11585699999999999} },
+{ data: { source: 'CD244', target: 'CARD19', directed: 'false', weight: 0.5455949999999999} }]},
 
 style: [
     {
@@ -97,7 +124,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.5 TSC1-TSC2 complex<br> Complex Score = 0.38800<br> Unweighted Density = 0.67
+    0.2 MIB complex<br> Complex Score = 0.38750<br> Unweighted Density = 0.56
     </section>
     </body>
     </html>

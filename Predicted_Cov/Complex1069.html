@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 TNF-alpha/NF-kappa B signaling complex 8</title>
+<title> 0.1 BAG1-HSC70 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,18 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'KTN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86UP2" }},
-{data: { id: 'CDR2L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86X02" }},
-{data: { id: 'SPATA24', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86W54" }},
-{data: { id: 'CDR2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q01850" }}], 
- edges: [{ data: { source: 'SPATA24', target: 'CDR2', directed: 'false', weight: 0.231969} },
-{ data: { source: 'KTN1', target: 'CDR2', directed: 'false', weight: 0.235434} },
-{ data: { source: 'CDR2', target: 'CDR2L', directed: 'false', weight: 0.536747} }]},
+elements:{nodes: [{data: { id: 'SNRNP40', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96DI7" }},
+{data: { id: 'MTPN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P58546" }},
+{data: { id: 'BAG1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99933" }},
+{data: { id: 'PRPF4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43172" }},
+{data: { id: 'SNRPB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P14678" }},
+{data: { id: 'NUDT21', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43809" }}], 
+ edges: [{ data: { source: 'BAG1', target: 'MTPN', directed: 'false', weight: 0.355219} },
+{ data: { source: 'SNRPB', target: 'SNRNP40', directed: 'false', weight: 0.533084} },
+{ data: { source: 'SNRNP40', target: 'PRPF4', directed: 'false', weight: 0.9758959999999999} },
+{ data: { source: 'SNRNP40', target: 'NUDT21', directed: 'false', weight: 0.546166} },
+{ data: { source: 'PRPF4', target: 'NUDT21', directed: 'false', weight: 0.608228} },
+{ data: { source: 'NUDT21', target: 'MTPN', directed: 'false', weight: 0.506415} }]},
 
 style: [
     {
@@ -96,7 +101,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 TNF-alpha/NF-kappa B signaling complex 8<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.1 BAG1-HSC70 complex<br> Complex Score = 0.35000<br> Unweighted Density = 0.40
     </section>
     </body>
     </html>

@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 ACK1 signaling complex</title>
+<title> 0.1 ITGA1-ITGB1-PTPN2 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,18 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'TNK2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q07912" }},
-{data: { id: 'CNKSR3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6P9H4" }},
-{data: { id: 'ARHGAP39', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9C0H5" }},
-{data: { id: 'NCK2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43639" }}], 
- edges: [{ data: { source: 'TNK2', target: 'NCK2', directed: 'false', weight: 0.11913299999999999} },
-{ data: { source: 'CNKSR3', target: 'ARHGAP39', directed: 'false', weight: 0.7456109999999999} },
-{ data: { source: 'ARHGAP39', target: 'NCK2', directed: 'false', weight: 0.215604} }]},
+elements:{nodes: [{data: { id: 'COL2A1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P02458" }},
+{data: { id: 'PTPN2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P17706" }},
+{data: { id: 'COL4A5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P29400" }},
+{data: { id: 'COL8A2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P25067" }},
+{data: { id: 'COL5A1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P20908" }}], 
+ edges: [{ data: { source: 'PTPN2', target: 'COL5A1', directed: 'false', weight: 0.681534} },
+{ data: { source: 'COL4A5', target: 'COL8A2', directed: 'false', weight: 0.9342280000000001} },
+{ data: { source: 'COL4A5', target: 'COL5A1', directed: 'false', weight: 0.133451} },
+{ data: { source: 'COL4A5', target: 'COL2A1', directed: 'false', weight: 0.128057} },
+{ data: { source: 'COL8A2', target: 'COL5A1', directed: 'false', weight: 0.861261} },
+{ data: { source: 'COL8A2', target: 'COL2A1', directed: 'false', weight: 0.695153} },
+{ data: { source: 'COL2A1', target: 'COL5A1', directed: 'false', weight: 0.175861} }]},
 
 style: [
     {
@@ -96,7 +101,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 ACK1 signaling complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.1 ITGA1-ITGB1-PTPN2 complex<br> Complex Score = 0.38750<br> Unweighted Density = 0.70
     </section>
     </body>
     </html>

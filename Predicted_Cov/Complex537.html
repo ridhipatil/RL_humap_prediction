@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> ADH1B XYLT1 ADH1C match 2</title>
+<title> 0.2 Telomerase holoenzyme match 2</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,11 +30,27 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'ADH1C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P00326" }},
-{data: { id: 'XYLT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86Y38" }},
-{data: { id: 'ADH1B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P00325" }}], 
- edges: [{ data: { source: 'ADH1C', target: 'ADH1B', directed: 'false', weight: 1.0} },
-{ data: { source: 'ADH1C', target: 'XYLT1', directed: 'false', weight: 0.999978} }]},
+elements:{nodes: [{data: { id: 'RPL10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P27635" }},
+{data: { id: 'EEF1B2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P24534" }},
+{data: { id: 'ZC3H8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N5P1" }},
+{data: { id: 'BMS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14692" }},
+{data: { id: 'DKC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60832" }},
+{data: { id: 'GAR1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NY12" }},
+{data: { id: 'SARS-CoV2 nsp8', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp8.html" }},
+{data: { id: 'SRP72', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/O76094" }}], 
+ edges: [{ data: { source: 'SARS-CoV2 nsp8', target: 'SRP72', directed: 'false', weight: 0.739540656, type: 'sars'} },
+{ data: { source: 'RPL10', target: 'EEF1B2', directed: 'false', weight: 0.999719} },
+{ data: { source: 'RPL10', target: 'SRP72', directed: 'false', weight: 0.981125} },
+{ data: { source: 'ZC3H8', target: 'DKC1', directed: 'false', weight: 0.4574} },
+{ data: { source: 'ZC3H8', target: 'GAR1', directed: 'false', weight: 0.569239} },
+{ data: { source: 'ZC3H8', target: 'SRP72', directed: 'false', weight: 0.319447} },
+{ data: { source: 'ZC3H8', target: 'BMS1', directed: 'false', weight: 0.851592} },
+{ data: { source: 'BMS1', target: 'DKC1', directed: 'false', weight: 0.0560446} },
+{ data: { source: 'BMS1', target: 'GAR1', directed: 'false', weight: 0.424026} },
+{ data: { source: 'BMS1', target: 'SRP72', directed: 'false', weight: 0.277138} },
+{ data: { source: 'DKC1', target: 'GAR1', directed: 'false', weight: 0.9999889999999999} },
+{ data: { source: 'DKC1', target: 'SRP72', directed: 'false', weight: 0.390763} },
+{ data: { source: 'GAR1', target: 'SRP72', directed: 'false', weight: 0.17873599999999998} }]},
 
 style: [
     {
@@ -94,7 +110,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    ADH1B XYLT1 ADH1C match 2<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
+    0.2 Telomerase holoenzyme match 2<br> Complex Score = 0.38750<br> Unweighted Density = 0.57
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>SRP72
     </section>
     </body>
     </html>

@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> POLR3A POLR3C POLR1C POLR3G POLR3H POLR3F</title>
+<title> 0.2 IGF2R-PLAUR complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,25 +30,20 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'POLR3H', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y535" }},
-{data: { id: 'POLR1C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15160" }},
-{data: { id: 'POLR3C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BUI4" }},
-{data: { id: 'POLR3A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O14802" }},
-{data: { id: 'POLR3G', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15318" }},
-{data: { id: 'POLR3F', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H1D9" }}], 
- edges: [{ data: { source: 'POLR3H', target: 'POLR1C', directed: 'false', weight: 0.12988} },
-{ data: { source: 'POLR3H', target: 'POLR3F', directed: 'false', weight: 0.9999809999999999} },
-{ data: { source: 'POLR3H', target: 'POLR3C', directed: 'false', weight: 0.999991} },
-{ data: { source: 'POLR3H', target: 'POLR3G', directed: 'false', weight: 0.999714} },
-{ data: { source: 'POLR3H', target: 'POLR3A', directed: 'false', weight: 0.999368} },
-{ data: { source: 'POLR1C', target: 'POLR3G', directed: 'false', weight: 0.24759699999999998} },
-{ data: { source: 'POLR1C', target: 'POLR3A', directed: 'false', weight: 0.21265100000000003} },
-{ data: { source: 'POLR3C', target: 'POLR3F', directed: 'false', weight: 0.188856} },
-{ data: { source: 'POLR3C', target: 'POLR3G', directed: 'false', weight: 0.998966} },
-{ data: { source: 'POLR3C', target: 'POLR3A', directed: 'false', weight: 0.998058} },
-{ data: { source: 'POLR3A', target: 'POLR3F', directed: 'false', weight: 0.999983} },
-{ data: { source: 'POLR3A', target: 'POLR3G', directed: 'false', weight: 0.9998100000000001} },
-{ data: { source: 'POLR3G', target: 'POLR3F', directed: 'false', weight: 0.994784} }]},
+elements:{nodes: [{data: { id: 'LARGE1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95461" }},
+{data: { id: 'PKN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16512" }},
+{data: { id: 'PCYOX1L', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q8NBM8" }},
+{data: { id: 'PLAUR', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q03405" }},
+{data: { id: 'DDX11', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96FC9" }}], 
+ edges: [{ data: { source: 'LARGE1', target: 'DDX11', directed: 'false', weight: 0.133456} },
+{ data: { source: 'LARGE1', target: 'PLAUR', directed: 'false', weight: 0.539473} },
+{ data: { source: 'LARGE1', target: 'PCYOX1L', directed: 'false', weight: 0.133456} },
+{ data: { source: 'LARGE1', target: 'PKN1', directed: 'false', weight: 0.123797} },
+{ data: { source: 'PKN1', target: 'DDX11', directed: 'false', weight: 0.0961868} },
+{ data: { source: 'PKN1', target: 'PLAUR', directed: 'false', weight: 0.5} },
+{ data: { source: 'PKN1', target: 'PCYOX1L', directed: 'false', weight: 0.123797} },
+{ data: { source: 'PCYOX1L', target: 'PLAUR', directed: 'false', weight: 0.277057} },
+{ data: { source: 'PLAUR', target: 'DDX11', directed: 'false', weight: 0.572026} }]},
 
 style: [
     {
@@ -103,7 +98,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    POLR3A POLR3C POLR1C POLR3G POLR3H POLR3F<br> Complex Score = 0.39800<br> Unweighted Density = 0.87
+    0.2 IGF2R-PLAUR complex<br> Complex Score = 0.39688<br> Unweighted Density = 0.90
     </section>
     </body>
     </html>

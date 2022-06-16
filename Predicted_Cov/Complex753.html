@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 SRm160/300 complex match 2</title>
+<title> 0.2 HDAC4-ERK1 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,16 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'NACA2', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9H009" }},
-{data: { id: 'BTF3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P78410" }},
-{data: { id: 'EL52', score: 4, type: '', href: "https://www.uniprot.org/uniprot/K9JA46" }},
-{data: { id: 'SNRPA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P09661" }}], 
- edges: [{ data: { source: 'NACA2', target: 'EL52', directed: 'false', weight: 0.20817399999999997} },
-{ data: { source: 'NACA2', target: 'BTF3', directed: 'false', weight: 1.0} },
-{ data: { source: 'NACA2', target: 'SNRPA1', directed: 'false', weight: 0.141654} }]},
+elements:{nodes: [{data: { id: 'NOC4L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BVI4" }},
+{data: { id: 'NOP14', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P78316" }},
+{data: { id: 'MAPK3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P27361" }},
+{data: { id: 'DHPS', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49366" }},
+{data: { id: 'SUSD4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5VX71" }}], 
+ edges: [{ data: { source: 'NOC4L', target: 'DHPS', directed: 'false', weight: 0.0809576} },
+{ data: { source: 'NOC4L', target: 'NOP14', directed: 'false', weight: 0.657651} },
+{ data: { source: 'NOP14', target: 'DHPS', directed: 'false', weight: 0.075571} },
+{ data: { source: 'MAPK3', target: 'DHPS', directed: 'false', weight: 0.9956870000000001} },
+{ data: { source: 'DHPS', target: 'SUSD4', directed: 'false', weight: 0.397516} }]},
 
 style: [
     {
@@ -96,7 +99,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 SRm160/300 complex match 2<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.2 HDAC4-ERK1 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 mRNA decay complex (UPF1, UPF2, UPF3B, DCP2, XRN1, XRN2, EXOSC2, EXOSC4, EXOSC10, PARN) match 2</title>
+<title> 0.1 CLTC-PI4K2A complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,20 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'BYSL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13895" }},
-{data: { id: 'TSR1', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q2NL82" }},
-{data: { id: 'NOP14', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P78316" }},
-{data: { id: 'PARN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95453" }}], 
- edges: [{ data: { source: 'NOP14', target: 'BYSL', directed: 'false', weight: 0.848274} },
-{ data: { source: 'BYSL', target: 'PARN', directed: 'false', weight: 0.9877530000000001} },
-{ data: { source: 'BYSL', target: 'TSR1', directed: 'false', weight: 0.795158} }]},
+elements:{nodes: [{data: { id: 'ZMYND8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9ULU4" }},
+{data: { id: 'ZNF687', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N1G0" }},
+{data: { id: 'CLTC', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q00610" }},
+{data: { id: 'KDM5C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P41229" }},
+{data: { id: 'ZNF592', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q92610" }},
+{data: { id: 'ZNF532', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q9HCE3" }}], 
+ edges: [{ data: { source: 'CLTC', target: 'KDM5C', directed: 'false', weight: 0.777612} },
+{ data: { source: 'KDM5C', target: 'ZMYND8', directed: 'false', weight: 0.434464} },
+{ data: { source: 'KDM5C', target: 'ZNF687', directed: 'false', weight: 0.486654} },
+{ data: { source: 'KDM5C', target: 'ZNF592', directed: 'false', weight: 0.443438} },
+{ data: { source: 'KDM5C', target: 'ZNF532', directed: 'false', weight: 0.370082} },
+{ data: { source: 'ZNF687', target: 'ZMYND8', directed: 'false', weight: 0.956594} },
+{ data: { source: 'ZNF687', target: 'ZNF592', directed: 'false', weight: 0.761742} },
+{ data: { source: 'ZNF592', target: 'ZMYND8', directed: 'false', weight: 0.28125300000000003} }]},
 
 style: [
     {
@@ -96,7 +103,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 mRNA decay complex (UPF1, UPF2, UPF3B, DCP2, XRN1, XRN2, EXOSC2, EXOSC4, EXOSC10, PARN) match 2<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.1 CLTC-PI4K2A complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.53
     </section>
     </body>
     </html>

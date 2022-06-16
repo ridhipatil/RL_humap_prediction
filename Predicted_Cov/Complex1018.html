@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> PAPLN CFP B3GLCT KIF2C</title>
+<title> 0.3 APH1A-PSEN1-NCSTN complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,15 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'KIF2C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99661" }},
-{data: { id: 'B3GLCT', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6Y288" }},
-{data: { id: 'CFP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P27918" }},
-{data: { id: 'PAPLN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95428" }}], 
- edges: [{ data: { source: 'KIF2C', target: 'PAPLN', directed: 'false', weight: 0.101715} },
-{ data: { source: 'CFP', target: 'B3GLCT', directed: 'false', weight: 0.157452} },
-{ data: { source: 'B3GLCT', target: 'PAPLN', directed: 'false', weight: 0.101904} }]},
+elements:{nodes: [{data: { id: 'DERL2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9GZP9" }},
+{data: { id: 'PSEN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49768" }},
+{data: { id: 'SLC35E1', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q96K37" }},
+{data: { id: 'ABCB7', score: 5.0, type: '', href: "https://www.uniprot.org/uniprot/O75027" }},
+{data: { id: 'NCSTN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92542" }}], 
+ edges: [{ data: { source: 'DERL2', target: 'PSEN1', directed: 'false', weight: 0.42663199999999996} },
+{ data: { source: 'DERL2', target: 'ABCB7', directed: 'false', weight: 0.49105699999999997} },
+{ data: { source: 'PSEN1', target: 'NCSTN', directed: 'false', weight: 0.544696} },
+{ data: { source: 'ABCB7', target: 'SLC35E1', directed: 'false', weight: 0.34426999999999996} }]},
 
 style: [
     {
@@ -96,7 +98,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    PAPLN CFP B3GLCT KIF2C<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.3 APH1A-PSEN1-NCSTN complex<br> Complex Score = 0.35000<br> Unweighted Density = 0.40
     </section>
     </body>
     </html>

@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.05 Nop56p-associated pre-rRNA complex match 3</title>
+<title> RNF130 TMEM131L NETO2 TMEM219 HLA-DRB1 100294276</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,17 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'LPO', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P22079" }},
-{data: { id: 'PWP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13610" }},
-{data: { id: 'DMBT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UGM3" }},
-{data: { id: 'DDX31', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H8H2" }}], 
- edges: [{ data: { source: 'LPO', target: 'DDX31', directed: 'false', weight: 0.882661} },
-{ data: { source: 'PWP1', target: 'DDX31', directed: 'false', weight: 0.169296} },
-{ data: { source: 'DMBT1', target: 'DDX31', directed: 'false', weight: 0.15684} }]},
+elements:{nodes: [{data: { id: 'TMEM131L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/A2VDJ0" }},
+{data: { id: '100294276', score: 0, type: '', href: "https://www.ncbi.nlm.nih.gov/protein/XP_002344055.1?report=genpept" }},
+{data: { id: 'RNF130', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86XS8" }},
+{data: { id: 'HLA-DRB1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P01911" }},
+{data: { id: 'TMEM219', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q86XT9" }},
+{data: { id: 'NETO2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NC67" }}], 
+ edges: [{ data: { source: 'TMEM131L', target: 'HLA-DRB1', directed: 'false', weight: 0.11044200000000001} },
+{ data: { source: 'TMEM131L', target: 'TMEM219', directed: 'false', weight: 0.16145} },
+{ data: { source: 'RNF130', target: 'NETO2', directed: 'false', weight: 0.40603} },
+{ data: { source: 'HLA-DRB1', target: 'NETO2', directed: 'false', weight: 0.365568} },
+{ data: { source: 'HLA-DRB1', target: 'TMEM219', directed: 'false', weight: 0.123851} }]},
 
 style: [
     {
@@ -96,7 +100,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.05 Nop56p-associated pre-rRNA complex match 3<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    RNF130 TMEM131L NETO2 TMEM219 HLA-DRB1 100294276<br> Complex Score = 0.35000<br> Unweighted Density = 0.33
     </section>
     </body>
     </html>

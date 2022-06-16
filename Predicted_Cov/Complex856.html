@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 SNCA-TUBB3 complex</title>
+<title> PPM1F PLPP6 CIT</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'CAD', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P27708" }},
-{data: { id: 'TUBB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P07437" }},
-{data: { id: 'TUBB3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13509" }},
-{data: { id: 'DLGAP5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15398" }}], 
- edges: [{ data: { source: 'CAD', target: 'TUBB', directed: 'false', weight: 0.130977} },
-{ data: { source: 'TUBB', target: 'TUBB3', directed: 'false', weight: 0.9478610000000001} },
-{ data: { source: 'TUBB3', target: 'DLGAP5', directed: 'false', weight: 0.8900040000000001} }]},
+elements:{nodes: [{data: { id: 'PLPP6', score: 5.0, type: '', href: "https://www.uniprot.org/uniprot/Q8IY26" }},
+{data: { id: 'SARS-CoV2 nsp13', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp13.html" }},
+{data: { id: 'CIT', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/O14578" }},
+{data: { id: 'PPM1F', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49593" }}], 
+ edges: [{ data: { source: 'SARS-CoV2 nsp13', target: 'CIT', directed: 'false', weight: 0.887314876, type: 'sars'} },
+{ data: { source: 'PLPP6', target: 'PPM1F', directed: 'false', weight: 0.33813200000000004} },
+{ data: { source: 'CIT', target: 'PPM1F', directed: 'false', weight: 0.42753500000000005} }]},
 
 style: [
     {
@@ -96,7 +96,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 SNCA-TUBB3 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    PPM1F PLPP6 CIT<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>CIT
     </section>
     </body>
     </html>

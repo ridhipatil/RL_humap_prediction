@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.3 KIAA0753-FOR20-OFD1 complex</title>
+<title> 0.2 CIN85-SH3GL2 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,37 +30,28 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'DKFZp779H0156', score: 1, type: '', href: "https://www.uniprot.org/uniprot/Q7Z659" }},
-{data: { id: 'OFD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75665" }},
-{data: { id: 'CSPP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q1MSJ5" }},
-{data: { id: 'KIAA0753', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q2KHM9" }},
-{data: { id: 'TBC1D31', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q96DN5" }},
-{data: { id: 'CEP72', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9P209" }}], 
- edges: [{ data: { source: 'DKFZp779H0156', target: 'OFD1', directed: 'false', weight: 0.18774200000000002} },
-{ data: { source: 'DKFZp779H0156', target: 'CEP72', directed: 'false', weight: 0.174403} },
-{ data: { source: 'OFD1', target: 'KIAA0753', directed: 'false', weight: 0.9875809999999999} },
-{ data: { source: 'OFD1', target: 'CSPP1', directed: 'false', weight: 0.9725520000000001} },
-{ data: { source: 'OFD1', target: 'CEP72', directed: 'false', weight: 0.33964099999999997} },
-{ data: { source: 'OFD1', target: 'TBC1D31', directed: 'false', weight: 0.288655} },
-{ data: { source: 'CSPP1', target: 'CEP72', directed: 'false', weight: 0.768422} },
-{ data: { source: 'KIAA0753', target: 'CEP72', directed: 'false', weight: 0.982784} },
-{ data: { source: 'KIAA0753', target: 'TBC1D31', directed: 'false', weight: 0.04667059999999999} },
-{ data: { source: 'TBC1D31', target: 'CEP72', directed: 'false', weight: 0.713044} }]},
+elements:{nodes: [{data: { id: 'SH3GL3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99963" }},
+{data: { id: 'SH3GL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99961" }},
+{data: { id: 'SH3GL2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99962" }},
+{data: { id: 'FRG1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14331" }}], 
+ edges: [{ data: { source: 'SH3GL1', target: 'SH3GL2', directed: 'false', weight: 0.9535389999999999} },
+{ data: { source: 'SH3GL1', target: 'SH3GL3', directed: 'false', weight: 0.666916} },
+{ data: { source: 'SH3GL1', target: 'FRG1', directed: 'false', weight: 0.59197} },
+{ data: { source: 'SH3GL2', target: 'SH3GL3', directed: 'false', weight: 0.48929300000000003} },
+{ data: { source: 'SH3GL2', target: 'FRG1', directed: 'false', weight: 0.45285200000000003} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 10,
-		'width':'10',
-		'height': '10',	
+		'font-size': 30,
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}  
                                  if ( ele.data('type') == 'sars' ){return 'triangle'}   
   return 'rectangle';
   },            
-             'background-color': function( ele ){ 
+            'background-color': function( ele ){ 
                                 if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
 								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
                                  if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
@@ -74,7 +65,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
 								'line-color': function( ele ){ 
                                  if ( ele.data('type') == 'sars' ){return 'red'}   
   return 'blue';
@@ -86,10 +77,7 @@ style: [
 
 });
 cy.layout({
-    'name': 'fcose',
-		'animate':false,
-	'nodeDimensionsIncludeLabels':true,
-	'nodeSeparation': 1000
+    'name': 'circle'
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -105,7 +93,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.3 KIAA0753-FOR20-OFD1 complex<br> Complex Score = 0.38800<br> Unweighted Density = 0.67
+    0.2 CIN85-SH3GL2 complex<br> Complex Score = 0.39375<br> Unweighted Density = 0.83
     </section>
     </body>
     </html>

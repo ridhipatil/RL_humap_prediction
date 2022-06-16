@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 CLTC-PI4K2A complex</title>
+<title> 0.3 STAGA complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,19 +30,23 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'CLTA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P09496" }},
-{data: { id: 'CLTB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P09497" }},
-{data: { id: 'PS1TP5BP1', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q1KLZ0" }},
-{data: { id: 'MAP1B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P46821" }},
-{data: { id: 'CLTC', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q00610" }}], 
- edges: [{ data: { source: 'CLTA', target: 'CLTC', directed: 'false', weight: 1.0} },
-{ data: { source: 'CLTA', target: 'CLTB', directed: 'false', weight: 0.999994} },
-{ data: { source: 'CLTA', target: 'PS1TP5BP1', directed: 'false', weight: 0.177242} },
-{ data: { source: 'CLTA', target: 'MAP1B', directed: 'false', weight: 0.13486800000000002} },
-{ data: { source: 'CLTB', target: 'CLTC', directed: 'false', weight: 0.999999} },
-{ data: { source: 'CLTB', target: 'MAP1B', directed: 'false', weight: 0.13410899999999998} },
-{ data: { source: 'CLTB', target: 'PS1TP5BP1', directed: 'false', weight: 0.0238534} },
-{ data: { source: 'PS1TP5BP1', target: 'CLTC', directed: 'false', weight: 0.978202} }]},
+elements:{nodes: [{data: { id: 'TAF5L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75529" }},
+{data: { id: 'SUPT7L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O94864" }},
+{data: { id: 'TAF6L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y6J9" }},
+{data: { id: 'TADA2B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86TJ2" }},
+{data: { id: 'TAF10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q12962" }},
+{data: { id: 'AK6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UIJ7" }}], 
+ edges: [{ data: { source: 'SUPT7L', target: 'TADA2B', directed: 'false', weight: 0.9985360000000001} },
+{ data: { source: 'SUPT7L', target: 'TAF5L', directed: 'false', weight: 0.933591} },
+{ data: { source: 'SUPT7L', target: 'TAF6L', directed: 'false', weight: 0.5969770000000001} },
+{ data: { source: 'SUPT7L', target: 'TAF10', directed: 'false', weight: 0.5} },
+{ data: { source: 'TAF6L', target: 'TADA2B', directed: 'false', weight: 0.9579409999999999} },
+{ data: { source: 'TAF6L', target: 'TAF10', directed: 'false', weight: 0.26185} },
+{ data: { source: 'TAF6L', target: 'TAF5L', directed: 'false', weight: 0.7744989999999999} },
+{ data: { source: 'TAF10', target: 'TADA2B', directed: 'false', weight: 0.629793} },
+{ data: { source: 'TAF10', target: 'AK6', directed: 'false', weight: 0.991051} },
+{ data: { source: 'TAF10', target: 'TAF5L', directed: 'false', weight: 0.41561800000000004} },
+{ data: { source: 'TAF5L', target: 'TADA2B', directed: 'false', weight: 0.975884} }]},
 
 style: [
     {
@@ -102,7 +106,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 CLTC-PI4K2A complex<br> Complex Score = 0.38800<br> Unweighted Density = 0.80
+    0.3 STAGA complex<br> Complex Score = 0.39375<br> Unweighted Density = 0.73
     </section>
     </body>
     </html>

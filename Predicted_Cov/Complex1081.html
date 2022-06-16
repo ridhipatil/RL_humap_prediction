@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 Sam68-p85 P13K-IRS-1-IR signaling complex</title>
+<title> 0.05 17S U2 snRNP match 2</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,15 +30,14 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'IRS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P35568" }},
-{data: { id: 'HNRPA3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P51991" }},
-{data: { id: 'HEL-S-17', score: 3, type: '', href: "https://www.uniprot.org/uniprot/A0A024R4F1" }},
-{data: { id: 'SARS-CoV2 orf8', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 orf8.html" }},
-{data: { id: 'FKBP7', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9Y680" }}], 
- edges: [{ data: { source: 'SARS-CoV2 orf8', target: 'FKBP7', directed: 'false', weight: 0.988134523, type: 'sars'} },
-{ data: { source: 'IRS1', target: 'FKBP7', directed: 'false', weight: 0.370819} },
-{ data: { source: 'HNRPA3', target: 'HEL-S-17', directed: 'false', weight: 0.7112109999999999} },
-{ data: { source: 'FKBP7', target: 'HEL-S-17', directed: 'false', weight: 0.285114} }]},
+elements:{nodes: [{data: { id: 'CD2BP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95400" }},
+{data: { id: 'PUF60', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UHX1" }},
+{data: { id: 'LUC7L3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95232" }},
+{data: { id: 'SREK1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WXA9" }}], 
+ edges: [{ data: { source: 'CD2BP2', target: 'PUF60', directed: 'false', weight: 0.9289649999999999} },
+{ data: { source: 'SREK1', target: 'PUF60', directed: 'false', weight: 0.987617} },
+{ data: { source: 'SREK1', target: 'LUC7L3', directed: 'false', weight: 0.858153} },
+{ data: { source: 'PUF60', target: 'LUC7L3', directed: 'false', weight: 0.626077} }]},
 
 style: [
     {
@@ -98,12 +97,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 Sam68-p85 P13K-IRS-1-IR signaling complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>FKBP7
+    0.05 17S U2 snRNP match 2<br> Complex Score = 0.30000<br> Unweighted Density = 0.67
     </section>
     </body>
     </html>

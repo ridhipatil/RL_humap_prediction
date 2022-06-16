@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.3 Exocyst complex</title>
+<title> 0.6 ILK-LIMS1-PARVA complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,24 +30,19 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'EXOC8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IYI6" }},
-{data: { id: 'EXOC2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96KP1" }},
-{data: { id: 'EXOC4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96A65" }},
-{data: { id: 'DKFZp686P1551', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q63HP7" }},
-{data: { id: 'IL1R2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P27930" }},
-{data: { id: 'SEC15L3', score: 2, type: '', href: "https://www.uniprot.org/uniprot/A5YP36" }}], 
- edges: [{ data: { source: 'EXOC8', target: 'DKFZp686P1551', directed: 'false', weight: 0.999732} },
-{ data: { source: 'EXOC8', target: 'SEC15L3', directed: 'false', weight: 0.9998440000000001} },
-{ data: { source: 'EXOC8', target: 'EXOC2', directed: 'false', weight: 0.0209336} },
-{ data: { source: 'EXOC8', target: 'EXOC4', directed: 'false', weight: 0.256214} },
-{ data: { source: 'EXOC2', target: 'DKFZp686P1551', directed: 'false', weight: 0.232186} },
-{ data: { source: 'EXOC2', target: 'SEC15L3', directed: 'false', weight: 0.127522} },
-{ data: { source: 'EXOC2', target: 'EXOC4', directed: 'false', weight: 0.999724} },
-{ data: { source: 'EXOC4', target: 'DKFZp686P1551', directed: 'false', weight: 0.959145} },
-{ data: { source: 'EXOC4', target: 'SEC15L3', directed: 'false', weight: 0.9392510000000001} },
-{ data: { source: 'DKFZp686P1551', target: 'SEC15L3', directed: 'false', weight: 0.999991} },
-{ data: { source: 'DKFZp686P1551', target: 'IL1R2', directed: 'false', weight: 0.026535700000000002} },
-{ data: { source: 'IL1R2', target: 'SEC15L3', directed: 'false', weight: 0.118755} }]},
+elements:{nodes: [{data: { id: 'PARVG', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HBI0" }},
+{data: { id: 'ILK', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13418" }},
+{data: { id: 'PARVA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NVD7" }},
+{data: { id: 'PARVB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HBI1" }},
+{data: { id: 'LIMS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P48059" }}], 
+ edges: [{ data: { source: 'PARVG', target: 'ILK', directed: 'false', weight: 0.691753} },
+{ data: { source: 'PARVG', target: 'LIMS1', directed: 'false', weight: 0.64842} },
+{ data: { source: 'ILK', target: 'PARVA', directed: 'false', weight: 0.9999959999999999} },
+{ data: { source: 'ILK', target: 'PARVB', directed: 'false', weight: 0.9999870000000001} },
+{ data: { source: 'ILK', target: 'LIMS1', directed: 'false', weight: 0.993452} },
+{ data: { source: 'PARVA', target: 'PARVB', directed: 'false', weight: 0.992238} },
+{ data: { source: 'PARVA', target: 'LIMS1', directed: 'false', weight: 0.8321620000000001} },
+{ data: { source: 'PARVB', target: 'LIMS1', directed: 'false', weight: 0.801466} }]},
 
 style: [
     {
@@ -107,7 +102,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.3 Exocyst complex<br> Complex Score = 0.38800<br> Unweighted Density = 0.80
+    0.6 ILK-LIMS1-PARVA complex<br> Complex Score = 0.39375<br> Unweighted Density = 0.80
     </section>
     </body>
     </html>

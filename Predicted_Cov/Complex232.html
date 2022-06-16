@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> MTMR6 MTMR7 MTMR9 MTMR8</title>
+<title> 0.2 HGF-Met complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,15 +30,12 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'MTMR9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96QG7" }},
-{data: { id: 'MTMR7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y216" }},
-{data: { id: 'MTMR6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y217" }},
-{data: { id: 'MTMR8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96EF0" }}], 
- edges: [{ data: { source: 'MTMR9', target: 'MTMR6', directed: 'false', weight: 0.160866} },
-{ data: { source: 'MTMR9', target: 'MTMR7', directed: 'false', weight: 0.386153} },
-{ data: { source: 'MTMR9', target: 'MTMR8', directed: 'false', weight: 0.0514981} },
-{ data: { source: 'MTMR7', target: 'MTMR6', directed: 'false', weight: 0.7016359999999999} },
-{ data: { source: 'MTMR7', target: 'MTMR8', directed: 'false', weight: 0.22200999999999999} }]},
+elements:{nodes: [{data: { id: 'MET', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P08581" }},
+{data: { id: 'PCBP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15365" }},
+{data: { id: 'FRK', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P42685" }}], 
+ edges: [{ data: { source: 'MET', target: 'PCBP1', directed: 'false', weight: 0.699873} },
+{ data: { source: 'MET', target: 'FRK', directed: 'false', weight: 0.140692} },
+{ data: { source: 'PCBP1', target: 'FRK', directed: 'false', weight: 0.826084} }]},
 
 style: [
     {
@@ -93,7 +90,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    MTMR6 MTMR7 MTMR9 MTMR8<br> Complex Score = 0.38800<br> Unweighted Density = 0.83
+    0.2 HGF-Met complex<br> Complex Score = 0.38750<br> Unweighted Density = 1.00
     </section>
     </body>
     </html>

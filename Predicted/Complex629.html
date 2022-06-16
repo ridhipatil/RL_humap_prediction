@@ -30,14 +30,17 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'RBBP4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q09028" }},
-{data: { id: 'MTA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13330" }},
-{data: { id: 'PQBP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60828" }},
-{data: { id: 'WBP11', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y2W2" }}], 
- edges: [{ data: { source: 'RBBP4', target: 'WBP11', directed: 'false', weight: 0.181054} },
-{ data: { source: 'RBBP4', target: 'MTA1', directed: 'false', weight: 1.0} },
-{ data: { source: 'MTA1', target: 'WBP11', directed: 'false', weight: 0.0538433} },
-{ data: { source: 'PQBP1', target: 'WBP11', directed: 'false', weight: 1.0} }]},
+elements:{nodes: [{data: { id: 'TACC2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95359" }},
+{data: { id: 'TOX4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O94842" }},
+{data: { id: 'CKAP5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14008" }},
+{data: { id: 'ALKBH5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6P6C2" }},
+{data: { id: 'SLAIN2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9P270" }}], 
+ edges: [{ data: { source: 'TACC2', target: 'CKAP5', directed: 'false', weight: 0.689547} },
+{ data: { source: 'TACC2', target: 'TOX4', directed: 'false', weight: 0.0736423} },
+{ data: { source: 'TACC2', target: 'SLAIN2', directed: 'false', weight: 0.141783} },
+{ data: { source: 'TOX4', target: 'CKAP5', directed: 'false', weight: 0.816292} },
+{ data: { source: 'TOX4', target: 'ALKBH5', directed: 'false', weight: 0.364846} },
+{ data: { source: 'CKAP5', target: 'SLAIN2', directed: 'false', weight: 0.364498} }]},
 
 style: [
     {
@@ -85,7 +88,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.37500
+    Complex Score  = 0.38750
     </section>
     </body>
     </html>

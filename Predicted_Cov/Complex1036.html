@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> WDR75 CNRIP1 UTP4 NOL11</title>
+<title> 0.1 Ubiquitin E3 ligase (SIAH1, SIP, SKP1A, TBL1X)</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,15 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'WDR75', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q8IWA0" }},
-{data: { id: 'UTP4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q969X6" }},
-{data: { id: 'CNRIP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96F85" }},
-{data: { id: 'NOL11', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H8H0" }}], 
- edges: [{ data: { source: 'WDR75', target: 'UTP4', directed: 'false', weight: 0.398454} },
-{ data: { source: 'UTP4', target: 'NOL11', directed: 'false', weight: 0.915858} },
-{ data: { source: 'UTP4', target: 'CNRIP1', directed: 'false', weight: 0.6481} }]},
+elements:{nodes: [{data: { id: 'FERMT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BQL6" }},
+{data: { id: 'CACYBP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HB71" }},
+{data: { id: 'SNX3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60493" }},
+{data: { id: 'CTPS2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NRF8" }},
+{data: { id: 'CTPS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P17812" }}], 
+ edges: [{ data: { source: 'CACYBP', target: 'FERMT1', directed: 'false', weight: 0.598064} },
+{ data: { source: 'CTPS2', target: 'SNX3', directed: 'false', weight: 0.943825} },
+{ data: { source: 'CTPS2', target: 'FERMT1', directed: 'false', weight: 0.325678} },
+{ data: { source: 'SNX3', target: 'CTPS1', directed: 'false', weight: 0.8761639999999999} }]},
 
 style: [
     {
@@ -96,7 +98,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    WDR75 CNRIP1 UTP4 NOL11<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.1 Ubiquitin E3 ligase (SIAH1, SIP, SKP1A, TBL1X)<br> Complex Score = 0.35000<br> Unweighted Density = 0.40
     </section>
     </body>
     </html>

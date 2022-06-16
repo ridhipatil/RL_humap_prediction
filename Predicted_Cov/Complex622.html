@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 SLC2A1-DMTN-ADD2 complex</title>
+<title> 0.1 AURKA-HDAC6 cilia-disassembly complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,38 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'ANKRD29', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q8N6D5" }},
-{data: { id: 'ADD2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P35612" }},
-{data: { id: 'SNX9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y5X1" }},
-{data: { id: 'DPPA4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q7L190" }}], 
- edges: [{ data: { source: 'ANKRD29', target: 'ADD2', directed: 'false', weight: 0.67686} },
-{ data: { source: 'ADD2', target: 'DPPA4', directed: 'false', weight: 0.427571} },
-{ data: { source: 'SNX9', target: 'DPPA4', directed: 'false', weight: 0.444796} }]},
+elements:{nodes: [{data: { id: 'ITPKC', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96DU7" }},
+{data: { id: 'AUNIP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H7T9" }},
+{data: { id: 'MTMR3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13615" }},
+{data: { id: 'UTP14C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5TAP6" }},
+{data: { id: 'SNX18', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96RF0" }},
+{data: { id: 'AURKA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O14965" }},
+{data: { id: 'SETD2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BYW2" }},
+{data: { id: 'PNO1', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9NRX1" }},
+{data: { id: 'MTMR4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NYA4" }}], 
+ edges: [{ data: { source: 'ITPKC', target: 'AURKA', directed: 'false', weight: 0.975} },
+{ data: { source: 'ITPKC', target: 'MTMR4', directed: 'false', weight: 0.151455} },
+{ data: { source: 'ITPKC', target: 'AUNIP', directed: 'false', weight: 0.151455} },
+{ data: { source: 'ITPKC', target: 'SNX18', directed: 'false', weight: 0.151455} },
+{ data: { source: 'ITPKC', target: 'MTMR3', directed: 'false', weight: 0.120276} },
+{ data: { source: 'ITPKC', target: 'SETD2', directed: 'false', weight: 0.120276} },
+{ data: { source: 'AUNIP', target: 'AURKA', directed: 'false', weight: 0.950202} },
+{ data: { source: 'AUNIP', target: 'MTMR4', directed: 'false', weight: 0.133456} },
+{ data: { source: 'AUNIP', target: 'SNX18', directed: 'false', weight: 0.133456} },
+{ data: { source: 'AUNIP', target: 'MTMR3', directed: 'false', weight: 0.10556600000000001} },
+{ data: { source: 'AUNIP', target: 'SETD2', directed: 'false', weight: 0.10556600000000001} },
+{ data: { source: 'MTMR3', target: 'PNO1', directed: 'false', weight: 0.385923} },
+{ data: { source: 'MTMR3', target: 'AURKA', directed: 'false', weight: 0.569369} },
+{ data: { source: 'MTMR3', target: 'MTMR4', directed: 'false', weight: 0.10556600000000001} },
+{ data: { source: 'MTMR3', target: 'SNX18', directed: 'false', weight: 0.10556600000000001} },
+{ data: { source: 'MTMR3', target: 'SETD2', directed: 'false', weight: 0.08306849999999999} },
+{ data: { source: 'SNX18', target: 'AURKA', directed: 'false', weight: 0.695968} },
+{ data: { source: 'SNX18', target: 'MTMR4', directed: 'false', weight: 0.133456} },
+{ data: { source: 'SNX18', target: 'SETD2', directed: 'false', weight: 0.10556600000000001} },
+{ data: { source: 'UTP14C', target: 'PNO1', directed: 'false', weight: 0.874067} },
+{ data: { source: 'AURKA', target: 'MTMR4', directed: 'false', weight: 0.878323} },
+{ data: { source: 'AURKA', target: 'SETD2', directed: 'false', weight: 0.518907} },
+{ data: { source: 'SETD2', target: 'MTMR4', directed: 'false', weight: 0.10556600000000001} }]},
 
 style: [
     {
@@ -96,7 +121,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 SLC2A1-DMTN-ADD2 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.1 AURKA-HDAC6 cilia-disassembly complex<br> Complex Score = 0.38750<br> Unweighted Density = 0.64
     </section>
     </body>
     </html>

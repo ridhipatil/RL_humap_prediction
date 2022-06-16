@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> STXBP4 LDLRAD4 DPY19L1 RNF168</title>
+<title> 0.2 CAND1-CUL1-RBX1 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,15 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'RNF168', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IYW5" }},
-{data: { id: 'LDLRAD4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15165" }},
-{data: { id: 'STXBP4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6ZWJ1" }},
-{data: { id: 'SARS-CoV2 orf9c', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 orf9c.html" }},
-{data: { id: 'DPY19L1', score: 3, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q2PZI1" }}], 
- edges: [{ data: { source: 'SARS-CoV2 orf9c', target: 'DPY19L1', directed: 'false', weight: 0.968853805, type: 'sars'} },
-{ data: { source: 'STXBP4', target: 'LDLRAD4', directed: 'false', weight: 0.116904} },
-{ data: { source: 'RNF168', target: 'LDLRAD4', directed: 'false', weight: 0.33321300000000004} },
-{ data: { source: 'LDLRAD4', target: 'DPY19L1', directed: 'false', weight: 0.147767} }]},
+elements:{nodes: [{data: { id: 'EIF5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P55010" }},
+{data: { id: 'ASF1B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NVP2" }},
+{data: { id: 'GATAD2A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86YP4" }},
+{data: { id: 'CAND1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86VP6" }}], 
+ edges: [{ data: { source: 'CAND1', target: 'EIF5', directed: 'false', weight: 0.766373} },
+{ data: { source: 'CAND1', target: 'ASF1B', directed: 'false', weight: 0.289642} },
+{ data: { source: 'GATAD2A', target: 'ASF1B', directed: 'false', weight: 0.11473699999999999} }]},
 
 style: [
     {
@@ -98,12 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    STXBP4 LDLRAD4 DPY19L1 RNF168<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>DPY19L1
+    0.2 CAND1-CUL1-RBX1 complex<br> Complex Score = 0.30000<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

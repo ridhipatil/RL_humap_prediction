@@ -30,22 +30,19 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'DCLRE1C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96SD1" }},
-{data: { id: 'PPP6C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00743" }},
-{data: { id: 'PPP6R2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75170" }},
-{data: { id: 'PPP6R1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UPN7" }},
-{data: { id: 'ANKRD28', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15084" }},
-{data: { id: 'ANKRD52', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q8NB46" }}], 
- edges: [{ data: { source: 'DCLRE1C', target: 'ANKRD52', directed: 'false', weight: 0.355781} },
-{ data: { source: 'PPP6C', target: 'PPP6R1', directed: 'false', weight: 0.853864} },
-{ data: { source: 'PPP6C', target: 'ANKRD28', directed: 'false', weight: 0.8971110000000001} },
-{ data: { source: 'PPP6C', target: 'PPP6R2', directed: 'false', weight: 0.956585} },
-{ data: { source: 'PPP6C', target: 'ANKRD52', directed: 'false', weight: 0.235302} },
-{ data: { source: 'PPP6R2', target: 'ANKRD28', directed: 'false', weight: 0.9960530000000001} },
-{ data: { source: 'PPP6R2', target: 'ANKRD52', directed: 'false', weight: 0.8473120000000001} },
-{ data: { source: 'PPP6R1', target: 'ANKRD28', directed: 'false', weight: 0.9033} },
-{ data: { source: 'PPP6R1', target: 'ANKRD52', directed: 'false', weight: 0.14896600000000002} },
-{ data: { source: 'ANKRD28', target: 'ANKRD52', directed: 'false', weight: 0.047203300000000004} }]},
+elements:{nodes: [{data: { id: 'NEUROD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13562" }},
+{data: { id: 'TCF3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P15923" }},
+{data: { id: 'TCF4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P15884" }},
+{data: { id: 'TCF12', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q99081" }},
+{data: { id: 'ID1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P41134" }}], 
+ edges: [{ data: { source: 'NEUROD1', target: 'TCF3', directed: 'false', weight: 0.753492} },
+{ data: { source: 'NEUROD1', target: 'TCF12', directed: 'false', weight: 0.8481559999999999} },
+{ data: { source: 'NEUROD1', target: 'TCF4', directed: 'false', weight: 0.763899} },
+{ data: { source: 'TCF12', target: 'TCF3', directed: 'false', weight: 0.631472} },
+{ data: { source: 'TCF12', target: 'ID1', directed: 'false', weight: 0.9329209999999999} },
+{ data: { source: 'TCF12', target: 'TCF4', directed: 'false', weight: 0.714739} },
+{ data: { source: 'TCF3', target: 'ID1', directed: 'false', weight: 0.941651} },
+{ data: { source: 'TCF3', target: 'TCF4', directed: 'false', weight: 0.463714} }]},
 
 style: [
     {
@@ -93,7 +90,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.38800
+    Complex Score  = 0.39375
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>TCF12
     </section>
     </body>
     </html>

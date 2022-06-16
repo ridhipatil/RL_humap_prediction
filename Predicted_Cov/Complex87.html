@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 SHC-GRB2 complex</title>
+<title> 0.1 ArgBP2a-CBL-PTK2B complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,11 +30,36 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'RFFL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WZ73" }},
-{data: { id: 'SHC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P29353" }},
-{data: { id: 'SHC2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P98077" }}], 
- edges: [{ data: { source: 'RFFL', target: 'SHC1', directed: 'false', weight: 0.5267270000000001} },
-{ data: { source: 'SHC1', target: 'SHC2', directed: 'false', weight: 1.0} }]},
+elements:{nodes: [{data: { id: 'MYO5C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NQX4" }},
+{data: { id: 'SORBS2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O94875" }},
+{data: { id: 'ARHGAP21', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5T5U3" }},
+{data: { id: 'SARS-CoV2 Spike', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 Spike.html" }},
+{data: { id: 'ZDHHC5', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9C0B5" }},
+{data: { id: 'TMOD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P28289" }},
+{data: { id: 'CORO2A', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q92828" }},
+{data: { id: 'NEXN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q0ZGT2" }},
+{data: { id: 'PLEC', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15149" }}], 
+ edges: [{ data: { source: 'SARS-CoV2 Spike', target: 'ZDHHC5', directed: 'false', weight: 0.982389013, type: 'sars'} },
+{ data: { source: 'MYO5C', target: 'TMOD1', directed: 'false', weight: 0.999965} },
+{ data: { source: 'MYO5C', target: 'SORBS2', directed: 'false', weight: 0.785185} },
+{ data: { source: 'MYO5C', target: 'NEXN', directed: 'false', weight: 0.773134} },
+{ data: { source: 'MYO5C', target: 'CORO2A', directed: 'false', weight: 0.648464} },
+{ data: { source: 'MYO5C', target: 'PLEC', directed: 'false', weight: 0.383602} },
+{ data: { source: 'MYO5C', target: 'ARHGAP21', directed: 'false', weight: 0.32700799999999997} },
+{ data: { source: 'MYO5C', target: 'ZDHHC5', directed: 'false', weight: 0.26875} },
+{ data: { source: 'SORBS2', target: 'TMOD1', directed: 'false', weight: 0.39519699999999996} },
+{ data: { source: 'SORBS2', target: 'NEXN', directed: 'false', weight: 0.7101569999999999} },
+{ data: { source: 'SORBS2', target: 'ARHGAP21', directed: 'false', weight: 0.682048} },
+{ data: { source: 'SORBS2', target: 'PLEC', directed: 'false', weight: 0.316994} },
+{ data: { source: 'SORBS2', target: 'ZDHHC5', directed: 'false', weight: 0.316017} },
+{ data: { source: 'ARHGAP21', target: 'NEXN', directed: 'false', weight: 0.45841899999999997} },
+{ data: { source: 'ARHGAP21', target: 'CORO2A', directed: 'false', weight: 0.389492} },
+{ data: { source: 'ARHGAP21', target: 'PLEC', directed: 'false', weight: 0.324415} },
+{ data: { source: 'ARHGAP21', target: 'ZDHHC5', directed: 'false', weight: 0.230975} },
+{ data: { source: 'TMOD1', target: 'NEXN', directed: 'false', weight: 0.43391899999999994} },
+{ data: { source: 'ZDHHC5', target: 'NEXN', directed: 'false', weight: 0.635206} },
+{ data: { source: 'ZDHHC5', target: 'PLEC', directed: 'false', weight: 0.161707} },
+{ data: { source: 'NEXN', target: 'PLEC', directed: 'false', weight: 0.196529} }]},
 
 style: [
     {
@@ -94,7 +119,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 SHC-GRB2 complex<br> Complex Score = 0.38800<br> Unweighted Density = 0.67
+    0.1 ArgBP2a-CBL-PTK2B complex<br> Complex Score = 0.39375<br> Unweighted Density = 0.71
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>ZDHHC5
     </section>
     </body>
     </html>

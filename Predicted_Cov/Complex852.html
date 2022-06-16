@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> AUNIP DKFZp686A03134 BCS1L PDCD1LG2</title>
+<title> NMD3 ST8SIA1 TTC27</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,15 +30,11 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'PDCD1LG2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BQ51" }},
-{data: { id: 'DKFZp686A03134', score: 1, type: '', href: "https://www.uniprot.org/uniprot/Q6AWA9" }},
-{data: { id: 'SARS-CoV2 orf9c', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 orf9c.html" }},
-{data: { id: 'BCS1L', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9Y276" }},
-{data: { id: 'AUNIP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H7T9" }}], 
- edges: [{ data: { source: 'SARS-CoV2 orf9c', target: 'BCS1L', directed: 'false', weight: 0.992309958, type: 'sars'} },
-{ data: { source: 'PDCD1LG2', target: 'AUNIP', directed: 'false', weight: 0.3232} },
-{ data: { source: 'DKFZp686A03134', target: 'BCS1L', directed: 'false', weight: 0.21523899999999999} },
-{ data: { source: 'BCS1L', target: 'AUNIP', directed: 'false', weight: 0.379617} }]},
+elements:{nodes: [{data: { id: 'ST8SIA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92185" }},
+{data: { id: 'NMD3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96D46" }},
+{data: { id: 'TTC27', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q6P3X3" }}], 
+ edges: [{ data: { source: 'ST8SIA1', target: 'NMD3', directed: 'false', weight: 0.601701} },
+{ data: { source: 'NMD3', target: 'TTC27', directed: 'false', weight: 0.419392} }]},
 
 style: [
     {
@@ -98,12 +94,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    AUNIP DKFZp686A03134 BCS1L PDCD1LG2<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>BCS1L
+    NMD3 ST8SIA1 TTC27<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
     </section>
     </body>
     </html>

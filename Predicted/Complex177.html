@@ -30,11 +30,23 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'PSK-1', score: 1, type: '', href: "https://www.uniprot.org/uniprot/A0A0A8K8P7" }},
-{data: { id: 'FAM19A4', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q96LR4" }},
-{data: { id: 'KIAA0241', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q8NBF6" }}], 
- edges: [{ data: { source: 'PSK-1', target: 'FAM19A4', directed: 'false', weight: 0.123119} },
-{ data: { source: 'FAM19A4', target: 'KIAA0241', directed: 'false', weight: 0.13628800000000002} }]},
+elements:{nodes: [{data: { id: 'PPP3CA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q08209" }},
+{data: { id: 'RCAN3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UKA8" }},
+{data: { id: 'RCAN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P53805" }},
+{data: { id: 'NFATC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95644" }},
+{data: { id: 'RCAN2', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q14206" }},
+{data: { id: 'PPP3CC', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P48454" }}], 
+ edges: [{ data: { source: 'PPP3CA', target: 'PPP3CC', directed: 'false', weight: 0.205204} },
+{ data: { source: 'PPP3CA', target: 'RCAN1', directed: 'false', weight: 0.749869} },
+{ data: { source: 'PPP3CA', target: 'RCAN3', directed: 'false', weight: 0.41858199999999995} },
+{ data: { source: 'PPP3CA', target: 'RCAN2', directed: 'false', weight: 0.319637} },
+{ data: { source: 'RCAN3', target: 'PPP3CC', directed: 'false', weight: 0.748009} },
+{ data: { source: 'RCAN3', target: 'NFATC1', directed: 'false', weight: 0.140692} },
+{ data: { source: 'RCAN3', target: 'RCAN1', directed: 'false', weight: 0.24226599999999998} },
+{ data: { source: 'RCAN2', target: 'PPP3CC', directed: 'false', weight: 0.31799499999999997} },
+{ data: { source: 'PPP3CC', target: 'NFATC1', directed: 'false', weight: 0.9783280000000001} },
+{ data: { source: 'PPP3CC', target: 'RCAN1', directed: 'false', weight: 0.813121} },
+{ data: { source: 'RCAN1', target: 'NFATC1', directed: 'false', weight: 0.140692} }]},
 
 style: [
     {
@@ -82,7 +94,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.38800
+    Complex Score  = 0.39375
     </section>
     </body>
     </html>

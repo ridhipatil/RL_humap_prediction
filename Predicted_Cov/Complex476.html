@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 SMN complex (GEMIN2,5, SMN)</title>
+<title> 0.7 EYA1-SIX1 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,29 +30,25 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'SNRPG', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62308" }},
-{data: { id: 'DKFZp686P15123', score: 1, type: '', href: "https://www.uniprot.org/uniprot/Q7Z330" }},
-{data: { id: 'DKFZp434N041', score: 1, type: '', href: "https://www.uniprot.org/uniprot/Q9UFS1" }},
-{data: { id: 'GEMIN2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O14893" }}], 
- edges: [{ data: { source: 'GEMIN2', target: 'DKFZp434N041', directed: 'false', weight: 0.816112} },
-{ data: { source: 'GEMIN2', target: 'SNRPG', directed: 'false', weight: 0.0242307} },
-{ data: { source: 'DKFZp686P15123', target: 'DKFZp434N041', directed: 'false', weight: 0.181077} },
-{ data: { source: 'DKFZp434N041', target: 'SNRPG', directed: 'false', weight: 0.767323} }]},
+elements:{nodes: [{data: { id: 'EYA4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95677" }},
+{data: { id: 'EYA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99502" }},
+{data: { id: 'SIX1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15475" }}], 
+ edges: [{ data: { source: 'EYA4', target: 'SIX1', directed: 'false', weight: 0.8708020000000001} },
+{ data: { source: 'EYA4', target: 'EYA1', directed: 'false', weight: 0.171414} },
+{ data: { source: 'EYA1', target: 'SIX1', directed: 'false', weight: 0.9761559999999999} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 10,
-		'width':'10',
-		'height': '10',	
+		'font-size': 30,
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}  
                                  if ( ele.data('type') == 'sars' ){return 'triangle'}   
   return 'rectangle';
   },            
-             'background-color': function( ele ){ 
+            'background-color': function( ele ){ 
                                 if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
 								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
                                  if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
@@ -66,7 +62,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
 								'line-color': function( ele ){ 
                                  if ( ele.data('type') == 'sars' ){return 'red'}   
   return 'blue';
@@ -78,10 +74,7 @@ style: [
 
 });
 cy.layout({
-    'name': 'fcose',
-		'animate':false,
-	'nodeDimensionsIncludeLabels':true,
-	'nodeSeparation': 1000
+    'name': 'circle'
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -97,7 +90,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 SMN complex (GEMIN2,5, SMN)<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
+    0.7 EYA1-SIX1 complex<br> Complex Score = 0.38750<br> Unweighted Density = 1.00
     </section>
     </body>
     </html>

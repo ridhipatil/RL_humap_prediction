@@ -30,13 +30,18 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'GAPVD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14C86" }},
-{data: { id: 'CSNK1A1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P48729" }},
-{data: { id: 'LONRF2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q1L5Z9" }},
-{data: { id: 'SNX24', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q9Y343" }}], 
- edges: [{ data: { source: 'GAPVD1', target: 'CSNK1A1', directed: 'false', weight: 0.119522} },
-{ data: { source: 'GAPVD1', target: 'SNX24', directed: 'false', weight: 0.9872270000000001} },
-{ data: { source: 'LONRF2', target: 'SNX24', directed: 'false', weight: 0.530594} }]},
+elements:{nodes: [{data: { id: 'CAT', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P04040" }},
+{data: { id: 'CHST7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NS84" }},
+{data: { id: 'CLYBL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N0X4" }},
+{data: { id: 'QSOX1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00391" }},
+{data: { id: 'GLT8D2', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q9H1C3" }},
+{data: { id: 'BPNT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95861" }}], 
+ edges: [{ data: { source: 'CAT', target: 'BPNT1', directed: 'false', weight: 0.62584} },
+{ data: { source: 'CAT', target: 'CLYBL', directed: 'false', weight: 0.307199} },
+{ data: { source: 'CAT', target: 'QSOX1', directed: 'false', weight: 0.28257600000000005} },
+{ data: { source: 'CHST7', target: 'GLT8D2', directed: 'false', weight: 0.327496} },
+{ data: { source: 'CHST7', target: 'QSOX1', directed: 'false', weight: 0.112499} },
+{ data: { source: 'GLT8D2', target: 'QSOX1', directed: 'false', weight: 0.299212} }]},
 
 style: [
     {
@@ -84,7 +89,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.37500
+    Complex Score  = 0.35000
     </section>
     </body>
     </html>

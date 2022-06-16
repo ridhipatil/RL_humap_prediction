@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 39S ribosomal subunit, mitochondrial match 6</title>
+<title> 0.1 ATR-ATRIP complex match 2</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,33 +30,72 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'MRPL1', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9BYD6" }},
-{data: { id: 'MRPL23', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16540" }},
-{data: { id: 'MRPL30', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q8TCC3" }},
-{data: { id: 'MRPL35', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NZE8" }},
-{data: { id: 'MRPL50', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q8N5N7" }},
-{data: { id: 'MRPS30', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9NP92" }},
-{data: { id: 'MRPL12', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P52815" }}], 
- edges: [{ data: { source: 'MRPL1', target: 'MRPS30', directed: 'false', weight: 0.998707} },
-{ data: { source: 'MRPL1', target: 'MRPL50', directed: 'false', weight: 0.999909} },
-{ data: { source: 'MRPL1', target: 'MRPL12', directed: 'false', weight: 0.923927} },
-{ data: { source: 'MRPL1', target: 'MRPL35', directed: 'false', weight: 0.897233} },
-{ data: { source: 'MRPL1', target: 'MRPL30', directed: 'false', weight: 0.870733} },
-{ data: { source: 'MRPL1', target: 'MRPL23', directed: 'false', weight: 0.0606798} },
-{ data: { source: 'MRPL23', target: 'MRPS30', directed: 'false', weight: 0.983548} },
-{ data: { source: 'MRPL23', target: 'MRPL50', directed: 'false', weight: 0.9982209999999999} },
-{ data: { source: 'MRPL23', target: 'MRPL35', directed: 'false', weight: 0.062885} },
-{ data: { source: 'MRPL23', target: 'MRPL12', directed: 'false', weight: 0.0419661} },
-{ data: { source: 'MRPL30', target: 'MRPS30', directed: 'false', weight: 0.971858} },
-{ data: { source: 'MRPL30', target: 'MRPL50', directed: 'false', weight: 0.98939} },
-{ data: { source: 'MRPL30', target: 'MRPL35', directed: 'false', weight: 0.08715410000000001} },
-{ data: { source: 'MRPL30', target: 'MRPL12', directed: 'false', weight: 0.07057460000000002} },
-{ data: { source: 'MRPL35', target: 'MRPS30', directed: 'false', weight: 0.680118} },
-{ data: { source: 'MRPL35', target: 'MRPL50', directed: 'false', weight: 0.932874} },
-{ data: { source: 'MRPL35', target: 'MRPL12', directed: 'false', weight: 0.0769313} },
-{ data: { source: 'MRPL50', target: 'MRPS30', directed: 'false', weight: 1.0} },
-{ data: { source: 'MRPL50', target: 'MRPL12', directed: 'false', weight: 0.9226120000000001} },
-{ data: { source: 'MRPS30', target: 'MRPL12', directed: 'false', weight: 0.702868} }]},
+elements:{nodes: [{data: { id: 'MLXIP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HAP2" }},
+{data: { id: 'PNKD', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N490" }},
+{data: { id: 'GOLPH3L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H4A5" }},
+{data: { id: 'DCUN1D5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BTE7" }},
+{data: { id: 'ATRIP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WXE1" }},
+{data: { id: 'RADIL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96JH8" }},
+{data: { id: 'LSS', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P48449" }},
+{data: { id: 'SETX', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q7Z333" }},
+{data: { id: 'PPFIBP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86W92" }},
+{data: { id: 'PRMT9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6P2P2" }},
+{data: { id: 'PPARGC1B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86YN6" }}], 
+ edges: [{ data: { source: 'MLXIP', target: 'PNKD', directed: 'false', weight: 0.988445} },
+{ data: { source: 'MLXIP', target: 'PPFIBP1', directed: 'false', weight: 0.171414} },
+{ data: { source: 'MLXIP', target: 'ATRIP', directed: 'false', weight: 0.171414} },
+{ data: { source: 'MLXIP', target: 'LSS', directed: 'false', weight: 0.171414} },
+{ data: { source: 'MLXIP', target: 'PPARGC1B', directed: 'false', weight: 0.171414} },
+{ data: { source: 'MLXIP', target: 'RADIL', directed: 'false', weight: 0.151455} },
+{ data: { source: 'MLXIP', target: 'PRMT9', directed: 'false', weight: 0.140692} },
+{ data: { source: 'MLXIP', target: 'GOLPH3L', directed: 'false', weight: 0.140692} },
+{ data: { source: 'MLXIP', target: 'DCUN1D5', directed: 'false', weight: 0.128057} },
+{ data: { source: 'MLXIP', target: 'SETX', directed: 'false', weight: 0.120276} },
+{ data: { source: 'PNKD', target: 'PPARGC1B', directed: 'false', weight: 0.9599260000000001} },
+{ data: { source: 'PNKD', target: 'PPFIBP1', directed: 'false', weight: 0.898085} },
+{ data: { source: 'PNKD', target: 'GOLPH3L', directed: 'false', weight: 0.8899969999999999} },
+{ data: { source: 'PNKD', target: 'DCUN1D5', directed: 'false', weight: 0.819524} },
+{ data: { source: 'PNKD', target: 'PRMT9', directed: 'false', weight: 0.775234} },
+{ data: { source: 'PNKD', target: 'ATRIP', directed: 'false', weight: 0.774389} },
+{ data: { source: 'PNKD', target: 'LSS', directed: 'false', weight: 0.7535390000000001} },
+{ data: { source: 'PNKD', target: 'RADIL', directed: 'false', weight: 0.646457} },
+{ data: { source: 'PNKD', target: 'SETX', directed: 'false', weight: 0.42578900000000003} },
+{ data: { source: 'DCUN1D5', target: 'PPARGC1B', directed: 'false', weight: 0.128057} },
+{ data: { source: 'DCUN1D5', target: 'PPFIBP1', directed: 'false', weight: 0.128057} },
+{ data: { source: 'DCUN1D5', target: 'GOLPH3L', directed: 'false', weight: 0.104198} },
+{ data: { source: 'DCUN1D5', target: 'ATRIP', directed: 'false', weight: 0.128057} },
+{ data: { source: 'DCUN1D5', target: 'LSS', directed: 'false', weight: 0.128057} },
+{ data: { source: 'DCUN1D5', target: 'RADIL', directed: 'false', weight: 0.112499} },
+{ data: { source: 'DCUN1D5', target: 'PRMT9', directed: 'false', weight: 0.104198} },
+{ data: { source: 'DCUN1D5', target: 'SETX', directed: 'false', weight: 0.0886254} },
+{ data: { source: 'GOLPH3L', target: 'PPARGC1B', directed: 'false', weight: 0.140692} },
+{ data: { source: 'GOLPH3L', target: 'PPFIBP1', directed: 'false', weight: 0.140692} },
+{ data: { source: 'GOLPH3L', target: 'ATRIP', directed: 'false', weight: 0.140692} },
+{ data: { source: 'GOLPH3L', target: 'LSS', directed: 'false', weight: 0.140692} },
+{ data: { source: 'GOLPH3L', target: 'RADIL', directed: 'false', weight: 0.123797} },
+{ data: { source: 'GOLPH3L', target: 'PRMT9', directed: 'false', weight: 0.114755} },
+{ data: { source: 'GOLPH3L', target: 'SETX', directed: 'false', weight: 0.0977318} },
+{ data: { source: 'ATRIP', target: 'PPARGC1B', directed: 'false', weight: 0.171414} },
+{ data: { source: 'ATRIP', target: 'PPFIBP1', directed: 'false', weight: 0.171414} },
+{ data: { source: 'ATRIP', target: 'PRMT9', directed: 'false', weight: 0.140692} },
+{ data: { source: 'ATRIP', target: 'LSS', directed: 'false', weight: 0.171414} },
+{ data: { source: 'ATRIP', target: 'RADIL', directed: 'false', weight: 0.151455} },
+{ data: { source: 'ATRIP', target: 'SETX', directed: 'false', weight: 0.120276} },
+{ data: { source: 'RADIL', target: 'PPARGC1B', directed: 'false', weight: 0.151455} },
+{ data: { source: 'RADIL', target: 'PPFIBP1', directed: 'false', weight: 0.151455} },
+{ data: { source: 'RADIL', target: 'PRMT9', directed: 'false', weight: 0.123797} },
+{ data: { source: 'RADIL', target: 'LSS', directed: 'false', weight: 0.151455} },
+{ data: { source: 'RADIL', target: 'SETX', directed: 'false', weight: 0.10556600000000001} },
+{ data: { source: 'LSS', target: 'PPARGC1B', directed: 'false', weight: 0.171414} },
+{ data: { source: 'LSS', target: 'PPFIBP1', directed: 'false', weight: 0.250187} },
+{ data: { source: 'LSS', target: 'PRMT9', directed: 'false', weight: 0.140692} },
+{ data: { source: 'LSS', target: 'SETX', directed: 'false', weight: 0.120276} },
+{ data: { source: 'SETX', target: 'PPARGC1B', directed: 'false', weight: 0.120276} },
+{ data: { source: 'SETX', target: 'PPFIBP1', directed: 'false', weight: 0.120276} },
+{ data: { source: 'SETX', target: 'PRMT9', directed: 'false', weight: 0.17435} },
+{ data: { source: 'PPFIBP1', target: 'PPARGC1B', directed: 'false', weight: 0.171414} },
+{ data: { source: 'PPFIBP1', target: 'PRMT9', directed: 'false', weight: 0.140692} },
+{ data: { source: 'PRMT9', target: 'PPARGC1B', directed: 'false', weight: 0.140692} }]},
 
 style: [
     {
@@ -111,7 +150,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 39S ribosomal subunit, mitochondrial match 6<br> Complex Score = 0.38800<br> Unweighted Density = 0.95
+    0.1 ATR-ATRIP complex match 2<br> Complex Score = 0.38750<br> Unweighted Density = 1.00
     </section>
     </body>
     </html>

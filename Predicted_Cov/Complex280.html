@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.4 CTNNAL1-DNTA complex</title>
+<title> 0.1 AATF-NGDN-NOL10 complex match 3</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,18 +30,23 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'SNTG2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NY99" }},
-{data: { id: 'DTNA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y4J8" }},
-{data: { id: 'CTNNAL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UBT7" }},
-{data: { id: 'SNTB1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13884" }},
-{data: { id: 'DMD', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P11532" }}], 
- edges: [{ data: { source: 'SNTG2', target: 'DMD', directed: 'false', weight: 0.867476} },
-{ data: { source: 'SNTG2', target: 'CTNNAL1', directed: 'false', weight: 0.22975} },
-{ data: { source: 'SNTG2', target: 'SNTB1', directed: 'false', weight: 0.841931} },
-{ data: { source: 'SNTG2', target: 'DTNA', directed: 'false', weight: 0.537636} },
-{ data: { source: 'DTNA', target: 'DMD', directed: 'false', weight: 0.6485850000000001} },
-{ data: { source: 'CTNNAL1', target: 'DMD', directed: 'false', weight: 0.938838} },
-{ data: { source: 'SNTB1', target: 'DMD', directed: 'false', weight: 0.9035540000000001} }]},
+elements:{nodes: [{data: { id: 'C8orf33', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H7E9" }},
+{data: { id: 'DRG1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92597" }},
+{data: { id: 'RSBN1L', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q6PCB5" }},
+{data: { id: 'SARS-CoV2 nsp8', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp8.html" }},
+{data: { id: 'AATF', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9NY61" }},
+{data: { id: 'KRR1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13601" }},
+{data: { id: 'ZC3H15', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WU90" }}], 
+ edges: [{ data: { source: 'SARS-CoV2 nsp8', target: 'AATF', directed: 'false', weight: 0.783703681, type: 'sars'} },
+{ data: { source: 'C8orf33', target: 'KRR1', directed: 'false', weight: 0.124999} },
+{ data: { source: 'C8orf33', target: 'RSBN1L', directed: 'false', weight: 0.160427} },
+{ data: { source: 'C8orf33', target: 'AATF', directed: 'false', weight: 0.11073399999999999} },
+{ data: { source: 'DRG1', target: 'KRR1', directed: 'false', weight: 0.115879} },
+{ data: { source: 'DRG1', target: 'ZC3H15', directed: 'false', weight: 0.9837229999999999} },
+{ data: { source: 'DRG1', target: 'AATF', directed: 'false', weight: 0.0960696} },
+{ data: { source: 'RSBN1L', target: 'KRR1', directed: 'false', weight: 0.134715} },
+{ data: { source: 'RSBN1L', target: 'AATF', directed: 'false', weight: 0.187167} },
+{ data: { source: 'KRR1', target: 'AATF', directed: 'false', weight: 0.753855} }]},
 
 style: [
     {
@@ -101,7 +106,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.4 CTNNAL1-DNTA complex<br> Complex Score = 0.38800<br> Unweighted Density = 0.70
+    0.1 AATF-NGDN-NOL10 complex match 3<br> Complex Score = 0.38750<br> Unweighted Density = 0.60
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>AATF
     </section>
     </body>
     </html>

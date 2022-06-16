@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 NK-3-Groucho complex</title>
+<title> 0.05 Nop56p-associated pre-rRNA complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,15 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'STN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H668" }},
-{data: { id: 'FAM136A', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q96C01" }},
-{data: { id: 'NKX3-1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99801" }},
-{data: { id: 'RBFOX3', score: 4, type: '', href: "https://www.uniprot.org/uniprot/A6NFN3" }}], 
- edges: [{ data: { source: 'STN1', target: 'FAM136A', directed: 'false', weight: 0.114276} },
-{ data: { source: 'FAM136A', target: 'NKX3-1', directed: 'false', weight: 0.952887} },
-{ data: { source: 'FAM136A', target: 'RBFOX3', directed: 'false', weight: 0.362034} }]},
+elements:{nodes: [{data: { id: 'SARS-CoV2 nsp8', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp8.html" }},
+{data: { id: 'MEPCE', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q7L2J0" }},
+{data: { id: 'TSR2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q969E8" }},
+{data: { id: 'H1FX', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92522" }},
+{data: { id: 'RIOK2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BVS4" }}], 
+ edges: [{ data: { source: 'SARS-CoV2 nsp8', target: 'MEPCE', directed: 'false', weight: 0.790978117, type: 'sars'} },
+{ data: { source: 'MEPCE', target: 'H1FX', directed: 'false', weight: 0.359668} },
+{ data: { source: 'TSR2', target: 'RIOK2', directed: 'false', weight: 0.277082} },
+{ data: { source: 'RIOK2', target: 'H1FX', directed: 'false', weight: 0.078377} }]},
 
 style: [
     {
@@ -96,7 +98,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 NK-3-Groucho complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.05 Nop56p-associated pre-rRNA complex<br> Complex Score = 0.30000<br> Unweighted Density = 0.50
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>MEPCE
     </section>
     </body>
     </html>

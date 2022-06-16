@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.3 6S methyltransferase complex</title>
+<title> 0.1 GALNS-lysosomal hydrolase 1.27 MDa complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,21 +30,74 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'SNRPGP15', score: 3, type: '', href: "https://www.ncbi.nlm.nih.gov/gene/100130932" }},
-{data: { id: 'SNRPF', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62306" }},
-{data: { id: 'SNRPD3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62318" }},
-{data: { id: 'WDR57', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96DI7" }},
-{data: { id: 'SNRPA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P09661" }},
-{data: { id: 'SNRPD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62314" }}], 
- edges: [{ data: { source: 'SNRPGP15', target: 'SNRPF', directed: 'false', weight: 0.9593510000000001} },
-{ data: { source: 'SNRPF', target: 'SNRPA1', directed: 'false', weight: 0.0343852} },
-{ data: { source: 'SNRPF', target: 'SNRPD1', directed: 'false', weight: 0.333597} },
-{ data: { source: 'SNRPF', target: 'SNRPD3', directed: 'false', weight: 0.232977} },
-{ data: { source: 'SNRPD3', target: 'WDR57', directed: 'false', weight: 0.889458} },
-{ data: { source: 'SNRPD3', target: 'SNRPA1', directed: 'false', weight: 0.987574} },
-{ data: { source: 'SNRPD3', target: 'SNRPD1', directed: 'false', weight: 0.999339} },
-{ data: { source: 'WDR57', target: 'SNRPD1', directed: 'false', weight: 0.8299049999999999} },
-{ data: { source: 'SNRPA1', target: 'SNRPD1', directed: 'false', weight: 1.0} }]},
+elements:{nodes: [{data: { id: 'PAM', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P19021" }},
+{data: { id: 'POGLUT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NBL1" }},
+{data: { id: 'ARSK', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q6UWY0" }},
+{data: { id: 'SARS-CoV2 orf8', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 orf8.html" }},
+{data: { id: 'UGGT2', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9NYU1" }},
+{data: { id: 'GALNS', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P34059" }},
+{data: { id: 'SARS-CoV2 orf8', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 orf8.html" }},
+{data: { id: 'CHPF2', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9P2E5" }},
+{data: { id: 'BMP7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P18075" }},
+{data: { id: 'SGSH', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P51688" }},
+{data: { id: 'GUSB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P08236" }},
+{data: { id: 'SARS-CoV2 orf8', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 orf8.html" }},
+{data: { id: 'EDEM3', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9BZQ6" }},
+{data: { id: 'SARS-CoV2 orf8', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 orf8.html" }},
+{data: { id: 'CHPF', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q8IZ52" }},
+{data: { id: 'NAGLU', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P54802" }}], 
+ edges: [{ data: { source: 'SARS-CoV2 orf8', target: 'UGGT2', directed: 'false', weight: 0.844600144, type: 'sars'} },
+{ data: { source: 'SARS-CoV2 orf8', target: 'CHPF2', directed: 'false', weight: 0.703620586, type: 'sars'} },
+{ data: { source: 'SARS-CoV2 orf8', target: 'EDEM3', directed: 'false', weight: 0.81834398, type: 'sars'} },
+{ data: { source: 'SARS-CoV2 orf8', target: 'CHPF', directed: 'false', weight: 0.989068101, type: 'sars'} },
+{ data: { source: 'PAM', target: 'GUSB', directed: 'false', weight: 0.177025} },
+{ data: { source: 'PAM', target: 'SGSH', directed: 'false', weight: 0.24021199999999998} },
+{ data: { source: 'PAM', target: 'BMP7', directed: 'false', weight: 0.121898} },
+{ data: { source: 'PAM', target: 'NAGLU', directed: 'false', weight: 0.268228} },
+{ data: { source: 'PAM', target: 'CHPF2', directed: 'false', weight: 0.243456} },
+{ data: { source: 'PAM', target: 'GALNS', directed: 'false', weight: 0.24021199999999998} },
+{ data: { source: 'PAM', target: 'UGGT2', directed: 'false', weight: 0.43874300000000005} },
+{ data: { source: 'PAM', target: 'EDEM3', directed: 'false', weight: 0.14541400000000002} },
+{ data: { source: 'PAM', target: 'CHPF', directed: 'false', weight: 0.289356} },
+{ data: { source: 'POGLUT1', target: 'ARSK', directed: 'false', weight: 0.8864040000000001} },
+{ data: { source: 'POGLUT1', target: 'GALNS', directed: 'false', weight: 0.426387} },
+{ data: { source: 'UGGT2', target: 'GUSB', directed: 'false', weight: 0.693253} },
+{ data: { source: 'UGGT2', target: 'SGSH', directed: 'false', weight: 0.61317} },
+{ data: { source: 'UGGT2', target: 'BMP7', directed: 'false', weight: 0.31808200000000003} },
+{ data: { source: 'UGGT2', target: 'NAGLU', directed: 'false', weight: 0.608413} },
+{ data: { source: 'UGGT2', target: 'CHPF2', directed: 'false', weight: 0.485413} },
+{ data: { source: 'UGGT2', target: 'GALNS', directed: 'false', weight: 0.44013800000000003} },
+{ data: { source: 'UGGT2', target: 'EDEM3', directed: 'false', weight: 0.346137} },
+{ data: { source: 'UGGT2', target: 'CHPF', directed: 'false', weight: 0.172522} },
+{ data: { source: 'ARSK', target: 'GALNS', directed: 'false', weight: 0.394927} },
+{ data: { source: 'GALNS', target: 'GUSB', directed: 'false', weight: 0.303361} },
+{ data: { source: 'GALNS', target: 'SGSH', directed: 'false', weight: 0.269524} },
+{ data: { source: 'GALNS', target: 'BMP7', directed: 'false', weight: 0.37390300000000004} },
+{ data: { source: 'GALNS', target: 'NAGLU', directed: 'false', weight: 0.345225} },
+{ data: { source: 'GALNS', target: 'CHPF2', directed: 'false', weight: 0.242407} },
+{ data: { source: 'GALNS', target: 'EDEM3', directed: 'false', weight: 0.32416300000000003} },
+{ data: { source: 'GALNS', target: 'CHPF', directed: 'false', weight: 0.07729} },
+{ data: { source: 'CHPF2', target: 'GUSB', directed: 'false', weight: 0.472801} },
+{ data: { source: 'CHPF2', target: 'SGSH', directed: 'false', weight: 0.48480200000000007} },
+{ data: { source: 'CHPF2', target: 'BMP7', directed: 'false', weight: 0.231186} },
+{ data: { source: 'CHPF2', target: 'NAGLU', directed: 'false', weight: 0.34297300000000003} },
+{ data: { source: 'CHPF2', target: 'CHPF', directed: 'false', weight: 0.619105} },
+{ data: { source: 'CHPF2', target: 'EDEM3', directed: 'false', weight: 0.449157} },
+{ data: { source: 'BMP7', target: 'GUSB', directed: 'false', weight: 0.323728} },
+{ data: { source: 'BMP7', target: 'SGSH', directed: 'false', weight: 0.237195} },
+{ data: { source: 'BMP7', target: 'EDEM3', directed: 'false', weight: 0.625362} },
+{ data: { source: 'BMP7', target: 'NAGLU', directed: 'false', weight: 0.445935} },
+{ data: { source: 'BMP7', target: 'CHPF', directed: 'false', weight: 0.110952} },
+{ data: { source: 'SGSH', target: 'GUSB', directed: 'false', weight: 0.9744940000000001} },
+{ data: { source: 'SGSH', target: 'NAGLU', directed: 'false', weight: 0.8897149999999999} },
+{ data: { source: 'SGSH', target: 'EDEM3', directed: 'false', weight: 0.466721} },
+{ data: { source: 'SGSH', target: 'CHPF', directed: 'false', weight: 0.278121} },
+{ data: { source: 'GUSB', target: 'NAGLU', directed: 'false', weight: 0.7851739999999999} },
+{ data: { source: 'GUSB', target: 'EDEM3', directed: 'false', weight: 0.6874779999999999} },
+{ data: { source: 'GUSB', target: 'CHPF', directed: 'false', weight: 0.197632} },
+{ data: { source: 'EDEM3', target: 'NAGLU', directed: 'false', weight: 0.589751} },
+{ data: { source: 'EDEM3', target: 'CHPF', directed: 'false', weight: 0.24685700000000002} },
+{ data: { source: 'CHPF', target: 'NAGLU', directed: 'false', weight: 0.204468} }]},
 
 style: [
     {
@@ -104,7 +157,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.3 6S methyltransferase complex<br> Complex Score = 0.38800<br> Unweighted Density = 0.60
+    0.1 GALNS-lysosomal hydrolase 1.27 MDa complex<br> Complex Score = 0.39375<br> Unweighted Density = 0.73
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        4 interacting protein(s): <br>UGGT2 CHPF2 EDEM3 CHPF
     </section>
     </body>
     </html>

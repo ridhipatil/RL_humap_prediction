@@ -30,19 +30,27 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'SARM1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6SZW1" }},
-{data: { id: 'GHITM', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9H3K2" }},
-{data: { id: 'BRAWNIN', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q69YU5" }}], 
- edges: [{ data: { source: 'SARM1', target: 'GHITM', directed: 'false', weight: 0.179195} },
-{ data: { source: 'GHITM', target: 'BRAWNIN', directed: 'false', weight: 0.932184} }]},
+elements:{nodes: [{data: { id: 'GABRB3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P28472" }},
+{data: { id: 'MCOLN2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IZK6" }},
+{data: { id: 'DAGLA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y4D2" }},
+{data: { id: 'MCOLN3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TDD5" }},
+{data: { id: 'MCOLN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9GZU1" }}], 
+ edges: [{ data: { source: 'GABRB3', target: 'MCOLN1', directed: 'false', weight: 0.171414} },
+{ data: { source: 'GABRB3', target: 'MCOLN3', directed: 'false', weight: 0.8593139999999999} },
+{ data: { source: 'GABRB3', target: 'MCOLN2', directed: 'false', weight: 0.171414} },
+{ data: { source: 'GABRB3', target: 'DAGLA', directed: 'false', weight: 0.171414} },
+{ data: { source: 'MCOLN2', target: 'MCOLN1', directed: 'false', weight: 0.171414} },
+{ data: { source: 'MCOLN2', target: 'MCOLN3', directed: 'false', weight: 0.9197690000000001} },
+{ data: { source: 'MCOLN2', target: 'DAGLA', directed: 'false', weight: 0.171414} },
+{ data: { source: 'DAGLA', target: 'MCOLN1', directed: 'false', weight: 0.171414} },
+{ data: { source: 'DAGLA', target: 'MCOLN3', directed: 'false', weight: 0.8606590000000001} },
+{ data: { source: 'MCOLN3', target: 'MCOLN1', directed: 'false', weight: 0.971258} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 10,
-		'width':'10',
-		'height': '10',	
+		'font-size': 30,
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}                                
@@ -54,7 +62,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
 								'line-color': 'blue',
 								'opacity': 0.5
 							}
@@ -63,10 +71,7 @@ style: [
 
 });
 cy.layout({
-    'name': 'fcose',
-		'animate':false,
-	'nodeDimensionsIncludeLabels':true,
-	'nodeSeparation': 1000
+    name: 'circle'
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -82,12 +87,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.38800
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>GHITM
+    Complex Score  = 0.38750
     </section>
     </body>
     </html>

@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 Retromer complex (SNX1, SNX2, VPS35, VPS29, VPS26A)</title>
+<title> 0.1 OTUB1-UBC13-MMS2 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,16 +30,21 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'SNX5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y5X3" }},
-{data: { id: 'VPS26A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75436" }},
-{data: { id: 'WASHC2C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y4E1" }},
-{data: { id: 'WASHC2A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q641Q2" }},
-{data: { id: 'SNX2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60749" }}], 
- edges: [{ data: { source: 'SNX5', target: 'VPS26A', directed: 'false', weight: 0.28784899999999997} },
-{ data: { source: 'SNX5', target: 'SNX2', directed: 'false', weight: 0.990194} },
-{ data: { source: 'VPS26A', target: 'WASHC2C', directed: 'false', weight: 0.10835399999999999} },
-{ data: { source: 'VPS26A', target: 'SNX2', directed: 'false', weight: 0.9995649999999999} },
-{ data: { source: 'VPS26A', target: 'WASHC2A', directed: 'false', weight: 0.12098199999999999} }]},
+elements:{nodes: [{data: { id: 'OTUB1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96FW1" }},
+{data: { id: 'MCTS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9ULC4" }},
+{data: { id: 'RNF25', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96BH1" }},
+{data: { id: 'OTUD6B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N6M0" }},
+{data: { id: 'UBE2D2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62837" }},
+{data: { id: 'DENR', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43583" }},
+{data: { id: 'TCERG1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O14776" }}], 
+ edges: [{ data: { source: 'OTUB1', target: 'UBE2D2', directed: 'false', weight: 0.43277299999999996} },
+{ data: { source: 'OTUB1', target: 'RNF25', directed: 'false', weight: 0.0881212} },
+{ data: { source: 'OTUB1', target: 'MCTS1', directed: 'false', weight: 0.41453999999999996} },
+{ data: { source: 'OTUB1', target: 'DENR', directed: 'false', weight: 0.5149590000000001} },
+{ data: { source: 'OTUB1', target: 'OTUD6B', directed: 'false', weight: 0.5542279999999999} },
+{ data: { source: 'MCTS1', target: 'TCERG1', directed: 'false', weight: 0.924344} },
+{ data: { source: 'MCTS1', target: 'DENR', directed: 'false', weight: 0.814361} },
+{ data: { source: 'RNF25', target: 'UBE2D2', directed: 'false', weight: 0.943275} }]},
 
 style: [
     {
@@ -99,7 +104,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 Retromer complex (SNX1, SNX2, VPS35, VPS29, VPS26A)<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.1 OTUB1-UBC13-MMS2 complex<br> Complex Score = 0.35000<br> Unweighted Density = 0.38
     </section>
     </body>
     </html>

@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> MBNL2 MBNL3 MBNL1</title>
+<title> 0.8 TFIIH transcription factor complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,11 +30,32 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'MBNL2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5VZF2" }},
-{data: { id: 'MBNL3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NUK0" }},
-{data: { id: 'MBNL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NR56" }}], 
- edges: [{ data: { source: 'MBNL2', target: 'MBNL1', directed: 'false', weight: 0.9994370000000001} },
-{ data: { source: 'MBNL3', target: 'MBNL1', directed: 'false', weight: 0.999949} }]},
+elements:{nodes: [{data: { id: 'GTF2H1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P32780" }},
+{data: { id: 'MNAT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P51948" }},
+{data: { id: 'GTF2H5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6ZYL4" }},
+{data: { id: 'CCNH', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P51946" }},
+{data: { id: 'GTF2H3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13889" }},
+{data: { id: 'ERCC3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P19447" }},
+{data: { id: 'GTF2H4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92759" }},
+{data: { id: 'GTF2H2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13888" }}], 
+ edges: [{ data: { source: 'MNAT1', target: 'CCNH', directed: 'false', weight: 0.999893} },
+{ data: { source: 'MNAT1', target: 'GTF2H5', directed: 'false', weight: 0.837134} },
+{ data: { source: 'GTF2H1', target: 'GTF2H2', directed: 'false', weight: 0.99954} },
+{ data: { source: 'GTF2H1', target: 'GTF2H3', directed: 'false', weight: 0.998207} },
+{ data: { source: 'GTF2H1', target: 'ERCC3', directed: 'false', weight: 0.99092} },
+{ data: { source: 'GTF2H1', target: 'GTF2H4', directed: 'false', weight: 0.9446049999999999} },
+{ data: { source: 'GTF2H1', target: 'GTF2H5', directed: 'false', weight: 0.8152689999999999} },
+{ data: { source: 'GTF2H5', target: 'CCNH', directed: 'false', weight: 0.577206} },
+{ data: { source: 'GTF2H5', target: 'GTF2H2', directed: 'false', weight: 0.722767} },
+{ data: { source: 'GTF2H5', target: 'GTF2H3', directed: 'false', weight: 0.981874} },
+{ data: { source: 'GTF2H5', target: 'ERCC3', directed: 'false', weight: 0.706213} },
+{ data: { source: 'GTF2H5', target: 'GTF2H4', directed: 'false', weight: 0.98654} },
+{ data: { source: 'GTF2H3', target: 'GTF2H2', directed: 'false', weight: 0.998115} },
+{ data: { source: 'GTF2H3', target: 'ERCC3', directed: 'false', weight: 0.9945879999999999} },
+{ data: { source: 'GTF2H3', target: 'GTF2H4', directed: 'false', weight: 0.8602059999999999} },
+{ data: { source: 'ERCC3', target: 'GTF2H2', directed: 'false', weight: 0.9906889999999999} },
+{ data: { source: 'ERCC3', target: 'GTF2H4', directed: 'false', weight: 0.9459879999999999} },
+{ data: { source: 'GTF2H4', target: 'GTF2H2', directed: 'false', weight: 0.9011239999999999} }]},
 
 style: [
     {
@@ -94,7 +115,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    MBNL2 MBNL3 MBNL1<br> Complex Score = 0.38800<br> Unweighted Density = 0.67
+    0.8 TFIIH transcription factor complex<br> Complex Score = 0.38750<br> Unweighted Density = 0.64
     </section>
     </body>
     </html>

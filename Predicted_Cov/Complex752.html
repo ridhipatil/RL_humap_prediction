@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 MAF2 complex</title>
+<title> 0.05 39S ribosomal subunit, mitochondrial</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,19 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'KAT8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H7Z6" }},
-{data: { id: 'URLC1', score: 1, type: '', href: "https://www.uniprot.org/uniprot/A0A0A8K9A6" }},
-{data: { id: 'KIAA1267', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q7Z3B3" }},
-{data: { id: 'DUS2L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NX74" }}], 
- edges: [{ data: { source: 'KAT8', target: 'KIAA1267', directed: 'false', weight: 0.276172} },
-{ data: { source: 'URLC1', target: 'KIAA1267', directed: 'false', weight: 0.10770999999999999} },
-{ data: { source: 'KIAA1267', target: 'DUS2L', directed: 'false', weight: 0.19660899999999998} }]},
+elements:{nodes: [{data: { id: 'HNRNPUL2', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q1KMD3" }},
+{data: { id: 'MRPL43', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N983" }},
+{data: { id: 'YARS2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y2Z4" }},
+{data: { id: 'PAIP2', score: 5.0, type: '', href: "https://www.uniprot.org/uniprot/Q9BPZ3" }},
+{data: { id: 'PTCD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75127" }},
+{data: { id: 'YTHDC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96MU7" }}], 
+ edges: [{ data: { source: 'YARS2', target: 'MRPL43', directed: 'false', weight: 0.409221} },
+{ data: { source: 'YARS2', target: 'PTCD1', directed: 'false', weight: 0.299213} },
+{ data: { source: 'YARS2', target: 'YTHDC1', directed: 'false', weight: 0.119223} },
+{ data: { source: 'YTHDC1', target: 'HNRNPUL2', directed: 'false', weight: 0.8357829999999999} },
+{ data: { source: 'YTHDC1', target: 'PTCD1', directed: 'false', weight: 0.270861} },
+{ data: { source: 'YTHDC1', target: 'PAIP2', directed: 'false', weight: 0.417108} },
+{ data: { source: 'MRPL43', target: 'PTCD1', directed: 'false', weight: 0.203964} }]},
 
 style: [
     {
@@ -96,7 +102,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 MAF2 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.05 39S ribosomal subunit, mitochondrial<br> Complex Score = 0.37500<br> Unweighted Density = 0.47
     </section>
     </body>
     </html>

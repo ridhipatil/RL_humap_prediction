@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> CCDC6 PPP4R1 LZTS3 PMPCB</title>
+<title> 0.05 40S ribosomal subunit, cytoplasmic match 2</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,15 +30,18 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'CCDC6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16204" }},
-{data: { id: 'PPP4R1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TF05" }},
-{data: { id: 'SARS-CoV2 M', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 M.html" }},
-{data: { id: 'PMPCB', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/O75439" }},
-{data: { id: 'LZTS3', score: 4, type: '', href: "https://www.uniprot.org/uniprot/O60299" }}], 
- edges: [{ data: { source: 'SARS-CoV2 M', target: 'PMPCB', directed: 'false', weight: 0.985120198, type: 'sars'} },
-{ data: { source: 'CCDC6', target: 'PPP4R1', directed: 'false', weight: 0.999923} },
-{ data: { source: 'CCDC6', target: 'LZTS3', directed: 'false', weight: 0.17387} },
-{ data: { source: 'PPP4R1', target: 'PMPCB', directed: 'false', weight: 0.41519799999999996} }]},
+elements:{nodes: [{data: { id: 'CALU', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43852" }},
+{data: { id: 'NACA2', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q9H009" }},
+{data: { id: 'PTRH1', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q86Y79" }},
+{data: { id: 'RCN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15293" }},
+{data: { id: 'P4HA2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15460" }},
+{data: { id: 'FAU', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62861" }}], 
+ edges: [{ data: { source: 'P4HA2', target: 'CALU', directed: 'false', weight: 0.0771217} },
+{ data: { source: 'PTRH1', target: 'RCN1', directed: 'false', weight: 0.9749959999999999} },
+{ data: { source: 'CALU', target: 'NACA2', directed: 'false', weight: 0.8964620000000001} },
+{ data: { source: 'CALU', target: 'RCN1', directed: 'false', weight: 0.026705} },
+{ data: { source: 'FAU', target: 'NACA2', directed: 'false', weight: 0.280082} },
+{ data: { source: 'NACA2', target: 'RCN1', directed: 'false', weight: 0.8897799999999999} }]},
 
 style: [
     {
@@ -98,12 +101,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    CCDC6 PPP4R1 LZTS3 PMPCB<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>PMPCB
+    0.05 40S ribosomal subunit, cytoplasmic match 2<br> Complex Score = 0.35000<br> Unweighted Density = 0.40
     </section>
     </body>
     </html>

@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.4 LIN2-LIN7-SAP97 complex</title>
+<title> 0.2 ILF3-XPO5 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,15 +30,15 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'MPP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14168" }},
-{data: { id: 'LIN7A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O14910" }},
-{data: { id: 'DLG1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q12959" }},
-{data: { id: 'SARS-CoV2 nsp4', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp4.html" }},
-{data: { id: 'IDE', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P14735" }}], 
- edges: [{ data: { source: 'SARS-CoV2 nsp4', target: 'IDE', directed: 'false', weight: 0.918031442, type: 'sars'} },
-{ data: { source: 'MPP2', target: 'DLG1', directed: 'false', weight: 0.6005560000000001} },
-{ data: { source: 'MPP2', target: 'LIN7A', directed: 'false', weight: 0.456075} },
-{ data: { source: 'DLG1', target: 'IDE', directed: 'false', weight: 0.121603} }]},
+elements:{nodes: [{data: { id: 'SOX5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P35711" }},
+{data: { id: 'SOX13', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UN79" }},
+{data: { id: 'XPO5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HAV4" }},
+{data: { id: 'CEP85', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6P2H3" }},
+{data: { id: 'CLEC12A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5QGZ9" }}], 
+ edges: [{ data: { source: 'SOX5', target: 'CEP85', directed: 'false', weight: 0.985535} },
+{ data: { source: 'CLEC12A', target: 'SOX13', directed: 'false', weight: 0.9788370000000001} },
+{ data: { source: 'CLEC12A', target: 'XPO5', directed: 'false', weight: 0.564221} },
+{ data: { source: 'SOX13', target: 'CEP85', directed: 'false', weight: 0.930494} }]},
 
 style: [
     {
@@ -98,12 +98,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.4 LIN2-LIN7-SAP97 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>IDE
+    0.2 ILF3-XPO5 complex<br> Complex Score = 0.35000<br> Unweighted Density = 0.40
     </section>
     </body>
     </html>

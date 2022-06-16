@@ -30,16 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'NUP88', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q99567" }},
-{data: { id: 'HEL-S-72p', score: 3, type: '', href: "https://www.uniprot.org/uniprot/V9HW22" }},
-{data: { id: 'SKP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P63208" }},
-{data: { id: 'hCG_19665', score: 3, type: '', href: "https://www.uniprot.org/uniprot/A0A024QZF1" }},
-{data: { id: 'NUP214', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P35658" }}], 
- edges: [{ data: { source: 'NUP88', target: 'NUP214', directed: 'false', weight: 1.0} },
-{ data: { source: 'NUP88', target: 'hCG_19665', directed: 'false', weight: 0.99526} },
-{ data: { source: 'HEL-S-72p', target: 'NUP214', directed: 'false', weight: 0.313153} },
-{ data: { source: 'HEL-S-72p', target: 'SKP1', directed: 'false', weight: 0.699936} },
-{ data: { source: 'hCG_19665', target: 'NUP214', directed: 'false', weight: 0.999656} }]},
+elements:{nodes: [{data: { id: 'GPN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HCN4" }},
+{data: { id: 'POLR3K', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y2Y1" }},
+{data: { id: 'POLR2J', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P52435" }},
+{data: { id: 'POLR2E', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P19388" }}], 
+ edges: [{ data: { source: 'POLR2J', target: 'GPN1', directed: 'false', weight: 0.581678} },
+{ data: { source: 'GPN1', target: 'POLR2E', directed: 'false', weight: 0.983642} },
+{ data: { source: 'GPN1', target: 'POLR3K', directed: 'false', weight: 0.7415039999999999} }]},
 
 style: [
     {
@@ -87,12 +84,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.37500
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        2 interacting protein(s): <br>NUP88 NUP214
+    Complex Score  = 0.30000
     </section>
     </body>
     </html>

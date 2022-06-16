@@ -30,19 +30,40 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'ITGB5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P18084" }},
-{data: { id: 'EDIL3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43854" }},
-{data: { id: 'MFGE8', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q08431" }}], 
- edges: [{ data: { source: 'ITGB5', target: 'EDIL3', directed: 'false', weight: 0.0474567} },
-{ data: { source: 'ITGB5', target: 'MFGE8', directed: 'false', weight: 0.0392645} }]},
+elements:{nodes: [{data: { id: 'GFOD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NXC2" }},
+{data: { id: 'CARD10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BWT7" }},
+{data: { id: 'RALGAPB', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q86X10" }},
+{data: { id: 'GFOD2', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q3B7J2" }},
+{data: { id: 'RALGAPA2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q2PPJ7" }},
+{data: { id: 'RALGAPA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6GYQ0" }},
+{data: { id: 'FBXO9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UK97" }}], 
+ edges: [{ data: { source: 'GFOD1', target: 'GFOD2', directed: 'false', weight: 0.9867790000000001} },
+{ data: { source: 'GFOD1', target: 'CARD10', directed: 'false', weight: 0.9828100000000001} },
+{ data: { source: 'GFOD1', target: 'FBXO9', directed: 'false', weight: 0.982668} },
+{ data: { source: 'GFOD1', target: 'RALGAPB', directed: 'false', weight: 0.9726239999999999} },
+{ data: { source: 'GFOD1', target: 'RALGAPA1', directed: 'false', weight: 0.965208} },
+{ data: { source: 'GFOD1', target: 'RALGAPA2', directed: 'false', weight: 0.900381} },
+{ data: { source: 'CARD10', target: 'GFOD2', directed: 'false', weight: 0.171414} },
+{ data: { source: 'CARD10', target: 'RALGAPA2', directed: 'false', weight: 0.171414} },
+{ data: { source: 'CARD10', target: 'FBXO9', directed: 'false', weight: 0.171414} },
+{ data: { source: 'CARD10', target: 'RALGAPB', directed: 'false', weight: 0.151455} },
+{ data: { source: 'CARD10', target: 'RALGAPA1', directed: 'false', weight: 0.151455} },
+{ data: { source: 'RALGAPB', target: 'GFOD2', directed: 'false', weight: 0.151455} },
+{ data: { source: 'RALGAPB', target: 'FBXO9', directed: 'false', weight: 0.151455} },
+{ data: { source: 'RALGAPB', target: 'RALGAPA2', directed: 'false', weight: 0.151455} },
+{ data: { source: 'RALGAPB', target: 'RALGAPA1', directed: 'false', weight: 0.133456} },
+{ data: { source: 'GFOD2', target: 'FBXO9', directed: 'false', weight: 0.171414} },
+{ data: { source: 'GFOD2', target: 'RALGAPA2', directed: 'false', weight: 0.171414} },
+{ data: { source: 'GFOD2', target: 'RALGAPA1', directed: 'false', weight: 0.151455} },
+{ data: { source: 'RALGAPA2', target: 'FBXO9', directed: 'false', weight: 0.171414} },
+{ data: { source: 'RALGAPA2', target: 'RALGAPA1', directed: 'false', weight: 0.151455} },
+{ data: { source: 'RALGAPA1', target: 'FBXO9', directed: 'false', weight: 0.151455} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 10,
-		'width':'10',
-		'height': '10',	
+		'font-size': 30,
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}                                
@@ -54,7 +75,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
 								'line-color': 'blue',
 								'opacity': 0.5
 							}
@@ -63,10 +84,7 @@ style: [
 
 });
 cy.layout({
-    'name': 'fcose',
-		'animate':false,
-	'nodeDimensionsIncludeLabels':true,
-	'nodeSeparation': 1000
+    name: 'circle'
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -82,12 +100,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.37500
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>MFGE8
+    Complex Score  = 0.38750
     </section>
     </body>
     </html>

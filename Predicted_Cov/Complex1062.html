@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.3 Transcription initiation factor complex (TAF5, TAF6, TAF9, TAF11, TBP)</title>
+<title> 0.2 PSF-p54(nrb) complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,15 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'TAF7L', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q5H9L4" }},
-{data: { id: 'TAF11', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15544" }},
-{data: { id: 'TAF13', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15543" }},
-{data: { id: 'TAF6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49848" }}], 
- edges: [{ data: { source: 'TAF6', target: 'TAF7L', directed: 'false', weight: 0.15724100000000002} },
-{ data: { source: 'TAF7L', target: 'TAF11', directed: 'false', weight: 0.7422979999999999} },
-{ data: { source: 'TAF7L', target: 'TAF13', directed: 'false', weight: 0.6284270000000001} }]},
+elements:{nodes: [{data: { id: 'SFPQ', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P23246" }},
+{data: { id: 'HNRNPD', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14103" }},
+{data: { id: 'PFAS', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15067" }},
+{data: { id: 'ROBO1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y6N7" }},
+{data: { id: 'NIF3L1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9GZT8" }}], 
+ edges: [{ data: { source: 'SFPQ', target: 'HNRNPD', directed: 'false', weight: 0.650316} },
+{ data: { source: 'SFPQ', target: 'PFAS', directed: 'false', weight: 0.584696} },
+{ data: { source: 'NIF3L1', target: 'PFAS', directed: 'false', weight: 0.614124} },
+{ data: { source: 'PFAS', target: 'ROBO1', directed: 'false', weight: 0.277906} }]},
 
 style: [
     {
@@ -96,7 +98,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.3 Transcription initiation factor complex (TAF5, TAF6, TAF9, TAF11, TBP)<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.2 PSF-p54(nrb) complex<br> Complex Score = 0.35000<br> Unweighted Density = 0.40
     </section>
     </body>
     </html>

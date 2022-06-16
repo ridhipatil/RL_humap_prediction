@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 Rnase/Mrp complex match 2</title>
+<title> 0.2 APC-DLG4 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,14 +30,11 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'POP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99575" }},
-{data: { id: 'RPS3A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P61247" }},
-{data: { id: 'ZNF106', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H2Y7" }},
-{data: { id: 'KNOP1', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q1ED39" }}], 
- edges: [{ data: { source: 'ZNF106', target: 'KNOP1', directed: 'false', weight: 0.7663399999999999} },
-{ data: { source: 'POP1', target: 'RPS3A', directed: 'false', weight: 0.453004} },
-{ data: { source: 'POP1', target: 'KNOP1', directed: 'false', weight: 0.11636700000000001} },
-{ data: { source: 'RPS3A', target: 'KNOP1', directed: 'false', weight: 0.0357271} }]},
+elements:{nodes: [{data: { id: 'DLG4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P78352" }},
+{data: { id: 'PTK2B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14289" }},
+{data: { id: 'UFC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y3C8" }}], 
+ edges: [{ data: { source: 'DLG4', target: 'UFC1', directed: 'false', weight: 0.409738} },
+{ data: { source: 'UFC1', target: 'PTK2B', directed: 'false', weight: 0.402886} }]},
 
 style: [
     {
@@ -97,7 +94,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 Rnase/Mrp complex match 2<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
+    0.2 APC-DLG4 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
     </section>
     </body>
     </html>

@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> DKFZp686C0249 PRR11 OSBPL5</title>
+<title> 0.2 CCNT1- CDK9-GRN complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,26 +30,29 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'OSBPL5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H0X9" }},
-{data: { id: 'DKFZp686C0249', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q5HYM3" }},
-{data: { id: 'PRR11', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q96HE9" }}], 
- edges: [{ data: { source: 'OSBPL5', target: 'DKFZp686C0249', directed: 'false', weight: 0.443829} },
-{ data: { source: 'OSBPL5', target: 'PRR11', directed: 'false', weight: 0.165716} }]},
+elements:{nodes: [{data: { id: 'ZC3HC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86WB0" }},
+{data: { id: 'GRN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P28799" }},
+{data: { id: 'RAPGEF6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TEU7" }},
+{data: { id: 'OTUD5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96G74" }}], 
+ edges: [{ data: { source: 'GRN', target: 'OTUD5', directed: 'false', weight: 0.780604} },
+{ data: { source: 'GRN', target: 'RAPGEF6', directed: 'false', weight: 0.6712} },
+{ data: { source: 'GRN', target: 'ZC3HC1', directed: 'false', weight: 0.5} },
+{ data: { source: 'ZC3HC1', target: 'OTUD5', directed: 'false', weight: 0.140692} },
+{ data: { source: 'ZC3HC1', target: 'RAPGEF6', directed: 'false', weight: 0.123797} },
+{ data: { source: 'OTUD5', target: 'RAPGEF6', directed: 'false', weight: 0.151455} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 10,
-		'width':'10',
-		'height': '10',	
+		'font-size': 30,
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}  
                                  if ( ele.data('type') == 'sars' ){return 'triangle'}   
   return 'rectangle';
   },            
-             'background-color': function( ele ){ 
+            'background-color': function( ele ){ 
                                 if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
 								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
                                  if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
@@ -63,7 +66,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
 								'line-color': function( ele ){ 
                                  if ( ele.data('type') == 'sars' ){return 'red'}   
   return 'blue';
@@ -75,10 +78,7 @@ style: [
 
 });
 cy.layout({
-    'name': 'fcose',
-		'animate':false,
-	'nodeDimensionsIncludeLabels':true,
-	'nodeSeparation': 1000
+    'name': 'circle'
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -94,7 +94,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    DKFZp686C0249 PRR11 OSBPL5<br> Complex Score = 0.38800<br> Unweighted Density = 0.67
+    0.2 CCNT1- CDK9-GRN complex<br> Complex Score = 0.38750<br> Unweighted Density = 1.00
     </section>
     </body>
     </html>

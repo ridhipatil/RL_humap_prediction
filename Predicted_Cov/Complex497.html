@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> HEL-S-165mP HAGH ETFB SARS1</title>
+<title> 0.2 GNAS-L-GNB1-GNG2 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,27 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'HAGH', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16775" }},
-{data: { id: 'HEL-S-165mP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/V9HWI0" }},
-{data: { id: 'ETFB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P38117" }},
-{data: { id: 'SARS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49591" }}], 
- edges: [{ data: { source: 'HAGH', target: 'ETFB', directed: 'false', weight: 0.99051} },
-{ data: { source: 'HEL-S-165mP', target: 'ETFB', directed: 'false', weight: 0.9999030000000001} },
-{ data: { source: 'HEL-S-165mP', target: 'SARS1', directed: 'false', weight: 0.353367} }]},
+elements:{nodes: [{data: { id: 'GNAS', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95467" }},
+{data: { id: 'SARS-CoV2 nsp7', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp7.html" }},
+{data: { id: 'GNB1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P62873" }},
+{data: { id: 'TRO', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q12816" }},
+{data: { id: 'GNAL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P38405" }},
+{data: { id: 'GNA12', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q03113" }},
+{data: { id: 'GNB2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62879" }},
+{data: { id: 'GNAQ', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P50148" }}], 
+ edges: [{ data: { source: 'SARS-CoV2 nsp7', target: 'GNB1', directed: 'false', weight: 0.839532136, type: 'sars'} },
+{ data: { source: 'GNAS', target: 'GNAL', directed: 'false', weight: 0.939933} },
+{ data: { source: 'GNAS', target: 'GNB2', directed: 'false', weight: 0.817196} },
+{ data: { source: 'GNAS', target: 'TRO', directed: 'false', weight: 0.418645} },
+{ data: { source: 'GNAS', target: 'GNA12', directed: 'false', weight: 0.29581399999999997} },
+{ data: { source: 'GNB1', target: 'GNAQ', directed: 'false', weight: 0.9383940000000001} },
+{ data: { source: 'GNB1', target: 'GNB2', directed: 'false', weight: 0.196802} },
+{ data: { source: 'TRO', target: 'GNAL', directed: 'false', weight: 0.10064} },
+{ data: { source: 'TRO', target: 'GNB2', directed: 'false', weight: 0.0692291} },
+{ data: { source: 'TRO', target: 'GNA12', directed: 'false', weight: 0.11473699999999999} },
+{ data: { source: 'GNAL', target: 'GNB2', directed: 'false', weight: 0.163304} },
+{ data: { source: 'GNAL', target: 'GNA12', directed: 'false', weight: 0.151455} },
+{ data: { source: 'GNAQ', target: 'GNB2', directed: 'false', weight: 0.825166} }]},
 
 style: [
     {
@@ -96,7 +110,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    HEL-S-165mP HAGH ETFB SARS1<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.2 GNAS-L-GNB1-GNG2 complex<br> Complex Score = 0.38750<br> Unweighted Density = 0.57
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>GNB1
     </section>
     </body>
     </html>

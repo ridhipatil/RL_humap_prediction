@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.3 9-1-1 complex</title>
+<title> 0.2 Phosphorylase kinase complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,34 +30,53 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'hCG_37731', score: 2, type: '', href: "https://www.uniprot.org/uniprot/A0A024R045" }},
-{data: { id: 'RAD9A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99638" }},
-{data: { id: 'HUS1B', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q8NHY5" }},
-{data: { id: 'HUS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60921" }},
-{data: { id: 'ZBTB14', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43829" }}], 
- edges: [{ data: { source: 'hCG_37731', target: 'ZBTB14', directed: 'false', weight: 0.998851} },
-{ data: { source: 'hCG_37731', target: 'RAD9A', directed: 'false', weight: 0.9398280000000001} },
-{ data: { source: 'hCG_37731', target: 'HUS1', directed: 'false', weight: 0.9275950000000001} },
-{ data: { source: 'hCG_37731', target: 'HUS1B', directed: 'false', weight: 0.302417} },
-{ data: { source: 'RAD9A', target: 'HUS1', directed: 'false', weight: 0.579124} },
-{ data: { source: 'RAD9A', target: 'HUS1B', directed: 'false', weight: 0.327427} },
-{ data: { source: 'HUS1B', target: 'ZBTB14', directed: 'false', weight: 0.391861} },
-{ data: { source: 'HUS1', target: 'ZBTB14', directed: 'false', weight: 0.5155850000000001} }]},
+elements:{nodes: [{data: { id: 'PHKA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P46020" }},
+{data: { id: 'PHKG2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P15735" }},
+{data: { id: 'NR2F6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P10588" }},
+{data: { id: 'PHKA2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P46019" }},
+{data: { id: 'MPPED1', score: 3, type: '', href: "https://www.uniprot.org/uniprot/O15442" }},
+{data: { id: 'NARF', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WVD3" }},
+{data: { id: 'MPPED2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15777" }},
+{data: { id: 'PHKB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q93100" }}], 
+ edges: [{ data: { source: 'PHKA1', target: 'PHKB', directed: 'false', weight: 0.226204} },
+{ data: { source: 'PHKA1', target: 'PHKG2', directed: 'false', weight: 0.991873} },
+{ data: { source: 'PHKA1', target: 'PHKA2', directed: 'false', weight: 0.178799} },
+{ data: { source: 'PHKA1', target: 'MPPED1', directed: 'false', weight: 0.87376} },
+{ data: { source: 'PHKA1', target: 'NARF', directed: 'false', weight: 0.140692} },
+{ data: { source: 'PHKA1', target: 'MPPED2', directed: 'false', weight: 0.123797} },
+{ data: { source: 'PHKA1', target: 'NR2F6', directed: 'false', weight: 0.123797} },
+{ data: { source: 'PHKG2', target: 'PHKB', directed: 'false', weight: 0.9982260000000001} },
+{ data: { source: 'PHKG2', target: 'PHKA2', directed: 'false', weight: 0.997301} },
+{ data: { source: 'PHKG2', target: 'MPPED1', directed: 'false', weight: 0.8884040000000001} },
+{ data: { source: 'PHKG2', target: 'NARF', directed: 'false', weight: 0.133451} },
+{ data: { source: 'PHKG2', target: 'MPPED2', directed: 'false', weight: 0.117318} },
+{ data: { source: 'PHKG2', target: 'NR2F6', directed: 'false', weight: 0.117318} },
+{ data: { source: 'MPPED2', target: 'PHKB', directed: 'false', weight: 0.133456} },
+{ data: { source: 'MPPED2', target: 'PHKA2', directed: 'false', weight: 0.133456} },
+{ data: { source: 'MPPED2', target: 'MPPED1', directed: 'false', weight: 0.851035} },
+{ data: { source: 'MPPED2', target: 'NR2F6', directed: 'false', weight: 0.915881} },
+{ data: { source: 'PHKA2', target: 'PHKB', directed: 'false', weight: 0.655107} },
+{ data: { source: 'PHKA2', target: 'MPPED1', directed: 'false', weight: 0.972708} },
+{ data: { source: 'PHKA2', target: 'NARF', directed: 'false', weight: 0.151455} },
+{ data: { source: 'PHKA2', target: 'NR2F6', directed: 'false', weight: 0.133456} },
+{ data: { source: 'MPPED1', target: 'PHKB', directed: 'false', weight: 0.968041} },
+{ data: { source: 'MPPED1', target: 'NARF', directed: 'false', weight: 0.9417969999999999} },
+{ data: { source: 'MPPED1', target: 'NR2F6', directed: 'false', weight: 0.788029} },
+{ data: { source: 'NARF', target: 'PHKB', directed: 'false', weight: 0.151455} },
+{ data: { source: 'NR2F6', target: 'PHKB', directed: 'false', weight: 0.133456} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 10,
-		'width':'10',
-		'height': '10',	
+		'font-size': 30,
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}  
                                  if ( ele.data('type') == 'sars' ){return 'triangle'}   
   return 'rectangle';
   },            
-             'background-color': function( ele ){ 
+            'background-color': function( ele ){ 
                                 if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
 								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
                                  if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
@@ -71,7 +90,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
 								'line-color': function( ele ){ 
                                  if ( ele.data('type') == 'sars' ){return 'red'}   
   return 'blue';
@@ -83,10 +102,7 @@ style: [
 
 });
 cy.layout({
-    'name': 'fcose',
-		'animate':false,
-	'nodeDimensionsIncludeLabels':true,
-	'nodeSeparation': 1000
+    'name': 'circle'
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -102,7 +118,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.3 9-1-1 complex<br> Complex Score = 0.39400<br> Unweighted Density = 0.80
+    0.2 Phosphorylase kinase complex<br> Complex Score = 0.39688<br> Unweighted Density = 0.93
     </section>
     </body>
     </html>

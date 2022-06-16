@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> PRAMEF4 PRAMEF9 PRAMEF5</title>
+<title> 0.1 Beta-dystroglycan-caveolin-3 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,11 +30,22 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'PRAMEF9', score: 4, type: '', href: "https://www.uniprot.org/uniprot/P0DUQ2" }},
-{data: { id: 'PRAMEF4', score: 2, type: '', href: "https://www.uniprot.org/uniprot/O60810" }},
-{data: { id: 'PRAMEF5', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q5TYX0" }}], 
- edges: [{ data: { source: 'PRAMEF9', target: 'PRAMEF5', directed: 'false', weight: 1.0} },
-{ data: { source: 'PRAMEF4', target: 'PRAMEF5', directed: 'false', weight: 0.999893} }]},
+elements:{nodes: [{data: { id: 'LUM', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P51884" }},
+{data: { id: 'LGALS9B', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q3B8N2" }},
+{data: { id: 'LGALS9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00182" }},
+{data: { id: 'PBK', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96KB5" }},
+{data: { id: 'LGALS9C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6DKI2" }},
+{data: { id: 'DAG1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14118" }}], 
+ edges: [{ data: { source: 'LUM', target: 'LGALS9B', directed: 'false', weight: 0.151455} },
+{ data: { source: 'LUM', target: 'LGALS9', directed: 'false', weight: 0.517563} },
+{ data: { source: 'LUM', target: 'DAG1', directed: 'false', weight: 0.11730499999999999} },
+{ data: { source: 'PBK', target: 'LGALS9B', directed: 'false', weight: 0.257112} },
+{ data: { source: 'PBK', target: 'LGALS9', directed: 'false', weight: 0.9278709999999999} },
+{ data: { source: 'LGALS9B', target: 'LGALS9', directed: 'false', weight: 0.990986} },
+{ data: { source: 'LGALS9B', target: 'DAG1', directed: 'false', weight: 0.102922} },
+{ data: { source: 'LGALS9', target: 'DAG1', directed: 'false', weight: 0.8286020000000001} },
+{ data: { source: 'LGALS9', target: 'LGALS9C', directed: 'false', weight: 0.508911} },
+{ data: { source: 'LGALS9C', target: 'DAG1', directed: 'false', weight: 0.07607699999999999} }]},
 
 style: [
     {
@@ -94,7 +105,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    PRAMEF4 PRAMEF9 PRAMEF5<br> Complex Score = 0.38800<br> Unweighted Density = 0.67
+    0.1 Beta-dystroglycan-caveolin-3 complex<br> Complex Score = 0.38750<br> Unweighted Density = 0.67
     </section>
     </body>
     </html>

@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 v-ATPase-Ragulator-AXIN/LKB1-AMPK complex</title>
+<title> ARSK MAN2A1 TMEM132A PLTP MAN2A2</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,24 +30,17 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'ATP6V1H', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UI12" }},
-{data: { id: 'ATP6V1B2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P21281" }},
-{data: { id: 'ATP6V1G1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75348" }},
-{data: { id: 'SARS-CoV2 M', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 M.html" }},
-{data: { id: 'ATP6V1A', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P38606" }},
-{data: { id: 'ATP6V1B1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P15313" }},
-{data: { id: 'ATP6V0D1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P61421" }}], 
- edges: [{ data: { source: 'SARS-CoV2 M', target: 'ATP6V1A', directed: 'false', weight: 0.794938493, type: 'sars'} },
-{ data: { source: 'ATP6V1H', target: 'ATP6V0D1', directed: 'false', weight: 0.0252929} },
-{ data: { source: 'ATP6V1H', target: 'ATP6V1A', directed: 'false', weight: 0.598182} },
-{ data: { source: 'ATP6V1B2', target: 'ATP6V1B1', directed: 'false', weight: 0.99497} },
-{ data: { source: 'ATP6V1B2', target: 'ATP6V0D1', directed: 'false', weight: 0.9235479999999999} },
-{ data: { source: 'ATP6V1B2', target: 'ATP6V1A', directed: 'false', weight: 0.999992} },
-{ data: { source: 'ATP6V1G1', target: 'ATP6V1B1', directed: 'false', weight: 0.37006500000000003} },
-{ data: { source: 'ATP6V1G1', target: 'ATP6V0D1', directed: 'false', weight: 0.05617819999999999} },
-{ data: { source: 'ATP6V1G1', target: 'ATP6V1A', directed: 'false', weight: 0.163847} },
-{ data: { source: 'ATP6V1A', target: 'ATP6V1B1', directed: 'false', weight: 0.8347620000000001} },
-{ data: { source: 'ATP6V1A', target: 'ATP6V0D1', directed: 'false', weight: 0.74958} }]},
+elements:{nodes: [{data: { id: 'ARSK', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q6UWY0" }},
+{data: { id: 'MAN2A1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16706" }},
+{data: { id: 'PLTP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P55058" }},
+{data: { id: 'TMEM132A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q24JP5" }},
+{data: { id: 'MAN2A2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49641" }}], 
+ edges: [{ data: { source: 'ARSK', target: 'MAN2A1', directed: 'false', weight: 0.81576} },
+{ data: { source: 'ARSK', target: 'TMEM132A', directed: 'false', weight: 0.412631} },
+{ data: { source: 'MAN2A1', target: 'PLTP', directed: 'false', weight: 0.18545699999999998} },
+{ data: { source: 'MAN2A1', target: 'MAN2A2', directed: 'false', weight: 0.44567700000000005} },
+{ data: { source: 'MAN2A1', target: 'TMEM132A', directed: 'false', weight: 0.28913} },
+{ data: { source: 'PLTP', target: 'TMEM132A', directed: 'false', weight: 0.192211} }]},
 
 style: [
     {
@@ -107,12 +100,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 v-ATPase-Ragulator-AXIN/LKB1-AMPK complex<br> Complex Score = 0.38800<br> Unweighted Density = 0.67
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>ATP6V1A
+    ARSK MAN2A1 TMEM132A PLTP MAN2A2<br> Complex Score = 0.38750<br> Unweighted Density = 0.60
     </section>
     </body>
     </html>

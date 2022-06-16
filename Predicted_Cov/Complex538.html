@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> HEL20 FARSLA CMPK1 FARSB</title>
+<title> 0.4 Polycomb repressive complex 1 (PRC1, hPRC-H)</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,14 +30,41 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'FARSB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NSD9" }},
-{data: { id: 'HEL20', score: 1, type: '', href: "https://www.uniprot.org/uniprot/V9HWF9" }},
-{data: { id: 'CMPK1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P30085" }},
-{data: { id: 'FARSLA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y285" }}], 
- edges: [{ data: { source: 'FARSB', target: 'FARSLA', directed: 'false', weight: 0.996341} },
-{ data: { source: 'FARSB', target: 'CMPK1', directed: 'false', weight: 0.165189} },
-{ data: { source: 'HEL20', target: 'CMPK1', directed: 'false', weight: 0.140828} },
-{ data: { source: 'CMPK1', target: 'FARSLA', directed: 'false', weight: 0.024262} }]},
+elements:{nodes: [{data: { id: 'RING1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q06587" }},
+{data: { id: 'AUTS2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WXX7" }},
+{data: { id: 'PCGF3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q3KNV8" }},
+{data: { id: 'PHC3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NDX5" }},
+{data: { id: 'RNF2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99496" }},
+{data: { id: 'PCGF5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86SE9" }},
+{data: { id: 'CBX4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00257" }},
+{data: { id: 'CBX8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HC52" }},
+{data: { id: 'FBRS', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q9HAH7" }},
+{data: { id: 'PHC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P78364" }}], 
+ edges: [{ data: { source: 'RING1', target: 'RNF2', directed: 'false', weight: 0.9988950000000001} },
+{ data: { source: 'RING1', target: 'PHC3', directed: 'false', weight: 0.9349860000000001} },
+{ data: { source: 'RING1', target: 'FBRS', directed: 'false', weight: 0.9081610000000001} },
+{ data: { source: 'RING1', target: 'CBX8', directed: 'false', weight: 0.87723} },
+{ data: { source: 'RING1', target: 'CBX4', directed: 'false', weight: 0.773273} },
+{ data: { source: 'RING1', target: 'PHC1', directed: 'false', weight: 0.70076} },
+{ data: { source: 'RING1', target: 'PCGF5', directed: 'false', weight: 0.5877819999999999} },
+{ data: { source: 'AUTS2', target: 'FBRS', directed: 'false', weight: 0.714739} },
+{ data: { source: 'AUTS2', target: 'PCGF5', directed: 'false', weight: 0.8733860000000001} },
+{ data: { source: 'AUTS2', target: 'PCGF3', directed: 'false', weight: 0.216185} },
+{ data: { source: 'PCGF3', target: 'FBRS', directed: 'false', weight: 0.216185} },
+{ data: { source: 'PCGF3', target: 'PCGF5', directed: 'false', weight: 0.24226599999999998} },
+{ data: { source: 'PHC3', target: 'RNF2', directed: 'false', weight: 0.912277} },
+{ data: { source: 'PHC3', target: 'CBX8', directed: 'false', weight: 0.958583} },
+{ data: { source: 'PHC3', target: 'CBX4', directed: 'false', weight: 0.820631} },
+{ data: { source: 'PHC3', target: 'PHC1', directed: 'false', weight: 0.47707700000000003} },
+{ data: { source: 'RNF2', target: 'FBRS', directed: 'false', weight: 0.732101} },
+{ data: { source: 'RNF2', target: 'CBX8', directed: 'false', weight: 0.669862} },
+{ data: { source: 'RNF2', target: 'CBX4', directed: 'false', weight: 0.6184850000000001} },
+{ data: { source: 'RNF2', target: 'PHC1', directed: 'false', weight: 0.48694499999999996} },
+{ data: { source: 'RNF2', target: 'PCGF5', directed: 'false', weight: 0.34232199999999996} },
+{ data: { source: 'PCGF5', target: 'FBRS', directed: 'false', weight: 0.8711450000000001} },
+{ data: { source: 'CBX4', target: 'CBX8', directed: 'false', weight: 0.8546370000000001} },
+{ data: { source: 'CBX4', target: 'PHC1', directed: 'false', weight: 0.303755} },
+{ data: { source: 'CBX8', target: 'PHC1', directed: 'false', weight: 0.737402} }]},
 
 style: [
     {
@@ -97,7 +124,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    HEL20 FARSLA CMPK1 FARSB<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
+    0.4 Polycomb repressive complex 1 (PRC1, hPRC-H)<br> Complex Score = 0.38750<br> Unweighted Density = 0.56
     </section>
     </body>
     </html>

@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> PAK6 CAPZA2 CARMIL1 PAK4</title>
+<title> GLRA2 MARCHF6 TXNDC15 PIGN ZDHHC7</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,15 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'PAK6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NQU5" }},
-{data: { id: 'PAK4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O96013" }},
-{data: { id: 'CARMIL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5VZK9" }},
-{data: { id: 'CAPZA2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P47755" }}], 
- edges: [{ data: { source: 'PAK6', target: 'PAK4', directed: 'false', weight: 1.0} },
-{ data: { source: 'CAPZA2', target: 'CARMIL1', directed: 'false', weight: 0.9999520000000001} },
-{ data: { source: 'PAK4', target: 'CARMIL1', directed: 'false', weight: 0.42288400000000004} }]},
+elements:{nodes: [{data: { id: 'MARCHF6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60337" }},
+{data: { id: 'ZDHHC7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NXF8" }},
+{data: { id: 'PIGN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95427" }},
+{data: { id: 'GLRA2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P23416" }},
+{data: { id: 'TXNDC15', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96J42" }}], 
+ edges: [{ data: { source: 'ZDHHC7', target: 'MARCHF6', directed: 'false', weight: 0.290978} },
+{ data: { source: 'PIGN', target: 'TXNDC15', directed: 'false', weight: 0.580974} },
+{ data: { source: 'MARCHF6', target: 'TXNDC15', directed: 'false', weight: 0.56824} },
+{ data: { source: 'MARCHF6', target: 'GLRA2', directed: 'false', weight: 0.5} }]},
 
 style: [
     {
@@ -96,7 +98,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    PAK6 CAPZA2 CARMIL1 PAK4<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    GLRA2 MARCHF6 TXNDC15 PIGN ZDHHC7<br> Complex Score = 0.35000<br> Unweighted Density = 0.40
     </section>
     </body>
     </html>

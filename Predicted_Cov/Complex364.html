@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> GBP2 GBP7 GBP1 GBP3</title>
+<title> 0.2 Telomerase holoenzyme</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,14 +30,25 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'GBP3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H0R5" }},
-{data: { id: 'GBP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P32455" }},
-{data: { id: 'GBP7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N8V2" }},
-{data: { id: 'GBP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P32456" }}], 
- edges: [{ data: { source: 'GBP3', target: 'GBP2', directed: 'false', weight: 0.995092} },
-{ data: { source: 'GBP3', target: 'GBP1', directed: 'false', weight: 0.127824} },
-{ data: { source: 'GBP1', target: 'GBP2', directed: 'false', weight: 0.063526} },
-{ data: { source: 'GBP7', target: 'GBP2', directed: 'false', weight: 0.189896} }]},
+elements:{nodes: [{data: { id: 'HADHA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P40939" }},
+{data: { id: 'NOP10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NPE3" }},
+{data: { id: 'NMNAT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HAN9" }},
+{data: { id: 'SUPT16H', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y5B9" }},
+{data: { id: 'GAR1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NY12" }},
+{data: { id: 'RPL12', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P30050" }},
+{data: { id: 'REXO4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9GZR2" }}], 
+ edges: [{ data: { source: 'RPL12', target: 'NOP10', directed: 'false', weight: 0.14055} },
+{ data: { source: 'RPL12', target: 'NMNAT1', directed: 'false', weight: 0.120276} },
+{ data: { source: 'RPL12', target: 'SUPT16H', directed: 'false', weight: 0.027197900000000004} },
+{ data: { source: 'NOP10', target: 'GAR1', directed: 'false', weight: 0.979187} },
+{ data: { source: 'NOP10', target: 'HADHA', directed: 'false', weight: 0.992919} },
+{ data: { source: 'NOP10', target: 'NMNAT1', directed: 'false', weight: 0.140468} },
+{ data: { source: 'NOP10', target: 'SUPT16H', directed: 'false', weight: 0.020664099999999998} },
+{ data: { source: 'NMNAT1', target: 'GAR1', directed: 'false', weight: 0.350549} },
+{ data: { source: 'NMNAT1', target: 'REXO4', directed: 'false', weight: 0.545516} },
+{ data: { source: 'GAR1', target: 'HADHA', directed: 'false', weight: 0.834144} },
+{ data: { source: 'GAR1', target: 'REXO4', directed: 'false', weight: 0.631306} },
+{ data: { source: 'SUPT16H', target: 'HADHA', directed: 'false', weight: 0.0776975} }]},
 
 style: [
     {
@@ -97,7 +108,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    GBP2 GBP7 GBP1 GBP3<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
+    0.2 Telomerase holoenzyme<br> Complex Score = 0.38750<br> Unweighted Density = 0.57
     </section>
     </body>
     </html>

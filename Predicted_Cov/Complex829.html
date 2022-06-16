@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 mitochondrial permeability  transition pore (PTP) complex (PPIF-SPG7-VDAC1) match 2</title>
+<title> RAI14 SSH2 FLII TRIOBP ST5 LRRFIP1 LIMA1 GAS2L3</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,28 +30,44 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'PPIF', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P30405" }},
-{data: { id: 'LGALS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P09382" }},
-{data: { id: 'hCG_22119', score: 2, type: '', href: "https://www.uniprot.org/uniprot/A0A024R693" }},
-{data: { id: 'OAT', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P04181" }}], 
- edges: [{ data: { source: 'PPIF', target: 'LGALS1', directed: 'false', weight: 0.37256999999999996} },
-{ data: { source: 'PPIF', target: 'OAT', directed: 'false', weight: 0.170558} },
-{ data: { source: 'PPIF', target: 'hCG_22119', directed: 'false', weight: 0.052621400000000006} },
-{ data: { source: 'LGALS1', target: 'hCG_22119', directed: 'false', weight: 0.9875959999999999} },
-{ data: { source: 'hCG_22119', target: 'OAT', directed: 'false', weight: 0.104466} }]},
+elements:{nodes: [{data: { id: 'FLII', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13045" }},
+{data: { id: 'LRRFIP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q32MZ4" }},
+{data: { id: 'TRIOBP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H2D6" }},
+{data: { id: 'RAI14', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9P0K7" }},
+{data: { id: 'GAS2L3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86XJ1" }},
+{data: { id: 'ST5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P78524" }},
+{data: { id: 'SSH2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q76I76" }},
+{data: { id: 'LIMA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UHB6" }}], 
+ edges: [{ data: { source: 'FLII', target: 'LRRFIP1', directed: 'false', weight: 0.9037700000000001} },
+{ data: { source: 'FLII', target: 'SSH2', directed: 'false', weight: 0.532913} },
+{ data: { source: 'FLII', target: 'RAI14', directed: 'false', weight: 0.508321} },
+{ data: { source: 'FLII', target: 'LIMA1', directed: 'false', weight: 0.354713} },
+{ data: { source: 'LRRFIP1', target: 'LIMA1', directed: 'false', weight: 0.094319} },
+{ data: { source: 'LRRFIP1', target: 'SSH2', directed: 'false', weight: 0.147058} },
+{ data: { source: 'LRRFIP1', target: 'RAI14', directed: 'false', weight: 0.09056239999999999} },
+{ data: { source: 'SSH2', target: 'RAI14', directed: 'false', weight: 0.615413} },
+{ data: { source: 'SSH2', target: 'GAS2L3', directed: 'false', weight: 0.328287} },
+{ data: { source: 'SSH2', target: 'ST5', directed: 'false', weight: 0.294196} },
+{ data: { source: 'TRIOBP', target: 'RAI14', directed: 'false', weight: 0.8704069999999999} },
+{ data: { source: 'GAS2L3', target: 'RAI14', directed: 'false', weight: 0.180729} },
+{ data: { source: 'GAS2L3', target: 'ST5', directed: 'false', weight: 0.12414000000000001} },
+{ data: { source: 'ST5', target: 'LIMA1', directed: 'false', weight: 0.510608} },
+{ data: { source: 'ST5', target: 'RAI14', directed: 'false', weight: 0.29843400000000003} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 30,
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}  
                                  if ( ele.data('type') == 'sars' ){return 'triangle'}   
   return 'rectangle';
   },            
-            'background-color': function( ele ){ 
+             'background-color': function( ele ){ 
                                 if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
 								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
                                  if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
@@ -65,7 +81,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
 								'line-color': function( ele ){ 
                                  if ( ele.data('type') == 'sars' ){return 'red'}   
   return 'blue';
@@ -77,7 +93,10 @@ style: [
 
 });
 cy.layout({
-    'name': 'circle'
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -93,7 +112,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 mitochondrial permeability  transition pore (PTP) complex (PPIF-SPG7-VDAC1) match 2<br> Complex Score = 0.37500<br> Unweighted Density = 0.83
+    RAI14 SSH2 FLII TRIOBP ST5 LRRFIP1 LIMA1 GAS2L3<br> Complex Score = 0.37500<br> Unweighted Density = 0.54
     </section>
     </body>
     </html>

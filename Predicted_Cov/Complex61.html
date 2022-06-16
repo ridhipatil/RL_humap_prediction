@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 RAB27A-SLP3-KLC1 transport complex</title>
+<title> 0.4 INO80 chromatin remodeling complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,28 +30,41 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'KLC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q07866" }},
-{data: { id: 'HEL-S-61', score: 4, type: '', href: "https://www.uniprot.org/uniprot/V9HW29" }},
-{data: { id: 'SYNE4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N205" }},
-{data: { id: 'ZFPL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95159" }},
-{data: { id: 'KLC2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6P597" }},
-{data: { id: 'KLC3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6P597" }},
-{data: { id: 'KLC4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NSK0" }}], 
- edges: [{ data: { source: 'KLC1', target: 'SYNE4', directed: 'false', weight: 0.999985} },
-{ data: { source: 'KLC1', target: 'KLC2', directed: 'false', weight: 0.999898} },
-{ data: { source: 'KLC1', target: 'KLC4', directed: 'false', weight: 0.998022} },
-{ data: { source: 'KLC1', target: 'KLC3', directed: 'false', weight: 0.839951} },
-{ data: { source: 'HEL-S-61', target: 'SYNE4', directed: 'false', weight: 0.192243} },
-{ data: { source: 'HEL-S-61', target: 'KLC3', directed: 'false', weight: 0.0215163} },
-{ data: { source: 'HEL-S-61', target: 'KLC2', directed: 'false', weight: 0.9999540000000001} },
-{ data: { source: 'HEL-S-61', target: 'KLC4', directed: 'false', weight: 0.9159129999999999} },
-{ data: { source: 'SYNE4', target: 'KLC3', directed: 'false', weight: 0.999975} },
-{ data: { source: 'SYNE4', target: 'KLC2', directed: 'false', weight: 0.917695} },
-{ data: { source: 'SYNE4', target: 'KLC4', directed: 'false', weight: 0.710046} },
-{ data: { source: 'SYNE4', target: 'ZFPL1', directed: 'false', weight: 0.13569900000000001} },
-{ data: { source: 'KLC2', target: 'KLC3', directed: 'false', weight: 0.288249} },
-{ data: { source: 'KLC2', target: 'KLC4', directed: 'false', weight: 0.636358} },
-{ data: { source: 'KLC3', target: 'KLC4', directed: 'false', weight: 0.0615942} }]},
+elements:{nodes: [{data: { id: 'INO80', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9ULG1" }},
+{data: { id: 'WBP2NL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6ICG8" }},
+{data: { id: 'ACTR5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H9F9" }},
+{data: { id: 'INO80E', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NBZ0" }},
+{data: { id: 'MCRS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96EZ8" }},
+{data: { id: 'YY1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P25490" }},
+{data: { id: 'ACTR8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H981" }},
+{data: { id: 'UCHL5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y5K5" }},
+{data: { id: 'NFRKB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6P4R8" }}], 
+ edges: [{ data: { source: 'INO80', target: 'ACTR5', directed: 'false', weight: 0.99997} },
+{ data: { source: 'INO80', target: 'INO80E', directed: 'false', weight: 0.999207} },
+{ data: { source: 'INO80', target: 'NFRKB', directed: 'false', weight: 0.9990969999999999} },
+{ data: { source: 'INO80', target: 'UCHL5', directed: 'false', weight: 0.9458040000000001} },
+{ data: { source: 'INO80', target: 'YY1', directed: 'false', weight: 0.375692} },
+{ data: { source: 'INO80', target: 'ACTR8', directed: 'false', weight: 0.328831} },
+{ data: { source: 'INO80', target: 'MCRS1', directed: 'false', weight: 0.254246} },
+{ data: { source: 'WBP2NL', target: 'ACTR5', directed: 'false', weight: 0.591306} },
+{ data: { source: 'ACTR5', target: 'INO80E', directed: 'false', weight: 0.9999600000000001} },
+{ data: { source: 'ACTR5', target: 'NFRKB', directed: 'false', weight: 0.999726} },
+{ data: { source: 'ACTR5', target: 'ACTR8', directed: 'false', weight: 0.883976} },
+{ data: { source: 'ACTR5', target: 'YY1', directed: 'false', weight: 0.638175} },
+{ data: { source: 'ACTR5', target: 'MCRS1', directed: 'false', weight: 0.506065} },
+{ data: { source: 'INO80E', target: 'NFRKB', directed: 'false', weight: 0.9997360000000001} },
+{ data: { source: 'INO80E', target: 'UCHL5', directed: 'false', weight: 0.963216} },
+{ data: { source: 'INO80E', target: 'YY1', directed: 'false', weight: 0.5567489999999999} },
+{ data: { source: 'INO80E', target: 'ACTR8', directed: 'false', weight: 0.5} },
+{ data: { source: 'INO80E', target: 'MCRS1', directed: 'false', weight: 0.32901199999999997} },
+{ data: { source: 'MCRS1', target: 'NFRKB', directed: 'false', weight: 0.268253} },
+{ data: { source: 'MCRS1', target: 'ACTR8', directed: 'false', weight: 0.269419} },
+{ data: { source: 'MCRS1', target: 'YY1', directed: 'false', weight: 0.281186} },
+{ data: { source: 'YY1', target: 'NFRKB', directed: 'false', weight: 0.48210200000000003} },
+{ data: { source: 'YY1', target: 'ACTR8', directed: 'false', weight: 0.407933} },
+{ data: { source: 'ACTR8', target: 'NFRKB', directed: 'false', weight: 0.9957459999999999} },
+{ data: { source: 'ACTR8', target: 'UCHL5', directed: 'false', weight: 0.8852709999999999} },
+{ data: { source: 'UCHL5', target: 'NFRKB', directed: 'false', weight: 0.587835} }]},
 
 style: [
     {
@@ -111,7 +124,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 RAB27A-SLP3-KLC1 transport complex<br> Complex Score = 0.39400<br> Unweighted Density = 0.71
+    0.4 INO80 chromatin remodeling complex<br> Complex Score = 0.39375<br> Unweighted Density = 0.72
     </section>
     </body>
     </html>

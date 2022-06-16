@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.4 Prefoldin complex</title>
+<title> GPR35 POTEE PMM2 PMM1 HMOX2</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,14 +30,16 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'PFDN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60925" }},
-{data: { id: 'PFDN4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NQP4" }},
-{data: { id: 'MARCHF9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86YJ5" }},
-{data: { id: 'VBP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P61758" }}], 
- edges: [{ data: { source: 'PFDN1', target: 'PFDN4', directed: 'false', weight: 0.999325} },
-{ data: { source: 'PFDN1', target: 'VBP1', directed: 'false', weight: 1.0} },
-{ data: { source: 'PFDN4', target: 'VBP1', directed: 'false', weight: 1.0} },
-{ data: { source: 'PFDN4', target: 'MARCHF9', directed: 'false', weight: 0.10042000000000001} }]},
+elements:{nodes: [{data: { id: 'PMM1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92871" }},
+{data: { id: 'HMOX2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P30519" }},
+{data: { id: 'POTEE', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q6S8J3" }},
+{data: { id: 'GPR35', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HC97" }},
+{data: { id: 'PMM2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15305" }}], 
+ edges: [{ data: { source: 'HMOX2', target: 'POTEE', directed: 'false', weight: 0.486915} },
+{ data: { source: 'GPR35', target: 'POTEE', directed: 'false', weight: 0.7173609999999999} },
+{ data: { source: 'PMM1', target: 'PMM2', directed: 'false', weight: 0.9851559999999999} },
+{ data: { source: 'PMM1', target: 'POTEE', directed: 'false', weight: 0.6695949999999999} },
+{ data: { source: 'POTEE', target: 'PMM2', directed: 'false', weight: 0.133451} }]},
 
 style: [
     {
@@ -97,7 +99,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.4 Prefoldin complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
+    GPR35 POTEE PMM2 PMM1 HMOX2<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

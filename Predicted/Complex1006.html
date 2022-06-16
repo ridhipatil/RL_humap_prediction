@@ -30,16 +30,18 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'RPGRIP1L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q68CZ1" }},
-{data: { id: 'GKAP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5VSY0" }},
-{data: { id: 'NPHP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15259" }},
-{data: { id: 'NPHP4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75161" }},
-{data: { id: 'NEK4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P51957" }}], 
- edges: [{ data: { source: 'RPGRIP1L', target: 'NPHP4', directed: 'false', weight: 0.912221} },
-{ data: { source: 'RPGRIP1L', target: 'GKAP1', directed: 'false', weight: 0.24635} },
-{ data: { source: 'RPGRIP1L', target: 'NEK4', directed: 'false', weight: 0.202773} },
-{ data: { source: 'RPGRIP1L', target: 'NPHP1', directed: 'false', weight: 0.185051} },
-{ data: { source: 'NPHP1', target: 'NPHP4', directed: 'false', weight: 0.9458719999999999} }]},
+elements:{nodes: [{data: { id: 'RBM25', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49756" }},
+{data: { id: 'SLC4A1AP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BWU0" }},
+{data: { id: 'PRKRIP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H875" }},
+{data: { id: 'SF3B5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BWJ5" }},
+{data: { id: 'RBM11', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P57052" }},
+{data: { id: 'SNRPA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P09661" }}], 
+ edges: [{ data: { source: 'PRKRIP1', target: 'SNRPA1', directed: 'false', weight: 0.940148} },
+{ data: { source: 'PRKRIP1', target: 'SLC4A1AP', directed: 'false', weight: 0.0445491} },
+{ data: { source: 'SNRPA1', target: 'SF3B5', directed: 'false', weight: 0.9870389999999999} },
+{ data: { source: 'SNRPA1', target: 'RBM25', directed: 'false', weight: 0.7885850000000001} },
+{ data: { source: 'SNRPA1', target: 'SLC4A1AP', directed: 'false', weight: 0.775396} },
+{ data: { source: 'SLC4A1AP', target: 'RBM11', directed: 'false', weight: 0.412743} }]},
 
 style: [
     {
@@ -87,7 +89,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.37500
+    Complex Score  = 0.35000
     </section>
     </body>
     </html>

@@ -30,14 +30,20 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'LEMD3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y2U8" }},
-{data: { id: 'SMAD9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15198" }},
-{data: { id: 'SMAD2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15796" }},
-{data: { id: 'SMAD3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P84022" }}], 
- edges: [{ data: { source: 'LEMD3', target: 'SMAD3', directed: 'false', weight: 0.95291} },
-{ data: { source: 'LEMD3', target: 'SMAD9', directed: 'false', weight: 0.026900900000000002} },
-{ data: { source: 'SMAD9', target: 'SMAD3', directed: 'false', weight: 0.998483} },
-{ data: { source: 'SMAD2', target: 'SMAD3', directed: 'false', weight: 1.0} }]},
+elements:{nodes: [{data: { id: 'ZNF574', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6ZN55" }},
+{data: { id: 'ABT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9ULW3" }},
+{data: { id: 'GAR1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NY12" }},
+{data: { id: 'ZNF526', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TF50" }},
+{data: { id: 'HOXD3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P31249" }},
+{data: { id: 'GTPBP4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BZE4" }}], 
+ edges: [{ data: { source: 'ZNF526', target: 'ZNF574', directed: 'false', weight: 0.27510999999999997} },
+{ data: { source: 'HOXD3', target: 'GTPBP4', directed: 'false', weight: 0.272868} },
+{ data: { source: 'ABT1', target: 'GTPBP4', directed: 'false', weight: 0.484163} },
+{ data: { source: 'ABT1', target: 'GAR1', directed: 'false', weight: 0.195394} },
+{ data: { source: 'ABT1', target: 'ZNF574', directed: 'false', weight: 0.413725} },
+{ data: { source: 'GAR1', target: 'GTPBP4', directed: 'false', weight: 0.833017} },
+{ data: { source: 'GAR1', target: 'ZNF574', directed: 'false', weight: 0.409037} },
+{ data: { source: 'ZNF574', target: 'GTPBP4', directed: 'false', weight: 0.344839} }]},
 
 style: [
     {

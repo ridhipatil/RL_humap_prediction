@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> ZNF397 ZNF444 RAZ1 ZNF197</title>
+<title> ZNF346 KHDC4 STARD7 NAT2</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,14 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'ZNF397', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NF99" }},
-{data: { id: 'RAZ1', score: 1, type: '', href: "https://www.uniprot.org/uniprot/Q9NZG6" }},
-{data: { id: 'ZNF197', score: 4, type: '', href: "https://www.uniprot.org/uniprot/O14709" }},
-{data: { id: 'ZNF444', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N0Y2" }}], 
- edges: [{ data: { source: 'ZNF397', target: 'ZNF444', directed: 'false', weight: 0.706308} },
-{ data: { source: 'ZNF397', target: 'RAZ1', directed: 'false', weight: 0.5} },
-{ data: { source: 'ZNF397', target: 'ZNF197', directed: 'false', weight: 0.144583} },
-{ data: { source: 'RAZ1', target: 'ZNF444', directed: 'false', weight: 0.07794010000000001} }]},
+elements:{nodes: [{data: { id: 'STARD7', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9NQZ5" }},
+{data: { id: 'KHDC4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q7Z7F0" }},
+{data: { id: 'ZNF346', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UL40" }},
+{data: { id: 'NAT2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P11245" }}], 
+ edges: [{ data: { source: 'STARD7', target: 'KHDC4', directed: 'false', weight: 0.9738709999999999} },
+{ data: { source: 'STARD7', target: 'NAT2', directed: 'false', weight: 0.5} },
+{ data: { source: 'NAT2', target: 'ZNF346', directed: 'false', weight: 0.707256} }]},
 
 style: [
     {
@@ -97,7 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    ZNF397 ZNF444 RAZ1 ZNF197<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
+    ZNF346 KHDC4 STARD7 NAT2<br> Complex Score = 0.30000<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

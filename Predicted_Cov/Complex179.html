@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> ICOSLG MFI2 ICOS</title>
+<title> 0.1 EBAFb complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,11 +30,28 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'ICOS', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y6W8" }},
-{data: { id: 'ICOSLG', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75144" }},
-{data: { id: 'MFI2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P08582" }}], 
- edges: [{ data: { source: 'ICOS', target: 'MFI2', directed: 'false', weight: 0.356646} },
-{ data: { source: 'ICOS', target: 'ICOSLG', directed: 'false', weight: 0.11662} }]},
+elements:{nodes: [{data: { id: 'TOP2B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q02880" }},
+{data: { id: 'SS18L1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75177" }},
+{data: { id: 'ARID1B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NFD5" }},
+{data: { id: 'DPF2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92785" }},
+{data: { id: 'BICRA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NZM4" }},
+{data: { id: 'SMARCC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92922" }},
+{data: { id: 'SS18', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15532" }}], 
+ edges: [{ data: { source: 'TOP2B', target: 'ARID1B', directed: 'false', weight: 0.122378} },
+{ data: { source: 'SS18L1', target: 'SMARCC1', directed: 'false', weight: 0.9886530000000001} },
+{ data: { source: 'SS18L1', target: 'DPF2', directed: 'false', weight: 0.6652} },
+{ data: { source: 'SS18L1', target: 'ARID1B', directed: 'false', weight: 0.5830649999999999} },
+{ data: { source: 'SS18L1', target: 'BICRA', directed: 'false', weight: 0.117318} },
+{ data: { source: 'SS18', target: 'SMARCC1', directed: 'false', weight: 0.488018} },
+{ data: { source: 'SS18', target: 'DPF2', directed: 'false', weight: 0.276196} },
+{ data: { source: 'SS18', target: 'ARID1B', directed: 'false', weight: 0.47450600000000004} },
+{ data: { source: 'SS18', target: 'BICRA', directed: 'false', weight: 0.823119} },
+{ data: { source: 'ARID1B', target: 'SMARCC1', directed: 'false', weight: 0.9960829999999999} },
+{ data: { source: 'ARID1B', target: 'DPF2', directed: 'false', weight: 0.578939} },
+{ data: { source: 'ARID1B', target: 'BICRA', directed: 'false', weight: 0.222827} },
+{ data: { source: 'DPF2', target: 'SMARCC1', directed: 'false', weight: 0.97593} },
+{ data: { source: 'DPF2', target: 'BICRA', directed: 'false', weight: 0.200625} },
+{ data: { source: 'BICRA', target: 'SMARCC1', directed: 'false', weight: 0.192166} }]},
 
 style: [
     {
@@ -94,7 +111,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    ICOSLG MFI2 ICOS<br> Complex Score = 0.38800<br> Unweighted Density = 0.67
+    0.1 EBAFb complex<br> Complex Score = 0.39375<br> Unweighted Density = 0.71
     </section>
     </body>
     </html>

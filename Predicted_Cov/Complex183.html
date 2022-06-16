@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> UBE2E3 USP15 RNF10</title>
+<title> 0.6 DNA ligase III-XRCC1-PNK-DNA-pol III multiprotein complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,11 +30,28 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'RNF10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N5U6" }},
-{data: { id: 'USP15', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y4E8" }},
-{data: { id: 'UBE2E3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q969T4" }}], 
- edges: [{ data: { source: 'RNF10', target: 'UBE2E3', directed: 'false', weight: 0.987447} },
-{ data: { source: 'USP15', target: 'UBE2E3', directed: 'false', weight: 0.111937} }]},
+elements:{nodes: [{data: { id: 'LIG3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49916" }},
+{data: { id: 'MSH3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P20585" }},
+{data: { id: 'PNKP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96T60" }},
+{data: { id: 'XRCC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P18887" }},
+{data: { id: 'POLB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P06746" }},
+{data: { id: 'HLTF', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14527" }},
+{data: { id: 'APLF', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IW19" }}], 
+ edges: [{ data: { source: 'LIG3', target: 'XRCC1', directed: 'false', weight: 0.9938379999999999} },
+{ data: { source: 'LIG3', target: 'POLB', directed: 'false', weight: 0.992373} },
+{ data: { source: 'LIG3', target: 'APLF', directed: 'false', weight: 0.659787} },
+{ data: { source: 'LIG3', target: 'HLTF', directed: 'false', weight: 0.594344} },
+{ data: { source: 'LIG3', target: 'PNKP', directed: 'false', weight: 0.155246} },
+{ data: { source: 'MSH3', target: 'APLF', directed: 'false', weight: 0.963989} },
+{ data: { source: 'MSH3', target: 'HLTF', directed: 'false', weight: 0.10554300000000001} },
+{ data: { source: 'PNKP', target: 'XRCC1', directed: 'false', weight: 0.466135} },
+{ data: { source: 'PNKP', target: 'POLB', directed: 'false', weight: 0.986183} },
+{ data: { source: 'XRCC1', target: 'POLB', directed: 'false', weight: 0.98935} },
+{ data: { source: 'XRCC1', target: 'APLF', directed: 'false', weight: 0.571429} },
+{ data: { source: 'XRCC1', target: 'HLTF', directed: 'false', weight: 0.405673} },
+{ data: { source: 'POLB', target: 'APLF', directed: 'false', weight: 0.607927} },
+{ data: { source: 'POLB', target: 'HLTF', directed: 'false', weight: 0.212556} },
+{ data: { source: 'HLTF', target: 'APLF', directed: 'false', weight: 0.45387299999999997} }]},
 
 style: [
     {
@@ -94,7 +111,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    UBE2E3 USP15 RNF10<br> Complex Score = 0.38800<br> Unweighted Density = 0.67
+    0.6 DNA ligase III-XRCC1-PNK-DNA-pol III multiprotein complex<br> Complex Score = 0.39375<br> Unweighted Density = 0.71
     </section>
     </body>
     </html>

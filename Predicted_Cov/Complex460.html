@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 DGCR8 multiprotein complex</title>
+<title> CELA2B RPUSD2 ZDHHC21 MRM2 TSPAN5</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,14 +30,17 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'DNAJB4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UDY4" }},
-{data: { id: 'FUS', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P35637" }},
-{data: { id: 'DNAJB5', score: 4, type: '', href: "https://www.uniprot.org/uniprot/O75953" }},
-{data: { id: 'HEL-S-89n', score: 5, type: '', href: "https://www.uniprot.org/uniprot/V9HWB4" }}], 
- edges: [{ data: { source: 'DNAJB4', target: 'HEL-S-89n', directed: 'false', weight: 0.10221799999999999} },
-{ data: { source: 'DNAJB4', target: 'DNAJB5', directed: 'false', weight: 0.337175} },
-{ data: { source: 'FUS', target: 'HEL-S-89n', directed: 'false', weight: 0.987526} },
-{ data: { source: 'DNAJB5', target: 'HEL-S-89n', directed: 'false', weight: 0.029154900000000004} }]},
+elements:{nodes: [{data: { id: 'ZDHHC21', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IVQ6" }},
+{data: { id: 'MRM2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UI43" }},
+{data: { id: 'CELA2B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P08218" }},
+{data: { id: 'RPUSD2', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q8IZ73" }},
+{data: { id: 'TSPAN5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62079" }}], 
+ edges: [{ data: { source: 'CELA2B', target: 'RPUSD2', directed: 'false', weight: 0.922092} },
+{ data: { source: 'CELA2B', target: 'MRM2', directed: 'false', weight: 0.579732} },
+{ data: { source: 'MRM2', target: 'TSPAN5', directed: 'false', weight: 0.5828939999999999} },
+{ data: { source: 'MRM2', target: 'RPUSD2', directed: 'false', weight: 0.133456} },
+{ data: { source: 'MRM2', target: 'ZDHHC21', directed: 'false', weight: 0.133456} },
+{ data: { source: 'TSPAN5', target: 'ZDHHC21', directed: 'false', weight: 0.631577} }]},
 
 style: [
     {
@@ -97,7 +100,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 DGCR8 multiprotein complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
+    CELA2B RPUSD2 ZDHHC21 MRM2 TSPAN5<br> Complex Score = 0.38750<br> Unweighted Density = 0.60
     </section>
     </body>
     </html>

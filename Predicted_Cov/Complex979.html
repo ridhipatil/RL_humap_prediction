@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> PTGFRN TSPAN2 SNX14 SNX13</title>
+<title> 0.1 LRP-1-Alpha-2-M-annexin VI complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,16 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'SNX14', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y5W7" }},
-{data: { id: 'PTGFRN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9P2B2" }},
-{data: { id: 'SNX13', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y5W8" }},
-{data: { id: 'TSPAN2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60636" }}], 
- edges: [{ data: { source: 'SNX14', target: 'TSPAN2', directed: 'false', weight: 0.12878699999999998} },
-{ data: { source: 'PTGFRN', target: 'TSPAN2', directed: 'false', weight: 0.257125} },
-{ data: { source: 'SNX13', target: 'TSPAN2', directed: 'false', weight: 0.630154} }]},
+elements:{nodes: [{data: { id: 'SEZ6L2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6UXD5" }},
+{data: { id: 'FCN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00602" }},
+{data: { id: 'SUSD5', score: 3, type: '', href: "https://www.uniprot.org/uniprot/O60279" }},
+{data: { id: 'PODXL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00592" }},
+{data: { id: 'A2M', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P01023" }}], 
+ edges: [{ data: { source: 'FCN1', target: 'SUSD5', directed: 'false', weight: 0.904803} },
+{ data: { source: 'FCN1', target: 'SEZ6L2', directed: 'false', weight: 0.447308} },
+{ data: { source: 'PODXL', target: 'SUSD5', directed: 'false', weight: 0.414998} },
+{ data: { source: 'PODXL', target: 'A2M', directed: 'false', weight: 0.27255} },
+{ data: { source: 'SEZ6L2', target: 'SUSD5', directed: 'false', weight: 0.28781100000000004} }]},
 
 style: [
     {
@@ -96,7 +99,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    PTGFRN TSPAN2 SNX14 SNX13<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.1 LRP-1-Alpha-2-M-annexin VI complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

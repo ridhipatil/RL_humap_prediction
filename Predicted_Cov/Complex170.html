@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 Septin complex</title>
+<title> 0.1 NR3C2-UBC9-SRC-1 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,21 +30,34 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'CDC42EP4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H3Q1" }},
-{data: { id: 'SEPTIN3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UH03" }},
-{data: { id: 'SEPT5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99719" }},
-{data: { id: 'HCK', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P08631" }},
-{data: { id: 'SEPTIN9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UHD8" }},
-{data: { id: 'SEPTIN8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92599" }}], 
- edges: [{ data: { source: 'CDC42EP4', target: 'SEPTIN9', directed: 'false', weight: 0.529849} },
-{ data: { source: 'CDC42EP4', target: 'SEPTIN8', directed: 'false', weight: 0.260538} },
-{ data: { source: 'CDC42EP4', target: 'SEPT5', directed: 'false', weight: 0.146673} },
-{ data: { source: 'SEPTIN3', target: 'SEPTIN9', directed: 'false', weight: 0.41847399999999996} },
-{ data: { source: 'SEPTIN3', target: 'SEPTIN8', directed: 'false', weight: 0.9992} },
-{ data: { source: 'SEPTIN3', target: 'SEPT5', directed: 'false', weight: 0.805673} },
-{ data: { source: 'SEPTIN3', target: 'HCK', directed: 'false', weight: 0.7787729999999999} },
-{ data: { source: 'SEPT5', target: 'SEPTIN8', directed: 'false', weight: 0.999316} },
-{ data: { source: 'SEPTIN9', target: 'SEPTIN8', directed: 'false', weight: 0.509566} }]},
+elements:{nodes: [{data: { id: 'KIFC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BW19" }},
+{data: { id: 'NUP50', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UKX7" }},
+{data: { id: 'UBE2I', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P63279" }},
+{data: { id: 'SENP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9P0U3" }},
+{data: { id: 'SUMO2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P61956" }},
+{data: { id: 'NUP153', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49790" }},
+{data: { id: 'RANGAP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P46060" }},
+{data: { id: 'NEMP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O14524" }}], 
+ edges: [{ data: { source: 'KIFC1', target: 'RANGAP1', directed: 'false', weight: 0.031031700000000002} },
+{ data: { source: 'KIFC1', target: 'NUP50', directed: 'false', weight: 0.995674} },
+{ data: { source: 'KIFC1', target: 'NUP153', directed: 'false', weight: 0.601766} },
+{ data: { source: 'NUP50', target: 'RANGAP1', directed: 'false', weight: 0.9969469999999999} },
+{ data: { source: 'NUP50', target: 'UBE2I', directed: 'false', weight: 0.07377189999999999} },
+{ data: { source: 'NUP50', target: 'NUP153', directed: 'false', weight: 0.999755} },
+{ data: { source: 'NUP50', target: 'NEMP1', directed: 'false', weight: 0.283621} },
+{ data: { source: 'NUP50', target: 'SENP1', directed: 'false', weight: 0.252751} },
+{ data: { source: 'NUP50', target: 'SUMO2', directed: 'false', weight: 0.136182} },
+{ data: { source: 'UBE2I', target: 'RANGAP1', directed: 'false', weight: 0.992625} },
+{ data: { source: 'UBE2I', target: 'SUMO2', directed: 'false', weight: 0.945939} },
+{ data: { source: 'UBE2I', target: 'NEMP1', directed: 'false', weight: 0.81425} },
+{ data: { source: 'UBE2I', target: 'SENP1', directed: 'false', weight: 0.0526469} },
+{ data: { source: 'SENP1', target: 'RANGAP1', directed: 'false', weight: 0.133423} },
+{ data: { source: 'SENP1', target: 'SUMO2', directed: 'false', weight: 0.204007} },
+{ data: { source: 'SENP1', target: 'NEMP1', directed: 'false', weight: 0.283621} },
+{ data: { source: 'SUMO2', target: 'RANGAP1', directed: 'false', weight: 0.29746999999999996} },
+{ data: { source: 'SUMO2', target: 'NEMP1', directed: 'false', weight: 0.194323} },
+{ data: { source: 'NUP153', target: 'RANGAP1', directed: 'false', weight: 0.945572} },
+{ data: { source: 'RANGAP1', target: 'NEMP1', directed: 'false', weight: 0.178754} }]},
 
 style: [
     {
@@ -104,7 +117,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 Septin complex<br> Complex Score = 0.38800<br> Unweighted Density = 0.60
+    0.1 NR3C2-UBC9-SRC-1 complex<br> Complex Score = 0.39375<br> Unweighted Density = 0.71
     </section>
     </body>
     </html>

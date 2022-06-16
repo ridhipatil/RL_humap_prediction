@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 39S ribosomal subunit, mitochondrial match 7</title>
+<title> 0.2 OCT4-SOX2 DNA-protein complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,38 +30,25 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'MRPL30', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q8TCC3" }},
-{data: { id: 'MRPL11', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y3B7" }},
-{data: { id: 'MRPL47', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9HD33" }},
-{data: { id: 'MRPL24', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q96A35" }},
-{data: { id: 'MRPL22', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NWU5" }},
-{data: { id: 'MRPL13', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BYD1" }}], 
- edges: [{ data: { source: 'MRPL30', target: 'MRPL13', directed: 'false', weight: 0.037678199999999995} },
-{ data: { source: 'MRPL30', target: 'MRPL47', directed: 'false', weight: 0.9859549999999999} },
-{ data: { source: 'MRPL30', target: 'MRPL24', directed: 'false', weight: 0.0296616} },
-{ data: { source: 'MRPL11', target: 'MRPL13', directed: 'false', weight: 0.022912900000000003} },
-{ data: { source: 'MRPL11', target: 'MRPL47', directed: 'false', weight: 0.984484} },
-{ data: { source: 'MRPL47', target: 'MRPL13', directed: 'false', weight: 1.0} },
-{ data: { source: 'MRPL47', target: 'MRPL24', directed: 'false', weight: 1.0} },
-{ data: { source: 'MRPL47', target: 'MRPL22', directed: 'false', weight: 0.9999979999999999} },
-{ data: { source: 'MRPL24', target: 'MRPL13', directed: 'false', weight: 0.07894010000000001} },
-{ data: { source: 'MRPL24', target: 'MRPL22', directed: 'false', weight: 0.687316} },
-{ data: { source: 'MRPL22', target: 'MRPL13', directed: 'false', weight: 0.06334680000000001} }]},
+elements:{nodes: [{data: { id: 'SOX2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P48431" }},
+{data: { id: 'SOX21', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q9Y651" }},
+{data: { id: 'SOX14', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95416" }}], 
+ edges: [{ data: { source: 'SOX2', target: 'SOX14', directed: 'false', weight: 0.9846520000000001} },
+{ data: { source: 'SOX2', target: 'SOX21', directed: 'false', weight: 0.9824149999999999} },
+{ data: { source: 'SOX21', target: 'SOX14', directed: 'false', weight: 0.171414} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 10,
-		'width':'10',
-		'height': '10',	
+		'font-size': 30,
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}  
                                  if ( ele.data('type') == 'sars' ){return 'triangle'}   
   return 'rectangle';
   },            
-             'background-color': function( ele ){ 
+            'background-color': function( ele ){ 
                                 if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
 								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
                                  if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
@@ -75,7 +62,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
 								'line-color': function( ele ){ 
                                  if ( ele.data('type') == 'sars' ){return 'red'}   
   return 'blue';
@@ -87,10 +74,7 @@ style: [
 
 });
 cy.layout({
-    'name': 'fcose',
-		'animate':false,
-	'nodeDimensionsIncludeLabels':true,
-	'nodeSeparation': 1000
+    'name': 'circle'
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -106,7 +90,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 39S ribosomal subunit, mitochondrial match 7<br> Complex Score = 0.37500<br> Unweighted Density = 0.73
+    0.2 OCT4-SOX2 DNA-protein complex<br> Complex Score = 0.38750<br> Unweighted Density = 1.00
     </section>
     </body>
     </html>

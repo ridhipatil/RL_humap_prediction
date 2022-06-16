@@ -30,14 +30,17 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'BIRC8', score: 5, type: '', href: "https://www.ncbi.nlm.nih.gov/gene/112401" }},
-{data: { id: 'CASP9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P55211" }},
-{data: { id: 'DIABLO', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NR28" }},
-{data: { id: 'XIAP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P98170" }}], 
- edges: [{ data: { source: 'BIRC8', target: 'CASP9', directed: 'false', weight: 0.983592} },
-{ data: { source: 'BIRC8', target: 'XIAP', directed: 'false', weight: 0.10463199999999999} },
-{ data: { source: 'BIRC8', target: 'DIABLO', directed: 'false', weight: 0.0208425} },
-{ data: { source: 'DIABLO', target: 'XIAP', directed: 'false', weight: 0.527855} }]},
+elements:{nodes: [{data: { id: 'DYNC1I2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13409" }},
+{data: { id: 'DYNC1H1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14204" }},
+{data: { id: 'DYNLRB2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TF09" }},
+{data: { id: 'DYNC1LI1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y6G9" }},
+{data: { id: 'SUGP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IWZ8" }}], 
+ edges: [{ data: { source: 'DYNC1I2', target: 'DYNC1H1', directed: 'false', weight: 0.999984} },
+{ data: { source: 'DYNC1I2', target: 'DYNC1LI1', directed: 'false', weight: 0.9980829999999999} },
+{ data: { source: 'DYNC1I2', target: 'DYNLRB2', directed: 'false', weight: 0.937292} },
+{ data: { source: 'SUGP1', target: 'DYNC1H1', directed: 'false', weight: 0.07203949999999999} },
+{ data: { source: 'SUGP1', target: 'DYNC1LI1', directed: 'false', weight: 0.524659} },
+{ data: { source: 'DYNC1H1', target: 'DYNC1LI1', directed: 'false', weight: 0.999199} }]},
 
 style: [
     {
@@ -85,7 +88,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.37500
+    Complex Score  = 0.38750
     </section>
     </body>
     </html>

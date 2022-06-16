@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> SCN3B DHRS7 SOGA3</title>
+<title> 0.5 RAD50-MRE11-NBN-p200-p350 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,11 +30,23 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'DHRS7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y394" }},
-{data: { id: 'SOGA3', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q5TF21" }},
-{data: { id: 'SCN3B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NY72" }}], 
- edges: [{ data: { source: 'SCN3B', target: 'SOGA3', directed: 'false', weight: 0.450244} },
-{ data: { source: 'SCN3B', target: 'DHRS7', directed: 'false', weight: 0.269399} }]},
+elements:{nodes: [{data: { id: 'NBN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60934" }},
+{data: { id: 'FAM219A', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q8IW50" }},
+{data: { id: 'FBXO10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UK96" }},
+{data: { id: 'MRE11', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49959" }},
+{data: { id: 'SHPK', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UHJ6" }},
+{data: { id: 'RAD50', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92878" }}], 
+ edges: [{ data: { source: 'NBN', target: 'RAD50', directed: 'false', weight: 0.802246} },
+{ data: { source: 'NBN', target: 'FAM219A', directed: 'false', weight: 0.9463590000000001} },
+{ data: { source: 'NBN', target: 'FBXO10', directed: 'false', weight: 0.133456} },
+{ data: { source: 'NBN', target: 'SHPK', directed: 'false', weight: 0.117318} },
+{ data: { source: 'FBXO10', target: 'RAD50', directed: 'false', weight: 0.0881212} },
+{ data: { source: 'FBXO10', target: 'FAM219A', directed: 'false', weight: 0.5} },
+{ data: { source: 'FBXO10', target: 'SHPK', directed: 'false', weight: 0.117318} },
+{ data: { source: 'MRE11', target: 'RAD50', directed: 'false', weight: 0.978749} },
+{ data: { source: 'FAM219A', target: 'RAD50', directed: 'false', weight: 0.663708} },
+{ data: { source: 'FAM219A', target: 'SHPK', directed: 'false', weight: 0.742621} },
+{ data: { source: 'SHPK', target: 'RAD50', directed: 'false', weight: 0.07711060000000002} }]},
 
 style: [
     {
@@ -94,7 +106,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    SCN3B DHRS7 SOGA3<br> Complex Score = 0.38800<br> Unweighted Density = 0.67
+    0.5 RAD50-MRE11-NBN-p200-p350 complex<br> Complex Score = 0.39375<br> Unweighted Density = 0.73
     </section>
     </body>
     </html>

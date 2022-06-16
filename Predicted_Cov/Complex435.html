@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.4 MAPK6-MAPKAPK5-SEPT7 complex</title>
+<title> RHEX FIGNL1 SNX17 C1orf112 WDR47</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,17 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'MAPK6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16659" }},
-{data: { id: 'FBXL5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UKA1" }},
-{data: { id: 'ZNF468', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q5VIY5" }},
-{data: { id: 'MAPKAPK5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IW41" }}], 
- edges: [{ data: { source: 'MAPK6', target: 'MAPKAPK5', directed: 'false', weight: 0.981029} },
-{ data: { source: 'MAPK6', target: 'ZNF468', directed: 'false', weight: 0.659644} },
-{ data: { source: 'MAPK6', target: 'FBXL5', directed: 'false', weight: 0.403147} }]},
+elements:{nodes: [{data: { id: 'C1orf112', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q9NSG2" }},
+{data: { id: 'SNX17', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15036" }},
+{data: { id: 'FIGNL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6PIW4" }},
+{data: { id: 'WDR47', score: 3, type: '', href: "https://www.uniprot.org/uniprot/O94967" }},
+{data: { id: 'RHEX', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6ZWK4" }}], 
+ edges: [{ data: { source: 'C1orf112', target: 'FIGNL1', directed: 'false', weight: 0.669604} },
+{ data: { source: 'SNX17', target: 'RHEX', directed: 'false', weight: 0.856975} },
+{ data: { source: 'SNX17', target: 'WDR47', directed: 'false', weight: 0.104198} },
+{ data: { source: 'FIGNL1', target: 'RHEX', directed: 'false', weight: 0.456479} },
+{ data: { source: 'FIGNL1', target: 'WDR47', directed: 'false', weight: 0.108699} },
+{ data: { source: 'WDR47', target: 'RHEX', directed: 'false', weight: 0.8726200000000001} }]},
 
 style: [
     {
@@ -96,7 +100,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.4 MAPK6-MAPKAPK5-SEPT7 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    RHEX FIGNL1 SNX17 C1orf112 WDR47<br> Complex Score = 0.38750<br> Unweighted Density = 0.60
     </section>
     </body>
     </html>

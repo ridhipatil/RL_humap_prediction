@@ -30,13 +30,11 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'SAFB2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14151" }},
-{data: { id: 'SAFB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15424" }},
-{data: { id: 'ACTL6A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O96019" }},
-{data: { id: 'KHDRBS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q07666" }}], 
- edges: [{ data: { source: 'SAFB2', target: 'SAFB', directed: 'false', weight: 0.9991209999999999} },
-{ data: { source: 'SAFB', target: 'KHDRBS1', directed: 'false', weight: 0.266733} },
-{ data: { source: 'ACTL6A', target: 'KHDRBS1', directed: 'false', weight: 0.331059} }]},
+elements:{nodes: [{data: { id: 'ATE1', score: 4, type: 'cov_link', href: "https://www.uniprot.org/uniprot/O95260" }},
+{data: { id: 'BANF1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75531" }},
+{data: { id: 'PARP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P09874" }}], 
+ edges: [{ data: { source: 'ATE1', target: 'PARP1', directed: 'false', weight: 0.5} },
+{ data: { source: 'BANF1', target: 'PARP1', directed: 'false', weight: 0.579476} }]},
 
 style: [
     {
@@ -85,6 +83,11 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.37500
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>ATE1
     </section>
     </body>
     </html>

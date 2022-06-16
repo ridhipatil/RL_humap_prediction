@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> BRD3 FAM90A5P FAM90A1 RFPL4A</title>
+<title> 0.2 LPP-PPP2CA-PPP2R3A complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,16 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'FAM90A1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86YD7" }},
-{data: { id: 'FAM90A5P', score: 2, type: '', href: "https://www.ncbi.nlm.nih.gov/gene/441315" }},
-{data: { id: 'RFPL4A', score: 3, type: '', href: "https://www.uniprot.org/uniprot/A6NLU0" }},
-{data: { id: 'BRD3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15059" }}], 
- edges: [{ data: { source: 'FAM90A1', target: 'FAM90A5P', directed: 'false', weight: 1.0} },
-{ data: { source: 'FAM90A1', target: 'BRD3', directed: 'false', weight: 1.0} },
-{ data: { source: 'FAM90A1', target: 'RFPL4A', directed: 'false', weight: 0.11348399999999999} }]},
+elements:{nodes: [{data: { id: 'PPP2R3A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q06190" }},
+{data: { id: 'LZTS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y250" }},
+{data: { id: 'LPP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q93052" }},
+{data: { id: 'SESTD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86VW0" }},
+{data: { id: 'LZTS2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BRK4" }}], 
+ edges: [{ data: { source: 'PPP2R3A', target: 'LPP', directed: 'false', weight: 0.8797780000000001} },
+{ data: { source: 'LZTS1', target: 'LZTS2', directed: 'false', weight: 0.981449} },
+{ data: { source: 'LZTS1', target: 'SESTD1', directed: 'false', weight: 0.140692} },
+{ data: { source: 'LPP', target: 'SESTD1', directed: 'false', weight: 0.957414} },
+{ data: { source: 'SESTD1', target: 'LZTS2', directed: 'false', weight: 0.7521180000000001} }]},
 
 style: [
     {
@@ -96,7 +99,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    BRD3 FAM90A5P FAM90A1 RFPL4A<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.2 LPP-PPP2CA-PPP2R3A complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

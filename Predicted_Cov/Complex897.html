@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.3 CAPN1-HSP90AB1 complex</title>
+<title> 0.1 G protein complex (PTHR1, GNB1, GNG2)</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,22 +30,19 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'SMYD3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H7B4" }},
-{data: { id: 'CAPN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P07384" }},
-{data: { id: 'RPL15', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P61313" }},
-{data: { id: 'EL52', score: 4, type: '', href: "https://www.uniprot.org/uniprot/K9JA46" }},
-{data: { id: 'TTF1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15361" }},
-{data: { id: 'HSP90AB1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P08238" }},
-{data: { id: 'RPL30', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62888" }}], 
- edges: [{ data: { source: 'SMYD3', target: 'EL52', directed: 'false', weight: 0.109378} },
-{ data: { source: 'SMYD3', target: 'HSP90AB1', directed: 'false', weight: 0.133377} },
-{ data: { source: 'CAPN1', target: 'EL52', directed: 'false', weight: 0.620009} },
-{ data: { source: 'CAPN1', target: 'HSP90AB1', directed: 'false', weight: 0.987567} },
-{ data: { source: 'RPL15', target: 'RPL30', directed: 'false', weight: 1.0} },
-{ data: { source: 'EL52', target: 'RPL30', directed: 'false', weight: 0.9875510000000001} },
-{ data: { source: 'EL52', target: 'HSP90AB1', directed: 'false', weight: 1.0} },
-{ data: { source: 'TTF1', target: 'RPL30', directed: 'false', weight: 0.158789} },
-{ data: { source: 'HSP90AB1', target: 'RPL30', directed: 'false', weight: 0.9875879999999999} }]},
+elements:{nodes: [{data: { id: 'MCTS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9ULC4" }},
+{data: { id: 'PTH1R', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q03431" }},
+{data: { id: 'DUS3L', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q96G46" }},
+{data: { id: 'OTUB1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96FW1" }},
+{data: { id: 'DNAJC17', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q9NVM6" }},
+{data: { id: 'SUMF2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NBJ7" }}], 
+ edges: [{ data: { source: 'PTH1R', target: 'DNAJC17', directed: 'false', weight: 0.7843439999999999} },
+{ data: { source: 'OTUB1', target: 'MCTS1', directed: 'false', weight: 0.41453999999999996} },
+{ data: { source: 'OTUB1', target: 'DUS3L', directed: 'false', weight: 0.281596} },
+{ data: { source: 'OTUB1', target: 'DNAJC17', directed: 'false', weight: 0.15968800000000002} },
+{ data: { source: 'SUMF2', target: 'DNAJC17', directed: 'false', weight: 0.8061020000000001} },
+{ data: { source: 'MCTS1', target: 'DNAJC17', directed: 'false', weight: 0.640177} },
+{ data: { source: 'DUS3L', target: 'DNAJC17', directed: 'false', weight: 0.55404} }]},
 
 style: [
     {
@@ -105,7 +102,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.3 CAPN1-HSP90AB1 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.43
+    0.1 G protein complex (PTHR1, GNB1, GNG2)<br> Complex Score = 0.37500<br> Unweighted Density = 0.47
     </section>
     </body>
     </html>

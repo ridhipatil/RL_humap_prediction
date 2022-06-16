@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> FXC1 MSI2 FLJ10842</title>
+<title> 0.7 DHDDS-NUS1 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,26 +30,25 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'MSI2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96DH6" }},
-{data: { id: 'FXC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y5J6" }},
-{data: { id: 'FLJ10842', score: 5, type: '', href: "https://www.uniprot.org/uniprot/A4D1U5" }}], 
- edges: [{ data: { source: 'MSI2', target: 'FXC1', directed: 'false', weight: 0.26177} },
-{ data: { source: 'FXC1', target: 'FLJ10842', directed: 'false', weight: 0.544039} }]},
+elements:{nodes: [{data: { id: 'FOXP4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IVH2" }},
+{data: { id: 'NUS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96E22" }},
+{data: { id: 'DHDDS', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86SQ9" }}], 
+ edges: [{ data: { source: 'FOXP4', target: 'DHDDS', directed: 'false', weight: 0.627742} },
+{ data: { source: 'FOXP4', target: 'NUS1', directed: 'false', weight: 0.11730499999999999} },
+{ data: { source: 'NUS1', target: 'DHDDS', directed: 'false', weight: 0.471317} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 10,
-		'width':'10',
-		'height': '10',	
+		'font-size': 30,
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}  
                                  if ( ele.data('type') == 'sars' ){return 'triangle'}   
   return 'rectangle';
   },            
-             'background-color': function( ele ){ 
+            'background-color': function( ele ){ 
                                 if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
 								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
                                  if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
@@ -63,7 +62,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
 								'line-color': function( ele ){ 
                                  if ( ele.data('type') == 'sars' ){return 'red'}   
   return 'blue';
@@ -75,10 +74,7 @@ style: [
 
 });
 cy.layout({
-    'name': 'fcose',
-		'animate':false,
-	'nodeDimensionsIncludeLabels':true,
-	'nodeSeparation': 1000
+    'name': 'circle'
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -94,7 +90,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    FXC1 MSI2 FLJ10842<br> Complex Score = 0.38800<br> Unweighted Density = 0.67
+    0.7 DHDDS-NUS1 complex<br> Complex Score = 0.38750<br> Unweighted Density = 1.00
     </section>
     </body>
     </html>

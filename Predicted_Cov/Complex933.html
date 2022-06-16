@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 ITCH-USP9X complex</title>
+<title> 0.3 HNRPF-HNRPH1 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,21 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'LDOC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95751" }},
-{data: { id: 'RTL8B', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q17RB0" }},
-{data: { id: 'USP9X', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q93008" }},
-{data: { id: 'PEG10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86TG7" }}], 
- edges: [{ data: { source: 'LDOC1', target: 'PEG10', directed: 'false', weight: 0.9994569999999999} },
-{ data: { source: 'USP9X', target: 'PEG10', directed: 'false', weight: 0.247889} },
-{ data: { source: 'PEG10', target: 'RTL8B', directed: 'false', weight: 0.999951} }]},
+elements:{nodes: [{data: { id: 'MAT2A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P31153" }},
+{data: { id: 'HNRNPH1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P31943" }},
+{data: { id: 'MAT1A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q00266" }},
+{data: { id: 'HNRNPF', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P52597" }},
+{data: { id: 'SARS-CoV2 nsp9', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp9.html" }},
+{data: { id: 'MAT2B', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9NZL9" }},
+{data: { id: 'RHOC', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P08134" }}], 
+ edges: [{ data: { source: 'SARS-CoV2 nsp9', target: 'MAT2B', directed: 'false', weight: 0.978282655, type: 'sars'} },
+{ data: { source: 'HNRNPH1', target: 'HNRNPF', directed: 'false', weight: 0.9759459999999999} },
+{ data: { source: 'HNRNPH1', target: 'MAT2A', directed: 'false', weight: 0.779637} },
+{ data: { source: 'MAT1A', target: 'MAT2A', directed: 'false', weight: 0.853417} },
+{ data: { source: 'MAT1A', target: 'MAT2B', directed: 'false', weight: 0.7502909999999999} },
+{ data: { source: 'MAT1A', target: 'RHOC', directed: 'false', weight: 0.29022} },
+{ data: { source: 'MAT2B', target: 'MAT2A', directed: 'false', weight: 0.878325} },
+{ data: { source: 'MAT2A', target: 'HNRNPF', directed: 'false', weight: 0.755949} }]},
 
 style: [
     {
@@ -96,7 +104,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 ITCH-USP9X complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.3 HNRPF-HNRPH1 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.47
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>MAT2B
     </section>
     </body>
     </html>

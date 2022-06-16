@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.7 SMN complex (GEMIN2, GEMIN3, GEMIN4, GEMIN5, SMN)</title>
+<title> 0.1 GM130-GRASP65 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,25 +30,48 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'GEMIN5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TEQ6" }},
-{data: { id: 'GEMIN2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O14893" }},
-{data: { id: 'GEMIN4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P57678" }},
-{data: { id: 'SMN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16637" }},
-{data: { id: 'FAM51A1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NWZ8" }},
-{data: { id: 'DDX20', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UHI6" }}], 
- edges: [{ data: { source: 'GEMIN5', target: 'DDX20', directed: 'false', weight: 0.99764} },
-{ data: { source: 'GEMIN5', target: 'GEMIN2', directed: 'false', weight: 0.0898501} },
-{ data: { source: 'GEMIN5', target: 'FAM51A1', directed: 'false', weight: 0.08691439999999999} },
-{ data: { source: 'GEMIN2', target: 'DDX20', directed: 'false', weight: 0.535733} },
-{ data: { source: 'GEMIN2', target: 'GEMIN4', directed: 'false', weight: 0.10887999999999999} },
-{ data: { source: 'GEMIN2', target: 'FAM51A1', directed: 'false', weight: 0.354756} },
-{ data: { source: 'GEMIN2', target: 'SMN1', directed: 'false', weight: 0.0459144} },
-{ data: { source: 'GEMIN4', target: 'DDX20', directed: 'false', weight: 0.9968520000000001} },
-{ data: { source: 'GEMIN4', target: 'FAM51A1', directed: 'false', weight: 0.11413} },
-{ data: { source: 'SMN1', target: 'DDX20', directed: 'false', weight: 0.052216099999999994} },
-{ data: { source: 'SMN1', target: 'FAM51A1', directed: 'false', weight: 0.030517400000000004} },
-{ data: { source: 'SMN1', target: 'SMN1', directed: 'false', weight: 0.028810000000000002} },
-{ data: { source: 'FAM51A1', target: 'DDX20', directed: 'false', weight: 0.6830970000000001} }]},
+elements:{nodes: [{data: { id: 'SARS-CoV2 orf9c', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 orf9c.html" }},
+{data: { id: 'TMED5', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9Y3A6" }},
+{data: { id: 'TMED10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49755" }},
+{data: { id: 'TMED3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y3Q3" }},
+{data: { id: 'SARS-CoV2 nsp13', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp13.html" }},
+{data: { id: 'GOLGA2', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q08379" }},
+{data: { id: 'TMED2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15363" }},
+{data: { id: 'TICAM2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86XR7" }},
+{data: { id: 'TMED1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13445" }},
+{data: { id: 'TMED4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q7Z7H5" }},
+{data: { id: 'TMED9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BVK6" }}], 
+ edges: [{ data: { source: 'SARS-CoV2 orf9c', target: 'TMED5', directed: 'false', weight: 0.705393478, type: 'sars'} },
+{ data: { source: 'SARS-CoV2 nsp13', target: 'GOLGA2', directed: 'false', weight: 0.952311087, type: 'sars'} },
+{ data: { source: 'TMED3', target: 'TMED2', directed: 'false', weight: 0.9972219999999999} },
+{ data: { source: 'TMED3', target: 'TMED9', directed: 'false', weight: 0.54895} },
+{ data: { source: 'TMED3', target: 'TMED4', directed: 'false', weight: 0.963031} },
+{ data: { source: 'TMED3', target: 'TMED10', directed: 'false', weight: 0.9281} },
+{ data: { source: 'TMED3', target: 'TMED5', directed: 'false', weight: 0.5179020000000001} },
+{ data: { source: 'TMED3', target: 'TMED1', directed: 'false', weight: 0.460118} },
+{ data: { source: 'TMED3', target: 'TICAM2', directed: 'false', weight: 0.229492} },
+{ data: { source: 'TMED10', target: 'TMED2', directed: 'false', weight: 0.99997} },
+{ data: { source: 'TMED10', target: 'TMED9', directed: 'false', weight: 0.999976} },
+{ data: { source: 'TMED10', target: 'TMED4', directed: 'false', weight: 0.999389} },
+{ data: { source: 'TMED10', target: 'TMED1', directed: 'false', weight: 0.8388620000000001} },
+{ data: { source: 'TMED10', target: 'TMED5', directed: 'false', weight: 0.7455069999999999} },
+{ data: { source: 'TMED10', target: 'TICAM2', directed: 'false', weight: 0.604491} },
+{ data: { source: 'GOLGA2', target: 'TICAM2', directed: 'false', weight: 0.11136700000000001} },
+{ data: { source: 'TMED2', target: 'TMED9', directed: 'false', weight: 0.9999950000000001} },
+{ data: { source: 'TMED2', target: 'TMED4', directed: 'false', weight: 0.999977} },
+{ data: { source: 'TMED2', target: 'TMED1', directed: 'false', weight: 0.99274} },
+{ data: { source: 'TMED2', target: 'TICAM2', directed: 'false', weight: 0.9913569999999999} },
+{ data: { source: 'TMED2', target: 'TMED5', directed: 'false', weight: 0.9887670000000001} },
+{ data: { source: 'TICAM2', target: 'TMED9', directed: 'false', weight: 0.396848} },
+{ data: { source: 'TICAM2', target: 'TMED4', directed: 'false', weight: 0.18832100000000002} },
+{ data: { source: 'TICAM2', target: 'TMED1', directed: 'false', weight: 0.229492} },
+{ data: { source: 'TICAM2', target: 'TMED5', directed: 'false', weight: 0.229492} },
+{ data: { source: 'TMED1', target: 'TMED9', directed: 'false', weight: 0.670283} },
+{ data: { source: 'TMED1', target: 'TMED4', directed: 'false', weight: 0.6377430000000001} },
+{ data: { source: 'TMED1', target: 'TMED5', directed: 'false', weight: 0.511758} },
+{ data: { source: 'TMED4', target: 'TMED9', directed: 'false', weight: 0.563611} },
+{ data: { source: 'TMED4', target: 'TMED5', directed: 'false', weight: 0.472422} },
+{ data: { source: 'TMED5', target: 'TMED9', directed: 'false', weight: 0.59102} }]},
 
 style: [
     {
@@ -103,7 +126,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.7 SMN complex (GEMIN2, GEMIN3, GEMIN4, GEMIN5, SMN)<br> Complex Score = 0.38800<br> Unweighted Density = 0.87
+    0.1 GM130-GRASP65 complex<br> Complex Score = 0.39375<br> Unweighted Density = 0.81
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        2 interacting protein(s): <br>TMED5 GOLGA2
     </section>
     </body>
     </html>

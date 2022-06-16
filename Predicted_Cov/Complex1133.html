@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.3 ING5 (BRPF1, MOZ, MORF) complex</title>
+<title> 0.2 ACTN1-PARVB complex match 2</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,14 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'MEAF6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HAF1" }},
-{data: { id: 'MRGBP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NV56" }},
-{data: { id: 'BRPF1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P55201" }},
-{data: { id: 'HTATIP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92993" }}], 
- edges: [{ data: { source: 'MEAF6', target: 'HTATIP', directed: 'false', weight: 0.724326} },
-{ data: { source: 'MEAF6', target: 'MRGBP', directed: 'false', weight: 0.125431} },
-{ data: { source: 'MEAF6', target: 'BRPF1', directed: 'false', weight: 0.174037} },
-{ data: { source: 'MRGBP', target: 'HTATIP', directed: 'false', weight: 0.665343} }]},
+elements:{nodes: [{data: { id: 'ACTN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P12814" }},
+{data: { id: 'SORBS2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O94875" }},
+{data: { id: 'CRELD2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6UXH1" }},
+{data: { id: 'CLIC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00299" }}], 
+ edges: [{ data: { source: 'CLIC1', target: 'ACTN1', directed: 'false', weight: 0.0649864} },
+{ data: { source: 'CLIC1', target: 'CRELD2', directed: 'false', weight: 0.797317} },
+{ data: { source: 'ACTN1', target: 'SORBS2', directed: 'false', weight: 0.45939300000000005} }]},
 
 style: [
     {
@@ -97,7 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.3 ING5 (BRPF1, MOZ, MORF) complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
+    0.2 ACTN1-PARVB complex match 2<br> Complex Score = 0.30000<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

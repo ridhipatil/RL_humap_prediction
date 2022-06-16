@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> PLEKHA3 NR2E3 HAL</title>
+<title> 0.1 GATOR2 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,11 +30,27 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'HAL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P42357" }},
-{data: { id: 'PLEKHA3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HB20" }},
-{data: { id: 'NR2E3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y5X4" }}], 
- edges: [{ data: { source: 'HAL', target: 'PLEKHA3', directed: 'false', weight: 0.9560190000000001} },
-{ data: { source: 'PLEKHA3', target: 'NR2E3', directed: 'false', weight: 0.129088} }]},
+elements:{nodes: [{data: { id: 'KANK2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q63ZY3" }},
+{data: { id: 'FAM83B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5T0W9" }},
+{data: { id: 'BTBD3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y2F9" }},
+{data: { id: 'SEC13', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P55735" }},
+{data: { id: 'SARS-CoV2 nsp1', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp1.html" }},
+{data: { id: 'PKP2', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q99959" }},
+{data: { id: 'SEC23B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15437" }},
+{data: { id: 'SEC16A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15027" }}], 
+ edges: [{ data: { source: 'SARS-CoV2 nsp1', target: 'PKP2', directed: 'false', weight: 0.964585351, type: 'sars'} },
+{ data: { source: 'KANK2', target: 'FAM83B', directed: 'false', weight: 0.0897674} },
+{ data: { source: 'KANK2', target: 'PKP2', directed: 'false', weight: 0.13574} },
+{ data: { source: 'KANK2', target: 'SEC16A', directed: 'false', weight: 0.282269} },
+{ data: { source: 'FAM83B', target: 'BTBD3', directed: 'false', weight: 0.37043899999999996} },
+{ data: { source: 'FAM83B', target: 'PKP2', directed: 'false', weight: 0.512919} },
+{ data: { source: 'FAM83B', target: 'SEC16A', directed: 'false', weight: 0.378909} },
+{ data: { source: 'BTBD3', target: 'SEC23B', directed: 'false', weight: 0.18296800000000002} },
+{ data: { source: 'BTBD3', target: 'PKP2', directed: 'false', weight: 0.34521799999999997} },
+{ data: { source: 'BTBD3', target: 'SEC16A', directed: 'false', weight: 0.189226} },
+{ data: { source: 'SEC13', target: 'SEC23B', directed: 'false', weight: 0.7157720000000001} },
+{ data: { source: 'PKP2', target: 'SEC23B', directed: 'false', weight: 0.20959099999999997} },
+{ data: { source: 'PKP2', target: 'SEC16A', directed: 'false', weight: 0.278225} }]},
 
 style: [
     {
@@ -94,7 +110,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    PLEKHA3 NR2E3 HAL<br> Complex Score = 0.38800<br> Unweighted Density = 0.67
+    0.1 GATOR2 complex<br> Complex Score = 0.38750<br> Unweighted Density = 0.57
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>PKP2
     </section>
     </body>
     </html>

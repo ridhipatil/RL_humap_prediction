@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> DKFZp686I0746 WASH3P CAPZA2 ARAP1</title>
+<title> 0.1 ATAC complex, GCN5-linked</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,24 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'ARAP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96P48" }},
-{data: { id: 'WASH3P', score: 5, type: '', href: "https://www.ncbi.nlm.nih.gov/gene/374666" }},
-{data: { id: 'DKFZp686I0746', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q6MZZ3" }},
-{data: { id: 'CAPZA2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P47755" }}], 
- edges: [{ data: { source: 'ARAP1', target: 'CAPZA2', directed: 'false', weight: 0.16846} },
-{ data: { source: 'WASH3P', target: 'CAPZA2', directed: 'false', weight: 0.9975139999999999} },
-{ data: { source: 'DKFZp686I0746', target: 'CAPZA2', directed: 'false', weight: 0.999763} }]},
+elements:{nodes: [{data: { id: 'MBIP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NS73" }},
+{data: { id: 'ZNF131', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P52739" }},
+{data: { id: 'CKM', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P06732" }},
+{data: { id: 'YEATS2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9ULM3" }},
+{data: { id: 'FAM92A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/A1XBS5" }},
+{data: { id: 'GMCL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96IK5" }},
+{data: { id: 'PLBD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6P4A8" }}], 
+ edges: [{ data: { source: 'MBIP', target: 'YEATS2', directed: 'false', weight: 0.9965370000000001} },
+{ data: { source: 'MBIP', target: 'GMCL1', directed: 'false', weight: 0.9675440000000001} },
+{ data: { source: 'MBIP', target: 'FAM92A', directed: 'false', weight: 0.9053100000000001} },
+{ data: { source: 'MBIP', target: 'ZNF131', directed: 'false', weight: 0.895069} },
+{ data: { source: 'ZNF131', target: 'YEATS2', directed: 'false', weight: 0.0855589} },
+{ data: { source: 'ZNF131', target: 'GMCL1', directed: 'false', weight: 0.123797} },
+{ data: { source: 'ZNF131', target: 'FAM92A', directed: 'false', weight: 0.140692} },
+{ data: { source: 'CKM', target: 'GMCL1', directed: 'false', weight: 0.48116099999999995} },
+{ data: { source: 'YEATS2', target: 'FAM92A', directed: 'false', weight: 0.10554300000000001} },
+{ data: { source: 'FAM92A', target: 'GMCL1', directed: 'false', weight: 0.151455} },
+{ data: { source: 'GMCL1', target: 'PLBD1', directed: 'false', weight: 0.6797529999999999} }]},
 
 style: [
     {
@@ -96,7 +107,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    DKFZp686I0746 WASH3P CAPZA2 ARAP1<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.1 ATAC complex, GCN5-linked<br> Complex Score = 0.37500<br> Unweighted Density = 0.52
     </section>
     </body>
     </html>

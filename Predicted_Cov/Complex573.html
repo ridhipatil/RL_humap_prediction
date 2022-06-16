@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 PSF-p54(nrb) complex</title>
+<title> 0.1 WIP-WASp-actin-myosin-IIa complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,30 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'DKFZp686P17171', score: 1, type: '', href: "https://www.uniprot.org/uniprot/Q63HR1" }},
-{data: { id: 'EIF5B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60841" }},
-{data: { id: 'SFPQ', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P23246" }},
-{data: { id: 'EEF1G', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P26641" }}], 
- edges: [{ data: { source: 'DKFZp686P17171', target: 'SFPQ', directed: 'false', weight: 0.908652} },
-{ data: { source: 'EEF1G', target: 'SFPQ', directed: 'false', weight: 0.253225} },
-{ data: { source: 'EEF1G', target: 'EIF5B', directed: 'false', weight: 0.107472} }]},
+elements:{nodes: [{data: { id: 'MYO18A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92614" }},
+{data: { id: 'SIPA1L3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60292" }},
+{data: { id: 'MYL6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P60660" }},
+{data: { id: 'TPM4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P67936" }},
+{data: { id: 'LIMCH1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UPQ0" }},
+{data: { id: 'TPM1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P09493" }},
+{data: { id: 'CFL2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y281" }},
+{data: { id: 'CEP162', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5TB80" }}], 
+ edges: [{ data: { source: 'MYO18A', target: 'TPM4', directed: 'false', weight: 0.439525} },
+{ data: { source: 'MYO18A', target: 'LIMCH1', directed: 'false', weight: 0.9665959999999999} },
+{ data: { source: 'MYO18A', target: 'MYL6', directed: 'false', weight: 0.641679} },
+{ data: { source: 'MYO18A', target: 'CEP162', directed: 'false', weight: 0.08822260000000001} },
+{ data: { source: 'SIPA1L3', target: 'CFL2', directed: 'false', weight: 0.142084} },
+{ data: { source: 'SIPA1L3', target: 'LIMCH1', directed: 'false', weight: 0.289833} },
+{ data: { source: 'SIPA1L3', target: 'CEP162', directed: 'false', weight: 0.040946300000000005} },
+{ data: { source: 'MYL6', target: 'TPM4', directed: 'false', weight: 0.0511946} },
+{ data: { source: 'MYL6', target: 'LIMCH1', directed: 'false', weight: 0.195524} },
+{ data: { source: 'MYL6', target: 'CEP162', directed: 'false', weight: 0.0526173} },
+{ data: { source: 'TPM4', target: 'TPM1', directed: 'false', weight: 0.999985} },
+{ data: { source: 'TPM4', target: 'LIMCH1', directed: 'false', weight: 0.307129} },
+{ data: { source: 'TPM4', target: 'CEP162', directed: 'false', weight: 0.0418959} },
+{ data: { source: 'LIMCH1', target: 'CFL2', directed: 'false', weight: 0.17193599999999998} },
+{ data: { source: 'LIMCH1', target: 'CEP162', directed: 'false', weight: 0.0642698} },
+{ data: { source: 'CFL2', target: 'CEP162', directed: 'false', weight: 0.108076} }]},
 
 style: [
     {
@@ -96,7 +113,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 PSF-p54(nrb) complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.1 WIP-WASp-actin-myosin-IIa complex<br> Complex Score = 0.38750<br> Unweighted Density = 0.57
     </section>
     </body>
     </html>

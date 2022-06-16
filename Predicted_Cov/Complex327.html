@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> MAGEE1 EID2B EID2</title>
+<title> 462 TEX15 MBL2 UAP1</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,11 +30,14 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'EID2B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96D98" }},
-{data: { id: 'EID2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N6I1" }},
-{data: { id: 'MAGEE1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UBF1" }}], 
- edges: [{ data: { source: 'EID2B', target: 'MAGEE1', directed: 'false', weight: 0.9995790000000001} },
-{ data: { source: 'EID2', target: 'MAGEE1', directed: 'false', weight: 0.959451} }]},
+elements:{nodes: [{data: { id: 'TEX15', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9BXT5" }},
+{data: { id: 'SERPINC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P01008" }},
+{data: { id: 'MBL2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P11226" }},
+{data: { id: 'UAP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16222" }}], 
+ edges: [{ data: { source: 'MBL2', target: 'UAP1', directed: 'false', weight: 0.436141} },
+{ data: { source: 'MBL2', target: 'SERPINC1', directed: 'false', weight: 0.101333} },
+{ data: { source: 'TEX15', target: 'SERPINC1', directed: 'false', weight: 0.32873600000000003} },
+{ data: { source: 'UAP1', target: 'SERPINC1', directed: 'false', weight: 0.48585900000000004} }]},
 
 style: [
     {
@@ -94,7 +97,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    MAGEE1 EID2B EID2<br> Complex Score = 0.38800<br> Unweighted Density = 0.67
+    462 TEX15 MBL2 UAP1<br> Complex Score = 0.38750<br> Unweighted Density = 0.67
     </section>
     </body>
     </html>

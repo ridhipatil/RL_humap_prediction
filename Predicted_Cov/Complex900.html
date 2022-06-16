@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> TMEM30B PRTG IGDCC4 PCDH17</title>
+<title> KRT6A KRT17 KRT8</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,11 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'PRTG', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q2VWP7" }},
-{data: { id: 'IGDCC4', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q8TDY8" }},
-{data: { id: 'TMEM30B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q3MIR4" }},
-{data: { id: 'PCDH17', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O14917" }}], 
- edges: [{ data: { source: 'PRTG', target: 'TMEM30B', directed: 'false', weight: 0.188479} },
-{ data: { source: 'IGDCC4', target: 'TMEM30B', directed: 'false', weight: 0.195922} },
-{ data: { source: 'TMEM30B', target: 'PCDH17', directed: 'false', weight: 0.147609} }]},
+elements:{nodes: [{data: { id: 'KRT6A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P02538" }},
+{data: { id: 'KRT8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P05787" }},
+{data: { id: 'KRT17', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q04695" }}], 
+ edges: [{ data: { source: 'KRT6A', target: 'KRT17', directed: 'false', weight: 0.7925} },
+{ data: { source: 'KRT8', target: 'KRT17', directed: 'false', weight: 0.788067} }]},
 
 style: [
     {
@@ -96,7 +94,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    TMEM30B PRTG IGDCC4 PCDH17<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    KRT6A KRT17 KRT8<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
     </section>
     </body>
     </html>

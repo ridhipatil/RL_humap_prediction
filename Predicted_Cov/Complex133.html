@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> SMYD3 HSP90AB3P HSP90AB4P HSP90AA5P MYLK4</title>
+<title> 0.1 Respiratory chain complex I (lambda subunit) mitochondrial</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,33 +30,39 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'MYLK4', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q86YV6" }},
-{data: { id: 'SMYD3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H7B4" }},
-{data: { id: 'HSP90AB3P', score: 4, type: '', href: "https://www.ncbi.nlm.nih.gov/gene/3327" }},
-{data: { id: 'HSP90AB4P', score: 3, type: '', href: "https://www.ncbi.nlm.nih.gov/gene/664618" }},
-{data: { id: 'HSP90AA5P', score: 3, type: '', href: "https://www.ncbi.nlm.nih.gov/gene/730211" }}], 
- edges: [{ data: { source: 'MYLK4', target: 'HSP90AB3P', directed: 'false', weight: 0.9587620000000001} },
-{ data: { source: 'MYLK4', target: 'HSP90AB4P', directed: 'false', weight: 0.628942} },
-{ data: { source: 'MYLK4', target: 'HSP90AA5P', directed: 'false', weight: 0.167355} },
-{ data: { source: 'SMYD3', target: 'HSP90AB3P', directed: 'false', weight: 0.997899} },
-{ data: { source: 'SMYD3', target: 'HSP90AB4P', directed: 'false', weight: 0.937725} },
-{ data: { source: 'SMYD3', target: 'HSP90AA5P', directed: 'false', weight: 0.15004800000000001} },
-{ data: { source: 'HSP90AB3P', target: 'HSP90AB4P', directed: 'false', weight: 0.025524400000000003} },
-{ data: { source: 'HSP90AB3P', target: 'HSP90AA5P', directed: 'false', weight: 0.0214892} },
-{ data: { source: 'HSP90AB4P', target: 'HSP90AA5P', directed: 'false', weight: 0.021347900000000003} }]},
+elements:{nodes: [{data: { id: 'NDUFS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P28331" }},
+{data: { id: 'CAVIN3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q969G5" }},
+{data: { id: 'NDUFB4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95168" }},
+{data: { id: 'TMEM43', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BTV4" }},
+{data: { id: 'NDUFA12', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UI09" }},
+{data: { id: 'ATAD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NBU5" }}], 
+ edges: [{ data: { source: 'NDUFB4', target: 'NDUFA12', directed: 'false', weight: 0.550211} },
+{ data: { source: 'NDUFB4', target: 'NDUFS1', directed: 'false', weight: 0.279584} },
+{ data: { source: 'NDUFB4', target: 'CAVIN3', directed: 'false', weight: 0.11981900000000001} },
+{ data: { source: 'NDUFB4', target: 'TMEM43', directed: 'false', weight: 0.10342799999999999} },
+{ data: { source: 'NDUFA12', target: 'NDUFS1', directed: 'false', weight: 0.866136} },
+{ data: { source: 'NDUFA12', target: 'ATAD1', directed: 'false', weight: 0.47707700000000003} },
+{ data: { source: 'NDUFA12', target: 'TMEM43', directed: 'false', weight: 0.332343} },
+{ data: { source: 'NDUFA12', target: 'CAVIN3', directed: 'false', weight: 0.270726} },
+{ data: { source: 'ATAD1', target: 'NDUFS1', directed: 'false', weight: 0.35867} },
+{ data: { source: 'NDUFS1', target: 'TMEM43', directed: 'false', weight: 0.48273299999999997} },
+{ data: { source: 'NDUFS1', target: 'CAVIN3', directed: 'false', weight: 0.44500500000000004} },
+{ data: { source: 'CAVIN3', target: 'TMEM43', directed: 'false', weight: 0.11981900000000001} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 30,
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}  
                                  if ( ele.data('type') == 'sars' ){return 'triangle'}   
   return 'rectangle';
   },            
-            'background-color': function( ele ){ 
+             'background-color': function( ele ){ 
                                 if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
 								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
                                  if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
@@ -70,7 +76,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
 								'line-color': function( ele ){ 
                                  if ( ele.data('type') == 'sars' ){return 'red'}   
   return 'blue';
@@ -82,7 +88,10 @@ style: [
 
 });
 cy.layout({
-    'name': 'circle'
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -98,7 +107,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    SMYD3 HSP90AB3P HSP90AB4P HSP90AA5P MYLK4<br> Complex Score = 0.38800<br> Unweighted Density = 0.90
+    0.1 Respiratory chain complex I (lambda subunit) mitochondrial<br> Complex Score = 0.39375<br> Unweighted Density = 0.80
     </section>
     </body>
     </html>

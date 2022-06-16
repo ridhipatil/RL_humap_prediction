@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 DNM1L-FIS1 complex</title>
+<title> TBCA FH C1orf50 FKBP1B AHCY</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,20 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'GPX4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P36969" }},
-{data: { id: 'ENO3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P13929" }},
-{data: { id: 'GALE', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14376" }},
-{data: { id: 'DNM1L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00429" }}], 
- edges: [{ data: { source: 'GPX4', target: 'DNM1L', directed: 'false', weight: 0.233648} },
-{ data: { source: 'GPX4', target: 'GALE', directed: 'false', weight: 0.124025} },
-{ data: { source: 'GPX4', target: 'ENO3', directed: 'false', weight: 0.11246400000000001} }]},
+elements:{nodes: [{data: { id: 'FH', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P07954" }},
+{data: { id: 'SARS-CoV2 nsp11', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp11.html" }},
+{data: { id: 'TBCA', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/O75347" }},
+{data: { id: 'SARS-CoV2 nsp13', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp13.html" }},
+{data: { id: 'C1orf50', score: 4, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9BV19" }},
+{data: { id: 'AHCY', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P23526" }},
+{data: { id: 'FKBP1B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P68106" }}], 
+ edges: [{ data: { source: 'SARS-CoV2 nsp11', target: 'TBCA', directed: 'false', weight: 0.768344701, type: 'sars'} },
+{ data: { source: 'SARS-CoV2 nsp13', target: 'C1orf50', directed: 'false', weight: 0.932056845, type: 'sars'} },
+{ data: { source: 'TBCA', target: 'FKBP1B', directed: 'false', weight: 0.943319} },
+{ data: { source: 'TBCA', target: 'AHCY', directed: 'false', weight: 0.9942850000000001} },
+{ data: { source: 'C1orf50', target: 'AHCY', directed: 'false', weight: 0.9852989999999999} },
+{ data: { source: 'AHCY', target: 'FKBP1B', directed: 'false', weight: 0.5513859999999999} },
+{ data: { source: 'AHCY', target: 'FH', directed: 'false', weight: 0.40507600000000005} }]},
 
 style: [
     {
@@ -96,7 +103,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 DNM1L-FIS1 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    TBCA FH C1orf50 FKBP1B AHCY<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        2 interacting protein(s): <br>TBCA C1orf50
     </section>
     </body>
     </html>

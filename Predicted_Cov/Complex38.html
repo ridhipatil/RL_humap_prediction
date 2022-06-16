@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> ESCRT-II complex</title>
+<title> 0.2 RalBP1-CCNB1-AP2A-NUMB-EPN1 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,12 +30,27 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'VPS25', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BRG1" }},
-{data: { id: 'SNF8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96H20" }},
-{data: { id: 'VPS36', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86VN1" }}], 
- edges: [{ data: { source: 'VPS25', target: 'VPS36', directed: 'false', weight: 0.999663} },
-{ data: { source: 'VPS25', target: 'SNF8', directed: 'false', weight: 0.998784} },
-{ data: { source: 'SNF8', target: 'VPS36', directed: 'false', weight: 0.998972} }]},
+elements:{nodes: [{data: { id: 'RALBP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15311" }},
+{data: { id: 'SARS-CoV2 nsp10', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp10.html" }},
+{data: { id: 'AP2M1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q96CW1" }},
+{data: { id: 'GULP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UBP9" }},
+{data: { id: 'PJA2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43164" }},
+{data: { id: 'NUMB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49757" }},
+{data: { id: 'SNX29', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q8TEQ0" }}], 
+ edges: [{ data: { source: 'SARS-CoV2 nsp10', target: 'AP2M1', directed: 'false', weight: 0.982905884, type: 'sars'} },
+{ data: { source: 'GULP1', target: 'AP2M1', directed: 'false', weight: 0.860176} },
+{ data: { source: 'GULP1', target: 'RALBP1', directed: 'false', weight: 0.133456} },
+{ data: { source: 'GULP1', target: 'NUMB', directed: 'false', weight: 0.151455} },
+{ data: { source: 'GULP1', target: 'SNX29', directed: 'false', weight: 0.151455} },
+{ data: { source: 'GULP1', target: 'PJA2', directed: 'false', weight: 0.117318} },
+{ data: { source: 'PJA2', target: 'AP2M1', directed: 'false', weight: 0.32614099999999996} },
+{ data: { source: 'PJA2', target: 'SNX29', directed: 'false', weight: 0.133451} },
+{ data: { source: 'NUMB', target: 'AP2M1', directed: 'false', weight: 0.991908} },
+{ data: { source: 'NUMB', target: 'RALBP1', directed: 'false', weight: 0.15628} },
+{ data: { source: 'NUMB', target: 'SNX29', directed: 'false', weight: 0.171414} },
+{ data: { source: 'SNX29', target: 'AP2M1', directed: 'false', weight: 0.856979} },
+{ data: { source: 'SNX29', target: 'RALBP1', directed: 'false', weight: 0.151455} },
+{ data: { source: 'RALBP1', target: 'AP2M1', directed: 'false', weight: 0.9800639999999999} }]},
 
 style: [
     {
@@ -90,7 +105,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    ESCRT-II complex<br> Complex Score = 0.39400<br> Unweighted Density = 1.00
+    0.2 RalBP1-CCNB1-AP2A-NUMB-EPN1 complex<br> Complex Score = 0.39688<br> Unweighted Density = 0.87
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>AP2M1
     </section>
     </body>
     </html>

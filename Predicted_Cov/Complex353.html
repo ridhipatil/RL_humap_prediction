@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.7 GINS complex</title>
+<title> 0.2 PA700 complex match 2</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,22 +30,31 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'TIPIN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BVW5" }},
-{data: { id: 'GINS4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BRT9" }},
-{data: { id: 'GINS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14691" }},
-{data: { id: 'GINS3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BRX5" }},
-{data: { id: 'TIMELESS', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UNS1" }},
-{data: { id: 'GINS2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y248" }}], 
- edges: [{ data: { source: 'TIPIN', target: 'TIMELESS', directed: 'false', weight: 0.9999950000000001} },
-{ data: { source: 'TIPIN', target: 'GINS3', directed: 'false', weight: 0.9294399999999999} },
-{ data: { source: 'TIPIN', target: 'GINS4', directed: 'false', weight: 0.284666} },
-{ data: { source: 'GINS4', target: 'TIMELESS', directed: 'false', weight: 0.0210741} },
-{ data: { source: 'GINS4', target: 'GINS1', directed: 'false', weight: 0.999969} },
-{ data: { source: 'GINS4', target: 'GINS2', directed: 'false', weight: 0.660026} },
-{ data: { source: 'GINS4', target: 'GINS3', directed: 'false', weight: 0.43381400000000003} },
-{ data: { source: 'GINS1', target: 'GINS2', directed: 'false', weight: 0.9998040000000001} },
-{ data: { source: 'GINS1', target: 'GINS3', directed: 'false', weight: 0.996965} },
-{ data: { source: 'GINS3', target: 'GINS2', directed: 'false', weight: 0.9289700000000001} }]},
+elements:{nodes: [{data: { id: 'PSMD12', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00232" }},
+{data: { id: 'PSMD2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13200" }},
+{data: { id: 'PSMD3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43242" }},
+{data: { id: 'INO80E', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NBZ0" }},
+{data: { id: 'PSMD10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75832" }},
+{data: { id: 'INO80C', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q6PI98" }},
+{data: { id: 'PSMC6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62333" }},
+{data: { id: 'UCHL5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y5K5" }}], 
+ edges: [{ data: { source: 'PSMD12', target: 'PSMC6', directed: 'false', weight: 1.0} },
+{ data: { source: 'PSMD12', target: 'PSMD10', directed: 'false', weight: 0.973091} },
+{ data: { source: 'PSMD12', target: 'PSMD2', directed: 'false', weight: 0.9997860000000001} },
+{ data: { source: 'PSMD12', target: 'PSMD3', directed: 'false', weight: 0.999008} },
+{ data: { source: 'PSMD12', target: 'UCHL5', directed: 'false', weight: 0.768942} },
+{ data: { source: 'PSMD2', target: 'PSMC6', directed: 'false', weight: 0.9969520000000001} },
+{ data: { source: 'PSMD2', target: 'PSMD10', directed: 'false', weight: 1.0} },
+{ data: { source: 'PSMD2', target: 'PSMD3', directed: 'false', weight: 0.997518} },
+{ data: { source: 'PSMD2', target: 'UCHL5', directed: 'false', weight: 0.779856} },
+{ data: { source: 'PSMD3', target: 'PSMC6', directed: 'false', weight: 0.9999959999999999} },
+{ data: { source: 'PSMD3', target: 'PSMD10', directed: 'false', weight: 0.9999979999999999} },
+{ data: { source: 'PSMD3', target: 'UCHL5', directed: 'false', weight: 0.33212800000000003} },
+{ data: { source: 'INO80E', target: 'UCHL5', directed: 'false', weight: 0.963216} },
+{ data: { source: 'INO80E', target: 'INO80C', directed: 'false', weight: 0.666782} },
+{ data: { source: 'PSMD10', target: 'PSMC6', directed: 'false', weight: 1.0} },
+{ data: { source: 'PSMD10', target: 'UCHL5', directed: 'false', weight: 0.611633} },
+{ data: { source: 'PSMC6', target: 'UCHL5', directed: 'false', weight: 0.25524600000000003} }]},
 
 style: [
     {
@@ -105,7 +114,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.7 GINS complex<br> Complex Score = 0.38800<br> Unweighted Density = 0.67
+    0.2 PA700 complex match 2<br> Complex Score = 0.38750<br> Unweighted Density = 0.61
     </section>
     </body>
     </html>

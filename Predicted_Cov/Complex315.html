@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.3 Cleavage and polyadenylation factor (CPSF)</title>
+<title> 0.1 IGF2BP1 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,18 +30,23 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'SYMPK', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92797" }},
-{data: { id: 'CPSF1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q10570" }},
-{data: { id: 'CPSF4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95639" }},
-{data: { id: 'SMYD2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NRG4" }},
-{data: { id: 'WDR33', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9C0J8" }}], 
- edges: [{ data: { source: 'SYMPK', target: 'CPSF1', directed: 'false', weight: 0.9997959999999999} },
-{ data: { source: 'SYMPK', target: 'WDR33', directed: 'false', weight: 0.991711} },
-{ data: { source: 'SYMPK', target: 'CPSF4', directed: 'false', weight: 0.9994379999999999} },
-{ data: { source: 'CPSF1', target: 'WDR33', directed: 'false', weight: 0.9999959999999999} },
-{ data: { source: 'CPSF1', target: 'CPSF4', directed: 'false', weight: 0.987606} },
-{ data: { source: 'CPSF4', target: 'WDR33', directed: 'false', weight: 0.999925} },
-{ data: { source: 'CPSF4', target: 'SMYD2', directed: 'false', weight: 0.316551} }]},
+elements:{nodes: [{data: { id: 'RPF1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P78424" }},
+{data: { id: 'SARS-CoV2 N', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 N.html" }},
+{data: { id: 'RBM28', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9NW13" }},
+{data: { id: 'RPL30', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62888" }},
+{data: { id: 'IGF2BP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NZI8" }},
+{data: { id: 'RRS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15050" }},
+{data: { id: 'RPF2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H7B2" }}], 
+ edges: [{ data: { source: 'SARS-CoV2 N', target: 'RBM28', directed: 'false', weight: 0.628043125, type: 'sars'} },
+{ data: { source: 'RBM28', target: 'RPF2', directed: 'false', weight: 0.9842270000000001} },
+{ data: { source: 'RBM28', target: 'RRS1', directed: 'false', weight: 0.956392} },
+{ data: { source: 'RBM28', target: 'RPF1', directed: 'false', weight: 0.35464} },
+{ data: { source: 'RPL30', target: 'IGF2BP1', directed: 'false', weight: 0.975922} },
+{ data: { source: 'RPL30', target: 'RPF2', directed: 'false', weight: 0.463631} },
+{ data: { source: 'RPF2', target: 'RRS1', directed: 'false', weight: 1.0} },
+{ data: { source: 'RPF2', target: 'RPF1', directed: 'false', weight: 0.995275} },
+{ data: { source: 'RPF2', target: 'IGF2BP1', directed: 'false', weight: 0.141565} },
+{ data: { source: 'RPF1', target: 'RRS1', directed: 'false', weight: 0.319447} }]},
 
 style: [
     {
@@ -101,7 +106,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.3 Cleavage and polyadenylation factor (CPSF)<br> Complex Score = 0.38800<br> Unweighted Density = 0.70
+    0.1 IGF2BP1 complex<br> Complex Score = 0.38750<br> Unweighted Density = 0.60
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>RBM28
     </section>
     </body>
     </html>

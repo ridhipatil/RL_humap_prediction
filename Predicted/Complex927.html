@@ -30,13 +30,23 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'VPS39', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q96JC1" }},
-{data: { id: 'TGFBRAP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WUH2" }},
-{data: { id: 'RPS6KC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96S38" }},
-{data: { id: 'VPS11', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9H270" }}], 
- edges: [{ data: { source: 'VPS39', target: 'VPS11', directed: 'false', weight: 0.9994719999999999} },
-{ data: { source: 'VPS39', target: 'RPS6KC1', directed: 'false', weight: 0.940832} },
-{ data: { source: 'TGFBRAP1', target: 'VPS11', directed: 'false', weight: 0.999975} }]},
+elements:{nodes: [{data: { id: 'AKIRIN2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q53H80" }},
+{data: { id: 'CEP120', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N960" }},
+{data: { id: 'PSMA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P25786" }},
+{data: { id: 'PRSS3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P35030" }},
+{data: { id: 'PSMG4', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q5JS54" }},
+{data: { id: 'PSMG2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q969U7" }},
+{data: { id: 'PSMB4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P28070" }}], 
+ edges: [{ data: { source: 'CEP120', target: 'PSMB4', directed: 'false', weight: 0.9899309999999999} },
+{ data: { source: 'CEP120', target: 'AKIRIN2', directed: 'false', weight: 0.109293} },
+{ data: { source: 'AKIRIN2', target: 'PSMB4', directed: 'false', weight: 0.983677} },
+{ data: { source: 'AKIRIN2', target: 'PRSS3', directed: 'false', weight: 0.125749} },
+{ data: { source: 'PSMA1', target: 'PSMG2', directed: 'false', weight: 0.999943} },
+{ data: { source: 'PSMA1', target: 'PSMB4', directed: 'false', weight: 0.10686400000000001} },
+{ data: { source: 'PSMA1', target: 'PSMG4', directed: 'false', weight: 0.848816} },
+{ data: { source: 'PSMG4', target: 'PSMG2', directed: 'false', weight: 0.867447} },
+{ data: { source: 'PSMG4', target: 'PSMB4', directed: 'false', weight: 0.149338} },
+{ data: { source: 'PSMG2', target: 'PSMB4', directed: 'false', weight: 0.999713} }]},
 
 style: [
     {
@@ -85,11 +95,6 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.37500
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        2 interacting protein(s): <br>VPS39 VPS11
     </section>
     </body>
     </html>

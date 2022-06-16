@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 CCND2-CDK4 complex</title>
+<title> 0.1 tRNA Splicing Ligase Complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,19 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'CDK2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P24941" }},
-{data: { id: 'CDKN1C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49918" }},
-{data: { id: 'CCND2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P30279" }},
-{data: { id: 'pCCNE1', score: 1, type: '', href: "https://www.uniprot.org/uniprot/A0A0G3DHS8" }}], 
- edges: [{ data: { source: 'CDK2', target: 'pCCNE1', directed: 'false', weight: 1.0} },
-{ data: { source: 'CDK2', target: 'CDKN1C', directed: 'false', weight: 0.9981620000000001} },
-{ data: { source: 'CCND2', target: 'CDKN1C', directed: 'false', weight: 0.111377} }]},
+elements:{nodes: [{data: { id: 'HNRNPL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P14866" }},
+{data: { id: 'HNRNPA3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P51991" }},
+{data: { id: 'HNRNPH3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P31942" }},
+{data: { id: 'MESD', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14696" }},
+{data: { id: 'HNRNPDL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O14979" }},
+{data: { id: 'DDX1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92499" }}], 
+ edges: [{ data: { source: 'HNRNPL', target: 'HNRNPH3', directed: 'false', weight: 0.10694300000000001} },
+{ data: { source: 'HNRNPL', target: 'HNRNPDL', directed: 'false', weight: 0.801848} },
+{ data: { source: 'HNRNPA3', target: 'HNRNPH3', directed: 'false', weight: 0.999949} },
+{ data: { source: 'HNRNPH3', target: 'HNRNPDL', directed: 'false', weight: 0.736586} },
+{ data: { source: 'HNRNPH3', target: 'DDX1', directed: 'false', weight: 0.522872} },
+{ data: { source: 'HNRNPDL', target: 'DDX1', directed: 'false', weight: 0.246432} },
+{ data: { source: 'HNRNPDL', target: 'MESD', directed: 'false', weight: 0.338873} }]},
 
 style: [
     {
@@ -96,7 +102,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 CCND2-CDK4 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.1 tRNA Splicing Ligase Complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.47
     </section>
     </body>
     </html>

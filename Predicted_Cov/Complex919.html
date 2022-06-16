@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.5 SUA1-UBA2 complex</title>
+<title> AASDH MYH6 TRIM9 MYH1 TPM1 MYH4 MYH7 ACTN2</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,14 +30,27 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'RCC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P18754" }},
-{data: { id: 'SAE1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UBE0" }},
-{data: { id: 'UBA2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UBT2" }},
-{data: { id: 'UBE2I', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P63279" }}], 
- edges: [{ data: { source: 'UBE2I', target: 'RCC1', directed: 'false', weight: 0.995208} },
-{ data: { source: 'UBE2I', target: 'UBA2', directed: 'false', weight: 0.5333899999999999} },
-{ data: { source: 'UBE2I', target: 'SAE1', directed: 'false', weight: 0.0704559} },
-{ data: { source: 'SAE1', target: 'UBA2', directed: 'false', weight: 0.9876290000000001} }]},
+elements:{nodes: [{data: { id: 'TRIM9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9C026" }},
+{data: { id: 'MYH6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P13533" }},
+{data: { id: 'ACTN2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P35609" }},
+{data: { id: 'MYH7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P12883" }},
+{data: { id: 'TPM1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P09493" }},
+{data: { id: 'AASDH', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q4L235" }},
+{data: { id: 'MYH1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P12882" }},
+{data: { id: 'MYH4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y623" }}], 
+ edges: [{ data: { source: 'TPM1', target: 'MYH1', directed: 'false', weight: 0.9386120000000001} },
+{ data: { source: 'TPM1', target: 'MYH6', directed: 'false', weight: 0.9239209999999999} },
+{ data: { source: 'TPM1', target: 'ACTN2', directed: 'false', weight: 0.787251} },
+{ data: { source: 'ACTN2', target: 'MYH6', directed: 'false', weight: 0.43309} },
+{ data: { source: 'ACTN2', target: 'MYH1', directed: 'false', weight: 0.560066} },
+{ data: { source: 'MYH4', target: 'MYH1', directed: 'false', weight: 0.313012} },
+{ data: { source: 'MYH4', target: 'TRIM9', directed: 'false', weight: 0.108694} },
+{ data: { source: 'MYH4', target: 'AASDH', directed: 'false', weight: 0.12378900000000001} },
+{ data: { source: 'MYH4', target: 'MYH7', directed: 'false', weight: 0.704715} },
+{ data: { source: 'MYH6', target: 'MYH1', directed: 'false', weight: 0.08210579999999999} },
+{ data: { source: 'AASDH', target: 'MYH1', directed: 'false', weight: 0.133451} },
+{ data: { source: 'AASDH', target: 'TRIM9', directed: 'false', weight: 0.151455} },
+{ data: { source: 'MYH1', target: 'TRIM9', directed: 'false', weight: 0.117318} }]},
 
 style: [
     {
@@ -97,7 +110,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.5 SUA1-UBA2 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
+    AASDH MYH6 TRIM9 MYH1 TPM1 MYH4 MYH7 ACTN2<br> Complex Score = 0.37500<br> Unweighted Density = 0.46
     </section>
     </body>
     </html>

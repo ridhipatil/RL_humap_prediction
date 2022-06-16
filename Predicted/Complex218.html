@@ -30,19 +30,18 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'GHB1', score: 1, type: '', href: "https://www.uniprot.org/uniprot/A0A0M6L0F6" }},
-{data: { id: 'GH1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P01241" }},
-{data: { id: 'CSH2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P0DML3" }}], 
- edges: [{ data: { source: 'GHB1', target: 'CSH2', directed: 'false', weight: 0.9999889999999999} },
-{ data: { source: 'GH1', target: 'CSH2', directed: 'false', weight: 0.998516} }]},
+elements:{nodes: [{data: { id: 'NLRP3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96P20" }},
+{data: { id: 'LTBP4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N2S1" }},
+{data: { id: 'NLRP5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P59047" }}], 
+ edges: [{ data: { source: 'NLRP3', target: 'NLRP5', directed: 'false', weight: 0.403618} },
+{ data: { source: 'NLRP3', target: 'LTBP4', directed: 'false', weight: 0.269484} },
+{ data: { source: 'LTBP4', target: 'NLRP5', directed: 'false', weight: 0.133179} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 10,
-		'width':'10',
-		'height': '10',	
+		'font-size': 30,
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}                                
@@ -54,7 +53,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
 								'line-color': 'blue',
 								'opacity': 0.5
 							}
@@ -63,10 +62,7 @@ style: [
 
 });
 cy.layout({
-    'name': 'fcose',
-		'animate':false,
-	'nodeDimensionsIncludeLabels':true,
-	'nodeSeparation': 1000
+    name: 'circle'
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -82,7 +78,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.38800
+    Complex Score  = 0.38750
     </section>
     </body>
     </html>

@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.3 CyclinD3-CDK4-CDK6-p21 complex</title>
+<title> 0.2 Hip1R-cortactin complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,14 +30,17 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'CDKN2C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P42773" }},
-{data: { id: 'CDKN1A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P38936" }},
-{data: { id: 'CCND3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P30281" }},
-{data: { id: 'CDKN1C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49918" }}], 
- edges: [{ data: { source: 'CDKN2C', target: 'CCND3', directed: 'false', weight: 0.14546199999999998} },
-{ data: { source: 'CDKN1A', target: 'CCND3', directed: 'false', weight: 0.998966} },
-{ data: { source: 'CDKN1A', target: 'CDKN1C', directed: 'false', weight: 0.029141300000000002} },
-{ data: { source: 'CCND3', target: 'CDKN1C', directed: 'false', weight: 0.7466109999999999} }]},
+elements:{nodes: [{data: { id: 'GTSE1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NYZ3" }},
+{data: { id: 'PICALM', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13492" }},
+{data: { id: 'STAMBP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95630" }},
+{data: { id: 'HNRNPDL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O14979" }},
+{data: { id: 'HIP1R', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75146" }}], 
+ edges: [{ data: { source: 'PICALM', target: 'HIP1R', directed: 'false', weight: 0.998074} },
+{ data: { source: 'PICALM', target: 'GTSE1', directed: 'false', weight: 0.558426} },
+{ data: { source: 'PICALM', target: 'HNRNPDL', directed: 'false', weight: 0.507207} },
+{ data: { source: 'PICALM', target: 'STAMBP', directed: 'false', weight: 0.0911987} },
+{ data: { source: 'HIP1R', target: 'GTSE1', directed: 'false', weight: 0.537763} },
+{ data: { source: 'HIP1R', target: 'STAMBP', directed: 'false', weight: 0.09289410000000001} }]},
 
 style: [
     {
@@ -97,7 +100,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.3 CyclinD3-CDK4-CDK6-p21 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
+    0.2 Hip1R-cortactin complex<br> Complex Score = 0.38750<br> Unweighted Density = 0.60
     </section>
     </body>
     </html>

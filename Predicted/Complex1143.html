@@ -30,14 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'RPL15', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P61313" }},
-{data: { id: 'IMP3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00425" }},
-{data: { id: 'MPHOSPH10', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/O00566" }},
-{data: { id: 'NOP53', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NZM5" }}], 
- edges: [{ data: { source: 'RPL15', target: 'NOP53', directed: 'false', weight: 0.130715} },
-{ data: { source: 'MPHOSPH10', target: 'NOP53', directed: 'false', weight: 0.30001300000000003} },
-{ data: { source: 'MPHOSPH10', target: 'IMP3', directed: 'false', weight: 0.23198000000000002} },
-{ data: { source: 'NOP53', target: 'IMP3', directed: 'false', weight: 0.041506699999999994} }]},
+elements:{nodes: [{data: { id: 'GSS', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P48637" }},
+{data: { id: 'TNRC6C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HCJ0" }},
+{data: { id: 'GGA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UJY5" }},
+{data: { id: 'RAB23', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9ULC3" }}], 
+ edges: [{ data: { source: 'GSS', target: 'TNRC6C', directed: 'false', weight: 0.411704} },
+{ data: { source: 'TNRC6C', target: 'GGA1', directed: 'false', weight: 0.53199} },
+{ data: { source: 'RAB23', target: 'GGA1', directed: 'false', weight: 0.273802} }]},
 
 style: [
     {
@@ -85,12 +84,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.37500
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>MPHOSPH10
+    Complex Score  = 0.30000
     </section>
     </body>
     </html>

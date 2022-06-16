@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.5 TFIIH transcription factor core complex</title>
+<title> LRFN3 TMEM30A NETO2 DNAJC16 DIPK1B IMPAD1 PGAP1</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,26 +30,25 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'FGL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q08830" }},
-{data: { id: 'GTF2H5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6ZYL4" }},
-{data: { id: 'GTF2H1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P32780" }},
-{data: { id: 'C1orf198', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q9H425" }},
-{data: { id: 'GTF2H4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92759" }},
-{data: { id: 'GTF2H3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13889" }},
-{data: { id: 'ERCC3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P19447" }}], 
- edges: [{ data: { source: 'FGL1', target: 'GTF2H1', directed: 'false', weight: 0.053073699999999994} },
-{ data: { source: 'FGL1', target: 'GTF2H3', directed: 'false', weight: 0.195772} },
-{ data: { source: 'FGL1', target: 'C1orf198', directed: 'false', weight: 0.213452} },
-{ data: { source: 'GTF2H5', target: 'GTF2H1', directed: 'false', weight: 0.980325} },
-{ data: { source: 'GTF2H5', target: 'ERCC3', directed: 'false', weight: 0.9513860000000001} },
-{ data: { source: 'GTF2H5', target: 'GTF2H3', directed: 'false', weight: 0.9858549999999999} },
-{ data: { source: 'GTF2H5', target: 'GTF2H4', directed: 'false', weight: 0.9825440000000001} },
-{ data: { source: 'GTF2H1', target: 'ERCC3', directed: 'false', weight: 0.999914} },
-{ data: { source: 'GTF2H1', target: 'GTF2H3', directed: 'false', weight: 0.999901} },
-{ data: { source: 'GTF2H1', target: 'GTF2H4', directed: 'false', weight: 0.997658} },
-{ data: { source: 'GTF2H4', target: 'ERCC3', directed: 'false', weight: 0.9996120000000001} },
-{ data: { source: 'GTF2H4', target: 'GTF2H3', directed: 'false', weight: 0.9298} },
-{ data: { source: 'GTF2H3', target: 'ERCC3', directed: 'false', weight: 0.9446} }]},
+elements:{nodes: [{data: { id: 'IMPAD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NX62" }},
+{data: { id: 'DNAJC16', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q9Y2G8" }},
+{data: { id: 'TMEM30A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NV96" }},
+{data: { id: 'PGAP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q75T13" }},
+{data: { id: 'DIPK1B', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q5VUD6" }},
+{data: { id: 'LRFN3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BTN0" }},
+{data: { id: 'NETO2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NC67" }}], 
+ edges: [{ data: { source: 'IMPAD1', target: 'TMEM30A', directed: 'false', weight: 0.154798} },
+{ data: { source: 'IMPAD1', target: 'PGAP1', directed: 'false', weight: 0.34665999999999997} },
+{ data: { source: 'IMPAD1', target: 'DIPK1B', directed: 'false', weight: 0.276586} },
+{ data: { source: 'IMPAD1', target: 'NETO2', directed: 'false', weight: 0.143488} },
+{ data: { source: 'IMPAD1', target: 'LRFN3', directed: 'false', weight: 0.22075999999999998} },
+{ data: { source: 'TMEM30A', target: 'PGAP1', directed: 'false', weight: 0.780148} },
+{ data: { source: 'TMEM30A', target: 'NETO2', directed: 'false', weight: 0.400802} },
+{ data: { source: 'PGAP1', target: 'NETO2', directed: 'false', weight: 0.299547} },
+{ data: { source: 'LRFN3', target: 'DIPK1B', directed: 'false', weight: 0.329342} },
+{ data: { source: 'DIPK1B', target: 'NETO2', directed: 'false', weight: 0.49374300000000004} },
+{ data: { source: 'DIPK1B', target: 'DNAJC16', directed: 'false', weight: 0.145316} },
+{ data: { source: 'DNAJC16', target: 'NETO2', directed: 'false', weight: 0.34045} }]},
 
 style: [
     {
@@ -109,7 +108,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.5 TFIIH transcription factor core complex<br> Complex Score = 0.38800<br> Unweighted Density = 0.62
+    LRFN3 TMEM30A NETO2 DNAJC16 DIPK1B IMPAD1 PGAP1<br> Complex Score = 0.38750<br> Unweighted Density = 0.57
     </section>
     </body>
     </html>

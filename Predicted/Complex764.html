@@ -30,13 +30,23 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'ASB13', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WXK3" }},
-{data: { id: 'RNF7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UBF6" }},
-{data: { id: 'SOCS2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O14508" }},
-{data: { id: 'CUL5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q93034" }}], 
- edges: [{ data: { source: 'ASB13', target: 'CUL5', directed: 'false', weight: 0.5945189999999999} },
-{ data: { source: 'RNF7', target: 'CUL5', directed: 'false', weight: 0.277143} },
-{ data: { source: 'SOCS2', target: 'CUL5', directed: 'false', weight: 0.196679} }]},
+elements:{nodes: [{data: { id: 'PPP1CA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62136" }},
+{data: { id: 'LRRFIP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q32MZ4" }},
+{data: { id: 'TMOD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P28289" }},
+{data: { id: 'MYLK', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15746" }},
+{data: { id: 'PPP1CB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62140" }},
+{data: { id: 'CALM1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P0DP23" }},
+{data: { id: 'PLEC', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15149" }}], 
+ edges: [{ data: { source: 'PPP1CA', target: 'PPP1CB', directed: 'false', weight: 1.0} },
+{ data: { source: 'LRRFIP1', target: 'TMOD1', directed: 'false', weight: 0.838404} },
+{ data: { source: 'LRRFIP1', target: 'CALM1', directed: 'false', weight: 0.10596099999999999} },
+{ data: { source: 'TMOD1', target: 'CALM1', directed: 'false', weight: 0.2814} },
+{ data: { source: 'MYLK', target: 'PPP1CB', directed: 'false', weight: 0.616456} },
+{ data: { source: 'MYLK', target: 'CALM1', directed: 'false', weight: 0.162269} },
+{ data: { source: 'MYLK', target: 'PLEC', directed: 'false', weight: 0.22568000000000002} },
+{ data: { source: 'PPP1CB', target: 'PLEC', directed: 'false', weight: 0.39502} },
+{ data: { source: 'PPP1CB', target: 'CALM1', directed: 'false', weight: 0.347072} },
+{ data: { source: 'CALM1', target: 'PLEC', directed: 'false', weight: 0.2159} }]},
 
 style: [
     {

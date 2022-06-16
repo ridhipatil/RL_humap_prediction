@@ -30,13 +30,18 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'ILF2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q12905" }},
-{data: { id: 'MOV10', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9HCE1" }},
-{data: { id: 'SYNCRIP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60506" }},
-{data: { id: 'RBMX', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P38159" }}], 
- edges: [{ data: { source: 'ILF2', target: 'SYNCRIP', directed: 'false', weight: 0.999466} },
-{ data: { source: 'ILF2', target: 'RBMX', directed: 'false', weight: 0.333929} },
-{ data: { source: 'MOV10', target: 'SYNCRIP', directed: 'false', weight: 0.8633799999999999} }]},
+elements:{nodes: [{data: { id: 'APRT', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P07741" }},
+{data: { id: 'ADA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P00813" }},
+{data: { id: 'PUDP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q08623" }},
+{data: { id: 'PCK2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16822" }},
+{data: { id: 'UBE2D2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62837" }},
+{data: { id: 'PDXP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96GD0" }}], 
+ edges: [{ data: { source: 'PUDP', target: 'APRT', directed: 'false', weight: 0.330636} },
+{ data: { source: 'PUDP', target: 'UBE2D2', directed: 'false', weight: 0.588332} },
+{ data: { source: 'PUDP', target: 'PDXP', directed: 'false', weight: 0.014013900000000001} },
+{ data: { source: 'PCK2', target: 'ADA', directed: 'false', weight: 0.7711100000000001} },
+{ data: { source: 'PDXP', target: 'APRT', directed: 'false', weight: 0.8094} },
+{ data: { source: 'ADA', target: 'APRT', directed: 'false', weight: 0.988017} }]},
 
 style: [
     {
@@ -84,12 +89,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.37500
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>MOV10
+    Complex Score  = 0.35000
     </section>
     </body>
     </html>

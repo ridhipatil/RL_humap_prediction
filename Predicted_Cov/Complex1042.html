@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 PNUTS-PP1 complex match 3</title>
+<title> 0.2 HMGB1-HMGB2-HSC70-ERP60-GAPDH complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,22 +30,18 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'PPP1CC', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P36873" }},
-{data: { id: 'PPP1CA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62136" }},
-{data: { id: 'CDK9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P50750" }},
-{data: { id: 'RPAP3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H6T3" }},
-{data: { id: 'PDRG1', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9NUG6" }},
-{data: { id: 'PIH1D1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NWS0" }}], 
- edges: [{ data: { source: 'PPP1CC', target: 'CDK9', directed: 'false', weight: 0.023069} },
-{ data: { source: 'PPP1CC', target: 'PPP1CA', directed: 'false', weight: 1.0} },
-{ data: { source: 'PPP1CC', target: 'PDRG1', directed: 'false', weight: 0.691231} },
-{ data: { source: 'PPP1CC', target: 'PIH1D1', directed: 'false', weight: 0.24447399999999997} },
-{ data: { source: 'PPP1CA', target: 'PDRG1', directed: 'false', weight: 0.39724899999999996} },
-{ data: { source: 'PPP1CA', target: 'RPAP3', directed: 'false', weight: 0.0742137} },
-{ data: { source: 'PPP1CA', target: 'PIH1D1', directed: 'false', weight: 0.0219691} },
-{ data: { source: 'RPAP3', target: 'PIH1D1', directed: 'false', weight: 1.0} },
-{ data: { source: 'RPAP3', target: 'PDRG1', directed: 'false', weight: 0.032574900000000004} },
-{ data: { source: 'PDRG1', target: 'PIH1D1', directed: 'false', weight: 0.9993850000000001} }]},
+elements:{nodes: [{data: { id: 'HMGB1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P09429" }},
+{data: { id: 'SORBS2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O94875" }},
+{data: { id: 'S100A10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P60903" }},
+{data: { id: 'TMOD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P28289" }},
+{data: { id: 'ANXA2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P07355" }},
+{data: { id: 'HMGB2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P26583" }}], 
+ edges: [{ data: { source: 'SORBS2', target: 'TMOD1', directed: 'false', weight: 0.39519699999999996} },
+{ data: { source: 'SORBS2', target: 'ANXA2', directed: 'false', weight: 0.224423} },
+{ data: { source: 'SORBS2', target: 'HMGB2', directed: 'false', weight: 0.12291500000000001} },
+{ data: { source: 'S100A10', target: 'ANXA2', directed: 'false', weight: 0.999605} },
+{ data: { source: 'HMGB2', target: 'ANXA2', directed: 'false', weight: 0.0891191} },
+{ data: { source: 'HMGB2', target: 'HMGB1', directed: 'false', weight: 0.938623} }]},
 
 style: [
     {
@@ -105,7 +101,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 PNUTS-PP1 complex match 3<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
+    0.2 HMGB1-HMGB2-HSC70-ERP60-GAPDH complex<br> Complex Score = 0.35000<br> Unweighted Density = 0.40
     </section>
     </body>
     </html>

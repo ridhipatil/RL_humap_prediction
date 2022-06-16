@@ -30,14 +30,11 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'HEL-S-29', score: 3, type: '', href: "https://www.uniprot.org/uniprot/V9HWH2" }},
-{data: { id: 'TCEB1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15369" }},
-{data: { id: 'ELOB', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q15370" }},
-{data: { id: 'ASB9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96DX5" }}], 
- edges: [{ data: { source: 'HEL-S-29', target: 'ASB9', directed: 'false', weight: 0.7252649999999999} },
-{ data: { source: 'TCEB1', target: 'ELOB', directed: 'false', weight: 1.0} },
-{ data: { source: 'TCEB1', target: 'ASB9', directed: 'false', weight: 0.5698529999999999} },
-{ data: { source: 'ELOB', target: 'ASB9', directed: 'false', weight: 0.0493158} }]},
+elements:{nodes: [{data: { id: 'CMTM8', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q8IZV2" }},
+{data: { id: 'GBA2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HCG7" }},
+{data: { id: 'ILVBL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/A1L0T0" }}], 
+ edges: [{ data: { source: 'CMTM8', target: 'ILVBL', directed: 'false', weight: 0.28781100000000004} },
+{ data: { source: 'GBA2', target: 'ILVBL', directed: 'false', weight: 0.610462} }]},
 
 style: [
     {
@@ -86,11 +83,6 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.37500
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>ELOB
     </section>
     </body>
     </html>

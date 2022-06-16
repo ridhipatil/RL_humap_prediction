@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 LATS2-SIAH2-ZYX complex</title>
+<title> 0.2 MMAA-MUT complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,16 +30,16 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'MOBKL1A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q7L9L4" }},
-{data: { id: 'STK38L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y2H1" }},
-{data: { id: 'MOB1A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H8S9" }},
-{data: { id: 'LATS2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NRM7" }},
-{data: { id: 'STK38', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15208" }}], 
- edges: [{ data: { source: 'MOBKL1A', target: 'MOB1A', directed: 'false', weight: 1.0} },
-{ data: { source: 'MOBKL1A', target: 'LATS2', directed: 'false', weight: 0.9999969999999999} },
-{ data: { source: 'MOBKL1A', target: 'STK38L', directed: 'false', weight: 0.424834} },
-{ data: { source: 'MOBKL1A', target: 'STK38', directed: 'false', weight: 0.129952} },
-{ data: { source: 'STK38L', target: 'MOB1A', directed: 'false', weight: 0.9612360000000001} }]},
+elements:{nodes: [{data: { id: 'WARS', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P23381" }},
+{data: { id: 'CAMK2D', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13557" }},
+{data: { id: 'CAMK2G', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13555" }},
+{data: { id: 'MMUT', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P22033" }},
+{data: { id: 'GRPEL2', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q8TAA5" }}], 
+ edges: [{ data: { source: 'CAMK2G', target: 'CAMK2D', directed: 'false', weight: 0.867557} },
+{ data: { source: 'CAMK2G', target: 'MMUT', directed: 'false', weight: 0.13081099999999998} },
+{ data: { source: 'MMUT', target: 'CAMK2D', directed: 'false', weight: 0.730376} },
+{ data: { source: 'MMUT', target: 'WARS', directed: 'false', weight: 0.641473} },
+{ data: { source: 'MMUT', target: 'GRPEL2', directed: 'false', weight: 0.342802} }]},
 
 style: [
     {
@@ -99,7 +99,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 LATS2-SIAH2-ZYX complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.2 MMAA-MUT complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

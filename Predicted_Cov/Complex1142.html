@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> MAK16 WDR74 RASSF8 FRMD6</title>
+<title> 0.2 PRMT1 complex match 3</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,14 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'MAK16', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9BXY0" }},
-{data: { id: 'WDR74', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6RFH5" }},
-{data: { id: 'FRMD6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96NE9" }},
-{data: { id: 'RASSF8', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q8NHQ8" }}], 
- edges: [{ data: { source: 'MAK16', target: 'WDR74', directed: 'false', weight: 0.21019899999999997} },
-{ data: { source: 'MAK16', target: 'FRMD6', directed: 'false', weight: 0.12206099999999999} },
-{ data: { source: 'FRMD6', target: 'RASSF8', directed: 'false', weight: 0.181065} }]},
+elements:{nodes: [{data: { id: 'SYNCRIP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60506" }},
+{data: { id: 'MAP3K4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y6R4" }},
+{data: { id: 'PRMT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99873" }},
+{data: { id: 'HNRNPK', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P61978" }}], 
+ edges: [{ data: { source: 'MAP3K4', target: 'SYNCRIP', directed: 'false', weight: 0.349302} },
+{ data: { source: 'HNRNPK', target: 'SYNCRIP', directed: 'false', weight: 0.9759180000000001} },
+{ data: { source: 'HNRNPK', target: 'PRMT1', directed: 'false', weight: 0.00296365} },
+{ data: { source: 'SYNCRIP', target: 'PRMT1', directed: 'false', weight: 0.859107} }]},
 
 style: [
     {
@@ -96,7 +97,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    MAK16 WDR74 RASSF8 FRMD6<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.2 PRMT1 complex match 3<br> Complex Score = 0.30000<br> Unweighted Density = 0.67
     </section>
     </body>
     </html>

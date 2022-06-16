@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 Multisynthetase complex match 2</title>
+<title> 0.1 Respiratory chain complex I (incomplete intermediate), mitochondrial</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,33 +30,32 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'QARS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P47897" }},
-{data: { id: 'SDCBP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00560" }},
-{data: { id: 'EEF1E1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43324" }},
-{data: { id: 'RARS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P54136" }},
-{data: { id: 'EPRS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P07814" }}], 
- edges: [{ data: { source: 'QARS1', target: 'RARS1', directed: 'false', weight: 1.0} },
-{ data: { source: 'QARS1', target: 'EPRS1', directed: 'false', weight: 0.992661} },
-{ data: { source: 'QARS1', target: 'EEF1E1', directed: 'false', weight: 0.9875790000000001} },
-{ data: { source: 'SDCBP', target: 'RARS1', directed: 'false', weight: 0.23111700000000002} },
-{ data: { source: 'SDCBP', target: 'EPRS1', directed: 'false', weight: 0.0267562} },
-{ data: { source: 'SDCBP', target: 'EEF1E1', directed: 'false', weight: 0.08886530000000001} },
-{ data: { source: 'EEF1E1', target: 'RARS1', directed: 'false', weight: 0.9875780000000001} },
-{ data: { source: 'EEF1E1', target: 'EPRS1', directed: 'false', weight: 0.9874870000000001} },
-{ data: { source: 'RARS1', target: 'EPRS1', directed: 'false', weight: 0.9999819999999999} }]},
+elements:{nodes: [{data: { id: 'NDUFS6', score: 4, type: '', href: "https://www.uniprot.org/uniprot/O75380" }},
+{data: { id: 'NDUFB7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P17568" }},
+{data: { id: 'ENDOD1', score: 4, type: '', href: "https://www.uniprot.org/uniprot/O94919" }},
+{data: { id: 'PTGES', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O14684" }},
+{data: { id: 'GOLT1B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y3E0" }}], 
+ edges: [{ data: { source: 'ENDOD1', target: 'GOLT1B', directed: 'false', weight: 0.722091} },
+{ data: { source: 'ENDOD1', target: 'PTGES', directed: 'false', weight: 0.125737} },
+{ data: { source: 'GOLT1B', target: 'NDUFS6', directed: 'false', weight: 0.952593} },
+{ data: { source: 'GOLT1B', target: 'NDUFB7', directed: 'false', weight: 0.766526} },
+{ data: { source: 'GOLT1B', target: 'PTGES', directed: 'false', weight: 0.618881} },
+{ data: { source: 'NDUFS6', target: 'NDUFB7', directed: 'false', weight: 0.609334} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 30,
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}  
                                  if ( ele.data('type') == 'sars' ){return 'triangle'}   
   return 'rectangle';
   },            
-            'background-color': function( ele ){ 
+             'background-color': function( ele ){ 
                                 if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
 								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
                                  if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
@@ -70,7 +69,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
 								'line-color': function( ele ){ 
                                  if ( ele.data('type') == 'sars' ){return 'red'}   
   return 'blue';
@@ -82,7 +81,10 @@ style: [
 
 });
 cy.layout({
-    'name': 'circle'
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -98,7 +100,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 Multisynthetase complex match 2<br> Complex Score = 0.37500<br> Unweighted Density = 0.90
+    0.1 Respiratory chain complex I (incomplete intermediate), mitochondrial<br> Complex Score = 0.38750<br> Unweighted Density = 0.60
     </section>
     </body>
     </html>

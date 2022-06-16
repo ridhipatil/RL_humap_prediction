@@ -30,14 +30,16 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'PPIF', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P30405" }},
-{data: { id: 'LYPLA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75608" }},
-{data: { id: 'CTSO', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P43234" }},
-{data: { id: 'ALDH4A1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P30038" }}], 
- edges: [{ data: { source: 'PPIF', target: 'ALDH4A1', directed: 'false', weight: 0.682384} },
-{ data: { source: 'PPIF', target: 'LYPLA1', directed: 'false', weight: 0.104176} },
-{ data: { source: 'CTSO', target: 'LYPLA1', directed: 'false', weight: 0.187323} },
-{ data: { source: 'LYPLA1', target: 'ALDH4A1', directed: 'false', weight: 0.0506116} }]},
+elements:{nodes: [{data: { id: 'GFPT2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O94808" }},
+{data: { id: 'ACADM', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P11310" }},
+{data: { id: 'SIRT6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N6T7" }},
+{data: { id: 'TARSL2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/A2RTX5" }},
+{data: { id: 'GFPT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q06210" }}], 
+ edges: [{ data: { source: 'SIRT6', target: 'GFPT2', directed: 'false', weight: 0.9026799999999999} },
+{ data: { source: 'SIRT6', target: 'GFPT1', directed: 'false', weight: 0.6234430000000001} },
+{ data: { source: 'GFPT2', target: 'TARSL2', directed: 'false', weight: 0.6229279999999999} },
+{ data: { source: 'GFPT2', target: 'ACADM', directed: 'false', weight: 0.39523600000000003} },
+{ data: { source: 'TARSL2', target: 'GFPT1', directed: 'false', weight: 0.46690200000000004} }]},
 
 style: [
     {
@@ -86,6 +88,11 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.37500
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>ACADM
     </section>
     </body>
     </html>

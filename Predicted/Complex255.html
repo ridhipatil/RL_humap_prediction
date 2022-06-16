@@ -30,19 +30,18 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'ARID3C', score: 3, type: '', href: "https://www.uniprot.org/uniprot/A6NKF2" }},
-{data: { id: 'ARID3B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IVW6" }},
-{data: { id: 'ARID3A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99856" }}], 
- edges: [{ data: { source: 'ARID3C', target: 'ARID3A', directed: 'false', weight: 0.9998870000000001} },
-{ data: { source: 'ARID3B', target: 'ARID3A', directed: 'false', weight: 0.846742} }]},
+elements:{nodes: [{data: { id: 'RD3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q7Z3Z2" }},
+{data: { id: 'LRBA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P50851" }},
+{data: { id: 'NBEA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NFP9" }}], 
+ edges: [{ data: { source: 'RD3', target: 'NBEA', directed: 'false', weight: 0.8411290000000001} },
+{ data: { source: 'RD3', target: 'LRBA', directed: 'false', weight: 0.400767} },
+{ data: { source: 'LRBA', target: 'NBEA', directed: 'false', weight: 0.108694} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 10,
-		'width':'10',
-		'height': '10',	
+		'font-size': 30,
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}                                
@@ -54,7 +53,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
 								'line-color': 'blue',
 								'opacity': 0.5
 							}
@@ -63,10 +62,7 @@ style: [
 
 });
 cy.layout({
-    'name': 'fcose',
-		'animate':false,
-	'nodeDimensionsIncludeLabels':true,
-	'nodeSeparation': 1000
+    name: 'circle'
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -82,7 +78,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.38800
+    Complex Score  = 0.38750
     </section>
     </body>
     </html>

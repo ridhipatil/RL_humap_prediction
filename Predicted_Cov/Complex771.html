@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.3 p21(ras)GAP-Fyn-Lyn-Yes complex, thrombin stimulated</title>
+<title> 0.2 CTFC-TAF1 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,16 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'c-fgr', score: 1, type: '', href: "https://www.uniprot.org/uniprot/P78453" }},
-{data: { id: 'CDK14', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O94921" }},
-{data: { id: 'FYN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P06241" }},
-{data: { id: 'YES1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P07947" }}], 
- edges: [{ data: { source: 'YES1', target: 'c-fgr', directed: 'false', weight: 0.581932} },
-{ data: { source: 'YES1', target: 'FYN', directed: 'false', weight: 0.442597} },
-{ data: { source: 'CDK14', target: 'c-fgr', directed: 'false', weight: 0.761522} }]},
+elements:{nodes: [{data: { id: 'RSBN1L', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q6PCB5" }},
+{data: { id: 'SET', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q01105" }},
+{data: { id: 'ZNF445', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P59923" }},
+{data: { id: 'ZNF574', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6ZN55" }},
+{data: { id: 'C14orf93', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q9H972" }}], 
+ edges: [{ data: { source: 'RSBN1L', target: 'ZNF574', directed: 'false', weight: 0.21061300000000002} },
+{ data: { source: 'SET', target: 'ZNF445', directed: 'false', weight: 0.890706} },
+{ data: { source: 'SET', target: 'C14orf93', directed: 'false', weight: 0.572087} },
+{ data: { source: 'SET', target: 'ZNF574', directed: 'false', weight: 0.5667840000000001} },
+{ data: { source: 'ZNF445', target: 'C14orf93', directed: 'false', weight: 0.144297} }]},
 
 style: [
     {
@@ -96,7 +99,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.3 p21(ras)GAP-Fyn-Lyn-Yes complex, thrombin stimulated<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.2 CTFC-TAF1 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.4 MPP7-DLG1-LIN7C complex</title>
+<title> ALOX12B TGM3 NCCRP1 KPRP SBSN POF1B</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,21 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'MPP6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99547" }},
-{data: { id: 'DLG1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q12959" }},
-{data: { id: 'ABLIM2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6H8Q1" }},
-{data: { id: 'LIN7C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NUP9" }}], 
- edges: [{ data: { source: 'MPP6', target: 'LIN7C', directed: 'false', weight: 0.999993} },
-{ data: { source: 'ABLIM2', target: 'LIN7C', directed: 'false', weight: 0.8546020000000001} },
-{ data: { source: 'DLG1', target: 'LIN7C', directed: 'false', weight: 1.0} }]},
+elements:{nodes: [{data: { id: 'ALOX12B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75342" }},
+{data: { id: 'KPRP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5T749" }},
+{data: { id: 'POF1B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WVV4" }},
+{data: { id: 'NCCRP1', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q6ZVX7" }},
+{data: { id: 'TGM3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q08188" }},
+{data: { id: 'SBSN', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q6UWP8" }}], 
+ edges: [{ data: { source: 'TGM3', target: 'NCCRP1', directed: 'false', weight: 0.757671} },
+{ data: { source: 'TGM3', target: 'POF1B', directed: 'false', weight: 0.376895} },
+{ data: { source: 'TGM3', target: 'SBSN', directed: 'false', weight: 0.225039} },
+{ data: { source: 'ALOX12B', target: 'NCCRP1', directed: 'false', weight: 0.329353} },
+{ data: { source: 'ALOX12B', target: 'KPRP', directed: 'false', weight: 0.422703} },
+{ data: { source: 'KPRP', target: 'NCCRP1', directed: 'false', weight: 0.5} },
+{ data: { source: 'POF1B', target: 'NCCRP1', directed: 'false', weight: 0.8219690000000001} },
+{ data: { source: 'POF1B', target: 'SBSN', directed: 'false', weight: 0.43065600000000004} },
+{ data: { source: 'NCCRP1', target: 'SBSN', directed: 'false', weight: 0.702083} }]},
 
 style: [
     {
@@ -96,7 +104,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.4 MPP7-DLG1-LIN7C complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    ALOX12B TGM3 NCCRP1 KPRP SBSN POF1B<br> Complex Score = 0.38750<br> Unweighted Density = 0.60
     </section>
     </body>
     </html>

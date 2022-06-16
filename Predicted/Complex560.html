@@ -30,23 +30,32 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'RPL35', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P42766" }},
-{data: { id: 'PUM3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15397" }},
-{data: { id: 'RPLP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P05386" }},
-{data: { id: 'RPL3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P39023" }},
-{data: { id: 'RPLP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P05387" }},
-{data: { id: 'RPF1', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9H9Y2" }}], 
- edges: [{ data: { source: 'RPL35', target: 'RPL3', directed: 'false', weight: 1.0} },
-{ data: { source: 'RPL35', target: 'RPLP2', directed: 'false', weight: 0.999793} },
-{ data: { source: 'RPL35', target: 'RPF1', directed: 'false', weight: 0.0214324} },
-{ data: { source: 'PUM3', target: 'RPL3', directed: 'false', weight: 0.10715899999999999} },
-{ data: { source: 'PUM3', target: 'RPLP2', directed: 'false', weight: 0.409764} },
-{ data: { source: 'PUM3', target: 'RPLP1', directed: 'false', weight: 0.130304} },
-{ data: { source: 'PUM3', target: 'RPF1', directed: 'false', weight: 0.24381399999999998} },
-{ data: { source: 'RPLP1', target: 'RPL3', directed: 'false', weight: 0.989275} },
-{ data: { source: 'RPLP1', target: 'RPLP2', directed: 'false', weight: 0.999993} },
-{ data: { source: 'RPL3', target: 'RPLP2', directed: 'false', weight: 0.9902219999999999} },
-{ data: { source: 'RPL3', target: 'RPF1', directed: 'false', weight: 0.023717099999999998} }]},
+elements:{nodes: [{data: { id: 'FAF2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96CS3" }},
+{data: { id: 'PIP4P1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86T03" }},
+{data: { id: 'VPS9D1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y2B5" }},
+{data: { id: 'VPS4B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75351" }},
+{data: { id: 'SARAF', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96BY9" }},
+{data: { id: 'SETDB1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15047" }},
+{data: { id: 'SPAST', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UBP0" }},
+{data: { id: 'CAPN7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y6W3" }}], 
+ edges: [{ data: { source: 'SPAST', target: 'VPS4B', directed: 'false', weight: 0.0385884} },
+{ data: { source: 'SPAST', target: 'VPS9D1', directed: 'false', weight: 0.608984} },
+{ data: { source: 'SPAST', target: 'SARAF', directed: 'false', weight: 0.0921996} },
+{ data: { source: 'SPAST', target: 'PIP4P1', directed: 'false', weight: 0.0748257} },
+{ data: { source: 'SPAST', target: 'CAPN7', directed: 'false', weight: 0.059722000000000004} },
+{ data: { source: 'FAF2', target: 'SETDB1', directed: 'false', weight: 0.536647} },
+{ data: { source: 'FAF2', target: 'SARAF', directed: 'false', weight: 0.455859} },
+{ data: { source: 'PIP4P1', target: 'VPS4B', directed: 'false', weight: 0.29188600000000003} },
+{ data: { source: 'PIP4P1', target: 'VPS9D1', directed: 'false', weight: 0.0960696} },
+{ data: { source: 'PIP4P1', target: 'CAPN7', directed: 'false', weight: 0.09052510000000001} },
+{ data: { source: 'PIP4P1', target: 'SARAF', directed: 'false', weight: 0.13355799999999998} },
+{ data: { source: 'VPS9D1', target: 'VPS4B', directed: 'false', weight: 0.943733} },
+{ data: { source: 'VPS9D1', target: 'CAPN7', directed: 'false', weight: 0.396848} },
+{ data: { source: 'VPS9D1', target: 'SARAF', directed: 'false', weight: 0.31495} },
+{ data: { source: 'VPS4B', target: 'CAPN7', directed: 'false', weight: 0.595145} },
+{ data: { source: 'VPS4B', target: 'SARAF', directed: 'false', weight: 0.39149} },
+{ data: { source: 'SARAF', target: 'SETDB1', directed: 'false', weight: 0.104198} },
+{ data: { source: 'SARAF', target: 'CAPN7', directed: 'false', weight: 0.251742} }]},
 
 style: [
     {
@@ -94,7 +103,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.37500
+    Complex Score  = 0.38750
     </section>
     </body>
     </html>

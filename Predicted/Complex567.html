@@ -30,13 +30,18 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'HEL-S-89n', score: 5, type: '', href: "https://www.uniprot.org/uniprot/V9HWB4" }},
-{data: { id: 'BRAF', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P15056" }},
-{data: { id: 'YWHAZ', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P63104" }},
-{data: { id: 'LMNB1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P20700" }}], 
- edges: [{ data: { source: 'LMNB1', target: 'YWHAZ', directed: 'false', weight: 0.9875510000000001} },
-{ data: { source: 'BRAF', target: 'YWHAZ', directed: 'false', weight: 0.281002} },
-{ data: { source: 'YWHAZ', target: 'HEL-S-89n', directed: 'false', weight: 0.185961} }]},
+elements:{nodes: [{data: { id: 'SERTAD4', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q9NUC0" }},
+{data: { id: 'PPP2R1B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P30154" }},
+{data: { id: 'PPP2R1A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P30153" }},
+{data: { id: 'PPP2R5D', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14738" }},
+{data: { id: 'PPP2R5E', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16537" }}], 
+ edges: [{ data: { source: 'PPP2R1B', target: 'PPP2R1A', directed: 'false', weight: 0.999999} },
+{ data: { source: 'PPP2R1B', target: 'PPP2R5E', directed: 'false', weight: 0.806068} },
+{ data: { source: 'PPP2R1B', target: 'PPP2R5D', directed: 'false', weight: 0.7641180000000001} },
+{ data: { source: 'PPP2R1B', target: 'SERTAD4', directed: 'false', weight: 0.373666} },
+{ data: { source: 'PPP2R5D', target: 'PPP2R1A', directed: 'false', weight: 0.997022} },
+{ data: { source: 'PPP2R5D', target: 'PPP2R5E', directed: 'false', weight: 0.691551} },
+{ data: { source: 'SERTAD4', target: 'PPP2R1A', directed: 'false', weight: 0.306738} }]},
 
 style: [
     {
@@ -84,7 +89,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.37500
+    Complex Score  = 0.38750
     </section>
     </body>
     </html>

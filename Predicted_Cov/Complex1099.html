@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.8 CAK complex (Cdk-activating kinase complex)</title>
+<title> 0.2 HDAC1-associated core complex cII</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,14 +30,14 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'MNAT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P51948" }},
-{data: { id: 'CCNH', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P51946" }},
-{data: { id: 'ERCC5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P28715" }},
-{data: { id: 'CDK7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P50613" }}], 
- edges: [{ data: { source: 'ERCC5', target: 'CCNH', directed: 'false', weight: 0.819789} },
-{ data: { source: 'CCNH', target: 'MNAT1', directed: 'false', weight: 0.99995} },
-{ data: { source: 'CCNH', target: 'CDK7', directed: 'false', weight: 0.947509} },
-{ data: { source: 'MNAT1', target: 'CDK7', directed: 'false', weight: 0.778617} }]},
+elements:{nodes: [{data: { id: 'USP15', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y4E8" }},
+{data: { id: 'MBD2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UBB5" }},
+{data: { id: 'GATAD2A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86YP4" }},
+{data: { id: 'MTA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13330" }}], 
+ edges: [{ data: { source: 'MBD2', target: 'MTA1', directed: 'false', weight: 0.9995129999999999} },
+{ data: { source: 'MBD2', target: 'GATAD2A', directed: 'false', weight: 0.999499} },
+{ data: { source: 'GATAD2A', target: 'MTA1', directed: 'false', weight: 0.56242} },
+{ data: { source: 'MTA1', target: 'USP15', directed: 'false', weight: 0.5} }]},
 
 style: [
     {
@@ -97,7 +97,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.8 CAK complex (Cdk-activating kinase complex)<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
+    0.2 HDAC1-associated core complex cII<br> Complex Score = 0.30000<br> Unweighted Density = 0.67
     </section>
     </body>
     </html>

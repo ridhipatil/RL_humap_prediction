@@ -30,13 +30,16 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'MEAF6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HAF1" }},
-{data: { id: 'FOXR2', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q6PJQ5" }},
-{data: { id: 'ARNT', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P27540" }},
-{data: { id: 'NPAS1', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q99742" }}], 
- edges: [{ data: { source: 'MEAF6', target: 'FOXR2', directed: 'false', weight: 0.11366500000000002} },
-{ data: { source: 'FOXR2', target: 'ARNT', directed: 'false', weight: 0.9315680000000001} },
-{ data: { source: 'ARNT', target: 'NPAS1', directed: 'false', weight: 0.7116680000000001} }]},
+elements:{nodes: [{data: { id: 'MCM2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P33993" }},
+{data: { id: 'MINDY2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NBR6" }},
+{data: { id: 'MCM5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P33992" }},
+{data: { id: 'DNMT1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P26358" }},
+{data: { id: 'PTRH2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y3E5" }}], 
+ edges: [{ data: { source: 'MCM2', target: 'MCM5', directed: 'false', weight: 0.999976} },
+{ data: { source: 'MCM2', target: 'DNMT1', directed: 'false', weight: 0.0597354} },
+{ data: { source: 'DNMT1', target: 'MCM5', directed: 'false', weight: 0.760243} },
+{ data: { source: 'PTRH2', target: 'MCM5', directed: 'false', weight: 0.410342} },
+{ data: { source: 'PTRH2', target: 'MINDY2', directed: 'false', weight: 0.357665} }]},
 
 style: [
     {
@@ -85,6 +88,11 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.37500
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>DNMT1
     </section>
     </body>
     </html>

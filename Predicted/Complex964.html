@@ -30,13 +30,20 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'YBX1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P67809" }},
-{data: { id: 'LTV1', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q96GA3" }},
-{data: { id: 'PES1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00541" }},
-{data: { id: 'NOP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P46087" }}], 
- edges: [{ data: { source: 'YBX1', target: 'NOP2', directed: 'false', weight: 0.655643} },
-{ data: { source: 'YBX1', target: 'LTV1', directed: 'false', weight: 0.101675} },
-{ data: { source: 'PES1', target: 'NOP2', directed: 'false', weight: 0.995782} }]},
+elements:{nodes: [{data: { id: 'ARPC3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15145" }},
+{data: { id: 'ARPC1B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15143" }},
+{data: { id: 'NGLY1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q96IV0" }},
+{data: { id: 'ACTR3B', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9P1U1" }},
+{data: { id: 'RAD23A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P54725" }},
+{data: { id: 'ARPC5L', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9BPX5" }}], 
+ edges: [{ data: { source: 'ARPC3', target: 'ARPC5L', directed: 'false', weight: 1.0} },
+{ data: { source: 'ARPC3', target: 'ARPC1B', directed: 'false', weight: 0.997626} },
+{ data: { source: 'ARPC3', target: 'ACTR3B', directed: 'false', weight: 0.69882} },
+{ data: { source: 'ARPC1B', target: 'ARPC5L', directed: 'false', weight: 1.0} },
+{ data: { source: 'ARPC1B', target: 'ACTR3B', directed: 'false', weight: 0.556296} },
+{ data: { source: 'ARPC5L', target: 'ACTR3B', directed: 'false', weight: 0.463714} },
+{ data: { source: 'NGLY1', target: 'RAD23A', directed: 'false', weight: 0.46578400000000003} },
+{ data: { source: 'ACTR3B', target: 'RAD23A', directed: 'false', weight: 0.468423} }]},
 
 style: [
     {
@@ -85,6 +92,11 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.37500
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>NGLY1
     </section>
     </body>
     </html>

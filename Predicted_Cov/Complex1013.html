@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 Rnase/Mrp complex match 3</title>
+<title> 0.2 NLGN1-NRXN1 complex match 2</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,22 +30,15 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'POP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99575" }},
-{data: { id: 'MGC3731', score: 2, type: '', href: "https://www.uniprot.org/uniprot/A0A024R1M6" }},
-{data: { id: 'RPS23', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62266" }},
-{data: { id: 'FTSJ3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IY81" }},
-{data: { id: 'RPL37A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P61513" }},
-{data: { id: 'HP1BP3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5SSJ5" }}], 
- edges: [{ data: { source: 'POP1', target: 'RPL37A', directed: 'false', weight: 0.0362715} },
-{ data: { source: 'POP1', target: 'HP1BP3', directed: 'false', weight: 0.939061} },
-{ data: { source: 'POP1', target: 'FTSJ3', directed: 'false', weight: 0.0281845} },
-{ data: { source: 'MGC3731', target: 'HP1BP3', directed: 'false', weight: 0.13633699999999999} },
-{ data: { source: 'MGC3731', target: 'FTSJ3', directed: 'false', weight: 0.274187} },
-{ data: { source: 'RPS23', target: 'RPL37A', directed: 'false', weight: 1.0} },
-{ data: { source: 'RPS23', target: 'FTSJ3', directed: 'false', weight: 0.0201233} },
-{ data: { source: 'FTSJ3', target: 'RPL37A', directed: 'false', weight: 0.753254} },
-{ data: { source: 'FTSJ3', target: 'HP1BP3', directed: 'false', weight: 0.0982648} },
-{ data: { source: 'RPL37A', target: 'HP1BP3', directed: 'false', weight: 0.0413042} }]},
+elements:{nodes: [{data: { id: 'NRXN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P58400" }},
+{data: { id: 'PGM5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15124" }},
+{data: { id: 'GLOD4', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9HC38" }},
+{data: { id: 'SOD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P00441" }},
+{data: { id: 'C4BPA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P04003" }}], 
+ edges: [{ data: { source: 'GLOD4', target: 'SOD1', directed: 'false', weight: 0.9162100000000001} },
+{ data: { source: 'GLOD4', target: 'NRXN1', directed: 'false', weight: 0.416688} },
+{ data: { source: 'SOD1', target: 'PGM5', directed: 'false', weight: 0.949585} },
+{ data: { source: 'SOD1', target: 'C4BPA', directed: 'false', weight: 0.32705700000000004} }]},
 
 style: [
     {
@@ -105,7 +98,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 Rnase/Mrp complex match 3<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
+    0.2 NLGN1-NRXN1 complex match 2<br> Complex Score = 0.35000<br> Unweighted Density = 0.40
     </section>
     </body>
     </html>

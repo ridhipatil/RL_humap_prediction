@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 NUB1L-UFD1-NPL4-NEDD8 complex</title>
+<title> 0.1 CPSF6-ITCH-NUDT21-POLR2A complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,16 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'HRSP12', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P52758" }},
-{data: { id: 'NEDD8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15843" }},
-{data: { id: 'FABP7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15540" }},
-{data: { id: 'HEL107', score: 2, type: '', href: "https://www.uniprot.org/uniprot/V9HWD9" }}], 
- edges: [{ data: { source: 'HRSP12', target: 'NEDD8', directed: 'false', weight: 0.135438} },
-{ data: { source: 'NEDD8', target: 'HEL107', directed: 'false', weight: 0.8974719999999999} },
-{ data: { source: 'FABP7', target: 'HEL107', directed: 'false', weight: 0.68319} }]},
+elements:{nodes: [{data: { id: 'RBM26', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5T8P6" }},
+{data: { id: 'CPSF7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N684" }},
+{data: { id: 'U2SURP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15042" }},
+{data: { id: 'SF3B6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y3B4" }},
+{data: { id: 'NUDT21', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43809" }}], 
+ edges: [{ data: { source: 'RBM26', target: 'NUDT21', directed: 'false', weight: 0.9397629999999999} },
+{ data: { source: 'RBM26', target: 'CPSF7', directed: 'false', weight: 0.0844411} },
+{ data: { source: 'CPSF7', target: 'NUDT21', directed: 'false', weight: 0.988535} },
+{ data: { source: 'U2SURP', target: 'NUDT21', directed: 'false', weight: 0.519057} },
+{ data: { source: 'SF3B6', target: 'NUDT21', directed: 'false', weight: 0.718675} }]},
 
 style: [
     {
@@ -96,7 +99,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 NUB1L-UFD1-NPL4-NEDD8 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.1 CPSF6-ITCH-NUDT21-POLR2A complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

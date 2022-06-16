@@ -30,13 +30,20 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'PPWD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96BP3" }},
-{data: { id: 'HEL-S-30', score: 3, type: '', href: "https://www.uniprot.org/uniprot/V9HWB8" }},
-{data: { id: 'HEL-S-2a', score: 3, type: '', href: "https://www.uniprot.org/uniprot/V9HW12" }},
-{data: { id: 'HEL-S-47e', score: 2, type: '', href: "https://www.uniprot.org/uniprot/V9HWE8" }}], 
- edges: [{ data: { source: 'PPWD1', target: 'HEL-S-30', directed: 'false', weight: 0.141611} },
-{ data: { source: 'HEL-S-2a', target: 'HEL-S-30', directed: 'false', weight: 0.980784} },
-{ data: { source: 'HEL-S-30', target: 'HEL-S-47e', directed: 'false', weight: 0.10063899999999999} }]},
+elements:{nodes: [{data: { id: 'DAAM1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y4D1" }},
+{data: { id: 'POGLUT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NBL1" }},
+{data: { id: 'CACNA2D2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NY47" }},
+{data: { id: 'RHOD', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00212" }},
+{data: { id: 'C1orf198', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q9H425" }},
+{data: { id: 'PLXNB2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15031" }}], 
+ edges: [{ data: { source: 'POGLUT1', target: 'CACNA2D2', directed: 'false', weight: 0.359898} },
+{ data: { source: 'CACNA2D2', target: 'PLXNB2', directed: 'false', weight: 0.383635} },
+{ data: { source: 'PLXNB2', target: 'RHOD', directed: 'false', weight: 0.457848} },
+{ data: { source: 'PLXNB2', target: 'C1orf198', directed: 'false', weight: 0.0938091} },
+{ data: { source: 'PLXNB2', target: 'DAAM1', directed: 'false', weight: 0.0621592} },
+{ data: { source: 'DAAM1', target: 'RHOD', directed: 'false', weight: 0.5138520000000001} },
+{ data: { source: 'DAAM1', target: 'C1orf198', directed: 'false', weight: 0.08909589999999999} },
+{ data: { source: 'C1orf198', target: 'RHOD', directed: 'false', weight: 0.573116} }]},
 
 style: [
     {

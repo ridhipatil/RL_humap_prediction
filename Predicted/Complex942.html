@@ -30,14 +30,23 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'CHMP4A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BY43" }},
-{data: { id: 'CHMP5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NZZ3" }},
-{data: { id: 'STMN4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H169" }},
-{data: { id: 'VTA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NP79" }}], 
- edges: [{ data: { source: 'CHMP4A', target: 'CHMP5', directed: 'false', weight: 0.9875379999999999} },
-{ data: { source: 'CHMP5', target: 'VTA1', directed: 'false', weight: 0.778489} },
-{ data: { source: 'CHMP5', target: 'STMN4', directed: 'false', weight: 0.15266300000000002} },
-{ data: { source: 'STMN4', target: 'VTA1', directed: 'false', weight: 0.024347099999999997} }]},
+elements:{nodes: [{data: { id: 'DNAJB12', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NXW2" }},
+{data: { id: 'MKNK1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BUB5" }},
+{data: { id: 'RHBDF1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96CC6" }},
+{data: { id: 'HECTD4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y4D8" }},
+{data: { id: 'TTC3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P53804" }},
+{data: { id: 'PDLIM5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96HC4" }},
+{data: { id: 'KIF22', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14807" }}], 
+ edges: [{ data: { source: 'DNAJB12', target: 'PDLIM5', directed: 'false', weight: 0.269181} },
+{ data: { source: 'MKNK1', target: 'PDLIM5', directed: 'false', weight: 0.804035} },
+{ data: { source: 'MKNK1', target: 'RHBDF1', directed: 'false', weight: 0.171414} },
+{ data: { source: 'MKNK1', target: 'KIF22', directed: 'false', weight: 0.171414} },
+{ data: { source: 'MKNK1', target: 'HECTD4', directed: 'false', weight: 0.0635339} },
+{ data: { source: 'MKNK1', target: 'TTC3', directed: 'false', weight: 0.042649099999999995} },
+{ data: { source: 'RHBDF1', target: 'KIF22', directed: 'false', weight: 0.171414} },
+{ data: { source: 'HECTD4', target: 'PDLIM5', directed: 'false', weight: 0.415357} },
+{ data: { source: 'HECTD4', target: 'TTC3', directed: 'false', weight: 0.06877430000000001} },
+{ data: { source: 'TTC3', target: 'PDLIM5', directed: 'false', weight: 0.491179} }]},
 
 style: [
     {

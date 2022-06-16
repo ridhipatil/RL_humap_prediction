@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> RRP8 CDK105 RPL26L1 NSD2</title>
+<title> LRRC47 TAOK1 TRIP12 EIF1 NXN DTD1</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,16 +30,19 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'RPL26L1', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q9UNX3" }},
-{data: { id: 'SARS-CoV2 nsp8', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp8.html" }},
-{data: { id: 'NSD2', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/O96028" }},
-{data: { id: 'RRP8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43159" }},
-{data: { id: 'CDK105', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q5J7U2" }}], 
- edges: [{ data: { source: 'SARS-CoV2 nsp8', target: 'NSD2', directed: 'false', weight: 0.864651959, type: 'sars'} },
-{ data: { source: 'RPL26L1', target: 'CDK105', directed: 'false', weight: 0.457905} },
-{ data: { source: 'RPL26L1', target: 'RRP8', directed: 'false', weight: 0.10566099999999999} },
-{ data: { source: 'NSD2', target: 'RRP8', directed: 'false', weight: 0.31283099999999997} },
-{ data: { source: 'RRP8', target: 'CDK105', directed: 'false', weight: 0.130633} }]},
+elements:{nodes: [{data: { id: 'TRIP12', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14669" }},
+{data: { id: 'DTD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TEA8" }},
+{data: { id: 'EIF1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P41567" }},
+{data: { id: 'TAOK1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q7L7X3" }},
+{data: { id: 'LRRC47', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q8N1G4" }},
+{data: { id: 'NXN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6DKJ4" }}], 
+ edges: [{ data: { source: 'TRIP12', target: 'EIF1', directed: 'false', weight: 0.403783} },
+{ data: { source: 'DTD1', target: 'TAOK1', directed: 'false', weight: 0.45231400000000005} },
+{ data: { source: 'DTD1', target: 'EIF1', directed: 'false', weight: 0.725036} },
+{ data: { source: 'DTD1', target: 'NXN', directed: 'false', weight: 0.32729899999999995} },
+{ data: { source: 'EIF1', target: 'NXN', directed: 'false', weight: 0.0938283} },
+{ data: { source: 'LRRC47', target: 'TAOK1', directed: 'false', weight: 0.8658530000000001} },
+{ data: { source: 'NXN', target: 'TAOK1', directed: 'false', weight: 0.170594} }]},
 
 style: [
     {
@@ -99,12 +102,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    RRP8 CDK105 RPL26L1 NSD2<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>NSD2
+    LRRC47 TAOK1 TRIP12 EIF1 NXN DTD1<br> Complex Score = 0.37500<br> Unweighted Density = 0.47
     </section>
     </body>
     </html>

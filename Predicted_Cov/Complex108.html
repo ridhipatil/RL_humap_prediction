@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 28S ribosomal subunit, mitochondrial</title>
+<title> 0.1 AKAP250-PKA-PDE4D complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,25 +30,35 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'MRPS7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y2R9" }},
-{data: { id: 'MRPS35', score: 4, type: '', href: "https://www.uniprot.org/uniprot/P82673" }},
-{data: { id: 'MRPS31', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92665" }},
-{data: { id: 'USP28', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96RU2" }},
-{data: { id: 'MRPS28', score: 4, type: '', href: "https://www.uniprot.org/uniprot/P82673" }},
-{data: { id: 'SARS-CoV2 nsp8', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp8.html" }},
-{data: { id: 'MRPS25', score: 4, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P82663" }}], 
- edges: [{ data: { source: 'SARS-CoV2 nsp8', target: 'MRPS25', directed: 'false', weight: 0.826437119, type: 'sars'} },
-{ data: { source: 'MRPS7', target: 'MRPS31', directed: 'false', weight: 1.0} },
-{ data: { source: 'MRPS7', target: 'MRPS35', directed: 'false', weight: 1.0} },
-{ data: { source: 'MRPS7', target: 'USP28', directed: 'false', weight: 0.810443} },
-{ data: { source: 'MRPS7', target: 'MRPS25', directed: 'false', weight: 0.5920489999999999} },
-{ data: { source: 'MRPS7', target: 'MRPS28', directed: 'false', weight: 0.36936599999999997} },
-{ data: { source: 'MRPS35', target: 'MRPS31', directed: 'false', weight: 1.0} },
-{ data: { source: 'MRPS35', target: 'MRPS25', directed: 'false', weight: 0.919783} },
-{ data: { source: 'MRPS35', target: 'MRPS28', directed: 'false', weight: 0.07972380000000001} },
-{ data: { source: 'MRPS31', target: 'MRPS25', directed: 'false', weight: 0.999187} },
-{ data: { source: 'MRPS31', target: 'MRPS28', directed: 'false', weight: 0.983892} },
-{ data: { source: 'MRPS28', target: 'MRPS25', directed: 'false', weight: 0.08640419999999999} }]},
+elements:{nodes: [{data: { id: 'PRKAR1B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P31321" }},
+{data: { id: 'GPR161', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N6U8" }},
+{data: { id: 'AKAP11', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UKA4" }},
+{data: { id: 'SARS-CoV2 nsp13', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp13.html" }},
+{data: { id: 'CEP68', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q76N32" }},
+{data: { id: 'SARS-CoV2 nsp13', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp13.html" }},
+{data: { id: 'PRKACA', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P17252" }},
+{data: { id: 'PRKAR1A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P10644" }},
+{data: { id: 'SARS-CoV2 nsp13', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp13.html" }},
+{data: { id: 'CDK5RAP2', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q96SN8" }}], 
+ edges: [{ data: { source: 'SARS-CoV2 nsp13', target: 'CEP68', directed: 'false', weight: 0.879704216, type: 'sars'} },
+{ data: { source: 'SARS-CoV2 nsp13', target: 'PRKACA', directed: 'false', weight: 0.880321174, type: 'sars'} },
+{ data: { source: 'SARS-CoV2 nsp13', target: 'CDK5RAP2', directed: 'false', weight: 0.939307247, type: 'sars'} },
+{ data: { source: 'PRKAR1B', target: 'PRKACA', directed: 'false', weight: 0.315841} },
+{ data: { source: 'PRKAR1B', target: 'PRKAR1A', directed: 'false', weight: 0.9936229999999999} },
+{ data: { source: 'PRKAR1B', target: 'AKAP11', directed: 'false', weight: 0.991933} },
+{ data: { source: 'PRKAR1B', target: 'CDK5RAP2', directed: 'false', weight: 0.14189300000000002} },
+{ data: { source: 'PRKAR1B', target: 'CEP68', directed: 'false', weight: 0.125737} },
+{ data: { source: 'PRKAR1B', target: 'GPR161', directed: 'false', weight: 0.0976894} },
+{ data: { source: 'GPR161', target: 'PRKAR1A', directed: 'false', weight: 0.977131} },
+{ data: { source: 'GPR161', target: 'AKAP11', directed: 'false', weight: 0.10554300000000001} },
+{ data: { source: 'AKAP11', target: 'PRKACA', directed: 'false', weight: 0.558666} },
+{ data: { source: 'AKAP11', target: 'PRKAR1A', directed: 'false', weight: 0.89405} },
+{ data: { source: 'AKAP11', target: 'CDK5RAP2', directed: 'false', weight: 0.195967} },
+{ data: { source: 'AKAP11', target: 'CEP68', directed: 'false', weight: 0.125737} },
+{ data: { source: 'CEP68', target: 'PRKACA', directed: 'false', weight: 0.313765} },
+{ data: { source: 'CEP68', target: 'PRKAR1A', directed: 'false', weight: 0.18832100000000002} },
+{ data: { source: 'CEP68', target: 'CDK5RAP2', directed: 'false', weight: 0.313765} },
+{ data: { source: 'PRKACA', target: 'CDK5RAP2', directed: 'false', weight: 0.180578} }]},
 
 style: [
     {
@@ -108,12 +118,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 28S ribosomal subunit, mitochondrial<br> Complex Score = 0.38800<br> Unweighted Density = 0.73
+    0.1 AKAP250-PKA-PDE4D complex<br> Complex Score = 0.39375<br> Unweighted Density = 0.76
         <br> 
         <br>
         Connection to SARS-COV2: 
         <br>
-        1 interacting protein(s): <br>MRPS25
+        3 interacting protein(s): <br>CEP68 PRKACA CDK5RAP2
     </section>
     </body>
     </html>

@@ -30,13 +30,25 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'MAT2A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P31153" }},
-{data: { id: 'HEL107', score: 2, type: '', href: "https://www.uniprot.org/uniprot/V9HWD9" }},
-{data: { id: 'ADSS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N142" }},
-{data: { id: 'MAT1A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q00266" }}], 
- edges: [{ data: { source: 'MAT2A', target: 'ADSS1', directed: 'false', weight: 0.354772} },
-{ data: { source: 'MAT2A', target: 'MAT1A', directed: 'false', weight: 0.931083} },
-{ data: { source: 'HEL107', target: 'ADSS1', directed: 'false', weight: 0.410842} }]},
+elements:{nodes: [{data: { id: 'PCF11', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O94913" }},
+{data: { id: 'CSTF2T', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H0L4" }},
+{data: { id: 'PAPOLA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P51003" }},
+{data: { id: 'CSTF2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P33240" }},
+{data: { id: 'CSTF3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q12996" }},
+{data: { id: 'PAPOLB', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9NRJ5" }},
+{data: { id: 'CLP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92989" }}], 
+ edges: [{ data: { source: 'PCF11', target: 'CSTF2', directed: 'false', weight: 0.874484} },
+{ data: { source: 'PCF11', target: 'CSTF2T', directed: 'false', weight: 0.0748257} },
+{ data: { source: 'PCF11', target: 'CLP1', directed: 'false', weight: 0.9874430000000001} },
+{ data: { source: 'CSTF2T', target: 'CSTF2', directed: 'false', weight: 0.975407} },
+{ data: { source: 'CSTF2T', target: 'CSTF3', directed: 'false', weight: 0.9995440000000001} },
+{ data: { source: 'CSTF2T', target: 'PAPOLA', directed: 'false', weight: 0.8412959999999999} },
+{ data: { source: 'CSTF2T', target: 'PAPOLB', directed: 'false', weight: 0.382148} },
+{ data: { source: 'PAPOLA', target: 'CSTF2', directed: 'false', weight: 0.987569} },
+{ data: { source: 'PAPOLA', target: 'CSTF3', directed: 'false', weight: 0.9843} },
+{ data: { source: 'CSTF2', target: 'CSTF3', directed: 'false', weight: 0.999983} },
+{ data: { source: 'CSTF2', target: 'PAPOLB', directed: 'false', weight: 0.587237} },
+{ data: { source: 'CSTF3', target: 'PAPOLB', directed: 'false', weight: 0.9091450000000001} }]},
 
 style: [
     {
@@ -84,7 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.37500
+    Complex Score  = 0.38750
     </section>
     </body>
     </html>

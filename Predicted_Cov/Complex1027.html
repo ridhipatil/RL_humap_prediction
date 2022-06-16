@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 HSPA9-GRPEL1 complex match 2</title>
+<title> 0.1 AK2-FADD-caspase-10 (AFAC10) complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,22 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'EEF1A1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P68104" }},
-{data: { id: 'HSPA9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P38646" }},
-{data: { id: 'PBDC1', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q9BVG4" }},
-{data: { id: 'TTLL12', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14166" }}], 
- edges: [{ data: { source: 'EEF1A1', target: 'PBDC1', directed: 'false', weight: 0.9542809999999999} },
-{ data: { source: 'EEF1A1', target: 'HSPA9', directed: 'false', weight: 0.182926} },
-{ data: { source: 'PBDC1', target: 'TTLL12', directed: 'false', weight: 0.638433} }]},
+elements:{nodes: [{data: { id: 'GSTP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P09211" }},
+{data: { id: 'AKR1D1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P51857" }},
+{data: { id: 'TXNDC17', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BRA2" }},
+{data: { id: 'TSFM', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P43897" }},
+{data: { id: 'AK2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P54819" }},
+{data: { id: 'CFL2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y281" }},
+{data: { id: 'HIBADH', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P31937" }}], 
+ edges: [{ data: { source: 'GSTP1', target: 'AK2', directed: 'false', weight: 0.0484821} },
+{ data: { source: 'GSTP1', target: 'CFL2', directed: 'false', weight: 0.017901900000000002} },
+{ data: { source: 'AKR1D1', target: 'AK2', directed: 'false', weight: 0.6635850000000001} },
+{ data: { source: 'AKR1D1', target: 'CFL2', directed: 'false', weight: 0.306158} },
+{ data: { source: 'TXNDC17', target: 'AK2', directed: 'false', weight: 0.9914700000000001} },
+{ data: { source: 'TXNDC17', target: 'HIBADH', directed: 'false', weight: 0.661776} },
+{ data: { source: 'TXNDC17', target: 'TSFM', directed: 'false', weight: 0.136992} },
+{ data: { source: 'TSFM', target: 'AK2', directed: 'false', weight: 0.460525} },
+{ data: { source: 'AK2', target: 'CFL2', directed: 'false', weight: 0.00546358} }]},
 
 style: [
     {
@@ -96,7 +105,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 HSPA9-GRPEL1 complex match 2<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.1 AK2-FADD-caspase-10 (AFAC10) complex<br> Complex Score = 0.35000<br> Unweighted Density = 0.43
     </section>
     </body>
     </html>

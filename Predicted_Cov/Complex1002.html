@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> GPR21 OTUD6A ERMP1 SLC35B4</title>
+<title> 0.1 RHINO-TopBP1 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,15 +30,18 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'SARS-CoV2 orf9c', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 orf9c.html" }},
-{data: { id: 'ERMP1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q7Z2K6" }},
-{data: { id: 'OTUD6A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q7L8S5" }},
-{data: { id: 'GPR21', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q99679" }},
-{data: { id: 'SLC35B4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q969S0" }}], 
- edges: [{ data: { source: 'SARS-CoV2 orf9c', target: 'ERMP1', directed: 'false', weight: 0.793920345, type: 'sars'} },
-{ data: { source: 'OTUD6A', target: 'GPR21', directed: 'false', weight: 0.844527} },
-{ data: { source: 'ERMP1', target: 'GPR21', directed: 'false', weight: 0.172728} },
-{ data: { source: 'GPR21', target: 'SLC35B4', directed: 'false', weight: 0.413524} }]},
+elements:{nodes: [{data: { id: 'TOPBP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92547" }},
+{data: { id: 'SETD3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86TU7" }},
+{data: { id: 'DNAJC2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99543" }},
+{data: { id: 'CWF19L1', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q69YN2" }},
+{data: { id: 'HSPA14', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q0VDF9" }},
+{data: { id: 'NFAM1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NET5" }}], 
+ edges: [{ data: { source: 'TOPBP1', target: 'DNAJC2', directed: 'false', weight: 0.312637} },
+{ data: { source: 'TOPBP1', target: 'HSPA14', directed: 'false', weight: 0.0449793} },
+{ data: { source: 'DNAJC2', target: 'HSPA14', directed: 'false', weight: 0.304433} },
+{ data: { source: 'DNAJC2', target: 'CWF19L1', directed: 'false', weight: 0.719862} },
+{ data: { source: 'CWF19L1', target: 'SETD3', directed: 'false', weight: 0.43537700000000007} },
+{ data: { source: 'HSPA14', target: 'NFAM1', directed: 'false', weight: 0.9026139999999999} }]},
 
 style: [
     {
@@ -98,12 +101,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    GPR21 OTUD6A ERMP1 SLC35B4<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>ERMP1
+    0.1 RHINO-TopBP1 complex<br> Complex Score = 0.35000<br> Unweighted Density = 0.40
     </section>
     </body>
     </html>

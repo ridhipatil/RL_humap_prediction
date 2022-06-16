@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> CYP2A13 CYP2A7 CYP2A6 match 2</title>
+<title> 0.4 NFKB1-NFKB2-RELA-RELB complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,11 +30,35 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'CYP2A6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P11509" }},
-{data: { id: 'CYP2A7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P20853" }},
-{data: { id: 'CYP2A13', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16696" }}], 
- edges: [{ data: { source: 'CYP2A6', target: 'CYP2A7', directed: 'false', weight: 0.999792} },
-{ data: { source: 'CYP2A7', target: 'CYP2A13', directed: 'false', weight: 1.0} }]},
+elements:{nodes: [{data: { id: 'VPS26A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75436" }},
+{data: { id: 'NFKB2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q00653" }},
+{data: { id: 'ENTR1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96C92" }},
+{data: { id: 'NFKBIA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P25963" }},
+{data: { id: 'RELB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q01201" }},
+{data: { id: 'ANKRD27', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96NW4" }},
+{data: { id: 'CHUK', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15111" }},
+{data: { id: 'NFKB1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P19838" }},
+{data: { id: 'RELA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q04206" }}], 
+ edges: [{ data: { source: 'VPS26A', target: 'ANKRD27', directed: 'false', weight: 0.9881459999999999} },
+{ data: { source: 'VPS26A', target: 'ENTR1', directed: 'false', weight: 0.818689} },
+{ data: { source: 'CHUK', target: 'NFKBIA', directed: 'false', weight: 0.97355} },
+{ data: { source: 'CHUK', target: 'NFKB1', directed: 'false', weight: 0.128057} },
+{ data: { source: 'CHUK', target: 'NFKB2', directed: 'false', weight: 0.140692} },
+{ data: { source: 'CHUK', target: 'RELA', directed: 'false', weight: 0.140692} },
+{ data: { source: 'CHUK', target: 'ANKRD27', directed: 'false', weight: 0.151455} },
+{ data: { source: 'CHUK', target: 'RELB', directed: 'false', weight: 0.171414} },
+{ data: { source: 'NFKB2', target: 'NFKBIA', directed: 'false', weight: 0.995525} },
+{ data: { source: 'NFKB2', target: 'NFKB1', directed: 'false', weight: 0.347762} },
+{ data: { source: 'NFKB2', target: 'RELA', directed: 'false', weight: 0.450801} },
+{ data: { source: 'NFKB2', target: 'RELB', directed: 'false', weight: 0.140692} },
+{ data: { source: 'NFKBIA', target: 'NFKB1', directed: 'false', weight: 0.997028} },
+{ data: { source: 'NFKBIA', target: 'RELA', directed: 'false', weight: 0.9952340000000001} },
+{ data: { source: 'NFKBIA', target: 'RELB', directed: 'false', weight: 0.985224} },
+{ data: { source: 'NFKBIA', target: 'ANKRD27', directed: 'false', weight: 0.978519} },
+{ data: { source: 'RELB', target: 'NFKB1', directed: 'false', weight: 0.128057} },
+{ data: { source: 'RELB', target: 'RELA', directed: 'false', weight: 0.140692} },
+{ data: { source: 'RELB', target: 'ANKRD27', directed: 'false', weight: 0.151455} },
+{ data: { source: 'NFKB1', target: 'RELA', directed: 'false', weight: 0.6554449999999999} }]},
 
 style: [
     {
@@ -94,7 +118,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    CYP2A13 CYP2A7 CYP2A6 match 2<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
+    0.4 NFKB1-NFKB2-RELA-RELB complex<br> Complex Score = 0.38750<br> Unweighted Density = 0.56
     </section>
     </body>
     </html>

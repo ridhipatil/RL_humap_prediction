@@ -30,13 +30,18 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'SDF2L1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HCN8" }},
-{data: { id: 'HEL57', score: 2, type: '', href: "https://www.uniprot.org/uniprot/V9HWH1" }},
-{data: { id: 'RSPH10B2', score: 2, type: '', href: "https://www.uniprot.org/uniprot/B2RC85" }},
-{data: { id: 'UMPS', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P11172" }}], 
- edges: [{ data: { source: 'SDF2L1', target: 'RSPH10B2', directed: 'false', weight: 0.185409} },
-{ data: { source: 'SDF2L1', target: 'HEL57', directed: 'false', weight: 0.172268} },
-{ data: { source: 'UMPS', target: 'HEL57', directed: 'false', weight: 0.253657} }]},
+elements:{nodes: [{data: { id: 'RAB1B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H0U4" }},
+{data: { id: 'GDI2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P50395" }},
+{data: { id: 'AS3MT', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HBK9" }},
+{data: { id: 'RAB1A', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P62820" }},
+{data: { id: 'RAB8B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92930" }}], 
+ edges: [{ data: { source: 'RAB1B', target: 'GDI2', directed: 'false', weight: 0.981101} },
+{ data: { source: 'RAB1B', target: 'RAB8B', directed: 'false', weight: 0.968132} },
+{ data: { source: 'RAB1B', target: 'AS3MT', directed: 'false', weight: 0.0367536} },
+{ data: { source: 'GDI2', target: 'RAB8B', directed: 'false', weight: 0.814639} },
+{ data: { source: 'GDI2', target: 'RAB1A', directed: 'false', weight: 0.443326} },
+{ data: { source: 'GDI2', target: 'AS3MT', directed: 'false', weight: 0.411004} },
+{ data: { source: 'RAB1A', target: 'RAB8B', directed: 'false', weight: 0.353675} }]},
 
 style: [
     {
@@ -84,7 +89,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.37500
+    Complex Score  = 0.38750
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>RAB1A
     </section>
     </body>
     </html>

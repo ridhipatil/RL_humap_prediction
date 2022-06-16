@@ -30,13 +30,16 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'ATP5MG', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/O75964" }},
-{data: { id: 'CERS2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96G23" }},
-{data: { id: 'hCG_39985', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q08ET0" }},
-{data: { id: 'VDAC3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y277" }}], 
- edges: [{ data: { source: 'ATP5MG', target: 'hCG_39985', directed: 'false', weight: 0.9999979999999999} },
-{ data: { source: 'ATP5MG', target: 'VDAC3', directed: 'false', weight: 0.217619} },
-{ data: { source: 'CERS2', target: 'hCG_39985', directed: 'false', weight: 0.151142} }]},
+elements:{nodes: [{data: { id: 'PYGL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P06737" }},
+{data: { id: 'CS', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75390" }},
+{data: { id: 'PNPO', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NVS9" }},
+{data: { id: 'FUCA2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BTY2" }},
+{data: { id: 'GIPC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O14908" }}], 
+ edges: [{ data: { source: 'PYGL', target: 'CS', directed: 'false', weight: 0.494134} },
+{ data: { source: 'PYGL', target: 'FUCA2', directed: 'false', weight: 0.0680133} },
+{ data: { source: 'CS', target: 'GIPC1', directed: 'false', weight: 0.460178} },
+{ data: { source: 'CS', target: 'FUCA2', directed: 'false', weight: 0.265795} },
+{ data: { source: 'PNPO', target: 'GIPC1', directed: 'false', weight: 0.492936} }]},
 
 style: [
     {
@@ -85,11 +88,6 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.37500
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>ATP5MG
     </section>
     </body>
     </html>

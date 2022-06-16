@@ -30,11 +30,28 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'HLA-DRB1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P01911" }},
-{data: { id: 'HLA-DRB5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q30154" }},
-{data: { id: 'LOC100294276', score: 0, type: '', href: "https://www.ncbi.nlm.nih.gov/gene/100294276" }}], 
- edges: [{ data: { source: 'HLA-DRB1', target: 'LOC100294276', directed: 'false', weight: 0.9704} },
-{ data: { source: 'HLA-DRB1', target: 'HLA-DRB5', directed: 'false', weight: 0.9543729999999999} }]},
+elements:{nodes: [{data: { id: 'MAPK15', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TD08" }},
+{data: { id: 'CKS1B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P61024" }},
+{data: { id: 'CDKN1C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49918" }},
+{data: { id: 'CCNE1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P24864" }},
+{data: { id: 'CCND3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P30281" }},
+{data: { id: 'RBL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P28749" }},
+{data: { id: 'CDK2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P24941" }}], 
+ edges: [{ data: { source: 'MAPK15', target: 'CDK2', directed: 'false', weight: 0.742035} },
+{ data: { source: 'MAPK15', target: 'RBL1', directed: 'false', weight: 0.133451} },
+{ data: { source: 'CKS1B', target: 'CDK2', directed: 'false', weight: 0.9989299999999999} },
+{ data: { source: 'CKS1B', target: 'CDKN1C', directed: 'false', weight: 0.6569619999999999} },
+{ data: { source: 'CKS1B', target: 'CCNE1', directed: 'false', weight: 0.29352399999999995} },
+{ data: { source: 'CKS1B', target: 'RBL1', directed: 'false', weight: 0.102931} },
+{ data: { source: 'CDKN1C', target: 'CDK2', directed: 'false', weight: 0.998208} },
+{ data: { source: 'CDKN1C', target: 'CCND3', directed: 'false', weight: 0.841917} },
+{ data: { source: 'CDKN1C', target: 'CCNE1', directed: 'false', weight: 0.306738} },
+{ data: { source: 'CDKN1C', target: 'RBL1', directed: 'false', weight: 0.0952728} },
+{ data: { source: 'CCNE1', target: 'CDK2', directed: 'false', weight: 0.960686} },
+{ data: { source: 'CCNE1', target: 'CCND3', directed: 'false', weight: 0.125737} },
+{ data: { source: 'CCNE1', target: 'RBL1', directed: 'false', weight: 0.0986491} },
+{ data: { source: 'CCND3', target: 'CDK2', directed: 'false', weight: 0.133734} },
+{ data: { source: 'RBL1', target: 'CDK2', directed: 'false', weight: 0.8419030000000001} }]},
 
 style: [
     {
@@ -82,7 +99,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.38800
+    Complex Score  = 0.39375
     </section>
     </body>
     </html>

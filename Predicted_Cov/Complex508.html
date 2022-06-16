@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 DLGAP1-DLG4-DYNLL2 complex</title>
+<title> 0.1 C complex spliceosome match 2</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,14 +30,48 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'DNCL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P63167" }},
-{data: { id: 'LCA5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86VQ0" }},
-{data: { id: 'DYNLL2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96FJ2" }},
-{data: { id: 'DYNC1I2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13409" }}], 
- edges: [{ data: { source: 'DNCL1', target: 'DYNC1I2', directed: 'false', weight: 0.43659499999999996} },
-{ data: { source: 'DNCL1', target: 'LCA5', directed: 'false', weight: 0.08032710000000001} },
-{ data: { source: 'DNCL1', target: 'DYNLL2', directed: 'false', weight: 0.38498899999999997} },
-{ data: { source: 'LCA5', target: 'DYNLL2', directed: 'false', weight: 0.373264} }]},
+elements:{nodes: [{data: { id: 'SNRPD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62314" }},
+{data: { id: 'RBM22', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NW64" }},
+{data: { id: 'ISY1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9ULR0" }},
+{data: { id: 'SNW1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13573" }},
+{data: { id: 'C1orf52', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q8N6N3" }},
+{data: { id: 'XAB2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HCS7" }},
+{data: { id: 'AQR', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60306" }},
+{data: { id: 'SARS-CoV2 nsp12', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp12.html" }},
+{data: { id: 'SLU7', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/O95391" }},
+{data: { id: 'CPSF6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16630" }},
+{data: { id: 'CWC15', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9P013" }}], 
+ edges: [{ data: { source: 'SARS-CoV2 nsp12', target: 'SLU7', directed: 'false', weight: 0.989493635, type: 'sars'} },
+{ data: { source: 'SNRPD1', target: 'CPSF6', directed: 'false', weight: 0.975909} },
+{ data: { source: 'SNRPD1', target: 'XAB2', directed: 'false', weight: 0.252736} },
+{ data: { source: 'SNRPD1', target: 'SNW1', directed: 'false', weight: 0.220106} },
+{ data: { source: 'RBM22', target: 'ISY1', directed: 'false', weight: 0.547263} },
+{ data: { source: 'RBM22', target: 'AQR', directed: 'false', weight: 0.507236} },
+{ data: { source: 'RBM22', target: 'XAB2', directed: 'false', weight: 0.357398} },
+{ data: { source: 'RBM22', target: 'SNW1', directed: 'false', weight: 0.998567} },
+{ data: { source: 'RBM22', target: 'CWC15', directed: 'false', weight: 0.3401} },
+{ data: { source: 'RBM22', target: 'SLU7', directed: 'false', weight: 0.0871659} },
+{ data: { source: 'ISY1', target: 'AQR', directed: 'false', weight: 1.0} },
+{ data: { source: 'ISY1', target: 'XAB2', directed: 'false', weight: 0.9999950000000001} },
+{ data: { source: 'ISY1', target: 'SNW1', directed: 'false', weight: 0.999984} },
+{ data: { source: 'ISY1', target: 'CWC15', directed: 'false', weight: 0.666752} },
+{ data: { source: 'ISY1', target: 'SLU7', directed: 'false', weight: 0.149954} },
+{ data: { source: 'ISY1', target: 'C1orf52', directed: 'false', weight: 0.0897674} },
+{ data: { source: 'SNW1', target: 'AQR', directed: 'false', weight: 0.9994959999999999} },
+{ data: { source: 'SNW1', target: 'XAB2', directed: 'false', weight: 0.999732} },
+{ data: { source: 'SNW1', target: 'CWC15', directed: 'false', weight: 0.9996430000000001} },
+{ data: { source: 'SNW1', target: 'SLU7', directed: 'false', weight: 0.973123} },
+{ data: { source: 'SNW1', target: 'CPSF6', directed: 'false', weight: 0.48358900000000005} },
+{ data: { source: 'C1orf52', target: 'AQR', directed: 'false', weight: 0.155754} },
+{ data: { source: 'C1orf52', target: 'XAB2', directed: 'false', weight: 0.101793} },
+{ data: { source: 'C1orf52', target: 'SLU7', directed: 'false', weight: 0.155754} },
+{ data: { source: 'XAB2', target: 'AQR', directed: 'false', weight: 0.9999879999999999} },
+{ data: { source: 'XAB2', target: 'CWC15', directed: 'false', weight: 0.648031} },
+{ data: { source: 'XAB2', target: 'CPSF6', directed: 'false', weight: 0.269692} },
+{ data: { source: 'XAB2', target: 'SLU7', directed: 'false', weight: 0.228715} },
+{ data: { source: 'AQR', target: 'CWC15', directed: 'false', weight: 0.6979850000000001} },
+{ data: { source: 'AQR', target: 'SLU7', directed: 'false', weight: 0.325934} },
+{ data: { source: 'SLU7', target: 'CWC15', directed: 'false', weight: 0.149954} }]},
 
 style: [
     {
@@ -97,7 +131,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 DLGAP1-DLG4-DYNLL2 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
+    0.1 C complex spliceosome match 2<br> Complex Score = 0.38750<br> Unweighted Density = 0.67
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>SLU7
     </section>
     </body>
     </html>

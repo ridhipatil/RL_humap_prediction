@@ -30,13 +30,17 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'LARP1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q6PKG0" }},
-{data: { id: 'PABPC1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P11940" }},
-{data: { id: 'RPS7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62081" }},
-{data: { id: 'SNRPC', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P09234" }}], 
- edges: [{ data: { source: 'LARP1', target: 'PABPC1', directed: 'false', weight: 0.999916} },
-{ data: { source: 'SNRPC', target: 'PABPC1', directed: 'false', weight: 0.15177100000000002} },
-{ data: { source: 'PABPC1', target: 'RPS7', directed: 'false', weight: 0.460552} }]},
+elements:{nodes: [{data: { id: 'UGDH', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60701" }},
+{data: { id: 'PAICS', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P22234" }},
+{data: { id: 'VWA8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/A3KMH1" }},
+{data: { id: 'AARS', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49588" }},
+{data: { id: 'AACS', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86V21" }}], 
+ edges: [{ data: { source: 'AACS', target: 'UGDH', directed: 'false', weight: 0.627893} },
+{ data: { source: 'AACS', target: 'AARS', directed: 'false', weight: 0.35541799999999996} },
+{ data: { source: 'UGDH', target: 'AARS', directed: 'false', weight: 0.86413} },
+{ data: { source: 'UGDH', target: 'VWA8', directed: 'false', weight: 0.288893} },
+{ data: { source: 'PAICS', target: 'VWA8', directed: 'false', weight: 0.717567} },
+{ data: { source: 'VWA8', target: 'AARS', directed: 'false', weight: 0.406893} }]},
 
 style: [
     {
@@ -84,12 +88,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.37500
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        2 interacting protein(s): <br>LARP1 PABPC1
+    Complex Score  = 0.38750
     </section>
     </body>
     </html>

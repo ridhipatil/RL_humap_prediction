@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 Phosphorylase kinase complex</title>
+<title> 0.3 DMAP1-associated complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,20 +30,24 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'NR2F6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P10588" }},
-{data: { id: 'PHKG2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P15735" }},
-{data: { id: 'PHKA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P46020" }},
-{data: { id: 'PHKB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q93100" }},
-{data: { id: 'MPPED2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15777" }},
-{data: { id: 'MPPED1', score: 3, type: '', href: "https://www.uniprot.org/uniprot/O15442" }}], 
- edges: [{ data: { source: 'NR2F6', target: 'MPPED1', directed: 'false', weight: 0.22443200000000002} },
-{ data: { source: 'NR2F6', target: 'MPPED2', directed: 'false', weight: 0.5845899999999999} },
-{ data: { source: 'PHKG2', target: 'PHKA1', directed: 'false', weight: 0.9999629999999999} },
-{ data: { source: 'PHKG2', target: 'PHKB', directed: 'false', weight: 0.9999309999999999} },
-{ data: { source: 'PHKG2', target: 'MPPED1', directed: 'false', weight: 0.317241} },
-{ data: { source: 'PHKA1', target: 'MPPED1', directed: 'false', weight: 0.39455300000000004} },
-{ data: { source: 'PHKB', target: 'MPPED1', directed: 'false', weight: 0.8952459999999999} },
-{ data: { source: 'MPPED2', target: 'MPPED1', directed: 'false', weight: 0.967994} }]},
+elements:{nodes: [{data: { id: 'RUVBL2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y230" }},
+{data: { id: 'BRD8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H0E9" }},
+{data: { id: 'DMAP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NPF5" }},
+{data: { id: 'SRCAP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6ZRS2" }},
+{data: { id: 'ACTR6', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9GZN1" }},
+{data: { id: 'ING3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NXR8" }}], 
+ edges: [{ data: { source: 'BRD8', target: 'DMAP1', directed: 'false', weight: 0.998474} },
+{ data: { source: 'BRD8', target: 'ING3', directed: 'false', weight: 0.9999450000000001} },
+{ data: { source: 'BRD8', target: 'ACTR6', directed: 'false', weight: 0.5623630000000001} },
+{ data: { source: 'BRD8', target: 'SRCAP', directed: 'false', weight: 0.193752} },
+{ data: { source: 'DMAP1', target: 'RUVBL2', directed: 'false', weight: 0.999209} },
+{ data: { source: 'DMAP1', target: 'ING3', directed: 'false', weight: 0.9960629999999999} },
+{ data: { source: 'DMAP1', target: 'ACTR6', directed: 'false', weight: 0.9794950000000001} },
+{ data: { source: 'DMAP1', target: 'SRCAP', directed: 'false', weight: 0.815555} },
+{ data: { source: 'SRCAP', target: 'ING3', directed: 'false', weight: 0.185084} },
+{ data: { source: 'SRCAP', target: 'ACTR6', directed: 'false', weight: 0.9728559999999999} },
+{ data: { source: 'ACTR6', target: 'ING3', directed: 'false', weight: 0.548124} },
+{ data: { source: 'ACTR6', target: 'RUVBL2', directed: 'false', weight: 0.959946} }]},
 
 style: [
     {
@@ -103,7 +107,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 Phosphorylase kinase complex<br> Complex Score = 0.38800<br> Unweighted Density = 0.53
+    0.3 DMAP1-associated complex<br> Complex Score = 0.39375<br> Unweighted Density = 0.80
     </section>
     </body>
     </html>

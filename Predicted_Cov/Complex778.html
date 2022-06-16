@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.6 BLOC-1 (biogenesis of lysosome-related organelles complex 1)</title>
+<title> 0.3 E6AP-HERC2-MAPK6-NEURL4 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,22 +30,16 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'BLOC1S5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TDH9" }},
-{data: { id: 'DTNBP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96EV8" }},
-{data: { id: 'BLOC1S6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UL45" }},
-{data: { id: 'SNAPIN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95295" }},
-{data: { id: 'BCAS4', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q8TDM0" }},
-{data: { id: 'BLOC1S3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6QNY0" }}], 
- edges: [{ data: { source: 'BLOC1S5', target: 'DTNBP1', directed: 'false', weight: 0.999698} },
-{ data: { source: 'BLOC1S5', target: 'BCAS4', directed: 'false', weight: 0.9928049999999999} },
-{ data: { source: 'BLOC1S5', target: 'BLOC1S6', directed: 'false', weight: 0.0211129} },
-{ data: { source: 'DTNBP1', target: 'BCAS4', directed: 'false', weight: 0.999633} },
-{ data: { source: 'DTNBP1', target: 'BLOC1S3', directed: 'false', weight: 0.999292} },
-{ data: { source: 'DTNBP1', target: 'BLOC1S6', directed: 'false', weight: 0.9795940000000001} },
-{ data: { source: 'DTNBP1', target: 'SNAPIN', directed: 'false', weight: 0.976193} },
-{ data: { source: 'BLOC1S6', target: 'BCAS4', directed: 'false', weight: 0.7316729999999999} },
-{ data: { source: 'SNAPIN', target: 'BCAS4', directed: 'false', weight: 0.10514200000000001} },
-{ data: { source: 'BCAS4', target: 'BLOC1S3', directed: 'false', weight: 0.99976} }]},
+elements:{nodes: [{data: { id: 'FGD6', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q6ZV73" }},
+{data: { id: 'NEURL4', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q96JN8" }},
+{data: { id: 'DBNL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UJU6" }},
+{data: { id: 'HERC2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95714" }},
+{data: { id: 'ZBTB5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15062" }}], 
+ edges: [{ data: { source: 'FGD6', target: 'DBNL', directed: 'false', weight: 0.8639700000000001} },
+{ data: { source: 'NEURL4', target: 'HERC2', directed: 'false', weight: 0.996606} },
+{ data: { source: 'NEURL4', target: 'DBNL', directed: 'false', weight: 0.6646850000000001} },
+{ data: { source: 'NEURL4', target: 'ZBTB5', directed: 'false', weight: 0.210542} },
+{ data: { source: 'ZBTB5', target: 'HERC2', directed: 'false', weight: 0.824536} }]},
 
 style: [
     {
@@ -105,7 +99,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.6 BLOC-1 (biogenesis of lysosome-related organelles complex 1)<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
+    0.3 E6AP-HERC2-MAPK6-NEURL4 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

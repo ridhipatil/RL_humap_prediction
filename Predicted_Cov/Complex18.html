@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.6 Exosome</title>
+<title> 0.5 p16-cyclin D2-CDK4 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,71 +30,25 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'DIS3L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TF46" }},
-{data: { id: 'MPHOSPH6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99547" }},
-{data: { id: 'EXOSC9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q06265" }},
-{data: { id: 'RBM7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y580" }},
-{data: { id: 'C1D', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13901" }},
-{data: { id: 'SARS-CoV2 nsp8', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp8.html" }},
-{data: { id: 'EXOSC8', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q96B26" }},
-{data: { id: 'SARS-CoV2 nsp8', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp8.html" }},
-{data: { id: 'EXOSC5', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9NQT4" }},
-{data: { id: 'EXOSC10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q01780" }},
-{data: { id: 'EXOSC4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NPD3" }},
-{data: { id: 'SARS-CoV2 nsp8', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp8.html" }},
-{data: { id: 'EXOSC2', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q13868" }},
-{data: { id: 'EXOSC7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15024" }}], 
- edges: [{ data: { source: 'SARS-CoV2 nsp8', target: 'EXOSC8', directed: 'false', weight: 0.990898225, type: 'sars'} },
-{ data: { source: 'SARS-CoV2 nsp8', target: 'EXOSC5', directed: 'false', weight: 0.704291901, type: 'sars'} },
-{ data: { source: 'SARS-CoV2 nsp8', target: 'EXOSC2', directed: 'false', weight: 0.672587659, type: 'sars'} },
-{ data: { source: 'DIS3L', target: 'MPHOSPH6', directed: 'false', weight: 0.0219473} },
-{ data: { source: 'DIS3L', target: 'EXOSC7', directed: 'false', weight: 0.996167} },
-{ data: { source: 'DIS3L', target: 'EXOSC2', directed: 'false', weight: 0.0783418} },
-{ data: { source: 'DIS3L', target: 'EXOSC9', directed: 'false', weight: 0.0265596} },
-{ data: { source: 'DIS3L', target: 'EXOSC4', directed: 'false', weight: 0.0440103} },
-{ data: { source: 'DIS3L', target: 'EXOSC5', directed: 'false', weight: 0.037642} },
-{ data: { source: 'DIS3L', target: 'EXOSC8', directed: 'false', weight: 0.998675} },
-{ data: { source: 'DIS3L', target: 'C1D', directed: 'false', weight: 0.0212519} },
-{ data: { source: 'MPHOSPH6', target: 'EXOSC2', directed: 'false', weight: 0.9998959999999999} },
-{ data: { source: 'MPHOSPH6', target: 'EXOSC4', directed: 'false', weight: 0.999667} },
-{ data: { source: 'MPHOSPH6', target: 'EXOSC5', directed: 'false', weight: 0.999489} },
-{ data: { source: 'MPHOSPH6', target: 'EXOSC7', directed: 'false', weight: 0.998606} },
-{ data: { source: 'MPHOSPH6', target: 'EXOSC9', directed: 'false', weight: 0.995028} },
-{ data: { source: 'MPHOSPH6', target: 'EXOSC10', directed: 'false', weight: 0.992872} },
-{ data: { source: 'MPHOSPH6', target: 'EXOSC8', directed: 'false', weight: 0.685715} },
-{ data: { source: 'MPHOSPH6', target: 'C1D', directed: 'false', weight: 0.051923699999999996} },
-{ data: { source: 'EXOSC9', target: 'EXOSC7', directed: 'false', weight: 1.0} },
-{ data: { source: 'EXOSC9', target: 'EXOSC2', directed: 'false', weight: 0.9999889999999999} },
-{ data: { source: 'EXOSC9', target: 'EXOSC10', directed: 'false', weight: 0.999992} },
-{ data: { source: 'EXOSC9', target: 'EXOSC5', directed: 'false', weight: 0.9999790000000001} },
-{ data: { source: 'EXOSC9', target: 'EXOSC4', directed: 'false', weight: 0.999965} },
-{ data: { source: 'EXOSC9', target: 'EXOSC8', directed: 'false', weight: 0.9999049999999999} },
-{ data: { source: 'EXOSC9', target: 'C1D', directed: 'false', weight: 0.8664879999999999} },
-{ data: { source: 'RBM7', target: 'EXOSC10', directed: 'false', weight: 0.938116} },
-{ data: { source: 'RBM7', target: 'EXOSC7', directed: 'false', weight: 0.9193520000000001} },
-{ data: { source: 'RBM7', target: 'EXOSC8', directed: 'false', weight: 0.531028} },
-{ data: { source: 'RBM7', target: 'C1D', directed: 'false', weight: 0.0716307} },
-{ data: { source: 'C1D', target: 'EXOSC7', directed: 'false', weight: 0.939074} },
-{ data: { source: 'C1D', target: 'EXOSC2', directed: 'false', weight: 0.265086} },
-{ data: { source: 'C1D', target: 'EXOSC10', directed: 'false', weight: 0.9597459999999999} },
-{ data: { source: 'C1D', target: 'EXOSC4', directed: 'false', weight: 0.725625} },
-{ data: { source: 'C1D', target: 'EXOSC5', directed: 'false', weight: 0.9722069999999999} },
-{ data: { source: 'C1D', target: 'EXOSC8', directed: 'false', weight: 0.5992390000000001} },
-{ data: { source: 'EXOSC8', target: 'EXOSC7', directed: 'false', weight: 0.9783870000000001} },
-{ data: { source: 'EXOSC8', target: 'EXOSC2', directed: 'false', weight: 0.9998610000000001} },
-{ data: { source: 'EXOSC8', target: 'EXOSC10', directed: 'false', weight: 0.999999} },
-{ data: { source: 'EXOSC8', target: 'EXOSC4', directed: 'false', weight: 0.9995209999999999} },
-{ data: { source: 'EXOSC8', target: 'EXOSC5', directed: 'false', weight: 0.9999} },
-{ data: { source: 'EXOSC5', target: 'EXOSC7', directed: 'false', weight: 0.9989030000000001} },
-{ data: { source: 'EXOSC5', target: 'EXOSC2', directed: 'false', weight: 0.9999180000000001} },
-{ data: { source: 'EXOSC5', target: 'EXOSC10', directed: 'false', weight: 0.999966} },
-{ data: { source: 'EXOSC5', target: 'EXOSC4', directed: 'false', weight: 0.9875209999999999} },
-{ data: { source: 'EXOSC10', target: 'EXOSC7', directed: 'false', weight: 0.9999979999999999} },
-{ data: { source: 'EXOSC10', target: 'EXOSC2', directed: 'false', weight: 1.0} },
-{ data: { source: 'EXOSC10', target: 'EXOSC4', directed: 'false', weight: 0.999965} },
-{ data: { source: 'EXOSC4', target: 'EXOSC7', directed: 'false', weight: 0.9999969999999999} },
-{ data: { source: 'EXOSC4', target: 'EXOSC2', directed: 'false', weight: 1.0} },
-{ data: { source: 'EXOSC2', target: 'EXOSC7', directed: 'false', weight: 1.0} }]},
+elements:{nodes: [{data: { id: 'CDKN2C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P42773" }},
+{data: { id: 'CCND2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P30279" }},
+{data: { id: 'CDKN2B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P42772" }},
+{data: { id: 'CDK4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P11802" }},
+{data: { id: 'CDKN2A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P42771" }},
+{data: { id: 'OGFRL1', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q5TC84" }}], 
+ edges: [{ data: { source: 'CDKN2C', target: 'CDK4', directed: 'false', weight: 0.676475} },
+{ data: { source: 'CDKN2C', target: 'OGFRL1', directed: 'false', weight: 0.128057} },
+{ data: { source: 'CDKN2C', target: 'CDKN2A', directed: 'false', weight: 0.198303} },
+{ data: { source: 'CDKN2C', target: 'CDKN2B', directed: 'false', weight: 0.238157} },
+{ data: { source: 'CDKN2A', target: 'CDK4', directed: 'false', weight: 0.980915} },
+{ data: { source: 'CDKN2A', target: 'OGFRL1', directed: 'false', weight: 0.140692} },
+{ data: { source: 'CDKN2A', target: 'CDKN2B', directed: 'false', weight: 0.402805} },
+{ data: { source: 'CDKN2A', target: 'CCND2', directed: 'false', weight: 0.123797} },
+{ data: { source: 'CCND2', target: 'CDK4', directed: 'false', weight: 0.692639} },
+{ data: { source: 'CCND2', target: 'OGFRL1', directed: 'false', weight: 0.151455} },
+{ data: { source: 'OGFRL1', target: 'CDK4', directed: 'false', weight: 0.983915} },
+{ data: { source: 'OGFRL1', target: 'CDKN2B', directed: 'false', weight: 0.151455} },
+{ data: { source: 'CDKN2B', target: 'CDK4', directed: 'false', weight: 0.7832399999999999} }]},
 
 style: [
     {
@@ -149,12 +103,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.6 Exosome<br> Complex Score = 0.39700<br> Unweighted Density = 0.87
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        3 interacting protein(s): <br>EXOSC8 EXOSC5 EXOSC2
+    0.5 p16-cyclin D2-CDK4 complex<br> Complex Score = 0.39688<br> Unweighted Density = 0.87
     </section>
     </body>
     </html>

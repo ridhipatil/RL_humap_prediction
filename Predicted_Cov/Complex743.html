@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> UAP1 RNPEP ENSA FREP1</title>
+<title> 0.2 LTBR homodimer complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,20 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'FREP1', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q4L233" }},
-{data: { id: 'RNPEP', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9H4A4" }},
-{data: { id: 'UAP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16222" }},
-{data: { id: 'ENSA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43768" }}], 
- edges: [{ data: { source: 'FREP1', target: 'UAP1', directed: 'false', weight: 0.291199} },
-{ data: { source: 'RNPEP', target: 'UAP1', directed: 'false', weight: 0.924276} },
-{ data: { source: 'UAP1', target: 'ENSA', directed: 'false', weight: 0.173373} }]},
+elements:{nodes: [{data: { id: 'LTBR', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P36941" }},
+{data: { id: 'THAP3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WTV1" }},
+{data: { id: 'TNIK', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UKE5" }},
+{data: { id: 'RPL29', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P47914" }},
+{data: { id: 'RPL11', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62913" }},
+{data: { id: 'SPATS2', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q86XZ4" }}], 
+ edges: [{ data: { source: 'LTBR', target: 'THAP3', directed: 'false', weight: 0.9594659999999999} },
+{ data: { source: 'LTBR', target: 'SPATS2', directed: 'false', weight: 0.87664} },
+{ data: { source: 'LTBR', target: 'TNIK', directed: 'false', weight: 0.705989} },
+{ data: { source: 'THAP3', target: 'SPATS2', directed: 'false', weight: 0.140692} },
+{ data: { source: 'THAP3', target: 'TNIK', directed: 'false', weight: 0.151455} },
+{ data: { source: 'RPL11', target: 'RPL29', directed: 'false', weight: 0.158403} },
+{ data: { source: 'SPATS2', target: 'RPL29', directed: 'false', weight: 0.10441700000000001} },
+{ data: { source: 'SPATS2', target: 'TNIK', directed: 'false', weight: 0.123797} }]},
 
 style: [
     {
@@ -96,7 +103,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    UAP1 RNPEP ENSA FREP1<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.2 LTBR homodimer complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.53
     </section>
     </body>
     </html>

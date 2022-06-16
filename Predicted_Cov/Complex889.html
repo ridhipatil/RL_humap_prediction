@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 TBCE-TBCB-tubulin(alpha) complex match 2</title>
+<title> 0.2 GRPEL1-GRPEL2 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,11 +30,18 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'TBCE', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15813" }},
-{data: { id: 'HEL-S-61p', score: 2, type: '', href: "https://www.uniprot.org/uniprot/V9HWA4" }},
-{data: { id: 'BHMT2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H2M3" }}], 
- edges: [{ data: { source: 'TBCE', target: 'BHMT2', directed: 'false', weight: 0.28082399999999996} },
-{ data: { source: 'HEL-S-61p', target: 'BHMT2', directed: 'false', weight: 0.995999} }]},
+elements:{nodes: [{data: { id: 'KYAT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16773" }},
+{data: { id: 'PALLD', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WX93" }},
+{data: { id: 'ATP5IF1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UII2" }},
+{data: { id: 'SARS-CoV2 nsp10', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp10.html" }},
+{data: { id: 'GRPEL1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9HAV7" }},
+{data: { id: 'CMPK1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P30085" }}], 
+ edges: [{ data: { source: 'SARS-CoV2 nsp10', target: 'GRPEL1', directed: 'false', weight: 0.986587081, type: 'sars'} },
+{ data: { source: 'KYAT1', target: 'CMPK1', directed: 'false', weight: 0.903732} },
+{ data: { source: 'KYAT1', target: 'PALLD', directed: 'false', weight: 0.03658019999999999} },
+{ data: { source: 'PALLD', target: 'CMPK1', directed: 'false', weight: 0.685014} },
+{ data: { source: 'PALLD', target: 'GRPEL1', directed: 'false', weight: 0.849672} },
+{ data: { source: 'ATP5IF1', target: 'GRPEL1', directed: 'false', weight: 0.898349} }]},
 
 style: [
     {
@@ -94,7 +101,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 TBCE-TBCB-tubulin(alpha) complex match 2<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
+    0.2 GRPEL1-GRPEL2 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>GRPEL1
     </section>
     </body>
     </html>

@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> SARS1 CBR4 HSD17B8 FAHD1</title>
+<title> 0.3 BCOR complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,18 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'CBR4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N4T8" }},
-{data: { id: 'FAHD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6P587" }},
-{data: { id: 'SARS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49591" }},
-{data: { id: 'HSD17B8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92506" }}], 
- edges: [{ data: { source: 'CBR4', target: 'HSD17B8', directed: 'false', weight: 0.898618} },
-{ data: { source: 'FAHD1', target: 'SARS1', directed: 'false', weight: 0.371237} },
-{ data: { source: 'SARS1', target: 'HSD17B8', directed: 'false', weight: 0.546438} }]},
+elements:{nodes: [{data: { id: 'RYBP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N488" }},
+{data: { id: 'PCGF3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q3KNV8" }},
+{data: { id: 'RNF2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99496" }},
+{data: { id: 'PCGF2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P35227" }},
+{data: { id: 'BCOR', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6W2J9" }}], 
+ edges: [{ data: { source: 'PCGF3', target: 'RYBP', directed: 'false', weight: 0.754736} },
+{ data: { source: 'PCGF3', target: 'BCOR', directed: 'false', weight: 0.127151} },
+{ data: { source: 'PCGF3', target: 'PCGF2', directed: 'false', weight: 0.140692} },
+{ data: { source: 'RNF2', target: 'RYBP', directed: 'false', weight: 0.980628} },
+{ data: { source: 'BCOR', target: 'RYBP', directed: 'false', weight: 0.9680200000000001} },
+{ data: { source: 'BCOR', target: 'PCGF2', directed: 'false', weight: 0.102896} },
+{ data: { source: 'RYBP', target: 'PCGF2', directed: 'false', weight: 0.9078450000000001} }]},
 
 style: [
     {
@@ -96,7 +101,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    SARS1 CBR4 HSD17B8 FAHD1<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.3 BCOR complex<br> Complex Score = 0.38750<br> Unweighted Density = 0.70
     </section>
     </body>
     </html>

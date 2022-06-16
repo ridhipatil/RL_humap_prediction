@@ -30,13 +30,23 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'C2orf33', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9GZY8" }},
-{data: { id: 'PACSIN3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UKS6" }},
-{data: { id: 'POTEKP', score: 4, type: '', href: "https://www.ncbi.nlm.nih.gov/gene/440915" }},
-{data: { id: 'COBL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75128" }}], 
- edges: [{ data: { source: 'C2orf33', target: 'POTEKP', directed: 'false', weight: 0.145} },
-{ data: { source: 'PACSIN3', target: 'COBL', directed: 'false', weight: 0.10603399999999999} },
-{ data: { source: 'POTEKP', target: 'COBL', directed: 'false', weight: 0.659909} }]},
+elements:{nodes: [{data: { id: 'DPCD', score: 3.0, type: '', href: "https://www.uniprot.org/uniprot/Q9BVM2" }},
+{data: { id: 'ACTR6', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9GZN1" }},
+{data: { id: 'MRFAP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y605" }},
+{data: { id: 'RUVBL2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y230" }},
+{data: { id: 'MYC', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P01106" }},
+{data: { id: 'MORF4L1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UBU8" }},
+{data: { id: 'VPS72', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15906" }}], 
+ edges: [{ data: { source: 'DPCD', target: 'ACTR6', directed: 'false', weight: 0.213613} },
+{ data: { source: 'DPCD', target: 'RUVBL2', directed: 'false', weight: 0.42635100000000004} },
+{ data: { source: 'ACTR6', target: 'VPS72', directed: 'false', weight: 0.814735} },
+{ data: { source: 'ACTR6', target: 'RUVBL2', directed: 'false', weight: 0.959946} },
+{ data: { source: 'ACTR6', target: 'MORF4L1', directed: 'false', weight: 0.290403} },
+{ data: { source: 'ACTR6', target: 'MYC', directed: 'false', weight: 0.100649} },
+{ data: { source: 'MRFAP1', target: 'MORF4L1', directed: 'false', weight: 0.658528} },
+{ data: { source: 'MYC', target: 'VPS72', directed: 'false', weight: 0.294644} },
+{ data: { source: 'MYC', target: 'MORF4L1', directed: 'false', weight: 0.294644} },
+{ data: { source: 'MORF4L1', target: 'VPS72', directed: 'false', weight: 0.9386770000000001} }]},
 
 style: [
     {

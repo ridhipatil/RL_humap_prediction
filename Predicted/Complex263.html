@@ -30,34 +30,18 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'SYNJ1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43426" }},
-{data: { id: 'ATP6V1F', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16864" }},
-{data: { id: 'CIAPIN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6FI81" }},
-{data: { id: 'ATP6V1D', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y5K8" }},
-{data: { id: 'ATP6V1E1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P36543" }},
-{data: { id: 'ATP6V1A', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P38606" }},
-{data: { id: 'ATP6V1C2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NEY4" }}], 
- edges: [{ data: { source: 'SYNJ1', target: 'CIAPIN1', directed: 'false', weight: 0.022022} },
-{ data: { source: 'SYNJ1', target: 'ATP6V1D', directed: 'false', weight: 0.15395} },
-{ data: { source: 'ATP6V1F', target: 'ATP6V1C2', directed: 'false', weight: 0.9308770000000001} },
-{ data: { source: 'ATP6V1F', target: 'ATP6V1A', directed: 'false', weight: 0.615748} },
-{ data: { source: 'ATP6V1F', target: 'ATP6V1E1', directed: 'false', weight: 0.98157} },
-{ data: { source: 'ATP6V1F', target: 'CIAPIN1', directed: 'false', weight: 0.09341849999999999} },
-{ data: { source: 'CIAPIN1', target: 'ATP6V1D', directed: 'false', weight: 0.664582} },
-{ data: { source: 'ATP6V1D', target: 'ATP6V1C2', directed: 'false', weight: 0.97514} },
-{ data: { source: 'ATP6V1D', target: 'ATP6V1A', directed: 'false', weight: 0.146841} },
-{ data: { source: 'ATP6V1D', target: 'ATP6V1E1', directed: 'false', weight: 0.352135} },
-{ data: { source: 'ATP6V1E1', target: 'ATP6V1C2', directed: 'false', weight: 0.9842040000000001} },
-{ data: { source: 'ATP6V1E1', target: 'ATP6V1A', directed: 'false', weight: 0.999657} },
-{ data: { source: 'ATP6V1A', target: 'ATP6V1C2', directed: 'false', weight: 0.999308} }]},
+elements:{nodes: [{data: { id: 'MIS18BP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6P0N0" }},
+{data: { id: 'MIS18A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NYP9" }},
+{data: { id: 'OIP5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43482" }}], 
+ edges: [{ data: { source: 'MIS18BP1', target: 'OIP5', directed: 'false', weight: 0.46097200000000005} },
+{ data: { source: 'MIS18BP1', target: 'MIS18A', directed: 'false', weight: 0.117318} },
+{ data: { source: 'MIS18A', target: 'OIP5', directed: 'false', weight: 0.954908} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 10,
-		'width':'10',
-		'height': '10',	
+		'font-size': 30,
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}                                
@@ -69,7 +53,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
 								'line-color': 'blue',
 								'opacity': 0.5
 							}
@@ -78,10 +62,7 @@ style: [
 
 });
 cy.layout({
-    'name': 'fcose',
-		'animate':false,
-	'nodeDimensionsIncludeLabels':true,
-	'nodeSeparation': 1000
+    name: 'circle'
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -97,12 +78,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.38800
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>ATP6V1A
+    Complex Score  = 0.38750
     </section>
     </body>
     </html>

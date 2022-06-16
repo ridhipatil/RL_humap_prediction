@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 Isocitrate dehydrogenase [NADP], mitochondrial</title>
+<title> 0.3 STAGA core complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,18 +30,23 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'TXNDC17', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BRA2" }},
-{data: { id: 'MTHFD1L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6UB35" }},
-{data: { id: 'FAH', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P16930" }},
-{data: { id: 'ACOX1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15067" }},
-{data: { id: 'IDH2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P48735" }}], 
- edges: [{ data: { source: 'TXNDC17', target: 'IDH2', directed: 'false', weight: 0.937124} },
-{ data: { source: 'TXNDC17', target: 'MTHFD1L', directed: 'false', weight: 0.309408} },
-{ data: { source: 'TXNDC17', target: 'ACOX1', directed: 'false', weight: 0.0935642} },
-{ data: { source: 'MTHFD1L', target: 'IDH2', directed: 'false', weight: 0.991389} },
-{ data: { source: 'MTHFD1L', target: 'ACOX1', directed: 'false', weight: 0.10652} },
-{ data: { source: 'FAH', target: 'IDH2', directed: 'false', weight: 0.120466} },
-{ data: { source: 'ACOX1', target: 'IDH2', directed: 'false', weight: 0.174368} }]},
+elements:{nodes: [{data: { id: 'SUPT20H', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NEM7" }},
+{data: { id: 'TAF12', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16514" }},
+{data: { id: 'TAF4B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92750" }},
+{data: { id: 'SUPT3H', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75486" }},
+{data: { id: 'TAF9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16594" }},
+{data: { id: 'TADA2B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86TJ2" }}], 
+ edges: [{ data: { source: 'SUPT3H', target: 'TADA2B', directed: 'false', weight: 0.998956} },
+{ data: { source: 'SUPT3H', target: 'SUPT20H', directed: 'false', weight: 0.8509959999999999} },
+{ data: { source: 'SUPT3H', target: 'TAF12', directed: 'false', weight: 0.45249700000000004} },
+{ data: { source: 'SUPT3H', target: 'TAF9', directed: 'false', weight: 0.16064} },
+{ data: { source: 'TAF9', target: 'TADA2B', directed: 'false', weight: 0.57215} },
+{ data: { source: 'TAF9', target: 'SUPT20H', directed: 'false', weight: 0.249522} },
+{ data: { source: 'TAF9', target: 'TAF4B', directed: 'false', weight: 0.128057} },
+{ data: { source: 'TAF9', target: 'TAF12', directed: 'false', weight: 0.45249700000000004} },
+{ data: { source: 'SUPT20H', target: 'TADA2B', directed: 'false', weight: 0.998756} },
+{ data: { source: 'SUPT20H', target: 'TAF12', directed: 'false', weight: 0.581678} },
+{ data: { source: 'TAF12', target: 'TADA2B', directed: 'false', weight: 0.829577} }]},
 
 style: [
     {
@@ -101,7 +106,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 Isocitrate dehydrogenase [NADP], mitochondrial<br> Complex Score = 0.38800<br> Unweighted Density = 0.70
+    0.3 STAGA core complex<br> Complex Score = 0.39375<br> Unweighted Density = 0.73
     </section>
     </body>
     </html>

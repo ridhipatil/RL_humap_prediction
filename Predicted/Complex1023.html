@@ -30,13 +30,18 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'SINHCAF', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NP50" }},
-{data: { id: 'MTA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13330" }},
-{data: { id: 'RBBP7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16576" }},
-{data: { id: 'CHD5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00258" }}], 
- edges: [{ data: { source: 'SINHCAF', target: 'RBBP7', directed: 'false', weight: 0.984944} },
-{ data: { source: 'MTA1', target: 'RBBP7', directed: 'false', weight: 0.999401} },
-{ data: { source: 'RBBP7', target: 'CHD5', directed: 'false', weight: 0.991701} }]},
+elements:{nodes: [{data: { id: 'PLEC', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15149" }},
+{data: { id: 'RAI14', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9P0K7" }},
+{data: { id: 'TMOD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P28289" }},
+{data: { id: 'TRIOBP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H2D6" }},
+{data: { id: 'CFL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P23528" }},
+{data: { id: 'CAP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q01518" }}], 
+ edges: [{ data: { source: 'TMOD1', target: 'RAI14', directed: 'false', weight: 0.45638999999999996} },
+{ data: { source: 'TRIOBP', target: 'RAI14', directed: 'false', weight: 0.8704069999999999} },
+{ data: { source: 'CFL1', target: 'CAP1', directed: 'false', weight: 0.975943} },
+{ data: { source: 'CFL1', target: 'RAI14', directed: 'false', weight: 0.541837} },
+{ data: { source: 'CFL1', target: 'PLEC', directed: 'false', weight: 0.287991} },
+{ data: { source: 'RAI14', target: 'PLEC', directed: 'false', weight: 0.29843400000000003} }]},
 
 style: [
     {
@@ -84,7 +89,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.37500
+    Complex Score  = 0.35000
     </section>
     </body>
     </html>

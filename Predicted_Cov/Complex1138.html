@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 AFF4 super elongation complex (SEC) match 2</title>
+<title> 0.05 Emerin complex 52 match 3</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,14 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'ICE1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y2F5" }},
-{data: { id: 'MLLT3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P42568" }},
-{data: { id: 'EAF2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96CJ1" }},
-{data: { id: 'ELL3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HB65" }}], 
- edges: [{ data: { source: 'ICE1', target: 'ELL3', directed: 'false', weight: 0.739815} },
-{ data: { source: 'MLLT3', target: 'ELL3', directed: 'false', weight: 0.20602399999999998} },
-{ data: { source: 'EAF2', target: 'ELL3', directed: 'false', weight: 0.994611} }]},
+elements:{nodes: [{data: { id: 'XPOT', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43592" }},
+{data: { id: 'DDX39A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00148" }},
+{data: { id: 'ZC3H11A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75152" }},
+{data: { id: 'C19orf47', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q8N9M1" }}], 
+ edges: [{ data: { source: 'C19orf47', target: 'ZC3H11A', directed: 'false', weight: 0.257701} },
+{ data: { source: 'C19orf47', target: 'DDX39A', directed: 'false', weight: 0.373726} },
+{ data: { source: 'XPOT', target: 'DDX39A', directed: 'false', weight: 0.7635069999999999} },
+{ data: { source: 'DDX39A', target: 'ZC3H11A', directed: 'false', weight: 0.241222} }]},
 
 style: [
     {
@@ -96,7 +97,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 AFF4 super elongation complex (SEC) match 2<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.05 Emerin complex 52 match 3<br> Complex Score = 0.30000<br> Unweighted Density = 0.67
     </section>
     </body>
     </html>

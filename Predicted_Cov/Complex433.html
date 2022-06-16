@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 STIM1-TRPV4 complex</title>
+<title> 0.1 Frataxin complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,14 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'PLS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14651" }},
-{data: { id: 'METTL6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TCB7" }},
-{data: { id: 'STIM1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13586" }},
-{data: { id: 'STIM2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9P246" }}], 
- edges: [{ data: { source: 'PLS1', target: 'METTL6', directed: 'false', weight: 0.327602} },
-{ data: { source: 'METTL6', target: 'STIM1', directed: 'false', weight: 0.260216} },
-{ data: { source: 'STIM2', target: 'STIM1', directed: 'false', weight: 0.658212} }]},
+elements:{nodes: [{data: { id: 'PDHA2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P29803" }},
+{data: { id: 'SDHAF2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NX18" }},
+{data: { id: 'SDHB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P21912" }},
+{data: { id: 'SDHA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P31040" }}], 
+ edges: [{ data: { source: 'SDHAF2', target: 'SDHA', directed: 'false', weight: 0.623471} },
+{ data: { source: 'SDHB', target: 'SDHA', directed: 'false', weight: 0.996382} },
+{ data: { source: 'SDHB', target: 'PDHA2', directed: 'false', weight: 0.576159} },
+{ data: { source: 'SDHA', target: 'PDHA2', directed: 'false', weight: 0.416279} }]},
 
 style: [
     {
@@ -96,7 +97,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 STIM1-TRPV4 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.1 Frataxin complex<br> Complex Score = 0.38750<br> Unweighted Density = 0.67
     </section>
     </body>
     </html>

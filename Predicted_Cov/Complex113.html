@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> FCN2 FCN1 SUSD5</title>
+<title> 0.1 Cofilin-actin-CAP1 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,11 +30,23 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'FCN2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15485" }},
-{data: { id: 'FCN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00602" }},
-{data: { id: 'SUSD5', score: 4, type: '', href: "https://www.uniprot.org/uniprot/O60279" }}], 
- edges: [{ data: { source: 'FCN2', target: 'FCN1', directed: 'false', weight: 0.999976} },
-{ data: { source: 'FCN1', target: 'SUSD5', directed: 'false', weight: 0.761863} }]},
+elements:{nodes: [{data: { id: 'GARS', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P41250" }},
+{data: { id: 'GALE', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14376" }},
+{data: { id: 'CAP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P40123" }},
+{data: { id: 'DPP9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86TI2" }},
+{data: { id: 'ASNS', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P08243" }},
+{data: { id: 'CAP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q01518" }}], 
+ edges: [{ data: { source: 'GALE', target: 'CAP2', directed: 'false', weight: 0.59947} },
+{ data: { source: 'GALE', target: 'CAP1', directed: 'false', weight: 0.353983} },
+{ data: { source: 'GALE', target: 'GARS', directed: 'false', weight: 0.755182} },
+{ data: { source: 'GALE', target: 'ASNS', directed: 'false', weight: 0.374719} },
+{ data: { source: 'DPP9', target: 'ASNS', directed: 'false', weight: 0.405773} },
+{ data: { source: 'GARS', target: 'CAP2', directed: 'false', weight: 0.316008} },
+{ data: { source: 'GARS', target: 'CAP1', directed: 'false', weight: 0.961986} },
+{ data: { source: 'GARS', target: 'ASNS', directed: 'false', weight: 0.616097} },
+{ data: { source: 'CAP2', target: 'CAP1', directed: 'false', weight: 0.373051} },
+{ data: { source: 'CAP2', target: 'ASNS', directed: 'false', weight: 0.0262952} },
+{ data: { source: 'ASNS', target: 'CAP1', directed: 'false', weight: 0.12070999999999998} }]},
 
 style: [
     {
@@ -94,7 +106,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    FCN2 FCN1 SUSD5<br> Complex Score = 0.38800<br> Unweighted Density = 0.67
+    0.1 Cofilin-actin-CAP1 complex<br> Complex Score = 0.39375<br> Unweighted Density = 0.73
     </section>
     </body>
     </html>

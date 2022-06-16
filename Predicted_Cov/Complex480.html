@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> FLJ00353 ERBIN CSRNP3 PPP1CC</title>
+<title> 0.2 ERBB2-MEMO-SHC complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,28 +30,25 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'FLJ00353', score: 1, type: '', href: "https://www.uniprot.org/uniprot/Q8NF45" }},
-{data: { id: 'PPP1CC', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P36873" }},
-{data: { id: 'ERBIN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96RT1" }},
-{data: { id: 'CSRNP3', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q8WYN3" }}], 
- edges: [{ data: { source: 'FLJ00353', target: 'PPP1CC', directed: 'false', weight: 0.995376} },
-{ data: { source: 'PPP1CC', target: 'ERBIN', directed: 'false', weight: 0.987784} },
-{ data: { source: 'PPP1CC', target: 'CSRNP3', directed: 'false', weight: 0.384845} }]},
+elements:{nodes: [{data: { id: 'UBE3D', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q7Z6J8" }},
+{data: { id: 'MEMO1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y316" }},
+{data: { id: 'HMBOX1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6NT76" }}], 
+ edges: [{ data: { source: 'UBE3D', target: 'HMBOX1', directed: 'false', weight: 0.151455} },
+{ data: { source: 'UBE3D', target: 'MEMO1', directed: 'false', weight: 0.90699} },
+{ data: { source: 'MEMO1', target: 'HMBOX1', directed: 'false', weight: 0.9815729999999999} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 10,
-		'width':'10',
-		'height': '10',	
+		'font-size': 30,
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}  
                                  if ( ele.data('type') == 'sars' ){return 'triangle'}   
   return 'rectangle';
   },            
-             'background-color': function( ele ){ 
+            'background-color': function( ele ){ 
                                 if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
 								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
                                  if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
@@ -65,7 +62,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
 								'line-color': function( ele ){ 
                                  if ( ele.data('type') == 'sars' ){return 'red'}   
   return 'blue';
@@ -77,10 +74,7 @@ style: [
 
 });
 cy.layout({
-    'name': 'fcose',
-		'animate':false,
-	'nodeDimensionsIncludeLabels':true,
-	'nodeSeparation': 1000
+    'name': 'circle'
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -96,7 +90,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    FLJ00353 ERBIN CSRNP3 PPP1CC<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.2 ERBB2-MEMO-SHC complex<br> Complex Score = 0.38750<br> Unweighted Density = 1.00
     </section>
     </body>
     </html>

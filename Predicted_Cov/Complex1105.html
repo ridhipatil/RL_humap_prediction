@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 NLRP1 inflammasome</title>
+<title> 0.05 C complex spliceosome match 5</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,14 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'PI4KB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UBF8" }},
-{data: { id: 'PPARGC1B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86YN6" }},
-{data: { id: 'CASP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P29466" }},
-{data: { id: 'DNAJC10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IXB1" }}], 
- edges: [{ data: { source: 'PI4KB', target: 'CASP1', directed: 'false', weight: 0.5} },
-{ data: { source: 'PI4KB', target: 'DNAJC10', directed: 'false', weight: 0.11695699999999999} },
-{ data: { source: 'PPARGC1B', target: 'DNAJC10', directed: 'false', weight: 0.10666400000000001} }]},
+elements:{nodes: [{data: { id: 'ZNF830', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96NB3" }},
+{data: { id: 'SYF2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95926" }},
+{data: { id: 'CRNKL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BZJ0" }},
+{data: { id: 'C1orf52', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q8N6N3" }}], 
+ edges: [{ data: { source: 'CRNKL1', target: 'SYF2', directed: 'false', weight: 0.999957} },
+{ data: { source: 'CRNKL1', target: 'ZNF830', directed: 'false', weight: 0.974584} },
+{ data: { source: 'CRNKL1', target: 'C1orf52', directed: 'false', weight: 0.376841} },
+{ data: { source: 'ZNF830', target: 'C1orf52', directed: 'false', weight: 0.142378} }]},
 
 style: [
     {
@@ -96,7 +97,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 NLRP1 inflammasome<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.05 C complex spliceosome match 5<br> Complex Score = 0.30000<br> Unweighted Density = 0.67
     </section>
     </body>
     </html>

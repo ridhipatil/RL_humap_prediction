@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 OCT4-SOX2 DNA-protein complex match 2</title>
+<title> 0.2 eIF3 complex (EIF3S6, EIF3S5, EIF3S4, EIF3S3, EIF3S6IP, EIF3S2, EIF3S9, EIF3S12,  EIF3S10, EIF3S8,  EIF3S1, EIF3S7)</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,26 +30,28 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'SOX14', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95416" }},
-{data: { id: 'SOX2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P48431" }},
-{data: { id: 'SOX21', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q9Y651" }}], 
- edges: [{ data: { source: 'SOX14', target: 'SOX2', directed: 'false', weight: 0.951368} },
-{ data: { source: 'SOX2', target: 'SOX21', directed: 'false', weight: 1.0} }]},
+elements:{nodes: [{data: { id: 'EIF3J', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75822" }},
+{data: { id: 'EIF3F', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00303" }},
+{data: { id: 'JOSD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15040" }},
+{data: { id: 'EIF3C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99613" }}], 
+ edges: [{ data: { source: 'EIF3J', target: 'EIF3C', directed: 'false', weight: 0.332466} },
+{ data: { source: 'EIF3J', target: 'EIF3F', directed: 'false', weight: 0.348493} },
+{ data: { source: 'EIF3F', target: 'EIF3C', directed: 'false', weight: 0.99956} },
+{ data: { source: 'EIF3F', target: 'JOSD1', directed: 'false', weight: 0.9689270000000001} },
+{ data: { source: 'JOSD1', target: 'EIF3C', directed: 'false', weight: 0.11047699999999999} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 10,
-		'width':'10',
-		'height': '10',	
+		'font-size': 30,
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}  
                                  if ( ele.data('type') == 'sars' ){return 'triangle'}   
   return 'rectangle';
   },            
-             'background-color': function( ele ){ 
+            'background-color': function( ele ){ 
                                 if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
 								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
                                  if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
@@ -63,7 +65,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
 								'line-color': function( ele ){ 
                                  if ( ele.data('type') == 'sars' ){return 'red'}   
   return 'blue';
@@ -75,10 +77,7 @@ style: [
 
 });
 cy.layout({
-    'name': 'fcose',
-		'animate':false,
-	'nodeDimensionsIncludeLabels':true,
-	'nodeSeparation': 1000
+    'name': 'circle'
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -94,7 +93,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 OCT4-SOX2 DNA-protein complex match 2<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
+    0.2 eIF3 complex (EIF3S6, EIF3S5, EIF3S4, EIF3S3, EIF3S6IP, EIF3S2, EIF3S9, EIF3S12,  EIF3S10, EIF3S8,  EIF3S1, EIF3S7)<br> Complex Score = 0.30000<br> Unweighted Density = 0.83
     </section>
     </body>
     </html>

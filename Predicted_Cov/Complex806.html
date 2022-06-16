@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 39S ribosomal subunit, mitochondrial match 8</title>
+<title> SUSD5 KIAA0319L KIAA1549 DNAJC13 LGALS8 FCN2 ALCAM FCN1</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,23 +30,28 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'MRPS30', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9NP92" }},
-{data: { id: 'MRPL50', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q8N5N7" }},
-{data: { id: 'GADD45GIP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TAE8" }},
-{data: { id: 'NGRN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NPE2" }},
-{data: { id: 'MRPL24', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q96A35" }},
-{data: { id: 'MRPL37', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9BZE1" }}], 
- edges: [{ data: { source: 'MRPS30', target: 'MRPL50', directed: 'false', weight: 1.0} },
-{ data: { source: 'MRPS30', target: 'MRPL24', directed: 'false', weight: 0.999483} },
-{ data: { source: 'MRPS30', target: 'GADD45GIP1', directed: 'false', weight: 0.992524} },
-{ data: { source: 'MRPS30', target: 'MRPL37', directed: 'false', weight: 0.8488530000000001} },
-{ data: { source: 'MRPL50', target: 'MRPL37', directed: 'false', weight: 0.9996799999999999} },
-{ data: { source: 'MRPL50', target: 'GADD45GIP1', directed: 'false', weight: 0.9993799999999999} },
-{ data: { source: 'MRPL50', target: 'MRPL24', directed: 'false', weight: 0.9992040000000001} },
-{ data: { source: 'MRPL50', target: 'NGRN', directed: 'false', weight: 0.231344} },
-{ data: { source: 'GADD45GIP1', target: 'MRPL37', directed: 'false', weight: 0.298535} },
-{ data: { source: 'GADD45GIP1', target: 'MRPL24', directed: 'false', weight: 0.0367115} },
-{ data: { source: 'MRPL24', target: 'MRPL37', directed: 'false', weight: 0.9948299999999999} }]},
+elements:{nodes: [{data: { id: 'FCN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00602" }},
+{data: { id: 'KIAA0319L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IZA0" }},
+{data: { id: 'FCN2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15485" }},
+{data: { id: 'DNAJC13', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75165" }},
+{data: { id: 'KIAA1549', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HCM3" }},
+{data: { id: 'LGALS8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00214" }},
+{data: { id: 'SUSD5', score: 3, type: '', href: "https://www.uniprot.org/uniprot/O60279" }},
+{data: { id: 'ALCAM', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13740" }}], 
+ edges: [{ data: { source: 'FCN1', target: 'FCN2', directed: 'false', weight: 0.9855079999999999} },
+{ data: { source: 'FCN1', target: 'SUSD5', directed: 'false', weight: 0.904803} },
+{ data: { source: 'FCN1', target: 'DNAJC13', directed: 'false', weight: 0.892482} },
+{ data: { source: 'KIAA0319L', target: 'LGALS8', directed: 'false', weight: 0.254323} },
+{ data: { source: 'KIAA0319L', target: 'SUSD5', directed: 'false', weight: 0.329598} },
+{ data: { source: 'KIAA0319L', target: 'KIAA1549', directed: 'false', weight: 0.41561800000000004} },
+{ data: { source: 'KIAA0319L', target: 'ALCAM', directed: 'false', weight: 0.329598} },
+{ data: { source: 'FCN2', target: 'SUSD5', directed: 'false', weight: 0.140692} },
+{ data: { source: 'FCN2', target: 'DNAJC13', directed: 'false', weight: 0.133451} },
+{ data: { source: 'DNAJC13', target: 'SUSD5', directed: 'false', weight: 0.108699} },
+{ data: { source: 'KIAA1549', target: 'LGALS8', directed: 'false', weight: 0.5} },
+{ data: { source: 'KIAA1549', target: 'SUSD5', directed: 'false', weight: 0.414998} },
+{ data: { source: 'KIAA1549', target: 'ALCAM', directed: 'false', weight: 0.414998} },
+{ data: { source: 'LGALS8', target: 'ALCAM', directed: 'false', weight: 0.651846} }]},
 
 style: [
     {
@@ -106,7 +111,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 39S ribosomal subunit, mitochondrial match 8<br> Complex Score = 0.37500<br> Unweighted Density = 0.73
+    SUSD5 KIAA0319L KIAA1549 DNAJC13 LGALS8 FCN2 ALCAM FCN1<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

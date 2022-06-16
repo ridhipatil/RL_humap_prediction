@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.7 Polyadenylation complex (CSTF1, CSTF2, CSTF3, SYMPK CPSF1, CPSF2, CPSF3)</title>
+<title> 0.1 MYC-DNMT3A-ZBTB17 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,18 +30,21 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'SYMPK', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92797" }},
-{data: { id: 'CSTF3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q12996" }},
-{data: { id: 'CPSF3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UKF6" }},
-{data: { id: 'CSTF1', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q05048" }},
-{data: { id: 'CSTF2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P33240" }}], 
- edges: [{ data: { source: 'SYMPK', target: 'CPSF3', directed: 'false', weight: 0.9217360000000001} },
-{ data: { source: 'SYMPK', target: 'CSTF2', directed: 'false', weight: 0.969081} },
-{ data: { source: 'SYMPK', target: 'CSTF3', directed: 'false', weight: 0.629444} },
-{ data: { source: 'CPSF3', target: 'CSTF2', directed: 'false', weight: 0.156594} },
-{ data: { source: 'CSTF3', target: 'CSTF2', directed: 'false', weight: 0.996173} },
-{ data: { source: 'CSTF3', target: 'CSTF1', directed: 'false', weight: 0.0251889} },
-{ data: { source: 'CSTF1', target: 'CSTF2', directed: 'false', weight: 0.398928} }]},
+elements:{nodes: [{data: { id: 'MYC', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P01106" }},
+{data: { id: 'SRCAP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6ZRS2" }},
+{data: { id: 'FOXR2', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q6PJQ5" }},
+{data: { id: 'JAZF1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86VZ6" }},
+{data: { id: 'ING3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NXR8" }},
+{data: { id: 'SIM2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14190" }}], 
+ edges: [{ data: { source: 'SRCAP', target: 'ING3', directed: 'false', weight: 0.185084} },
+{ data: { source: 'SRCAP', target: 'JAZF1', directed: 'false', weight: 0.249142} },
+{ data: { source: 'SRCAP', target: 'MYC', directed: 'false', weight: 0.0896254} },
+{ data: { source: 'FOXR2', target: 'SIM2', directed: 'false', weight: 0.979215} },
+{ data: { source: 'FOXR2', target: 'MYC', directed: 'false', weight: 0.9053629999999999} },
+{ data: { source: 'JAZF1', target: 'ING3', directed: 'false', weight: 0.8305739999999999} },
+{ data: { source: 'JAZF1', target: 'MYC', directed: 'false', weight: 0.114755} },
+{ data: { source: 'MYC', target: 'ING3', directed: 'false', weight: 0.310733} },
+{ data: { source: 'MYC', target: 'SIM2', directed: 'false', weight: 0.140692} }]},
 
 style: [
     {
@@ -101,7 +104,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.7 Polyadenylation complex (CSTF1, CSTF2, CSTF3, SYMPK CPSF1, CPSF2, CPSF3)<br> Complex Score = 0.38800<br> Unweighted Density = 0.70
+    0.1 MYC-DNMT3A-ZBTB17 complex<br> Complex Score = 0.38750<br> Unweighted Density = 0.60
     </section>
     </body>
     </html>

@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 HDAC10-PAX3-KAP1 complex</title>
+<title> 0.1 SH3P2/OSTF1-CBL-SRC complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,27 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'TRIM28', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13263" }},
-{data: { id: 'ZNF85', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q03923" }},
-{data: { id: 'POGK', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q9P215" }},
-{data: { id: 'CBX1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P83916" }}], 
- edges: [{ data: { source: 'ZNF85', target: 'TRIM28', directed: 'false', weight: 0.129829} },
-{ data: { source: 'POGK', target: 'TRIM28', directed: 'false', weight: 0.6389819999999999} },
-{ data: { source: 'TRIM28', target: 'CBX1', directed: 'false', weight: 0.42222299999999996} }]},
+elements:{nodes: [{data: { id: 'FAM174A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TBP5" }},
+{data: { id: 'MUL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q969V5" }},
+{data: { id: 'RP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75695" }},
+{data: { id: 'OSTF1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92882" }},
+{data: { id: 'SARS-CoV2 E', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 E.html" }},
+{data: { id: 'SLC44A2', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q8IWA5" }},
+{data: { id: 'MARC2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q969Z3" }},
+{data: { id: 'RDH12', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96NR8" }}], 
+ edges: [{ data: { source: 'SARS-CoV2 E', target: 'SLC44A2', directed: 'false', weight: 0.950342834, type: 'sars'} },
+{ data: { source: 'FAM174A', target: 'MUL1', directed: 'false', weight: 0.133451} },
+{ data: { source: 'FAM174A', target: 'MARC2', directed: 'false', weight: 0.151455} },
+{ data: { source: 'FAM174A', target: 'RDH12', directed: 'false', weight: 0.140692} },
+{ data: { source: 'MUL1', target: 'MARC2', directed: 'false', weight: 0.117318} },
+{ data: { source: 'MUL1', target: 'RDH12', directed: 'false', weight: 0.108699} },
+{ data: { source: 'OSTF1', target: 'RP2', directed: 'false', weight: 0.983613} },
+{ data: { source: 'OSTF1', target: 'SLC44A2', directed: 'false', weight: 0.151455} },
+{ data: { source: 'OSTF1', target: 'MARC2', directed: 'false', weight: 0.133456} },
+{ data: { source: 'RP2', target: 'SLC44A2', directed: 'false', weight: 0.9531200000000001} },
+{ data: { source: 'RP2', target: 'MARC2', directed: 'false', weight: 0.36932800000000005} },
+{ data: { source: 'SLC44A2', target: 'MARC2', directed: 'false', weight: 0.151455} },
+{ data: { source: 'MARC2', target: 'RDH12', directed: 'false', weight: 0.123797} }]},
 
 style: [
     {
@@ -96,7 +110,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 HDAC10-PAX3-KAP1 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.1 SH3P2/OSTF1-CBL-SRC complex<br> Complex Score = 0.38750<br> Unweighted Density = 0.57
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>SLC44A2
     </section>
     </body>
     </html>

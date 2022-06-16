@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> USP11 TCEAL1 UHRF1 KDM3A</title>
+<title> 0.2 6S methyltransferase and RG-containing Sm proteins complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,29 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'USP11', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P51784" }},
-{data: { id: 'UHRF1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96T88" }},
-{data: { id: 'TCEAL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15170" }},
-{data: { id: 'KDM3A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y4C1" }}], 
- edges: [{ data: { source: 'USP11', target: 'TCEAL1', directed: 'false', weight: 1.0} },
-{ data: { source: 'UHRF1', target: 'TCEAL1', directed: 'false', weight: 0.29238600000000003} },
-{ data: { source: 'TCEAL1', target: 'KDM3A', directed: 'false', weight: 0.9615520000000001} }]},
+elements:{nodes: [{data: { id: 'SNRPE', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62304" }},
+{data: { id: 'SNRPF', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62306" }},
+{data: { id: 'IK', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13123" }},
+{data: { id: 'SF3B1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75533" }},
+{data: { id: 'SRRT', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BXP5" }},
+{data: { id: 'SNRPD2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62316" }},
+{data: { id: 'CDK12', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NYV4" }},
+{data: { id: 'RSBN1', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q5VWQ0" }}], 
+ edges: [{ data: { source: 'SNRPE', target: 'SNRPD2', directed: 'false', weight: 0.994926} },
+{ data: { source: 'SNRPE', target: 'IK', directed: 'false', weight: 0.16098800000000002} },
+{ data: { source: 'SNRPE', target: 'SNRPF', directed: 'false', weight: 0.9970319999999999} },
+{ data: { source: 'SNRPF', target: 'SNRPD2', directed: 'false', weight: 0.9848} },
+{ data: { source: 'SNRPF', target: 'IK', directed: 'false', weight: 0.114254} },
+{ data: { source: 'SNRPF', target: 'SRRT', directed: 'false', weight: 0.102896} },
+{ data: { source: 'IK', target: 'SNRPD2', directed: 'false', weight: 0.967368} },
+{ data: { source: 'IK', target: 'SRRT', directed: 'false', weight: 0.5499609999999999} },
+{ data: { source: 'SF3B1', target: 'SNRPD2', directed: 'false', weight: 0.9989} },
+{ data: { source: 'SF3B1', target: 'SRRT', directed: 'false', weight: 0.976561} },
+{ data: { source: 'SF3B1', target: 'CDK12', directed: 'false', weight: 0.0863487} },
+{ data: { source: 'SRRT', target: 'SNRPD2', directed: 'false', weight: 0.986266} },
+{ data: { source: 'SRRT', target: 'CDK12', directed: 'false', weight: 0.510731} },
+{ data: { source: 'SNRPD2', target: 'CDK12', directed: 'false', weight: 0.8060649999999999} },
+{ data: { source: 'CDK12', target: 'RSBN1', directed: 'false', weight: 0.570802} }]},
 
 style: [
     {
@@ -96,7 +112,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    USP11 TCEAL1 UHRF1 KDM3A<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.2 6S methyltransferase and RG-containing Sm proteins complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.54
     </section>
     </body>
     </html>

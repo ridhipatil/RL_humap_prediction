@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.05 Nop56p-associated pre-rRNA complex match 2</title>
+<title> CADM2 STX1B DCK DGUOK ANK2 NUFIP1</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,14 +30,19 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'PWP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13610" }},
-{data: { id: 'ZC3HAV1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q7Z2W4" }},
-{data: { id: 'H1-3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P16402" }},
-{data: { id: 'PAPD5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NDF8" }}], 
- edges: [{ data: { source: 'PWP1', target: 'ZC3HAV1', directed: 'false', weight: 0.110017} },
-{ data: { source: 'PWP1', target: 'PAPD5', directed: 'false', weight: 0.0409139} },
-{ data: { source: 'ZC3HAV1', target: 'H1-3', directed: 'false', weight: 0.7579739999999999} },
-{ data: { source: 'ZC3HAV1', target: 'PAPD5', directed: 'false', weight: 0.136329} }]},
+elements:{nodes: [{data: { id: 'NUFIP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UHK0" }},
+{data: { id: 'STX1B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P61266" }},
+{data: { id: 'DGUOK', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16854" }},
+{data: { id: 'CADM2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N3J6" }},
+{data: { id: 'ANK2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q01484" }},
+{data: { id: 'DCK', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P27707" }}], 
+ edges: [{ data: { source: 'NUFIP1', target: 'CADM2', directed: 'false', weight: 0.721429} },
+{ data: { source: 'NUFIP1', target: 'STX1B', directed: 'false', weight: 0.471488} },
+{ data: { source: 'NUFIP1', target: 'ANK2', directed: 'false', weight: 0.128322} },
+{ data: { source: 'ANK2', target: 'DGUOK', directed: 'false', weight: 0.136572} },
+{ data: { source: 'ANK2', target: 'STX1B', directed: 'false', weight: 0.45249700000000004} },
+{ data: { source: 'DCK', target: 'DGUOK', directed: 'false', weight: 0.980611} },
+{ data: { source: 'STX1B', target: 'DGUOK', directed: 'false', weight: 0.391815} }]},
 
 style: [
     {
@@ -97,7 +102,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.05 Nop56p-associated pre-rRNA complex match 2<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
+    CADM2 STX1B DCK DGUOK ANK2 NUFIP1<br> Complex Score = 0.37500<br> Unweighted Density = 0.47
     </section>
     </body>
     </html>

@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 PAC1-PAC2 complex</title>
+<title> 0.2 CCT complex (chaperonin containing TCP1 complex) match 2</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,15 +30,20 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'PRTFDC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NRG1" }},
-{data: { id: 'PSMG1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95456" }},
-{data: { id: 'SARS-CoV2 nsp9', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp9.html" }},
-{data: { id: 'EIF4H', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q15056" }},
-{data: { id: 'HPRT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P00492" }}], 
- edges: [{ data: { source: 'SARS-CoV2 nsp9', target: 'EIF4H', directed: 'false', weight: 0.86901939, type: 'sars'} },
-{ data: { source: 'PRTFDC1', target: 'HPRT1', directed: 'false', weight: 0.772666} },
-{ data: { source: 'PSMG1', target: 'EIF4H', directed: 'false', weight: 0.165692} },
-{ data: { source: 'EIF4H', target: 'HPRT1', directed: 'false', weight: 0.166718} }]},
+elements:{nodes: [{data: { id: 'TXNDC9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O14530" }},
+{data: { id: 'CCT7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99832" }},
+{data: { id: 'FASN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/A0A0U1RQF0" }},
+{data: { id: 'SARS-CoV2 nsp7', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp7.html" }},
+{data: { id: 'DNAJC19', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q96DA6" }},
+{data: { id: 'CCT2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P78371" }}], 
+ edges: [{ data: { source: 'SARS-CoV2 nsp7', target: 'DNAJC19', directed: 'false', weight: 0.981450126, type: 'sars'} },
+{ data: { source: 'TXNDC9', target: 'CCT2', directed: 'false', weight: 0.9987090000000001} },
+{ data: { source: 'TXNDC9', target: 'CCT7', directed: 'false', weight: 0.9985430000000001} },
+{ data: { source: 'TXNDC9', target: 'DNAJC19', directed: 'false', weight: 0.0947832} },
+{ data: { source: 'CCT7', target: 'CCT2', directed: 'false', weight: 1.0} },
+{ data: { source: 'CCT7', target: 'DNAJC19', directed: 'false', weight: 0.0684556} },
+{ data: { source: 'DNAJC19', target: 'CCT2', directed: 'false', weight: 0.5311170000000001} },
+{ data: { source: 'CCT2', target: 'FASN', directed: 'false', weight: 0.889423} }]},
 
 style: [
     {
@@ -98,12 +103,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 PAC1-PAC2 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.2 CCT complex (chaperonin containing TCP1 complex) match 2<br> Complex Score = 0.38750<br> Unweighted Density = 0.70
         <br> 
         <br>
         Connection to SARS-COV2: 
         <br>
-        1 interacting protein(s): <br>EIF4H
+        1 interacting protein(s): <br>DNAJC19
     </section>
     </body>
     </html>

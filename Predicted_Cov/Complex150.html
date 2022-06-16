@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 TLE2 homodimer complex</title>
+<title> 0.3 Respiratory chain complex I (early intermediate NDUFAF1 assembly), mitochondrial</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,24 +30,29 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'RIPPLY1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q0D2K3" }},
-{data: { id: 'RIPPLY2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5TAB7" }},
-{data: { id: 'TLE2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q04725" }},
-{data: { id: 'TLE4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q04727" }},
-{data: { id: 'RIPPLY3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P57055" }},
-{data: { id: 'SARS-CoV2 nsp13', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp13.html" }},
-{data: { id: 'TLE3', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q04726" }}], 
- edges: [{ data: { source: 'SARS-CoV2 nsp13', target: 'TLE3', directed: 'false', weight: 0.933626993, type: 'sars'} },
-{ data: { source: 'TLE3', target: 'TLE4', directed: 'false', weight: 0.8298459999999999} },
-{ data: { source: 'TLE3', target: 'TLE2', directed: 'false', weight: 0.717286} },
-{ data: { source: 'TLE3', target: 'RIPPLY2', directed: 'false', weight: 0.0976653} },
-{ data: { source: 'TLE3', target: 'RIPPLY1', directed: 'false', weight: 0.026235200000000004} },
-{ data: { source: 'RIPPLY1', target: 'TLE2', directed: 'false', weight: 0.662483} },
-{ data: { source: 'RIPPLY1', target: 'TLE4', directed: 'false', weight: 0.46950299999999995} },
-{ data: { source: 'TLE2', target: 'TLE4', directed: 'false', weight: 0.999956} },
-{ data: { source: 'TLE2', target: 'RIPPLY2', directed: 'false', weight: 0.567843} },
-{ data: { source: 'TLE4', target: 'RIPPLY3', directed: 'false', weight: 0.48933000000000004} },
-{ data: { source: 'TLE4', target: 'RIPPLY2', directed: 'false', weight: 0.382794} }]},
+elements:{nodes: [{data: { id: 'NDUFS3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75489" }},
+{data: { id: 'NDUFB4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95168" }},
+{data: { id: 'NDUFS7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75251" }},
+{data: { id: 'NDUFA7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95182" }},
+{data: { id: 'NDUFB6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95139" }},
+{data: { id: 'NDUFA8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P51970" }},
+{data: { id: 'NDUFV3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P56181" }}], 
+ edges: [{ data: { source: 'NDUFS3', target: 'NDUFB6', directed: 'false', weight: 0.9277120000000001} },
+{ data: { source: 'NDUFS3', target: 'NDUFA7', directed: 'false', weight: 0.9161299999999999} },
+{ data: { source: 'NDUFS3', target: 'NDUFS7', directed: 'false', weight: 0.701616} },
+{ data: { source: 'NDUFS3', target: 'NDUFV3', directed: 'false', weight: 0.605604} },
+{ data: { source: 'NDUFS3', target: 'NDUFA8', directed: 'false', weight: 0.457136} },
+{ data: { source: 'NDUFS3', target: 'NDUFB4', directed: 'false', weight: 0.293329} },
+{ data: { source: 'NDUFB4', target: 'NDUFA7', directed: 'false', weight: 0.544713} },
+{ data: { source: 'NDUFB4', target: 'NDUFA8', directed: 'false', weight: 0.384898} },
+{ data: { source: 'NDUFB4', target: 'NDUFV3', directed: 'false', weight: 0.10188} },
+{ data: { source: 'NDUFS7', target: 'NDUFB6', directed: 'false', weight: 0.28781100000000004} },
+{ data: { source: 'NDUFS7', target: 'NDUFA8', directed: 'false', weight: 0.21693099999999998} },
+{ data: { source: 'NDUFS7', target: 'NDUFV3', directed: 'false', weight: 0.198303} },
+{ data: { source: 'NDUFA7', target: 'NDUFA8', directed: 'false', weight: 0.79686} },
+{ data: { source: 'NDUFB6', target: 'NDUFA8', directed: 'false', weight: 0.407018} },
+{ data: { source: 'NDUFB6', target: 'NDUFV3', directed: 'false', weight: 0.238157} },
+{ data: { source: 'NDUFA8', target: 'NDUFV3', directed: 'false', weight: 0.641988} }]},
 
 style: [
     {
@@ -107,12 +112,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 TLE2 homodimer complex<br> Complex Score = 0.38800<br> Unweighted Density = 0.67
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>TLE3
+    0.3 Respiratory chain complex I (early intermediate NDUFAF1 assembly), mitochondrial<br> Complex Score = 0.39375<br> Unweighted Density = 0.76
     </section>
     </body>
     </html>

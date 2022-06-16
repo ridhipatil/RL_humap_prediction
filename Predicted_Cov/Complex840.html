@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 CPSF6-ITCH-NUDT21-POLR2A complex</title>
+<title> FBXW5 SPRYD3 PKP4 MYCBP2 FBXO45 LGALS3BP</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,21 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'NUDT21', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43809" }},
-{data: { id: 'DYNC1H1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14204" }},
-{data: { id: 'HEL-S-72p', score: 3, type: '', href: "https://www.uniprot.org/uniprot/V9HW22" }},
-{data: { id: 'DYNC1I2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13409" }}], 
- edges: [{ data: { source: 'NUDT21', target: 'HEL-S-72p', directed: 'false', weight: 0.312152} },
-{ data: { source: 'HEL-S-72p', target: 'DYNC1H1', directed: 'false', weight: 0.9845139999999999} },
-{ data: { source: 'DYNC1I2', target: 'DYNC1H1', directed: 'false', weight: 1.0} }]},
+elements:{nodes: [{data: { id: 'FBXW5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q969U6" }},
+{data: { id: 'SARS-CoV2 nsp12', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp12.html" }},
+{data: { id: 'MYCBP2', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/O75592" }},
+{data: { id: 'FBXO45', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P0C2W1" }},
+{data: { id: 'LGALS3BP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q08380" }},
+{data: { id: 'PKP4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99569" }},
+{data: { id: 'SPRYD3', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q8NCJ5" }}], 
+ edges: [{ data: { source: 'SARS-CoV2 nsp12', target: 'MYCBP2', directed: 'false', weight: 0.987452704, type: 'sars'} },
+{ data: { source: 'FBXW5', target: 'SPRYD3', directed: 'false', weight: 0.12021300000000001} },
+{ data: { source: 'FBXO45', target: 'SPRYD3', directed: 'false', weight: 0.349582} },
+{ data: { source: 'FBXO45', target: 'MYCBP2', directed: 'false', weight: 0.352435} },
+{ data: { source: 'FBXO45', target: 'LGALS3BP', directed: 'false', weight: 0.49482} },
+{ data: { source: 'PKP4', target: 'MYCBP2', directed: 'false', weight: 0.0912673} },
+{ data: { source: 'MYCBP2', target: 'LGALS3BP', directed: 'false', weight: 0.193009} },
+{ data: { source: 'LGALS3BP', target: 'SPRYD3', directed: 'false', weight: 0.312211} }]},
 
 style: [
     {
@@ -96,7 +104,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 CPSF6-ITCH-NUDT21-POLR2A complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    FBXW5 SPRYD3 PKP4 MYCBP2 FBXO45 LGALS3BP<br> Complex Score = 0.37500<br> Unweighted Density = 0.47
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>MYCBP2
     </section>
     </body>
     </html>

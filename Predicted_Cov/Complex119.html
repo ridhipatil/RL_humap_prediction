@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> BSDC1 SERPINB13 ERMAP</title>
+<title> 0.1 Nav1.2-beta2 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,11 +30,51 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'BSDC1', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9NW68" }},
-{data: { id: 'SERPINB13', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UIV8" }},
-{data: { id: 'ERMAP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96PL5" }}], 
- edges: [{ data: { source: 'BSDC1', target: 'SERPINB13', directed: 'false', weight: 0.714929} },
-{ data: { source: 'BSDC1', target: 'ERMAP', directed: 'false', weight: 0.26010500000000003} }]},
+elements:{nodes: [{data: { id: 'YTHDC2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H6S0" }},
+{data: { id: 'SARS-CoV2 nsp8', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp8.html" }},
+{data: { id: 'SRP72', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/O76094" }},
+{data: { id: 'FOCAD', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q5VW36" }},
+{data: { id: 'RRP1B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14684" }},
+{data: { id: 'ZC3H8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N5P1" }},
+{data: { id: 'SCN2B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60939" }},
+{data: { id: 'GLYR1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q49A26" }},
+{data: { id: 'NOP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P46087" }},
+{data: { id: 'NOP56', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00567" }},
+{data: { id: 'RRP12', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5JTH9" }}], 
+ edges: [{ data: { source: 'SARS-CoV2 nsp8', target: 'SRP72', directed: 'false', weight: 0.739540656, type: 'sars'} },
+{ data: { source: 'YTHDC2', target: 'NOP2', directed: 'false', weight: 0.7413569999999999} },
+{ data: { source: 'YTHDC2', target: 'RRP12', directed: 'false', weight: 0.618305} },
+{ data: { source: 'YTHDC2', target: 'GLYR1', directed: 'false', weight: 0.715292} },
+{ data: { source: 'YTHDC2', target: 'NOP56', directed: 'false', weight: 0.551111} },
+{ data: { source: 'YTHDC2', target: 'SRP72', directed: 'false', weight: 0.992057} },
+{ data: { source: 'YTHDC2', target: 'RRP1B', directed: 'false', weight: 0.620452} },
+{ data: { source: 'YTHDC2', target: 'ZC3H8', directed: 'false', weight: 0.410959} },
+{ data: { source: 'YTHDC2', target: 'FOCAD', directed: 'false', weight: 0.2823} },
+{ data: { source: 'FOCAD', target: 'RRP12', directed: 'false', weight: 0.255186} },
+{ data: { source: 'FOCAD', target: 'GLYR1', directed: 'false', weight: 0.13574} },
+{ data: { source: 'FOCAD', target: 'RRP1B', directed: 'false', weight: 0.08643239999999999} },
+{ data: { source: 'FOCAD', target: 'SCN2B', directed: 'false', weight: 0.8563120000000001} },
+{ data: { source: 'RRP1B', target: 'NOP2', directed: 'false', weight: 0.9477700000000001} },
+{ data: { source: 'RRP1B', target: 'RRP12', directed: 'false', weight: 0.424457} },
+{ data: { source: 'RRP1B', target: 'GLYR1', directed: 'false', weight: 0.345769} },
+{ data: { source: 'RRP1B', target: 'NOP56', directed: 'false', weight: 0.177264} },
+{ data: { source: 'RRP1B', target: 'SRP72', directed: 'false', weight: 0.872073} },
+{ data: { source: 'RRP1B', target: 'ZC3H8', directed: 'false', weight: 0.461978} },
+{ data: { source: 'NOP56', target: 'NOP2', directed: 'false', weight: 0.998743} },
+{ data: { source: 'NOP56', target: 'RRP12', directed: 'false', weight: 0.9474870000000001} },
+{ data: { source: 'NOP56', target: 'GLYR1', directed: 'false', weight: 0.999748} },
+{ data: { source: 'NOP56', target: 'SRP72', directed: 'false', weight: 0.897257} },
+{ data: { source: 'NOP56', target: 'ZC3H8', directed: 'false', weight: 0.059043} },
+{ data: { source: 'ZC3H8', target: 'NOP2', directed: 'false', weight: 0.663673} },
+{ data: { source: 'ZC3H8', target: 'RRP12', directed: 'false', weight: 0.944247} },
+{ data: { source: 'ZC3H8', target: 'GLYR1', directed: 'false', weight: 0.271264} },
+{ data: { source: 'ZC3H8', target: 'SRP72', directed: 'false', weight: 0.319447} },
+{ data: { source: 'GLYR1', target: 'NOP2', directed: 'false', weight: 0.951217} },
+{ data: { source: 'GLYR1', target: 'RRP12', directed: 'false', weight: 0.734477} },
+{ data: { source: 'GLYR1', target: 'SRP72', directed: 'false', weight: 0.9937379999999999} },
+{ data: { source: 'NOP2', target: 'RRP12', directed: 'false', weight: 0.948725} },
+{ data: { source: 'NOP2', target: 'SRP72', directed: 'false', weight: 0.896338} },
+{ data: { source: 'SRP72', target: 'RRP12', directed: 'false', weight: 0.985518} }]},
 
 style: [
     {
@@ -94,7 +134,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    BSDC1 SERPINB13 ERMAP<br> Complex Score = 0.38800<br> Unweighted Density = 0.67
+    0.1 Nav1.2-beta2 complex<br> Complex Score = 0.39375<br> Unweighted Density = 0.73
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>SRP72
     </section>
     </body>
     </html>

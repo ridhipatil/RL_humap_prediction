@@ -30,14 +30,20 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'MGC3731', score: 2, type: '', href: "https://www.uniprot.org/uniprot/A0A024R1M6" }},
-{data: { id: 'ZNF22', score: 4, type: '', href: "https://www.uniprot.org/uniprot/P17026" }},
-{data: { id: 'ZNF808', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q8N4W9" }},
-{data: { id: 'HP1BP3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5SSJ5" }}], 
- edges: [{ data: { source: 'ZNF808', target: 'ZNF22', directed: 'false', weight: 0.6723600000000001} },
-{ data: { source: 'MGC3731', target: 'HP1BP3', directed: 'false', weight: 0.13633699999999999} },
-{ data: { source: 'MGC3731', target: 'ZNF22', directed: 'false', weight: 0.0415347} },
-{ data: { source: 'ZNF22', target: 'HP1BP3', directed: 'false', weight: 0.189973} }]},
+elements:{nodes: [{data: { id: 'ATP6V1F', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16864" }},
+{data: { id: 'PPM1A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P35813" }},
+{data: { id: 'INPPL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15357" }},
+{data: { id: 'MTHFR', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P42898" }},
+{data: { id: 'ATP6V1H', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UI12" }},
+{data: { id: 'PPM1B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75688" }}], 
+ edges: [{ data: { source: 'ATP6V1F', target: 'ATP6V1H', directed: 'false', weight: 0.9799040000000001} },
+{ data: { source: 'PPM1A', target: 'ATP6V1H', directed: 'false', weight: 0.29123699999999997} },
+{ data: { source: 'PPM1A', target: 'PPM1B', directed: 'false', weight: 0.9583709999999999} },
+{ data: { source: 'PPM1A', target: 'INPPL1', directed: 'false', weight: 0.338806} },
+{ data: { source: 'PPM1A', target: 'MTHFR', directed: 'false', weight: 0.30456500000000003} },
+{ data: { source: 'MTHFR', target: 'PPM1B', directed: 'false', weight: 0.0582045} },
+{ data: { source: 'PPM1B', target: 'ATP6V1H', directed: 'false', weight: 0.480897} },
+{ data: { source: 'PPM1B', target: 'INPPL1', directed: 'false', weight: 0.060491199999999995} }]},
 
 style: [
     {

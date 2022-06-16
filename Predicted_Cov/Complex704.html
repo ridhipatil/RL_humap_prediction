@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 Arp2/3 protein complex</title>
+<title> 0.6 Bag6-Ubl4A-Trc35 Complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,28 +30,34 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'IRF2BP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IU81" }},
-{data: { id: 'ARPC2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15144" }},
-{data: { id: 'PPP1R8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q12972" }},
-{data: { id: 'ARPC1B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15143" }}], 
- edges: [{ data: { source: 'ARPC1B', target: 'ARPC2', directed: 'false', weight: 1.0} },
-{ data: { source: 'ARPC2', target: 'PPP1R8', directed: 'false', weight: 0.115102} },
-{ data: { source: 'PPP1R8', target: 'IRF2BP1', directed: 'false', weight: 0.140148} }]},
+elements:{nodes: [{data: { id: 'RNF126', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BV68" }},
+{data: { id: 'UBL4A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P11441" }},
+{data: { id: 'GET4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q7L5D6" }},
+{data: { id: 'ASNA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43681" }},
+{data: { id: 'BAG6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P46379" }}], 
+ edges: [{ data: { source: 'RNF126', target: 'GET4', directed: 'false', weight: 0.922076} },
+{ data: { source: 'RNF126', target: 'UBL4A', directed: 'false', weight: 0.386548} },
+{ data: { source: 'RNF126', target: 'BAG6', directed: 'false', weight: 0.319567} },
+{ data: { source: 'RNF126', target: 'ASNA1', directed: 'false', weight: 0.46619499999999997} },
+{ data: { source: 'UBL4A', target: 'GET4', directed: 'false', weight: 0.9999790000000001} },
+{ data: { source: 'UBL4A', target: 'BAG6', directed: 'false', weight: 0.9980110000000001} },
+{ data: { source: 'UBL4A', target: 'ASNA1', directed: 'false', weight: 0.879833} },
+{ data: { source: 'ASNA1', target: 'GET4', directed: 'false', weight: 0.9838389999999999} },
+{ data: { source: 'ASNA1', target: 'BAG6', directed: 'false', weight: 0.6307470000000001} },
+{ data: { source: 'GET4', target: 'BAG6', directed: 'false', weight: 0.9998379999999999} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 10,
-		'width':'10',
-		'height': '10',	
+		'font-size': 30,
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}  
                                  if ( ele.data('type') == 'sars' ){return 'triangle'}   
   return 'rectangle';
   },            
-             'background-color': function( ele ){ 
+            'background-color': function( ele ){ 
                                 if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
 								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
                                  if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
@@ -65,7 +71,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
 								'line-color': function( ele ){ 
                                  if ( ele.data('type') == 'sars' ){return 'red'}   
   return 'blue';
@@ -77,10 +83,7 @@ style: [
 
 });
 cy.layout({
-    'name': 'fcose',
-		'animate':false,
-	'nodeDimensionsIncludeLabels':true,
-	'nodeSeparation': 1000
+    'name': 'circle'
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -96,7 +99,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 Arp2/3 protein complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.6 Bag6-Ubl4A-Trc35 Complex<br> Complex Score = 0.38750<br> Unweighted Density = 1.00
     </section>
     </body>
     </html>

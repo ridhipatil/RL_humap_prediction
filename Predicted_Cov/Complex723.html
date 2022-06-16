@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> B3GAT3 WDR13 SYNE4 GOLIM4</title>
+<title> 0.2 F1F0-ATP synthase, mitochondrial match 3</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,17 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'B3GAT3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O94766" }},
-{data: { id: 'GOLIM4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00461" }},
-{data: { id: 'WDR13', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q9H1Z4" }},
-{data: { id: 'SYNE4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N205" }}], 
- edges: [{ data: { source: 'B3GAT3', target: 'GOLIM4', directed: 'false', weight: 0.314485} },
-{ data: { source: 'B3GAT3', target: 'WDR13', directed: 'false', weight: 0.154421} },
-{ data: { source: 'GOLIM4', target: 'SYNE4', directed: 'false', weight: 0.34718000000000004} }]},
+elements:{nodes: [{data: { id: 'ATP5PF', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P18859" }},
+{data: { id: 'RPL35', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P42766" }},
+{data: { id: 'ATP5PO', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P48047" }},
+{data: { id: 'ATP5F1D', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P30049" }},
+{data: { id: 'RPSA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P08865" }}], 
+ edges: [{ data: { source: 'ATP5PF', target: 'ATP5PO', directed: 'false', weight: 0.996426} },
+{ data: { source: 'ATP5PF', target: 'ATP5F1D', directed: 'false', weight: 0.9436770000000001} },
+{ data: { source: 'RPL35', target: 'RPSA', directed: 'false', weight: 0.9992780000000001} },
+{ data: { source: 'RPL35', target: 'ATP5PO', directed: 'false', weight: 0.72401} },
+{ data: { source: 'ATP5PO', target: 'RPSA', directed: 'false', weight: 0.7792560000000001} },
+{ data: { source: 'ATP5PO', target: 'ATP5F1D', directed: 'false', weight: 0.9949049999999999} }]},
 
 style: [
     {
@@ -96,7 +100,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    B3GAT3 WDR13 SYNE4 GOLIM4<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.2 F1F0-ATP synthase, mitochondrial match 3<br> Complex Score = 0.38750<br> Unweighted Density = 0.60
     </section>
     </body>
     </html>

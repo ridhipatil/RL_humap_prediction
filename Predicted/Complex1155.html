@@ -30,17 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'MTA2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O94776" }},
-{data: { id: 'NUFIP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q7Z417" }},
-{data: { id: 'G3BP2', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9UN86" }},
-{data: { id: 'GATAD2A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86YP4" }},
-{data: { id: 'ATXN2L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WWM7" }}], 
- edges: [{ data: { source: 'MTA2', target: 'GATAD2A', directed: 'false', weight: 0.999992} },
-{ data: { source: 'MTA2', target: 'G3BP2', directed: 'false', weight: 0.538882} },
-{ data: { source: 'NUFIP2', target: 'G3BP2', directed: 'false', weight: 0.989502} },
-{ data: { source: 'NUFIP2', target: 'ATXN2L', directed: 'false', weight: 0.951788} },
-{ data: { source: 'G3BP2', target: 'ATXN2L', directed: 'false', weight: 0.44426499999999997} },
-{ data: { source: 'G3BP2', target: 'GATAD2A', directed: 'false', weight: 0.0431126} }]},
+elements:{nodes: [{data: { id: 'MRPL14', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q6P1L8" }},
+{data: { id: 'MRPL50', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q8N5N7" }},
+{data: { id: 'THAP9', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9H5L6" }},
+{data: { id: 'KCTD17', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N5Z5" }}], 
+ edges: [{ data: { source: 'THAP9', target: 'MRPL50', directed: 'false', weight: 0.9406479999999999} },
+{ data: { source: 'THAP9', target: 'KCTD17', directed: 'false', weight: 0.9694780000000001} },
+{ data: { source: 'MRPL50', target: 'MRPL14', directed: 'false', weight: 0.999915} }]},
 
 style: [
     {
@@ -88,12 +84,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.37500
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>G3BP2
+    Complex Score  = 0.30000
     </section>
     </body>
     </html>

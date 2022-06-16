@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 7SK RNP complex</title>
+<title> 0.1 ACK1 signaling complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,17 +30,27 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'SARS-CoV2 N', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 N.html" }},
-{data: { id: 'DDX21', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9NR30" }},
-{data: { id: 'SARS-CoV2 nsp8', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp8.html" }},
-{data: { id: 'LARP7', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q4G0J3" }},
-{data: { id: 'C8orf33', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H7E9" }},
-{data: { id: 'ZC3H8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N5P1" }}], 
- edges: [{ data: { source: 'SARS-CoV2 N', target: 'DDX21', directed: 'false', weight: 0.613544528, type: 'sars'} },
-{ data: { source: 'SARS-CoV2 nsp8', target: 'LARP7', directed: 'false', weight: 0.812479682, type: 'sars'} },
-{ data: { source: 'LARP7', target: 'ZC3H8', directed: 'false', weight: 0.252359} },
-{ data: { source: 'DDX21', target: 'ZC3H8', directed: 'false', weight: 0.175699} },
-{ data: { source: 'ZC3H8', target: 'C8orf33', directed: 'false', weight: 0.34989000000000003} }]},
+elements:{nodes: [{data: { id: 'NCK2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43639" }},
+{data: { id: 'PIK3AP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6ZUJ8" }},
+{data: { id: 'CASKIN2', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q8WXE0" }},
+{data: { id: 'TNK2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q07912" }},
+{data: { id: 'FAM83H', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6ZRV2" }},
+{data: { id: 'WIPF2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TF74" }},
+{data: { id: 'ARAP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96P48" }}], 
+ edges: [{ data: { source: 'PIK3AP1', target: 'NCK2', directed: 'false', weight: 0.972194} },
+{ data: { source: 'PIK3AP1', target: 'WIPF2', directed: 'false', weight: 0.151455} },
+{ data: { source: 'PIK3AP1', target: 'CASKIN2', directed: 'false', weight: 0.171414} },
+{ data: { source: 'PIK3AP1', target: 'TNK2', directed: 'false', weight: 0.171414} },
+{ data: { source: 'PIK3AP1', target: 'ARAP1', directed: 'false', weight: 0.151455} },
+{ data: { source: 'NCK2', target: 'CASKIN2', directed: 'false', weight: 0.974874} },
+{ data: { source: 'NCK2', target: 'WIPF2', directed: 'false', weight: 0.9714290000000001} },
+{ data: { source: 'NCK2', target: 'TNK2', directed: 'false', weight: 0.965767} },
+{ data: { source: 'NCK2', target: 'ARAP1', directed: 'false', weight: 0.904276} },
+{ data: { source: 'CASKIN2', target: 'WIPF2', directed: 'false', weight: 0.151455} },
+{ data: { source: 'CASKIN2', target: 'TNK2', directed: 'false', weight: 0.171414} },
+{ data: { source: 'CASKIN2', target: 'ARAP1', directed: 'false', weight: 0.151455} },
+{ data: { source: 'TNK2', target: 'WIPF2', directed: 'false', weight: 0.245653} },
+{ data: { source: 'TNK2', target: 'FAM83H', directed: 'false', weight: 0.447248} }]},
 
 style: [
     {
@@ -100,12 +110,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 7SK RNP complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        2 interacting protein(s): <br>DDX21 LARP7
+    0.1 ACK1 signaling complex<br> Complex Score = 0.38750<br> Unweighted Density = 0.67
     </section>
     </body>
     </html>

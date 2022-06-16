@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.4 RAD6A-KCMF1-UBR4 complex</title>
+<title> 0.5 PCNA-PAF complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,15 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'KCMF1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9P0J7" }},
-{data: { id: 'NIPSNAP3A', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9UFN0" }},
-{data: { id: 'UBR4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5T4S7" }},
-{data: { id: 'ABHD10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NUJ1" }}], 
- edges: [{ data: { source: 'KCMF1', target: 'UBR4', directed: 'false', weight: 0.9999899999999999} },
-{ data: { source: 'KCMF1', target: 'ABHD10', directed: 'false', weight: 0.994917} },
-{ data: { source: 'KCMF1', target: 'NIPSNAP3A', directed: 'false', weight: 0.538003} }]},
+elements:{nodes: [{data: { id: 'SARS-CoV2 nsp8', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp8.html" }},
+{data: { id: 'MEPCE', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q7L2J0" }},
+{data: { id: 'RFC4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P35249" }},
+{data: { id: 'PCLAF', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15004" }},
+{data: { id: 'PCNA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P12004" }}], 
+ edges: [{ data: { source: 'SARS-CoV2 nsp8', target: 'MEPCE', directed: 'false', weight: 0.790978117, type: 'sars'} },
+{ data: { source: 'PCLAF', target: 'PCNA', directed: 'false', weight: 0.984856} },
+{ data: { source: 'MEPCE', target: 'RFC4', directed: 'false', weight: 0.398094} },
+{ data: { source: 'PCNA', target: 'RFC4', directed: 'false', weight: 0.038694} }]},
 
 style: [
     {
@@ -96,7 +98,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.4 RAD6A-KCMF1-UBR4 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.5 PCNA-PAF complex<br> Complex Score = 0.30000<br> Unweighted Density = 0.50
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>MEPCE
     </section>
     </body>
     </html>

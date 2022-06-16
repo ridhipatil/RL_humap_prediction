@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> RAB6B GDI1 DENND5A RAB6A</title>
+<title> 0.1 Sorcin homodimer complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,14 +30,21 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'RAB6B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NRW1" }},
-{data: { id: 'RAB6A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P20340" }},
-{data: { id: 'DENND5A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6IQ26" }},
-{data: { id: 'GDI1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P31150" }}], 
- edges: [{ data: { source: 'RAB6B', target: 'GDI1', directed: 'false', weight: 0.026874099999999998} },
-{ data: { source: 'RAB6B', target: 'RAB6A', directed: 'false', weight: 0.743002} },
-{ data: { source: 'RAB6B', target: 'DENND5A', directed: 'false', weight: 0.30854299999999996} },
-{ data: { source: 'RAB6A', target: 'GDI1', directed: 'false', weight: 0.39473800000000003} }]},
+elements:{nodes: [{data: { id: 'SRI', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P30626" }},
+{data: { id: 'SOD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P00441" }},
+{data: { id: 'PYCR3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q53H96" }},
+{data: { id: 'PCMT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P22061" }},
+{data: { id: 'YDJC', score: 3, type: '', href: "https://www.uniprot.org/uniprot/A8MPS7" }},
+{data: { id: 'PARK7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99497" }},
+{data: { id: 'ENO3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P13929" }}], 
+ edges: [{ data: { source: 'PYCR3', target: 'PCMT1', directed: 'false', weight: 0.29275} },
+{ data: { source: 'PYCR3', target: 'YDJC', directed: 'false', weight: 0.11248399999999999} },
+{ data: { source: 'SRI', target: 'PCMT1', directed: 'false', weight: 0.695184} },
+{ data: { source: 'SRI', target: 'SOD1', directed: 'false', weight: 0.730171} },
+{ data: { source: 'SOD1', target: 'ENO3', directed: 'false', weight: 0.41232399999999997} },
+{ data: { source: 'PCMT1', target: 'YDJC', directed: 'false', weight: 0.990399} },
+{ data: { source: 'PCMT1', target: 'PARK7', directed: 'false', weight: 0.532303} },
+{ data: { source: 'PARK7', target: 'ENO3', directed: 'false', weight: 0.432967} }]},
 
 style: [
     {
@@ -97,7 +104,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    RAB6B GDI1 DENND5A RAB6A<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
+    0.1 Sorcin homodimer complex<br> Complex Score = 0.35000<br> Unweighted Density = 0.38
     </section>
     </body>
     </html>

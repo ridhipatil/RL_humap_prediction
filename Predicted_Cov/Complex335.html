@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.3 F1F0-ATP synthase, mitochondrial</title>
+<title> 0.6 Telomere-associated protein complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,36 +30,31 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'SARS-CoV2 nsp6', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp6.html" }},
-{data: { id: 'ATP5MG', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/O75964" }},
-{data: { id: 'hCG_39985', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q08ET0" }},
-{data: { id: 'ATP5PO', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P48047" }},
-{data: { id: 'ATP5F1D', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P30049" }},
-{data: { id: 'ATP5PD', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75947" }},
-{data: { id: 'ATP5J', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P18859" }},
-{data: { id: 'ATP5ME', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P56385" }},
-{data: { id: 'RPS13', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62277" }}], 
- edges: [{ data: { source: 'SARS-CoV2 nsp6', target: 'ATP5MG', directed: 'false', weight: 0.717265558, type: 'sars'} },
-{ data: { source: 'ATP5MG', target: 'ATP5PD', directed: 'false', weight: 0.8245100000000001} },
-{ data: { source: 'ATP5MG', target: 'hCG_39985', directed: 'false', weight: 0.9999979999999999} },
-{ data: { source: 'ATP5MG', target: 'ATP5PO', directed: 'false', weight: 0.999822} },
-{ data: { source: 'ATP5MG', target: 'ATP5ME', directed: 'false', weight: 0.749272} },
-{ data: { source: 'ATP5MG', target: 'ATP5F1D', directed: 'false', weight: 0.159405} },
-{ data: { source: 'hCG_39985', target: 'ATP5PD', directed: 'false', weight: 1.0} },
-{ data: { source: 'hCG_39985', target: 'ATP5PO', directed: 'false', weight: 1.0} },
-{ data: { source: 'hCG_39985', target: 'ATP5F1D', directed: 'false', weight: 0.820735} },
-{ data: { source: 'hCG_39985', target: 'ATP5ME', directed: 'false', weight: 0.709483} },
-{ data: { source: 'hCG_39985', target: 'ATP5J', directed: 'false', weight: 0.046787300000000004} },
-{ data: { source: 'ATP5PO', target: 'ATP5PD', directed: 'false', weight: 0.9966389999999999} },
-{ data: { source: 'ATP5PO', target: 'RPS13', directed: 'false', weight: 0.308487} },
-{ data: { source: 'ATP5PO', target: 'ATP5J', directed: 'false', weight: 0.999079} },
-{ data: { source: 'ATP5PO', target: 'ATP5F1D', directed: 'false', weight: 0.998309} },
-{ data: { source: 'ATP5PO', target: 'ATP5ME', directed: 'false', weight: 0.979633} },
-{ data: { source: 'ATP5F1D', target: 'ATP5PD', directed: 'false', weight: 0.939484} },
-{ data: { source: 'ATP5F1D', target: 'ATP5J', directed: 'false', weight: 0.922372} },
-{ data: { source: 'ATP5F1D', target: 'ATP5ME', directed: 'false', weight: 0.558114} },
-{ data: { source: 'ATP5PD', target: 'ATP5ME', directed: 'false', weight: 0.42087399999999997} },
-{ data: { source: 'ATP5J', target: 'ATP5ME', directed: 'false', weight: 0.48325} }]},
+elements:{nodes: [{data: { id: 'TERF2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15554" }},
+{data: { id: 'TERF2IP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NYB0" }},
+{data: { id: 'TERF1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P54274" }},
+{data: { id: 'POT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NUX5" }},
+{data: { id: 'PINX1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96BK5" }},
+{data: { id: 'WDR43', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15061" }},
+{data: { id: 'DCLRE1B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H816" }},
+{data: { id: 'ACD', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96AP0" }}], 
+ edges: [{ data: { source: 'TERF2', target: 'TERF2IP', directed: 'false', weight: 0.9999969999999999} },
+{ data: { source: 'TERF2', target: 'POT1', directed: 'false', weight: 0.9924} },
+{ data: { source: 'TERF2', target: 'TERF1', directed: 'false', weight: 0.9155780000000001} },
+{ data: { source: 'TERF2', target: 'DCLRE1B', directed: 'false', weight: 0.775736} },
+{ data: { source: 'TERF2', target: 'ACD', directed: 'false', weight: 0.288379} },
+{ data: { source: 'TERF2IP', target: 'POT1', directed: 'false', weight: 0.982035} },
+{ data: { source: 'TERF2IP', target: 'ACD', directed: 'false', weight: 0.824592} },
+{ data: { source: 'TERF2IP', target: 'DCLRE1B', directed: 'false', weight: 0.768302} },
+{ data: { source: 'TERF2IP', target: 'TERF1', directed: 'false', weight: 0.633397} },
+{ data: { source: 'TERF1', target: 'POT1', directed: 'false', weight: 0.9996079999999999} },
+{ data: { source: 'TERF1', target: 'ACD', directed: 'false', weight: 0.998634} },
+{ data: { source: 'TERF1', target: 'PINX1', directed: 'false', weight: 0.8859239999999999} },
+{ data: { source: 'TERF1', target: 'DCLRE1B', directed: 'false', weight: 0.416563} },
+{ data: { source: 'POT1', target: 'ACD', directed: 'false', weight: 0.9992989999999999} },
+{ data: { source: 'POT1', target: 'DCLRE1B', directed: 'false', weight: 0.5203439999999999} },
+{ data: { source: 'PINX1', target: 'WDR43', directed: 'false', weight: 0.140692} },
+{ data: { source: 'DCLRE1B', target: 'ACD', directed: 'false', weight: 0.18832100000000002} }]},
 
 style: [
     {
@@ -119,12 +114,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.3 F1F0-ATP synthase, mitochondrial<br> Complex Score = 0.38800<br> Unweighted Density = 0.71
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>ATP5MG
+    0.6 Telomere-associated protein complex<br> Complex Score = 0.38750<br> Unweighted Density = 0.61
     </section>
     </body>
     </html>

@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 RNF20-RNF40-UbE2E1 complex</title>
+<title> 0.1 DNAJC7-HSPA8-HSP90AA1 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,16 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'UBE2E2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96LR5" }},
-{data: { id: 'RNF25', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96BH1" }},
-{data: { id: 'USP8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P40818" }},
-{data: { id: 'UBE2E1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P51965" }}], 
- edges: [{ data: { source: 'UBE2E2', target: 'RNF25', directed: 'false', weight: 0.170798} },
-{ data: { source: 'RNF25', target: 'UBE2E1', directed: 'false', weight: 0.22582199999999997} },
-{ data: { source: 'USP8', target: 'UBE2E1', directed: 'false', weight: 0.696557} }]},
+elements:{nodes: [{data: { id: 'DNAJC7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99615" }},
+{data: { id: 'NAA11', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BSU3" }},
+{data: { id: 'CPNE2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96FN4" }},
+{data: { id: 'NAA50', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9GZZ1" }},
+{data: { id: 'PRPSAP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60256" }}], 
+ edges: [{ data: { source: 'NAA11', target: 'NAA50', directed: 'false', weight: 0.9467450000000001} },
+{ data: { source: 'NAA11', target: 'CPNE2', directed: 'false', weight: 0.287681} },
+{ data: { source: 'NAA50', target: 'PRPSAP2', directed: 'false', weight: 0.7959229999999999} },
+{ data: { source: 'NAA50', target: 'DNAJC7', directed: 'false', weight: 0.66092} },
+{ data: { source: 'DNAJC7', target: 'PRPSAP2', directed: 'false', weight: 0.459662} }]},
 
 style: [
     {
@@ -96,7 +99,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 RNF20-RNF40-UbE2E1 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.1 DNAJC7-HSPA8-HSP90AA1 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

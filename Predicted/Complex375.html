@@ -30,13 +30,22 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'NOB1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9ULX3" }},
-{data: { id: 'HLA-F', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P30511" }},
-{data: { id: 'ATP13A2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NQ11" }},
-{data: { id: 'HLA-DPA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P20036" }}], 
- edges: [{ data: { source: 'NOB1', target: 'HLA-DPA1', directed: 'false', weight: 0.24194000000000002} },
-{ data: { source: 'HLA-F', target: 'HLA-DPA1', directed: 'false', weight: 0.100047} },
-{ data: { source: 'ATP13A2', target: 'HLA-DPA1', directed: 'false', weight: 0.201249} }]},
+elements:{nodes: [{data: { id: 'UBE2L3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P68036" }},
+{data: { id: 'MDH2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P40926" }},
+{data: { id: 'AKR1A1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P14550" }},
+{data: { id: 'UPP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16831" }},
+{data: { id: 'GSR', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P00390" }},
+{data: { id: 'ACO2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99798" }}], 
+ edges: [{ data: { source: 'UBE2L3', target: 'GSR', directed: 'false', weight: 0.00791027} },
+{ data: { source: 'UBE2L3', target: 'MDH2', directed: 'false', weight: 0.952815} },
+{ data: { source: 'UBE2L3', target: 'AKR1A1', directed: 'false', weight: 0.0913322} },
+{ data: { source: 'UBE2L3', target: 'UPP1', directed: 'false', weight: 0.06351180000000001} },
+{ data: { source: 'MDH2', target: 'GSR', directed: 'false', weight: 0.980158} },
+{ data: { source: 'MDH2', target: 'ACO2', directed: 'false', weight: 0.9733719999999999} },
+{ data: { source: 'MDH2', target: 'AKR1A1', directed: 'false', weight: 0.712812} },
+{ data: { source: 'MDH2', target: 'UPP1', directed: 'false', weight: 0.148578} },
+{ data: { source: 'GSR', target: 'AKR1A1', directed: 'false', weight: 0.0219215} },
+{ data: { source: 'AKR1A1', target: 'UPP1', directed: 'false', weight: 0.542104} }]},
 
 style: [
     {
@@ -84,7 +93,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.37500
+    Complex Score  = 0.38750
     </section>
     </body>
     </html>

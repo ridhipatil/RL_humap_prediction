@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.3 BLM complex III</title>
+<title> SLC12A7 SLC4A7 SLC12A4 SLC12A9 SLC12A2 ATP11C SLC12A6</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,29 +30,41 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'RMI2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96E14" }},
-{data: { id: 'TOP3A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13472" }},
-{data: { id: 'CCDC69', score: 4, type: '', href: "https://www.uniprot.org/uniprot/A6NI79" }},
-{data: { id: 'RMI1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H9A7" }}], 
- edges: [{ data: { source: 'RMI2', target: 'RMI1', directed: 'false', weight: 1.0} },
-{ data: { source: 'RMI2', target: 'TOP3A', directed: 'false', weight: 0.9521200000000001} },
-{ data: { source: 'RMI2', target: 'CCDC69', directed: 'false', weight: 0.192455} },
-{ data: { source: 'TOP3A', target: 'RMI1', directed: 'false', weight: 0.0319392} },
-{ data: { source: 'TOP3A', target: 'CCDC69', directed: 'false', weight: 0.0415467} },
-{ data: { source: 'CCDC69', target: 'RMI1', directed: 'false', weight: 0.369193} }]},
+elements:{nodes: [{data: { id: 'ATP11C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NB49" }},
+{data: { id: 'SLC4A7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y6M7" }},
+{data: { id: 'SLC12A2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P55011" }},
+{data: { id: 'SLC12A7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y666" }},
+{data: { id: 'SLC12A6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UHW9" }},
+{data: { id: 'SLC12A4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UP95" }},
+{data: { id: 'SLC12A9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BXP2" }}], 
+ edges: [{ data: { source: 'ATP11C', target: 'SLC12A2', directed: 'false', weight: 0.17381300000000002} },
+{ data: { source: 'ATP11C', target: 'SLC12A9', directed: 'false', weight: 0.494176} },
+{ data: { source: 'SLC4A7', target: 'SLC12A6', directed: 'false', weight: 0.579203} },
+{ data: { source: 'SLC4A7', target: 'SLC12A4', directed: 'false', weight: 0.417108} },
+{ data: { source: 'SLC4A7', target: 'SLC12A2', directed: 'false', weight: 0.279082} },
+{ data: { source: 'SLC4A7', target: 'SLC12A7', directed: 'false', weight: 0.28783800000000004} },
+{ data: { source: 'SLC12A2', target: 'SLC12A6', directed: 'false', weight: 0.40725100000000003} },
+{ data: { source: 'SLC12A2', target: 'SLC12A4', directed: 'false', weight: 0.6836840000000001} },
+{ data: { source: 'SLC12A2', target: 'SLC12A7', directed: 'false', weight: 0.510842} },
+{ data: { source: 'SLC12A2', target: 'SLC12A9', directed: 'false', weight: 0.365568} },
+{ data: { source: 'SLC12A7', target: 'SLC12A6', directed: 'false', weight: 0.5} },
+{ data: { source: 'SLC12A7', target: 'SLC12A4', directed: 'false', weight: 0.643612} },
+{ data: { source: 'SLC12A6', target: 'SLC12A4', directed: 'false', weight: 0.7282689999999999} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 30,
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}  
                                  if ( ele.data('type') == 'sars' ){return 'triangle'}   
   return 'rectangle';
   },            
-            'background-color': function( ele ){ 
+             'background-color': function( ele ){ 
                                 if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
 								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
                                  if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
@@ -66,7 +78,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
 								'line-color': function( ele ){ 
                                  if ( ele.data('type') == 'sars' ){return 'red'}   
   return 'blue';
@@ -78,7 +90,10 @@ style: [
 
 });
 cy.layout({
-    'name': 'circle'
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -94,7 +109,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.3 BLM complex III<br> Complex Score = 0.38800<br> Unweighted Density = 1.00
+    SLC12A7 SLC4A7 SLC12A4 SLC12A9 SLC12A2 ATP11C SLC12A6<br> Complex Score = 0.38750<br> Unweighted Density = 0.62
     </section>
     </body>
     </html>

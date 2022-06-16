@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> WRN-Ku70-Ku80-PARP1 complex</title>
+<title> 0.2 hTREX84 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,14 +30,20 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'XRCC5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P13010" }},
-{data: { id: 'WRN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14191" }},
-{data: { id: 'XRCC6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P12956" }},
-{data: { id: 'PARP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P09874" }}], 
- edges: [{ data: { source: 'XRCC6', target: 'XRCC5', directed: 'false', weight: 1.0} },
-{ data: { source: 'XRCC6', target: 'WRN', directed: 'false', weight: 0.999024} },
-{ data: { source: 'XRCC6', target: 'PARP1', directed: 'false', weight: 0.266392} },
-{ data: { source: 'XRCC5', target: 'PARP1', directed: 'false', weight: 0.029014599999999995} }]},
+elements:{nodes: [{data: { id: 'THOC3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96J01" }},
+{data: { id: 'RBM15', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96T37" }},
+{data: { id: 'ZC3H11A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75152" }},
+{data: { id: 'THOC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96FV9" }},
+{data: { id: 'SF3B3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15393" }},
+{data: { id: 'SNRPB2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P08579" }}], 
+ edges: [{ data: { source: 'THOC3', target: 'THOC1', directed: 'false', weight: 0.9998540000000001} },
+{ data: { source: 'THOC3', target: 'ZC3H11A', directed: 'false', weight: 0.5903510000000001} },
+{ data: { source: 'THOC3', target: 'RBM15', directed: 'false', weight: 0.464397} },
+{ data: { source: 'RBM15', target: 'THOC1', directed: 'false', weight: 0.882602} },
+{ data: { source: 'RBM15', target: 'SNRPB2', directed: 'false', weight: 0.237249} },
+{ data: { source: 'RBM15', target: 'ZC3H11A', directed: 'false', weight: 0.127887} },
+{ data: { source: 'ZC3H11A', target: 'THOC1', directed: 'false', weight: 0.992101} },
+{ data: { source: 'SF3B3', target: 'SNRPB2', directed: 'false', weight: 0.9960389999999999} }]},
 
 style: [
     {
@@ -97,7 +103,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    WRN-Ku70-Ku80-PARP1 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
+    0.2 hTREX84 complex<br> Complex Score = 0.35000<br> Unweighted Density = 0.53
     </section>
     </body>
     </html>

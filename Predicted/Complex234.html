@@ -30,11 +30,14 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'ZNF564', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TBZ8" }},
-{data: { id: 'ZNF627', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q7L945" }},
-{data: { id: 'PPP1R16B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96T49" }}], 
- edges: [{ data: { source: 'ZNF564', target: 'PPP1R16B', directed: 'false', weight: 0.385707} },
-{ data: { source: 'ZNF627', target: 'PPP1R16B', directed: 'false', weight: 0.141738} }]},
+elements:{nodes: [{data: { id: 'FRMPD2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q68DX3" }},
+{data: { id: 'ERLEC1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q96DZ1" }},
+{data: { id: 'OS9', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q13438" }},
+{data: { id: 'SEL1L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UBV2" }}], 
+ edges: [{ data: { source: 'OS9', target: 'SEL1L', directed: 'false', weight: 0.9999790000000001} },
+{ data: { source: 'OS9', target: 'ERLEC1', directed: 'false', weight: 0.826836} },
+{ data: { source: 'SEL1L', target: 'ERLEC1', directed: 'false', weight: 0.9998030000000001} },
+{ data: { source: 'FRMPD2', target: 'ERLEC1', directed: 'false', weight: 0.345684} }]},
 
 style: [
     {
@@ -82,7 +85,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.38800
+    Complex Score  = 0.38750
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        2 interacting protein(s): <br>ERLEC1 OS9
     </section>
     </body>
     </html>

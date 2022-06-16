@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.4 KATNA1-KATNAL1-KATNB1-KATNBL1 complex</title>
+<title> 0.1 FACT complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,12 +30,27 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'C15orf29', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H079" }},
-{data: { id: 'KATNA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75449" }},
-{data: { id: 'KATNB1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BVA0" }}], 
- edges: [{ data: { source: 'C15orf29', target: 'KATNB1', directed: 'false', weight: 0.824463} },
-{ data: { source: 'C15orf29', target: 'KATNA1', directed: 'false', weight: 0.99984} },
-{ data: { source: 'KATNA1', target: 'KATNB1', directed: 'false', weight: 0.999991} }]},
+elements:{nodes: [{data: { id: 'RPL12', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P30050" }},
+{data: { id: 'RPL10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P27635" }},
+{data: { id: 'SUPT16H', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y5B9" }},
+{data: { id: 'RPS7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62081" }},
+{data: { id: 'RPL29', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P47914" }},
+{data: { id: 'SARS-CoV2 N', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 N.html" }},
+{data: { id: 'G3BP1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q13283" }}], 
+ edges: [{ data: { source: 'SARS-CoV2 N', target: 'G3BP1', directed: 'false', weight: 0.95331626, type: 'sars'} },
+{ data: { source: 'RPL10', target: 'RPL12', directed: 'false', weight: 0.999983} },
+{ data: { source: 'RPL10', target: 'RPS7', directed: 'false', weight: 0.999999} },
+{ data: { source: 'RPL10', target: 'G3BP1', directed: 'false', weight: 0.998442} },
+{ data: { source: 'RPL10', target: 'RPL29', directed: 'false', weight: 0.9842540000000001} },
+{ data: { source: 'RPS7', target: 'RPL12', directed: 'false', weight: 0.999935} },
+{ data: { source: 'RPS7', target: 'G3BP1', directed: 'false', weight: 0.7193109999999999} },
+{ data: { source: 'RPS7', target: 'SUPT16H', directed: 'false', weight: 0.200244} },
+{ data: { source: 'RPS7', target: 'RPL29', directed: 'false', weight: 0.100579} },
+{ data: { source: 'G3BP1', target: 'RPL12', directed: 'false', weight: 0.794039} },
+{ data: { source: 'G3BP1', target: 'RPL29', directed: 'false', weight: 0.18296800000000002} },
+{ data: { source: 'G3BP1', target: 'SUPT16H', directed: 'false', weight: 0.027175400000000002} },
+{ data: { source: 'SUPT16H', target: 'RPL12', directed: 'false', weight: 0.027197900000000004} },
+{ data: { source: 'RPL29', target: 'RPL12', directed: 'false', weight: 0.0974347} }]},
 
 style: [
     {
@@ -90,7 +105,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.4 KATNA1-KATNAL1-KATNB1-KATNBL1 complex<br> Complex Score = 0.39400<br> Unweighted Density = 1.00
+    0.1 FACT complex<br> Complex Score = 0.39688<br> Unweighted Density = 0.87
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>G3BP1
     </section>
     </body>
     </html>

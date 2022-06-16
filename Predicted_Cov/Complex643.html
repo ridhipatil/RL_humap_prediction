@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 TRBP containing complex (DICER, TRBP, AGO2, RPL7A, EIF6, MOV10) match 2</title>
+<title> 0.3 VPS35-VPS29-VPS26A complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,18 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'seTCTP', score: 2, type: '', href: "https://www.uniprot.org/uniprot/A0A0P1J1R0" }},
-{data: { id: 'EIF6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P56537" }},
-{data: { id: 'RPL6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q02878" }},
-{data: { id: 'PABPN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86U42" }}], 
- edges: [{ data: { source: 'seTCTP', target: 'EIF6', directed: 'false', weight: 0.11137799999999999} },
-{ data: { source: 'EIF6', target: 'RPL6', directed: 'false', weight: 0.256842} },
-{ data: { source: 'EIF6', target: 'PABPN1', directed: 'false', weight: 0.171651} }]},
+elements:{nodes: [{data: { id: 'TBC1D5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92609" }},
+{data: { id: 'VPS26B', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q4G0F5" }},
+{data: { id: 'VPS29', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UBQ0" }},
+{data: { id: 'VPS26A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75436" }},
+{data: { id: 'ENTR1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96C92" }}], 
+ edges: [{ data: { source: 'TBC1D5', target: 'VPS29', directed: 'false', weight: 0.553717} },
+{ data: { source: 'TBC1D5', target: 'VPS26B', directed: 'false', weight: 0.998497} },
+{ data: { source: 'TBC1D5', target: 'VPS26A', directed: 'false', weight: 0.9995959999999999} },
+{ data: { source: 'VPS26B', target: 'VPS29', directed: 'false', weight: 0.999649} },
+{ data: { source: 'VPS26B', target: 'VPS26A', directed: 'false', weight: 0.9759110000000001} },
+{ data: { source: 'VPS29', target: 'VPS26A', directed: 'false', weight: 0.9950889999999999} },
+{ data: { source: 'VPS26A', target: 'ENTR1', directed: 'false', weight: 0.818689} }]},
 
 style: [
     {
@@ -96,7 +101,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 TRBP containing complex (DICER, TRBP, AGO2, RPL7A, EIF6, MOV10) match 2<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.3 VPS35-VPS29-VPS26A complex<br> Complex Score = 0.38750<br> Unweighted Density = 0.70
     </section>
     </body>
     </html>

@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> hCG_2004507 CSNK1G2 CSNK1G3</title>
+<title> EFCAB14 GRAMD1B GRAMD2B CASC4 EXD2 GRAMD1C</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,12 +30,25 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'hCG_2004507', score: 2, type: '', href: "https://www.uniprot.org/uniprot/A0A024R5W3" }},
-{data: { id: 'CSNK1G2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P78368" }},
-{data: { id: 'CSNK1G3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y6M4" }}], 
- edges: [{ data: { source: 'hCG_2004507', target: 'CSNK1G3', directed: 'false', weight: 0.881431} },
-{ data: { source: 'hCG_2004507', target: 'CSNK1G2', directed: 'false', weight: 0.541871} },
-{ data: { source: 'CSNK1G2', target: 'CSNK1G3', directed: 'false', weight: 0.8397549999999999} }]},
+elements:{nodes: [{data: { id: 'CASC4', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q6P4E1" }},
+{data: { id: 'EFCAB14', score: 2, type: '', href: "https://www.uniprot.org/uniprot/O75071" }},
+{data: { id: 'GRAMD1B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q3KR37" }},
+{data: { id: 'GRAMD1C', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q8IYS0" }},
+{data: { id: 'GRAMD2B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96HH9" }},
+{data: { id: 'EXD2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NVH0" }}], 
+ edges: [{ data: { source: 'CASC4', target: 'GRAMD1B', directed: 'false', weight: 0.171414} },
+{ data: { source: 'CASC4', target: 'GRAMD2B', directed: 'false', weight: 0.9698690000000001} },
+{ data: { source: 'CASC4', target: 'EFCAB14', directed: 'false', weight: 0.171414} },
+{ data: { source: 'CASC4', target: 'GRAMD1C', directed: 'false', weight: 0.133451} },
+{ data: { source: 'GRAMD2B', target: 'GRAMD1B', directed: 'false', weight: 0.985484} },
+{ data: { source: 'GRAMD2B', target: 'EFCAB14', directed: 'false', weight: 0.984693} },
+{ data: { source: 'GRAMD2B', target: 'GRAMD1C', directed: 'false', weight: 0.9638040000000001} },
+{ data: { source: 'GRAMD2B', target: 'EXD2', directed: 'false', weight: 0.444292} },
+{ data: { source: 'EFCAB14', target: 'GRAMD1B', directed: 'false', weight: 0.171414} },
+{ data: { source: 'EFCAB14', target: 'GRAMD1C', directed: 'false', weight: 0.133451} },
+{ data: { source: 'EFCAB14', target: 'EXD2', directed: 'false', weight: 0.120276} },
+{ data: { source: 'GRAMD1C', target: 'GRAMD1B', directed: 'false', weight: 0.133451} },
+{ data: { source: 'GRAMD1B', target: 'EXD2', directed: 'false', weight: 0.120276} }]},
 
 style: [
     {
@@ -90,7 +103,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    hCG_2004507 CSNK1G2 CSNK1G3<br> Complex Score = 0.39400<br> Unweighted Density = 1.00
+    EFCAB14 GRAMD1B GRAMD2B CASC4 EXD2 GRAMD1C<br> Complex Score = 0.39688<br> Unweighted Density = 0.87
     </section>
     </body>
     </html>

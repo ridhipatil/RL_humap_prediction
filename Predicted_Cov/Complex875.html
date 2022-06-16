@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.3 ARC complex</title>
+<title> 0.1 CTFC-TAF1 complex match 3</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,78 +30,23 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'MED30', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96HR3" }},
-{data: { id: 'MED14', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60244" }},
-{data: { id: 'MED24', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75448" }},
-{data: { id: 'MED19', score: 5, type: '', href: "https://www.uniprot.org/uniprot/A0JLT2" }},
-{data: { id: 'FBXL19', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6PCT2" }},
-{data: { id: 'MED17', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NVC6" }},
-{data: { id: 'MED26', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95402" }},
-{data: { id: 'CCNC', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P24863" }},
-{data: { id: 'CRSP9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43513" }},
-{data: { id: 'MED8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96G25" }},
-{data: { id: 'CRSP8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6P2C8" }},
-{data: { id: 'SURB7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13503" }},
-{data: { id: 'CDK8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49336" }}], 
- edges: [{ data: { source: 'MED30', target: 'MED19', directed: 'false', weight: 0.8011550000000001} },
-{ data: { source: 'MED30', target: 'MED24', directed: 'false', weight: 0.027277199999999998} },
-{ data: { source: 'MED30', target: 'MED17', directed: 'false', weight: 0.0390894} },
-{ data: { source: 'MED30', target: 'MED8', directed: 'false', weight: 0.0441356} },
-{ data: { source: 'MED30', target: 'MED14', directed: 'false', weight: 0.044630699999999995} },
-{ data: { source: 'MED30', target: 'CRSP8', directed: 'false', weight: 0.999448} },
-{ data: { source: 'MED30', target: 'CDK8', directed: 'false', weight: 0.9773629999999999} },
-{ data: { source: 'MED30', target: 'CCNC', directed: 'false', weight: 0.20509299999999997} },
-{ data: { source: 'MED30', target: 'CRSP9', directed: 'false', weight: 0.548927} },
-{ data: { source: 'MED30', target: 'SURB7', directed: 'false', weight: 0.798632} },
-{ data: { source: 'MED14', target: 'MED19', directed: 'false', weight: 0.9999309999999999} },
-{ data: { source: 'MED14', target: 'MED24', directed: 'false', weight: 0.9997940000000001} },
-{ data: { source: 'MED14', target: 'MED17', directed: 'false', weight: 0.9998959999999999} },
-{ data: { source: 'MED14', target: 'MED8', directed: 'false', weight: 0.999965} },
-{ data: { source: 'MED14', target: 'CRSP8', directed: 'false', weight: 0.9936520000000001} },
-{ data: { source: 'MED14', target: 'CDK8', directed: 'false', weight: 0.987043} },
-{ data: { source: 'MED14', target: 'SURB7', directed: 'false', weight: 0.95257} },
-{ data: { source: 'MED14', target: 'CRSP9', directed: 'false', weight: 0.858419} },
-{ data: { source: 'MED14', target: 'CCNC', directed: 'false', weight: 0.719906} },
-{ data: { source: 'MED24', target: 'MED19', directed: 'false', weight: 1.0} },
-{ data: { source: 'MED24', target: 'MED8', directed: 'false', weight: 0.999872} },
-{ data: { source: 'MED24', target: 'MED17', directed: 'false', weight: 0.9998379999999999} },
-{ data: { source: 'MED24', target: 'CRSP8', directed: 'false', weight: 0.999497} },
-{ data: { source: 'MED24', target: 'CDK8', directed: 'false', weight: 0.9986309999999999} },
-{ data: { source: 'MED24', target: 'CCNC', directed: 'false', weight: 0.975663} },
-{ data: { source: 'MED24', target: 'SURB7', directed: 'false', weight: 0.865776} },
-{ data: { source: 'MED24', target: 'CRSP9', directed: 'false', weight: 0.5627409999999999} },
-{ data: { source: 'FBXL19', target: 'SURB7', directed: 'false', weight: 0.0370105} },
-{ data: { source: 'MED19', target: 'MED17', directed: 'false', weight: 0.999835} },
-{ data: { source: 'MED19', target: 'CRSP8', directed: 'false', weight: 0.99945} },
-{ data: { source: 'MED19', target: 'MED8', directed: 'false', weight: 0.9959819999999999} },
-{ data: { source: 'MED19', target: 'MED26', directed: 'false', weight: 0.990566} },
-{ data: { source: 'MED19', target: 'CCNC', directed: 'false', weight: 0.7651640000000001} },
-{ data: { source: 'MED19', target: 'SURB7', directed: 'false', weight: 0.724163} },
-{ data: { source: 'MED19', target: 'CRSP9', directed: 'false', weight: 0.684055} },
-{ data: { source: 'MED19', target: 'CDK8', directed: 'false', weight: 0.24575100000000002} },
-{ data: { source: 'MED17', target: 'MED8', directed: 'false', weight: 0.999999} },
-{ data: { source: 'MED17', target: 'CRSP8', directed: 'false', weight: 0.999394} },
-{ data: { source: 'MED17', target: 'CDK8', directed: 'false', weight: 0.905085} },
-{ data: { source: 'MED17', target: 'SURB7', directed: 'false', weight: 0.8387049999999999} },
-{ data: { source: 'MED17', target: 'CRSP9', directed: 'false', weight: 0.560958} },
-{ data: { source: 'MED17', target: 'CCNC', directed: 'false', weight: 0.363205} },
-{ data: { source: 'MED26', target: 'CRSP9', directed: 'false', weight: 0.06138060000000001} },
-{ data: { source: 'MED26', target: 'SURB7', directed: 'false', weight: 0.7525569999999999} },
-{ data: { source: 'CCNC', target: 'MED8', directed: 'false', weight: 0.65787} },
-{ data: { source: 'CCNC', target: 'CRSP8', directed: 'false', weight: 0.82078} },
-{ data: { source: 'CCNC', target: 'CDK8', directed: 'false', weight: 0.999915} },
-{ data: { source: 'CCNC', target: 'SURB7', directed: 'false', weight: 0.192065} },
-{ data: { source: 'CCNC', target: 'CRSP9', directed: 'false', weight: 0.07768639999999999} },
-{ data: { source: 'CRSP9', target: 'MED8', directed: 'false', weight: 0.733102} },
-{ data: { source: 'CRSP9', target: 'CRSP8', directed: 'false', weight: 0.927292} },
-{ data: { source: 'CRSP9', target: 'CDK8', directed: 'false', weight: 0.069758} },
-{ data: { source: 'CRSP9', target: 'SURB7', directed: 'false', weight: 0.9821620000000001} },
-{ data: { source: 'MED8', target: 'CRSP8', directed: 'false', weight: 0.999582} },
-{ data: { source: 'MED8', target: 'CDK8', directed: 'false', weight: 0.9988959999999999} },
-{ data: { source: 'MED8', target: 'SURB7', directed: 'false', weight: 0.627193} },
-{ data: { source: 'CRSP8', target: 'CDK8', directed: 'false', weight: 0.993424} },
-{ data: { source: 'CRSP8', target: 'SURB7', directed: 'false', weight: 0.8512370000000001} },
-{ data: { source: 'SURB7', target: 'CDK8', directed: 'false', weight: 0.9591770000000001} }]},
+elements:{nodes: [{data: { id: 'REPIN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BWE0" }},
+{data: { id: 'ZFP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6P2D0" }},
+{data: { id: 'SET', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q01105" }},
+{data: { id: 'ZNF7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P17097" }},
+{data: { id: 'KIF19', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q2TAC6" }},
+{data: { id: 'ZNF845', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q96IR2" }},
+{data: { id: 'ZNF331', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9NQX6" }}], 
+ edges: [{ data: { source: 'REPIN1', target: 'ZNF7', directed: 'false', weight: 0.0974347} },
+{ data: { source: 'REPIN1', target: 'ZFP1', directed: 'false', weight: 0.11228099999999999} },
+{ data: { source: 'REPIN1', target: 'SET', directed: 'false', weight: 0.841199} },
+{ data: { source: 'REPIN1', target: 'ZNF331', directed: 'false', weight: 0.11228099999999999} },
+{ data: { source: 'REPIN1', target: 'ZNF845', directed: 'false', weight: 0.0974347} },
+{ data: { source: 'ZFP1', target: 'ZNF7', directed: 'false', weight: 0.144297} },
+{ data: { source: 'ZFP1', target: 'ZNF331', directed: 'false', weight: 0.165074} },
+{ data: { source: 'SET', target: 'ZNF845', directed: 'false', weight: 0.633113} },
+{ data: { source: 'ZNF7', target: 'KIF19', directed: 'false', weight: 0.42913199999999996} },
+{ data: { source: 'ZNF7', target: 'ZNF331', directed: 'false', weight: 0.144297} }]},
 
 style: [
     {
@@ -161,7 +106,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.3 ARC complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.76
+    0.1 CTFC-TAF1 complex match 3<br> Complex Score = 0.37500<br> Unweighted Density = 0.48
     </section>
     </body>
     </html>

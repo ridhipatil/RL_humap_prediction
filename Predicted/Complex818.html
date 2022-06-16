@@ -30,13 +30,16 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'GPX4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P36969" }},
-{data: { id: 'ENO3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P13929" }},
-{data: { id: 'GALE', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14376" }},
-{data: { id: 'DNM1L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00429" }}], 
- edges: [{ data: { source: 'GPX4', target: 'DNM1L', directed: 'false', weight: 0.233648} },
-{ data: { source: 'GPX4', target: 'GALE', directed: 'false', weight: 0.124025} },
-{ data: { source: 'GPX4', target: 'ENO3', directed: 'false', weight: 0.11246400000000001} }]},
+elements:{nodes: [{data: { id: 'FH', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P07954" }},
+{data: { id: 'TBCA', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/O75347" }},
+{data: { id: 'C1orf50', score: 4, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9BV19" }},
+{data: { id: 'AHCY', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P23526" }},
+{data: { id: 'FKBP1B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P68106" }}], 
+ edges: [{ data: { source: 'TBCA', target: 'FKBP1B', directed: 'false', weight: 0.943319} },
+{ data: { source: 'TBCA', target: 'AHCY', directed: 'false', weight: 0.9942850000000001} },
+{ data: { source: 'C1orf50', target: 'AHCY', directed: 'false', weight: 0.9852989999999999} },
+{ data: { source: 'AHCY', target: 'FKBP1B', directed: 'false', weight: 0.5513859999999999} },
+{ data: { source: 'AHCY', target: 'FH', directed: 'false', weight: 0.40507600000000005} }]},
 
 style: [
     {
@@ -85,6 +88,11 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.37500
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        2 interacting protein(s): <br>TBCA C1orf50
     </section>
     </body>
     </html>

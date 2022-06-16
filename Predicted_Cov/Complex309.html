@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 Calcineurin</title>
+<title> PARP11 RNF166 HECTD2 KIF1A</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,18 +30,14 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'PPP3R1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P63098" }},
-{data: { id: 'PPP3CC', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P48454" }},
-{data: { id: 'PPP3CB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P16298" }},
-{data: { id: 'NFATC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95644" }},
-{data: { id: 'DSCR1L2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UKA8" }}], 
- edges: [{ data: { source: 'PPP3R1', target: 'PPP3CC', directed: 'false', weight: 0.928958} },
-{ data: { source: 'PPP3R1', target: 'DSCR1L2', directed: 'false', weight: 0.9806090000000001} },
-{ data: { source: 'PPP3R1', target: 'PPP3CB', directed: 'false', weight: 0.0262308} },
-{ data: { source: 'PPP3CC', target: 'DSCR1L2', directed: 'false', weight: 0.9579139999999999} },
-{ data: { source: 'PPP3CC', target: 'PPP3CB', directed: 'false', weight: 0.832973} },
-{ data: { source: 'PPP3CC', target: 'NFATC1', directed: 'false', weight: 0.40353} },
-{ data: { source: 'PPP3CB', target: 'DSCR1L2', directed: 'false', weight: 0.8780469999999999} }]},
+elements:{nodes: [{data: { id: 'HECTD2', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q5U5R9" }},
+{data: { id: 'KIF1A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q12756" }},
+{data: { id: 'PARP11', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NR21" }},
+{data: { id: 'RNF166', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96A37" }}], 
+ edges: [{ data: { source: 'HECTD2', target: 'RNF166', directed: 'false', weight: 0.9740840000000001} },
+{ data: { source: 'HECTD2', target: 'KIF1A', directed: 'false', weight: 0.151455} },
+{ data: { source: 'KIF1A', target: 'RNF166', directed: 'false', weight: 0.348523} },
+{ data: { source: 'PARP11', target: 'RNF166', directed: 'false', weight: 0.333723} }]},
 
 style: [
     {
@@ -101,7 +97,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 Calcineurin<br> Complex Score = 0.38800<br> Unweighted Density = 0.70
+    PARP11 RNF166 HECTD2 KIF1A<br> Complex Score = 0.38750<br> Unweighted Density = 0.67
     </section>
     </body>
     </html>

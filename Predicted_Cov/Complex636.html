@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 SMN complex, U7 snRNA specific</title>
+<title> DCUN1D1 RNASEH2A MAGEB1 RNASEH2C KIAA1143 RNASEH2B</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,22 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'CMTR2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IYT2" }},
-{data: { id: 'LSM10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q969L4" }},
-{data: { id: 'SNRPG', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62308" }},
-{data: { id: 'TOE1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96GM8" }}], 
- edges: [{ data: { source: 'CMTR2', target: 'SNRPG', directed: 'false', weight: 0.587599} },
-{ data: { source: 'LSM10', target: 'SNRPG', directed: 'false', weight: 0.104128} },
-{ data: { source: 'SNRPG', target: 'TOE1', directed: 'false', weight: 0.122172} }]},
+elements:{nodes: [{data: { id: 'RNASEH2C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TDP1" }},
+{data: { id: 'KIAA1143', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q96AT1" }},
+{data: { id: 'RNASEH2B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5TBB1" }},
+{data: { id: 'DCUN1D1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96GG9" }},
+{data: { id: 'RNASEH2A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75792" }},
+{data: { id: 'MAGEB1', score: 2, type: '', href: "https://www.uniprot.org/uniprot/P43366" }}], 
+ edges: [{ data: { source: 'RNASEH2C', target: 'KIAA1143', directed: 'false', weight: 0.9699610000000001} },
+{ data: { source: 'RNASEH2C', target: 'RNASEH2A', directed: 'false', weight: 0.9510379999999999} },
+{ data: { source: 'RNASEH2C', target: 'RNASEH2B', directed: 'false', weight: 0.911386} },
+{ data: { source: 'RNASEH2C', target: 'MAGEB1', directed: 'false', weight: 0.237725} },
+{ data: { source: 'RNASEH2B', target: 'KIAA1143', directed: 'false', weight: 0.153804} },
+{ data: { source: 'RNASEH2B', target: 'RNASEH2A', directed: 'false', weight: 0.9254030000000001} },
+{ data: { source: 'RNASEH2B', target: 'MAGEB1', directed: 'false', weight: 0.311947} },
+{ data: { source: 'MAGEB1', target: 'RNASEH2A', directed: 'false', weight: 0.29122800000000004} },
+{ data: { source: 'KIAA1143', target: 'DCUN1D1', directed: 'false', weight: 0.395279} },
+{ data: { source: 'KIAA1143', target: 'RNASEH2A', directed: 'false', weight: 0.26105} }]},
 
 style: [
     {
@@ -96,7 +105,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 SMN complex, U7 snRNA specific<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    DCUN1D1 RNASEH2A MAGEB1 RNASEH2C KIAA1143 RNASEH2B<br> Complex Score = 0.38750<br> Unweighted Density = 0.67
     </section>
     </body>
     </html>

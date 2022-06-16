@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 PA700 complex match 2</title>
+<title> CAPZA2 BST2 ST5 LIMA1 CARMIL1</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,14 +30,16 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'REX1BD', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q96EN9" }},
-{data: { id: 'PSMD9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00233" }},
-{data: { id: 'PSMD7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P51665" }},
-{data: { id: 'PSMD2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13200" }}], 
- edges: [{ data: { source: 'REX1BD', target: 'PSMD7', directed: 'false', weight: 0.999375} },
-{ data: { source: 'PSMD9', target: 'PSMD2', directed: 'false', weight: 0.991926} },
-{ data: { source: 'PSMD9', target: 'PSMD7', directed: 'false', weight: 0.999309} },
-{ data: { source: 'PSMD7', target: 'PSMD2', directed: 'false', weight: 1.0} }]},
+elements:{nodes: [{data: { id: 'ST5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P78524" }},
+{data: { id: 'BST2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q10589" }},
+{data: { id: 'LIMA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UHB6" }},
+{data: { id: 'CAPZA2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P47755" }},
+{data: { id: 'CARMIL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5VZK9" }}], 
+ edges: [{ data: { source: 'LIMA1', target: 'CAPZA2', directed: 'false', weight: 0.896653} },
+{ data: { source: 'LIMA1', target: 'ST5', directed: 'false', weight: 0.510608} },
+{ data: { source: 'CARMIL1', target: 'CAPZA2', directed: 'false', weight: 0.8531200000000001} },
+{ data: { source: 'ST5', target: 'CAPZA2', directed: 'false', weight: 0.152561} },
+{ data: { source: 'BST2', target: 'CAPZA2', directed: 'false', weight: 0.270806} }]},
 
 style: [
     {
@@ -97,7 +99,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 PA700 complex match 2<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
+    CAPZA2 BST2 ST5 LIMA1 CARMIL1<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

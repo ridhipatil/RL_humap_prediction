@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 HDAC10-PAX3-KAP1 complex match 2</title>
+<title> 0.4 Ubiquitin ligase (UBE2N, UBE2V2)</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,16 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'ZNF732', score: 2, type: '', href: "https://www.uniprot.org/uniprot/B4DXR9" }},
-{data: { id: 'TRIM28', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13263" }},
-{data: { id: 'ZNF701', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9NV72" }},
-{data: { id: 'ZNF738', score: 3, type: '', href: "https://www.ncbi.nlm.nih.gov/gene/148203" }}], 
- edges: [{ data: { source: 'ZNF732', target: 'TRIM28', directed: 'false', weight: 0.177636} },
-{ data: { source: 'TRIM28', target: 'ZNF738', directed: 'false', weight: 0.46033} },
-{ data: { source: 'TRIM28', target: 'ZNF701', directed: 'false', weight: 0.125323} }]},
+elements:{nodes: [{data: { id: 'QKI', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96PU8" }},
+{data: { id: 'UBE2V1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13404" }},
+{data: { id: 'UBE2V2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15819" }},
+{data: { id: 'UBE2N', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P61088" }},
+{data: { id: 'SORD', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q00796" }}], 
+ edges: [{ data: { source: 'QKI', target: 'UBE2N', directed: 'false', weight: 0.666098} },
+{ data: { source: 'QKI', target: 'UBE2V2', directed: 'false', weight: 0.24114499999999997} },
+{ data: { source: 'SORD', target: 'UBE2V1', directed: 'false', weight: 0.868548} },
+{ data: { source: 'UBE2V1', target: 'UBE2N', directed: 'false', weight: 0.978764} },
+{ data: { source: 'UBE2V2', target: 'UBE2N', directed: 'false', weight: 0.773435} }]},
 
 style: [
     {
@@ -96,7 +99,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 HDAC10-PAX3-KAP1 complex match 2<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.4 Ubiquitin ligase (UBE2N, UBE2V2)<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

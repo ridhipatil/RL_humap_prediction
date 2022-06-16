@@ -30,26 +30,33 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'MLLT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q03111" }},
-{data: { id: 'EAF1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96JC9" }},
-{data: { id: 'AFF4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UHB7" }},
-{data: { id: 'DKFZp779C185', score: 1, type: '', href: "https://www.uniprot.org/uniprot/Q7Z656" }},
-{data: { id: 'USPL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5W0Q7" }}], 
- edges: [{ data: { source: 'MLLT1', target: 'EAF1', directed: 'false', weight: 0.112561} },
-{ data: { source: 'MLLT1', target: 'AFF4', directed: 'false', weight: 0.9968540000000001} },
-{ data: { source: 'MLLT1', target: 'DKFZp779C185', directed: 'false', weight: 0.03556} },
-{ data: { source: 'EAF1', target: 'DKFZp779C185', directed: 'false', weight: 0.9948100000000001} },
-{ data: { source: 'EAF1', target: 'AFF4', directed: 'false', weight: 0.34247} },
-{ data: { source: 'EAF1', target: 'USPL1', directed: 'false', weight: 0.15979300000000002} },
-{ data: { source: 'AFF4', target: 'DKFZp779C185', directed: 'false', weight: 0.9914129999999999} }]},
+elements:{nodes: [{data: { id: 'USP22', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UPT9" }},
+{data: { id: 'ATXN7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15265" }},
+{data: { id: 'ATXN7L3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14CW9" }},
+{data: { id: 'ATXN7L1', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q9ULK2" }},
+{data: { id: 'ATXN7L2', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q5T6C5" }},
+{data: { id: 'USP27X', score: 5, type: '', href: "https://www.uniprot.org/uniprot/A6NNY8" }}], 
+ edges: [{ data: { source: 'ATXN7L3', target: 'ATXN7L2', directed: 'false', weight: 0.9851280000000001} },
+{ data: { source: 'ATXN7L3', target: 'ATXN7', directed: 'false', weight: 0.97996} },
+{ data: { source: 'ATXN7L3', target: 'USP27X', directed: 'false', weight: 0.978252} },
+{ data: { source: 'ATXN7L3', target: 'ATXN7L1', directed: 'false', weight: 0.932975} },
+{ data: { source: 'ATXN7L3', target: 'USP22', directed: 'false', weight: 0.807232} },
+{ data: { source: 'USP27X', target: 'ATXN7L2', directed: 'false', weight: 0.151455} },
+{ data: { source: 'USP27X', target: 'ATXN7', directed: 'false', weight: 0.151455} },
+{ data: { source: 'USP27X', target: 'ATXN7L1', directed: 'false', weight: 0.151455} },
+{ data: { source: 'USP27X', target: 'USP22', directed: 'false', weight: 0.0938091} },
+{ data: { source: 'USP22', target: 'ATXN7L2', directed: 'false', weight: 0.10703800000000001} },
+{ data: { source: 'USP22', target: 'ATXN7', directed: 'false', weight: 0.10703800000000001} },
+{ data: { source: 'USP22', target: 'ATXN7L1', directed: 'false', weight: 0.10703800000000001} },
+{ data: { source: 'ATXN7', target: 'ATXN7L2', directed: 'false', weight: 0.171414} },
+{ data: { source: 'ATXN7', target: 'ATXN7L1', directed: 'false', weight: 0.171414} },
+{ data: { source: 'ATXN7L1', target: 'ATXN7L2', directed: 'false', weight: 0.171414} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 10,
-		'width':'10',
-		'height': '10',	
+		'font-size': 30,
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}                                
@@ -61,7 +68,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
 								'line-color': 'blue',
 								'opacity': 0.5
 							}
@@ -70,10 +77,7 @@ style: [
 
 });
 cy.layout({
-    'name': 'fcose',
-		'animate':false,
-	'nodeDimensionsIncludeLabels':true,
-	'nodeSeparation': 1000
+    name: 'circle'
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -89,7 +93,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.38800
+    Complex Score  = 0.38750
     </section>
     </body>
     </html>

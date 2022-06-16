@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 TNF-alpha/NF-kappa B signaling complex 6 match 3</title>
+<title> 0.7 AFF4 super elongation complex (SEC)</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,14 +30,51 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'RBM4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BWF3" }},
-{data: { id: 'RBM4B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BQ04" }},
-{data: { id: 'MYEF2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9P2K5" }},
-{data: { id: 'RPL30', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62888" }}], 
- edges: [{ data: { source: 'RBM4', target: 'RBM4B', directed: 'false', weight: 0.9886780000000001} },
-{ data: { source: 'RBM4', target: 'MYEF2', directed: 'false', weight: 0.0721021} },
-{ data: { source: 'RBM4B', target: 'MYEF2', directed: 'false', weight: 0.184462} },
-{ data: { source: 'MYEF2', target: 'RPL30', directed: 'false', weight: 0.22606700000000002} }]},
+elements:{nodes: [{data: { id: 'AFF4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UHB7" }},
+{data: { id: 'CCNT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60563" }},
+{data: { id: 'ELL3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HB65" }},
+{data: { id: 'MLLT3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P42568" }},
+{data: { id: 'AFF1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P51825" }},
+{data: { id: 'CCNT2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60583" }},
+{data: { id: 'AFF3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P51826" }},
+{data: { id: 'CDK9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P50750" }},
+{data: { id: 'ELL2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00472" }},
+{data: { id: 'EAF2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96CJ1" }},
+{data: { id: 'MLLT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q03111" }}], 
+ edges: [{ data: { source: 'AFF4', target: 'CDK9', directed: 'false', weight: 0.970325} },
+{ data: { source: 'AFF4', target: 'CCNT1', directed: 'false', weight: 0.9185450000000001} },
+{ data: { source: 'AFF4', target: 'CCNT2', directed: 'false', weight: 0.8286709999999999} },
+{ data: { source: 'AFF4', target: 'MLLT1', directed: 'false', weight: 0.9978290000000001} },
+{ data: { source: 'AFF4', target: 'ELL2', directed: 'false', weight: 0.981095} },
+{ data: { source: 'AFF4', target: 'MLLT3', directed: 'false', weight: 0.9766889999999999} },
+{ data: { source: 'AFF4', target: 'ELL3', directed: 'false', weight: 0.914861} },
+{ data: { source: 'AFF4', target: 'AFF1', directed: 'false', weight: 0.887666} },
+{ data: { source: 'CCNT1', target: 'CDK9', directed: 'false', weight: 1.0} },
+{ data: { source: 'CCNT1', target: 'CCNT2', directed: 'false', weight: 0.911014} },
+{ data: { source: 'CCNT1', target: 'MLLT1', directed: 'false', weight: 0.598057} },
+{ data: { source: 'CCNT1', target: 'ELL2', directed: 'false', weight: 0.268136} },
+{ data: { source: 'CCNT1', target: 'MLLT3', directed: 'false', weight: 0.253081} },
+{ data: { source: 'CCNT1', target: 'AFF1', directed: 'false', weight: 0.209236} },
+{ data: { source: 'CCNT1', target: 'AFF3', directed: 'false', weight: 0.11473699999999999} },
+{ data: { source: 'ELL3', target: 'MLLT1', directed: 'false', weight: 0.8862959999999999} },
+{ data: { source: 'ELL3', target: 'EAF2', directed: 'false', weight: 0.9825450000000001} },
+{ data: { source: 'MLLT3', target: 'CDK9', directed: 'false', weight: 0.579627} },
+{ data: { source: 'MLLT3', target: 'CCNT2', directed: 'false', weight: 0.437488} },
+{ data: { source: 'MLLT3', target: 'MLLT1', directed: 'false', weight: 0.983456} },
+{ data: { source: 'MLLT3', target: 'AFF1', directed: 'false', weight: 0.959147} },
+{ data: { source: 'MLLT3', target: 'ELL2', directed: 'false', weight: 0.816184} },
+{ data: { source: 'AFF1', target: 'CDK9', directed: 'false', weight: 0.55633} },
+{ data: { source: 'AFF1', target: 'CCNT2', directed: 'false', weight: 0.540101} },
+{ data: { source: 'AFF1', target: 'MLLT1', directed: 'false', weight: 0.9844870000000001} },
+{ data: { source: 'AFF1', target: 'ELL2', directed: 'false', weight: 0.832894} },
+{ data: { source: 'CCNT2', target: 'CDK9', directed: 'false', weight: 0.9999979999999999} },
+{ data: { source: 'CCNT2', target: 'MLLT1', directed: 'false', weight: 0.963211} },
+{ data: { source: 'CCNT2', target: 'ELL2', directed: 'false', weight: 0.28284699999999996} },
+{ data: { source: 'CCNT2', target: 'AFF3', directed: 'false', weight: 0.128057} },
+{ data: { source: 'AFF3', target: 'CDK9', directed: 'false', weight: 0.934054} },
+{ data: { source: 'CDK9', target: 'MLLT1', directed: 'false', weight: 0.8799110000000001} },
+{ data: { source: 'CDK9', target: 'ELL2', directed: 'false', weight: 0.24809699999999998} },
+{ data: { source: 'ELL2', target: 'MLLT1', directed: 'false', weight: 0.804193} }]},
 
 style: [
     {
@@ -97,7 +134,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 TNF-alpha/NF-kappa B signaling complex 6 match 3<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
+    0.7 AFF4 super elongation complex (SEC)<br> Complex Score = 0.38750<br> Unweighted Density = 0.62
     </section>
     </body>
     </html>

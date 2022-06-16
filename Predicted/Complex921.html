@@ -30,13 +30,24 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'HNRNPH1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P31943" }},
-{data: { id: 'COQ3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NZJ6" }},
-{data: { id: 'HEL-S-68p', score: 2, type: '', href: "https://www.uniprot.org/uniprot/V9HWF4" }},
-{data: { id: 'RACK1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P63244" }}], 
- edges: [{ data: { source: 'HNRNPH1', target: 'RACK1', directed: 'false', weight: 0.135237} },
-{ data: { source: 'COQ3', target: 'HEL-S-68p', directed: 'false', weight: 0.15751199999999999} },
-{ data: { source: 'HEL-S-68p', target: 'RACK1', directed: 'false', weight: 0.164232} }]},
+elements:{nodes: [{data: { id: 'ZNF286B', score: 3, type: '', href: "https://www.uniprot.org/uniprot/P0CG31" }},
+{data: { id: 'RET', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P07949" }},
+{data: { id: 'HEXA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P06865" }},
+{data: { id: 'DNAJA4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WW22" }},
+{data: { id: 'ABCA7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IZY2" }},
+{data: { id: 'ALDOC', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P09972" }},
+{data: { id: 'ARHGAP32', score: 5, type: '', href: "https://www.uniprot.org/uniprot/A7KAX9" }}], 
+ edges: [{ data: { source: 'ZNF286B', target: 'HEXA', directed: 'false', weight: 0.292026} },
+{ data: { source: 'ZNF286B', target: 'RET', directed: 'false', weight: 0.33265500000000003} },
+{ data: { source: 'ZNF286B', target: 'ABCA7', directed: 'false', weight: 0.189659} },
+{ data: { source: 'ZNF286B', target: 'ARHGAP32', directed: 'false', weight: 0.171006} },
+{ data: { source: 'RET', target: 'HEXA', directed: 'false', weight: 0.292026} },
+{ data: { source: 'RET', target: 'DNAJA4', directed: 'false', weight: 0.47707700000000003} },
+{ data: { source: 'RET', target: 'ABCA7', directed: 'false', weight: 0.33265500000000003} },
+{ data: { source: 'RET', target: 'ARHGAP32', directed: 'false', weight: 0.292026} },
+{ data: { source: 'ABCA7', target: 'HEXA', directed: 'false', weight: 0.171006} },
+{ data: { source: 'ABCA7', target: 'ARHGAP32', directed: 'false', weight: 0.292026} },
+{ data: { source: 'HEXA', target: 'ALDOC', directed: 'false', weight: 0.5} }]},
 
 style: [
     {

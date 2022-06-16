@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 PNUTS-PP1 complex</title>
+<title> 0.1 Phosphatidylinositol 4-kinase complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,24 +30,25 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'hCG_1821276', score: 1, type: '', href: "https://www.uniprot.org/uniprot/A0A024RCJ8" }},
-{data: { id: 'PPP1CC', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P36873" }},
-{data: { id: 'PPP1CA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62136" }},
-{data: { id: 'TP53BP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13625" }},
-{data: { id: 'PPP1R3D', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95685" }},
-{data: { id: 'RASSF7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q02833" }},
-{data: { id: 'PPP1R9A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9ULJ8" }}], 
- edges: [{ data: { source: 'hCG_1821276', target: 'PPP1CA', directed: 'false', weight: 0.9995879999999999} },
-{ data: { source: 'hCG_1821276', target: 'PPP1CC', directed: 'false', weight: 0.880956} },
-{ data: { source: 'PPP1CC', target: 'PPP1CA', directed: 'false', weight: 1.0} },
-{ data: { source: 'PPP1CC', target: 'PPP1R9A', directed: 'false', weight: 0.978102} },
-{ data: { source: 'PPP1CC', target: 'TP53BP2', directed: 'false', weight: 0.521848} },
-{ data: { source: 'PPP1CC', target: 'PPP1R3D', directed: 'false', weight: 0.18548900000000001} },
-{ data: { source: 'PPP1CC', target: 'RASSF7', directed: 'false', weight: 0.147479} },
-{ data: { source: 'PPP1CA', target: 'PPP1R9A', directed: 'false', weight: 0.9977020000000001} },
-{ data: { source: 'PPP1CA', target: 'PPP1R3D', directed: 'false', weight: 0.885192} },
-{ data: { source: 'PPP1CA', target: 'TP53BP2', directed: 'false', weight: 0.705146} },
-{ data: { source: 'TP53BP2', target: 'RASSF7', directed: 'false', weight: 0.9779} }]},
+elements:{nodes: [{data: { id: 'CIR1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86X95" }},
+{data: { id: 'FANCI', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NVI1" }},
+{data: { id: 'HEATR1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H583" }},
+{data: { id: 'NF1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P21359" }},
+{data: { id: 'MON2', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q7Z3U7" }},
+{data: { id: 'PI4KA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P42356" }},
+{data: { id: 'CAND2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75155" }}], 
+ edges: [{ data: { source: 'CIR1', target: 'FANCI', directed: 'false', weight: 0.5416569999999999} },
+{ data: { source: 'FANCI', target: 'MON2', directed: 'false', weight: 0.6396350000000001} },
+{ data: { source: 'HEATR1', target: 'PI4KA', directed: 'false', weight: 0.722993} },
+{ data: { source: 'HEATR1', target: 'CAND2', directed: 'false', weight: 0.5} },
+{ data: { source: 'HEATR1', target: 'MON2', directed: 'false', weight: 0.316655} },
+{ data: { source: 'HEATR1', target: 'NF1', directed: 'false', weight: 0.190295} },
+{ data: { source: 'MON2', target: 'PI4KA', directed: 'false', weight: 0.387855} },
+{ data: { source: 'MON2', target: 'CAND2', directed: 'false', weight: 0.490224} },
+{ data: { source: 'MON2', target: 'NF1', directed: 'false', weight: 0.148302} },
+{ data: { source: 'CAND2', target: 'PI4KA', directed: 'false', weight: 0.844333} },
+{ data: { source: 'CAND2', target: 'NF1', directed: 'false', weight: 0.34057} },
+{ data: { source: 'PI4KA', target: 'NF1', directed: 'false', weight: 0.519015} }]},
 
 style: [
     {
@@ -107,7 +108,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 PNUTS-PP1 complex<br> Complex Score = 0.38800<br> Unweighted Density = 0.52
+    0.1 Phosphatidylinositol 4-kinase complex<br> Complex Score = 0.38750<br> Unweighted Density = 0.57
     </section>
     </body>
     </html>

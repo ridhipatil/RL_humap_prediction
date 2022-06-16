@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> ARL14EP SETDB2 ZNF445 SENP7</title>
+<title> 0.1 ITGAV-ITGB5 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,25 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'SENP7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BQF6" }},
-{data: { id: 'ZNF445', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P59923" }},
-{data: { id: 'ARL14EP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N8R7" }},
-{data: { id: 'SETDB2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96T68" }}], 
- edges: [{ data: { source: 'SENP7', target: 'SETDB2', directed: 'false', weight: 0.27959} },
-{ data: { source: 'ZNF445', target: 'SETDB2', directed: 'false', weight: 0.1207} },
-{ data: { source: 'SETDB2', target: 'ARL14EP', directed: 'false', weight: 0.54929} }]},
+elements:{nodes: [{data: { id: 'ITGAV', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P06756" }},
+{data: { id: 'FZD6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60353" }},
+{data: { id: 'ITGA5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P08648" }},
+{data: { id: 'ITGA3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P26006" }},
+{data: { id: 'KLC3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6P597" }},
+{data: { id: 'SYNE4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N205" }},
+{data: { id: 'ZFPL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95159" }}], 
+ edges: [{ data: { source: 'ITGAV', target: 'ITGA5', directed: 'false', weight: 0.166653} },
+{ data: { source: 'ITGAV', target: 'ITGA3', directed: 'false', weight: 0.190412} },
+{ data: { source: 'ITGAV', target: 'FZD6', directed: 'false', weight: 0.136207} },
+{ data: { source: 'FZD6', target: 'ITGA5', directed: 'false', weight: 0.125749} },
+{ data: { source: 'FZD6', target: 'SYNE4', directed: 'false', weight: 0.635411} },
+{ data: { source: 'FZD6', target: 'KLC3', directed: 'false', weight: 0.140692} },
+{ data: { source: 'FZD6', target: 'ITGA3', directed: 'false', weight: 0.144297} },
+{ data: { source: 'FZD6', target: 'ZFPL1', directed: 'false', weight: 0.123797} },
+{ data: { source: 'ITGA5', target: 'ITGA3', directed: 'false', weight: 0.33761399999999997} },
+{ data: { source: 'KLC3', target: 'SYNE4', directed: 'false', weight: 0.969405} },
+{ data: { source: 'KLC3', target: 'ZFPL1', directed: 'false', weight: 0.151455} },
+{ data: { source: 'SYNE4', target: 'ZFPL1', directed: 'false', weight: 0.733863} }]},
 
 style: [
     {
@@ -96,7 +108,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    ARL14EP SETDB2 ZNF445 SENP7<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.1 ITGAV-ITGB5 complex<br> Complex Score = 0.38750<br> Unweighted Density = 0.57
     </section>
     </body>
     </html>

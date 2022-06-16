@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 6S methyltransferase complex</title>
+<title> 0.5 BBSome</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,22 +30,31 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'ADSL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P30566" }},
-{data: { id: 'HNRNPK', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P61978" }},
-{data: { id: 'RSRC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96IZ7" }},
-{data: { id: 'TFIP11', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UBB9" }},
-{data: { id: 'PAXBP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y5B6" }},
-{data: { id: 'SNRPD3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62318" }},
-{data: { id: 'WDR57', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96DI7" }}], 
- edges: [{ data: { source: 'HNRNPK', target: 'SNRPD3', directed: 'false', weight: 0.261226} },
-{ data: { source: 'HNRNPK', target: 'ADSL', directed: 'false', weight: 0.317801} },
-{ data: { source: 'RSRC1', target: 'WDR57', directed: 'false', weight: 0.110508} },
-{ data: { source: 'RSRC1', target: 'TFIP11', directed: 'false', weight: 0.9952770000000001} },
-{ data: { source: 'RSRC1', target: 'PAXBP1', directed: 'false', weight: 0.9981} },
-{ data: { source: 'SNRPD3', target: 'WDR57', directed: 'false', weight: 0.889458} },
-{ data: { source: 'TFIP11', target: 'WDR57', directed: 'false', weight: 0.21721500000000002} },
-{ data: { source: 'TFIP11', target: 'PAXBP1', directed: 'false', weight: 0.999986} },
-{ data: { source: 'PAXBP1', target: 'WDR57', directed: 'false', weight: 0.327023} }]},
+elements:{nodes: [{data: { id: 'BBS5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N3I7" }},
+{data: { id: 'LZTFL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NQ48" }},
+{data: { id: 'TTC8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TAM2" }},
+{data: { id: 'BBS7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IWZ6" }},
+{data: { id: 'BBS2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BXC9" }},
+{data: { id: 'SLC39A7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92504" }},
+{data: { id: 'EEF1A1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P68104" }},
+{data: { id: 'BBS9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q3SYG4" }}], 
+ edges: [{ data: { source: 'BBS5', target: 'BBS9', directed: 'false', weight: 0.171414} },
+{ data: { source: 'BBS5', target: 'LZTFL1', directed: 'false', weight: 0.704401} },
+{ data: { source: 'BBS5', target: 'TTC8', directed: 'false', weight: 0.171414} },
+{ data: { source: 'BBS5', target: 'BBS7', directed: 'false', weight: 0.101714} },
+{ data: { source: 'BBS5', target: 'BBS2', directed: 'false', weight: 0.09600089999999999} },
+{ data: { source: 'LZTFL1', target: 'BBS9', directed: 'false', weight: 0.627512} },
+{ data: { source: 'LZTFL1', target: 'TTC8', directed: 'false', weight: 0.573751} },
+{ data: { source: 'LZTFL1', target: 'BBS7', directed: 'false', weight: 0.347429} },
+{ data: { source: 'LZTFL1', target: 'BBS2', directed: 'false', weight: 0.325123} },
+{ data: { source: 'TTC8', target: 'BBS9', directed: 'false', weight: 0.171414} },
+{ data: { source: 'TTC8', target: 'BBS7', directed: 'false', weight: 0.101714} },
+{ data: { source: 'TTC8', target: 'BBS2', directed: 'false', weight: 0.09600089999999999} },
+{ data: { source: 'BBS7', target: 'BBS9', directed: 'false', weight: 0.101714} },
+{ data: { source: 'BBS2', target: 'BBS9', directed: 'false', weight: 0.09600089999999999} },
+{ data: { source: 'SLC39A7', target: 'EEF1A1', directed: 'false', weight: 0.722217} },
+{ data: { source: 'SLC39A7', target: 'BBS9', directed: 'false', weight: 0.08441860000000001} },
+{ data: { source: 'EEF1A1', target: 'BBS9', directed: 'false', weight: 0.931105} }]},
 
 style: [
     {
@@ -105,7 +114,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 6S methyltransferase complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.43
+    0.5 BBSome<br> Complex Score = 0.38750<br> Unweighted Density = 0.61
     </section>
     </body>
     </html>

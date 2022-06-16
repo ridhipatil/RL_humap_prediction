@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> ALDH3B2 ALDH3B1 CHIT1</title>
+<title> 0.2 CtBP complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,26 +30,57 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'CHIT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13231" }},
-{data: { id: 'ALDH3B1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P43353" }},
-{data: { id: 'ALDH3B2', score: 5, type: '', href: "https://www.ncbi.nlm.nih.gov/gene/222" }}], 
- edges: [{ data: { source: 'CHIT1', target: 'ALDH3B1', directed: 'false', weight: 0.186862} },
-{ data: { source: 'ALDH3B1', target: 'ALDH3B2', directed: 'false', weight: 0.838239} }]},
+elements:{nodes: [{data: { id: 'CTBP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13363" }},
+{data: { id: 'ZEB2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60315" }},
+{data: { id: 'CTBP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P56545" }},
+{data: { id: 'ZNF217', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75362" }},
+{data: { id: 'GALK1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P51570" }},
+{data: { id: 'TRPS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UHF7" }},
+{data: { id: 'PRDM2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13029" }},
+{data: { id: 'ZNF516', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q92618" }},
+{data: { id: 'C10orf12', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96JN0" }}], 
+ edges: [{ data: { source: 'CTBP1', target: 'ZNF217', directed: 'false', weight: 0.991474} },
+{ data: { source: 'CTBP1', target: 'PRDM2', directed: 'false', weight: 0.9721690000000001} },
+{ data: { source: 'CTBP1', target: 'CTBP2', directed: 'false', weight: 0.960866} },
+{ data: { source: 'CTBP1', target: 'ZNF516', directed: 'false', weight: 0.958958} },
+{ data: { source: 'CTBP1', target: 'C10orf12', directed: 'false', weight: 0.930832} },
+{ data: { source: 'CTBP1', target: 'ZEB2', directed: 'false', weight: 0.8533370000000001} },
+{ data: { source: 'CTBP1', target: 'TRPS1', directed: 'false', weight: 0.843407} },
+{ data: { source: 'CTBP1', target: 'GALK1', directed: 'false', weight: 0.37205900000000003} },
+{ data: { source: 'ZEB2', target: 'ZNF217', directed: 'false', weight: 0.151455} },
+{ data: { source: 'ZEB2', target: 'PRDM2', directed: 'false', weight: 0.171414} },
+{ data: { source: 'ZEB2', target: 'CTBP2', directed: 'false', weight: 0.12378900000000001} },
+{ data: { source: 'ZEB2', target: 'ZNF516', directed: 'false', weight: 0.171414} },
+{ data: { source: 'ZEB2', target: 'C10orf12', directed: 'false', weight: 0.171414} },
+{ data: { source: 'ZEB2', target: 'TRPS1', directed: 'false', weight: 0.171414} },
+{ data: { source: 'CTBP2', target: 'ZNF217', directed: 'false', weight: 0.6392909999999999} },
+{ data: { source: 'CTBP2', target: 'PRDM2', directed: 'false', weight: 0.12378900000000001} },
+{ data: { source: 'CTBP2', target: 'ZNF516', directed: 'false', weight: 0.12378900000000001} },
+{ data: { source: 'CTBP2', target: 'C10orf12', directed: 'false', weight: 0.12378900000000001} },
+{ data: { source: 'CTBP2', target: 'TRPS1', directed: 'false', weight: 0.12378900000000001} },
+{ data: { source: 'ZNF217', target: 'TRPS1', directed: 'false', weight: 0.18443099999999998} },
+{ data: { source: 'ZNF217', target: 'ZNF516', directed: 'false', weight: 0.151455} },
+{ data: { source: 'ZNF217', target: 'PRDM2', directed: 'false', weight: 0.151455} },
+{ data: { source: 'ZNF217', target: 'C10orf12', directed: 'false', weight: 0.151455} },
+{ data: { source: 'TRPS1', target: 'PRDM2', directed: 'false', weight: 0.171414} },
+{ data: { source: 'TRPS1', target: 'ZNF516', directed: 'false', weight: 0.171414} },
+{ data: { source: 'TRPS1', target: 'C10orf12', directed: 'false', weight: 0.171414} },
+{ data: { source: 'PRDM2', target: 'ZNF516', directed: 'false', weight: 0.171414} },
+{ data: { source: 'PRDM2', target: 'C10orf12', directed: 'false', weight: 0.171414} },
+{ data: { source: 'ZNF516', target: 'C10orf12', directed: 'false', weight: 0.171414} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 10,
-		'width':'10',
-		'height': '10',	
+		'font-size': 30,
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}  
                                  if ( ele.data('type') == 'sars' ){return 'triangle'}   
   return 'rectangle';
   },            
-             'background-color': function( ele ){ 
+            'background-color': function( ele ){ 
                                 if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
 								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
                                  if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
@@ -63,7 +94,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
 								'line-color': function( ele ){ 
                                  if ( ele.data('type') == 'sars' ){return 'red'}   
   return 'blue';
@@ -75,10 +106,7 @@ style: [
 
 });
 cy.layout({
-    'name': 'fcose',
-		'animate':false,
-	'nodeDimensionsIncludeLabels':true,
-	'nodeSeparation': 1000
+    'name': 'circle'
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -94,7 +122,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    ALDH3B2 ALDH3B1 CHIT1<br> Complex Score = 0.38800<br> Unweighted Density = 0.67
+    0.2 CtBP complex<br> Complex Score = 0.39375<br> Unweighted Density = 0.81
     </section>
     </body>
     </html>

@@ -30,13 +30,22 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'SAG', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UBF6" }},
-{data: { id: 'ARRB2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P32121" }},
-{data: { id: 'ARRB1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49407" }},
-{data: { id: 'ARR3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P36575" }}], 
- edges: [{ data: { source: 'SAG', target: 'ARRB1', directed: 'false', weight: 1.0} },
-{ data: { source: 'ARRB2', target: 'ARRB1', directed: 'false', weight: 0.13651300000000002} },
-{ data: { source: 'ARRB2', target: 'ARR3', directed: 'false', weight: 0.9502719999999999} }]},
+elements:{nodes: [{data: { id: 'TMUB1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BVT8" }},
+{data: { id: 'DNAJC11', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9NVH1" }},
+{data: { id: 'ACBD5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5T8D3" }},
+{data: { id: 'RMDN3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96TC7" }},
+{data: { id: 'MBOAT7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96N66" }},
+{data: { id: 'FAM8A1', score: 4, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9UBU6" }}], 
+ edges: [{ data: { source: 'DNAJC11', target: 'FAM8A1', directed: 'false', weight: 0.247491} },
+{ data: { source: 'DNAJC11', target: 'RMDN3', directed: 'false', weight: 0.389824} },
+{ data: { source: 'DNAJC11', target: 'ACBD5', directed: 'false', weight: 0.12287999999999999} },
+{ data: { source: 'ACBD5', target: 'FAM8A1', directed: 'false', weight: 0.152394} },
+{ data: { source: 'ACBD5', target: 'RMDN3', directed: 'false', weight: 0.46153999999999995} },
+{ data: { source: 'FAM8A1', target: 'RMDN3', directed: 'false', weight: 0.555599} },
+{ data: { source: 'FAM8A1', target: 'TMUB1', directed: 'false', weight: 0.31501} },
+{ data: { source: 'FAM8A1', target: 'MBOAT7', directed: 'false', weight: 0.266948} },
+{ data: { source: 'TMUB1', target: 'RMDN3', directed: 'false', weight: 0.5} },
+{ data: { source: 'TMUB1', target: 'MBOAT7', directed: 'false', weight: 0.44583599999999995} }]},
 
 style: [
     {
@@ -84,7 +93,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.37500
+    Complex Score  = 0.38750
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        2 interacting protein(s): <br>DNAJC11 FAM8A1
     </section>
     </body>
     </html>

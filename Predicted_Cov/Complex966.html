@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.5 KPNB1-RAN complex</title>
+<title> 0.3 CIN85 homotetramer complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,11 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'KPNB1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14974" }},
-{data: { id: 'RAN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62826" }},
-{data: { id: 'NEMP2', score: 2, type: '', href: "https://www.uniprot.org/uniprot/A6NFY4" }},
-{data: { id: 'EL52', score: 4, type: '', href: "https://www.uniprot.org/uniprot/K9JA46" }}], 
- edges: [{ data: { source: 'KPNB1', target: 'RAN', directed: 'false', weight: 0.98759} },
-{ data: { source: 'RAN', target: 'EL52', directed: 'false', weight: 0.437971} },
-{ data: { source: 'RAN', target: 'NEMP2', directed: 'false', weight: 0.174387} }]},
+elements:{nodes: [{data: { id: 'TATDN1', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q6P1N9" }},
+{data: { id: 'STAP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9ULZ2" }},
+{data: { id: 'SH3KBP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96B97" }}], 
+ edges: [{ data: { source: 'TATDN1', target: 'SH3KBP1', directed: 'false', weight: 0.45778900000000006} },
+{ data: { source: 'STAP1', target: 'SH3KBP1', directed: 'false', weight: 0.786909} }]},
 
 style: [
     {
@@ -96,7 +94,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.5 KPNB1-RAN complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.3 CIN85 homotetramer complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
     </section>
     </body>
     </html>

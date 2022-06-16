@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 YBX1-AKT1 complex</title>
+<title> 0.3 ProTalpha C7 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,17 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'EIF1AX', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P47813" }},
-{data: { id: 'YBX1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P67809" }},
-{data: { id: 'SNRPA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P09661" }},
-{data: { id: 'GPATCH11', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q8N954" }}], 
- edges: [{ data: { source: 'EIF1AX', target: 'YBX1', directed: 'false', weight: 0.199864} },
-{ data: { source: 'YBX1', target: 'SNRPA1', directed: 'false', weight: 0.24078400000000003} },
-{ data: { source: 'SNRPA1', target: 'GPATCH11', directed: 'false', weight: 0.39107800000000004} }]},
+elements:{nodes: [{data: { id: 'ANP32B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92688" }},
+{data: { id: 'CDK11A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UQ88" }},
+{data: { id: 'ANP32A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P39687" }},
+{data: { id: 'U2AF2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P26368" }},
+{data: { id: 'SAP30BP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UHR5" }}], 
+ edges: [{ data: { source: 'ANP32B', target: 'CDK11A', directed: 'false', weight: 0.9552459999999999} },
+{ data: { source: 'ANP32B', target: 'ANP32A', directed: 'false', weight: 0.62278} },
+{ data: { source: 'ANP32A', target: 'CDK11A', directed: 'false', weight: 0.924795} },
+{ data: { source: 'CDK11A', target: 'U2AF2', directed: 'false', weight: 0.9375399999999999} },
+{ data: { source: 'CDK11A', target: 'SAP30BP', directed: 'false', weight: 0.999447} },
+{ data: { source: 'U2AF2', target: 'SAP30BP', directed: 'false', weight: 0.552692} }]},
 
 style: [
     {
@@ -96,7 +100,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 YBX1-AKT1 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.3 ProTalpha C7 complex<br> Complex Score = 0.38750<br> Unweighted Density = 0.60
     </section>
     </body>
     </html>

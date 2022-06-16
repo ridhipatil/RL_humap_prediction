@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 ITGA2B-ITGB3-CD9 complex</title>
+<title> 0.1 SMRT-SKIP-CBF1 complex match 2</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,21 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'hCG_2016179', score: 1, type: '', href: "https://www.uniprot.org/uniprot/A0A024RB64" }},
-{data: { id: 'SARNP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P82979" }},
-{data: { id: 'IGSF8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q969P0" }},
-{data: { id: 'CD9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P21926" }}], 
- edges: [{ data: { source: 'hCG_2016179', target: 'SARNP', directed: 'false', weight: 0.9967379999999999} },
-{ data: { source: 'hCG_2016179', target: 'IGSF8', directed: 'false', weight: 0.191902} },
-{ data: { source: 'IGSF8', target: 'CD9', directed: 'false', weight: 0.888073} }]},
+elements:{nodes: [{data: { id: 'RBM25', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49756" }},
+{data: { id: 'CCDC12', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q8WUD4" }},
+{data: { id: 'PPIL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y3C6" }},
+{data: { id: 'SARS-CoV2 nsp12', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp12.html" }},
+{data: { id: 'SLU7', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/O95391" }},
+{data: { id: 'SNW1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13573" }},
+{data: { id: 'CLASRP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N2M8" }}], 
+ edges: [{ data: { source: 'SARS-CoV2 nsp12', target: 'SLU7', directed: 'false', weight: 0.989493635, type: 'sars'} },
+{ data: { source: 'PPIL1', target: 'SNW1', directed: 'false', weight: 0.9957229999999999} },
+{ data: { source: 'PPIL1', target: 'CLASRP', directed: 'false', weight: 0.144297} },
+{ data: { source: 'SNW1', target: 'CCDC12', directed: 'false', weight: 0.999634} },
+{ data: { source: 'SNW1', target: 'CLASRP', directed: 'false', weight: 0.996878} },
+{ data: { source: 'SNW1', target: 'SLU7', directed: 'false', weight: 0.973123} },
+{ data: { source: 'SNW1', target: 'RBM25', directed: 'false', weight: 0.637428} },
+{ data: { source: 'CCDC12', target: 'SLU7', directed: 'false', weight: 0.2823} }]},
 
 style: [
     {
@@ -96,7 +104,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 ITGA2B-ITGB3-CD9 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.1 SMRT-SKIP-CBF1 complex match 2<br> Complex Score = 0.37500<br> Unweighted Density = 0.47
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>SLU7
     </section>
     </body>
     </html>

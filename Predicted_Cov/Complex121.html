@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 Exon junction complex (mRNA splicing-dependent)</title>
+<title> KRT40 TXLNG MYH3 ANKRD36 TRIM9 MYH4 TBC1D2</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,23 +30,28 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'EFTUD2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15029" }},
-{data: { id: 'EAPP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q56P03" }},
-{data: { id: 'SLC7A6OS', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q96CW6" }},
-{data: { id: 'SARS-CoV2 M', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 M.html" }},
-{data: { id: 'AAR2', score: 3, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9Y312" }},
-{data: { id: 'PRPF6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O94906" }},
-{data: { id: 'PRPF8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6P2Q9" }}], 
- edges: [{ data: { source: 'SARS-CoV2 M', target: 'AAR2', directed: 'false', weight: 0.801486724, type: 'sars'} },
-{ data: { source: 'EFTUD2', target: 'PRPF8', directed: 'false', weight: 1.0} },
-{ data: { source: 'EFTUD2', target: 'PRPF6', directed: 'false', weight: 0.99921} },
-{ data: { source: 'EFTUD2', target: 'AAR2', directed: 'false', weight: 0.608267} },
-{ data: { source: 'EFTUD2', target: 'EAPP', directed: 'false', weight: 0.0308751} },
-{ data: { source: 'EAPP', target: 'PRPF8', directed: 'false', weight: 0.185225} },
-{ data: { source: 'EAPP', target: 'AAR2', directed: 'false', weight: 0.9984379999999999} },
-{ data: { source: 'SLC7A6OS', target: 'AAR2', directed: 'false', weight: 0.26973600000000003} },
-{ data: { source: 'AAR2', target: 'PRPF8', directed: 'false', weight: 0.188077} },
-{ data: { source: 'PRPF6', target: 'PRPF8', directed: 'false', weight: 0.999707} }]},
+elements:{nodes: [{data: { id: 'MYH3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P11055" }},
+{data: { id: 'ANKRD36', score: 3, type: '', href: "https://www.uniprot.org/uniprot/A6QL64" }},
+{data: { id: 'TRIM9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9C026" }},
+{data: { id: 'TXLNG', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NUQ3" }},
+{data: { id: 'KRT40', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6A162" }},
+{data: { id: 'TBC1D2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BYX2" }},
+{data: { id: 'MYH4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y623" }}], 
+ edges: [{ data: { source: 'MYH3', target: 'KRT40', directed: 'false', weight: 0.666593} },
+{ data: { source: 'MYH3', target: 'MYH4', directed: 'false', weight: 0.5830649999999999} },
+{ data: { source: 'ANKRD36', target: 'KRT40', directed: 'false', weight: 0.6418729999999999} },
+{ data: { source: 'ANKRD36', target: 'TBC1D2', directed: 'false', weight: 0.151455} },
+{ data: { source: 'ANKRD36', target: 'TRIM9', directed: 'false', weight: 0.133456} },
+{ data: { source: 'ANKRD36', target: 'MYH4', directed: 'false', weight: 0.108694} },
+{ data: { source: 'TXLNG', target: 'KRT40', directed: 'false', weight: 0.827967} },
+{ data: { source: 'TXLNG', target: 'TBC1D2', directed: 'false', weight: 0.140692} },
+{ data: { source: 'TXLNG', target: 'TRIM9', directed: 'false', weight: 0.123797} },
+{ data: { source: 'KRT40', target: 'TBC1D2', directed: 'false', weight: 0.926111} },
+{ data: { source: 'KRT40', target: 'TRIM9', directed: 'false', weight: 0.9048120000000001} },
+{ data: { source: 'KRT40', target: 'MYH4', directed: 'false', weight: 0.733332} },
+{ data: { source: 'MYH4', target: 'TBC1D2', directed: 'false', weight: 0.12378900000000001} },
+{ data: { source: 'MYH4', target: 'TRIM9', directed: 'false', weight: 0.108694} },
+{ data: { source: 'TBC1D2', target: 'TRIM9', directed: 'false', weight: 0.151455} }]},
 
 style: [
     {
@@ -106,12 +111,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 Exon junction complex (mRNA splicing-dependent)<br> Complex Score = 0.38800<br> Unweighted Density = 0.60
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>AAR2
+    KRT40 TXLNG MYH3 ANKRD36 TRIM9 MYH4 TBC1D2<br> Complex Score = 0.39375<br> Unweighted Density = 0.71
     </section>
     </body>
     </html>

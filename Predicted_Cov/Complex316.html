@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 TorsinA-TorsinB complex</title>
+<title> 0.1 KRIT1-HEG1-RAP1B complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,25 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'TOR2A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N2E6" }},
-{data: { id: 'ZNF707', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96C28" }},
-{data: { id: 'SARS-CoV2 orf8', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 orf8.html" }},
-{data: { id: 'TOR1A', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/O14656" }}], 
- edges: [{ data: { source: 'SARS-CoV2 orf8', target: 'TOR1A', directed: 'false', weight: 0.879789245, type: 'sars'} },
-{ data: { source: 'TOR2A', target: 'ZNF707', directed: 'false', weight: 0.7791359999999999} },
-{ data: { source: 'TOR2A', target: 'TOR1A', directed: 'false', weight: 0.135088} }]},
+elements:{nodes: [{data: { id: 'TMEM63A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O94886" }},
+{data: { id: 'SDK1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q7Z5N4" }},
+{data: { id: 'LGALS8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00214" }},
+{data: { id: 'PTPRZ1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P23471" }},
+{data: { id: 'LGALS3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P17931" }},
+{data: { id: 'SLC17A5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NRA2" }},
+{data: { id: 'HEG1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9ULI3" }}], 
+ edges: [{ data: { source: 'TMEM63A', target: 'SDK1', directed: 'false', weight: 0.28781100000000004} },
+{ data: { source: 'TMEM63A', target: 'SLC17A5', directed: 'false', weight: 0.28781100000000004} },
+{ data: { source: 'TMEM63A', target: 'HEG1', directed: 'false', weight: 0.28781100000000004} },
+{ data: { source: 'SDK1', target: 'LGALS3', directed: 'false', weight: 0.8939290000000001} },
+{ data: { source: 'SDK1', target: 'HEG1', directed: 'false', weight: 0.33813200000000004} },
+{ data: { source: 'SDK1', target: 'SLC17A5', directed: 'false', weight: 0.33813200000000004} },
+{ data: { source: 'SDK1', target: 'PTPRZ1', directed: 'false', weight: 0.151455} },
+{ data: { source: 'LGALS8', target: 'SLC17A5', directed: 'false', weight: 0.835073} },
+{ data: { source: 'PTPRZ1', target: 'LGALS3', directed: 'false', weight: 0.8449260000000001} },
+{ data: { source: 'PTPRZ1', target: 'HEG1', directed: 'false', weight: 0.151455} },
+{ data: { source: 'LGALS3', target: 'HEG1', directed: 'false', weight: 0.336084} },
+{ data: { source: 'SLC17A5', target: 'HEG1', directed: 'false', weight: 0.33813200000000004} }]},
 
 style: [
     {
@@ -96,12 +108,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 TorsinA-TorsinB complex<br> Complex Score = 0.38800<br> Unweighted Density = 0.67
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>TOR1A
+    0.1 KRIT1-HEG1-RAP1B complex<br> Complex Score = 0.38750<br> Unweighted Density = 0.57
     </section>
     </body>
     </html>

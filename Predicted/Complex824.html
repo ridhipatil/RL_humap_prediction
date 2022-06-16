@@ -30,11 +30,11 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'CADM4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NFZ8" }},
-{data: { id: 'HEPACAM2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/A8MVW5" }},
-{data: { id: 'CD69', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q07108" }}], 
- edges: [{ data: { source: 'CADM4', target: 'HEPACAM2', directed: 'false', weight: 0.0534153} },
-{ data: { source: 'CADM4', target: 'CD69', directed: 'false', weight: 0.0216436} }]},
+elements:{nodes: [{data: { id: 'CYB5R3', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P00387" }},
+{data: { id: 'TROAP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q12815" }},
+{data: { id: 'CPVL', score: 5.0, type: '', href: "https://www.uniprot.org/uniprot/Q9H3G5" }}], 
+ edges: [{ data: { source: 'CYB5R3', target: 'CPVL', directed: 'false', weight: 0.355137} },
+{ data: { source: 'TROAP', target: 'CPVL', directed: 'false', weight: 0.309131} }]},
 
 style: [
     {
@@ -83,6 +83,11 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.37500
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>CYB5R3
     </section>
     </body>
     </html>

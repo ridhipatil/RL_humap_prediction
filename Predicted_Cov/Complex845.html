@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 Glycine receptor (GLRA11, GLRB)</title>
+<title> FAM177A1 CKAP4 285282 ATP2C1 CLCN7</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,16 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'TMEM87B', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q96K49" }},
-{data: { id: 'GLRB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P48167" }},
-{data: { id: 'TMEM8B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/A6NDV4" }},
-{data: { id: 'BTNL8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6UX41" }}], 
- edges: [{ data: { source: 'TMEM87B', target: 'BTNL8', directed: 'false', weight: 0.160555} },
-{ data: { source: 'GLRB', target: 'BTNL8', directed: 'false', weight: 0.13786700000000002} },
-{ data: { source: 'TMEM8B', target: 'BTNL8', directed: 'false', weight: 0.110904} }]},
+elements:{nodes: [{data: { id: 'FAM177A1', score: 4.0, type: '', href: "https://www.uniprot.org/uniprot/Q8N128" }},
+{data: { id: 'RABL3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5HYI8" }},
+{data: { id: 'ATP2C1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P98194" }},
+{data: { id: 'CKAP4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q07065" }},
+{data: { id: 'CLCN7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P51798" }}], 
+ edges: [{ data: { source: 'FAM177A1', target: 'CLCN7', directed: 'false', weight: 0.41731} },
+{ data: { source: 'RABL3', target: 'CKAP4', directed: 'false', weight: 0.30564} },
+{ data: { source: 'RABL3', target: 'CLCN7', directed: 'false', weight: 0.11324100000000001} },
+{ data: { source: 'ATP2C1', target: 'CKAP4', directed: 'false', weight: 0.14758800000000002} },
+{ data: { source: 'CKAP4', target: 'CLCN7', directed: 'false', weight: 0.364009} }]},
 
 style: [
     {
@@ -96,7 +99,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 Glycine receptor (GLRA11, GLRB)<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    FAM177A1 CKAP4 285282 ATP2C1 CLCN7<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

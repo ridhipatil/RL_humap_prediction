@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> NR2E1 DCAF6 TMSB10</title>
+<title> 0.5 Arp2/3 protein complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,11 +30,32 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'NR2E1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y466" }},
-{data: { id: 'DCAF6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q58WW2" }},
-{data: { id: 'TMSB10', score: 4, type: '', href: "https://www.uniprot.org/uniprot/P63313" }}], 
- edges: [{ data: { source: 'NR2E1', target: 'DCAF6', directed: 'false', weight: 0.49476899999999996} },
-{ data: { source: 'NR2E1', target: 'TMSB10', directed: 'false', weight: 0.138548} }]},
+elements:{nodes: [{data: { id: 'ARPC1B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15143" }},
+{data: { id: 'TBCE', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15813" }},
+{data: { id: 'ARPC5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15511" }},
+{data: { id: 'ARPC1A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92747" }},
+{data: { id: 'ARPC2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15144" }},
+{data: { id: 'ACTR3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P61158" }},
+{data: { id: 'ACTR2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P61160" }},
+{data: { id: 'ARPC5L', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9BPX5" }}], 
+ edges: [{ data: { source: 'ARPC1B', target: 'ARPC5L', directed: 'false', weight: 1.0} },
+{ data: { source: 'ARPC1B', target: 'ARPC2', directed: 'false', weight: 0.999833} },
+{ data: { source: 'ARPC1B', target: 'ARPC5', directed: 'false', weight: 0.99974} },
+{ data: { source: 'ARPC1B', target: 'ACTR2', directed: 'false', weight: 0.998352} },
+{ data: { source: 'ARPC1B', target: 'ARPC1A', directed: 'false', weight: 0.589554} },
+{ data: { source: 'TBCE', target: 'ARPC2', directed: 'false', weight: 0.6361479999999999} },
+{ data: { source: 'TBCE', target: 'ACTR3', directed: 'false', weight: 0.669205} },
+{ data: { source: 'ARPC5', target: 'ARPC5L', directed: 'false', weight: 0.890012} },
+{ data: { source: 'ARPC5', target: 'ARPC1A', directed: 'false', weight: 0.999977} },
+{ data: { source: 'ARPC5', target: 'ACTR2', directed: 'false', weight: 0.999948} },
+{ data: { source: 'ARPC5', target: 'ARPC2', directed: 'false', weight: 0.9998879999999999} },
+{ data: { source: 'ARPC1A', target: 'ARPC5L', directed: 'false', weight: 0.9998309999999999} },
+{ data: { source: 'ARPC1A', target: 'ARPC2', directed: 'false', weight: 0.999992} },
+{ data: { source: 'ARPC1A', target: 'ACTR2', directed: 'false', weight: 0.9999809999999999} },
+{ data: { source: 'ARPC2', target: 'ARPC5L', directed: 'false', weight: 0.999936} },
+{ data: { source: 'ARPC2', target: 'ACTR2', directed: 'false', weight: 0.9919290000000001} },
+{ data: { source: 'ARPC2', target: 'ACTR3', directed: 'false', weight: 0.9874209999999999} },
+{ data: { source: 'ACTR2', target: 'ARPC5L', directed: 'false', weight: 0.9979129999999999} }]},
 
 style: [
     {
@@ -94,7 +115,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    NR2E1 DCAF6 TMSB10<br> Complex Score = 0.38800<br> Unweighted Density = 0.67
+    0.5 Arp2/3 protein complex<br> Complex Score = 0.38750<br> Unweighted Density = 0.64
     </section>
     </body>
     </html>

@@ -30,11 +30,29 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'ZNF692', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BU19" }},
-{data: { id: 'STAT2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P52630" }},
-{data: { id: 'IRF9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q00978" }}], 
- edges: [{ data: { source: 'ZNF692', target: 'STAT2', directed: 'false', weight: 0.13250499999999998} },
-{ data: { source: 'STAT2', target: 'IRF9', directed: 'false', weight: 0.21316100000000002} }]},
+elements:{nodes: [{data: { id: 'MRPS15', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P82914" }},
+{data: { id: 'MRPS28', score: 4, type: '', href: "https://www.uniprot.org/uniprot/P82673" }},
+{data: { id: 'MRPS25', score: 4, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P82663" }},
+{data: { id: 'ERAL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75616" }},
+{data: { id: 'PTCD3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96EY7" }},
+{data: { id: 'COL1A1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P02452" }},
+{data: { id: 'MRPS24', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q96EL2" }}], 
+ edges: [{ data: { source: 'MRPS15', target: 'PTCD3', directed: 'false', weight: 0.902583} },
+{ data: { source: 'MRPS15', target: 'MRPS24', directed: 'false', weight: 0.937386} },
+{ data: { source: 'MRPS15', target: 'MRPS25', directed: 'false', weight: 0.995791} },
+{ data: { source: 'MRPS15', target: 'MRPS28', directed: 'false', weight: 0.8480260000000001} },
+{ data: { source: 'MRPS15', target: 'ERAL1', directed: 'false', weight: 0.37238000000000004} },
+{ data: { source: 'MRPS28', target: 'PTCD3', directed: 'false', weight: 0.974477} },
+{ data: { source: 'MRPS28', target: 'MRPS24', directed: 'false', weight: 0.807106} },
+{ data: { source: 'MRPS28', target: 'MRPS25', directed: 'false', weight: 0.8480260000000001} },
+{ data: { source: 'MRPS28', target: 'ERAL1', directed: 'false', weight: 0.31808200000000003} },
+{ data: { source: 'MRPS25', target: 'PTCD3', directed: 'false', weight: 0.959573} },
+{ data: { source: 'MRPS25', target: 'MRPS24', directed: 'false', weight: 0.937386} },
+{ data: { source: 'MRPS25', target: 'ERAL1', directed: 'false', weight: 0.48499200000000003} },
+{ data: { source: 'ERAL1', target: 'PTCD3', directed: 'false', weight: 0.45272299999999993} },
+{ data: { source: 'ERAL1', target: 'MRPS24', directed: 'false', weight: 0.47161899999999995} },
+{ data: { source: 'ERAL1', target: 'COL1A1', directed: 'false', weight: 0.437317} },
+{ data: { source: 'PTCD3', target: 'MRPS24', directed: 'false', weight: 0.996223} }]},
 
 style: [
     {
@@ -82,7 +100,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.38800
+    Complex Score  = 0.39375
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>MRPS25
     </section>
     </body>
     </html>

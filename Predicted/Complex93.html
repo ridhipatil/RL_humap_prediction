@@ -30,22 +30,28 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'GAA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P10253" }},
-{data: { id: 'ALDH2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P05091" }},
-{data: { id: 'OAT', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P04181" }},
-{data: { id: 'ME2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P23368" }},
-{data: { id: 'PEPD', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P12955" }},
-{data: { id: 'GLA', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P06280" }}], 
- edges: [{ data: { source: 'GAA', target: 'ALDH2', directed: 'false', weight: 0.9831799999999999} },
-{ data: { source: 'GAA', target: 'OAT', directed: 'false', weight: 0.987567} },
-{ data: { source: 'GAA', target: 'PEPD', directed: 'false', weight: 0.881659} },
-{ data: { source: 'GAA', target: 'GLA', directed: 'false', weight: 0.14411600000000002} },
-{ data: { source: 'GAA', target: 'ME2', directed: 'false', weight: 0.137854} },
-{ data: { source: 'OAT', target: 'ALDH2', directed: 'false', weight: 0.19356800000000002} },
-{ data: { source: 'OAT', target: 'PEPD', directed: 'false', weight: 0.030759500000000002} },
-{ data: { source: 'OAT', target: 'GLA', directed: 'false', weight: 0.025852299999999998} },
-{ data: { source: 'ALDH2', target: 'ME2', directed: 'false', weight: 0.815642} },
-{ data: { source: 'ALDH2', target: 'PEPD', directed: 'false', weight: 0.7094189999999999} }]},
+elements:{nodes: [{data: { id: 'ARSB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P15848" }},
+{data: { id: 'MEGF8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q7Z7M0" }},
+{data: { id: 'COL18A1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P39060" }},
+{data: { id: 'SGSH', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P51688" }},
+{data: { id: 'MOXD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6UVY6" }},
+{data: { id: 'CHPF', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q8IZ52" }},
+{data: { id: 'SIAE', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HAT2" }}], 
+ edges: [{ data: { source: 'ARSB', target: 'SIAE', directed: 'false', weight: 0.554096} },
+{ data: { source: 'ARSB', target: 'MEGF8', directed: 'false', weight: 0.265049} },
+{ data: { source: 'ARSB', target: 'MOXD1', directed: 'false', weight: 0.377325} },
+{ data: { source: 'MEGF8', target: 'SGSH', directed: 'false', weight: 0.819375} },
+{ data: { source: 'MEGF8', target: 'SIAE', directed: 'false', weight: 0.485256} },
+{ data: { source: 'MEGF8', target: 'COL18A1', directed: 'false', weight: 0.177733} },
+{ data: { source: 'MEGF8', target: 'CHPF', directed: 'false', weight: 0.173924} },
+{ data: { source: 'MEGF8', target: 'MOXD1', directed: 'false', weight: 0.128496} },
+{ data: { source: 'COL18A1', target: 'SGSH', directed: 'false', weight: 0.528419} },
+{ data: { source: 'COL18A1', target: 'SIAE', directed: 'false', weight: 0.506174} },
+{ data: { source: 'COL18A1', target: 'CHPF', directed: 'false', weight: 0.055036} },
+{ data: { source: 'SGSH', target: 'SIAE', directed: 'false', weight: 0.8898159999999999} },
+{ data: { source: 'SGSH', target: 'CHPF', directed: 'false', weight: 0.278121} },
+{ data: { source: 'MOXD1', target: 'SIAE', directed: 'false', weight: 0.415713} },
+{ data: { source: 'CHPF', target: 'SIAE', directed: 'false', weight: 0.169659} }]},
 
 style: [
     {
@@ -93,12 +99,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.38800
+    Complex Score  = 0.39375
         <br> 
         <br>
         Connection to SARS-COV2: 
         <br>
-        1 interacting protein(s): <br>GLA
+        1 interacting protein(s): <br>CHPF
     </section>
     </body>
     </html>

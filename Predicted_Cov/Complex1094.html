@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> FKBP2 NME3 NME2 ADSL</title>
+<title> DNAJC1 HNRNPLL RRM1 CAMSAP1</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'ADSL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P30566" }},
-{data: { id: 'NME2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P22392" }},
-{data: { id: 'NME3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13232" }},
-{data: { id: 'FKBP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P26885" }}], 
- edges: [{ data: { source: 'ADSL', target: 'FKBP2', directed: 'false', weight: 0.7316819999999999} },
-{ data: { source: 'NME2', target: 'FKBP2', directed: 'false', weight: 0.494569} },
-{ data: { source: 'NME2', target: 'NME3', directed: 'false', weight: 0.0209133} }]},
+elements:{nodes: [{data: { id: 'CAMSAP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5T5Y3" }},
+{data: { id: 'RRM1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P23921" }},
+{data: { id: 'DNAJC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96KC8" }},
+{data: { id: 'HNRNPLL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WVV9" }}], 
+ edges: [{ data: { source: 'CAMSAP1', target: 'HNRNPLL', directed: 'false', weight: 0.47076} },
+{ data: { source: 'RRM1', target: 'HNRNPLL', directed: 'false', weight: 0.0212556} },
+{ data: { source: 'DNAJC1', target: 'HNRNPLL', directed: 'false', weight: 0.0974946} }]},
 
 style: [
     {
@@ -96,7 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    FKBP2 NME3 NME2 ADSL<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    DNAJC1 HNRNPLL RRM1 CAMSAP1<br> Complex Score = 0.30000<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

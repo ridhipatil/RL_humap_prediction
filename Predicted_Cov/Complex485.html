@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.05 C complex spliceosome match 2</title>
+<title> 0.4 RBPJ-NOTCH1-MAML1 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,30 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'RNF187', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5TA31" }},
-{data: { id: 'WDR83', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BRX9" }},
-{data: { id: 'DCAF13', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NV06" }},
-{data: { id: 'SH2B2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O14492" }}], 
- edges: [{ data: { source: 'RNF187', target: 'WDR83', directed: 'false', weight: 0.389156} },
-{ data: { source: 'WDR83', target: 'DCAF13', directed: 'false', weight: 0.934592} },
-{ data: { source: 'WDR83', target: 'SH2B2', directed: 'false', weight: 0.817148} }]},
+elements:{nodes: [{data: { id: 'RBPJ', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q06330" }},
+{data: { id: 'ANKRD28', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15084" }},
+{data: { id: 'FBXO42', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q6P3S6" }},
+{data: { id: 'MAML1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92585" }},
+{data: { id: 'NOTCH1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P46531" }},
+{data: { id: 'ZNF268', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14587" }},
+{data: { id: 'NOTCH2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q04721" }},
+{data: { id: 'ANKRD44', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q8N8A2" }}], 
+ edges: [{ data: { source: 'RBPJ', target: 'MAML1', directed: 'false', weight: 0.9995879999999999} },
+{ data: { source: 'RBPJ', target: 'NOTCH1', directed: 'false', weight: 0.920143} },
+{ data: { source: 'RBPJ', target: 'NOTCH2', directed: 'false', weight: 0.867424} },
+{ data: { source: 'RBPJ', target: 'FBXO42', directed: 'false', weight: 0.82952} },
+{ data: { source: 'RBPJ', target: 'ZNF268', directed: 'false', weight: 0.5473640000000001} },
+{ data: { source: 'FBXO42', target: 'MAML1', directed: 'false', weight: 0.171414} },
+{ data: { source: 'FBXO42', target: 'NOTCH1', directed: 'false', weight: 0.151455} },
+{ data: { source: 'FBXO42', target: 'ZNF268', directed: 'false', weight: 0.151455} },
+{ data: { source: 'ANKRD28', target: 'ANKRD44', directed: 'false', weight: 0.995817} },
+{ data: { source: 'MAML1', target: 'NOTCH1', directed: 'false', weight: 0.304485} },
+{ data: { source: 'MAML1', target: 'NOTCH2', directed: 'false', weight: 0.1888} },
+{ data: { source: 'MAML1', target: 'ZNF268', directed: 'false', weight: 0.151455} },
+{ data: { source: 'NOTCH1', target: 'ANKRD44', directed: 'false', weight: 0.979675} },
+{ data: { source: 'NOTCH1', target: 'NOTCH2', directed: 'false', weight: 0.311189} },
+{ data: { source: 'NOTCH1', target: 'ZNF268', directed: 'false', weight: 0.133456} },
+{ data: { source: 'NOTCH2', target: 'ANKRD44', directed: 'false', weight: 0.897634} }]},
 
 style: [
     {
@@ -96,7 +113,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.05 C complex spliceosome match 2<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.4 RBPJ-NOTCH1-MAML1 complex<br> Complex Score = 0.38750<br> Unweighted Density = 0.57
     </section>
     </body>
     </html>

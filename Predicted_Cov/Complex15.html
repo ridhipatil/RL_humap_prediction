@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 60S ribosomal subunit, cytoplasmic match 2</title>
+<title> 0.2 FIF-FGR2 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,97 +30,22 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'GTPBP4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BZE4" }},
-{data: { id: 'RPL10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P27635" }},
-{data: { id: 'RPL35', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P42766" }},
-{data: { id: 'RPL39', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62891" }},
-{data: { id: 'RPL12', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P30050" }},
-{data: { id: 'RPL15', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P61313" }},
-{data: { id: 'RPL13A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P40429" }},
-{data: { id: 'FAU', score: 5, type: '', href: "https://www.ncbi.nlm.nih.gov/gene/2197" }},
-{data: { id: 'RPL22', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P35268" }},
-{data: { id: 'RPL3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P39023" }},
-{data: { id: 'ZNF22', score: 4, type: '', href: "https://www.uniprot.org/uniprot/P17026" }},
-{data: { id: 'RPL35A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P18077" }},
-{data: { id: 'RPL10A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62906" }},
-{data: { id: 'RPS8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62241" }}], 
- edges: [{ data: { source: 'GTPBP4', target: 'RPL35', directed: 'false', weight: 0.688563} },
-{ data: { source: 'GTPBP4', target: 'RPL13A', directed: 'false', weight: 0.0652249} },
-{ data: { source: 'GTPBP4', target: 'RPL10A', directed: 'false', weight: 0.861439} },
-{ data: { source: 'GTPBP4', target: 'RPL3', directed: 'false', weight: 0.047636000000000005} },
-{ data: { source: 'GTPBP4', target: 'RPL10', directed: 'false', weight: 0.0217518} },
-{ data: { source: 'GTPBP4', target: 'RPL15', directed: 'false', weight: 0.245587} },
-{ data: { source: 'GTPBP4', target: 'ZNF22', directed: 'false', weight: 0.0607624} },
-{ data: { source: 'RPL10', target: 'RPL35', directed: 'false', weight: 1.0} },
-{ data: { source: 'RPL10', target: 'RPL13A', directed: 'false', weight: 1.0} },
-{ data: { source: 'RPL10', target: 'RPL10A', directed: 'false', weight: 1.0} },
-{ data: { source: 'RPL10', target: 'RPL3', directed: 'false', weight: 1.0} },
-{ data: { source: 'RPL10', target: 'RPL12', directed: 'false', weight: 1.0} },
-{ data: { source: 'RPL10', target: 'RPL15', directed: 'false', weight: 1.0} },
-{ data: { source: 'RPL10', target: 'RPL22', directed: 'false', weight: 1.0} },
-{ data: { source: 'RPL10', target: 'RPS8', directed: 'false', weight: 1.0} },
-{ data: { source: 'RPL10', target: 'RPL39', directed: 'false', weight: 0.994452} },
-{ data: { source: 'RPL10', target: 'RPL35A', directed: 'false', weight: 0.9874940000000001} },
-{ data: { source: 'RPL10', target: 'FAU', directed: 'false', weight: 0.35168699999999997} },
-{ data: { source: 'RPL35', target: 'RPL13A', directed: 'false', weight: 1.0} },
-{ data: { source: 'RPL35', target: 'RPL10A', directed: 'false', weight: 1.0} },
-{ data: { source: 'RPL35', target: 'RPL3', directed: 'false', weight: 1.0} },
-{ data: { source: 'RPL35', target: 'RPL12', directed: 'false', weight: 1.0} },
-{ data: { source: 'RPL35', target: 'RPL15', directed: 'false', weight: 1.0} },
-{ data: { source: 'RPL35', target: 'RPL22', directed: 'false', weight: 1.0} },
-{ data: { source: 'RPL35', target: 'RPS8', directed: 'false', weight: 1.0} },
-{ data: { source: 'RPL35', target: 'RPL39', directed: 'false', weight: 0.999909} },
-{ data: { source: 'RPL35', target: 'FAU', directed: 'false', weight: 0.9588040000000001} },
-{ data: { source: 'RPL35', target: 'RPL35A', directed: 'false', weight: 0.295377} },
-{ data: { source: 'RPL39', target: 'RPL13A', directed: 'false', weight: 0.707209} },
-{ data: { source: 'RPL39', target: 'RPL3', directed: 'false', weight: 0.210829} },
-{ data: { source: 'RPL39', target: 'RPL12', directed: 'false', weight: 0.783594} },
-{ data: { source: 'RPL39', target: 'RPL15', directed: 'false', weight: 0.952211} },
-{ data: { source: 'RPL39', target: 'RPS8', directed: 'false', weight: 0.999459} },
-{ data: { source: 'RPL39', target: 'RPL22', directed: 'false', weight: 0.9881709999999999} },
-{ data: { source: 'RPL39', target: 'RPL35A', directed: 'false', weight: 0.0353735} },
-{ data: { source: 'RPL39', target: 'FAU', directed: 'false', weight: 0.0430556} },
-{ data: { source: 'RPL12', target: 'RPL13A', directed: 'false', weight: 1.0} },
-{ data: { source: 'RPL12', target: 'RPL10A', directed: 'false', weight: 1.0} },
-{ data: { source: 'RPL12', target: 'RPL3', directed: 'false', weight: 1.0} },
-{ data: { source: 'RPL12', target: 'RPS8', directed: 'false', weight: 1.0} },
-{ data: { source: 'RPL12', target: 'RPL15', directed: 'false', weight: 0.9999879999999999} },
-{ data: { source: 'RPL12', target: 'RPL22', directed: 'false', weight: 0.9997389999999999} },
-{ data: { source: 'RPL12', target: 'RPL35A', directed: 'false', weight: 0.940232} },
-{ data: { source: 'RPL12', target: 'FAU', directed: 'false', weight: 0.46737700000000004} },
-{ data: { source: 'RPL15', target: 'RPL13A', directed: 'false', weight: 1.0} },
-{ data: { source: 'RPL15', target: 'RPL10A', directed: 'false', weight: 1.0} },
-{ data: { source: 'RPL15', target: 'RPL3', directed: 'false', weight: 1.0} },
-{ data: { source: 'RPL15', target: 'RPS8', directed: 'false', weight: 1.0} },
-{ data: { source: 'RPL15', target: 'RPL22', directed: 'false', weight: 0.9992989999999999} },
-{ data: { source: 'RPL15', target: 'RPL35A', directed: 'false', weight: 0.999124} },
-{ data: { source: 'RPL15', target: 'FAU', directed: 'false', weight: 0.77164} },
-{ data: { source: 'RPL15', target: 'ZNF22', directed: 'false', weight: 0.095207} },
-{ data: { source: 'RPL13A', target: 'RPL10A', directed: 'false', weight: 1.0} },
-{ data: { source: 'RPL13A', target: 'RPL3', directed: 'false', weight: 1.0} },
-{ data: { source: 'RPL13A', target: 'RPS8', directed: 'false', weight: 1.0} },
-{ data: { source: 'RPL13A', target: 'RPL35A', directed: 'false', weight: 0.9999969999999999} },
-{ data: { source: 'RPL13A', target: 'RPL22', directed: 'false', weight: 0.999993} },
-{ data: { source: 'RPL13A', target: 'FAU', directed: 'false', weight: 0.451288} },
-{ data: { source: 'RPL13A', target: 'ZNF22', directed: 'false', weight: 0.0738563} },
-{ data: { source: 'FAU', target: 'RPL10A', directed: 'false', weight: 0.9971979999999999} },
-{ data: { source: 'FAU', target: 'RPL3', directed: 'false', weight: 0.987484} },
-{ data: { source: 'FAU', target: 'RPS8', directed: 'false', weight: 0.872202} },
-{ data: { source: 'FAU', target: 'RPL22', directed: 'false', weight: 0.950151} },
-{ data: { source: 'RPL22', target: 'RPL10A', directed: 'false', weight: 1.0} },
-{ data: { source: 'RPL22', target: 'RPL3', directed: 'false', weight: 0.999999} },
-{ data: { source: 'RPL22', target: 'RPS8', directed: 'false', weight: 0.9968450000000001} },
-{ data: { source: 'RPL22', target: 'RPL35A', directed: 'false', weight: 0.354509} },
-{ data: { source: 'RPL3', target: 'RPL10A', directed: 'false', weight: 1.0} },
-{ data: { source: 'RPL3', target: 'RPS8', directed: 'false', weight: 1.0} },
-{ data: { source: 'RPL3', target: 'RPL35A', directed: 'false', weight: 0.999942} },
-{ data: { source: 'RPL3', target: 'ZNF22', directed: 'false', weight: 0.11343900000000001} },
-{ data: { source: 'ZNF22', target: 'RPL10A', directed: 'false', weight: 0.0222593} },
-{ data: { source: 'ZNF22', target: 'RPS8', directed: 'false', weight: 0.05715990000000001} },
-{ data: { source: 'ZNF22', target: 'RPL35A', directed: 'false', weight: 0.027273900000000004} },
-{ data: { source: 'RPL35A', target: 'RPL10A', directed: 'false', weight: 0.999827} },
-{ data: { source: 'RPL35A', target: 'RPS8', directed: 'false', weight: 0.996122} },
-{ data: { source: 'RPL10A', target: 'RPS8', directed: 'false', weight: 1.0} }]},
+elements:{nodes: [{data: { id: 'DHRS2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13268" }},
+{data: { id: 'TMEFF1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IYR6" }},
+{data: { id: 'FGF2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P09038" }},
+{data: { id: 'STEAP3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q658P3" }},
+{data: { id: 'SARS-CoV2 orf9c', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 orf9c.html" }},
+{data: { id: 'BCS1L', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9Y276" }}], 
+ edges: [{ data: { source: 'SARS-CoV2 orf9c', target: 'BCS1L', directed: 'false', weight: 0.992309958, type: 'sars'} },
+{ data: { source: 'DHRS2', target: 'TMEFF1', directed: 'false', weight: 0.8764430000000001} },
+{ data: { source: 'DHRS2', target: 'FGF2', directed: 'false', weight: 0.151455} },
+{ data: { source: 'DHRS2', target: 'BCS1L', directed: 'false', weight: 0.133456} },
+{ data: { source: 'DHRS2', target: 'STEAP3', directed: 'false', weight: 0.102922} },
+{ data: { source: 'FGF2', target: 'TMEFF1', directed: 'false', weight: 0.976686} },
+{ data: { source: 'FGF2', target: 'BCS1L', directed: 'false', weight: 0.151455} },
+{ data: { source: 'FGF2', target: 'STEAP3', directed: 'false', weight: 0.11730499999999999} },
+{ data: { source: 'TMEFF1', target: 'BCS1L', directed: 'false', weight: 0.736571} },
+{ data: { source: 'TMEFF1', target: 'STEAP3', directed: 'false', weight: 0.728106} }]},
 
 style: [
     {
@@ -175,7 +100,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 60S ribosomal subunit, cytoplasmic match 2<br> Complex Score = 0.39700<br> Unweighted Density = 0.85
+    0.2 FIF-FGR2 complex<br> Complex Score = 0.39688<br> Unweighted Density = 0.90
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>BCS1L
     </section>
     </body>
     </html>

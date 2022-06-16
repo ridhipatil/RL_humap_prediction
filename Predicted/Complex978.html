@@ -30,13 +30,11 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'CCNJ', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q5T5M9" }},
-{data: { id: 'RSN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P30622" }},
-{data: { id: 'TES', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UGI8" }},
-{data: { id: 'GORASP1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9BQQ3" }}], 
- edges: [{ data: { source: 'CCNJ', target: 'GORASP1', directed: 'false', weight: 0.944243} },
-{ data: { source: 'RSN', target: 'GORASP1', directed: 'false', weight: 0.719491} },
-{ data: { source: 'TES', target: 'GORASP1', directed: 'false', weight: 0.18548900000000001} }]},
+elements:{nodes: [{data: { id: 'TYMS', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P04818" }},
+{data: { id: 'DHFR', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P00374" }},
+{data: { id: 'WDR45B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5MNZ6" }}], 
+ edges: [{ data: { source: 'WDR45B', target: 'TYMS', directed: 'false', weight: 0.49377} },
+{ data: { source: 'WDR45B', target: 'DHFR', directed: 'false', weight: 0.407762} }]},
 
 style: [
     {
@@ -85,11 +83,6 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.37500
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>GORASP1
     </section>
     </body>
     </html>

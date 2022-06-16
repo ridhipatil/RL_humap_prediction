@@ -30,14 +30,48 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'VDAC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P21796" }},
-{data: { id: 'C10orf70', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NZ45" }},
-{data: { id: 'SLC25A4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P12235" }},
-{data: { id: 'VDAC2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P45880" }}], 
- edges: [{ data: { source: 'VDAC1', target: 'C10orf70', directed: 'false', weight: 0.33146} },
-{ data: { source: 'C10orf70', target: 'SLC25A4', directed: 'false', weight: 0.290544} },
-{ data: { source: 'C10orf70', target: 'VDAC2', directed: 'false', weight: 0.109008} },
-{ data: { source: 'SLC25A4', target: 'VDAC2', directed: 'false', weight: 0.710283} }]},
+elements:{nodes: [{data: { id: 'DOCK4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N1I0" }},
+{data: { id: 'ELMO1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92556" }},
+{data: { id: 'MTHFD2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P13995" }},
+{data: { id: 'USP4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13107" }},
+{data: { id: 'CKM', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P06732" }},
+{data: { id: 'DOCK5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H7D0" }},
+{data: { id: 'ZNF398', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TD17" }},
+{data: { id: 'DOCK3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IZD9" }},
+{data: { id: 'ELMO2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96JJ3" }},
+{data: { id: 'CRK', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P46108" }},
+{data: { id: 'DOCK1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14185" }}], 
+ edges: [{ data: { source: 'DOCK4', target: 'ELMO2', directed: 'false', weight: 0.171414} },
+{ data: { source: 'DOCK4', target: 'ELMO1', directed: 'false', weight: 0.966073} },
+{ data: { source: 'DOCK4', target: 'ZNF398', directed: 'false', weight: 0.171414} },
+{ data: { source: 'DOCK4', target: 'DOCK3', directed: 'false', weight: 0.171414} },
+{ data: { source: 'DOCK4', target: 'DOCK5', directed: 'false', weight: 0.171414} },
+{ data: { source: 'DOCK4', target: 'DOCK1', directed: 'false', weight: 0.171414} },
+{ data: { source: 'DOCK4', target: 'USP4', directed: 'false', weight: 0.133451} },
+{ data: { source: 'ELMO1', target: 'ELMO2', directed: 'false', weight: 0.9851120000000001} },
+{ data: { source: 'ELMO1', target: 'ZNF398', directed: 'false', weight: 0.972409} },
+{ data: { source: 'ELMO1', target: 'DOCK3', directed: 'false', weight: 0.958174} },
+{ data: { source: 'ELMO1', target: 'DOCK5', directed: 'false', weight: 0.95678} },
+{ data: { source: 'ELMO1', target: 'DOCK1', directed: 'false', weight: 0.944997} },
+{ data: { source: 'ELMO1', target: 'USP4', directed: 'false', weight: 0.7271850000000001} },
+{ data: { source: 'MTHFD2', target: 'CKM', directed: 'false', weight: 0.536493} },
+{ data: { source: 'CKM', target: 'CRK', directed: 'false', weight: 0.188814} },
+{ data: { source: 'USP4', target: 'ELMO2', directed: 'false', weight: 0.133451} },
+{ data: { source: 'USP4', target: 'ZNF398', directed: 'false', weight: 0.133451} },
+{ data: { source: 'USP4', target: 'DOCK3', directed: 'false', weight: 0.133451} },
+{ data: { source: 'USP4', target: 'DOCK5', directed: 'false', weight: 0.133451} },
+{ data: { source: 'USP4', target: 'DOCK1', directed: 'false', weight: 0.133451} },
+{ data: { source: 'DOCK5', target: 'ELMO2', directed: 'false', weight: 0.23267100000000002} },
+{ data: { source: 'DOCK5', target: 'ZNF398', directed: 'false', weight: 0.171414} },
+{ data: { source: 'DOCK5', target: 'DOCK3', directed: 'false', weight: 0.171414} },
+{ data: { source: 'DOCK5', target: 'DOCK1', directed: 'false', weight: 0.25016700000000003} },
+{ data: { source: 'ZNF398', target: 'ELMO2', directed: 'false', weight: 0.171414} },
+{ data: { source: 'ZNF398', target: 'DOCK3', directed: 'false', weight: 0.171414} },
+{ data: { source: 'ZNF398', target: 'DOCK1', directed: 'false', weight: 0.171414} },
+{ data: { source: 'DOCK3', target: 'ELMO2', directed: 'false', weight: 0.171414} },
+{ data: { source: 'DOCK3', target: 'DOCK1', directed: 'false', weight: 0.171414} },
+{ data: { source: 'ELMO2', target: 'DOCK1', directed: 'false', weight: 0.282148} },
+{ data: { source: 'CRK', target: 'DOCK1', directed: 'false', weight: 0.801182} }]},
 
 style: [
     {
@@ -85,7 +119,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.37500
+    Complex Score  = 0.38750
     </section>
     </body>
     </html>

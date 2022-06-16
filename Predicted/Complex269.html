@@ -30,14 +30,49 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'MITF-C', score: 1, type: '', href: "https://www.uniprot.org/uniprot/Q8WYR3" }},
-{data: { id: 'TFEC', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O14948" }},
-{data: { id: 'TFE3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P19532" }},
-{data: { id: 'TFEB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P19484" }}], 
- edges: [{ data: { source: 'MITF-C', target: 'TFEB', directed: 'false', weight: 0.999983} },
-{ data: { source: 'MITF-C', target: 'TFE3', directed: 'false', weight: 0.696873} },
-{ data: { source: 'TFEC', target: 'TFEB', directed: 'false', weight: 0.9871620000000001} },
-{ data: { source: 'TFE3', target: 'TFEB', directed: 'false', weight: 0.9998440000000001} }]},
+elements:{nodes: [{data: { id: 'CCDC18', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q5T9S5" }},
+{data: { id: 'TBC1D31', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q96DN5" }},
+{data: { id: 'BBS4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96RK4" }},
+{data: { id: 'HDDC3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N4P3" }},
+{data: { id: 'KIAA1328', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86T90" }},
+{data: { id: 'WRAP73', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9P2S5" }},
+{data: { id: 'MIB1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q86YT6" }},
+{data: { id: 'C2CD3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q4AC94" }},
+{data: { id: 'SSX2IP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y2D8" }},
+{data: { id: 'ASNSP6', score: 0, type: '', href: "https://www.genecards.org/cgi-bin/carddisp.pl?gene=ASNSP6" }},
+{data: { id: 'PIBF1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WXW3" }}], 
+ edges: [{ data: { source: 'CCDC18', target: 'SSX2IP', directed: 'false', weight: 0.263844} },
+{ data: { source: 'CCDC18', target: 'KIAA1328', directed: 'false', weight: 0.57701} },
+{ data: { source: 'CCDC18', target: 'TBC1D31', directed: 'false', weight: 0.235325} },
+{ data: { source: 'CCDC18', target: 'PIBF1', directed: 'false', weight: 0.329937} },
+{ data: { source: 'CCDC18', target: 'BBS4', directed: 'false', weight: 0.371979} },
+{ data: { source: 'CCDC18', target: 'C2CD3', directed: 'false', weight: 0.31009699999999996} },
+{ data: { source: 'CCDC18', target: 'MIB1', directed: 'false', weight: 0.132029} },
+{ data: { source: 'TBC1D31', target: 'SSX2IP', directed: 'false', weight: 0.354354} },
+{ data: { source: 'TBC1D31', target: 'KIAA1328', directed: 'false', weight: 0.511938} },
+{ data: { source: 'TBC1D31', target: 'PIBF1', directed: 'false', weight: 0.591645} },
+{ data: { source: 'TBC1D31', target: 'BBS4', directed: 'false', weight: 0.511938} },
+{ data: { source: 'TBC1D31', target: 'C2CD3', directed: 'false', weight: 0.278993} },
+{ data: { source: 'TBC1D31', target: 'MIB1', directed: 'false', weight: 0.101274} },
+{ data: { source: 'BBS4', target: 'SSX2IP', directed: 'false', weight: 0.23437600000000003} },
+{ data: { source: 'BBS4', target: 'KIAA1328', directed: 'false', weight: 0.3264} },
+{ data: { source: 'BBS4', target: 'PIBF1', directed: 'false', weight: 0.429224} },
+{ data: { source: 'BBS4', target: 'C2CD3', directed: 'false', weight: 0.178248} },
+{ data: { source: 'BBS4', target: 'MIB1', directed: 'false', weight: 0.44178199999999995} },
+{ data: { source: 'HDDC3', target: 'ASNSP6', directed: 'false', weight: 0.9627879999999999} },
+{ data: { source: 'KIAA1328', target: 'SSX2IP', directed: 'false', weight: 0.381938} },
+{ data: { source: 'KIAA1328', target: 'C2CD3', directed: 'false', weight: 0.541415} },
+{ data: { source: 'KIAA1328', target: 'MIB1', directed: 'false', weight: 0.454966} },
+{ data: { source: 'KIAA1328', target: 'PIBF1', directed: 'false', weight: 0.429224} },
+{ data: { source: 'WRAP73', target: 'ASNSP6', directed: 'false', weight: 0.9397030000000001} },
+{ data: { source: 'WRAP73', target: 'SSX2IP', directed: 'false', weight: 0.154145} },
+{ data: { source: 'MIB1', target: 'SSX2IP', directed: 'false', weight: 0.341607} },
+{ data: { source: 'MIB1', target: 'PIBF1', directed: 'false', weight: 0.156161} },
+{ data: { source: 'MIB1', target: 'C2CD3', directed: 'false', weight: 0.253235} },
+{ data: { source: 'C2CD3', target: 'SSX2IP', directed: 'false', weight: 0.222002} },
+{ data: { source: 'C2CD3', target: 'PIBF1', directed: 'false', weight: 0.241957} },
+{ data: { source: 'SSX2IP', target: 'ASNSP6', directed: 'false', weight: 0.804967} },
+{ data: { source: 'SSX2IP', target: 'PIBF1', directed: 'false', weight: 0.521964} }]},
 
 style: [
     {
@@ -85,7 +120,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.38800
+    Complex Score  = 0.38750
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>MIB1
     </section>
     </body>
     </html>

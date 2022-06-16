@@ -30,13 +30,38 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'HLA-C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P10321" }},
-{data: { id: 'TMEM183BP', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q1AE95" }},
-{data: { id: 'PVR', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P15151" }},
-{data: { id: 'NRG1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q02297" }}], 
- edges: [{ data: { source: 'HLA-C', target: 'NRG1', directed: 'false', weight: 0.603492} },
-{ data: { source: 'HLA-C', target: 'TMEM183BP', directed: 'false', weight: 0.125368} },
-{ data: { source: 'TMEM183BP', target: 'PVR', directed: 'false', weight: 0.12970399999999999} }]},
+elements:{nodes: [{data: { id: 'CRYBG3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q68DQ2" }},
+{data: { id: 'PALM2AKAP2', score: 1.0, type: '', href: "https://www.uniprot.org/uniprot/C9JA33" }},
+{data: { id: 'AKAP7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43687" }},
+{data: { id: 'AKAP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92667" }},
+{data: { id: 'TSSK1B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BXA7" }},
+{data: { id: 'PDE4DIP', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q5VU43" }},
+{data: { id: 'PRKAR2B', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P31323" }},
+{data: { id: 'EMD', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P50402" }},
+{data: { id: 'PRKX', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P51817" }}], 
+ edges: [{ data: { source: 'CRYBG3', target: 'PRKAR2B', directed: 'false', weight: 0.783139} },
+{ data: { source: 'CRYBG3', target: 'PRKX', directed: 'false', weight: 0.140692} },
+{ data: { source: 'CRYBG3', target: 'AKAP7', directed: 'false', weight: 0.140692} },
+{ data: { source: 'CRYBG3', target: 'PDE4DIP', directed: 'false', weight: 0.123797} },
+{ data: { source: 'CRYBG3', target: 'PALM2AKAP2', directed: 'false', weight: 0.123797} },
+{ data: { source: 'CRYBG3', target: 'TSSK1B', directed: 'false', weight: 0.546338} },
+{ data: { source: 'CRYBG3', target: 'AKAP1', directed: 'false', weight: 0.177582} },
+{ data: { source: 'PALM2AKAP2', target: 'PRKAR2B', directed: 'false', weight: 0.8735229999999999} },
+{ data: { source: 'PALM2AKAP2', target: 'PRKX', directed: 'false', weight: 0.151455} },
+{ data: { source: 'PALM2AKAP2', target: 'AKAP7', directed: 'false', weight: 0.151455} },
+{ data: { source: 'PALM2AKAP2', target: 'PDE4DIP', directed: 'false', weight: 0.133456} },
+{ data: { source: 'PALM2AKAP2', target: 'AKAP1', directed: 'false', weight: 0.102922} },
+{ data: { source: 'AKAP7', target: 'PRKAR2B', directed: 'false', weight: 0.9763440000000001} },
+{ data: { source: 'AKAP7', target: 'PRKX', directed: 'false', weight: 0.171414} },
+{ data: { source: 'AKAP7', target: 'PDE4DIP', directed: 'false', weight: 0.151455} },
+{ data: { source: 'AKAP7', target: 'AKAP1', directed: 'false', weight: 0.11730499999999999} },
+{ data: { source: 'AKAP1', target: 'PRKAR2B', directed: 'false', weight: 0.781026} },
+{ data: { source: 'AKAP1', target: 'PRKX', directed: 'false', weight: 0.215346} },
+{ data: { source: 'AKAP1', target: 'PDE4DIP', directed: 'false', weight: 0.102922} },
+{ data: { source: 'TSSK1B', target: 'EMD', directed: 'false', weight: 0.266534} },
+{ data: { source: 'PDE4DIP', target: 'PRKAR2B', directed: 'false', weight: 0.939984} },
+{ data: { source: 'PDE4DIP', target: 'PRKX', directed: 'false', weight: 0.151455} },
+{ data: { source: 'PRKAR2B', target: 'PRKX', directed: 'false', weight: 0.979115} }]},
 
 style: [
     {
@@ -84,12 +109,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.37500
+    Complex Score  = 0.38750
         <br> 
         <br>
         Connection to SARS-COV2: 
         <br>
-        1 interacting protein(s): <br>PVR
+        2 interacting protein(s): <br>PDE4DIP PRKAR2B
     </section>
     </body>
     </html>

@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 ARD1-NATH complex match 2</title>
+<title> 0.5 ORC complex (origin recognition complex)</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,18 +30,24 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'NAA50', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9GZZ1" }},
-{data: { id: 'NAA15', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BXJ9" }},
-{data: { id: 'MANF', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P55145" }},
-{data: { id: 'ARD1A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P41227" }},
-{data: { id: 'hCG_2003792', score: 1, type: '', href: "https://www.uniprot.org/uniprot/A0A024R5Q1" }}], 
- edges: [{ data: { source: 'NAA50', target: 'NAA15', directed: 'false', weight: 0.9941989999999999} },
-{ data: { source: 'NAA50', target: 'hCG_2003792', directed: 'false', weight: 0.0905156} },
-{ data: { source: 'NAA15', target: 'ARD1A', directed: 'false', weight: 0.9999969999999999} },
-{ data: { source: 'NAA15', target: 'hCG_2003792', directed: 'false', weight: 0.9999629999999999} },
-{ data: { source: 'NAA15', target: 'MANF', directed: 'false', weight: 0.171153} },
-{ data: { source: 'MANF', target: 'ARD1A', directed: 'false', weight: 0.110974} },
-{ data: { source: 'ARD1A', target: 'hCG_2003792', directed: 'false', weight: 0.9933719999999999} }]},
+elements:{nodes: [{data: { id: 'ORC5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43913" }},
+{data: { id: 'ORC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13415" }},
+{data: { id: 'ORC6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y5N6" }},
+{data: { id: 'FAM210A', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q96ND0" }},
+{data: { id: 'ORC2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13416" }},
+{data: { id: 'LRWD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UFC0" }}], 
+ edges: [{ data: { source: 'FAM210A', target: 'LRWD1', directed: 'false', weight: 0.11103900000000001} },
+{ data: { source: 'FAM210A', target: 'ORC2', directed: 'false', weight: 0.7703909999999999} },
+{ data: { source: 'FAM210A', target: 'ORC5', directed: 'false', weight: 0.133179} },
+{ data: { source: 'FAM210A', target: 'ORC1', directed: 'false', weight: 0.11585699999999999} },
+{ data: { source: 'ORC2', target: 'LRWD1', directed: 'false', weight: 0.999957} },
+{ data: { source: 'ORC2', target: 'ORC6', directed: 'false', weight: 0.9394049999999999} },
+{ data: { source: 'ORC2', target: 'ORC5', directed: 'false', weight: 0.870692} },
+{ data: { source: 'ORC2', target: 'ORC1', directed: 'false', weight: 0.322364} },
+{ data: { source: 'ORC5', target: 'LRWD1', directed: 'false', weight: 0.959946} },
+{ data: { source: 'ORC5', target: 'ORC1', directed: 'false', weight: 0.219367} },
+{ data: { source: 'ORC1', target: 'LRWD1', directed: 'false', weight: 0.576238} },
+{ data: { source: 'ORC6', target: 'LRWD1', directed: 'false', weight: 0.30834} }]},
 
 style: [
     {
@@ -101,7 +107,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 ARD1-NATH complex match 2<br> Complex Score = 0.38800<br> Unweighted Density = 0.70
+    0.5 ORC complex (origin recognition complex)<br> Complex Score = 0.39375<br> Unweighted Density = 0.80
     </section>
     </body>
     </html>

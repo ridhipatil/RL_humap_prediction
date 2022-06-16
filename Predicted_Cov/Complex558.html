@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 BVR-PKCD-ERK2 complex</title>
+<title> 0.2 GRASP-GRP1 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,28 +30,29 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'PCYOX1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UHG3" }},
-{data: { id: 'PPTC7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NI37" }},
-{data: { id: 'BLVRA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P53004" }},
-{data: { id: 'RTN4IP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WWV3" }}], 
- edges: [{ data: { source: 'PCYOX1', target: 'BLVRA', directed: 'false', weight: 0.160128} },
-{ data: { source: 'PPTC7', target: 'RTN4IP1', directed: 'false', weight: 0.655375} },
-{ data: { source: 'BLVRA', target: 'RTN4IP1', directed: 'false', weight: 0.10993699999999999} }]},
+elements:{nodes: [{data: { id: 'CYTH1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15438" }},
+{data: { id: 'CYTIP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60759" }},
+{data: { id: 'CYTH3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43739" }},
+{data: { id: 'CYTH2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99418" }}], 
+ edges: [{ data: { source: 'CYTH2', target: 'CYTIP', directed: 'false', weight: 0.973944} },
+{ data: { source: 'CYTH2', target: 'CYTH3', directed: 'false', weight: 0.238157} },
+{ data: { source: 'CYTH2', target: 'CYTH1', directed: 'false', weight: 0.151455} },
+{ data: { source: 'CYTH1', target: 'CYTIP', directed: 'false', weight: 0.776035} },
+{ data: { source: 'CYTH1', target: 'CYTH3', directed: 'false', weight: 0.128057} },
+{ data: { source: 'CYTH3', target: 'CYTIP', directed: 'false', weight: 0.9288040000000001} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 10,
-		'width':'10',
-		'height': '10',	
+		'font-size': 30,
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}  
                                  if ( ele.data('type') == 'sars' ){return 'triangle'}   
   return 'rectangle';
   },            
-             'background-color': function( ele ){ 
+            'background-color': function( ele ){ 
                                 if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
 								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
                                  if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
@@ -65,7 +66,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
 								'line-color': function( ele ){ 
                                  if ( ele.data('type') == 'sars' ){return 'red'}   
   return 'blue';
@@ -77,10 +78,7 @@ style: [
 
 });
 cy.layout({
-    'name': 'fcose',
-		'animate':false,
-	'nodeDimensionsIncludeLabels':true,
-	'nodeSeparation': 1000
+    'name': 'circle'
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -96,7 +94,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 BVR-PKCD-ERK2 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.2 GRASP-GRP1 complex<br> Complex Score = 0.38750<br> Unweighted Density = 1.00
     </section>
     </body>
     </html>

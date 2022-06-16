@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> HEL20 IFI30 HEL-S-68p DEPDC1B</title>
+<title> TRMT1 SLC25A29 CCDC198 SEC24A AMPD2</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,18 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'HEL20', score: 1, type: '', href: "https://www.uniprot.org/uniprot/V9HWF9" }},
-{data: { id: 'HEL-S-68p', score: 2, type: '', href: "https://www.uniprot.org/uniprot/V9HWF4" }},
-{data: { id: 'IFI30', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P13284" }},
-{data: { id: 'DEPDC1B', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q8WUY9" }}], 
- edges: [{ data: { source: 'HEL20', target: 'IFI30', directed: 'false', weight: 0.11222} },
-{ data: { source: 'HEL-S-68p', target: 'IFI30', directed: 'false', weight: 0.195553} },
-{ data: { source: 'DEPDC1B', target: 'IFI30', directed: 'false', weight: 0.7217439999999999} }]},
+elements:{nodes: [{data: { id: 'SEC24A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95486" }},
+{data: { id: 'AMPD2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q01433" }},
+{data: { id: 'SARS-CoV2 nsp5_C145A', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp5_C145A.html" }},
+{data: { id: 'TRMT1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9NXH9" }},
+{data: { id: 'CCDC198', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9NVL8" }},
+{data: { id: 'SLC25A29', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N8R3" }}], 
+ edges: [{ data: { source: 'SARS-CoV2 nsp5_C145A', target: 'TRMT1', directed: 'false', weight: 0.984315505, type: 'sars'} },
+{ data: { source: 'SLC25A29', target: 'TRMT1', directed: 'false', weight: 0.32416300000000003} },
+{ data: { source: 'SLC25A29', target: 'SEC24A', directed: 'false', weight: 0.0860789} },
+{ data: { source: 'SEC24A', target: 'TRMT1', directed: 'false', weight: 0.633968} },
+{ data: { source: 'AMPD2', target: 'CCDC198', directed: 'false', weight: 0.669115} },
+{ data: { source: 'AMPD2', target: 'TRMT1', directed: 'false', weight: 0.7113229999999999} }]},
 
 style: [
     {
@@ -96,7 +101,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    HEL20 IFI30 HEL-S-68p DEPDC1B<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    TRMT1 SLC25A29 CCDC198 SEC24A AMPD2<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>TRMT1
     </section>
     </body>
     </html>

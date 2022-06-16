@@ -30,11 +30,26 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'HRASLS3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P53816" }},
-{data: { id: 'MFAP4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P55083" }},
-{data: { id: 'OCLN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16625" }}], 
- edges: [{ data: { source: 'HRASLS3', target: 'OCLN', directed: 'false', weight: 0.279055} },
-{ data: { source: 'MFAP4', target: 'OCLN', directed: 'false', weight: 0.48132299999999995} }]},
+elements:{nodes: [{data: { id: 'MTERF3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96E29" }},
+{data: { id: 'MRPL35', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NZE8" }},
+{data: { id: 'CINP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BW66" }},
+{data: { id: 'MRPL40', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NQ50" }},
+{data: { id: 'YTHDC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96MU7" }},
+{data: { id: 'NGRN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NPE2" }},
+{data: { id: 'MRPL4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BYD3" }}], 
+ edges: [{ data: { source: 'MTERF3', target: 'MRPL4', directed: 'false', weight: 0.8758540000000001} },
+{ data: { source: 'MTERF3', target: 'MRPL40', directed: 'false', weight: 0.371672} },
+{ data: { source: 'MTERF3', target: 'MRPL35', directed: 'false', weight: 0.203724} },
+{ data: { source: 'MTERF3', target: 'NGRN', directed: 'false', weight: 0.9959709999999999} },
+{ data: { source: 'MTERF3', target: 'YTHDC1', directed: 'false', weight: 0.270861} },
+{ data: { source: 'MRPL35', target: 'MRPL4', directed: 'false', weight: 0.8556159999999999} },
+{ data: { source: 'MRPL35', target: 'MRPL40', directed: 'false', weight: 0.9412809999999999} },
+{ data: { source: 'MRPL35', target: 'NGRN', directed: 'false', weight: 0.24733899999999998} },
+{ data: { source: 'CINP', target: 'MRPL4', directed: 'false', weight: 0.953239} },
+{ data: { source: 'MRPL40', target: 'MRPL4', directed: 'false', weight: 0.9771860000000001} },
+{ data: { source: 'MRPL40', target: 'NGRN', directed: 'false', weight: 0.5261279999999999} },
+{ data: { source: 'YTHDC1', target: 'NGRN', directed: 'false', weight: 0.417108} },
+{ data: { source: 'NGRN', target: 'MRPL4', directed: 'false', weight: 0.7381949999999999} }]},
 
 style: [
     {
@@ -82,7 +97,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.38800
+    Complex Score  = 0.38750
     </section>
     </body>
     </html>

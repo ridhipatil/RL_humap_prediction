@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> PARP2 H2BC1 RNF146 PHF14</title>
+<title> 0.1 EXO1-MLH1-PMS2 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,19 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'H2BC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96A08" }},
-{data: { id: 'RNF146', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NTX7" }},
-{data: { id: 'PARP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UGN5" }},
-{data: { id: 'PHF14', score: 3, type: '', href: "https://www.uniprot.org/uniprot/O94880" }}], 
- edges: [{ data: { source: 'H2BC1', target: 'PHF14', directed: 'false', weight: 0.660568} },
-{ data: { source: 'H2BC1', target: 'PARP2', directed: 'false', weight: 0.119985} },
-{ data: { source: 'RNF146', target: 'PARP2', directed: 'false', weight: 0.40408499999999997} }]},
+elements:{nodes: [{data: { id: 'CWC15', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9P013" }},
+{data: { id: 'GPATCH1', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9BRR8" }},
+{data: { id: 'EXO1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UQ84" }},
+{data: { id: 'RBM22', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NW64" }},
+{data: { id: 'RIMS4', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9H426" }},
+{data: { id: 'WDR83', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BRX9" }}], 
+ edges: [{ data: { source: 'RIMS4', target: 'WDR83', directed: 'false', weight: 0.972101} },
+{ data: { source: 'RIMS4', target: 'EXO1', directed: 'false', weight: 0.171414} },
+{ data: { source: 'RBM22', target: 'CWC15', directed: 'false', weight: 0.3401} },
+{ data: { source: 'RBM22', target: 'GPATCH1', directed: 'false', weight: 0.16233599999999998} },
+{ data: { source: 'GPATCH1', target: 'CWC15', directed: 'false', weight: 0.24423000000000003} },
+{ data: { source: 'GPATCH1', target: 'WDR83', directed: 'false', weight: 0.988376} },
+{ data: { source: 'EXO1', target: 'WDR83', directed: 'false', weight: 0.976735} }]},
 
 style: [
     {
@@ -96,7 +102,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    PARP2 H2BC1 RNF146 PHF14<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.1 EXO1-MLH1-PMS2 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.47
     </section>
     </body>
     </html>

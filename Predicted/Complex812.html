@@ -30,13 +30,23 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'MAGEB16', score: 2, type: '', href: "https://www.uniprot.org/uniprot/A2A368" }},
-{data: { id: 'MAGEA4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P43358" }},
-{data: { id: 'TSPYL4', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9UJ04" }},
-{data: { id: 'MAGEA9', score: 3, type: '', href: "https://www.uniprot.org/uniprot/P43362" }}], 
- edges: [{ data: { source: 'MAGEA4', target: 'MAGEB16', directed: 'false', weight: 1.0} },
-{ data: { source: 'MAGEA4', target: 'MAGEA9', directed: 'false', weight: 0.999674} },
-{ data: { source: 'MAGEA4', target: 'TSPYL4', directed: 'false', weight: 0.621133} }]},
+elements:{nodes: [{data: { id: 'RPS9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P46781" }},
+{data: { id: 'CALR', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P27797" }},
+{data: { id: 'RPL30', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62888" }},
+{data: { id: 'P4HA2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15460" }},
+{data: { id: 'FAU', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62861" }},
+{data: { id: 'P4HA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P13674" }},
+{data: { id: 'P4HB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P07237" }}], 
+ edges: [{ data: { source: 'RPS9', target: 'RPL30', directed: 'false', weight: 1.0} },
+{ data: { source: 'RPS9', target: 'FAU', directed: 'false', weight: 0.999957} },
+{ data: { source: 'RPS9', target: 'CALR', directed: 'false', weight: 0.546569} },
+{ data: { source: 'CALR', target: 'RPL30', directed: 'false', weight: 0.324481} },
+{ data: { source: 'CALR', target: 'FAU', directed: 'false', weight: 0.019112} },
+{ data: { source: 'CALR', target: 'P4HB', directed: 'false', weight: 0.991848} },
+{ data: { source: 'RPL30', target: 'FAU', directed: 'false', weight: 0.999901} },
+{ data: { source: 'P4HA2', target: 'P4HB', directed: 'false', weight: 0.995332} },
+{ data: { source: 'P4HA2', target: 'P4HA1', directed: 'false', weight: 0.65385} },
+{ data: { source: 'P4HA1', target: 'P4HB', directed: 'false', weight: 0.40069499999999997} }]},
 
 style: [
     {

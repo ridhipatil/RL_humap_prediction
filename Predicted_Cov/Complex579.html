@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 CTGF/Hcs24-actin(beta/gamma) complex</title>
+<title> SULT1A2 SULT1A1 SULT1A3</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,29 +30,25 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'MYO5C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NQX4" }},
-{data: { id: 'MYO1E', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q12965" }},
-{data: { id: 'MYO1C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00159" }},
-{data: { id: 'ACTG1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P63261" }}], 
- edges: [{ data: { source: 'MYO5C', target: 'MYO1C', directed: 'false', weight: 0.11963399999999999} },
-{ data: { source: 'MYO5C', target: 'MYO1E', directed: 'false', weight: 0.07078839999999999} },
-{ data: { source: 'MYO1E', target: 'MYO1C', directed: 'false', weight: 0.341982} },
-{ data: { source: 'MYO1C', target: 'ACTG1', directed: 'false', weight: 0.169904} }]},
+elements:{nodes: [{data: { id: 'SULT1A3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P0DMM9" }},
+{data: { id: 'SULT1A2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P50226" }},
+{data: { id: 'SULT1A1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P50225" }}], 
+ edges: [{ data: { source: 'SULT1A3', target: 'SULT1A1', directed: 'false', weight: 0.853824} },
+{ data: { source: 'SULT1A3', target: 'SULT1A2', directed: 'false', weight: 0.856864} },
+{ data: { source: 'SULT1A2', target: 'SULT1A1', directed: 'false', weight: 0.9401870000000001} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 10,
-		'width':'10',
-		'height': '10',	
+		'font-size': 30,
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}  
                                  if ( ele.data('type') == 'sars' ){return 'triangle'}   
   return 'rectangle';
   },            
-             'background-color': function( ele ){ 
+            'background-color': function( ele ){ 
                                 if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
 								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
                                  if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
@@ -66,7 +62,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
 								'line-color': function( ele ){ 
                                  if ( ele.data('type') == 'sars' ){return 'red'}   
   return 'blue';
@@ -78,10 +74,7 @@ style: [
 
 });
 cy.layout({
-    'name': 'fcose',
-		'animate':false,
-	'nodeDimensionsIncludeLabels':true,
-	'nodeSeparation': 1000
+    'name': 'circle'
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -97,7 +90,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 CTGF/Hcs24-actin(beta/gamma) complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
+    SULT1A2 SULT1A1 SULT1A3<br> Complex Score = 0.38750<br> Unweighted Density = 1.00
     </section>
     </body>
     </html>

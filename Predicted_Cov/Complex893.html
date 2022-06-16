@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 FIB-associated protein complex</title>
+<title> PTRHD1 ZCCHC17 LAP3</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,11 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'FBL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P22087" }},
-{data: { id: 'TGS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96RS0" }},
-{data: { id: 'PRMT5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O14744" }},
-{data: { id: 'RBFOX2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43251" }}], 
- edges: [{ data: { source: 'FBL', target: 'PRMT5', directed: 'false', weight: 0.130101} },
-{ data: { source: 'FBL', target: 'TGS1', directed: 'false', weight: 0.964656} },
-{ data: { source: 'PRMT5', target: 'RBFOX2', directed: 'false', weight: 0.310006} }]},
+elements:{nodes: [{data: { id: 'ZCCHC17', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NP64" }},
+{data: { id: 'PTRHD1', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q6GMV3" }},
+{data: { id: 'LAP3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P28838" }}], 
+ edges: [{ data: { source: 'ZCCHC17', target: 'LAP3', directed: 'false', weight: 0.363219} },
+{ data: { source: 'PTRHD1', target: 'LAP3', directed: 'false', weight: 0.540626} }]},
 
 style: [
     {
@@ -96,7 +94,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 FIB-associated protein complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    PTRHD1 ZCCHC17 LAP3<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
     </section>
     </body>
     </html>

@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 CIN85 homotetramer complex match 3</title>
+<title> 0.4 Casein kinase II (beta-dimer, alpha'-dimer)</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,14 +30,21 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'RTKN2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IZC4" }},
-{data: { id: 'SH3KBP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96B97" }},
-{data: { id: 'SH3BP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y3L3" }},
-{data: { id: 'CAPZA2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P47755" }}], 
- edges: [{ data: { source: 'RTKN2', target: 'SH3KBP1', directed: 'false', weight: 0.935673} },
-{ data: { source: 'SH3KBP1', target: 'CAPZA2', directed: 'false', weight: 0.999921} },
-{ data: { source: 'SH3KBP1', target: 'SH3BP1', directed: 'false', weight: 0.9595549999999999} },
-{ data: { source: 'SH3BP1', target: 'CAPZA2', directed: 'false', weight: 0.9999879999999999} }]},
+elements:{nodes: [{data: { id: 'SARS-CoV2 N', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 N.html" }},
+{data: { id: 'CSNK2B', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P67870" }},
+{data: { id: 'SARS-CoV2 N', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 N.html" }},
+{data: { id: 'CSNK2A2', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P19784" }},
+{data: { id: 'NKAPD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6ZUT1" }},
+{data: { id: 'CFDP1', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9UEE9" }},
+{data: { id: 'GPATCH2L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NWQ4" }}], 
+ edges: [{ data: { source: 'SARS-CoV2 N', target: 'CSNK2B', directed: 'false', weight: 0.803607895, type: 'sars'} },
+{ data: { source: 'SARS-CoV2 N', target: 'CSNK2A2', directed: 'false', weight: 0.875048268, type: 'sars'} },
+{ data: { source: 'CSNK2A2', target: 'CSNK2B', directed: 'false', weight: 0.9965440000000001} },
+{ data: { source: 'CSNK2A2', target: 'GPATCH2L', directed: 'false', weight: 0.947767} },
+{ data: { source: 'CSNK2A2', target: 'CFDP1', directed: 'false', weight: 0.7992199999999999} },
+{ data: { source: 'CSNK2A2', target: 'NKAPD1', directed: 'false', weight: 0.6701779999999999} },
+{ data: { source: 'CSNK2B', target: 'NKAPD1', directed: 'false', weight: 0.152523} },
+{ data: { source: 'NKAPD1', target: 'GPATCH2L', directed: 'false', weight: 0.140692} }]},
 
 style: [
     {
@@ -97,7 +104,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 CIN85 homotetramer complex match 3<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
+    0.4 Casein kinase II (beta-dimer, alpha'-dimer)<br> Complex Score = 0.38750<br> Unweighted Density = 0.60
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        2 interacting protein(s): <br>CSNK2B CSNK2A2
     </section>
     </body>
     </html>

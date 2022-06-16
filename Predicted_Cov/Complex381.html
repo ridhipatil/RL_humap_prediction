@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 ARL2-TBCD complex</title>
+<title> FIBP CABLES1 CABLES2 C2CD5 TMEM94</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,28 +30,34 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'TUBB1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H4B7" }},
-{data: { id: 'TBCD', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BTW9" }},
-{data: { id: 'hCG_23373', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q53YD8" }},
-{data: { id: 'TUBB2B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BVA1" }}], 
- edges: [{ data: { source: 'TUBB1', target: 'TUBB2B', directed: 'false', weight: 0.48960200000000004} },
-{ data: { source: 'TBCD', target: 'TUBB2B', directed: 'false', weight: 0.21655500000000003} },
-{ data: { source: 'hCG_23373', target: 'TUBB2B', directed: 'false', weight: 0.206298} }]},
+elements:{nodes: [{data: { id: 'TMEM94', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q12767" }},
+{data: { id: 'C2CD5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86YS7" }},
+{data: { id: 'CABLES1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TDN4" }},
+{data: { id: 'CABLES2', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q9BTV7" }},
+{data: { id: 'FIBP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43427" }}], 
+ edges: [{ data: { source: 'C2CD5', target: 'CABLES1', directed: 'false', weight: 0.329598} },
+{ data: { source: 'C2CD5', target: 'FIBP', directed: 'false', weight: 0.9842139999999999} },
+{ data: { source: 'C2CD5', target: 'TMEM94', directed: 'false', weight: 0.5} },
+{ data: { source: 'C2CD5', target: 'CABLES2', directed: 'false', weight: 0.200625} },
+{ data: { source: 'CABLES2', target: 'CABLES1', directed: 'false', weight: 0.28781100000000004} },
+{ data: { source: 'CABLES2', target: 'FIBP', directed: 'false', weight: 0.8327469999999999} },
+{ data: { source: 'CABLES2', target: 'TMEM94', directed: 'false', weight: 0.25848000000000004} },
+{ data: { source: 'FIBP', target: 'CABLES1', directed: 'false', weight: 0.99339} },
+{ data: { source: 'FIBP', target: 'TMEM94', directed: 'false', weight: 0.738031} },
+{ data: { source: 'TMEM94', target: 'CABLES1', directed: 'false', weight: 0.216185} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 10,
-		'width':'10',
-		'height': '10',	
+		'font-size': 30,
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}  
                                  if ( ele.data('type') == 'sars' ){return 'triangle'}   
   return 'rectangle';
   },            
-             'background-color': function( ele ){ 
+            'background-color': function( ele ){ 
                                 if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
 								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
                                  if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
@@ -65,7 +71,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
 								'line-color': function( ele ){ 
                                  if ( ele.data('type') == 'sars' ){return 'red'}   
   return 'blue';
@@ -77,10 +83,7 @@ style: [
 
 });
 cy.layout({
-    'name': 'fcose',
-		'animate':false,
-	'nodeDimensionsIncludeLabels':true,
-	'nodeSeparation': 1000
+    'name': 'circle'
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -96,7 +99,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 ARL2-TBCD complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    FIBP CABLES1 CABLES2 C2CD5 TMEM94<br> Complex Score = 0.38750<br> Unweighted Density = 1.00
     </section>
     </body>
     </html>

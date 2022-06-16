@@ -30,13 +30,18 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'EIF4E3', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q8N5X7" }},
-{data: { id: 'EIF4A1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P60842" }},
-{data: { id: 'LASP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14847" }},
-{data: { id: 'EIF4G3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43432" }}], 
- edges: [{ data: { source: 'EIF4E3', target: 'EIF4A1', directed: 'false', weight: 0.25319899999999995} },
-{ data: { source: 'EIF4A1', target: 'EIF4G3', directed: 'false', weight: 0.7134119999999999} },
-{ data: { source: 'EIF4A1', target: 'LASP1', directed: 'false', weight: 0.153089} }]},
+elements:{nodes: [{data: { id: 'RAC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P63000" }},
+{data: { id: 'PRDX5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P30044" }},
+{data: { id: 'SPR', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P35270" }},
+{data: { id: 'HINT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49773" }},
+{data: { id: 'CRIP2', score: 3, type: '', href: "https://www.uniprot.org/uniprot/P52943" }},
+{data: { id: 'SERPINH1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P50454" }}], 
+ edges: [{ data: { source: 'RAC1', target: 'CRIP2', directed: 'false', weight: 0.617429} },
+{ data: { source: 'RAC1', target: 'SERPINH1', directed: 'false', weight: 0.41492399999999996} },
+{ data: { source: 'SERPINH1', target: 'CRIP2', directed: 'false', weight: 0.289792} },
+{ data: { source: 'SERPINH1', target: 'SPR', directed: 'false', weight: 0.554363} },
+{ data: { source: 'PRDX5', target: 'HINT1', directed: 'false', weight: 0.586208} },
+{ data: { source: 'PRDX5', target: 'SPR', directed: 'false', weight: 0.36024} }]},
 
 style: [
     {
@@ -84,7 +89,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.37500
+    Complex Score  = 0.35000
     </section>
     </body>
     </html>

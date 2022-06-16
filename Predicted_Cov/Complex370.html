@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> RGS3 ZNF192 RBAK CRAT</title>
+<title> 0.2 KNTC1-ZW10-ZWILCH complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,25 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'CRAT', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P43155" }},
-{data: { id: 'RGS3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49796" }},
-{data: { id: 'RBAK', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NYW8" }},
-{data: { id: 'ZNF192', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15776" }}], 
- edges: [{ data: { source: 'CRAT', target: 'RGS3', directed: 'false', weight: 0.9439719999999999} },
-{ data: { source: 'RGS3', target: 'RBAK', directed: 'false', weight: 0.140823} },
-{ data: { source: 'RGS3', target: 'ZNF192', directed: 'false', weight: 0.11887} }]},
+elements:{nodes: [{data: { id: 'THADA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6YHU6" }},
+{data: { id: 'USE1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NZ43" }},
+{data: { id: 'ZWILCH', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H900" }},
+{data: { id: 'TTI1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43156" }},
+{data: { id: 'INTS3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q68E01" }},
+{data: { id: 'BNIP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q12981" }},
+{data: { id: 'ZW10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43264" }}], 
+ edges: [{ data: { source: 'THADA', target: 'ZW10', directed: 'false', weight: 0.322601} },
+{ data: { source: 'THADA', target: 'INTS3', directed: 'false', weight: 0.220348} },
+{ data: { source: 'THADA', target: 'TTI1', directed: 'false', weight: 0.7223970000000001} },
+{ data: { source: 'ZWILCH', target: 'ZW10', directed: 'false', weight: 0.831451} },
+{ data: { source: 'ZWILCH', target: 'BNIP1', directed: 'false', weight: 0.165074} },
+{ data: { source: 'ZWILCH', target: 'USE1', directed: 'false', weight: 0.165074} },
+{ data: { source: 'USE1', target: 'ZW10', directed: 'false', weight: 0.977168} },
+{ data: { source: 'USE1', target: 'BNIP1', directed: 'false', weight: 0.562507} },
+{ data: { source: 'TTI1', target: 'ZW10', directed: 'false', weight: 0.426387} },
+{ data: { source: 'TTI1', target: 'INTS3', directed: 'false', weight: 0.09449760000000001} },
+{ data: { source: 'INTS3', target: 'ZW10', directed: 'false', weight: 0.18409} },
+{ data: { source: 'BNIP1', target: 'ZW10', directed: 'false', weight: 0.95826} }]},
 
 style: [
     {
@@ -96,7 +108,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    RGS3 ZNF192 RBAK CRAT<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.2 KNTC1-ZW10-ZWILCH complex<br> Complex Score = 0.38750<br> Unweighted Density = 0.57
     </section>
     </body>
     </html>

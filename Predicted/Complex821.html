@@ -30,14 +30,11 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'AP2A2', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/O94973" }},
-{data: { id: 'NECAP2', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9NVZ3" }},
-{data: { id: 'NECAP1', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q8NC96" }},
-{data: { id: 'HEL-S-132P', score: 4, type: '', href: "https://www.uniprot.org/uniprot/V9HWC4" }}], 
- edges: [{ data: { source: 'AP2A2', target: 'NECAP2', directed: 'false', weight: 0.963443} },
-{ data: { source: 'NECAP2', target: 'NECAP1', directed: 'false', weight: 0.957836} },
-{ data: { source: 'NECAP2', target: 'HEL-S-132P', directed: 'false', weight: 0.158378} },
-{ data: { source: 'NECAP1', target: 'HEL-S-132P', directed: 'false', weight: 0.064413} }]},
+elements:{nodes: [{data: { id: 'EP300', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q09472" }},
+{data: { id: 'C3orf62', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q6ZUJ4" }},
+{data: { id: 'CITED2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99967" }}], 
+ edges: [{ data: { source: 'EP300', target: 'CITED2', directed: 'false', weight: 0.908162} },
+{ data: { source: 'EP300', target: 'C3orf62', directed: 'false', weight: 0.7921229999999999} }]},
 
 style: [
     {
@@ -86,11 +83,6 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.37500
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>AP2A2
     </section>
     </body>
     </html>

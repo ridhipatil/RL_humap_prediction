@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> ZNF397 ZSCAN21 ZNF232 ZNF452</title>
+<title> 0.1 GAIT complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,20 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'ZNF397', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NF99" }},
-{data: { id: 'ZNF232', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UNY5" }},
-{data: { id: 'ZNF452', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q6R2W3" }},
-{data: { id: 'ZSCAN21', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y5A6" }}], 
- edges: [{ data: { source: 'ZNF397', target: 'ZNF452', directed: 'false', weight: 0.11218499999999999} },
-{ data: { source: 'ZNF232', target: 'ZNF452', directed: 'false', weight: 0.9689110000000001} },
-{ data: { source: 'ZNF232', target: 'ZSCAN21', directed: 'false', weight: 0.877805} }]},
+elements:{nodes: [{data: { id: 'ENO1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P06733" }},
+{data: { id: 'PGAM1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P18669" }},
+{data: { id: 'PGAM2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P15259" }},
+{data: { id: 'GAPDH', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P04406" }},
+{data: { id: 'ENO2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P09104" }},
+{data: { id: 'PGAM4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N0Y7" }}], 
+ edges: [{ data: { source: 'ENO2', target: 'GAPDH', directed: 'false', weight: 0.943759} },
+{ data: { source: 'ENO2', target: 'ENO1', directed: 'false', weight: 0.41747700000000004} },
+{ data: { source: 'ENO1', target: 'GAPDH', directed: 'false', weight: 0.576869} },
+{ data: { source: 'ENO1', target: 'PGAM1', directed: 'false', weight: 0.176298} },
+{ data: { source: 'PGAM1', target: 'GAPDH', directed: 'false', weight: 0.662253} },
+{ data: { source: 'PGAM1', target: 'PGAM2', directed: 'false', weight: 0.41785500000000003} },
+{ data: { source: 'PGAM2', target: 'GAPDH', directed: 'false', weight: 0.735013} },
+{ data: { source: 'PGAM2', target: 'PGAM4', directed: 'false', weight: 0.926601} }]},
 
 style: [
     {
@@ -96,7 +103,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    ZNF397 ZSCAN21 ZNF232 ZNF452<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.1 GAIT complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.53
     </section>
     </body>
     </html>

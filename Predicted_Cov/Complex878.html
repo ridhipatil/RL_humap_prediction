@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 SMN1-SIP1-SNRP complex match 2</title>
+<title> 0.2 MSH2-MSH6 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,16 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'SNRPE', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62304" }},
-{data: { id: 'CDK11A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UQ88" }},
-{data: { id: 'SNRPB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P14678" }},
-{data: { id: 'HTATSF1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43719" }}], 
- edges: [{ data: { source: 'SNRPE', target: 'HTATSF1', directed: 'false', weight: 0.272289} },
-{ data: { source: 'SNRPE', target: 'SNRPB', directed: 'false', weight: 0.209648} },
-{ data: { source: 'CDK11A', target: 'HTATSF1', directed: 'false', weight: 0.5636140000000001} }]},
+elements:{nodes: [{data: { id: 'LACC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IV20" }},
+{data: { id: 'SGO2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q562F6" }},
+{data: { id: 'PLP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q04941" }},
+{data: { id: 'MSH6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P52701" }},
+{data: { id: 'H3F3B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P84243" }}], 
+ edges: [{ data: { source: 'SGO2', target: 'H3F3B', directed: 'false', weight: 0.714389} },
+{ data: { source: 'SGO2', target: 'PLP2', directed: 'false', weight: 0.515237} },
+{ data: { source: 'PLP2', target: 'H3F3B', directed: 'false', weight: 0.33813200000000004} },
+{ data: { source: 'MSH6', target: 'H3F3B', directed: 'false', weight: 0.796607} },
+{ data: { source: 'LACC1', target: 'H3F3B', directed: 'false', weight: 0.8589209999999999} }]},
 
 style: [
     {
@@ -96,7 +99,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 SMN1-SIP1-SNRP complex match 2<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.2 MSH2-MSH6 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

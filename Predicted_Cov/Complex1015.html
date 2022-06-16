@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.4 PeBoW complex</title>
+<title> 0.1 CTNNB1-DDX5-HDGF complex match 3</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,18 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'BOP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14137" }},
-{data: { id: 'RPL8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62917" }},
-{data: { id: 'PES1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00541" }},
-{data: { id: 'NIP7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y221" }}], 
- edges: [{ data: { source: 'BOP1', target: 'PES1', directed: 'false', weight: 0.904792} },
-{ data: { source: 'RPL8', target: 'NIP7', directed: 'false', weight: 0.719877} },
-{ data: { source: 'PES1', target: 'NIP7', directed: 'false', weight: 0.35343600000000003} }]},
+elements:{nodes: [{data: { id: 'ADARB1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P78563" }},
+{data: { id: 'USP39', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q53GS9" }},
+{data: { id: 'PRPF4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43172" }},
+{data: { id: 'DDX5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P17844" }},
+{data: { id: 'NMT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P30419" }},
+{data: { id: 'SF3B6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y3B4" }}], 
+ edges: [{ data: { source: 'USP39', target: 'PRPF4', directed: 'false', weight: 0.940139} },
+{ data: { source: 'USP39', target: 'SF3B6', directed: 'false', weight: 0.106188} },
+{ data: { source: 'USP39', target: 'DDX5', directed: 'false', weight: 0.761811} },
+{ data: { source: 'USP39', target: 'NMT1', directed: 'false', weight: 0.800991} },
+{ data: { source: 'USP39', target: 'ADARB1', directed: 'false', weight: 0.275382} },
+{ data: { source: 'SF3B6', target: 'PRPF4', directed: 'false', weight: 0.3218} }]},
 
 style: [
     {
@@ -96,7 +101,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.4 PeBoW complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.1 CTNNB1-DDX5-HDGF complex match 3<br> Complex Score = 0.35000<br> Unweighted Density = 0.40
     </section>
     </body>
     </html>

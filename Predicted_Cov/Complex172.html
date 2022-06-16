@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> RBM38 RBM24 DMKN</title>
+<title> 0.3 Ecsit complex (ECSIT, NDUFS3, NDUFAF1)</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,11 +30,29 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'DMKN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6E0U4" }},
-{data: { id: 'RBM24', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BX46" }},
-{data: { id: 'RBM38', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H0Z9" }}], 
- edges: [{ data: { source: 'DMKN', target: 'RBM24', directed: 'false', weight: 0.105609} },
-{ data: { source: 'RBM24', target: 'RBM38', directed: 'false', weight: 0.795666} }]},
+elements:{nodes: [{data: { id: 'SARS-CoV2 orf9c', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 orf9c.html" }},
+{data: { id: 'NDUFAF1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9Y375" }},
+{data: { id: 'SARS-CoV2 orf9c', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 orf9c.html" }},
+{data: { id: 'ECSIT', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9BQ95" }},
+{data: { id: 'SARS-CoV2 orf9c', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 orf9c.html" }},
+{data: { id: 'NDUFB9', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9Y6M9" }},
+{data: { id: 'NDUFS2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75306" }},
+{data: { id: 'NDUFA3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95167" }},
+{data: { id: 'NDUFB10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O96000" }}], 
+ edges: [{ data: { source: 'SARS-CoV2 orf9c', target: 'NDUFAF1', directed: 'false', weight: 0.762046149, type: 'sars'} },
+{ data: { source: 'SARS-CoV2 orf9c', target: 'ECSIT', directed: 'false', weight: 0.776412187, type: 'sars'} },
+{ data: { source: 'SARS-CoV2 orf9c', target: 'NDUFB9', directed: 'false', weight: 0.966177822, type: 'sars'} },
+{ data: { source: 'NDUFAF1', target: 'ECSIT', directed: 'false', weight: 0.985202} },
+{ data: { source: 'ECSIT', target: 'NDUFB9', directed: 'false', weight: 0.256669} },
+{ data: { source: 'ECSIT', target: 'NDUFS2', directed: 'false', weight: 0.236511} },
+{ data: { source: 'ECSIT', target: 'NDUFB10', directed: 'false', weight: 0.23263000000000003} },
+{ data: { source: 'ECSIT', target: 'NDUFA3', directed: 'false', weight: 0.187644} },
+{ data: { source: 'NDUFS2', target: 'NDUFB10', directed: 'false', weight: 0.23121599999999998} },
+{ data: { source: 'NDUFS2', target: 'NDUFA3', directed: 'false', weight: 0.142005} },
+{ data: { source: 'NDUFS2', target: 'NDUFB9', directed: 'false', weight: 0.059398} },
+{ data: { source: 'NDUFB10', target: 'NDUFB9', directed: 'false', weight: 0.149338} },
+{ data: { source: 'NDUFB10', target: 'NDUFA3', directed: 'false', weight: 0.19279100000000002} },
+{ data: { source: 'NDUFB9', target: 'NDUFA3', directed: 'false', weight: 0.108921} }]},
 
 style: [
     {
@@ -94,7 +112,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    RBM38 RBM24 DMKN<br> Complex Score = 0.38800<br> Unweighted Density = 0.67
+    0.3 Ecsit complex (ECSIT, NDUFS3, NDUFAF1)<br> Complex Score = 0.39375<br> Unweighted Density = 0.73
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        3 interacting protein(s): <br>NDUFAF1 ECSIT NDUFB9
     </section>
     </body>
     </html>

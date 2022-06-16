@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> OCC1 UNC119 PRKG2 RNF34 DKFZp434A0172</title>
+<title> 0.2 REEP5-SPG33 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,16 +30,20 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'UNC119', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13432" }},
-{data: { id: 'PRKG2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13237" }},
-{data: { id: 'DKFZp434A0172', score: 1, type: '', href: "https://www.uniprot.org/uniprot/Q69YW6" }},
-{data: { id: 'OCC1', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q8TAD7" }},
-{data: { id: 'RNF34', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q969K3" }}], 
- edges: [{ data: { source: 'UNC119', target: 'PRKG2', directed: 'false', weight: 0.885791} },
-{ data: { source: 'UNC119', target: 'DKFZp434A0172', directed: 'false', weight: 0.453505} },
-{ data: { source: 'UNC119', target: 'OCC1', directed: 'false', weight: 0.252129} },
-{ data: { source: 'UNC119', target: 'RNF34', directed: 'false', weight: 0.102907} },
-{ data: { source: 'DKFZp434A0172', target: 'RNF34', directed: 'false', weight: 0.234386} }]},
+elements:{nodes: [{data: { id: 'SARS-CoV2 M', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 M.html" }},
+{data: { id: 'REEP6', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q96HR9" }},
+{data: { id: 'ATP1B3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P54709" }},
+{data: { id: 'SARS-CoV2 M', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 M.html" }},
+{data: { id: 'REEP5', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q00765" }},
+{data: { id: 'IL2RG', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P31785" }},
+{data: { id: 'SCAMP4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q969E2" }}], 
+ edges: [{ data: { source: 'SARS-CoV2 M', target: 'REEP6', directed: 'false', weight: 0.955657163, type: 'sars'} },
+{ data: { source: 'SARS-CoV2 M', target: 'REEP5', directed: 'false', weight: 0.913088507, type: 'sars'} },
+{ data: { source: 'ATP1B3', target: 'REEP5', directed: 'false', weight: 0.7400399999999999} },
+{ data: { source: 'REEP5', target: 'REEP6', directed: 'false', weight: 0.997417} },
+{ data: { source: 'REEP5', target: 'SCAMP4', directed: 'false', weight: 0.981615} },
+{ data: { source: 'REEP6', target: 'IL2RG', directed: 'false', weight: 0.609776} },
+{ data: { source: 'REEP6', target: 'SCAMP4', directed: 'false', weight: 0.165074} }]},
 
 style: [
     {
@@ -99,7 +103,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    OCC1 UNC119 PRKG2 RNF34 DKFZp434A0172<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.2 REEP5-SPG33 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        2 interacting protein(s): <br>REEP6 REEP5
     </section>
     </body>
     </html>

@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 RHAMM-beta-catenin complex</title>
+<title> 0.2 USP7-MAGEL2-TRIM27 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,40 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'FLJ00380', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q8NF22" }},
-{data: { id: 'HMMR', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75330" }},
-{data: { id: 'GRIK1-AS2', score: 0, type: '', href: "https://www.ncbi.nlm.nih.gov/gene/100379661" }},
-{data: { id: 'MAFF', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9ULX9" }}], 
- edges: [{ data: { source: 'HMMR', target: 'GRIK1-AS2', directed: 'false', weight: 0.959334} },
-{ data: { source: 'FLJ00380', target: 'MAFF', directed: 'false', weight: 0.973728} },
-{ data: { source: 'GRIK1-AS2', target: 'MAFF', directed: 'false', weight: 0.999252} }]},
+elements:{nodes: [{data: { id: 'ZNF609', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15014" }},
+{data: { id: 'USP7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q93009" }},
+{data: { id: 'TRIM27', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P14373" }},
+{data: { id: 'KDM2B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NHM5" }},
+{data: { id: 'ZNF621', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q6ZSS3" }},
+{data: { id: 'DHX40', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q8IX18" }},
+{data: { id: 'PCGF2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P35227" }},
+{data: { id: 'ACTL8', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q9H568" }},
+{data: { id: 'ETV6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P41212" }},
+{data: { id: 'BCL6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P41182" }}], 
+ edges: [{ data: { source: 'ZNF609', target: 'USP7', directed: 'false', weight: 0.649476} },
+{ data: { source: 'ZNF609', target: 'ACTL8', directed: 'false', weight: 0.060499800000000006} },
+{ data: { source: 'ZNF609', target: 'TRIM27', directed: 'false', weight: 0.05737180000000001} },
+{ data: { source: 'ZNF609', target: 'DHX40', directed: 'false', weight: 0.0974347} },
+{ data: { source: 'ZNF609', target: 'ETV6', directed: 'false', weight: 0.0974347} },
+{ data: { source: 'ZNF609', target: 'BCL6', directed: 'false', weight: 0.0896083} },
+{ data: { source: 'PCGF2', target: 'KDM2B', directed: 'false', weight: 0.171414} },
+{ data: { source: 'ZNF621', target: 'TRIM27', directed: 'false', weight: 0.26713600000000004} },
+{ data: { source: 'USP7', target: 'ACTL8', directed: 'false', weight: 0.9735659999999999} },
+{ data: { source: 'USP7', target: 'TRIM27', directed: 'false', weight: 0.9733850000000001} },
+{ data: { source: 'USP7', target: 'DHX40', directed: 'false', weight: 0.738557} },
+{ data: { source: 'USP7', target: 'ETV6', directed: 'false', weight: 0.547676} },
+{ data: { source: 'USP7', target: 'BCL6', directed: 'false', weight: 0.5053449999999999} },
+{ data: { source: 'TRIM27', target: 'ACTL8', directed: 'false', weight: 0.043976999999999995} },
+{ data: { source: 'TRIM27', target: 'BCL6', directed: 'false', weight: 0.132627} },
+{ data: { source: 'TRIM27', target: 'DHX40', directed: 'false', weight: 0.10703599999999999} },
+{ data: { source: 'TRIM27', target: 'ETV6', directed: 'false', weight: 0.0741279} },
+{ data: { source: 'DHX40', target: 'ACTL8', directed: 'false', weight: 0.0783173} },
+{ data: { source: 'DHX40', target: 'ETV6', directed: 'false', weight: 0.125749} },
+{ data: { source: 'DHX40', target: 'BCL6', directed: 'false', weight: 0.115879} },
+{ data: { source: 'KDM2B', target: 'BCL6', directed: 'false', weight: 0.18832100000000002} },
+{ data: { source: 'ACTL8', target: 'BCL6', directed: 'false', weight: 0.155654} },
+{ data: { source: 'ACTL8', target: 'ETV6', directed: 'false', weight: 0.11932000000000001} },
+{ data: { source: 'ETV6', target: 'BCL6', directed: 'false', weight: 0.115879} }]},
 
 style: [
     {
@@ -96,7 +123,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 RHAMM-beta-catenin complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.2 USP7-MAGEL2-TRIM27 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.53
     </section>
     </body>
     </html>

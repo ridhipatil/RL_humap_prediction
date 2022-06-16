@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 DISC complex (FAS, FADD, CASP8)</title>
+<title> TIGAR NUDT16 BPGM KLF16</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,14 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'FADD', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13158" }},
-{data: { id: 'DKFZp686A24188', score: 1, type: '', href: "https://www.uniprot.org/uniprot/Q7Z2I8" }},
-{data: { id: 'hCG_16983', score: 2, type: '', href: "https://www.uniprot.org/uniprot/A0A024R3Z8" }},
-{data: { id: 'TNFRSF10A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00220" }}], 
- edges: [{ data: { source: 'FADD', target: 'DKFZp686A24188', directed: 'false', weight: 0.24355100000000002} },
-{ data: { source: 'FADD', target: 'TNFRSF10A', directed: 'false', weight: 0.0534388} },
-{ data: { source: 'DKFZp686A24188', target: 'hCG_16983', directed: 'false', weight: 0.268352} },
-{ data: { source: 'hCG_16983', target: 'TNFRSF10A', directed: 'false', weight: 0.126142} }]},
+elements:{nodes: [{data: { id: 'BPGM', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P07738" }},
+{data: { id: 'NUDT16', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96DE0" }},
+{data: { id: 'KLF16', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9BXK1" }},
+{data: { id: 'TIGAR', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NQ88" }}], 
+ edges: [{ data: { source: 'KLF16', target: 'BPGM', directed: 'false', weight: 0.977399} },
+{ data: { source: 'BPGM', target: 'TIGAR', directed: 'false', weight: 0.369221} },
+{ data: { source: 'NUDT16', target: 'TIGAR', directed: 'false', weight: 0.396771} }]},
 
 style: [
     {
@@ -97,7 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 DISC complex (FAS, FADD, CASP8)<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
+    TIGAR NUDT16 BPGM KLF16<br> Complex Score = 0.30000<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

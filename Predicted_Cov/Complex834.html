@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 GNAI1-GNB1-GNG12 complex</title>
+<title> 0.3 Ubiquitin E3 ligase (CUL3, KLHL42)</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,28 +30,35 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'GNAI1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P63096" }},
-{data: { id: 'RGS14', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43566" }},
-{data: { id: 'hCG_1994888', score: 2, type: '', href: "https://www.uniprot.org/uniprot/A0A024R156" }},
-{data: { id: 'GNAI3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P08754" }}], 
- edges: [{ data: { source: 'GNAI1', target: 'GNAI3', directed: 'false', weight: 0.999877} },
-{ data: { source: 'GNAI1', target: 'RGS14', directed: 'false', weight: 0.956385} },
-{ data: { source: 'GNAI1', target: 'hCG_1994888', directed: 'false', weight: 0.027073200000000002} },
-{ data: { source: 'RGS14', target: 'GNAI3', directed: 'false', weight: 0.0281894} },
-{ data: { source: 'hCG_1994888', target: 'GNAI3', directed: 'false', weight: 0.133706} }]},
+elements:{nodes: [{data: { id: 'KBTBD6', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q86V97" }},
+{data: { id: 'CUL3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13618" }},
+{data: { id: 'KLHL42', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9P2K6" }},
+{data: { id: 'KBTBD7', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q8WVZ9" }},
+{data: { id: 'TEFM', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96QE5" }},
+{data: { id: 'DOK4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TEW6" }}], 
+ edges: [{ data: { source: 'CUL3', target: 'KLHL42', directed: 'false', weight: 0.9847389999999999} },
+{ data: { source: 'CUL3', target: 'KBTBD6', directed: 'false', weight: 0.94419} },
+{ data: { source: 'KBTBD6', target: 'KLHL42', directed: 'false', weight: 0.149257} },
+{ data: { source: 'KBTBD6', target: 'KBTBD7', directed: 'false', weight: 0.9526680000000001} },
+{ data: { source: 'KBTBD6', target: 'DOK4', directed: 'false', weight: 0.326046} },
+{ data: { source: 'KBTBD6', target: 'TEFM', directed: 'false', weight: 0.115879} },
+{ data: { source: 'KBTBD7', target: 'TEFM', directed: 'false', weight: 0.907148} },
+{ data: { source: 'KBTBD7', target: 'DOK4', directed: 'false', weight: 0.38000700000000004} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 30,
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}  
                                  if ( ele.data('type') == 'sars' ){return 'triangle'}   
   return 'rectangle';
   },            
-            'background-color': function( ele ){ 
+             'background-color': function( ele ){ 
                                 if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
 								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
                                  if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
@@ -65,7 +72,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
 								'line-color': function( ele ){ 
                                  if ( ele.data('type') == 'sars' ){return 'red'}   
   return 'blue';
@@ -77,7 +84,10 @@ style: [
 
 });
 cy.layout({
-    'name': 'circle'
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -93,7 +103,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 GNAI1-GNB1-GNG12 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.83
+    0.3 Ubiquitin E3 ligase (CUL3, KLHL42)<br> Complex Score = 0.37500<br> Unweighted Density = 0.53
     </section>
     </body>
     </html>

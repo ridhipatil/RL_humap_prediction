@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> HEL-S-17 DDI2 UCHL3 HEL-S-30</title>
+<title> NMT2 NCK1 WIPF2 WIPF3 NCK2</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,18 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'UCHL3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P15374" }},
-{data: { id: 'HEL-S-30', score: 3, type: '', href: "https://www.uniprot.org/uniprot/V9HWB8" }},
-{data: { id: 'HEL-S-17', score: 3, type: '', href: "https://www.uniprot.org/uniprot/A0A024R4F1" }},
-{data: { id: 'DDI2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5TDH0" }}], 
- edges: [{ data: { source: 'UCHL3', target: 'HEL-S-17', directed: 'false', weight: 0.124919} },
-{ data: { source: 'UCHL3', target: 'DDI2', directed: 'false', weight: 0.329075} },
-{ data: { source: 'HEL-S-17', target: 'HEL-S-30', directed: 'false', weight: 0.9468139999999999} }]},
+elements:{nodes: [{data: { id: 'WIPF2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TF74" }},
+{data: { id: 'NMT2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60551" }},
+{data: { id: 'NCK1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P16333" }},
+{data: { id: 'NCK2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43639" }},
+{data: { id: 'WIPF3', score: 4, type: '', href: "https://www.uniprot.org/uniprot/A6NGB9" }}], 
+ edges: [{ data: { source: 'NMT2', target: 'NCK1', directed: 'false', weight: 0.3037} },
+{ data: { source: 'NCK1', target: 'NCK2', directed: 'false', weight: 0.9688329999999999} },
+{ data: { source: 'NCK1', target: 'WIPF2', directed: 'false', weight: 0.9825729999999999} },
+{ data: { source: 'NCK1', target: 'WIPF3', directed: 'false', weight: 0.140692} },
+{ data: { source: 'NCK2', target: 'WIPF3', directed: 'false', weight: 0.979942} },
+{ data: { source: 'NCK2', target: 'WIPF2', directed: 'false', weight: 0.9714290000000001} },
+{ data: { source: 'WIPF2', target: 'WIPF3', directed: 'false', weight: 0.151455} }]},
 
 style: [
     {
@@ -96,7 +101,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    HEL-S-17 DDI2 UCHL3 HEL-S-30<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    NMT2 NCK1 WIPF2 WIPF3 NCK2<br> Complex Score = 0.38750<br> Unweighted Density = 0.70
     </section>
     </body>
     </html>

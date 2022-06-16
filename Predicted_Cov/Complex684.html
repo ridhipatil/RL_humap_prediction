@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 CDK2-CCNA2 complex</title>
+<title> TTC1 SOGA1 SAMHD1 RNF41 MTCL1</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,20 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'CCNA2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P20248" }},
-{data: { id: 'PLIN3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60664" }},
-{data: { id: 'VIPR2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P41587" }},
-{data: { id: 'PKMYT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99640" }}], 
- edges: [{ data: { source: 'CCNA2', target: 'PKMYT1', directed: 'false', weight: 0.9727049999999999} },
-{ data: { source: 'PLIN3', target: 'PKMYT1', directed: 'false', weight: 0.315625} },
-{ data: { source: 'PLIN3', target: 'VIPR2', directed: 'false', weight: 0.357892} }]},
+elements:{nodes: [{data: { id: 'TTC1', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q99614" }},
+{data: { id: 'MTCL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y4B5" }},
+{data: { id: 'SOGA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O94964" }},
+{data: { id: 'SARS-CoV2 nsp15', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp15.html" }},
+{data: { id: 'RNF41', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9H4P4" }},
+{data: { id: 'SAMHD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y3Z3" }}], 
+ edges: [{ data: { source: 'SARS-CoV2 nsp15', target: 'RNF41', directed: 'false', weight: 0.993560817, type: 'sars'} },
+{ data: { source: 'SOGA1', target: 'RNF41', directed: 'false', weight: 0.753696} },
+{ data: { source: 'SOGA1', target: 'SAMHD1', directed: 'false', weight: 0.617458} },
+{ data: { source: 'SOGA1', target: 'MTCL1', directed: 'false', weight: 0.404448} },
+{ data: { source: 'SAMHD1', target: 'MTCL1', directed: 'false', weight: 0.24502800000000002} },
+{ data: { source: 'TTC1', target: 'RNF41', directed: 'false', weight: 0.691632} },
+{ data: { source: 'TTC1', target: 'MTCL1', directed: 'false', weight: 0.0593614} },
+{ data: { source: 'RNF41', target: 'MTCL1', directed: 'false', weight: 0.407647} }]},
 
 style: [
     {
@@ -96,7 +103,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 CDK2-CCNA2 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    TTC1 SOGA1 SAMHD1 RNF41 MTCL1<br> Complex Score = 0.38750<br> Unweighted Density = 0.70
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>RNF41
     </section>
     </body>
     </html>

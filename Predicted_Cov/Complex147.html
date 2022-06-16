@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.4 RAB11FIP1-RAB11A complex</title>
+<title> 0.1 C complex spliceosome</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,18 +30,45 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'RAB11A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62491" }},
-{data: { id: 'RAB11FIP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6WKZ4" }},
-{data: { id: 'RAB11B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15907" }},
-{data: { id: 'RAB25', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P57735" }},
-{data: { id: 'RAB11FIP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q7L804" }}], 
- edges: [{ data: { source: 'RAB11A', target: 'RAB11FIP2', directed: 'false', weight: 0.9999959999999999} },
-{ data: { source: 'RAB11A', target: 'RAB11B', directed: 'false', weight: 0.10610399999999999} },
-{ data: { source: 'RAB11A', target: 'RAB11FIP1', directed: 'false', weight: 0.985186} },
-{ data: { source: 'RAB11A', target: 'RAB25', directed: 'false', weight: 0.807126} },
-{ data: { source: 'RAB11FIP1', target: 'RAB11B', directed: 'false', weight: 0.8422120000000001} },
-{ data: { source: 'RAB11B', target: 'RAB11FIP2', directed: 'false', weight: 0.9999979999999999} },
-{ data: { source: 'RAB11B', target: 'RAB25', directed: 'false', weight: 0.7032970000000001} }]},
+elements:{nodes: [{data: { id: 'BUD31', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P41223" }},
+{data: { id: 'CRNKL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BZJ0" }},
+{data: { id: 'CACTIN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WUQ7" }},
+{data: { id: 'DHX8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14562" }},
+{data: { id: 'RAB43', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86YS6" }},
+{data: { id: 'DHX35', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H5Z1" }},
+{data: { id: 'AQR', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60306" }},
+{data: { id: 'SARS-CoV2 nsp12', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp12.html" }},
+{data: { id: 'SLU7', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/O95391" }},
+{data: { id: 'ZNF830', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96NB3" }}], 
+ edges: [{ data: { source: 'SARS-CoV2 nsp12', target: 'SLU7', directed: 'false', weight: 0.989493635, type: 'sars'} },
+{ data: { source: 'BUD31', target: 'AQR', directed: 'false', weight: 0.821766} },
+{ data: { source: 'BUD31', target: 'CRNKL1', directed: 'false', weight: 0.799242} },
+{ data: { source: 'BUD31', target: 'DHX8', directed: 'false', weight: 0.26213800000000004} },
+{ data: { source: 'BUD31', target: 'DHX35', directed: 'false', weight: 0.540991} },
+{ data: { source: 'CRNKL1', target: 'AQR', directed: 'false', weight: 1.0} },
+{ data: { source: 'CRNKL1', target: 'DHX8', directed: 'false', weight: 0.999886} },
+{ data: { source: 'CRNKL1', target: 'RAB43', directed: 'false', weight: 0.9912} },
+{ data: { source: 'CRNKL1', target: 'SLU7', directed: 'false', weight: 0.981668} },
+{ data: { source: 'CRNKL1', target: 'ZNF830', directed: 'false', weight: 0.974584} },
+{ data: { source: 'CRNKL1', target: 'CACTIN', directed: 'false', weight: 0.927649} },
+{ data: { source: 'CRNKL1', target: 'DHX35', directed: 'false', weight: 0.6783560000000001} },
+{ data: { source: 'CACTIN', target: 'AQR', directed: 'false', weight: 0.45698500000000003} },
+{ data: { source: 'CACTIN', target: 'DHX8', directed: 'false', weight: 0.873367} },
+{ data: { source: 'CACTIN', target: 'ZNF830', directed: 'false', weight: 0.25852800000000004} },
+{ data: { source: 'CACTIN', target: 'RAB43', directed: 'false', weight: 0.921323} },
+{ data: { source: 'CACTIN', target: 'SLU7', directed: 'false', weight: 0.18832100000000002} },
+{ data: { source: 'DHX8', target: 'AQR', directed: 'false', weight: 0.981957} },
+{ data: { source: 'DHX8', target: 'RAB43', directed: 'false', weight: 0.958442} },
+{ data: { source: 'DHX8', target: 'SLU7', directed: 'false', weight: 0.2823} },
+{ data: { source: 'DHX8', target: 'ZNF830', directed: 'false', weight: 0.20959099999999997} },
+{ data: { source: 'DHX8', target: 'DHX35', directed: 'false', weight: 0.12021300000000001} },
+{ data: { source: 'RAB43', target: 'AQR', directed: 'false', weight: 0.9888299999999999} },
+{ data: { source: 'RAB43', target: 'ZNF830', directed: 'false', weight: 0.9663309999999999} },
+{ data: { source: 'RAB43', target: 'SLU7', directed: 'false', weight: 0.906827} },
+{ data: { source: 'DHX35', target: 'AQR', directed: 'false', weight: 0.708861} },
+{ data: { source: 'AQR', target: 'ZNF830', directed: 'false', weight: 0.8579469999999999} },
+{ data: { source: 'AQR', target: 'SLU7', directed: 'false', weight: 0.325934} },
+{ data: { source: 'SLU7', target: 'ZNF830', directed: 'false', weight: 0.229492} }]},
 
 style: [
     {
@@ -101,7 +128,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.4 RAB11FIP1-RAB11A complex<br> Complex Score = 0.38800<br> Unweighted Density = 0.70
+    0.1 C complex spliceosome<br> Complex Score = 0.39375<br> Unweighted Density = 0.78
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>SLU7
     </section>
     </body>
     </html>

@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 PPP2R1A-PPP2R3B complex</title>
+<title> 0.1 TNF-alpha/NF-kappa B signaling complex 6 match 3</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,25 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'IGBP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P78318" }},
-{data: { id: 'PPP2CB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62714" }},
-{data: { id: 'PPP2R5C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13362" }},
-{data: { id: 'PPP2R3B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y5P8" }}], 
- edges: [{ data: { source: 'IGBP1', target: 'PPP2CB', directed: 'false', weight: 0.345109} },
-{ data: { source: 'PPP2CB', target: 'PPP2R3B', directed: 'false', weight: 0.991649} },
-{ data: { source: 'PPP2CB', target: 'PPP2R5C', directed: 'false', weight: 0.974664} }]},
+elements:{nodes: [{data: { id: 'RPS15A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62244" }},
+{data: { id: 'PUM3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15397" }},
+{data: { id: 'PPAN-P2RY11', score: 2, type: '', href: "https://www.uniprot.org/uniprot/A0A0B4J1V8" }},
+{data: { id: 'RPL8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62917" }},
+{data: { id: 'RPL23', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62829" }},
+{data: { id: 'RPL3L', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q92901" }},
+{data: { id: 'RRS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15050" }}], 
+ edges: [{ data: { source: 'RPS15A', target: 'RPL23', directed: 'false', weight: 1.0} },
+{ data: { source: 'RPS15A', target: 'RPL8', directed: 'false', weight: 1.0} },
+{ data: { source: 'RPS15A', target: 'PUM3', directed: 'false', weight: 0.626111} },
+{ data: { source: 'PUM3', target: 'RPL23', directed: 'false', weight: 0.325308} },
+{ data: { source: 'PUM3', target: 'RPL8', directed: 'false', weight: 0.94704} },
+{ data: { source: 'PUM3', target: 'RRS1', directed: 'false', weight: 0.998236} },
+{ data: { source: 'PUM3', target: 'PPAN-P2RY11', directed: 'false', weight: 0.9262319999999999} },
+{ data: { source: 'PUM3', target: 'RPL3L', directed: 'false', weight: 0.10554300000000001} },
+{ data: { source: 'RRS1', target: 'PPAN-P2RY11', directed: 'false', weight: 0.9868399999999999} },
+{ data: { source: 'RPL8', target: 'RPL23', directed: 'false', weight: 0.9999979999999999} },
+{ data: { source: 'RPL8', target: 'RPL3L', directed: 'false', weight: 0.999974} },
+{ data: { source: 'RPL23', target: 'RPL3L', directed: 'false', weight: 0.977769} }]},
 
 style: [
     {
@@ -96,7 +108,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 PPP2R1A-PPP2R3B complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.1 TNF-alpha/NF-kappa B signaling complex 6 match 3<br> Complex Score = 0.38750<br> Unweighted Density = 0.57
     </section>
     </body>
     </html>

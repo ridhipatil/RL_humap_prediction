@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 Isocitrate dehydrogenase [NADP], cytoplasmic</title>
+<title> 0.2 TRAPP complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,24 +30,22 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'GMPR2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9P2T1" }},
-{data: { id: 'TXNDC17', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BRA2" }},
-{data: { id: 'PGD', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P52209" }},
-{data: { id: 'IDH1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75874" }},
-{data: { id: 'GMPR', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P36959" }},
-{data: { id: 'NAXE', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NCW5" }}], 
- edges: [{ data: { source: 'GMPR2', target: 'GMPR', directed: 'false', weight: 0.9914350000000001} },
-{ data: { source: 'GMPR2', target: 'IDH1', directed: 'false', weight: 0.62517} },
-{ data: { source: 'GMPR2', target: 'NAXE', directed: 'false', weight: 0.351523} },
-{ data: { source: 'GMPR2', target: 'TXNDC17', directed: 'false', weight: 0.13636099999999998} },
-{ data: { source: 'GMPR2', target: 'PGD', directed: 'false', weight: 0.0203124} },
-{ data: { source: 'TXNDC17', target: 'IDH1', directed: 'false', weight: 0.68223} },
-{ data: { source: 'TXNDC17', target: 'PGD', directed: 'false', weight: 0.189523} },
-{ data: { source: 'PGD', target: 'GMPR', directed: 'false', weight: 0.0556205} },
-{ data: { source: 'PGD', target: 'IDH1', directed: 'false', weight: 0.8715940000000001} },
-{ data: { source: 'IDH1', target: 'GMPR', directed: 'false', weight: 0.793812} },
-{ data: { source: 'IDH1', target: 'NAXE', directed: 'false', weight: 0.53797} },
-{ data: { source: 'GMPR', target: 'NAXE', directed: 'false', weight: 0.0961935} }]},
+elements:{nodes: [{data: { id: 'CABS1', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q96KC9" }},
+{data: { id: 'TRAPPC9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96Q05" }},
+{data: { id: 'BCL2L14', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BZR8" }},
+{data: { id: 'MAP11', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WVR3" }},
+{data: { id: 'TRAPPC10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P48553" }},
+{data: { id: 'TRAPPC6B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86SZ2" }}], 
+ edges: [{ data: { source: 'BCL2L14', target: 'TRAPPC6B', directed: 'false', weight: 0.9188120000000001} },
+{ data: { source: 'BCL2L14', target: 'MAP11', directed: 'false', weight: 0.804624} },
+{ data: { source: 'BCL2L14', target: 'TRAPPC10', directed: 'false', weight: 0.712344} },
+{ data: { source: 'BCL2L14', target: 'TRAPPC9', directed: 'false', weight: 0.41198999999999997} },
+{ data: { source: 'TRAPPC6B', target: 'MAP11', directed: 'false', weight: 0.133456} },
+{ data: { source: 'TRAPPC6B', target: 'TRAPPC10', directed: 'false', weight: 0.117318} },
+{ data: { source: 'TRAPPC6B', target: 'TRAPPC9', directed: 'false', weight: 0.102922} },
+{ data: { source: 'CABS1', target: 'TRAPPC10', directed: 'false', weight: 0.5736600000000001} },
+{ data: { source: 'CABS1', target: 'TRAPPC9', directed: 'false', weight: 0.408377} },
+{ data: { source: 'MAP11', target: 'TRAPPC10', directed: 'false', weight: 0.25848000000000004} }]},
 
 style: [
     {
@@ -107,7 +105,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 Isocitrate dehydrogenase [NADP], cytoplasmic<br> Complex Score = 0.38800<br> Unweighted Density = 0.80
+    0.2 TRAPP complex<br> Complex Score = 0.38750<br> Unweighted Density = 0.67
     </section>
     </body>
     </html>

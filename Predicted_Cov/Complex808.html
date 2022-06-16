@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.05 60S ribosomal subunit, cytoplasmic match 4</title>
+<title> HYI SERPINB1 ITPA LACTB2 TBC1D8B</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,16 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'RBM47', score: 5, type: '', href: "https://www.uniprot.org/uniprot/A0AV96" }},
-{data: { id: 'ACF', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NQ94" }},
-{data: { id: 'RPLP0', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P05388" }},
-{data: { id: 'TUBA8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NY65" }}], 
- edges: [{ data: { source: 'RBM47', target: 'TUBA8', directed: 'false', weight: 0.664063} },
-{ data: { source: 'RBM47', target: 'ACF', directed: 'false', weight: 0.5474859999999999} },
-{ data: { source: 'RPLP0', target: 'TUBA8', directed: 'false', weight: 0.34670100000000004} }]},
+elements:{nodes: [{data: { id: 'TBC1D8B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q0IIM8" }},
+{data: { id: 'SERPINB1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P30740" }},
+{data: { id: 'HYI', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q5T013" }},
+{data: { id: 'LACTB2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q53H82" }},
+{data: { id: 'ITPA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BY32" }}], 
+ edges: [{ data: { source: 'TBC1D8B', target: 'LACTB2', directed: 'false', weight: 0.367274} },
+{ data: { source: 'HYI', target: 'ITPA', directed: 'false', weight: 0.6908989999999999} },
+{ data: { source: 'HYI', target: 'LACTB2', directed: 'false', weight: 0.653994} },
+{ data: { source: 'LACTB2', target: 'ITPA', directed: 'false', weight: 0.51} },
+{ data: { source: 'ITPA', target: 'SERPINB1', directed: 'false', weight: 0.961023} }]},
 
 style: [
     {
@@ -96,7 +99,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.05 60S ribosomal subunit, cytoplasmic match 4<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    HYI SERPINB1 ITPA LACTB2 TBC1D8B<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

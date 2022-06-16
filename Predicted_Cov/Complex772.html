@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 SF3b complex</title>
+<title> 0.1 Calcineurin-FKBP12 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,15 +30,19 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'SARS-CoV2 N', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 N.html" }},
-{data: { id: 'DDX21', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9NR30" }},
-{data: { id: 'SF3B3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15393" }},
-{data: { id: 'P4HA2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15460" }},
-{data: { id: 'SF3B2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13435" }}], 
- edges: [{ data: { source: 'SARS-CoV2 N', target: 'DDX21', directed: 'false', weight: 0.613544528, type: 'sars'} },
-{ data: { source: 'SF3B3', target: 'SF3B2', directed: 'false', weight: 1.0} },
-{ data: { source: 'SF3B3', target: 'P4HA2', directed: 'false', weight: 0.732795} },
-{ data: { source: 'DDX21', target: 'SF3B2', directed: 'false', weight: 0.42647399999999996} }]},
+elements:{nodes: [{data: { id: 'TALDO1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P37837" }},
+{data: { id: 'PEPD', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P12955" }},
+{data: { id: 'TAGLN3', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q9UI15" }},
+{data: { id: 'ENO3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P13929" }},
+{data: { id: 'FKBP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P26885" }},
+{data: { id: 'FKBP1A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62942" }}], 
+ edges: [{ data: { source: 'PEPD', target: 'TALDO1', directed: 'false', weight: 0.808639} },
+{ data: { source: 'TAGLN3', target: 'FKBP1A', directed: 'false', weight: 0.998099} },
+{ data: { source: 'TAGLN3', target: 'ENO3', directed: 'false', weight: 0.8680959999999999} },
+{ data: { source: 'TAGLN3', target: 'TALDO1', directed: 'false', weight: 0.864368} },
+{ data: { source: 'ENO3', target: 'FKBP1A', directed: 'false', weight: 0.66335} },
+{ data: { source: 'ENO3', target: 'FKBP2', directed: 'false', weight: 0.619925} },
+{ data: { source: 'FKBP2', target: 'FKBP1A', directed: 'false', weight: 0.959016} }]},
 
 style: [
     {
@@ -98,12 +102,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 SF3b complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>DDX21
+    0.1 Calcineurin-FKBP12 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.47
     </section>
     </body>
     </html>

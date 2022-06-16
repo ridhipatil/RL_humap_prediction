@@ -30,13 +30,27 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'SNAPIN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95295" }},
-{data: { id: 'DKFZp686M09200', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q6MZP0" }},
-{data: { id: 'CEP170', score: 5, type: '', href: "https://www.ncbi.nlm.nih.gov/gene/645455" }},
-{data: { id: 'KIFC3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BVG8" }}], 
- edges: [{ data: { source: 'SNAPIN', target: 'CEP170', directed: 'false', weight: 0.9889049999999999} },
-{ data: { source: 'DKFZp686M09200', target: 'CEP170', directed: 'false', weight: 0.41148} },
-{ data: { source: 'CEP170', target: 'KIFC3', directed: 'false', weight: 0.9894430000000001} }]},
+elements:{nodes: [{data: { id: 'B4GALT3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60512" }},
+{data: { id: 'CHST14', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NCH0" }},
+{data: { id: 'CHST12', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NRB3" }},
+{data: { id: 'ADAM17', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P78536" }},
+{data: { id: 'PACC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H813" }},
+{data: { id: 'LRIG1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96JA1" }},
+{data: { id: 'LRFN3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BTN0" }},
+{data: { id: 'SCAP', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q12770" }}], 
+ edges: [{ data: { source: 'B4GALT3', target: 'CHST14', directed: 'false', weight: 0.40644} },
+{ data: { source: 'CHST14', target: 'LRIG1', directed: 'false', weight: 0.26962800000000003} },
+{ data: { source: 'CHST14', target: 'CHST12', directed: 'false', weight: 0.318657} },
+{ data: { source: 'CHST14', target: 'LRFN3', directed: 'false', weight: 0.223189} },
+{ data: { source: 'CHST14', target: 'PACC1', directed: 'false', weight: 0.124124} },
+{ data: { source: 'CHST12', target: 'LRIG1', directed: 'false', weight: 0.35973099999999997} },
+{ data: { source: 'CHST12', target: 'LRFN3', directed: 'false', weight: 0.353919} },
+{ data: { source: 'CHST12', target: 'PACC1', directed: 'false', weight: 0.124904} },
+{ data: { source: 'ADAM17', target: 'LRIG1', directed: 'false', weight: 0.30286599999999997} },
+{ data: { source: 'PACC1', target: 'LRIG1', directed: 'false', weight: 0.07892769999999999} },
+{ data: { source: 'PACC1', target: 'SCAP', directed: 'false', weight: 0.310974} },
+{ data: { source: 'PACC1', target: 'LRFN3', directed: 'false', weight: 0.102586} },
+{ data: { source: 'LRIG1', target: 'LRFN3', directed: 'false', weight: 0.25908400000000004} }]},
 
 style: [
     {
@@ -85,6 +99,11 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.37500
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>SCAP
     </section>
     </body>
     </html>

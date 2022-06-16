@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 TBCE-TBCB-tubulin(alpha) complex</title>
+<title> CD207 S100A7A SUSD3</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,26 +30,25 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'TBCE', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15813" }},
-{data: { id: 'HEL-S-61p', score: 2, type: '', href: "https://www.uniprot.org/uniprot/V9HWA4" }},
-{data: { id: 'BHMT2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H2M3" }}], 
- edges: [{ data: { source: 'TBCE', target: 'BHMT2', directed: 'false', weight: 0.28082399999999996} },
-{ data: { source: 'HEL-S-61p', target: 'BHMT2', directed: 'false', weight: 0.995999} }]},
+elements:{nodes: [{data: { id: 'SUSD3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96L08" }},
+{data: { id: 'S100A7A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86SG5" }},
+{data: { id: 'CD207', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UJ71" }}], 
+ edges: [{ data: { source: 'SUSD3', target: 'CD207', directed: 'false', weight: 0.6604800000000001} },
+{ data: { source: 'SUSD3', target: 'S100A7A', directed: 'false', weight: 0.536403} },
+{ data: { source: 'S100A7A', target: 'CD207', directed: 'false', weight: 0.133456} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 10,
-		'width':'10',
-		'height': '10',	
+		'font-size': 30,
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}  
                                  if ( ele.data('type') == 'sars' ){return 'triangle'}   
   return 'rectangle';
   },            
-             'background-color': function( ele ){ 
+            'background-color': function( ele ){ 
                                 if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
 								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
                                  if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
@@ -63,7 +62,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
 								'line-color': function( ele ){ 
                                  if ( ele.data('type') == 'sars' ){return 'red'}   
   return 'blue';
@@ -75,10 +74,7 @@ style: [
 
 });
 cy.layout({
-    'name': 'fcose',
-		'animate':false,
-	'nodeDimensionsIncludeLabels':true,
-	'nodeSeparation': 1000
+    'name': 'circle'
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -94,7 +90,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 TBCE-TBCB-tubulin(alpha) complex<br> Complex Score = 0.38800<br> Unweighted Density = 0.67
+    CD207 S100A7A SUSD3<br> Complex Score = 0.38750<br> Unweighted Density = 1.00
     </section>
     </body>
     </html>

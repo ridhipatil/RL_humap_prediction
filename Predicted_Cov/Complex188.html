@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> AKR7A3 HEL-S-166mP AKR7L</title>
+<title> 0.1 N-WASp homomer complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,11 +30,29 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'AKR7A3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95154" }},
-{data: { id: 'HEL-S-166mP', score: 1, type: '', href: "https://www.uniprot.org/uniprot/V9HWA2" }},
-{data: { id: 'AKR7L', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q8NHP1" }}], 
- edges: [{ data: { source: 'AKR7A3', target: 'AKR7L', directed: 'false', weight: 1.0} },
-{ data: { source: 'AKR7A3', target: 'HEL-S-166mP', directed: 'false', weight: 0.9952639999999999} }]},
+elements:{nodes: [{data: { id: 'RAPH1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q70E73" }},
+{data: { id: 'TTC28', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96AY4" }},
+{data: { id: 'WASF3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UPY6" }},
+{data: { id: 'WASL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00401" }},
+{data: { id: 'NCK2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43639" }},
+{data: { id: 'SHB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15464" }},
+{data: { id: 'WIPF2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TF74" }}], 
+ edges: [{ data: { source: 'RAPH1', target: 'NCK2', directed: 'false', weight: 0.970038} },
+{ data: { source: 'RAPH1', target: 'WIPF2', directed: 'false', weight: 0.133456} },
+{ data: { source: 'RAPH1', target: 'WASL', directed: 'false', weight: 0.151455} },
+{ data: { source: 'RAPH1', target: 'WASF3', directed: 'false', weight: 0.151455} },
+{ data: { source: 'TTC28', target: 'NCK2', directed: 'false', weight: 0.643189} },
+{ data: { source: 'TTC28', target: 'SHB', directed: 'false', weight: 0.128057} },
+{ data: { source: 'WASF3', target: 'NCK2', directed: 'false', weight: 0.891223} },
+{ data: { source: 'WASF3', target: 'WIPF2', directed: 'false', weight: 0.151455} },
+{ data: { source: 'WASF3', target: 'WASL', directed: 'false', weight: 0.477649} },
+{ data: { source: 'WASF3', target: 'SHB', directed: 'false', weight: 0.171414} },
+{ data: { source: 'WASL', target: 'NCK2', directed: 'false', weight: 0.979517} },
+{ data: { source: 'WASL', target: 'WIPF2', directed: 'false', weight: 0.252467} },
+{ data: { source: 'WASL', target: 'SHB', directed: 'false', weight: 0.171414} },
+{ data: { source: 'NCK2', target: 'SHB', directed: 'false', weight: 0.9787370000000001} },
+{ data: { source: 'NCK2', target: 'WIPF2', directed: 'false', weight: 0.9714290000000001} },
+{ data: { source: 'SHB', target: 'WIPF2', directed: 'false', weight: 0.151455} }]},
 
 style: [
     {
@@ -94,7 +112,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    AKR7A3 HEL-S-166mP AKR7L<br> Complex Score = 0.38800<br> Unweighted Density = 0.67
+    0.1 N-WASp homomer complex<br> Complex Score = 0.39375<br> Unweighted Density = 0.76
     </section>
     </body>
     </html>

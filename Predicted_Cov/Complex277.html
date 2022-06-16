@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> RALGAPA2 DKFZp686N19168 RALGAPA1 GFOD1 GFOD2 NKIRAS2</title>
+<title> 0.2 28S ribosomal subunit, mitochondrial match 2</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,21 +30,38 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'RALGAPA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6GYQ0" }},
-{data: { id: 'NKIRAS2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NYR9" }},
-{data: { id: 'GFOD2', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q3B7J2" }},
-{data: { id: 'GFOD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NXC2" }},
-{data: { id: 'RALGAPA2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q2PPJ7" }},
-{data: { id: 'DKFZp686N19168', score: 1, type: '', href: "https://www.uniprot.org/uniprot/Q6MZJ2" }}], 
- edges: [{ data: { source: 'RALGAPA1', target: 'GFOD1', directed: 'false', weight: 0.999973} },
-{ data: { source: 'RALGAPA1', target: 'NKIRAS2', directed: 'false', weight: 0.976886} },
-{ data: { source: 'GFOD2', target: 'GFOD1', directed: 'false', weight: 0.9999889999999999} },
-{ data: { source: 'GFOD2', target: 'NKIRAS2', directed: 'false', weight: 0.532036} },
-{ data: { source: 'NKIRAS2', target: 'GFOD1', directed: 'false', weight: 0.558686} },
-{ data: { source: 'NKIRAS2', target: 'RALGAPA2', directed: 'false', weight: 0.990925} },
-{ data: { source: 'NKIRAS2', target: 'DKFZp686N19168', directed: 'false', weight: 0.928566} },
-{ data: { source: 'GFOD1', target: 'RALGAPA2', directed: 'false', weight: 1.0} },
-{ data: { source: 'GFOD1', target: 'DKFZp686N19168', directed: 'false', weight: 0.999935} }]},
+elements:{nodes: [{data: { id: 'MRPS17', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9Y2R5" }},
+{data: { id: 'SARS-CoV2 nsp8', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp8.html" }},
+{data: { id: 'MRPS2', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9Y399" }},
+{data: { id: 'MRPS11', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P82912" }},
+{data: { id: 'RSBN1L', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q6PCB5" }},
+{data: { id: 'MRPS22', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P82650" }},
+{data: { id: 'DDX55', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NHQ9" }},
+{data: { id: 'SARS-CoV2 nsp8', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp8.html" }},
+{data: { id: 'MRPS5', score: 4, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P82675" }},
+{data: { id: 'SARS-CoV2 nsp8', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp8.html" }},
+{data: { id: 'MRPS27', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q92552" }}], 
+ edges: [{ data: { source: 'SARS-CoV2 nsp8', target: 'MRPS2', directed: 'false', weight: 0.972057569, type: 'sars'} },
+{ data: { source: 'SARS-CoV2 nsp8', target: 'MRPS5', directed: 'false', weight: 0.63637328, type: 'sars'} },
+{ data: { source: 'SARS-CoV2 nsp8', target: 'MRPS27', directed: 'false', weight: 0.602806863, type: 'sars'} },
+{ data: { source: 'MRPS17', target: 'MRPS2', directed: 'false', weight: 0.91619} },
+{ data: { source: 'MRPS17', target: 'MRPS22', directed: 'false', weight: 0.980281} },
+{ data: { source: 'MRPS17', target: 'MRPS27', directed: 'false', weight: 0.9917819999999999} },
+{ data: { source: 'MRPS17', target: 'MRPS5', directed: 'false', weight: 0.9164690000000001} },
+{ data: { source: 'MRPS17', target: 'MRPS11', directed: 'false', weight: 0.565299} },
+{ data: { source: 'MRPS2', target: 'MRPS22', directed: 'false', weight: 0.999828} },
+{ data: { source: 'MRPS2', target: 'MRPS27', directed: 'false', weight: 0.998149} },
+{ data: { source: 'MRPS2', target: 'MRPS5', directed: 'false', weight: 0.9928530000000001} },
+{ data: { source: 'MRPS2', target: 'MRPS11', directed: 'false', weight: 0.9708690000000001} },
+{ data: { source: 'MRPS11', target: 'MRPS22', directed: 'false', weight: 0.9905229999999999} },
+{ data: { source: 'MRPS11', target: 'MRPS27', directed: 'false', weight: 0.829073} },
+{ data: { source: 'MRPS11', target: 'MRPS5', directed: 'false', weight: 0.9909389999999999} },
+{ data: { source: 'RSBN1L', target: 'MRPS22', directed: 'false', weight: 0.200541} },
+{ data: { source: 'RSBN1L', target: 'DDX55', directed: 'false', weight: 0.102922} },
+{ data: { source: 'MRPS22', target: 'MRPS27', directed: 'false', weight: 0.999999} },
+{ data: { source: 'MRPS22', target: 'MRPS5', directed: 'false', weight: 0.9931450000000001} },
+{ data: { source: 'MRPS22', target: 'DDX55', directed: 'false', weight: 0.07837569999999999} },
+{ data: { source: 'MRPS5', target: 'MRPS27', directed: 'false', weight: 0.984283} }]},
 
 style: [
     {
@@ -104,7 +121,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    RALGAPA2 DKFZp686N19168 RALGAPA1 GFOD1 GFOD2 NKIRAS2<br> Complex Score = 0.38800<br> Unweighted Density = 0.60
+    0.2 28S ribosomal subunit, mitochondrial match 2<br> Complex Score = 0.38750<br> Unweighted Density = 0.64
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        3 interacting protein(s): <br>MRPS2 MRPS5 MRPS27
     </section>
     </body>
     </html>

@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 6S methyltransferase complex</title>
+<title> SIX4 LRRC46 PACS2 PLCD3</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,15 +30,16 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'HDGF', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P51858" }},
-{data: { id: 'PDCD4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q53EL6" }},
-{data: { id: 'hCG_1991735', score: 3, type: '', href: "https://www.uniprot.org/uniprot/A0A024RC65" }},
-{data: { id: 'SNRPD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62314" }}], 
- edges: [{ data: { source: 'SNRPD1', target: 'PDCD4', directed: 'false', weight: 0.145728} },
-{ data: { source: 'SNRPD1', target: 'HDGF', directed: 'false', weight: 0.0424707} },
-{ data: { source: 'HDGF', target: 'hCG_1991735', directed: 'false', weight: 0.0377871} },
-{ data: { source: 'HDGF', target: 'PDCD4', directed: 'false', weight: 0.197006} },
-{ data: { source: 'PDCD4', target: 'hCG_1991735', directed: 'false', weight: 0.9876} }]},
+elements:{nodes: [{data: { id: 'LRRC46', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q96FV0" }},
+{data: { id: 'PACS2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86VP3" }},
+{data: { id: 'SIX4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UIU6" }},
+{data: { id: 'PLCD3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N3E9" }}], 
+ edges: [{ data: { source: 'LRRC46', target: 'SIX4', directed: 'false', weight: 0.9854299999999999} },
+{ data: { source: 'LRRC46', target: 'PACS2', directed: 'false', weight: 0.9364889999999999} },
+{ data: { source: 'LRRC46', target: 'PLCD3', directed: 'false', weight: 0.787159} },
+{ data: { source: 'PACS2', target: 'SIX4', directed: 'false', weight: 0.151455} },
+{ data: { source: 'PACS2', target: 'PLCD3', directed: 'false', weight: 0.123797} },
+{ data: { source: 'PLCD3', target: 'SIX4', directed: 'false', weight: 0.140692} }]},
 
 style: [
     {
@@ -93,7 +94,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 6S methyltransferase complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.83
+    SIX4 LRRC46 PACS2 PLCD3<br> Complex Score = 0.38750<br> Unweighted Density = 1.00
     </section>
     </body>
     </html>

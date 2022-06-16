@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> SLC35F2 ARL5A POMK EDG5</title>
+<title> 0.2 DNAJB2-HSPA8-PSMA3 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'SLC35F2', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q8IXU6" }},
-{data: { id: 'EDG5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95136" }},
-{data: { id: 'ARL5A', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9Y689" }},
-{data: { id: 'POMK', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H5K3" }}], 
- edges: [{ data: { source: 'ARL5A', target: 'EDG5', directed: 'false', weight: 0.780866} },
-{ data: { source: 'SLC35F2', target: 'POMK', directed: 'false', weight: 0.200519} },
-{ data: { source: 'EDG5', target: 'POMK', directed: 'false', weight: 0.166704} }]},
+elements:{nodes: [{data: { id: 'PSMA3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P25788" }},
+{data: { id: 'CEP120', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N960" }},
+{data: { id: 'AKIRIN2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q53H80" }},
+{data: { id: 'C9orf78', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q9NZ63" }}], 
+ edges: [{ data: { source: 'PSMA3', target: 'AKIRIN2', directed: 'false', weight: 0.352925} },
+{ data: { source: 'C9orf78', target: 'CEP120', directed: 'false', weight: 0.578206} },
+{ data: { source: 'CEP120', target: 'AKIRIN2', directed: 'false', weight: 0.109293} }]},
 
 style: [
     {
@@ -96,7 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    SLC35F2 ARL5A POMK EDG5<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.2 DNAJB2-HSPA8-PSMA3 complex<br> Complex Score = 0.30000<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

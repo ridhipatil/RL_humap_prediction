@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.3 Intraflagellar transport complex B core complex</title>
+<title> 0.1 TNF-alpha/NF-kappa B signaling complex 9</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,27 +30,25 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'IFT81', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WYA0" }},
-{data: { id: 'IFT52', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y366" }},
-{data: { id: 'IFT27', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BW83" }},
-{data: { id: 'TTC30A', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q86WT1" }},
-{data: { id: 'C11orf60', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NQC8" }},
-{data: { id: 'IFT74', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96LB3" }}], 
- edges: [{ data: { source: 'IFT81', target: 'IFT74', directed: 'false', weight: 0.999944} },
-{ data: { source: 'IFT81', target: 'TTC30A', directed: 'false', weight: 0.988136} },
-{ data: { source: 'IFT81', target: 'IFT27', directed: 'false', weight: 0.177984} },
-{ data: { source: 'IFT81', target: 'C11orf60', directed: 'false', weight: 0.173266} },
-{ data: { source: 'IFT81', target: 'IFT52', directed: 'false', weight: 0.04991690000000001} },
-{ data: { source: 'IFT27', target: 'IFT74', directed: 'false', weight: 0.0656027} },
-{ data: { source: 'IFT27', target: 'TTC30A', directed: 'false', weight: 0.613337} },
-{ data: { source: 'IFT27', target: 'C11orf60', directed: 'false', weight: 0.0668924} },
-{ data: { source: 'IFT27', target: 'IFT52', directed: 'false', weight: 0.0367173} },
-{ data: { source: 'IFT52', target: 'IFT74', directed: 'false', weight: 0.706171} },
-{ data: { source: 'IFT52', target: 'TTC30A', directed: 'false', weight: 0.984007} },
-{ data: { source: 'IFT52', target: 'C11orf60', directed: 'false', weight: 0.11296099999999999} },
-{ data: { source: 'TTC30A', target: 'IFT74', directed: 'false', weight: 0.9896959999999999} },
-{ data: { source: 'TTC30A', target: 'C11orf60', directed: 'false', weight: 0.986762} },
-{ data: { source: 'C11orf60', target: 'IFT74', directed: 'false', weight: 0.701743} }]},
+elements:{nodes: [{data: { id: 'HSP90AA5P', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q58FG0" }},
+{data: { id: 'HSP90AB4P', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q58FF6" }},
+{data: { id: 'HSP90AA4P', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q58FG1" }},
+{data: { id: 'FKBP5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13451" }},
+{data: { id: 'SMYD3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H7B4" }},
+{data: { id: 'HSP90AB3P', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q58FF7" }}], 
+ edges: [{ data: { source: 'FKBP5', target: 'HSP90AA5P', directed: 'false', weight: 0.856678} },
+{ data: { source: 'FKBP5', target: 'HSP90AB3P', directed: 'false', weight: 0.42064399999999996} },
+{ data: { source: 'FKBP5', target: 'HSP90AA4P', directed: 'false', weight: 0.36181599999999997} },
+{ data: { source: 'FKBP5', target: 'HSP90AB4P', directed: 'false', weight: 0.280667} },
+{ data: { source: 'HSP90AA4P', target: 'HSP90AA5P', directed: 'false', weight: 0.527325} },
+{ data: { source: 'HSP90AA4P', target: 'HSP90AB4P', directed: 'false', weight: 0.13151} },
+{ data: { source: 'HSP90AA4P', target: 'HSP90AB3P', directed: 'false', weight: 0.247908} },
+{ data: { source: 'SMYD3', target: 'HSP90AA5P', directed: 'false', weight: 0.10912100000000001} },
+{ data: { source: 'SMYD3', target: 'HSP90AB4P', directed: 'false', weight: 0.386276} },
+{ data: { source: 'SMYD3', target: 'HSP90AB3P', directed: 'false', weight: 0.490759} },
+{ data: { source: 'HSP90AB3P', target: 'HSP90AA5P', directed: 'false', weight: 0.779978} },
+{ data: { source: 'HSP90AB3P', target: 'HSP90AB4P', directed: 'false', weight: 0.8468110000000001} },
+{ data: { source: 'HSP90AB4P', target: 'HSP90AA5P', directed: 'false', weight: 0.571833} }]},
 
 style: [
     {
@@ -105,7 +103,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.3 Intraflagellar transport complex B core complex<br> Complex Score = 0.39700<br> Unweighted Density = 1.00
+    0.1 TNF-alpha/NF-kappa B signaling complex 9<br> Complex Score = 0.39688<br> Unweighted Density = 0.87
     </section>
     </body>
     </html>

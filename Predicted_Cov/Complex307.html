@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.3 CDK2-CCNA2 complex</title>
+<title> 0.2 TALL1 homo-oligomer complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,20 +30,17 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'GMNN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75496" }},
-{data: { id: 'CDC2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P06493" }},
-{data: { id: 'CDK2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P24941" }},
-{data: { id: 'CKS1B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P61024" }},
-{data: { id: 'CCNA2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P20248" }},
-{data: { id: 'MAPK15', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TD08" }}], 
- edges: [{ data: { source: 'GMNN', target: 'CCNA2', directed: 'false', weight: 0.9262540000000001} },
-{ data: { source: 'GMNN', target: 'CKS1B', directed: 'false', weight: 0.13439600000000002} },
-{ data: { source: 'CDC2', target: 'CCNA2', directed: 'false', weight: 0.9568} },
-{ data: { source: 'CDC2', target: 'CKS1B', directed: 'false', weight: 0.995664} },
-{ data: { source: 'CDK2', target: 'CCNA2', directed: 'false', weight: 1.0} },
-{ data: { source: 'CDK2', target: 'CKS1B', directed: 'false', weight: 0.90641} },
-{ data: { source: 'CDK2', target: 'MAPK15', directed: 'false', weight: 0.33050999999999997} },
-{ data: { source: 'CKS1B', target: 'CCNA2', directed: 'false', weight: 0.966319} }]},
+elements:{nodes: [{data: { id: 'NECTIN4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96NY8" }},
+{data: { id: 'PDSS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5T2R2" }},
+{data: { id: 'TNFSF13B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y275" }},
+{data: { id: 'C6orf62', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q9GZU0" }},
+{data: { id: 'FAM118A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NWS6" }}], 
+ edges: [{ data: { source: 'NECTIN4', target: 'C6orf62', directed: 'false', weight: 0.981959} },
+{ data: { source: 'NECTIN4', target: 'PDSS1', directed: 'false', weight: 0.556198} },
+{ data: { source: 'PDSS1', target: 'C6orf62', directed: 'false', weight: 0.151455} },
+{ data: { source: 'PDSS1', target: 'TNFSF13B', directed: 'false', weight: 0.81985} },
+{ data: { source: 'PDSS1', target: 'FAM118A', directed: 'false', weight: 0.151455} },
+{ data: { source: 'TNFSF13B', target: 'FAM118A', directed: 'false', weight: 0.9612709999999999} }]},
 
 style: [
     {
@@ -103,7 +100,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.3 CDK2-CCNA2 complex<br> Complex Score = 0.38800<br> Unweighted Density = 0.53
+    0.2 TALL1 homo-oligomer complex<br> Complex Score = 0.38750<br> Unweighted Density = 0.60
     </section>
     </body>
     </html>
