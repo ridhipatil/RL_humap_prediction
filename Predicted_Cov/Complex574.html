@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 PRMT2 homo-oligomer complex</title>
+<title> 0.2 AGO2-FXR1-TNF(alpha)ARE-RNP complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,34 +30,28 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'HTT', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P31645" }},
-{data: { id: 'PRMT2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P55345" }},
-{data: { id: 'SHANK3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BYB0" }},
-{data: { id: 'USP51', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q70EK9" }},
-{data: { id: 'L3MBTL3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96JM7" }}], 
- edges: [{ data: { source: 'SHANK3', target: 'PRMT2', directed: 'false', weight: 0.9731559999999999} },
-{ data: { source: 'SHANK3', target: 'USP51', directed: 'false', weight: 0.171414} },
-{ data: { source: 'SHANK3', target: 'HTT', directed: 'false', weight: 0.151455} },
-{ data: { source: 'SHANK3', target: 'L3MBTL3', directed: 'false', weight: 0.151455} },
-{ data: { source: 'L3MBTL3', target: 'PRMT2', directed: 'false', weight: 0.9001680000000001} },
-{ data: { source: 'L3MBTL3', target: 'USP51', directed: 'false', weight: 0.151455} },
-{ data: { source: 'L3MBTL3', target: 'HTT', directed: 'false', weight: 0.133456} },
-{ data: { source: 'HTT', target: 'PRMT2', directed: 'false', weight: 0.8946290000000001} },
-{ data: { source: 'HTT', target: 'USP51', directed: 'false', weight: 0.151455} },
-{ data: { source: 'PRMT2', target: 'USP51', directed: 'false', weight: 0.964852} }]},
+elements:{nodes: [{data: { id: 'PRKCD', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q05655" }},
+{data: { id: 'FXR2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P51116" }},
+{data: { id: 'NGEF', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N5V2" }},
+{data: { id: 'FXR1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P51114" }}], 
+ edges: [{ data: { source: 'PRKCD', target: 'FXR1', directed: 'false', weight: 0.179695} },
+{ data: { source: 'PRKCD', target: 'NGEF', directed: 'false', weight: 0.571307} },
+{ data: { source: 'FXR2', target: 'FXR1', directed: 'false', weight: 0.280971} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 30,
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}  
                                  if ( ele.data('type') == 'sars' ){return 'triangle'}   
   return 'rectangle';
   },            
-            'background-color': function( ele ){ 
+             'background-color': function( ele ){ 
                                 if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
 								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
                                  if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
@@ -71,7 +65,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
 								'line-color': function( ele ){ 
                                  if ( ele.data('type') == 'sars' ){return 'red'}   
   return 'blue';
@@ -83,7 +77,10 @@ style: [
 
 });
 cy.layout({
-    'name': 'circle'
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -99,7 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 PRMT2 homo-oligomer complex<br> Complex Score = 0.38750<br> Unweighted Density = 1.00
+    0.2 AGO2-FXR1-TNF(alpha)ARE-RNP complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

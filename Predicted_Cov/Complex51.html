@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 KEOPS complex</title>
+<title> 0.4 eIF3 complex (EIF3S6, EIF3S5, EIF3S4, EIF3S3, EIF3S6IP, EIF3S2, EIF3S9, EIF3S12,  EIF3S10, EIF3S8,  EIF3S1, EIF3S7, PCID1)</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,28 +30,37 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'MFAP3', score: 4, type: '', href: "https://www.uniprot.org/uniprot/P55082" }},
-{data: { id: 'GLRX3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O76003" }},
-{data: { id: 'CCDC28B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BUN5" }},
-{data: { id: 'OSGEP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NPF4" }},
-{data: { id: 'HYKK', score: 5, type: '', href: "https://www.uniprot.org/uniprot/A2RU49" }},
-{data: { id: 'TPRKB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y3C4" }},
-{data: { id: 'GON7', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9BXV9" }}], 
- edges: [{ data: { source: 'MFAP3', target: 'OSGEP', directed: 'false', weight: 0.609743} },
-{ data: { source: 'MFAP3', target: 'GON7', directed: 'false', weight: 0.165074} },
-{ data: { source: 'MFAP3', target: 'TPRKB', directed: 'false', weight: 0.165074} },
-{ data: { source: 'OSGEP', target: 'GON7', directed: 'false', weight: 0.999532} },
-{ data: { source: 'OSGEP', target: 'TPRKB', directed: 'false', weight: 0.999265} },
-{ data: { source: 'OSGEP', target: 'GLRX3', directed: 'false', weight: 0.6410399999999999} },
-{ data: { source: 'OSGEP', target: 'HYKK', directed: 'false', weight: 0.438271} },
-{ data: { source: 'OSGEP', target: 'CCDC28B', directed: 'false', weight: 0.399052} },
-{ data: { source: 'GLRX3', target: 'TPRKB', directed: 'false', weight: 0.0151101} },
-{ data: { source: 'CCDC28B', target: 'GON7', directed: 'false', weight: 0.133456} },
-{ data: { source: 'CCDC28B', target: 'TPRKB', directed: 'false', weight: 0.112499} },
-{ data: { source: 'CCDC28B', target: 'HYKK', directed: 'false', weight: 0.151455} },
-{ data: { source: 'HYKK', target: 'GON7', directed: 'false', weight: 0.151455} },
-{ data: { source: 'HYKK', target: 'TPRKB', directed: 'false', weight: 0.128057} },
-{ data: { source: 'TPRKB', target: 'GON7', directed: 'false', weight: 0.48676800000000003} }]},
+elements:{nodes: [{data: { id: 'EIF3D', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15371" }},
+{data: { id: 'EIF3M', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q7L2H7" }},
+{data: { id: 'EIF3F', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00303" }},
+{data: { id: 'XRCC6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P12956" }},
+{data: { id: 'EIF3K', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UBQ5" }},
+{data: { id: 'EIF3S8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99613" }},
+{data: { id: 'SUPT16H', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y5B9" }},
+{data: { id: 'EIF3C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99613" }},
+{data: { id: 'EIF3A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14152" }}], 
+ edges: [{ data: { source: 'EIF3D', target: 'EIF3M', directed: 'false', weight: 1.0} },
+{ data: { source: 'EIF3D', target: 'EIF3K', directed: 'false', weight: 0.987518} },
+{ data: { source: 'EIF3D', target: 'EIF3S8', directed: 'false', weight: 0.56255} },
+{ data: { source: 'EIF3D', target: 'EIF3A', directed: 'false', weight: 1.0} },
+{ data: { source: 'EIF3D', target: 'EIF3C', directed: 'false', weight: 0.9999959999999999} },
+{ data: { source: 'EIF3D', target: 'EIF3F', directed: 'false', weight: 1.0} },
+{ data: { source: 'EIF3F', target: 'EIF3M', directed: 'false', weight: 1.0} },
+{ data: { source: 'EIF3F', target: 'EIF3K', directed: 'false', weight: 1.0} },
+{ data: { source: 'EIF3F', target: 'EIF3S8', directed: 'false', weight: 1.0} },
+{ data: { source: 'EIF3F', target: 'EIF3A', directed: 'false', weight: 1.0} },
+{ data: { source: 'EIF3F', target: 'EIF3C', directed: 'false', weight: 1.0} },
+{ data: { source: 'XRCC6', target: 'SUPT16H', directed: 'false', weight: 0.23460599999999998} },
+{ data: { source: 'EIF3K', target: 'EIF3M', directed: 'false', weight: 1.0} },
+{ data: { source: 'EIF3K', target: 'EIF3S8', directed: 'false', weight: 1.0} },
+{ data: { source: 'EIF3K', target: 'EIF3A', directed: 'false', weight: 1.0} },
+{ data: { source: 'EIF3K', target: 'EIF3C', directed: 'false', weight: 1.0} },
+{ data: { source: 'EIF3A', target: 'EIF3M', directed: 'false', weight: 1.0} },
+{ data: { source: 'EIF3A', target: 'EIF3S8', directed: 'false', weight: 1.0} },
+{ data: { source: 'EIF3A', target: 'EIF3C', directed: 'false', weight: 1.0} },
+{ data: { source: 'EIF3A', target: 'SUPT16H', directed: 'false', weight: 0.19676400000000002} },
+{ data: { source: 'EIF3S8', target: 'EIF3M', directed: 'false', weight: 1.0} },
+{ data: { source: 'EIF3C', target: 'EIF3M', directed: 'false', weight: 1.0} }]},
 
 style: [
     {
@@ -111,7 +120,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 KEOPS complex<br> Complex Score = 0.39375<br> Unweighted Density = 0.71
+    0.4 eIF3 complex (EIF3S6, EIF3S5, EIF3S4, EIF3S3, EIF3S6IP, EIF3S2, EIF3S9, EIF3S12,  EIF3S10, EIF3S8,  EIF3S1, EIF3S7, PCID1)<br> Complex Score = 0.39400<br> Unweighted Density = 0.61
     </section>
     </body>
     </html>

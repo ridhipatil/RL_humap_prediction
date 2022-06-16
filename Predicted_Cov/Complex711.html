@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 URI complex (Unconventional prefoldin RPB5 Interactor)</title>
+<title> 0.1 core-histone (H2A/H2B/H3/H4)-TDIF2-TDT complex match 2</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,37 +30,30 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'GPN3', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9UHW5" }},
-{data: { id: 'PIH1D1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NWS0" }},
-{data: { id: 'LRCH3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96II8" }},
-{data: { id: 'URI1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O94763" }},
-{data: { id: 'RPAP3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H6T3" }},
-{data: { id: 'UXT', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UBK9" }},
-{data: { id: 'POLR3G', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15318" }},
-{data: { id: 'PDRG1', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q9NUG6" }},
-{data: { id: 'POLR3E', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NVU0" }}], 
- edges: [{ data: { source: 'GPN3', target: 'POLR3G', directed: 'false', weight: 0.278021} },
-{ data: { source: 'PIH1D1', target: 'URI1', directed: 'false', weight: 0.999966} },
-{ data: { source: 'PIH1D1', target: 'PDRG1', directed: 'false', weight: 0.999928} },
-{ data: { source: 'PIH1D1', target: 'RPAP3', directed: 'false', weight: 0.999424} },
-{ data: { source: 'PIH1D1', target: 'LRCH3', directed: 'false', weight: 0.9803270000000001} },
-{ data: { source: 'PIH1D1', target: 'UXT', directed: 'false', weight: 0.9459190000000001} },
-{ data: { source: 'PIH1D1', target: 'POLR3E', directed: 'false', weight: 0.286828} },
-{ data: { source: 'LRCH3', target: 'URI1', directed: 'false', weight: 0.12378900000000001} },
-{ data: { source: 'LRCH3', target: 'PDRG1', directed: 'false', weight: 0.11047699999999999} },
-{ data: { source: 'LRCH3', target: 'RPAP3', directed: 'false', weight: 0.128057} },
-{ data: { source: 'LRCH3', target: 'POLR3E', directed: 'false', weight: 0.128057} },
-{ data: { source: 'LRCH3', target: 'UXT', directed: 'false', weight: 0.115255} },
-{ data: { source: 'URI1', target: 'RPAP3', directed: 'false', weight: 0.9992969999999999} },
-{ data: { source: 'URI1', target: 'PDRG1', directed: 'false', weight: 0.9871209999999999} },
-{ data: { source: 'URI1', target: 'UXT', directed: 'false', weight: 0.523566} },
-{ data: { source: 'URI1', target: 'POLR3E', directed: 'false', weight: 0.5} },
-{ data: { source: 'RPAP3', target: 'PDRG1', directed: 'false', weight: 0.852706} },
-{ data: { source: 'RPAP3', target: 'UXT', directed: 'false', weight: 0.6363880000000001} },
-{ data: { source: 'RPAP3', target: 'POLR3E', directed: 'false', weight: 0.30286} },
-{ data: { source: 'UXT', target: 'PDRG1', directed: 'false', weight: 0.270931} },
-{ data: { source: 'UXT', target: 'POLR3E', directed: 'false', weight: 0.150085} },
-{ data: { source: 'POLR3G', target: 'POLR3E', directed: 'false', weight: 0.128057} }]},
+elements:{nodes: [{data: { id: 'H2AC20', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16777" }},
+{data: { id: 'SARS-CoV2 nsp8', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp8.html" }},
+{data: { id: 'NSD2', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/O96028" }},
+{data: { id: 'RRS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15050" }},
+{data: { id: 'RRP15', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q9Y3B9" }},
+{data: { id: 'BRIX1', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q8TDN6" }},
+{data: { id: 'EBNA1BP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99848" }},
+{data: { id: 'NIP7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y221" }}], 
+ edges: [{ data: { source: 'SARS-CoV2 nsp8', target: 'NSD2', directed: 'false', weight: 0.864651959, type: 'sars'} },
+{ data: { source: 'H2AC20', target: 'RRS1', directed: 'false', weight: 0.391425} },
+{ data: { source: 'NSD2', target: 'BRIX1', directed: 'false', weight: 0.020993599999999998} },
+{ data: { source: 'NSD2', target: 'RRS1', directed: 'false', weight: 0.041195999999999997} },
+{ data: { source: 'NSD2', target: 'NIP7', directed: 'false', weight: 0.0204405} },
+{ data: { source: 'NSD2', target: 'RRP15', directed: 'false', weight: 0.0263401} },
+{ data: { source: 'RRS1', target: 'EBNA1BP2', directed: 'false', weight: 0.999022} },
+{ data: { source: 'RRS1', target: 'BRIX1', directed: 'false', weight: 0.9730209999999999} },
+{ data: { source: 'RRS1', target: 'RRP15', directed: 'false', weight: 0.744594} },
+{ data: { source: 'RRS1', target: 'NIP7', directed: 'false', weight: 0.380396} },
+{ data: { source: 'RRP15', target: 'EBNA1BP2', directed: 'false', weight: 0.9855219999999999} },
+{ data: { source: 'RRP15', target: 'BRIX1', directed: 'false', weight: 0.185978} },
+{ data: { source: 'RRP15', target: 'NIP7', directed: 'false', weight: 0.919919} },
+{ data: { source: 'BRIX1', target: 'EBNA1BP2', directed: 'false', weight: 1.0} },
+{ data: { source: 'BRIX1', target: 'NIP7', directed: 'false', weight: 0.0781666} },
+{ data: { source: 'EBNA1BP2', target: 'NIP7', directed: 'false', weight: 0.970986} }]},
 
 style: [
     {
@@ -120,7 +113,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 URI complex (Unconventional prefoldin RPB5 Interactor)<br> Complex Score = 0.38750<br> Unweighted Density = 0.61
+    0.1 core-histone (H2A/H2B/H3/H4)-TDIF2-TDT complex match 2<br> Complex Score = 0.37500<br> Unweighted Density = 0.71
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>NSD2
     </section>
     </body>
     </html>

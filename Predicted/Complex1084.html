@@ -30,13 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'NT5DC1', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q5TFE4" }},
-{data: { id: 'PRKACA', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P17252" }},
-{data: { id: 'PKLR', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P30613" }},
-{data: { id: 'PRKAR2A', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P13861" }}], 
- edges: [{ data: { source: 'NT5DC1', target: 'PKLR', directed: 'false', weight: 0.970417} },
-{ data: { source: 'PRKACA', target: 'PRKAR2A', directed: 'false', weight: 0.9999530000000001} },
-{ data: { source: 'PRKACA', target: 'PKLR', directed: 'false', weight: 0.647798} }]},
+elements:{nodes: [{data: { id: 'AKT3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y243" }},
+{data: { id: 'AKT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P31749" }},
+{data: { id: 'HSP90AB3P', score: 4, type: '', href: "https://www.ncbi.nlm.nih.gov/gene/3327" }},
+{data: { id: 'AKT2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P31751" }}], 
+ edges: [{ data: { source: 'AKT3', target: 'AKT1', directed: 'false', weight: 0.28313699999999997} },
+{ data: { source: 'AKT3', target: 'HSP90AB3P', directed: 'false', weight: 0.179926} },
+{ data: { source: 'AKT1', target: 'AKT2', directed: 'false', weight: 0.9993620000000001} }]},
 
 style: [
     {
@@ -84,12 +84,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.30000
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        2 interacting protein(s): <br>PRKACA PRKAR2A
+    Complex Score  = 0.37500
     </section>
     </body>
     </html>

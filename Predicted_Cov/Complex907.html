@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 AXIN-MEKK4-CCD1 complex</title>
+<title> 0.2 VCP-VIMP-DERL2 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,23 +30,15 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'HNRNPL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P14866" }},
-{data: { id: 'ACLY', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P53396" }},
-{data: { id: 'MAP3K4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y6R4" }},
-{data: { id: 'TBC1D10B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q4KMP7" }},
-{data: { id: 'WDR91', score: 5, type: '', href: "https://www.uniprot.org/uniprot/A4D1P6" }},
-{data: { id: 'SYNCRIP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60506" }},
-{data: { id: 'HNRNPA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P09651" }}], 
- edges: [{ data: { source: 'HNRNPL', target: 'HNRNPA1', directed: 'false', weight: 0.999616} },
-{ data: { source: 'ACLY', target: 'HNRNPA1', directed: 'false', weight: 0.809852} },
-{ data: { source: 'ACLY', target: 'SYNCRIP', directed: 'false', weight: 0.07513869999999999} },
-{ data: { source: 'MAP3K4', target: 'SYNCRIP', directed: 'false', weight: 0.349302} },
-{ data: { source: 'MAP3K4', target: 'TBC1D10B', directed: 'false', weight: 0.0712685} },
-{ data: { source: 'MAP3K4', target: 'WDR91', directed: 'false', weight: 0.06281030000000001} },
-{ data: { source: 'TBC1D10B', target: 'SYNCRIP', directed: 'false', weight: 0.285722} },
-{ data: { source: 'TBC1D10B', target: 'WDR91', directed: 'false', weight: 0.0896083} },
-{ data: { source: 'WDR91', target: 'SYNCRIP', directed: 'false', weight: 0.293933} },
-{ data: { source: 'SYNCRIP', target: 'HNRNPA1', directed: 'false', weight: 0.975932} }]},
+elements:{nodes: [{data: { id: 'ARL6IP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15041" }},
+{data: { id: 'DERL2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9GZP9" }},
+{data: { id: 'SARS-CoV2 M', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 M.html" }},
+{data: { id: 'RTN4', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9NQC3" }},
+{data: { id: 'RABAC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UI14" }}], 
+ edges: [{ data: { source: 'SARS-CoV2 M', target: 'RTN4', directed: 'false', weight: 0.873826097, type: 'sars'} },
+{ data: { source: 'ARL6IP1', target: 'RTN4', directed: 'false', weight: 0.792338} },
+{ data: { source: 'DERL2', target: 'RTN4', directed: 'false', weight: 0.12401500000000001} },
+{ data: { source: 'RTN4', target: 'RABAC1', directed: 'false', weight: 0.216707} }]},
 
 style: [
     {
@@ -106,7 +98,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 AXIN-MEKK4-CCD1 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.48
+    0.2 VCP-VIMP-DERL2 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>RTN4
     </section>
     </body>
     </html>

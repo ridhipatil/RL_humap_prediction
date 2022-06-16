@@ -1,0 +1,91 @@
+
+<!doctype html>
+<html>
+<head>
+<title> Complex 3569</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex3570.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'PKD2L2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NZM6" }},
+{data: { id: 'PKD2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BZL6" }},
+{data: { id: 'FAM3D', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q96BQ1" }},
+{data: { id: 'PICK1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NRD5" }}], 
+ edges: [{ data: { source: 'PKD2L2', target: 'PKD2', directed: 'false', weight: 0.0407699} },
+{ data: { source: 'PKD2', target: 'PICK1', directed: 'false', weight: 0.0699982} },
+{ data: { source: 'PKD2', target: 'FAM3D', directed: 'false', weight: 0.052167200000000004} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}                                
+  return 'rectangle';
+  },            
+            'background-color': 'mapData(score, 0, 5, yellow, green)',
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'line-color': 'blue',
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    Complex Score  = 0.30000
+    </section>
+    </body>
+    </html>
+    

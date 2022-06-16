@@ -30,26 +30,27 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'ATP5F1B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P06576" }},
-{data: { id: 'ATP5PF', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P18859" }},
-{data: { id: 'SLC43A3', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q8NBI5" }},
-{data: { id: 'ABCD3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P28288" }},
-{data: { id: 'ATP2A2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P16615" }},
-{data: { id: 'SLC35F6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N357" }},
-{data: { id: 'TMEM33', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P57088" }}], 
- edges: [{ data: { source: 'ATP5F1B', target: 'ATP2A2', directed: 'false', weight: 0.957987} },
-{ data: { source: 'ATP5F1B', target: 'ATP5PF', directed: 'false', weight: 0.09758510000000001} },
-{ data: { source: 'ATP5PF', target: 'ATP2A2', directed: 'false', weight: 0.0585414} },
-{ data: { source: 'ABCD3', target: 'ATP2A2', directed: 'false', weight: 0.791374} },
-{ data: { source: 'ABCD3', target: 'TMEM33', directed: 'false', weight: 0.0787748} },
-{ data: { source: 'ABCD3', target: 'SLC43A3', directed: 'false', weight: 0.0592076} },
-{ data: { source: 'ABCD3', target: 'SLC35F6', directed: 'false', weight: 0.056992499999999995} },
-{ data: { source: 'ATP2A2', target: 'TMEM33', directed: 'false', weight: 0.8588889999999999} },
-{ data: { source: 'ATP2A2', target: 'SLC35F6', directed: 'false', weight: 0.510443} },
-{ data: { source: 'ATP2A2', target: 'SLC43A3', directed: 'false', weight: 0.36540500000000004} },
-{ data: { source: 'TMEM33', target: 'SLC43A3', directed: 'false', weight: 0.0801012} },
-{ data: { source: 'TMEM33', target: 'SLC35F6', directed: 'false', weight: 0.07756560000000001} },
-{ data: { source: 'SLC35F6', target: 'SLC43A3', directed: 'false', weight: 0.06663480000000001} }]},
+elements:{nodes: [{data: { id: 'YBX1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P67809" }},
+{data: { id: 'RPL6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q02878" }},
+{data: { id: 'GNL2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13823" }},
+{data: { id: 'RPL13A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P40429" }},
+{data: { id: 'RPL35A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P18077" }},
+{data: { id: 'DDX27', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96GQ7" }},
+{data: { id: 'RBM34', score: 4, type: '', href: "https://www.uniprot.org/uniprot/P42696" }}], 
+ edges: [{ data: { source: 'YBX1', target: 'RPL13A', directed: 'false', weight: 0.0248955} },
+{ data: { source: 'YBX1', target: 'RPL6', directed: 'false', weight: 0.999866} },
+{ data: { source: 'RPL6', target: 'RPL13A', directed: 'false', weight: 1.0} },
+{ data: { source: 'RPL6', target: 'RPL35A', directed: 'false', weight: 1.0} },
+{ data: { source: 'RPL6', target: 'RBM34', directed: 'false', weight: 0.194218} },
+{ data: { source: 'RPL6', target: 'GNL2', directed: 'false', weight: 0.107027} },
+{ data: { source: 'RPL6', target: 'DDX27', directed: 'false', weight: 0.056585} },
+{ data: { source: 'GNL2', target: 'RPL13A', directed: 'false', weight: 0.0207735} },
+{ data: { source: 'GNL2', target: 'RBM34', directed: 'false', weight: 0.28875} },
+{ data: { source: 'GNL2', target: 'DDX27', directed: 'false', weight: 0.173708} },
+{ data: { source: 'RPL13A', target: 'RPL35A', directed: 'false', weight: 0.9999969999999999} },
+{ data: { source: 'RPL13A', target: 'RBM34', directed: 'false', weight: 0.46647799999999995} },
+{ data: { source: 'RPL35A', target: 'RBM34', directed: 'false', weight: 0.0473286} },
+{ data: { source: 'DDX27', target: 'RBM34', directed: 'false', weight: 0.9944059999999999} }]},
 
 style: [
     {
@@ -97,7 +98,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.38750
+    Complex Score  = 0.37500
     </section>
     </body>
     </html>

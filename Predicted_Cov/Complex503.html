@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.05 Spliceosome</title>
+<title> KIF6 HEATR5A PPM1B SNX16</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,22 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'CCDC25', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q86WR0" }},
-{data: { id: 'SF1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13285" }},
-{data: { id: 'ATXN2L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WWM7" }},
-{data: { id: 'HSDL2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6YN16" }},
-{data: { id: 'PAK3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75914" }},
-{data: { id: 'CPT2', score: 5.0, type: '', href: "https://www.uniprot.org/uniprot/P23786" }}], 
- edges: [{ data: { source: 'CCDC25', target: 'SF1', directed: 'false', weight: 0.6915180000000001} },
-{ data: { source: 'CCDC25', target: 'ATXN2L', directed: 'false', weight: 0.6158140000000001} },
-{ data: { source: 'CCDC25', target: 'PAK3', directed: 'false', weight: 0.026672700000000004} },
-{ data: { source: 'CCDC25', target: 'HSDL2', directed: 'false', weight: 0.0206234} },
-{ data: { source: 'ATXN2L', target: 'SF1', directed: 'false', weight: 0.9368350000000001} },
-{ data: { source: 'ATXN2L', target: 'HSDL2', directed: 'false', weight: 0.432526} },
-{ data: { source: 'ATXN2L', target: 'PAK3', directed: 'false', weight: 0.289012} },
-{ data: { source: 'HSDL2', target: 'SF1', directed: 'false', weight: 0.026846699999999998} },
-{ data: { source: 'HSDL2', target: 'CPT2', directed: 'false', weight: 0.345256} },
-{ data: { source: 'SF1', target: 'PAK3', directed: 'false', weight: 0.0454778} }]},
+elements:{nodes: [{data: { id: 'SNX16', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P57768" }},
+{data: { id: 'PPM1B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75688" }},
+{data: { id: 'HEATR5A', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q86XA9" }},
+{data: { id: 'KIF6', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q6ZMV9" }}], 
+ edges: [{ data: { source: 'SNX16', target: 'KIF6', directed: 'false', weight: 0.7790630000000001} },
+{ data: { source: 'PPM1B', target: 'HEATR5A', directed: 'false', weight: 0.55304} },
+{ data: { source: 'HEATR5A', target: 'KIF6', directed: 'false', weight: 0.726294} }]},
 
 style: [
     {
@@ -105,7 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.05 Spliceosome<br> Complex Score = 0.38750<br> Unweighted Density = 0.67
+    KIF6 HEATR5A PPM1B SNX16<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

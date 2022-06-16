@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 TANGO1L-cTAGE5-SEC12 complex</title>
+<title> LURAP1L TRAF1 FBXO28 RUNDC2A</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,25 +30,28 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'SRPRA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P08240" }},
-{data: { id: 'MIA2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96PC5" }},
-{data: { id: 'SRPRB', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9Y5M8" }}], 
- edges: [{ data: { source: 'SRPRA', target: 'SRPRB', directed: 'false', weight: 0.954667} },
-{ data: { source: 'SRPRA', target: 'MIA2', directed: 'false', weight: 0.098638} },
-{ data: { source: 'MIA2', target: 'SRPRB', directed: 'false', weight: 0.931257} }]},
+elements:{nodes: [{data: { id: 'FBXO28', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NVF7" }},
+{data: { id: 'RUNDC2A', score: 3, type: '', href: "https://www.ncbi.nlm.nih.gov/gene/84127" }},
+{data: { id: 'LURAP1L', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q8IV03" }},
+{data: { id: 'TRAF1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13077" }}], 
+ edges: [{ data: { source: 'RUNDC2A', target: 'TRAF1', directed: 'false', weight: 0.193841} },
+{ data: { source: 'FBXO28', target: 'LURAP1L', directed: 'false', weight: 0.260711} },
+{ data: { source: 'FBXO28', target: 'TRAF1', directed: 'false', weight: 0.17610599999999998} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 30,
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}  
                                  if ( ele.data('type') == 'sars' ){return 'triangle'}   
   return 'rectangle';
   },            
-            'background-color': function( ele ){ 
+             'background-color': function( ele ){ 
                                 if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
 								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
                                  if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
@@ -62,7 +65,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
 								'line-color': function( ele ){ 
                                  if ( ele.data('type') == 'sars' ){return 'red'}   
   return 'blue';
@@ -74,7 +77,10 @@ style: [
 
 });
 cy.layout({
-    'name': 'circle'
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -90,7 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 TANGO1L-cTAGE5-SEC12 complex<br> Complex Score = 0.38750<br> Unweighted Density = 1.00
+    LURAP1L TRAF1 FBXO28 RUNDC2A<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

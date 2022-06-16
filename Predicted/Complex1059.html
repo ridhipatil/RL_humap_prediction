@@ -30,15 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'PYROXD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WU10" }},
-{data: { id: 'SAE1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UBE0" }},
-{data: { id: 'UBA2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UBT2" }},
-{data: { id: 'PRPF39', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q86UA1" }},
-{data: { id: 'GDF15', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q99988" }}], 
- edges: [{ data: { source: 'PYROXD1', target: 'SAE1', directed: 'false', weight: 0.314058} },
-{ data: { source: 'SAE1', target: 'UBA2', directed: 'false', weight: 0.8908959999999999} },
-{ data: { source: 'SAE1', target: 'PRPF39', directed: 'false', weight: 0.711391} },
-{ data: { source: 'SAE1', target: 'GDF15', directed: 'false', weight: 0.283681} }]},
+elements:{nodes: [{data: { id: 'SEC24C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P53992" }},
+{data: { id: 'SEC13', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P55735" }},
+{data: { id: 'GRB10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13322" }},
+{data: { id: 'WDR59', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6PJI9" }}], 
+ edges: [{ data: { source: 'SEC24C', target: 'SEC13', directed: 'false', weight: 0.137462} },
+{ data: { source: 'SEC13', target: 'WDR59', directed: 'false', weight: 0.753741} },
+{ data: { source: 'GRB10', target: 'WDR59', directed: 'false', weight: 0.545154} }]},
 
 style: [
     {
@@ -86,12 +84,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.35000
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>GDF15
+    Complex Score  = 0.37500
     </section>
     </body>
     </html>

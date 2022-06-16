@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> EHBP1L1 TSGA10IP MANF NAA16 HYPK</title>
+<title> 0.5 RBP-Jkappa-SHARP complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,15 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'TSGA10IP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q3SY00" }},
-{data: { id: 'MANF', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P55145" }},
-{data: { id: 'HYPK', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NX55" }},
-{data: { id: 'NAA16', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6N069" }},
-{data: { id: 'EHBP1L1', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q8N3D4" }}], 
- edges: [{ data: { source: 'TSGA10IP', target: 'NAA16', directed: 'false', weight: 0.977191} },
-{ data: { source: 'HYPK', target: 'NAA16', directed: 'false', weight: 0.917811} },
-{ data: { source: 'HYPK', target: 'MANF', directed: 'false', weight: 0.78938} },
-{ data: { source: 'HYPK', target: 'EHBP1L1', directed: 'false', weight: 0.5484180000000001} }]},
+elements:{nodes: [{data: { id: 'RBPJ', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q06330" }},
+{data: { id: 'DKFZp434N181', score: 1, type: '', href: "https://www.uniprot.org/uniprot/Q9UFD5" }},
+{data: { id: 'HAGH', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16775" }},
+{data: { id: 'SPEN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96T58" }}], 
+ edges: [{ data: { source: 'RBPJ', target: 'SPEN', directed: 'false', weight: 0.263592} },
+{ data: { source: 'RBPJ', target: 'DKFZp434N181', directed: 'false', weight: 0.25348699999999996} },
+{ data: { source: 'DKFZp434N181', target: 'HAGH', directed: 'false', weight: 0.110885} }]},
 
 style: [
     {
@@ -98,7 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    EHBP1L1 TSGA10IP MANF NAA16 HYPK<br> Complex Score = 0.35000<br> Unweighted Density = 0.40
+    0.5 RBP-Jkappa-SHARP complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

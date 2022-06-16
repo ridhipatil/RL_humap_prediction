@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.4 SNAPc (small nuclear RNA-activating protein) complex</title>
+<title> 0.5 SRm160-SRm300 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,17 +30,14 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'SNAPC5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75971" }},
-{data: { id: 'SNAPC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16533" }},
-{data: { id: 'CBX2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14781" }},
-{data: { id: 'SNAPC2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13487" }},
-{data: { id: 'PSME3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P61289" }}], 
- edges: [{ data: { source: 'SNAPC1', target: 'PSME3', directed: 'false', weight: 0.905546} },
-{ data: { source: 'SNAPC1', target: 'SNAPC2', directed: 'false', weight: 0.984986} },
-{ data: { source: 'SNAPC1', target: 'SNAPC5', directed: 'false', weight: 0.966612} },
-{ data: { source: 'SNAPC1', target: 'CBX2', directed: 'false', weight: 0.151455} },
-{ data: { source: 'CBX2', target: 'PSME3', directed: 'false', weight: 0.939678} },
-{ data: { source: 'SNAPC5', target: 'SNAPC2', directed: 'false', weight: 0.171414} }]},
+elements:{nodes: [{data: { id: 'SRRM2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UQ35" }},
+{data: { id: 'PUF60', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UHX1" }},
+{data: { id: 'SREK1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WXA9" }},
+{data: { id: 'SRRM1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IYB3" }}], 
+ edges: [{ data: { source: 'SRRM1', target: 'SRRM2', directed: 'false', weight: 0.138492} },
+{ data: { source: 'SRRM1', target: 'SREK1', directed: 'false', weight: 0.17986300000000002} },
+{ data: { source: 'PUF60', target: 'SRRM2', directed: 'false', weight: 0.270962} },
+{ data: { source: 'PUF60', target: 'SREK1', directed: 'false', weight: 0.186876} }]},
 
 style: [
     {
@@ -100,7 +97,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.4 SNAPc (small nuclear RNA-activating protein) complex<br> Complex Score = 0.38750<br> Unweighted Density = 0.60
+    0.5 SRm160-SRm300 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
     </section>
     </body>
     </html>

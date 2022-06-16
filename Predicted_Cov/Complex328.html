@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> BCKDHB PPM1K BCKDHA</title>
+<title> 0.1 mitochondrial permeability  transition pore (PTP) complex (PPIF-SPG7-VDAC1)</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,25 +30,40 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'PPM1K', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N3J5" }},
-{data: { id: 'BCKDHA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P12694" }},
-{data: { id: 'BCKDHB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P21953" }}], 
- edges: [{ data: { source: 'PPM1K', target: 'BCKDHB', directed: 'false', weight: 0.871873} },
-{ data: { source: 'PPM1K', target: 'BCKDHA', directed: 'false', weight: 0.655433} },
-{ data: { source: 'BCKDHA', target: 'BCKDHB', directed: 'false', weight: 0.302266} }]},
+elements:{nodes: [{data: { id: 'HEL-S-66p', score: 2, type: '', href: "https://www.uniprot.org/uniprot/V9HWB5" }},
+{data: { id: 'HEL20', score: 1, type: '', href: "https://www.uniprot.org/uniprot/V9HWF9" }},
+{data: { id: 'PGD', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P52209" }},
+{data: { id: 'HEL-S-1a', score: 3, type: '', href: "https://www.uniprot.org/uniprot/V9HWC3" }},
+{data: { id: 'HEL-S-49', score: 3, type: '', href: "https://www.uniprot.org/uniprot/V9HWK1" }},
+{data: { id: 'GMPR', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P36959" }},
+{data: { id: 'PPIF', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P30405" }}], 
+ edges: [{ data: { source: 'HEL-S-66p', target: 'PPIF', directed: 'false', weight: 0.238898} },
+{ data: { source: 'HEL-S-66p', target: 'HEL20', directed: 'false', weight: 0.9130530000000001} },
+{ data: { source: 'HEL20', target: 'PPIF', directed: 'false', weight: 0.997683} },
+{ data: { source: 'HEL20', target: 'HEL-S-1a', directed: 'false', weight: 0.816951} },
+{ data: { source: 'HEL20', target: 'GMPR', directed: 'false', weight: 0.336825} },
+{ data: { source: 'PGD', target: 'PPIF', directed: 'false', weight: 0.8375670000000001} },
+{ data: { source: 'PGD', target: 'GMPR', directed: 'false', weight: 0.0556205} },
+{ data: { source: 'PGD', target: 'HEL-S-1a', directed: 'false', weight: 0.21335500000000002} },
+{ data: { source: 'HEL-S-1a', target: 'PPIF', directed: 'false', weight: 0.148606} },
+{ data: { source: 'HEL-S-1a', target: 'GMPR', directed: 'false', weight: 0.92495} },
+{ data: { source: 'HEL-S-49', target: 'PPIF', directed: 'false', weight: 0.9998319999999999} },
+{ data: { source: 'GMPR', target: 'PPIF', directed: 'false', weight: 0.168026} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 30,
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}  
                                  if ( ele.data('type') == 'sars' ){return 'triangle'}   
   return 'rectangle';
   },            
-            'background-color': function( ele ){ 
+             'background-color': function( ele ){ 
                                 if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
 								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
                                  if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
@@ -62,7 +77,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
 								'line-color': function( ele ){ 
                                  if ( ele.data('type') == 'sars' ){return 'red'}   
   return 'blue';
@@ -74,7 +89,10 @@ style: [
 
 });
 cy.layout({
-    'name': 'circle'
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -90,7 +108,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    BCKDHB PPM1K BCKDHA<br> Complex Score = 0.38750<br> Unweighted Density = 1.00
+    0.1 mitochondrial permeability  transition pore (PTP) complex (PPIF-SPG7-VDAC1)<br> Complex Score = 0.38800<br> Unweighted Density = 0.57
     </section>
     </body>
     </html>

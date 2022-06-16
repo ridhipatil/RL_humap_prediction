@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 39S ribosomal subunit, mitochondrial match 2</title>
+<title> 0.8 RFC complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,99 +30,39 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'MRPL28', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13084" }},
-{data: { id: 'MCAT', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IVS2" }},
-{data: { id: 'MRPL1', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9BYD6" }},
-{data: { id: 'MRPL24', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q96A35" }},
-{data: { id: 'MRPL52', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86TS9" }},
-{data: { id: 'MRPL43', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N983" }},
-{data: { id: 'MRPL17', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NRX2" }},
-{data: { id: 'MRPL14', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q6P1L8" }},
-{data: { id: 'PTCD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75127" }},
-{data: { id: 'MRPL19', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49406" }},
-{data: { id: 'MRPL30', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q8TCC3" }},
-{data: { id: 'MRPL9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BYD2" }},
-{data: { id: 'MRPL34', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9BQ48" }}], 
- edges: [{ data: { source: 'MRPL28', target: 'MRPL1', directed: 'false', weight: 0.9993299999999999} },
-{ data: { source: 'MRPL28', target: 'MRPL9', directed: 'false', weight: 0.999933} },
-{ data: { source: 'MRPL28', target: 'MRPL19', directed: 'false', weight: 0.999849} },
-{ data: { source: 'MRPL28', target: 'MRPL43', directed: 'false', weight: 0.9619979999999999} },
-{ data: { source: 'MRPL28', target: 'MRPL34', directed: 'false', weight: 0.99903} },
-{ data: { source: 'MRPL28', target: 'MRPL17', directed: 'false', weight: 0.9972469999999999} },
-{ data: { source: 'MRPL28', target: 'MRPL24', directed: 'false', weight: 0.999994} },
-{ data: { source: 'MRPL28', target: 'MRPL30', directed: 'false', weight: 0.999307} },
-{ data: { source: 'MRPL28', target: 'MRPL14', directed: 'false', weight: 0.943141} },
-{ data: { source: 'MRPL28', target: 'MRPL52', directed: 'false', weight: 0.634675} },
-{ data: { source: 'MRPL28', target: 'PTCD1', directed: 'false', weight: 0.319128} },
-{ data: { source: 'MCAT', target: 'PTCD1', directed: 'false', weight: 0.242646} },
-{ data: { source: 'MRPL24', target: 'MRPL1', directed: 'false', weight: 0.999533} },
-{ data: { source: 'MRPL24', target: 'MRPL9', directed: 'false', weight: 0.9999979999999999} },
-{ data: { source: 'MRPL24', target: 'MRPL19', directed: 'false', weight: 0.99439} },
-{ data: { source: 'MRPL24', target: 'MRPL43', directed: 'false', weight: 0.982655} },
-{ data: { source: 'MRPL24', target: 'MRPL34', directed: 'false', weight: 0.9907469999999999} },
-{ data: { source: 'MRPL24', target: 'MRPL17', directed: 'false', weight: 0.983826} },
-{ data: { source: 'MRPL24', target: 'MRPL30', directed: 'false', weight: 0.9961770000000001} },
-{ data: { source: 'MRPL24', target: 'MRPL14', directed: 'false', weight: 0.9143040000000001} },
-{ data: { source: 'MRPL24', target: 'MRPL52', directed: 'false', weight: 0.310636} },
-{ data: { source: 'MRPL24', target: 'PTCD1', directed: 'false', weight: 0.28133} },
-{ data: { source: 'MRPL1', target: 'MRPL9', directed: 'false', weight: 1.0} },
-{ data: { source: 'MRPL1', target: 'MRPL43', directed: 'false', weight: 0.999999} },
-{ data: { source: 'MRPL1', target: 'MRPL34', directed: 'false', weight: 0.9999979999999999} },
-{ data: { source: 'MRPL1', target: 'MRPL30', directed: 'false', weight: 0.9999979999999999} },
-{ data: { source: 'MRPL1', target: 'MRPL14', directed: 'false', weight: 0.9999959999999999} },
-{ data: { source: 'MRPL1', target: 'MRPL19', directed: 'false', weight: 0.999985} },
-{ data: { source: 'MRPL1', target: 'MRPL17', directed: 'false', weight: 0.999973} },
-{ data: { source: 'MRPL1', target: 'MRPL52', directed: 'false', weight: 0.9748049999999999} },
-{ data: { source: 'MRPL1', target: 'PTCD1', directed: 'false', weight: 0.194752} },
-{ data: { source: 'MRPL52', target: 'MRPL9', directed: 'false', weight: 0.9961459999999999} },
-{ data: { source: 'MRPL52', target: 'MRPL19', directed: 'false', weight: 0.636153} },
-{ data: { source: 'MRPL52', target: 'MRPL43', directed: 'false', weight: 0.461424} },
-{ data: { source: 'MRPL52', target: 'MRPL34', directed: 'false', weight: 0.43880399999999997} },
-{ data: { source: 'MRPL52', target: 'MRPL17', directed: 'false', weight: 0.636153} },
-{ data: { source: 'MRPL52', target: 'MRPL30', directed: 'false', weight: 0.358157} },
-{ data: { source: 'MRPL52', target: 'MRPL14', directed: 'false', weight: 0.390542} },
-{ data: { source: 'MRPL52', target: 'PTCD1', directed: 'false', weight: 0.11311500000000001} },
-{ data: { source: 'MRPL43', target: 'MRPL9', directed: 'false', weight: 1.0} },
-{ data: { source: 'MRPL43', target: 'MRPL19', directed: 'false', weight: 0.998966} },
-{ data: { source: 'MRPL43', target: 'MRPL30', directed: 'false', weight: 0.999812} },
-{ data: { source: 'MRPL43', target: 'MRPL17', directed: 'false', weight: 0.999014} },
-{ data: { source: 'MRPL43', target: 'MRPL34', directed: 'false', weight: 0.9935700000000001} },
-{ data: { source: 'MRPL43', target: 'MRPL14', directed: 'false', weight: 0.8716780000000001} },
-{ data: { source: 'MRPL43', target: 'PTCD1', directed: 'false', weight: 0.203964} },
-{ data: { source: 'MRPL17', target: 'MRPL9', directed: 'false', weight: 1.0} },
-{ data: { source: 'MRPL17', target: 'MRPL19', directed: 'false', weight: 0.999993} },
-{ data: { source: 'MRPL17', target: 'MRPL34', directed: 'false', weight: 0.99775} },
-{ data: { source: 'MRPL17', target: 'MRPL30', directed: 'false', weight: 0.9989629999999999} },
-{ data: { source: 'MRPL17', target: 'MRPL14', directed: 'false', weight: 0.940638} },
-{ data: { source: 'MRPL17', target: 'PTCD1', directed: 'false', weight: 0.46835} },
-{ data: { source: 'MRPL14', target: 'MRPL9', directed: 'false', weight: 0.99995} },
-{ data: { source: 'MRPL14', target: 'MRPL19', directed: 'false', weight: 0.987706} },
-{ data: { source: 'MRPL14', target: 'MRPL34', directed: 'false', weight: 0.870108} },
-{ data: { source: 'MRPL14', target: 'MRPL30', directed: 'false', weight: 0.9718979999999999} },
-{ data: { source: 'MRPL14', target: 'PTCD1', directed: 'false', weight: 0.25703899999999996} },
-{ data: { source: 'PTCD1', target: 'MRPL9', directed: 'false', weight: 0.281833} },
-{ data: { source: 'PTCD1', target: 'MRPL19', directed: 'false', weight: 0.310537} },
-{ data: { source: 'PTCD1', target: 'MRPL34', directed: 'false', weight: 0.319128} },
-{ data: { source: 'PTCD1', target: 'MRPL30', directed: 'false', weight: 0.20667800000000003} },
-{ data: { source: 'MRPL19', target: 'MRPL9', directed: 'false', weight: 1.0} },
-{ data: { source: 'MRPL19', target: 'MRPL30', directed: 'false', weight: 0.99974} },
-{ data: { source: 'MRPL19', target: 'MRPL34', directed: 'false', weight: 0.9993139999999999} },
-{ data: { source: 'MRPL30', target: 'MRPL9', directed: 'false', weight: 0.9999969999999999} },
-{ data: { source: 'MRPL30', target: 'MRPL34', directed: 'false', weight: 0.999859} },
-{ data: { source: 'MRPL9', target: 'MRPL34', directed: 'false', weight: 1.0} }]},
+elements:{nodes: [{data: { id: 'RFC2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P35250" }},
+{data: { id: 'RFC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P35251" }},
+{data: { id: 'ATAD5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96QE3" }},
+{data: { id: 'RFC5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P40937" }},
+{data: { id: 'RFC4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P35249" }},
+{data: { id: 'RFC3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P40938" }}], 
+ edges: [{ data: { source: 'RFC2', target: 'RFC3', directed: 'false', weight: 0.999714} },
+{ data: { source: 'RFC2', target: 'RFC5', directed: 'false', weight: 0.998811} },
+{ data: { source: 'RFC2', target: 'RFC4', directed: 'false', weight: 0.9999899999999999} },
+{ data: { source: 'RFC2', target: 'RFC1', directed: 'false', weight: 0.0978435} },
+{ data: { source: 'RFC1', target: 'RFC3', directed: 'false', weight: 0.9364180000000001} },
+{ data: { source: 'RFC1', target: 'RFC5', directed: 'false', weight: 0.987553} },
+{ data: { source: 'RFC1', target: 'RFC4', directed: 'false', weight: 0.6189279999999999} },
+{ data: { source: 'ATAD5', target: 'RFC5', directed: 'false', weight: 0.132766} },
+{ data: { source: 'ATAD5', target: 'RFC4', directed: 'false', weight: 0.8935709999999999} },
+{ data: { source: 'RFC5', target: 'RFC3', directed: 'false', weight: 0.999994} },
+{ data: { source: 'RFC5', target: 'RFC4', directed: 'false', weight: 0.9998049999999999} },
+{ data: { source: 'RFC4', target: 'RFC3', directed: 'false', weight: 0.9997950000000001} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 30,
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}  
                                  if ( ele.data('type') == 'sars' ){return 'triangle'}   
   return 'rectangle';
   },            
-            'background-color': function( ele ){ 
+             'background-color': function( ele ){ 
                                 if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
 								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
                                  if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
@@ -136,7 +76,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
 								'line-color': function( ele ){ 
                                  if ( ele.data('type') == 'sars' ){return 'red'}   
   return 'blue';
@@ -148,7 +88,10 @@ style: [
 
 });
 cy.layout({
-    'name': 'circle'
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -164,7 +107,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 39S ribosomal subunit, mitochondrial match 2<br> Complex Score = 0.39688<br> Unweighted Density = 0.86
+    0.8 RFC complex<br> Complex Score = 0.39700<br> Unweighted Density = 0.80
     </section>
     </body>
     </html>

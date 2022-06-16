@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 DBC1-SIRT1 complex</title>
+<title> PRPSAP2 PRPS1 PRPS2 SEC23B PRPS1L1</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,19 +30,18 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'BTF3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00478" }},
-{data: { id: 'HSPD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P10809" }},
-{data: { id: 'LRRC28', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q86X40" }},
-{data: { id: 'CCAR2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N163" }},
-{data: { id: 'NACA2', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q9H009" }},
-{data: { id: 'EEF1B2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P24534" }}], 
- edges: [{ data: { source: 'HSPD1', target: 'BTF3', directed: 'false', weight: 0.63194} },
-{ data: { source: 'HSPD1', target: 'CCAR2', directed: 'false', weight: 0.99787} },
-{ data: { source: 'HSPD1', target: 'NACA2', directed: 'false', weight: 0.41908999999999996} },
-{ data: { source: 'HSPD1', target: 'LRRC28', directed: 'false', weight: 0.387075} },
-{ data: { source: 'EEF1B2', target: 'BTF3', directed: 'false', weight: 0.9180200000000001} },
-{ data: { source: 'EEF1B2', target: 'NACA2', directed: 'false', weight: 0.805949} },
-{ data: { source: 'BTF3', target: 'NACA2', directed: 'false', weight: 0.9367719999999999} }]},
+elements:{nodes: [{data: { id: 'PRPS1L1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P21108" }},
+{data: { id: 'PRPS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P60891" }},
+{data: { id: 'SEC23B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15437" }},
+{data: { id: 'PRPSAP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60256" }},
+{data: { id: 'PRPS2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P11908" }}], 
+ edges: [{ data: { source: 'PRPS1L1', target: 'PRPS1', directed: 'false', weight: 0.9961059999999999} },
+{ data: { source: 'PRPS1L1', target: 'PRPSAP2', directed: 'false', weight: 0.160603} },
+{ data: { source: 'PRPS1', target: 'PRPSAP2', directed: 'false', weight: 0.999993} },
+{ data: { source: 'PRPS1', target: 'PRPS2', directed: 'false', weight: 0.999922} },
+{ data: { source: 'PRPS1', target: 'SEC23B', directed: 'false', weight: 0.0367539} },
+{ data: { source: 'SEC23B', target: 'PRPS2', directed: 'false', weight: 0.0410677} },
+{ data: { source: 'PRPSAP2', target: 'PRPS2', directed: 'false', weight: 0.975699} }]},
 
 style: [
     {
@@ -102,7 +101,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 DBC1-SIRT1 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.47
+    PRPSAP2 PRPS1 PRPS2 SEC23B PRPS1L1<br> Complex Score = 0.37500<br> Unweighted Density = 0.70
     </section>
     </body>
     </html>

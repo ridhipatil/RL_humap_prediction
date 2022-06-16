@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> MRI1 IDE SERPINB8 ADA2 RMDN1 GSS</title>
+<title> EIF5A2 DOHH HEL-117 EIF5A</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,21 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'GSS', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P48637" }},
-{data: { id: 'ADA2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NZK5" }},
-{data: { id: 'SARS-CoV2 nsp4', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp4.html" }},
-{data: { id: 'IDE', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P14735" }},
-{data: { id: 'MRI1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BV20" }},
-{data: { id: 'SERPINB8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P50452" }},
-{data: { id: 'RMDN1', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q96DB5" }}], 
- edges: [{ data: { source: 'SARS-CoV2 nsp4', target: 'IDE', directed: 'false', weight: 0.918031442, type: 'sars'} },
-{ data: { source: 'GSS', target: 'MRI1', directed: 'false', weight: 0.814638} },
-{ data: { source: 'GSS', target: 'SERPINB8', directed: 'false', weight: 0.7901779999999999} },
-{ data: { source: 'GSS', target: 'ADA2', directed: 'false', weight: 0.334767} },
-{ data: { source: 'GSS', target: 'RMDN1', directed: 'false', weight: 0.171308} },
-{ data: { source: 'SERPINB8', target: 'MRI1', directed: 'false', weight: 0.648859} },
-{ data: { source: 'SERPINB8', target: 'IDE', directed: 'false', weight: 0.6832020000000001} },
-{ data: { source: 'SERPINB8', target: 'RMDN1', directed: 'false', weight: 0.429691} }]},
+elements:{nodes: [{data: { id: 'DOHH', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BU89" }},
+{data: { id: 'HEL-117', score: 4, type: '', href: "https://www.uniprot.org/uniprot/V9HW74" }},
+{data: { id: 'EIF5A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P63241" }},
+{data: { id: 'EIF5A2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9GZV4" }}], 
+ edges: [{ data: { source: 'EIF5A', target: 'DOHH', directed: 'false', weight: 0.385182} },
+{ data: { source: 'DOHH', target: 'EIF5A2', directed: 'false', weight: 1.0} },
+{ data: { source: 'DOHH', target: 'HEL-117', directed: 'false', weight: 0.108476} }]},
 
 style: [
     {
@@ -104,12 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    MRI1 IDE SERPINB8 ADA2 RMDN1 GSS<br> Complex Score = 0.37500<br> Unweighted Density = 0.47
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>IDE
+    EIF5A2 DOHH HEL-117 EIF5A<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

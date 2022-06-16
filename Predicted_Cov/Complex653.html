@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 TFIID complex</title>
+<title> 0.2 SMAD1-OAZ-HsN3 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,18 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'NCOA5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HCD5" }},
-{data: { id: 'ZNF638', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14966" }},
-{data: { id: 'TAF15', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92804" }},
-{data: { id: 'YLPM1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49750" }},
-{data: { id: 'RBM6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P78332" }}], 
- edges: [{ data: { source: 'NCOA5', target: 'ZNF638', directed: 'false', weight: 0.645502} },
-{ data: { source: 'NCOA5', target: 'TAF15', directed: 'false', weight: 0.433141} },
-{ data: { source: 'NCOA5', target: 'YLPM1', directed: 'false', weight: 0.42939700000000003} },
-{ data: { source: 'YLPM1', target: 'ZNF638', directed: 'false', weight: 0.751529} },
-{ data: { source: 'YLPM1', target: 'TAF15', directed: 'false', weight: 0.660505} },
-{ data: { source: 'RBM6', target: 'TAF15', directed: 'false', weight: 0.9039149999999999} },
-{ data: { source: 'ZNF638', target: 'TAF15', directed: 'false', weight: 0.480383} }]},
+elements:{nodes: [{data: { id: 'PSMB4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P28070" }},
+{data: { id: 'CEP120', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N960" }},
+{data: { id: 'SPICE1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N0Z3" }},
+{data: { id: 'HLX', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14774" }}], 
+ edges: [{ data: { source: 'PSMB4', target: 'CEP120', directed: 'false', weight: 0.135719} },
+{ data: { source: 'CEP120', target: 'HLX', directed: 'false', weight: 0.868251} },
+{ data: { source: 'CEP120', target: 'SPICE1', directed: 'false', weight: 0.130552} }]},
 
 style: [
     {
@@ -101,7 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 TFIID complex<br> Complex Score = 0.38750<br> Unweighted Density = 0.70
+    0.2 SMAD1-OAZ-HsN3 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

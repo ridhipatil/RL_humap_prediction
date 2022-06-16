@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.05 TRBP containing complex (DICER, RPL7A, EIF6, MOV10 and subunits of the 60S ribosomal particle)</title>
+<title> CEP162 SNPH SYBU</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,24 +30,11 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'RPS3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P23396" }},
-{data: { id: 'C8orf33', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H7E9" }},
-{data: { id: 'PUM3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15397" }},
-{data: { id: 'RPL15', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P61313" }},
-{data: { id: 'NOC2L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y3T9" }},
-{data: { id: 'GTPBP4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BZE4" }}], 
- edges: [{ data: { source: 'C8orf33', target: 'RPL15', directed: 'false', weight: 0.41184399999999993} },
-{ data: { source: 'C8orf33', target: 'GTPBP4', directed: 'false', weight: 0.648512} },
-{ data: { source: 'C8orf33', target: 'PUM3', directed: 'false', weight: 0.168446} },
-{ data: { source: 'C8orf33', target: 'NOC2L', directed: 'false', weight: 0.16181800000000002} },
-{ data: { source: 'PUM3', target: 'RPL15', directed: 'false', weight: 0.983777} },
-{ data: { source: 'PUM3', target: 'RPS3', directed: 'false', weight: 0.8767309999999999} },
-{ data: { source: 'PUM3', target: 'GTPBP4', directed: 'false', weight: 0.997365} },
-{ data: { source: 'PUM3', target: 'NOC2L', directed: 'false', weight: 0.9794309999999999} },
-{ data: { source: 'RPL15', target: 'RPS3', directed: 'false', weight: 1.0} },
-{ data: { source: 'RPL15', target: 'GTPBP4', directed: 'false', weight: 0.999999} },
-{ data: { source: 'RPL15', target: 'NOC2L', directed: 'false', weight: 0.251359} },
-{ data: { source: 'NOC2L', target: 'GTPBP4', directed: 'false', weight: 0.97021} }]},
+elements:{nodes: [{data: { id: 'CEP162', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5TB80" }},
+{data: { id: 'SNPH', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15079" }},
+{data: { id: 'SYBU', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NX95" }}], 
+ edges: [{ data: { source: 'CEP162', target: 'SYBU', directed: 'false', weight: 0.12276300000000001} },
+{ data: { source: 'SNPH', target: 'SYBU', directed: 'false', weight: 0.999749} }]},
 
 style: [
     {
@@ -107,7 +94,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.05 TRBP containing complex (DICER, RPL7A, EIF6, MOV10 and subunits of the 60S ribosomal particle)<br> Complex Score = 0.39375<br> Unweighted Density = 0.80
+    CEP162 SNPH SYBU<br> Complex Score = 0.38800<br> Unweighted Density = 0.67
     </section>
     </body>
     </html>

@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 ITGA5-ITGB1-CAL4A3 complex</title>
+<title> 0.2 ITGB3-ITGAV-VTN complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,15 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'COL18A1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P39060" }},
-{data: { id: 'TAZ', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16635" }},
-{data: { id: 'SARS-CoV2 orf8', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 orf8.html" }},
-{data: { id: 'CHPF', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q8IZ52" }},
-{data: { id: 'ERFE', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q4G0M1" }}], 
- edges: [{ data: { source: 'SARS-CoV2 orf8', target: 'CHPF', directed: 'false', weight: 0.989068101, type: 'sars'} },
-{ data: { source: 'ERFE', target: 'TAZ', directed: 'false', weight: 0.681707} },
-{ data: { source: 'TAZ', target: 'COL18A1', directed: 'false', weight: 0.589464} },
-{ data: { source: 'CHPF', target: 'COL18A1', directed: 'false', weight: 0.055036} }]},
+elements:{nodes: [{data: { id: 'GLI4', score: 4, type: '', href: "https://www.uniprot.org/uniprot/P10075" }},
+{data: { id: 'VTN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P04004" }},
+{data: { id: 'TRIOBP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H2D6" }},
+{data: { id: 'UACA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BZF9" }}], 
+ edges: [{ data: { source: 'GLI4', target: 'VTN', directed: 'false', weight: 0.406918} },
+{ data: { source: 'VTN', target: 'TRIOBP', directed: 'false', weight: 0.27277199999999996} },
+{ data: { source: 'VTN', target: 'UACA', directed: 'false', weight: 0.28478000000000003} }]},
 
 style: [
     {
@@ -98,12 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 ITGA5-ITGB1-CAL4A3 complex<br> Complex Score = 0.30000<br> Unweighted Density = 0.50
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>CHPF
+    0.2 ITGB3-ITGAV-VTN complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

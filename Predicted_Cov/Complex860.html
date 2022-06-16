@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 Ubiquilin-VCP-erasin complex</title>
+<title> 0.5 USP1-UAF1 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,16 +30,14 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'VPS13C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q709C8" }},
-{data: { id: 'IP6K1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92551" }},
-{data: { id: 'UBXN4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92575" }},
-{data: { id: 'UBE4A', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q14139" }},
-{data: { id: 'VPS13A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96RL7" }}], 
- edges: [{ data: { source: 'IP6K1', target: 'UBXN4', directed: 'false', weight: 0.983368} },
-{ data: { source: 'IP6K1', target: 'UBE4A', directed: 'false', weight: 0.133451} },
-{ data: { source: 'UBXN4', target: 'UBE4A', directed: 'false', weight: 0.9433739999999999} },
-{ data: { source: 'UBXN4', target: 'VPS13A', directed: 'false', weight: 0.536126} },
-{ data: { source: 'VPS13C', target: 'VPS13A', directed: 'false', weight: 0.752821} }]},
+elements:{nodes: [{data: { id: 'USP46', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62068" }},
+{data: { id: 'DKFZp686P0251', score: 1, type: '', href: "https://www.uniprot.org/uniprot/Q5JPH5" }},
+{data: { id: 'USP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O94782" }},
+{data: { id: 'WDR48', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TAF3" }}], 
+ edges: [{ data: { source: 'USP46', target: 'WDR48', directed: 'false', weight: 0.7203930000000001} },
+{ data: { source: 'USP46', target: 'DKFZp686P0251', directed: 'false', weight: 0.6698649999999999} },
+{ data: { source: 'DKFZp686P0251', target: 'WDR48', directed: 'false', weight: 0.9202379999999999} },
+{ data: { source: 'USP1', target: 'WDR48', directed: 'false', weight: 0.18040699999999998} }]},
 
 style: [
     {
@@ -99,7 +97,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 Ubiquilin-VCP-erasin complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.5 USP1-UAF1 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
     </section>
     </body>
     </html>

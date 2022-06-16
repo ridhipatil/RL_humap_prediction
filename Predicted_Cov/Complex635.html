@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 HNRPF-HNRPH1 complex</title>
+<title> RRM1 HNRPF FBXO48 HNRNPH2</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,17 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'SUPV3L1', score: 5.0, type: '', href: "https://www.uniprot.org/uniprot/Q8IYB8" }},
-{data: { id: 'HNRNPH1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P31943" }},
-{data: { id: 'SYNCRIP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60506" }},
-{data: { id: 'HNRNPA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P09651" }},
-{data: { id: 'HNRNPDL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O14979" }}], 
- edges: [{ data: { source: 'HNRNPH1', target: 'HNRNPA1', directed: 'false', weight: 0.993719} },
-{ data: { source: 'HNRNPH1', target: 'SYNCRIP', directed: 'false', weight: 0.975958} },
-{ data: { source: 'HNRNPH1', target: 'HNRNPDL', directed: 'false', weight: 0.8810100000000001} },
-{ data: { source: 'HNRNPDL', target: 'HNRNPA1', directed: 'false', weight: 0.194139} },
-{ data: { source: 'HNRNPDL', target: 'SUPV3L1', directed: 'false', weight: 0.268613} },
-{ data: { source: 'SYNCRIP', target: 'HNRNPA1', directed: 'false', weight: 0.975932} }]},
+elements:{nodes: [{data: { id: 'FBXO48', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q5FWF7" }},
+{data: { id: 'HNRPF', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P52597" }},
+{data: { id: 'RRM1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P23921" }},
+{data: { id: 'HNRNPH2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P55795" }}], 
+ edges: [{ data: { source: 'FBXO48', target: 'RRM1', directed: 'false', weight: 0.776697} },
+{ data: { source: 'HNRPF', target: 'HNRNPH2', directed: 'false', weight: 0.262211} },
+{ data: { source: 'RRM1', target: 'HNRNPH2', directed: 'false', weight: 0.39905} }]},
 
 style: [
     {
@@ -100,7 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 HNRPF-HNRPH1 complex<br> Complex Score = 0.38750<br> Unweighted Density = 0.60
+    RRM1 HNRPF FBXO48 HNRNPH2<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

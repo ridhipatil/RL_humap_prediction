@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 GLE1-NUPL2-NUP155 complex</title>
+<title> 0.1 REP-RGGT-Rab complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,43 +30,41 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'TMEM214', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6NUQ4" }},
-{data: { id: 'UBE2I', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P63279" }},
-{data: { id: 'AAAS', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NRG9" }},
-{data: { id: 'SUMO2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P61956" }},
-{data: { id: 'NUP85', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BW27" }},
-{data: { id: 'NUP155', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75694" }},
-{data: { id: 'GLE1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q53GS7" }}], 
- edges: [{ data: { source: 'TMEM214', target: 'NUP85', directed: 'false', weight: 0.8805379999999999} },
-{ data: { source: 'TMEM214', target: 'UBE2I', directed: 'false', weight: 0.774383} },
-{ data: { source: 'TMEM214', target: 'NUP155', directed: 'false', weight: 0.776556} },
-{ data: { source: 'TMEM214', target: 'AAAS', directed: 'false', weight: 0.927004} },
-{ data: { source: 'TMEM214', target: 'SUMO2', directed: 'false', weight: 0.594016} },
-{ data: { source: 'TMEM214', target: 'GLE1', directed: 'false', weight: 0.819174} },
-{ data: { source: 'UBE2I', target: 'AAAS', directed: 'false', weight: 0.9518709999999999} },
-{ data: { source: 'UBE2I', target: 'SUMO2', directed: 'false', weight: 0.945939} },
-{ data: { source: 'UBE2I', target: 'GLE1', directed: 'false', weight: 0.934591} },
-{ data: { source: 'AAAS', target: 'NUP85', directed: 'false', weight: 0.873986} },
-{ data: { source: 'AAAS', target: 'NUP155', directed: 'false', weight: 0.776556} },
-{ data: { source: 'AAAS', target: 'GLE1', directed: 'false', weight: 0.819174} },
-{ data: { source: 'AAAS', target: 'SUMO2', directed: 'false', weight: 0.594016} },
-{ data: { source: 'NUP85', target: 'NUP155', directed: 'false', weight: 0.881956} },
-{ data: { source: 'NUP85', target: 'GLE1', directed: 'false', weight: 0.766149} },
-{ data: { source: 'SUMO2', target: 'GLE1', directed: 'false', weight: 0.42776000000000003} },
-{ data: { source: 'NUP155', target: 'GLE1', directed: 'false', weight: 0.666568} }]},
+elements:{nodes: [{data: { id: 'RAB22A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UL26" }},
+{data: { id: 'SARS-CoV2 nsp7', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp7.html" }},
+{data: { id: 'RAB7A', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P51149" }},
+{data: { id: 'CHM', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P24386" }},
+{data: { id: 'GDI1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P31150" }},
+{data: { id: 'RAB31', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13636" }},
+{data: { id: 'SARS-CoV2 nsp7', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp7.html" }},
+{data: { id: 'RAB5C', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P51148" }}], 
+ edges: [{ data: { source: 'SARS-CoV2 nsp7', target: 'RAB7A', directed: 'false', weight: 0.972724229, type: 'sars'} },
+{ data: { source: 'SARS-CoV2 nsp7', target: 'RAB5C', directed: 'false', weight: 0.87908593, type: 'sars'} },
+{ data: { source: 'RAB22A', target: 'RAB31', directed: 'false', weight: 1.0} },
+{ data: { source: 'RAB22A', target: 'GDI1', directed: 'false', weight: 0.86606} },
+{ data: { source: 'RAB7A', target: 'GDI1', directed: 'false', weight: 0.603939} },
+{ data: { source: 'RAB7A', target: 'RAB5C', directed: 'false', weight: 0.606104} },
+{ data: { source: 'RAB7A', target: 'CHM', directed: 'false', weight: 0.051486199999999996} },
+{ data: { source: 'CHM', target: 'RAB31', directed: 'false', weight: 0.401327} },
+{ data: { source: 'CHM', target: 'GDI1', directed: 'false', weight: 0.0225976} },
+{ data: { source: 'CHM', target: 'RAB5C', directed: 'false', weight: 0.189363} },
+{ data: { source: 'GDI1', target: 'RAB31', directed: 'false', weight: 0.793175} },
+{ data: { source: 'GDI1', target: 'RAB5C', directed: 'false', weight: 0.205948} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 30,
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}  
                                  if ( ele.data('type') == 'sars' ){return 'triangle'}   
   return 'rectangle';
   },            
-            'background-color': function( ele ){ 
+             'background-color': function( ele ){ 
                                 if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
 								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
                                  if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
@@ -80,7 +78,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
 								'line-color': function( ele ){ 
                                  if ( ele.data('type') == 'sars' ){return 'red'}   
   return 'blue';
@@ -92,7 +90,10 @@ style: [
 
 });
 cy.layout({
-    'name': 'circle'
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -108,7 +109,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 GLE1-NUPL2-NUP155 complex<br> Complex Score = 0.39375<br> Unweighted Density = 0.81
+    0.1 REP-RGGT-Rab complex<br> Complex Score = 0.38800<br> Unweighted Density = 0.67
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        2 interacting protein(s): <br>RAB7A RAB5C
     </section>
     </body>
     </html>

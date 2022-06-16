@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 RNA polymerase II (RNAPII)</title>
+<title> GK3P GK NEO1</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,23 +30,11 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'GPN3', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9UHW5" }},
-{data: { id: 'POLR2J2', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q9GZM3" }},
-{data: { id: 'CTDP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y5B0" }},
-{data: { id: 'GPN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HCN4" }},
-{data: { id: 'POLR2I', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P36954" }},
-{data: { id: 'POLR2G', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62487" }}], 
- edges: [{ data: { source: 'GPN3', target: 'POLR2G', directed: 'false', weight: 0.755877} },
-{ data: { source: 'GPN3', target: 'POLR2I', directed: 'false', weight: 0.661057} },
-{ data: { source: 'GPN3', target: 'GPN1', directed: 'false', weight: 0.980087} },
-{ data: { source: 'POLR2J2', target: 'POLR2G', directed: 'false', weight: 0.960627} },
-{ data: { source: 'POLR2J2', target: 'POLR2I', directed: 'false', weight: 0.387818} },
-{ data: { source: 'POLR2J2', target: 'CTDP1', directed: 'false', weight: 0.154415} },
-{ data: { source: 'GPN1', target: 'POLR2G', directed: 'false', weight: 0.9732350000000001} },
-{ data: { source: 'GPN1', target: 'POLR2I', directed: 'false', weight: 0.628188} },
-{ data: { source: 'POLR2G', target: 'POLR2I', directed: 'false', weight: 0.999927} },
-{ data: { source: 'POLR2G', target: 'CTDP1', directed: 'false', weight: 0.9184889999999999} },
-{ data: { source: 'CTDP1', target: 'POLR2I', directed: 'false', weight: 0.231307} }]},
+elements:{nodes: [{data: { id: 'GK3P', score: 4, type: '', href: "https://www.ncbi.nlm.nih.gov/gene/2713" }},
+{data: { id: 'GK', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P32189" }},
+{data: { id: 'NEO1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92859" }}], 
+ edges: [{ data: { source: 'GK3P', target: 'GK', directed: 'false', weight: 1.0} },
+{ data: { source: 'GK', target: 'NEO1', directed: 'false', weight: 0.101083} }]},
 
 style: [
     {
@@ -106,7 +94,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 RNA polymerase II (RNAPII)<br> Complex Score = 0.39375<br> Unweighted Density = 0.73
+    GK3P GK NEO1<br> Complex Score = 0.38800<br> Unweighted Density = 0.67
     </section>
     </body>
     </html>

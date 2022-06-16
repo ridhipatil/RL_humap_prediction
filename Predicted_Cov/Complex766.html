@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 SEPHS1-SEPHS2-SEPSECS-SECp43 complex</title>
+<title> 0.5 CCND3-CDK4 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,11 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'NME2P1', score: 3, type: '', href: "https://www.uniprot.org/uniprot/O60361" }},
-{data: { id: 'SEPHS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49903" }},
-{data: { id: 'ACADS', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P16219" }}], 
- edges: [{ data: { source: 'NME2P1', target: 'SEPHS1', directed: 'false', weight: 0.31451399999999996} },
-{ data: { source: 'SEPHS1', target: 'ACADS', directed: 'false', weight: 0.782864} }]},
+elements:{nodes: [{data: { id: 'GUSB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P08236" }},
+{data: { id: 'CDK4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P11802" }},
+{data: { id: 'HOXA3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43365" }},
+{data: { id: 'CCND3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P30281" }}], 
+ edges: [{ data: { source: 'GUSB', target: 'CDK4', directed: 'false', weight: 0.100397} },
+{ data: { source: 'GUSB', target: 'HOXA3', directed: 'false', weight: 0.990885} },
+{ data: { source: 'CDK4', target: 'CCND3', directed: 'false', weight: 0.201821} }]},
 
 style: [
     {
@@ -94,7 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 SEPHS1-SEPHS2-SEPSECS-SECp43 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
+    0.5 CCND3-CDK4 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

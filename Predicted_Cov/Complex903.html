@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> TPGS2 TPGS1 C11orf49 LRRC49 TTLL1</title>
+<title> 0.2 SF3A1-SF3A2-SF3A3 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,16 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'TTLL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95922" }},
-{data: { id: 'LRRC49', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q8IUZ0" }},
-{data: { id: 'TPGS1', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q6ZTW0" }},
-{data: { id: 'TPGS2', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q68CL5" }},
-{data: { id: 'C11orf49', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9H6J7" }}], 
- edges: [{ data: { source: 'TPGS1', target: 'TTLL1', directed: 'false', weight: 0.522915} },
-{ data: { source: 'TTLL1', target: 'TPGS2', directed: 'false', weight: 0.659048} },
-{ data: { source: 'TPGS2', target: 'LRRC49', directed: 'false', weight: 0.28781100000000004} },
-{ data: { source: 'TPGS2', target: 'C11orf49', directed: 'false', weight: 0.677945} },
-{ data: { source: 'LRRC49', target: 'C11orf49', directed: 'false', weight: 0.986748} }]},
+elements:{nodes: [{data: { id: 'RBM17', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96I25" }},
+{data: { id: 'PRPF40A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75400" }},
+{data: { id: 'SF3A1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15459" }},
+{data: { id: 'CHERP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IWX8" }}], 
+ edges: [{ data: { source: 'CHERP', target: 'RBM17', directed: 'false', weight: 0.977299} },
+{ data: { source: 'RBM17', target: 'SF3A1', directed: 'false', weight: 0.15043} },
+{ data: { source: 'PRPF40A', target: 'SF3A1', directed: 'false', weight: 0.190942} }]},
 
 style: [
     {
@@ -99,7 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    TPGS2 TPGS1 C11orf49 LRRC49 TTLL1<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.2 SF3A1-SF3A2-SF3A3 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

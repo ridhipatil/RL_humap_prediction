@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 RHAMM-beta-catenin complex</title>
+<title> 0.3 CTLH complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,19 +30,25 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'HMMR', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75330" }},
-{data: { id: 'DYNLL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P63167" }},
-{data: { id: 'ZMYM4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5VZL5" }},
-{data: { id: 'GLCCI1', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q86VQ1" }},
-{data: { id: 'DYNLL2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96FJ2" }}], 
- edges: [{ data: { source: 'HMMR', target: 'DYNLL1', directed: 'false', weight: 0.622156} },
-{ data: { source: 'HMMR', target: 'ZMYM4', directed: 'false', weight: 0.0805937} },
-{ data: { source: 'HMMR', target: 'GLCCI1', directed: 'false', weight: 0.12021300000000001} },
-{ data: { source: 'GLCCI1', target: 'DYNLL1', directed: 'false', weight: 0.6348520000000001} },
-{ data: { source: 'GLCCI1', target: 'ZMYM4', directed: 'false', weight: 0.11228099999999999} },
-{ data: { source: 'ZMYM4', target: 'DYNLL1', directed: 'false', weight: 0.676921} },
-{ data: { source: 'ZMYM4', target: 'DYNLL2', directed: 'false', weight: 0.06464} },
-{ data: { source: 'DYNLL1', target: 'DYNLL2', directed: 'false', weight: 0.384302} }]},
+elements:{nodes: [{data: { id: 'RANBP10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6VN20" }},
+{data: { id: 'ZCCHC2', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q9C0B9" }},
+{data: { id: 'HTRA2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43464" }},
+{data: { id: 'ARMC8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IUR7" }},
+{data: { id: 'GID8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NWU2" }},
+{data: { id: 'RMND5A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H871" }},
+{data: { id: 'MKLN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UL63" }}], 
+ edges: [{ data: { source: 'RANBP10', target: 'GID8', directed: 'false', weight: 0.9999969999999999} },
+{ data: { source: 'RANBP10', target: 'RMND5A', directed: 'false', weight: 1.0} },
+{ data: { source: 'RANBP10', target: 'ARMC8', directed: 'false', weight: 0.941882} },
+{ data: { source: 'RANBP10', target: 'MKLN1', directed: 'false', weight: 0.11565299999999999} },
+{ data: { source: 'ZCCHC2', target: 'RMND5A', directed: 'false', weight: 0.256063} },
+{ data: { source: 'HTRA2', target: 'RMND5A', directed: 'false', weight: 0.457532} },
+{ data: { source: 'ARMC8', target: 'GID8', directed: 'false', weight: 0.373925} },
+{ data: { source: 'ARMC8', target: 'RMND5A', directed: 'false', weight: 0.999999} },
+{ data: { source: 'ARMC8', target: 'MKLN1', directed: 'false', weight: 0.736318} },
+{ data: { source: 'GID8', target: 'RMND5A', directed: 'false', weight: 0.9999129999999999} },
+{ data: { source: 'GID8', target: 'MKLN1', directed: 'false', weight: 0.994757} },
+{ data: { source: 'RMND5A', target: 'MKLN1', directed: 'false', weight: 0.9999969999999999} }]},
 
 style: [
     {
@@ -102,7 +108,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 RHAMM-beta-catenin complex<br> Complex Score = 0.39375<br> Unweighted Density = 0.80
+    0.3 CTLH complex<br> Complex Score = 0.38800<br> Unweighted Density = 0.57
     </section>
     </body>
     </html>

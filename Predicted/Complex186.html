@@ -30,29 +30,24 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'CSPG4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6UVK1" }},
-{data: { id: 'PTPRJ', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q12913" }},
-{data: { id: 'ATP13A3', score: 4, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9H7F0" }},
-{data: { id: 'SLC9A6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92581" }},
-{data: { id: 'PODXL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00592" }},
-{data: { id: 'SPPL2A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TCT8" }},
-{data: { id: 'LGALS8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00214" }}], 
- edges: [{ data: { source: 'CSPG4', target: 'LGALS8', directed: 'false', weight: 0.847807} },
-{ data: { source: 'CSPG4', target: 'PTPRJ', directed: 'false', weight: 0.463714} },
-{ data: { source: 'CSPG4', target: 'SLC9A6', directed: 'false', weight: 0.390018} },
-{ data: { source: 'CSPG4', target: 'PODXL', directed: 'false', weight: 0.345713} },
-{ data: { source: 'CSPG4', target: 'ATP13A3', directed: 'false', weight: 0.287896} },
-{ data: { source: 'PTPRJ', target: 'LGALS8', directed: 'false', weight: 0.8404799999999999} },
-{ data: { source: 'PTPRJ', target: 'SLC9A6', directed: 'false', weight: 0.463714} },
-{ data: { source: 'PTPRJ', target: 'PODXL', directed: 'false', weight: 0.414998} },
-{ data: { source: 'PTPRJ', target: 'ATP13A3', directed: 'false', weight: 0.352171} },
-{ data: { source: 'ATP13A3', target: 'LGALS8', directed: 'false', weight: 0.547268} },
-{ data: { source: 'ATP13A3', target: 'PODXL', directed: 'false', weight: 0.249522} },
-{ data: { source: 'ATP13A3', target: 'SLC9A6', directed: 'false', weight: 0.287896} },
-{ data: { source: 'SLC9A6', target: 'LGALS8', directed: 'false', weight: 0.617876} },
-{ data: { source: 'SLC9A6', target: 'PODXL', directed: 'false', weight: 0.345713} },
-{ data: { source: 'PODXL', target: 'LGALS8', directed: 'false', weight: 0.5} },
-{ data: { source: 'SPPL2A', target: 'LGALS8', directed: 'false', weight: 0.811329} }]},
+elements:{nodes: [{data: { id: 'RPS27', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P42677" }},
+{data: { id: 'RPS18', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62269" }},
+{data: { id: 'PHB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P35232" }},
+{data: { id: 'SLC25A5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P05141" }},
+{data: { id: 'VDAC2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P45880" }},
+{data: { id: 'RPL14', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P50914" }},
+{data: { id: 'RPS9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P46781" }}], 
+ edges: [{ data: { source: 'RPS27', target: 'RPL14', directed: 'false', weight: 0.9252229999999999} },
+{ data: { source: 'RPS27', target: 'RPS9', directed: 'false', weight: 0.999872} },
+{ data: { source: 'RPS27', target: 'RPS18', directed: 'false', weight: 0.998699} },
+{ data: { source: 'RPS18', target: 'RPL14', directed: 'false', weight: 1.0} },
+{ data: { source: 'RPS18', target: 'RPS9', directed: 'false', weight: 1.0} },
+{ data: { source: 'PHB', target: 'VDAC2', directed: 'false', weight: 0.987547} },
+{ data: { source: 'PHB', target: 'SLC25A5', directed: 'false', weight: 0.987518} },
+{ data: { source: 'SLC25A5', target: 'RPL14', directed: 'false', weight: 0.15424100000000002} },
+{ data: { source: 'SLC25A5', target: 'RPS9', directed: 'false', weight: 0.203047} },
+{ data: { source: 'SLC25A5', target: 'VDAC2', directed: 'false', weight: 0.987627} },
+{ data: { source: 'RPL14', target: 'RPS9', directed: 'false', weight: 1.0} }]},
 
 style: [
     {
@@ -100,12 +95,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.39375
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>ATP13A3
+    Complex Score  = 0.38800
     </section>
     </body>
     </html>

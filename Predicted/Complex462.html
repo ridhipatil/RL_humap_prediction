@@ -30,17 +30,14 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'FARP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y4F1" }},
-{data: { id: 'BRD4', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/O60885" }},
-{data: { id: 'FAM90A1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86YD7" }},
-{data: { id: 'BRD2', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P25440" }},
-{data: { id: 'MTMR14', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NCE2" }}], 
- edges: [{ data: { source: 'FARP1', target: 'BRD2', directed: 'false', weight: 0.8587049999999999} },
-{ data: { source: 'FAM90A1', target: 'BRD2', directed: 'false', weight: 0.97585} },
-{ data: { source: 'FAM90A1', target: 'MTMR14', directed: 'false', weight: 0.956266} },
-{ data: { source: 'FAM90A1', target: 'BRD4', directed: 'false', weight: 0.952197} },
-{ data: { source: 'BRD2', target: 'BRD4', directed: 'false', weight: 0.253703} },
-{ data: { source: 'BRD4', target: 'MTMR14', directed: 'false', weight: 0.123797} }]},
+elements:{nodes: [{data: { id: 'ARID1B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NFD5" }},
+{data: { id: 'SMARCD3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6STE5" }},
+{data: { id: 'DPF3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92784" }},
+{data: { id: 'SS18L1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75177" }}], 
+ edges: [{ data: { source: 'ARID1B', target: 'DPF3', directed: 'false', weight: 0.999909} },
+{ data: { source: 'ARID1B', target: 'SMARCD3', directed: 'false', weight: 0.8502} },
+{ data: { source: 'SMARCD3', target: 'DPF3', directed: 'false', weight: 0.9345559999999999} },
+{ data: { source: 'DPF3', target: 'SS18L1', directed: 'false', weight: 0.578579} }]},
 
 style: [
     {
@@ -88,12 +85,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.38750
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        2 interacting protein(s): <br>BRD4 BRD2
+    Complex Score  = 0.37500
     </section>
     </body>
     </html>

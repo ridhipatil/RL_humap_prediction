@@ -30,8 +30,13 @@
       container: document.getElementById('cy'),
       
 elements:{nodes: [{data: { id: "SARS-CoV2 orf3b", score: 2, type:  "sars" , href: "https://covid-19.uniprot.org/uniprotkb/P0DTF1" }},
-{data: { id: "STOML2", score: 1, score_annot: 5, type:  "human" , href: "https://www.uniprot.org/uniprot/Q9UJZ1" }}], 
- edges: [{ data: { source: "SARS-CoV2 orf3b", target: "STOML2", directed: "false", type: "sars2prot",weight: 0.929039041} }]},
+{data: { id: "STOML2", score: 1, score_annot: 5, type:  "human" , href: "https://www.uniprot.org/uniprot/Q9UJZ1" }},
+{data: { id: "0.1 Respiratory chain complex I (beta subunit) mitochondrial", score: 0, type: "complex", href: "../Predicted/Complex3496.html" }},
+{data: { id: "0.1 Respiratory chain complex I (incomplete intermediate), mitochondrial", score: 0, type: "complex", href: "../Predicted/Complex1554.html" }}], 
+ edges: [{ data: { source: "0.1 Respiratory chain complex I (beta subunit) mitochondrial", target: "0.1 Respiratory chain complex I (incomplete intermediate), mitochondrial", directed: "false",type: "complex2complex", weight: 0.1111111111111111} },
+{ data: { source: "STOML2", target: "0.1 Respiratory chain complex I (incomplete intermediate), mitochondrial", directed: "false",type: "prot2complex", weight: 0.99} },
+{ data: { source: "STOML2", target: "0.1 Respiratory chain complex I (beta subunit) mitochondrial", directed: "false",type: "prot2complex", weight: 0.99} },
+{ data: { source: "SARS-CoV2 orf3b", target: "STOML2", directed: "false", type: "sars2prot",weight: 0.929039041} }]},
 
 style: [
     {

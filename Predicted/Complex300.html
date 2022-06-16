@@ -30,18 +30,19 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'ITLN2', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q8WWU7" }},
-{data: { id: 'ITLN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WWA0" }},
-{data: { id: 'NACC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96RE7" }}], 
- edges: [{ data: { source: 'ITLN1', target: 'ITLN2', directed: 'false', weight: 0.9833149999999999} },
-{ data: { source: 'ITLN1', target: 'NACC1', directed: 'false', weight: 0.8796379999999999} },
-{ data: { source: 'NACC1', target: 'ITLN2', directed: 'false', weight: 0.133456} }]},
+elements:{nodes: [{data: { id: 'ABLIM1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O14639" }},
+{data: { id: 'CPPED1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BRF8" }},
+{data: { id: 'SEPSECS', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9HD40" }}], 
+ edges: [{ data: { source: 'ABLIM1', target: 'SEPSECS', directed: 'false', weight: 0.9789059999999999} },
+{ data: { source: 'CPPED1', target: 'SEPSECS', directed: 'false', weight: 0.79747} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 30,
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}                                
@@ -53,7 +54,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
 								'line-color': 'blue',
 								'opacity': 0.5
 							}
@@ -62,7 +63,10 @@ style: [
 
 });
 cy.layout({
-    name: 'circle'
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -78,7 +82,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.38750
+    Complex Score  = 0.38800
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>SEPSECS
     </section>
     </body>
     </html>

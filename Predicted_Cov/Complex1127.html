@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 Cofilin-actin-CAP1 complex</title>
+<title> PMP2 TRABD NME2 DBI</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'PPIAL4D', score: 3, type: '', href: "https://www.uniprot.org/uniprot/F5H284" }},
-{data: { id: 'ABLIM1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O14639" }},
-{data: { id: 'TAGLN', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q01995" }},
-{data: { id: 'CFL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P23528" }}], 
- edges: [{ data: { source: 'PPIAL4D', target: 'TAGLN', directed: 'false', weight: 0.485278} },
-{ data: { source: 'PPIAL4D', target: 'CFL1', directed: 'false', weight: 0.681575} },
-{ data: { source: 'CFL1', target: 'ABLIM1', directed: 'false', weight: 0.390474} }]},
+elements:{nodes: [{data: { id: 'NME2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P22392" }},
+{data: { id: 'TRABD', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q9H4I3" }},
+{data: { id: 'PMP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P02689" }},
+{data: { id: 'DBI', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P07108" }}], 
+ edges: [{ data: { source: 'NME2', target: 'TRABD', directed: 'false', weight: 0.607875} },
+{ data: { source: 'NME2', target: 'DBI', directed: 'false', weight: 0.22687399999999996} },
+{ data: { source: 'PMP2', target: 'DBI', directed: 'false', weight: 0.38811599999999996} }]},
 
 style: [
     {
@@ -96,7 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 Cofilin-actin-CAP1 complex<br> Complex Score = 0.30000<br> Unweighted Density = 0.50
+    PMP2 TRABD NME2 DBI<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 ESCRT-III complex</title>
+<title> CCDC112 SKA3 TEX9 LOC284804</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,21 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'MTUS2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5JR59" }},
-{data: { id: 'SARS-CoV2 orf9b', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 orf9b.html" }},
-{data: { id: 'CHMP2A', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/O43633" }},
-{data: { id: 'CHMP3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y3E7" }},
-{data: { id: 'TFG', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92734" }},
-{data: { id: 'UMAD1', score: 2, type: '', href: "https://www.uniprot.org/uniprot/C9J7I0" }},
-{data: { id: 'TM9SF1', score: 4, type: '', href: "https://www.uniprot.org/uniprot/O15321" }}], 
- edges: [{ data: { source: 'SARS-CoV2 orf9b', target: 'CHMP2A', directed: 'false', weight: 0.948289085, type: 'sars'} },
-{ data: { source: 'MTUS2', target: 'TFG', directed: 'false', weight: 0.778067} },
-{ data: { source: 'MTUS2', target: 'UMAD1', directed: 'false', weight: 0.125737} },
-{ data: { source: 'CHMP2A', target: 'TM9SF1', directed: 'false', weight: 0.328185} },
-{ data: { source: 'TFG', target: 'CHMP3', directed: 'false', weight: 0.764069} },
-{ data: { source: 'TFG', target: 'UMAD1', directed: 'false', weight: 0.663754} },
-{ data: { source: 'TFG', target: 'TM9SF1', directed: 'false', weight: 0.13006700000000002} },
-{ data: { source: 'CHMP3', target: 'TM9SF1', directed: 'false', weight: 0.260982} }]},
+elements:{nodes: [{data: { id: 'TEX9', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q8N6V9" }},
+{data: { id: 'LOC284804', score: 1, type: '', href: "https://www.uniprot.org/uniprot/Q6P0R2" }},
+{data: { id: 'SKA3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IX90" }},
+{data: { id: 'CCDC112', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q8NEF3" }}], 
+ edges: [{ data: { source: 'LOC284804', target: 'SKA3', directed: 'false', weight: 0.318123} },
+{ data: { source: 'LOC284804', target: 'TEX9', directed: 'false', weight: 0.790458} },
+{ data: { source: 'TEX9', target: 'CCDC112', directed: 'false', weight: 0.976909} }]},
 
 style: [
     {
@@ -104,12 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 ESCRT-III complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.47
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>CHMP2A
+    CCDC112 SKA3 TEX9 LOC284804<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

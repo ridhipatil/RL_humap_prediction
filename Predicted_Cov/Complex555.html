@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 CtBP core complex</title>
+<title> SLC39A9 METTL16 FKRP</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,40 +30,26 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'MIER2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N344" }},
-{data: { id: 'WIZ', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95785" }},
-{data: { id: 'EHMT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H9B1" }},
-{data: { id: 'CDYL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y232" }},
-{data: { id: 'EHMT2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96KQ7" }},
-{data: { id: 'ZNF644', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H582" }}], 
- edges: [{ data: { source: 'MIER2', target: 'EHMT1', directed: 'false', weight: 0.927732} },
-{ data: { source: 'MIER2', target: 'WIZ', directed: 'false', weight: 0.37995500000000004} },
-{ data: { source: 'MIER2', target: 'CDYL', directed: 'false', weight: 0.9692940000000001} },
-{ data: { source: 'MIER2', target: 'EHMT2', directed: 'false', weight: 0.9368299999999999} },
-{ data: { source: 'MIER2', target: 'ZNF644', directed: 'false', weight: 0.348639} },
-{ data: { source: 'WIZ', target: 'EHMT1', directed: 'false', weight: 0.9965120000000001} },
-{ data: { source: 'WIZ', target: 'EHMT2', directed: 'false', weight: 0.707252} },
-{ data: { source: 'WIZ', target: 'ZNF644', directed: 'false', weight: 0.5} },
-{ data: { source: 'WIZ', target: 'CDYL', directed: 'false', weight: 0.247364} },
-{ data: { source: 'CDYL', target: 'EHMT1', directed: 'false', weight: 0.38103899999999996} },
-{ data: { source: 'CDYL', target: 'EHMT2', directed: 'false', weight: 0.3575} },
-{ data: { source: 'CDYL', target: 'ZNF644', directed: 'false', weight: 0.0896985} },
-{ data: { source: 'ZNF644', target: 'EHMT1', directed: 'false', weight: 0.935157} },
-{ data: { source: 'ZNF644', target: 'EHMT2', directed: 'false', weight: 0.953126} },
-{ data: { source: 'EHMT1', target: 'EHMT2', directed: 'false', weight: 0.8565219999999999} }]},
+elements:{nodes: [{data: { id: 'FKRP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H9S5" }},
+{data: { id: 'METTL16', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86W50" }},
+{data: { id: 'SLC39A9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NUM3" }}], 
+ edges: [{ data: { source: 'FKRP', target: 'SLC39A9', directed: 'false', weight: 0.0314779} },
+{ data: { source: 'METTL16', target: 'SLC39A9', directed: 'false', weight: 0.040184} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 30,
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}  
                                  if ( ele.data('type') == 'sars' ){return 'triangle'}   
   return 'rectangle';
   },            
-            'background-color': function( ele ){ 
+             'background-color': function( ele ){ 
                                 if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
 								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
                                  if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
@@ -77,7 +63,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
 								'line-color': function( ele ){ 
                                  if ( ele.data('type') == 'sars' ){return 'red'}   
   return 'blue';
@@ -89,7 +75,10 @@ style: [
 
 });
 cy.layout({
-    'name': 'circle'
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -105,7 +94,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 CtBP core complex<br> Complex Score = 0.38750<br> Unweighted Density = 1.00
+    SLC39A9 METTL16 FKRP<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
     </section>
     </body>
     </html>

@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> TRIM35 TRIM44 FAM193B TRIM10 KLHL41 MTMR1</title>
+<title> 0.5 TRAPP complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,38 +30,49 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'FAM193B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96PV7" }},
-{data: { id: 'TRIM44', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96DX7" }},
-{data: { id: 'TRIM35', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UPQ4" }},
-{data: { id: 'KLHL41', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60662" }},
-{data: { id: 'MTMR1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13613" }},
-{data: { id: 'TRIM10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UDY6" }}], 
- edges: [{ data: { source: 'FAM193B', target: 'TRIM10', directed: 'false', weight: 0.9663649999999999} },
-{ data: { source: 'FAM193B', target: 'TRIM35', directed: 'false', weight: 0.151455} },
-{ data: { source: 'FAM193B', target: 'TRIM44', directed: 'false', weight: 0.151455} },
-{ data: { source: 'FAM193B', target: 'KLHL41', directed: 'false', weight: 0.133456} },
-{ data: { source: 'KLHL41', target: 'TRIM10', directed: 'false', weight: 0.8997299999999999} },
-{ data: { source: 'KLHL41', target: 'TRIM35', directed: 'false', weight: 0.151455} },
-{ data: { source: 'KLHL41', target: 'TRIM44', directed: 'false', weight: 0.151455} },
-{ data: { source: 'TRIM35', target: 'TRIM10', directed: 'false', weight: 0.9875280000000001} },
-{ data: { source: 'TRIM35', target: 'TRIM44', directed: 'false', weight: 0.171414} },
-{ data: { source: 'TRIM35', target: 'MTMR1', directed: 'false', weight: 0.133451} },
-{ data: { source: 'MTMR1', target: 'TRIM10', directed: 'false', weight: 0.47383000000000003} },
-{ data: { source: 'MTMR1', target: 'TRIM44', directed: 'false', weight: 0.133451} },
-{ data: { source: 'TRIM10', target: 'TRIM44', directed: 'false', weight: 0.984567} }]},
+elements:{nodes: [{data: { id: 'TRAPPC3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43617" }},
+{data: { id: 'TRAPPC8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y2L5" }},
+{data: { id: 'TRAPPC6B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86SZ2" }},
+{data: { id: 'TRAPPC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y5R8" }},
+{data: { id: 'TRAPPC11', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q7Z392" }},
+{data: { id: 'TRAPPC12', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WVT3" }},
+{data: { id: 'TRAPPC13', score: 5, type: '', href: "https://www.uniprot.org/uniprot/A5PLN9" }},
+{data: { id: 'TRAPPC5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IUR0" }}], 
+ edges: [{ data: { source: 'TRAPPC3', target: 'TRAPPC12', directed: 'false', weight: 0.223322} },
+{ data: { source: 'TRAPPC3', target: 'TRAPPC11', directed: 'false', weight: 0.10626500000000001} },
+{ data: { source: 'TRAPPC3', target: 'TRAPPC5', directed: 'false', weight: 0.901651} },
+{ data: { source: 'TRAPPC3', target: 'TRAPPC1', directed: 'false', weight: 0.882388} },
+{ data: { source: 'TRAPPC8', target: 'TRAPPC12', directed: 'false', weight: 0.9995450000000001} },
+{ data: { source: 'TRAPPC8', target: 'TRAPPC5', directed: 'false', weight: 0.9983120000000001} },
+{ data: { source: 'TRAPPC8', target: 'TRAPPC1', directed: 'false', weight: 0.983941} },
+{ data: { source: 'TRAPPC8', target: 'TRAPPC13', directed: 'false', weight: 0.041307300000000005} },
+{ data: { source: 'TRAPPC6B', target: 'TRAPPC12', directed: 'false', weight: 0.0475347} },
+{ data: { source: 'TRAPPC6B', target: 'TRAPPC5', directed: 'false', weight: 0.5773159999999999} },
+{ data: { source: 'TRAPPC6B', target: 'TRAPPC1', directed: 'false', weight: 0.619242} },
+{ data: { source: 'TRAPPC1', target: 'TRAPPC12', directed: 'false', weight: 0.918099} },
+{ data: { source: 'TRAPPC1', target: 'TRAPPC11', directed: 'false', weight: 0.990366} },
+{ data: { source: 'TRAPPC1', target: 'TRAPPC5', directed: 'false', weight: 0.653154} },
+{ data: { source: 'TRAPPC1', target: 'TRAPPC13', directed: 'false', weight: 0.319737} },
+{ data: { source: 'TRAPPC11', target: 'TRAPPC12', directed: 'false', weight: 0.9999600000000001} },
+{ data: { source: 'TRAPPC11', target: 'TRAPPC5', directed: 'false', weight: 0.9979309999999999} },
+{ data: { source: 'TRAPPC12', target: 'TRAPPC13', directed: 'false', weight: 0.689829} },
+{ data: { source: 'TRAPPC12', target: 'TRAPPC5', directed: 'false', weight: 0.166562} },
+{ data: { source: 'TRAPPC13', target: 'TRAPPC5', directed: 'false', weight: 0.545339} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 30,
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}  
                                  if ( ele.data('type') == 'sars' ){return 'triangle'}   
   return 'rectangle';
   },            
-            'background-color': function( ele ){ 
+             'background-color': function( ele ){ 
                                 if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
 								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
                                  if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
@@ -75,7 +86,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
 								'line-color': function( ele ){ 
                                  if ( ele.data('type') == 'sars' ){return 'red'}   
   return 'blue';
@@ -87,7 +98,10 @@ style: [
 
 });
 cy.layout({
-    'name': 'circle'
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -103,7 +117,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    TRIM35 TRIM44 FAM193B TRIM10 KLHL41 MTMR1<br> Complex Score = 0.39688<br> Unweighted Density = 0.87
+    0.5 TRAPP complex<br> Complex Score = 0.39400<br> Unweighted Density = 0.71
     </section>
     </body>
     </html>

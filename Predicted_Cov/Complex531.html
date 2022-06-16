@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> ADHFE1 KCTD14 ACSF3 GMPR2 GMPR RPIA</title>
+<title> HEL107 HEL-S-32 hCG_22119 SDK1</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,21 +30,14 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'GMPR', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P36959" }},
-{data: { id: 'KCTD14', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q9BQ13" }},
-{data: { id: 'ADHFE1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IWW8" }},
-{data: { id: 'RPIA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49247" }},
-{data: { id: 'GMPR2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9P2T1" }},
-{data: { id: 'ACSF3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q4G176" }}], 
- edges: [{ data: { source: 'GMPR', target: 'GMPR2', directed: 'false', weight: 0.980734} },
-{ data: { source: 'GMPR', target: 'ADHFE1', directed: 'false', weight: 0.7787} },
-{ data: { source: 'GMPR', target: 'RPIA', directed: 'false', weight: 0.629831} },
-{ data: { source: 'GMPR', target: 'ACSF3', directed: 'false', weight: 0.355956} },
-{ data: { source: 'KCTD14', target: 'ACSF3', directed: 'false', weight: 0.373316} },
-{ data: { source: 'ACSF3', target: 'GMPR2', directed: 'false', weight: 0.347958} },
-{ data: { source: 'ADHFE1', target: 'GMPR2', directed: 'false', weight: 0.599662} },
-{ data: { source: 'ADHFE1', target: 'RPIA', directed: 'false', weight: 0.056223199999999994} },
-{ data: { source: 'RPIA', target: 'GMPR2', directed: 'false', weight: 0.701434} }]},
+elements:{nodes: [{data: { id: 'SDK1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q7Z5N4" }},
+{data: { id: 'HEL107', score: 2, type: '', href: "https://www.uniprot.org/uniprot/V9HWD9" }},
+{data: { id: 'hCG_22119', score: 2, type: '', href: "https://www.uniprot.org/uniprot/A0A024R693" }},
+{data: { id: 'HEL-S-32', score: 3, type: '', href: "https://www.uniprot.org/uniprot/V9HWF2" }}], 
+ edges: [{ data: { source: 'SDK1', target: 'hCG_22119', directed: 'false', weight: 0.22963899999999998} },
+{ data: { source: 'HEL107', target: 'HEL-S-32', directed: 'false', weight: 0.998793} },
+{ data: { source: 'HEL107', target: 'hCG_22119', directed: 'false', weight: 0.05439580000000001} },
+{ data: { source: 'hCG_22119', target: 'HEL-S-32', directed: 'false', weight: 0.126095} }]},
 
 style: [
     {
@@ -104,7 +97,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    ADHFE1 KCTD14 ACSF3 GMPR2 GMPR RPIA<br> Complex Score = 0.38750<br> Unweighted Density = 0.60
+    HEL107 HEL-S-32 hCG_22119 SDK1<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
     </section>
     </body>
     </html>

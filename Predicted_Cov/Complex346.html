@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> ALG10 RER1 1718 TMEM161A</title>
+<title> IF1AB1 IFNA1; IFNA4 IF1AA9 IF1AA1</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,16 +30,20 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'ALG10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5BKT4" }},
-{data: { id: 'DHCR24', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15392" }},
-{data: { id: 'RER1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15258" }},
-{data: { id: 'TMEM161A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NX61" }}], 
- edges: [{ data: { source: 'ALG10', target: 'RER1', directed: 'false', weight: 0.776285} },
-{ data: { source: 'ALG10', target: 'TMEM161A', directed: 'false', weight: 0.679285} },
-{ data: { source: 'ALG10', target: 'DHCR24', directed: 'false', weight: 0.339729} },
-{ data: { source: 'DHCR24', target: 'RER1', directed: 'false', weight: 0.37390300000000004} },
-{ data: { source: 'DHCR24', target: 'TMEM161A', directed: 'false', weight: 0.389906} },
-{ data: { source: 'RER1', target: 'TMEM161A', directed: 'false', weight: 0.375017} }]},
+elements:{nodes: [{data: { id: 'IF1AA9', score: 2, type: '', href: "https://www.uniprot.org/uniprot/A0A7R8C382" }},
+{data: { id: 'IF1AB1', score: 1, type: '', href: "https://www.uniprot.org/uniprot/A0A7R8C308" }},
+{data: { id: 'IF1AA1', score: 1, type: '', href: "https://www.uniprot.org/uniprot/A0A7R8GUQ6" }},
+{data: { id: 'IFNA1;', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P01562" }},
+{data: { id: 'IFNA4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P05014" }}], 
+ edges: [{ data: { source: 'IF1AA9', target: 'IFNA4', directed: 'false', weight: 0.9997530000000001} },
+{ data: { source: 'IF1AA9', target: 'IF1AB1', directed: 'false', weight: 0.9899680000000001} },
+{ data: { source: 'IF1AA9', target: 'IFNA1;', directed: 'false', weight: 0.886186} },
+{ data: { source: 'IF1AB1', target: 'IF1AA1', directed: 'false', weight: 0.8226389999999999} },
+{ data: { source: 'IF1AB1', target: 'IFNA1;', directed: 'false', weight: 0.400059} },
+{ data: { source: 'IF1AA1', target: 'IFNA4', directed: 'false', weight: 0.9408110000000001} },
+{ data: { source: 'IF1AA1', target: 'IFNA1;', directed: 'false', weight: 0.0613525} },
+{ data: { source: 'IFNA1;', target: 'IFNA4', directed: 'false', weight: 0.0559187} },
+{ data: { source: 'IFNA1;', target: 'IFNA1;', directed: 'false', weight: 0.835002} }]},
 
 style: [
     {
@@ -94,7 +98,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    ALG10 RER1 1718 TMEM161A<br> Complex Score = 0.38750<br> Unweighted Density = 1.00
+    IF1AB1 IFNA1; IFNA4 IF1AA9 IF1AA1<br> Complex Score = 0.38800<br> Unweighted Density = 0.90
     </section>
     </body>
     </html>

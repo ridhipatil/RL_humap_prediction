@@ -30,16 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'EEF1A2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q05639" }},
-{data: { id: 'TTLL12', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14166" }},
-{data: { id: 'EEF1D', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P29692" }},
-{data: { id: 'EEF1B2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P24534" }},
-{data: { id: 'PBDC1', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q9BVG4" }}], 
- edges: [{ data: { source: 'EEF1A2', target: 'EEF1D', directed: 'false', weight: 0.0755548} },
-{ data: { source: 'EEF1A2', target: 'EEF1B2', directed: 'false', weight: 0.90479} },
-{ data: { source: 'EEF1A2', target: 'PBDC1', directed: 'false', weight: 0.789034} },
-{ data: { source: 'TTLL12', target: 'PBDC1', directed: 'false', weight: 0.953219} },
-{ data: { source: 'EEF1B2', target: 'EEF1D', directed: 'false', weight: 0.988467} }]},
+elements:{nodes: [{data: { id: 'TCP10L2', score: 1, type: '', href: "https://www.ncbi.nlm.nih.gov/gene/401285" }},
+{data: { id: 'GRIPAP1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q4V328" }},
+{data: { id: 'TCP10L3', score: 0, type: '', href: "https://www.ncbi.nlm.nih.gov/gene/6953" }},
+{data: { id: 'NDEL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9GZM8" }}], 
+ edges: [{ data: { source: 'NDEL1', target: 'GRIPAP1', directed: 'false', weight: 0.160005} },
+{ data: { source: 'TCP10L2', target: 'TCP10L3', directed: 'false', weight: 1.0} },
+{ data: { source: 'TCP10L2', target: 'GRIPAP1', directed: 'false', weight: 0.798737} }]},
 
 style: [
     {
@@ -88,6 +85,11 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.37500
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>GRIPAP1
     </section>
     </body>
     </html>

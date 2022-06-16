@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.05 40S ribosomal subunit, cytoplasmic match 3</title>
+<title> 0.1 Mi-2/NuRD-MTA3 complex match 3</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,14 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'BYSL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13895" }},
-{data: { id: 'FAM207A', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q9NSI2" }},
-{data: { id: 'RPSA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P08865" }},
-{data: { id: 'HIST1H1C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P16403" }}], 
- edges: [{ data: { source: 'RPSA', target: 'BYSL', directed: 'false', weight: 0.42768199999999995} },
-{ data: { source: 'RPSA', target: 'HIST1H1C', directed: 'false', weight: 0.102352} },
-{ data: { source: 'BYSL', target: 'HIST1H1C', directed: 'false', weight: 0.144297} },
-{ data: { source: 'BYSL', target: 'FAM207A', directed: 'false', weight: 0.40582399999999996} }]},
+elements:{nodes: [{data: { id: 'BEND7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N7W2" }},
+{data: { id: 'BCL11A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H165" }},
+{data: { id: 'MTA3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BTC8" }},
+{data: { id: 'MBD3L1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WWY6" }}], 
+ edges: [{ data: { source: 'BEND7', target: 'MBD3L1', directed: 'false', weight: 0.611691} },
+{ data: { source: 'BCL11A', target: 'MBD3L1', directed: 'false', weight: 0.615708} },
+{ data: { source: 'MTA3', target: 'MBD3L1', directed: 'false', weight: 0.899832} }]},
 
 style: [
     {
@@ -97,7 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.05 40S ribosomal subunit, cytoplasmic match 3<br> Complex Score = 0.30000<br> Unweighted Density = 0.67
+    0.1 Mi-2/NuRD-MTA3 complex match 3<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

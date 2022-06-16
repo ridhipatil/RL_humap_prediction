@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> PGGT1B HEYL AMMECR1L</title>
+<title> TFPT LRRC46 hCG_2029370 SIX4</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,11 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'HEYL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NQ87" }},
-{data: { id: 'PGGT1B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P53609" }},
-{data: { id: 'AMMECR1L', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q6DCA0" }}], 
- edges: [{ data: { source: 'HEYL', target: 'PGGT1B', directed: 'false', weight: 0.430295} },
-{ data: { source: 'PGGT1B', target: 'AMMECR1L', directed: 'false', weight: 0.8972620000000001} }]},
+elements:{nodes: [{data: { id: 'TFPT', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P0C1Z6" }},
+{data: { id: 'LRRC46', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q96FV0" }},
+{data: { id: 'hCG_2029370', score: 1, type: '', href: "https://www.uniprot.org/uniprot/Q8N7J0" }},
+{data: { id: 'SIX4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UIU6" }}], 
+ edges: [{ data: { source: 'TFPT', target: 'LRRC46', directed: 'false', weight: 0.46729799999999994} },
+{ data: { source: 'LRRC46', target: 'SIX4', directed: 'false', weight: 0.963043} },
+{ data: { source: 'LRRC46', target: 'hCG_2029370', directed: 'false', weight: 0.735729} }]},
 
 style: [
     {
@@ -94,7 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    PGGT1B HEYL AMMECR1L<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
+    TFPT LRRC46 hCG_2029370 SIX4<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

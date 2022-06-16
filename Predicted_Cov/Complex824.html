@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> TROAP CPVL CYB5R3</title>
+<title> HEPACAM2 CD69 CADM4</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,11 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'SARS-CoV2 nsp7', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp7.html" }},
-{data: { id: 'CYB5R3', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P00387" }},
-{data: { id: 'TROAP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q12815" }},
-{data: { id: 'CPVL', score: 5.0, type: '', href: "https://www.uniprot.org/uniprot/Q9H3G5" }}], 
- edges: [{ data: { source: 'SARS-CoV2 nsp7', target: 'CYB5R3', directed: 'false', weight: 0.956349351, type: 'sars'} },
-{ data: { source: 'CYB5R3', target: 'CPVL', directed: 'false', weight: 0.355137} },
-{ data: { source: 'TROAP', target: 'CPVL', directed: 'false', weight: 0.309131} }]},
+elements:{nodes: [{data: { id: 'CADM4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NFZ8" }},
+{data: { id: 'HEPACAM2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/A8MVW5" }},
+{data: { id: 'CD69', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q07108" }}], 
+ edges: [{ data: { source: 'CADM4', target: 'HEPACAM2', directed: 'false', weight: 0.0534153} },
+{ data: { source: 'CADM4', target: 'CD69', directed: 'false', weight: 0.0216436} }]},
 
 style: [
     {
@@ -96,12 +94,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    TROAP CPVL CYB5R3<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>CYB5R3
+    HEPACAM2 CD69 CADM4<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
     </section>
     </body>
     </html>

@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 AJUBA-GFI1-HDAC1 complex</title>
+<title> 0.1 GAIT complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,14 +30,27 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'WTIP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/A6NIX2" }},
-{data: { id: 'ZFAND2B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WV99" }},
-{data: { id: 'AJUBA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96IF1" }},
-{data: { id: 'TRIP6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15654" }}], 
- edges: [{ data: { source: 'ZFAND2B', target: 'TRIP6', directed: 'false', weight: 0.402638} },
-{ data: { source: 'WTIP', target: 'TRIP6', directed: 'false', weight: 0.979817} },
-{ data: { source: 'WTIP', target: 'AJUBA', directed: 'false', weight: 0.171414} },
-{ data: { source: 'AJUBA', target: 'TRIP6', directed: 'false', weight: 0.9594229999999999} }]},
+elements:{nodes: [{data: { id: 'RPLP0', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P05388" }},
+{data: { id: 'TUBA8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NY65" }},
+{data: { id: 'RPL21', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P46778" }},
+{data: { id: 'RPL13A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P40429" }},
+{data: { id: 'PWP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13610" }},
+{data: { id: 'RPL30', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62888" }},
+{data: { id: 'RPS9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P46781" }}], 
+ edges: [{ data: { source: 'RPLP0', target: 'RPL13A', directed: 'false', weight: 0.9999899999999999} },
+{ data: { source: 'RPLP0', target: 'RPL21', directed: 'false', weight: 0.999999} },
+{ data: { source: 'RPLP0', target: 'RPL30', directed: 'false', weight: 1.0} },
+{ data: { source: 'RPLP0', target: 'RPS9', directed: 'false', weight: 1.0} },
+{ data: { source: 'RPLP0', target: 'TUBA8', directed: 'false', weight: 0.34670100000000004} },
+{ data: { source: 'RPL21', target: 'RPL13A', directed: 'false', weight: 1.0} },
+{ data: { source: 'RPL21', target: 'RPL30', directed: 'false', weight: 1.0} },
+{ data: { source: 'RPL21', target: 'RPS9', directed: 'false', weight: 1.0} },
+{ data: { source: 'RPL21', target: 'PWP1', directed: 'false', weight: 0.027395599999999996} },
+{ data: { source: 'RPL13A', target: 'RPL30', directed: 'false', weight: 1.0} },
+{ data: { source: 'RPL13A', target: 'RPS9', directed: 'false', weight: 1.0} },
+{ data: { source: 'RPL13A', target: 'PWP1', directed: 'false', weight: 0.0293455} },
+{ data: { source: 'PWP1', target: 'RPL30', directed: 'false', weight: 0.749653} },
+{ data: { source: 'RPL30', target: 'RPS9', directed: 'false', weight: 1.0} }]},
 
 style: [
     {
@@ -97,7 +110,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 AJUBA-GFI1-HDAC1 complex<br> Complex Score = 0.38750<br> Unweighted Density = 0.67
+    0.1 GAIT complex<br> Complex Score = 0.38800<br> Unweighted Density = 0.67
     </section>
     </body>
     </html>

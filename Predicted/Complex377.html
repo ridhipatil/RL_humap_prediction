@@ -30,14 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'VDAC3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y277" }},
-{data: { id: 'RNF5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99942" }},
-{data: { id: '3697', score: 0, type: '' }},
-{data: { id: 'TOMM40', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O96008" }}], 
- edges: [{ data: { source: '3697', target: 'TOMM40', directed: 'false', weight: 0.470758} },
-{ data: { source: '3697', target: 'RNF5', directed: 'false', weight: 0.104379} },
-{ data: { source: 'VDAC3', target: 'TOMM40', directed: 'false', weight: 0.776308} },
-{ data: { source: 'RNF5', target: 'TOMM40', directed: 'false', weight: 0.6099859999999999} }]},
+elements:{nodes: [{data: { id: 'DKFZp761J032', score: 1, type: '', href: "https://www.uniprot.org/uniprot/Q9NSJ5" }},
+{data: { id: 'ACTR2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P61160" }},
+{data: { id: 'WASHC4', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q2M389" }},
+{data: { id: 'CAPZA2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P47755" }}], 
+ edges: [{ data: { source: 'DKFZp761J032', target: 'CAPZA2', directed: 'false', weight: 0.999983} },
+{ data: { source: 'CAPZA2', target: 'ACTR2', directed: 'false', weight: 0.409125} },
+{ data: { source: 'CAPZA2', target: 'WASHC4', directed: 'false', weight: 0.999992} }]},
 
 style: [
     {
@@ -85,7 +84,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.38750
+    Complex Score  = 0.37500
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>WASHC4
     </section>
     </body>
     </html>

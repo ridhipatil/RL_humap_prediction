@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 NCOR complex</title>
+<title> 0.2 Histone-2-Histone-4-ASF1-MCM2 complex match 2</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,24 +30,19 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'WASH3P', score: 5, type: '', href: "https://www.uniprot.org/uniprot/C4AMC7" }},
-{data: { id: 'WASH6P', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9NQA3" }},
-{data: { id: 'TPM2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P07951" }},
-{data: { id: 'ACTA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P68133" }},
-{data: { id: 'CORO2A', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q92828" }},
-{data: { id: 'CAPZA2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P47755" }},
-{data: { id: 'CEP162', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5TB80" }}], 
- edges: [{ data: { source: 'WASH3P', target: 'CAPZA2', directed: 'false', weight: 0.976981} },
-{ data: { source: 'WASH3P', target: 'WASH6P', directed: 'false', weight: 0.171414} },
-{ data: { source: 'WASH6P', target: 'CAPZA2', directed: 'false', weight: 0.9803} },
-{ data: { source: 'TPM2', target: 'ACTA1', directed: 'false', weight: 0.399751} },
-{ data: { source: 'TPM2', target: 'CORO2A', directed: 'false', weight: 0.22107600000000002} },
-{ data: { source: 'TPM2', target: 'CEP162', directed: 'false', weight: 0.130393} },
-{ data: { source: 'ACTA1', target: 'CAPZA2', directed: 'false', weight: 0.960994} },
-{ data: { source: 'ACTA1', target: 'CORO2A', directed: 'false', weight: 0.342124} },
-{ data: { source: 'ACTA1', target: 'CEP162', directed: 'false', weight: 0.192797} },
-{ data: { source: 'CORO2A', target: 'CEP162', directed: 'false', weight: 0.147366} },
-{ data: { source: 'CAPZA2', target: 'CEP162', directed: 'false', weight: 0.054570400000000005} }]},
+elements:{nodes: [{data: { id: 'NIF3L1BP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6I9Y2" }},
+{data: { id: 'NCBP3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q53F19" }},
+{data: { id: 'DKFZp434G0310', score: 1, type: '', href: "https://www.uniprot.org/uniprot/Q659C6" }},
+{data: { id: 'SRSF1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q07955" }},
+{data: { id: 'THOC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96FV9" }}], 
+ edges: [{ data: { source: 'NIF3L1BP1', target: 'THOC1', directed: 'false', weight: 1.0} },
+{ data: { source: 'NIF3L1BP1', target: 'DKFZp434G0310', directed: 'false', weight: 0.26227399999999995} },
+{ data: { source: 'NIF3L1BP1', target: 'NCBP3', directed: 'false', weight: 0.057841} },
+{ data: { source: 'NCBP3', target: 'THOC1', directed: 'false', weight: 0.36135500000000004} },
+{ data: { source: 'NCBP3', target: 'SRSF1', directed: 'false', weight: 0.026099900000000002} },
+{ data: { source: 'DKFZp434G0310', target: 'THOC1', directed: 'false', weight: 0.234908} },
+{ data: { source: 'DKFZp434G0310', target: 'SRSF1', directed: 'false', weight: 0.0397036} },
+{ data: { source: 'SRSF1', target: 'THOC1', directed: 'false', weight: 0.220606} }]},
 
 style: [
     {
@@ -107,7 +102,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 NCOR complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.52
+    0.2 Histone-2-Histone-4-ASF1-MCM2 complex match 2<br> Complex Score = 0.37500<br> Unweighted Density = 0.80
     </section>
     </body>
     </html>

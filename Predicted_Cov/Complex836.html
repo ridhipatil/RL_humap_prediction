@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 28S ribosomal subunit, mitochondrial match 2</title>
+<title> PRAMEF4 PRAMEF9 PRAMEF5 match 2</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,20 +30,11 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'RPL10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P27635" }},
-{data: { id: 'SARS-CoV2 nsp8', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp8.html" }},
-{data: { id: 'SRP72', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/O76094" }},
-{data: { id: 'SARS-CoV2 nsp8', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp8.html" }},
-{data: { id: 'MRPS27', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q92552" }},
-{data: { id: 'MRPS18B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y676" }},
-{data: { id: 'MRPS22', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P82650" }}], 
- edges: [{ data: { source: 'SARS-CoV2 nsp8', target: 'SRP72', directed: 'false', weight: 0.739540656, type: 'sars'} },
-{ data: { source: 'SARS-CoV2 nsp8', target: 'MRPS27', directed: 'false', weight: 0.602806863, type: 'sars'} },
-{ data: { source: 'RPL10', target: 'SRP72', directed: 'false', weight: 0.981125} },
-{ data: { source: 'MRPS22', target: 'MRPS27', directed: 'false', weight: 0.999999} },
-{ data: { source: 'MRPS22', target: 'MRPS18B', directed: 'false', weight: 0.99995} },
-{ data: { source: 'MRPS22', target: 'SRP72', directed: 'false', weight: 0.276446} },
-{ data: { source: 'MRPS27', target: 'MRPS18B', directed: 'false', weight: 0.8359719999999999} }]},
+elements:{nodes: [{data: { id: 'PRAMEF9', score: 4, type: '', href: "https://www.uniprot.org/uniprot/P0DUQ2" }},
+{data: { id: 'PRAMEF4', score: 2, type: '', href: "https://www.uniprot.org/uniprot/O60810" }},
+{data: { id: 'PRAMEF5', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q5TYX0" }}], 
+ edges: [{ data: { source: 'PRAMEF9', target: 'PRAMEF5', directed: 'false', weight: 1.0} },
+{ data: { source: 'PRAMEF4', target: 'PRAMEF5', directed: 'false', weight: 0.999893} }]},
 
 style: [
     {
@@ -103,12 +94,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 28S ribosomal subunit, mitochondrial match 2<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        2 interacting protein(s): <br>SRP72 MRPS27
+    PRAMEF4 PRAMEF9 PRAMEF5 match 2<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
     </section>
     </body>
     </html>

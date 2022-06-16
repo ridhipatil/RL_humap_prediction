@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.05 C complex spliceosome match 2</title>
+<title> 0.2 SMN complex (GEMIN6,7, UNRIP), SMN-independent intermediate</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,16 +30,15 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'DHX35', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H5Z1" }},
-{data: { id: 'ZBTB49', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6ZSB9" }},
-{data: { id: 'ZNF140', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P52738" }},
-{data: { id: 'CWC15', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9P013" }},
-{data: { id: 'WDR83', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BRX9" }}], 
- edges: [{ data: { source: 'ZNF140', target: 'WDR83', directed: 'false', weight: 0.973989} },
-{ data: { source: 'ZNF140', target: 'ZBTB49', directed: 'false', weight: 0.171414} },
-{ data: { source: 'DHX35', target: 'CWC15', directed: 'false', weight: 0.27255} },
-{ data: { source: 'DHX35', target: 'WDR83', directed: 'false', weight: 0.962182} },
-{ data: { source: 'ZBTB49', target: 'WDR83', directed: 'false', weight: 0.867553} }]},
+elements:{nodes: [{data: { id: 'SARS-CoV2 orf9b', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 orf9b.html" }},
+{data: { id: 'CSDE1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/O75534" }},
+{data: { id: 'STRAP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y3F4" }},
+{data: { id: 'EIF4B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P23588" }},
+{data: { id: 'SZRD1', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q7Z422" }}], 
+ edges: [{ data: { source: 'SARS-CoV2 orf9b', target: 'CSDE1', directed: 'false', weight: 0.988959751, type: 'sars'} },
+{ data: { source: 'CSDE1', target: 'STRAP', directed: 'false', weight: 1.0} },
+{ data: { source: 'STRAP', target: 'SZRD1', directed: 'false', weight: 0.99754} },
+{ data: { source: 'STRAP', target: 'EIF4B', directed: 'false', weight: 0.142156} }]},
 
 style: [
     {
@@ -99,7 +98,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.05 C complex spliceosome match 2<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.2 SMN complex (GEMIN6,7, UNRIP), SMN-independent intermediate<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>CSDE1
     </section>
     </body>
     </html>

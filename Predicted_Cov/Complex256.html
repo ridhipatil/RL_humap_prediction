@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 Ubiquitin E3 ligase (DET1, DDB1, CUL4A, RBX1, COP1)</title>
+<title> 0.4 ASF1-interacting protein complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,14 +30,20 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'STK40', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N2I9" }},
-{data: { id: 'TRIB1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96RU8" }},
-{data: { id: 'DET1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q7L5Y6" }},
-{data: { id: 'ETV5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P41161" }}], 
- edges: [{ data: { source: 'STK40', target: 'TRIB1', directed: 'false', weight: 0.911438} },
-{ data: { source: 'STK40', target: 'DET1', directed: 'false', weight: 0.5} },
-{ data: { source: 'STK40', target: 'ETV5', directed: 'false', weight: 0.389867} },
-{ data: { source: 'DET1', target: 'ETV5', directed: 'false', weight: 0.7893560000000001} }]},
+elements:{nodes: [{data: { id: 'CDAN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IWY9" }},
+{data: { id: 'HIRA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P54198" }},
+{data: { id: 'ASF1B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NVP2" }},
+{data: { id: 'ASF1A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y294" }},
+{data: { id: 'CDIN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y2V0" }},
+{data: { id: 'PAN2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q504Q3" }}], 
+ edges: [{ data: { source: 'CDAN1', target: 'ASF1A', directed: 'false', weight: 0.9997870000000001} },
+{ data: { source: 'CDAN1', target: 'ASF1B', directed: 'false', weight: 0.940944} },
+{ data: { source: 'HIRA', target: 'ASF1A', directed: 'false', weight: 0.9712850000000001} },
+{ data: { source: 'HIRA', target: 'ASF1B', directed: 'false', weight: 0.45715} },
+{ data: { source: 'ASF1B', target: 'CDIN1', directed: 'false', weight: 0.808503} },
+{ data: { source: 'ASF1B', target: 'PAN2', directed: 'false', weight: 0.10470399999999999} },
+{ data: { source: 'ASF1A', target: 'CDIN1', directed: 'false', weight: 0.9985629999999999} },
+{ data: { source: 'ASF1A', target: 'PAN2', directed: 'false', weight: 0.343641} }]},
 
 style: [
     {
@@ -97,7 +103,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 Ubiquitin E3 ligase (DET1, DDB1, CUL4A, RBX1, COP1)<br> Complex Score = 0.38750<br> Unweighted Density = 0.67
+    0.4 ASF1-interacting protein complex<br> Complex Score = 0.38800<br> Unweighted Density = 0.53
     </section>
     </body>
     </html>

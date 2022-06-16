@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.6 Exocyst complex</title>
+<title> 0.2 C1D homodimer protein</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,82 +30,29 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'CIP2A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TCG1" }},
-{data: { id: 'EXOC6B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y2D4" }},
-{data: { id: 'EXOC4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96A65" }},
-{data: { id: 'EXOC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NV70" }},
-{data: { id: 'EXOC8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IYI6" }},
-{data: { id: 'EXOC3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60645" }},
-{data: { id: 'GBF1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92538" }},
-{data: { id: 'EXOC6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TAG9" }},
-{data: { id: 'GEMIN2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O14893" }},
-{data: { id: 'EXOC7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UPT5" }},
-{data: { id: 'GEMIN4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P57678" }},
-{data: { id: 'DYM', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q7RTS9" }},
-{data: { id: 'EXOC5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00471" }},
-{data: { id: 'EXOC2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96KP1" }}], 
- edges: [{ data: { source: 'CIP2A', target: 'EXOC7', directed: 'false', weight: 0.299547} },
-{ data: { source: 'CIP2A', target: 'GEMIN4', directed: 'false', weight: 0.764292} },
-{ data: { source: 'CIP2A', target: 'DYM', directed: 'false', weight: 0.451204} },
-{ data: { source: 'CIP2A', target: 'GBF1', directed: 'false', weight: 0.238479} },
-{ data: { source: 'EXOC6B', target: 'EXOC7', directed: 'false', weight: 0.943888} },
-{ data: { source: 'EXOC6B', target: 'EXOC6', directed: 'false', weight: 0.414998} },
-{ data: { source: 'EXOC6B', target: 'EXOC8', directed: 'false', weight: 0.8248479999999999} },
-{ data: { source: 'EXOC6B', target: 'EXOC2', directed: 'false', weight: 0.85955} },
-{ data: { source: 'EXOC6B', target: 'EXOC3', directed: 'false', weight: 0.12218499999999999} },
-{ data: { source: 'EXOC6B', target: 'EXOC4', directed: 'false', weight: 0.11431500000000001} },
-{ data: { source: 'EXOC6B', target: 'EXOC5', directed: 'false', weight: 0.748164} },
-{ data: { source: 'EXOC6B', target: 'EXOC1', directed: 'false', weight: 0.043981} },
-{ data: { source: 'EXOC1', target: 'EXOC7', directed: 'false', weight: 0.246162} },
-{ data: { source: 'EXOC1', target: 'EXOC6', directed: 'false', weight: 0.32147} },
-{ data: { source: 'EXOC1', target: 'EXOC8', directed: 'false', weight: 0.0737342} },
-{ data: { source: 'EXOC1', target: 'EXOC2', directed: 'false', weight: 0.99465} },
-{ data: { source: 'EXOC1', target: 'EXOC3', directed: 'false', weight: 0.630786} },
-{ data: { source: 'EXOC1', target: 'EXOC4', directed: 'false', weight: 0.988402} },
-{ data: { source: 'EXOC1', target: 'EXOC5', directed: 'false', weight: 0.2302} },
-{ data: { source: 'EXOC8', target: 'EXOC7', directed: 'false', weight: 0.999384} },
-{ data: { source: 'EXOC8', target: 'EXOC6', directed: 'false', weight: 0.999024} },
-{ data: { source: 'EXOC8', target: 'EXOC2', directed: 'false', weight: 0.981664} },
-{ data: { source: 'EXOC8', target: 'EXOC3', directed: 'false', weight: 0.9544219999999999} },
-{ data: { source: 'EXOC8', target: 'EXOC4', directed: 'false', weight: 0.917636} },
-{ data: { source: 'EXOC8', target: 'EXOC5', directed: 'false', weight: 0.7380180000000001} },
-{ data: { source: 'EXOC3', target: 'EXOC7', directed: 'false', weight: 0.9409639999999999} },
-{ data: { source: 'EXOC3', target: 'EXOC6', directed: 'false', weight: 0.987658} },
-{ data: { source: 'EXOC3', target: 'EXOC2', directed: 'false', weight: 0.9986700000000001} },
-{ data: { source: 'EXOC3', target: 'EXOC4', directed: 'false', weight: 0.997235} },
-{ data: { source: 'EXOC3', target: 'EXOC5', directed: 'false', weight: 0.736039} },
-{ data: { source: 'EXOC2', target: 'EXOC7', directed: 'false', weight: 0.993339} },
-{ data: { source: 'EXOC2', target: 'EXOC6', directed: 'false', weight: 0.996875} },
-{ data: { source: 'EXOC2', target: 'EXOC4', directed: 'false', weight: 0.9980399999999999} },
-{ data: { source: 'EXOC2', target: 'EXOC5', directed: 'false', weight: 0.942052} },
-{ data: { source: 'GBF1', target: 'EXOC7', directed: 'false', weight: 0.143488} },
-{ data: { source: 'GBF1', target: 'GEMIN4', directed: 'false', weight: 0.313319} },
-{ data: { source: 'GBF1', target: 'DYM', directed: 'false', weight: 0.10491400000000001} },
-{ data: { source: 'EXOC6', target: 'EXOC7', directed: 'false', weight: 0.9997360000000001} },
-{ data: { source: 'EXOC6', target: 'EXOC5', directed: 'false', weight: 0.9965069999999999} },
-{ data: { source: 'EXOC6', target: 'EXOC4', directed: 'false', weight: 0.9230370000000001} },
-{ data: { source: 'GEMIN2', target: 'GEMIN4', directed: 'false', weight: 0.461742} },
-{ data: { source: 'EXOC7', target: 'EXOC4', directed: 'false', weight: 0.9667459999999999} },
-{ data: { source: 'EXOC7', target: 'EXOC5', directed: 'false', weight: 0.8117489999999999} },
-{ data: { source: 'EXOC7', target: 'GEMIN4', directed: 'false', weight: 0.36891399999999996} },
-{ data: { source: 'EXOC7', target: 'DYM', directed: 'false', weight: 0.262994} },
-{ data: { source: 'GEMIN4', target: 'DYM', directed: 'false', weight: 0.610646} },
-{ data: { source: 'EXOC5', target: 'EXOC4', directed: 'false', weight: 0.931449} }]},
+elements:{nodes: [{data: { id: 'C1D', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13901" }},
+{data: { id: 'DIS3L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TF46" }},
+{data: { id: 'MPHOSPH6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99547" }},
+{data: { id: 'PNAS-3', score: 1, type: '', href: "https://www.uniprot.org/uniprot/Q9NYS3" }}], 
+ edges: [{ data: { source: 'C1D', target: 'MPHOSPH6', directed: 'false', weight: 0.051923699999999996} },
+{ data: { source: 'C1D', target: 'PNAS-3', directed: 'false', weight: 0.945141} },
+{ data: { source: 'C1D', target: 'DIS3L', directed: 'false', weight: 0.0212519} },
+{ data: { source: 'DIS3L', target: 'MPHOSPH6', directed: 'false', weight: 0.0219473} },
+{ data: { source: 'DIS3L', target: 'PNAS-3', directed: 'false', weight: 0.999991} },
+{ data: { source: 'MPHOSPH6', target: 'PNAS-3', directed: 'false', weight: 0.9917459999999999} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 10,
-		'width':'10',
-		'height': '10',	
+		'font-size': 30,
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}  
                                  if ( ele.data('type') == 'sars' ){return 'triangle'}   
   return 'rectangle';
   },            
-             'background-color': function( ele ){ 
+            'background-color': function( ele ){ 
                                 if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
 								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
                                  if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
@@ -119,7 +66,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
 								'line-color': function( ele ){ 
                                  if ( ele.data('type') == 'sars' ){return 'red'}   
   return 'blue';
@@ -131,10 +78,7 @@ style: [
 
 });
 cy.layout({
-    'name': 'fcose',
-		'animate':false,
-	'nodeDimensionsIncludeLabels':true,
-	'nodeSeparation': 1000
+    'name': 'circle'
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -150,7 +94,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.6 Exocyst complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.52
+    0.2 C1D homodimer protein<br> Complex Score = 0.37500<br> Unweighted Density = 1.00
     </section>
     </body>
     </html>

@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 28S ribosomal subunit, mitochondrial match 3</title>
+<title> LZTS2 FAM53C DYRK1B CEFIP</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,18 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'PUM3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15397" }},
-{data: { id: 'NAP1L1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P55209" }},
-{data: { id: 'RPS9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P46781" }},
-{data: { id: 'MRPS22', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P82650" }},
-{data: { id: 'MRPS34', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P82930" }},
-{data: { id: 'RRS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15050" }}], 
- edges: [{ data: { source: 'PUM3', target: 'RPS9', directed: 'false', weight: 0.8050390000000001} },
-{ data: { source: 'PUM3', target: 'RRS1', directed: 'false', weight: 0.998236} },
-{ data: { source: 'PUM3', target: 'MRPS22', directed: 'false', weight: 0.37095900000000004} },
-{ data: { source: 'NAP1L1', target: 'RPS9', directed: 'false', weight: 0.999296} },
-{ data: { source: 'MRPS22', target: 'RRS1', directed: 'false', weight: 0.617681} },
-{ data: { source: 'MRPS22', target: 'MRPS34', directed: 'false', weight: 0.999765} }]},
+elements:{nodes: [{data: { id: 'DYRK1B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y463" }},
+{data: { id: 'LZTS2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BRK4" }},
+{data: { id: 'FAM53C', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q9NYF3" }},
+{data: { id: 'CEFIP', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q711Q0" }}], 
+ edges: [{ data: { source: 'DYRK1B', target: 'LZTS2', directed: 'false', weight: 0.427306} },
+{ data: { source: 'DYRK1B', target: 'FAM53C', directed: 'false', weight: 0.9610920000000001} },
+{ data: { source: 'DYRK1B', target: 'CEFIP', directed: 'false', weight: 0.781323} }]},
 
 style: [
     {
@@ -101,7 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 28S ribosomal subunit, mitochondrial match 3<br> Complex Score = 0.35000<br> Unweighted Density = 0.40
+    LZTS2 FAM53C DYRK1B CEFIP<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

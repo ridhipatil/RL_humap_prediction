@@ -30,17 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'BTF3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00478" }},
-{data: { id: 'CAPRIN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14444" }},
-{data: { id: 'TUFM', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49411" }},
-{data: { id: 'G3BP2', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9UN86" }},
-{data: { id: 'NUFIP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q7Z417" }}], 
- edges: [{ data: { source: 'CAPRIN1', target: 'G3BP2', directed: 'false', weight: 0.8936139999999999} },
-{ data: { source: 'CAPRIN1', target: 'NUFIP2', directed: 'false', weight: 0.0995769} },
-{ data: { source: 'G3BP2', target: 'BTF3', directed: 'false', weight: 0.738718} },
-{ data: { source: 'G3BP2', target: 'TUFM', directed: 'false', weight: 0.0245707} },
-{ data: { source: 'G3BP2', target: 'NUFIP2', directed: 'false', weight: 0.812995} },
-{ data: { source: 'BTF3', target: 'TUFM', directed: 'false', weight: 0.069354} }]},
+elements:{nodes: [{data: { id: 'ATXN7L3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14CW9" }},
+{data: { id: 'ATXN7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15265" }},
+{data: { id: 'USP22', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UPT9" }},
+{data: { id: 'NT5E', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P21589" }}], 
+ edges: [{ data: { source: 'ATXN7L3', target: 'USP22', directed: 'false', weight: 0.9381430000000001} },
+{ data: { source: 'ATXN7L3', target: 'ATXN7', directed: 'false', weight: 0.6958449999999999} },
+{ data: { source: 'NT5E', target: 'USP22', directed: 'false', weight: 0.133457} }]},
 
 style: [
     {
@@ -88,12 +84,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.38750
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>G3BP2
+    Complex Score  = 0.37500
     </section>
     </body>
     </html>

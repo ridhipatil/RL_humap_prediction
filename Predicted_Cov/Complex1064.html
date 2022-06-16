@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> GOT2 AKR1B10 AKR1B15 GSTP1 LAMP1 MDH2</title>
+<title> 0.2 BAF complex match 2</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,18 +30,14 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'AKR1B10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60218" }},
-{data: { id: 'GSTP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P09211" }},
-{data: { id: 'MDH2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P40926" }},
-{data: { id: 'GOT2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P00505" }},
-{data: { id: 'AKR1B15', score: 5, type: '', href: "https://www.uniprot.org/uniprot/C9JRZ8" }},
-{data: { id: 'LAMP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P11279" }}], 
- edges: [{ data: { source: 'AKR1B10', target: 'AKR1B15', directed: 'false', weight: 0.9731780000000001} },
-{ data: { source: 'MDH2', target: 'GOT2', directed: 'false', weight: 0.949385} },
-{ data: { source: 'MDH2', target: 'AKR1B15', directed: 'false', weight: 0.6509590000000001} },
-{ data: { source: 'MDH2', target: 'GSTP1', directed: 'false', weight: 0.192961} },
-{ data: { source: 'GSTP1', target: 'GOT2', directed: 'false', weight: 0.00379028} },
-{ data: { source: 'GSTP1', target: 'LAMP1', directed: 'false', weight: 0.44147} }]},
+elements:{nodes: [{data: { id: 'SMARCD2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92925" }},
+{data: { id: 'SMARCD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96GM5" }},
+{data: { id: 'BCL7C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WUZ0" }},
+{data: { id: 'PHACTR2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75167" }}], 
+ edges: [{ data: { source: 'SMARCD2', target: 'SMARCD1', directed: 'false', weight: 0.9973219999999999} },
+{ data: { source: 'SMARCD2', target: 'BCL7C', directed: 'false', weight: 0.9499629999999999} },
+{ data: { source: 'SMARCD1', target: 'BCL7C', directed: 'false', weight: 0.5381} },
+{ data: { source: 'BCL7C', target: 'PHACTR2', directed: 'false', weight: 0.433672} }]},
 
 style: [
     {
@@ -101,7 +97,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    GOT2 AKR1B10 AKR1B15 GSTP1 LAMP1 MDH2<br> Complex Score = 0.35000<br> Unweighted Density = 0.40
+    0.2 BAF complex match 2<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
     </section>
     </body>
     </html>

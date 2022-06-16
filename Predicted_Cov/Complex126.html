@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 PlexinA3-Nrp1 complex</title>
+<title> 0.2 SCRIB-GIT1-ARHGEF7 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,28 +30,25 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'DCBLD2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96PD2" }},
-{data: { id: 'ARSK', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q6UWY0" }},
-{data: { id: 'CACNA2D2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NY47" }},
-{data: { id: 'PLXNA3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P51805" }},
-{data: { id: 'FAM234B', score: 2, type: '', href: "https://www.uniprot.org/uniprot/A2RU67" }},
-{data: { id: 'MBTPS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14703" }},
-{data: { id: 'MOXD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6UVY6" }}], 
- edges: [{ data: { source: 'DCBLD2', target: 'PLXNA3', directed: 'false', weight: 0.23183499999999999} },
-{ data: { source: 'DCBLD2', target: 'CACNA2D2', directed: 'false', weight: 0.0929405} },
-{ data: { source: 'DCBLD2', target: 'MBTPS1', directed: 'false', weight: 0.42352399999999996} },
-{ data: { source: 'DCBLD2', target: 'FAM234B', directed: 'false', weight: 0.0911765} },
-{ data: { source: 'ARSK', target: 'CACNA2D2', directed: 'false', weight: 0.6616770000000001} },
-{ data: { source: 'ARSK', target: 'MOXD1', directed: 'false', weight: 0.631306} },
-{ data: { source: 'ARSK', target: 'MBTPS1', directed: 'false', weight: 0.560215} },
-{ data: { source: 'CACNA2D2', target: 'PLXNA3', directed: 'false', weight: 0.581986} },
-{ data: { source: 'CACNA2D2', target: 'MOXD1', directed: 'false', weight: 0.355254} },
-{ data: { source: 'CACNA2D2', target: 'MBTPS1', directed: 'false', weight: 0.329342} },
-{ data: { source: 'CACNA2D2', target: 'FAM234B', directed: 'false', weight: 0.12499500000000001} },
-{ data: { source: 'PLXNA3', target: 'MBTPS1', directed: 'false', weight: 0.5} },
-{ data: { source: 'PLXNA3', target: 'FAM234B', directed: 'false', weight: 0.39262800000000003} },
-{ data: { source: 'FAM234B', target: 'MBTPS1', directed: 'false', weight: 0.209813} },
-{ data: { source: 'MBTPS1', target: 'MOXD1', directed: 'false', weight: 0.209813} }]},
+elements:{nodes: [{data: { id: 'GIT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y2X7" }},
+{data: { id: 'ARHGEF7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14155" }},
+{data: { id: 'DKFZp686G01261', score: 1, type: '', href: "https://www.uniprot.org/uniprot/Q68DM7" }},
+{data: { id: 'WIPF1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43516" }},
+{data: { id: 'ARHGEF6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15052" }},
+{data: { id: 'NCK2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43639" }},
+{data: { id: 'SHB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15464" }}], 
+ edges: [{ data: { source: 'GIT1', target: 'NCK2', directed: 'false', weight: 0.912415} },
+{ data: { source: 'GIT1', target: 'DKFZp686G01261', directed: 'false', weight: 0.5092300000000001} },
+{ data: { source: 'GIT1', target: 'ARHGEF6', directed: 'false', weight: 0.99323} },
+{ data: { source: 'GIT1', target: 'ARHGEF7', directed: 'false', weight: 0.955817} },
+{ data: { source: 'ARHGEF7', target: 'NCK2', directed: 'false', weight: 0.8460629999999999} },
+{ data: { source: 'ARHGEF7', target: 'DKFZp686G01261', directed: 'false', weight: 0.8889540000000001} },
+{ data: { source: 'ARHGEF7', target: 'ARHGEF6', directed: 'false', weight: 0.9722270000000001} },
+{ data: { source: 'DKFZp686G01261', target: 'NCK2', directed: 'false', weight: 0.999446} },
+{ data: { source: 'DKFZp686G01261', target: 'ARHGEF6', directed: 'false', weight: 0.9822069999999999} },
+{ data: { source: 'WIPF1', target: 'NCK2', directed: 'false', weight: 1.0} },
+{ data: { source: 'ARHGEF6', target: 'NCK2', directed: 'false', weight: 0.910875} },
+{ data: { source: 'NCK2', target: 'SHB', directed: 'false', weight: 0.50785} }]},
 
 style: [
     {
@@ -111,7 +108,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 PlexinA3-Nrp1 complex<br> Complex Score = 0.39375<br> Unweighted Density = 0.71
+    0.2 SCRIB-GIT1-ARHGEF7 complex<br> Complex Score = 0.38800<br> Unweighted Density = 0.57
     </section>
     </body>
     </html>

@@ -30,14 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'XAB2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HCS7" }},
-{data: { id: 'SLU7', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/O95391" }},
-{data: { id: 'LSM8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95777" }},
-{data: { id: 'C1orf52', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q8N6N3" }}], 
- edges: [{ data: { source: 'XAB2', target: 'SLU7', directed: 'false', weight: 0.228715} },
-{ data: { source: 'XAB2', target: 'C1orf52', directed: 'false', weight: 0.101793} },
-{ data: { source: 'LSM8', target: 'SLU7', directed: 'false', weight: 0.815326} },
-{ data: { source: 'SLU7', target: 'C1orf52', directed: 'false', weight: 0.155754} }]},
+elements:{nodes: [{data: { id: 'CELA2B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P08218" }},
+{data: { id: 'RPUSD2', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q8IZ73" }},
+{data: { id: 'PFDN4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NQP4" }},
+{data: { id: 'PFDN2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UHV9" }}], 
+ edges: [{ data: { source: 'PFDN2', target: 'PFDN4', directed: 'false', weight: 1.0} },
+{ data: { source: 'RPUSD2', target: 'PFDN4', directed: 'false', weight: 0.10061200000000001} },
+{ data: { source: 'RPUSD2', target: 'CELA2B', directed: 'false', weight: 0.160022} }]},
 
 style: [
     {
@@ -85,12 +84,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.30000
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>SLU7
+    Complex Score  = 0.37500
     </section>
     </body>
     </html>

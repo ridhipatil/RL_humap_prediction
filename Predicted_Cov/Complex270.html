@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.4 BLOC-1 (biogenesis of lysosome-related organelles complex 1)</title>
+<title> 0.2 DRIP78-PHLP complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,21 +30,11 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'BORCS5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q969J3" }},
-{data: { id: 'SYBU', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NX95" }},
-{data: { id: 'DTNBP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96EV8" }},
-{data: { id: 'BLOC1S4', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9NUP1" }},
-{data: { id: 'BLOC1S5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TDH9" }},
-{data: { id: 'BLOC1S3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6QNY0" }}], 
- edges: [{ data: { source: 'BORCS5', target: 'DTNBP1', directed: 'false', weight: 0.313012} },
-{ data: { source: 'BORCS5', target: 'BLOC1S5', directed: 'false', weight: 0.390018} },
-{ data: { source: 'BLOC1S5', target: 'DTNBP1', directed: 'false', weight: 0.977383} },
-{ data: { source: 'BLOC1S5', target: 'BLOC1S4', directed: 'false', weight: 0.133451} },
-{ data: { source: 'SYBU', target: 'DTNBP1', directed: 'false', weight: 0.978283} },
-{ data: { source: 'SYBU', target: 'BLOC1S4', directed: 'false', weight: 0.171414} },
-{ data: { source: 'DTNBP1', target: 'BLOC1S4', directed: 'false', weight: 0.9816950000000001} },
-{ data: { source: 'DTNBP1', target: 'BLOC1S3', directed: 'false', weight: 0.832343} },
-{ data: { source: 'BLOC1S4', target: 'BLOC1S3', directed: 'false', weight: 0.151455} }]},
+elements:{nodes: [{data: { id: 'PDCL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13371" }},
+{data: { id: 'GNB5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O14775" }},
+{data: { id: 'RGS6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49758" }}], 
+ edges: [{ data: { source: 'PDCL', target: 'GNB5', directed: 'false', weight: 0.374328} },
+{ data: { source: 'GNB5', target: 'RGS6', directed: 'false', weight: 0.38306799999999996} }]},
 
 style: [
     {
@@ -104,7 +94,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.4 BLOC-1 (biogenesis of lysosome-related organelles complex 1)<br> Complex Score = 0.38750<br> Unweighted Density = 0.60
+    0.2 DRIP78-PHLP complex<br> Complex Score = 0.38800<br> Unweighted Density = 0.67
     </section>
     </body>
     </html>

@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> YTHDF1 ZPR1 PDAP1</title>
+<title> 0.2 Respiratory chain complex I (intermediate I/200kD and III/250kD), mitochondrial</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,11 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'ZPR1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75312" }},
-{data: { id: 'YTHDF1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BYJ9" }},
-{data: { id: 'PDAP1', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q13442" }}], 
- edges: [{ data: { source: 'ZPR1', target: 'PDAP1', directed: 'false', weight: 0.648967} },
-{ data: { source: 'YTHDF1', target: 'PDAP1', directed: 'false', weight: 0.631414} }]},
+elements:{nodes: [{data: { id: 'NDUFA5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16718" }},
+{data: { id: 'TCTN3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6NUS6" }},
+{data: { id: 'NDUFAF4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9P032" }},
+{data: { id: 'NDUFS3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75489" }}], 
+ edges: [{ data: { source: 'NDUFA5', target: 'NDUFS3', directed: 'false', weight: 0.9875950000000001} },
+{ data: { source: 'TCTN3', target: 'NDUFS3', directed: 'false', weight: 0.116159} },
+{ data: { source: 'NDUFAF4', target: 'NDUFS3', directed: 'false', weight: 0.859033} }]},
 
 style: [
     {
@@ -94,7 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    YTHDF1 ZPR1 PDAP1<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
+    0.2 Respiratory chain complex I (intermediate I/200kD and III/250kD), mitochondrial<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

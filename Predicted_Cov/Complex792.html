@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 TNPO2-RAN-NXF1 complex match 2</title>
+<title> 0.7 SMN complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,34 +30,39 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'TNPO2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O14787" }},
-{data: { id: 'IPO11', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UI26" }},
-{data: { id: 'KIF14', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15058" }},
-{data: { id: 'ZNF7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P17097" }},
-{data: { id: 'IPO8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15397" }},
-{data: { id: 'ZNF331', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9NQX6" }}], 
- edges: [{ data: { source: 'TNPO2', target: 'IPO11', directed: 'false', weight: 0.653319} },
-{ data: { source: 'TNPO2', target: 'KIF14', directed: 'false', weight: 0.28913} },
-{ data: { source: 'ZNF7', target: 'IPO8', directed: 'false', weight: 0.947018} },
-{ data: { source: 'ZNF7', target: 'ZNF331', directed: 'false', weight: 0.144297} },
-{ data: { source: 'KIF14', target: 'IPO11', directed: 'false', weight: 0.0712841} },
-{ data: { source: 'IPO11', target: 'IPO8', directed: 'false', weight: 0.5238550000000001} },
-{ data: { source: 'IPO8', target: 'ZNF331', directed: 'false', weight: 0.323859} }]},
+elements:{nodes: [{data: { id: 'GEMIN5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TEQ6" }},
+{data: { id: 'GEMIN6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WXD5" }},
+{data: { id: 'GEMIN2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O14893" }},
+{data: { id: 'GEMIN7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H840" }},
+{data: { id: 'SMN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16637" }},
+{data: { id: 'DDX20', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UHI6" }}], 
+ edges: [{ data: { source: 'GEMIN5', target: 'DDX20', directed: 'false', weight: 0.99764} },
+{ data: { source: 'GEMIN5', target: 'GEMIN2', directed: 'false', weight: 0.0898501} },
+{ data: { source: 'GEMIN5', target: 'GEMIN6', directed: 'false', weight: 0.057612699999999996} },
+{ data: { source: 'GEMIN6', target: 'GEMIN7', directed: 'false', weight: 0.0289558} },
+{ data: { source: 'GEMIN6', target: 'DDX20', directed: 'false', weight: 0.5975739999999999} },
+{ data: { source: 'GEMIN6', target: 'SMN1', directed: 'false', weight: 0.050879900000000006} },
+{ data: { source: 'GEMIN6', target: 'GEMIN2', directed: 'false', weight: 0.226032} },
+{ data: { source: 'GEMIN2', target: 'GEMIN7', directed: 'false', weight: 0.121419} },
+{ data: { source: 'GEMIN2', target: 'DDX20', directed: 'false', weight: 0.535733} },
+{ data: { source: 'GEMIN2', target: 'SMN1', directed: 'false', weight: 0.0459144} },
+{ data: { source: 'GEMIN7', target: 'DDX20', directed: 'false', weight: 0.9902790000000001} },
+{ data: { source: 'GEMIN7', target: 'SMN1', directed: 'false', weight: 0.0588837} },
+{ data: { source: 'SMN1', target: 'DDX20', directed: 'false', weight: 0.052216099999999994} },
+{ data: { source: 'SMN1', target: 'SMN1', directed: 'false', weight: 0.028810000000000002} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 10,
-		'width':'10',
-		'height': '10',	
+		'font-size': 30,
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}  
                                  if ( ele.data('type') == 'sars' ){return 'triangle'}   
   return 'rectangle';
   },            
-             'background-color': function( ele ){ 
+            'background-color': function( ele ){ 
                                 if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
 								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
                                  if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
@@ -71,7 +76,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
 								'line-color': function( ele ){ 
                                  if ( ele.data('type') == 'sars' ){return 'red'}   
   return 'blue';
@@ -83,10 +88,7 @@ style: [
 
 });
 cy.layout({
-    'name': 'fcose',
-		'animate':false,
-	'nodeDimensionsIncludeLabels':true,
-	'nodeSeparation': 1000
+    'name': 'circle'
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -102,7 +104,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 TNPO2-RAN-NXF1 complex match 2<br> Complex Score = 0.37500<br> Unweighted Density = 0.47
+    0.7 SMN complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.93
     </section>
     </body>
     </html>

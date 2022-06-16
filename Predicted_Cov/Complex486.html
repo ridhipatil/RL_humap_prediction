@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 CCND1-CDK6 complex</title>
+<title> 0.1 DDX27-PeBoW complex match 2</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,12 +30,16 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'CDK6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q00534" }},
-{data: { id: 'CDKN2D', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P55273" }},
-{data: { id: 'UBE2W', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96B02" }}], 
- edges: [{ data: { source: 'CDK6', target: 'UBE2W', directed: 'false', weight: 0.874833} },
-{ data: { source: 'CDK6', target: 'CDKN2D', directed: 'false', weight: 0.564199} },
-{ data: { source: 'CDKN2D', target: 'UBE2W', directed: 'false', weight: 0.151455} }]},
+elements:{nodes: [{data: { id: 'DDX27', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96GQ7" }},
+{data: { id: 'GZF1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H116" }},
+{data: { id: 'ZC3HAV1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q7Z2W4" }},
+{data: { id: 'KRR1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13601" }}], 
+ edges: [{ data: { source: 'DDX27', target: 'KRR1', directed: 'false', weight: 0.160159} },
+{ data: { source: 'DDX27', target: 'ZC3HAV1', directed: 'false', weight: 0.0613121} },
+{ data: { source: 'DDX27', target: 'GZF1', directed: 'false', weight: 0.023583700000000003} },
+{ data: { source: 'ZC3HAV1', target: 'KRR1', directed: 'false', weight: 0.16026300000000002} },
+{ data: { source: 'ZC3HAV1', target: 'GZF1', directed: 'false', weight: 0.176618} },
+{ data: { source: 'GZF1', target: 'KRR1', directed: 'false', weight: 0.028223200000000004} }]},
 
 style: [
     {
@@ -90,7 +94,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 CCND1-CDK6 complex<br> Complex Score = 0.38750<br> Unweighted Density = 1.00
+    0.1 DDX27-PeBoW complex match 2<br> Complex Score = 0.37500<br> Unweighted Density = 1.00
     </section>
     </body>
     </html>

@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 PAR4-BACE1 complex</title>
+<title> 0.1 TIM23-TOM22-TIM50-HSD3B2 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,11 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'CCDC43', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q96MW1" }},
-{data: { id: 'SCML1', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9UN30" }},
-{data: { id: 'PAWR', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96IZ0" }}], 
- edges: [{ data: { source: 'CCDC43', target: 'SCML1', directed: 'false', weight: 0.816335} },
-{ data: { source: 'CCDC43', target: 'PAWR', directed: 'false', weight: 0.488199} }]},
+elements:{nodes: [{data: { id: 'MTHFR', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P42898" }},
+{data: { id: 'HSD3B2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P26439" }},
+{data: { id: 'HSD3B1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P14060" }},
+{data: { id: 'TMEM38A', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9H6F2" }}], 
+ edges: [{ data: { source: 'MTHFR', target: 'HSD3B2', directed: 'false', weight: 0.245633} },
+{ data: { source: 'HSD3B1', target: 'HSD3B2', directed: 'false', weight: 0.9999450000000001} },
+{ data: { source: 'TMEM38A', target: 'HSD3B2', directed: 'false', weight: 0.721933} }]},
 
 style: [
     {
@@ -94,7 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 PAR4-BACE1 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
+    0.1 TIM23-TOM22-TIM50-HSD3B2 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

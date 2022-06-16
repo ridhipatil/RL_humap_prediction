@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 SLC2A1-DMTN-ADD2 complex</title>
+<title> 0.2 ERBB2-MEMO-SHC complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,11 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'SNX9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y5X1" }},
-{data: { id: 'DPPA4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q7L190" }},
-{data: { id: 'ADD2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P35612" }}], 
- edges: [{ data: { source: 'SNX9', target: 'DPPA4', directed: 'false', weight: 0.53198} },
-{ data: { source: 'DPPA4', target: 'ADD2', directed: 'false', weight: 0.618409} }]},
+elements:{nodes: [{data: { id: 'HMBOX1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6NT76" }},
+{data: { id: 'HEL-S-30', score: 3, type: '', href: "https://www.uniprot.org/uniprot/V9HWB8" }},
+{data: { id: 'UFM1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P61960" }},
+{data: { id: 'MEMO1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y316" }}], 
+ edges: [{ data: { source: 'UFM1', target: 'MEMO1', directed: 'false', weight: 0.134946} },
+{ data: { source: 'UFM1', target: 'HEL-S-30', directed: 'false', weight: 0.447817} },
+{ data: { source: 'HMBOX1', target: 'MEMO1', directed: 'false', weight: 0.984118} }]},
 
 style: [
     {
@@ -94,7 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 SLC2A1-DMTN-ADD2 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
+    0.2 ERBB2-MEMO-SHC complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

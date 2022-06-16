@@ -30,16 +30,14 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'TAF2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6P1X5" }},
-{data: { id: 'TBP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P20226" }},
-{data: { id: 'TAF4B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92750" }},
-{data: { id: 'TAF4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00268" }},
-{data: { id: 'TAF5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15542" }}], 
- edges: [{ data: { source: 'TAF2', target: 'TAF5', directed: 'false', weight: 0.999066} },
-{ data: { source: 'TAF2', target: 'TAF4B', directed: 'false', weight: 0.171414} },
-{ data: { source: 'TBP', target: 'TAF5', directed: 'false', weight: 0.908803} },
-{ data: { source: 'TAF4B', target: 'TAF5', directed: 'false', weight: 0.171414} },
-{ data: { source: 'TAF4', target: 'TAF5', directed: 'false', weight: 0.996778} }]},
+elements:{nodes: [{data: { id: 'ATXN2L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WWM7" }},
+{data: { id: 'LSM12', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q3MHD2" }},
+{data: { id: 'hCG_1818442', score: 1, type: '', href: "https://www.uniprot.org/uniprot/A0A024R8R5" }},
+{data: { id: 'UBAP2', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q5T6F2" }}], 
+ edges: [{ data: { source: 'ATXN2L', target: 'LSM12', directed: 'false', weight: 0.347039} },
+{ data: { source: 'ATXN2L', target: 'UBAP2', directed: 'false', weight: 0.0581976} },
+{ data: { source: 'LSM12', target: 'UBAP2', directed: 'false', weight: 0.262849} },
+{ data: { source: 'LSM12', target: 'hCG_1818442', directed: 'false', weight: 0.20627399999999999} }]},
 
 style: [
     {
@@ -88,6 +86,11 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.37500
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>UBAP2
     </section>
     </body>
     </html>

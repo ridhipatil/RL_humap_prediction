@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 6S methyltransferase complex match 2</title>
+<title> 0.2 CUL4A-DDB1-WDR5 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -22,22 +22,21 @@
 
     <body>
     <section>
-    
+    <a href="Complex1158.html">Next</a>
+
      </section>
         <div id="cy"></div>
         <script>
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'ZCRB1', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q8TBF4" }},
-{data: { id: 'SF3B2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13435" }},
-{data: { id: 'SNRPD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62314" }},
-{data: { id: 'SARS-CoV2 nsp8', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp8.html" }},
-{data: { id: 'SRP72', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/O76094" }}], 
- edges: [{ data: { source: 'SARS-CoV2 nsp8', target: 'SRP72', directed: 'false', weight: 0.739540656, type: 'sars'} },
-{ data: { source: 'ZCRB1', target: 'SF3B2', directed: 'false', weight: 0.823154} },
-{ data: { source: 'ZCRB1', target: 'SRP72', directed: 'false', weight: 0.30805} },
-{ data: { source: 'SF3B2', target: 'SNRPD1', directed: 'false', weight: 0.9565520000000001} }]},
+elements:{nodes: [{data: { id: 'MGA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IWI9" }},
+{data: { id: 'CDYL2', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q8N8U2" }},
+{data: { id: 'WDR5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P61964" }},
+{data: { id: 'MIER2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N344" }}], 
+ edges: [{ data: { source: 'MGA', target: 'WDR5', directed: 'false', weight: 0.800417} },
+{ data: { source: 'MGA', target: 'MIER2', directed: 'false', weight: 0.10972799999999999} },
+{ data: { source: 'CDYL2', target: 'MIER2', directed: 'false', weight: 0.845147} }]},
 
 style: [
     {
@@ -97,12 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 6S methyltransferase complex match 2<br> Complex Score = 0.30000<br> Unweighted Density = 0.50
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>SRP72
+    0.2 CUL4A-DDB1-WDR5 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

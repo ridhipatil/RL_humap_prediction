@@ -30,18 +30,38 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'IGLL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P15814" }},
-{data: { id: 'IGLC7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/A0M8Q6" }},
-{data: { id: 'IGLL5', score: 4, type: '', href: "https://www.uniprot.org/uniprot/B9A064" }}], 
- edges: [{ data: { source: 'IGLL1', target: 'IGLL5', directed: 'false', weight: 0.9879110000000001} },
-{ data: { source: 'IGLL1', target: 'IGLC7', directed: 'false', weight: 0.151455} },
-{ data: { source: 'IGLC7', target: 'IGLL5', directed: 'false', weight: 0.9607209999999999} }]},
+elements:{nodes: [{data: { id: 'RPL34', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49207" }},
+{data: { id: 'RPS18', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62269" }},
+{data: { id: 'RPL36', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9Y3U8" }},
+{data: { id: 'PAK1IP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NWT1" }},
+{data: { id: 'LOC101929876', score: 0, type: '', href: "https://www.ncbi.nlm.nih.gov/gene/101929876" }},
+{data: { id: 'SDAD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NVU7" }},
+{data: { id: 'RPL30', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62888" }},
+{data: { id: 'RBM34', score: 4, type: '', href: "https://www.uniprot.org/uniprot/P42696" }}], 
+ edges: [{ data: { source: 'RPL34', target: 'LOC101929876', directed: 'false', weight: 0.997497} },
+{ data: { source: 'RPL34', target: 'RPL36', directed: 'false', weight: 1.0} },
+{ data: { source: 'RPL34', target: 'RPL30', directed: 'false', weight: 1.0} },
+{ data: { source: 'RPL34', target: 'RPS18', directed: 'false', weight: 0.9951909999999999} },
+{ data: { source: 'RPL34', target: 'RBM34', directed: 'false', weight: 0.09714500000000001} },
+{ data: { source: 'RPS18', target: 'LOC101929876', directed: 'false', weight: 0.999993} },
+{ data: { source: 'RPS18', target: 'RPL36', directed: 'false', weight: 1.0} },
+{ data: { source: 'RPS18', target: 'RPL30', directed: 'false', weight: 1.0} },
+{ data: { source: 'RPL36', target: 'LOC101929876', directed: 'false', weight: 0.999972} },
+{ data: { source: 'RPL36', target: 'RPL30', directed: 'false', weight: 1.0} },
+{ data: { source: 'RPL36', target: 'RBM34', directed: 'false', weight: 0.286238} },
+{ data: { source: 'RPL30', target: 'LOC101929876', directed: 'false', weight: 0.9999959999999999} },
+{ data: { source: 'RPL30', target: 'RBM34', directed: 'false', weight: 0.5} },
+{ data: { source: 'RPL30', target: 'PAK1IP1', directed: 'false', weight: 0.408515} },
+{ data: { source: 'SDAD1', target: 'RBM34', directed: 'false', weight: 0.252456} },
+{ data: { source: 'PAK1IP1', target: 'RBM34', directed: 'false', weight: 0.36835100000000004} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 30,
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}                                
@@ -53,7 +73,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
 								'line-color': 'blue',
 								'opacity': 0.5
 							}
@@ -62,7 +82,10 @@ style: [
 
 });
 cy.layout({
-    name: 'circle'
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -78,7 +101,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.38750
+    Complex Score  = 0.38800
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>RPL36
     </section>
     </body>
     </html>

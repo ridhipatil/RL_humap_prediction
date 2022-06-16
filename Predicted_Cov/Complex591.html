@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.4 SMN complex (GEMIN6,7, UNRIP), SMN-independent intermediate</title>
+<title> 0.1 Profilin 2 complex match 2</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,26 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'CIP2A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TCG1" }},
-{data: { id: 'GEMIN6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WXD5" }},
-{data: { id: 'SZRD1', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q7Z422" }},
-{data: { id: 'GEMIN7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H840" }},
-{data: { id: 'SMN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16637" }},
-{data: { id: 'STRAP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y3F4" }},
-{data: { id: 'GEMIN4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P57678" }}], 
- edges: [{ data: { source: 'CIP2A', target: 'GEMIN4', directed: 'false', weight: 0.764292} },
-{ data: { source: 'GEMIN6', target: 'GEMIN4', directed: 'false', weight: 0.582547} },
-{ data: { source: 'GEMIN6', target: 'SMN1', directed: 'false', weight: 0.9641360000000001} },
-{ data: { source: 'GEMIN6', target: 'STRAP', directed: 'false', weight: 0.45418500000000006} },
-{ data: { source: 'GEMIN6', target: 'GEMIN7', directed: 'false', weight: 0.18085} },
-{ data: { source: 'GEMIN6', target: 'SZRD1', directed: 'false', weight: 0.104379} },
-{ data: { source: 'SZRD1', target: 'SMN1', directed: 'false', weight: 0.12021300000000001} },
-{ data: { source: 'SZRD1', target: 'GEMIN7', directed: 'false', weight: 0.11228099999999999} },
-{ data: { source: 'SZRD1', target: 'STRAP', directed: 'false', weight: 0.669928} },
-{ data: { source: 'GEMIN7', target: 'GEMIN4', directed: 'false', weight: 0.275792} },
-{ data: { source: 'GEMIN7', target: 'SMN1', directed: 'false', weight: 0.8537520000000001} },
-{ data: { source: 'GEMIN7', target: 'STRAP', directed: 'false', weight: 0.849706} },
-{ data: { source: 'SMN1', target: 'STRAP', directed: 'false', weight: 0.561554} }]},
+elements:{nodes: [{data: { id: 'POLL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UGP5" }},
+{data: { id: 'SYN2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92777" }},
+{data: { id: 'C9orf64', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q5T6V5" }},
+{data: { id: 'SEMG1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P04279" }}], 
+ edges: [{ data: { source: 'POLL', target: 'C9orf64', directed: 'false', weight: 0.9831979999999999} },
+{ data: { source: 'POLL', target: 'SEMG1', directed: 'false', weight: 0.162385} },
+{ data: { source: 'POLL', target: 'SYN2', directed: 'false', weight: 0.10978299999999999} }]},
 
 style: [
     {
@@ -109,7 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.4 SMN complex (GEMIN6,7, UNRIP), SMN-independent intermediate<br> Complex Score = 0.38750<br> Unweighted Density = 0.62
+    0.1 Profilin 2 complex match 2<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

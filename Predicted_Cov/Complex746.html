@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 Exon junction complex (mRNA splicing-dependent)</title>
+<title> 0.2 BRCA1-CtIP-CtBP complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,23 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'SNRNP200', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75643" }},
-{data: { id: 'U2SURP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15042" }},
-{data: { id: 'SRSF9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13242" }},
-{data: { id: 'SRSF5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13243" }},
-{data: { id: 'PRPF4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43172" }},
-{data: { id: 'NOP53', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NZM5" }},
-{data: { id: 'SRRM1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IYB3" }}], 
- edges: [{ data: { source: 'SNRNP200', target: 'SRSF9', directed: 'false', weight: 0.9759479999999999} },
-{ data: { source: 'SNRNP200', target: 'PRPF4', directed: 'false', weight: 0.999994} },
-{ data: { source: 'SNRNP200', target: 'SRRM1', directed: 'false', weight: 0.9476610000000001} },
-{ data: { source: 'SNRNP200', target: 'U2SURP', directed: 'false', weight: 0.48885500000000004} },
-{ data: { source: 'U2SURP', target: 'SRRM1', directed: 'false', weight: 0.85239} },
-{ data: { source: 'U2SURP', target: 'SRSF5', directed: 'false', weight: 0.632525} },
-{ data: { source: 'SRSF9', target: 'SRRM1', directed: 'false', weight: 0.889133} },
-{ data: { source: 'SRSF9', target: 'SRSF5', directed: 'false', weight: 0.183362} },
-{ data: { source: 'SRSF5', target: 'SRRM1', directed: 'false', weight: 0.999152} },
-{ data: { source: 'NOP53', target: 'SRRM1', directed: 'false', weight: 0.548139} }]},
+elements:{nodes: [{data: { id: 'CTBP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13363" }},
+{data: { id: 'XAGE3', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q8WTP9" }},
+{data: { id: 'WIZ', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95785" }},
+{data: { id: 'TRPS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UHF7" }}], 
+ edges: [{ data: { source: 'CTBP1', target: 'WIZ', directed: 'false', weight: 0.174689} },
+{ data: { source: 'CTBP1', target: 'TRPS1', directed: 'false', weight: 0.16678199999999999} },
+{ data: { source: 'XAGE3', target: 'WIZ', directed: 'false', weight: 0.286761} }]},
 
 style: [
     {
@@ -106,7 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 Exon junction complex (mRNA splicing-dependent)<br> Complex Score = 0.37500<br> Unweighted Density = 0.48
+    0.2 BRCA1-CtIP-CtBP complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

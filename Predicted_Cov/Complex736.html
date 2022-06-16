@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 IGBP1-MID1-PPP2CA complex</title>
+<title> PCDHA12 TCEAL2 PCDHA10 PCDHAC1</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,23 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'GYG1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P46976" }},
-{data: { id: 'GYS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P13807" }},
-{data: { id: 'MID1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15344" }},
-{data: { id: 'EPM2A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95278" }},
-{data: { id: 'AGL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P35573" }},
-{data: { id: 'STBD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95210" }},
-{data: { id: 'GYS2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P54840" }}], 
- edges: [{ data: { source: 'GYG1', target: 'STBD1', directed: 'false', weight: 0.783121} },
-{ data: { source: 'GYG1', target: 'GYS1', directed: 'false', weight: 0.870986} },
-{ data: { source: 'GYG1', target: 'GYS2', directed: 'false', weight: 0.5830649999999999} },
-{ data: { source: 'GYS1', target: 'STBD1', directed: 'false', weight: 0.8395530000000001} },
-{ data: { source: 'GYS1', target: 'GYS2', directed: 'false', weight: 0.538582} },
-{ data: { source: 'MID1', target: 'EPM2A', directed: 'false', weight: 0.151455} },
-{ data: { source: 'MID1', target: 'STBD1', directed: 'false', weight: 0.884127} },
-{ data: { source: 'EPM2A', target: 'STBD1', directed: 'false', weight: 0.982892} },
-{ data: { source: 'AGL', target: 'GYS2', directed: 'false', weight: 0.133451} },
-{ data: { source: 'STBD1', target: 'GYS2', directed: 'false', weight: 0.447592} }]},
+elements:{nodes: [{data: { id: 'PCDHA10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y5I2" }},
+{data: { id: 'PCDHAC1', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9H158" }},
+{data: { id: 'PCDHA12', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9UN75" }},
+{data: { id: 'TCEAL2', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q9H3H9" }}], 
+ edges: [{ data: { source: 'PCDHA10', target: 'PCDHAC1', directed: 'false', weight: 0.999919} },
+{ data: { source: 'PCDHA10', target: 'PCDHA12', directed: 'false', weight: 0.995619} },
+{ data: { source: 'PCDHA12', target: 'TCEAL2', directed: 'false', weight: 0.227708} }]},
 
 style: [
     {
@@ -106,7 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 IGBP1-MID1-PPP2CA complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.48
+    PCDHA12 TCEAL2 PCDHA10 PCDHAC1<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

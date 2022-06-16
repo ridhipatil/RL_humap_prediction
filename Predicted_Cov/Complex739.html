@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.4 CAK-ERCC2 complex</title>
+<title> 0.2 E-box sequence-binding complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,19 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'RPA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P27694" }},
-{data: { id: 'CDK7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P50613" }},
-{data: { id: 'ERCC2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P18074" }},
-{data: { id: 'RPA2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P15927" }},
-{data: { id: 'TFAM', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q00059" }},
-{data: { id: 'MNAT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P51948" }}], 
- edges: [{ data: { source: 'MNAT1', target: 'CDK7', directed: 'false', weight: 0.9999979999999999} },
-{ data: { source: 'MNAT1', target: 'ERCC2', directed: 'false', weight: 0.6261899999999999} },
-{ data: { source: 'RPA1', target: 'CDK7', directed: 'false', weight: 0.5} },
-{ data: { source: 'RPA1', target: 'RPA2', directed: 'false', weight: 0.967917} },
-{ data: { source: 'RPA1', target: 'TFAM', directed: 'false', weight: 0.56334} },
-{ data: { source: 'CDK7', target: 'ERCC2', directed: 'false', weight: 0.819623} },
-{ data: { source: 'CDK7', target: 'RPA2', directed: 'false', weight: 0.508706} }]},
+elements:{nodes: [{data: { id: 'LHX2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P50458" }},
+{data: { id: 'ISL2', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q96A47" }},
+{data: { id: 'SSBP3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BWW4" }},
+{data: { id: 'LDB1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86U70" }}], 
+ edges: [{ data: { source: 'SSBP3', target: 'LDB1', directed: 'false', weight: 0.999624} },
+{ data: { source: 'SSBP3', target: 'ISL2', directed: 'false', weight: 0.939967} },
+{ data: { source: 'SSBP3', target: 'LHX2', directed: 'false', weight: 0.782121} }]},
 
 style: [
     {
@@ -102,7 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.4 CAK-ERCC2 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.47
+    0.2 E-box sequence-binding complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

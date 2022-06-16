@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 AFF4 super elongation complex (SEC)</title>
+<title> 0.1 Calcineurin-FKBP12 complex match 2</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,22 +30,26 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'EAF1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96JC9" }},
-{data: { id: 'PIP4K2B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P78356" }},
-{data: { id: 'NFKBIL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UBC1" }},
-{data: { id: 'PIP4K2A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P48426" }},
-{data: { id: 'PIP4K2C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TBX8" }},
-{data: { id: 'ZRANB2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95218" }}], 
- edges: [{ data: { source: 'PIP4K2A', target: 'EAF1', directed: 'false', weight: 0.58168} },
-{ data: { source: 'PIP4K2A', target: 'PIP4K2C', directed: 'false', weight: 0.981527} },
-{ data: { source: 'PIP4K2A', target: 'PIP4K2B', directed: 'false', weight: 0.792092} },
-{ data: { source: 'PIP4K2A', target: 'ZRANB2', directed: 'false', weight: 0.686346} },
-{ data: { source: 'EAF1', target: 'PIP4K2B', directed: 'false', weight: 0.534618} },
-{ data: { source: 'EAF1', target: 'PIP4K2C', directed: 'false', weight: 0.5} },
-{ data: { source: 'PIP4K2B', target: 'PIP4K2C', directed: 'false', weight: 0.950738} },
-{ data: { source: 'PIP4K2B', target: 'ZRANB2', directed: 'false', weight: 0.7317359999999999} },
-{ data: { source: 'NFKBIL1', target: 'ZRANB2', directed: 'false', weight: 0.8361790000000001} },
-{ data: { source: 'PIP4K2C', target: 'ZRANB2', directed: 'false', weight: 0.48603} }]},
+elements:{nodes: [{data: { id: 'TAGLN3', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q9UI15" }},
+{data: { id: 'ALDH4A1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P30038" }},
+{data: { id: 'SUMO3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P55854" }},
+{data: { id: 'HEL-S-44', score: 5, type: '', href: "https://www.uniprot.org/uniprot/V9HWC9" }},
+{data: { id: 'TAGLN2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P37802" }},
+{data: { id: 'FKBP1A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62942" }},
+{data: { id: 'hCG_22119', score: 2, type: '', href: "https://www.uniprot.org/uniprot/A0A024R693" }}], 
+ edges: [{ data: { source: 'TAGLN3', target: 'HEL-S-44', directed: 'false', weight: 0.142205} },
+{ data: { source: 'TAGLN3', target: 'FKBP1A', directed: 'false', weight: 0.996468} },
+{ data: { source: 'TAGLN3', target: 'TAGLN2', directed: 'false', weight: 0.993907} },
+{ data: { source: 'TAGLN3', target: 'SUMO3', directed: 'false', weight: 0.93904} },
+{ data: { source: 'TAGLN3', target: 'ALDH4A1', directed: 'false', weight: 0.055413800000000006} },
+{ data: { source: 'ALDH4A1', target: 'FKBP1A', directed: 'false', weight: 0.026027099999999997} },
+{ data: { source: 'ALDH4A1', target: 'TAGLN2', directed: 'false', weight: 0.0320067} },
+{ data: { source: 'ALDH4A1', target: 'hCG_22119', directed: 'false', weight: 0.455265} },
+{ data: { source: 'SUMO3', target: 'TAGLN2', directed: 'false', weight: 0.970368} },
+{ data: { source: 'HEL-S-44', target: 'FKBP1A', directed: 'false', weight: 0.998532} },
+{ data: { source: 'HEL-S-44', target: 'hCG_22119', directed: 'false', weight: 0.394552} },
+{ data: { source: 'TAGLN2', target: 'FKBP1A', directed: 'false', weight: 0.9836450000000001} },
+{ data: { source: 'FKBP1A', target: 'hCG_22119', directed: 'false', weight: 0.039194400000000004} }]},
 
 style: [
     {
@@ -105,7 +109,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 AFF4 super elongation complex (SEC)<br> Complex Score = 0.38750<br> Unweighted Density = 0.67
+    0.1 Calcineurin-FKBP12 complex match 2<br> Complex Score = 0.37500<br> Unweighted Density = 0.62
     </section>
     </body>
     </html>

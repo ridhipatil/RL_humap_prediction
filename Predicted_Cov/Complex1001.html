@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 IMP3-IMP4-MPP10 complex</title>
+<title> 0.2 TCF4-CTNNB1 complex match 2</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,26 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'RPL10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P27635" }},
-{data: { id: 'IMP3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00425" }},
-{data: { id: 'FOCAD', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q5VW36" }},
-{data: { id: 'SARS-CoV2 nsp8', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp8.html" }},
-{data: { id: 'SRP72', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/O76094" }},
-{data: { id: 'NOP53', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NZM5" }},
-{data: { id: 'SARS-CoV2 nsp8', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp8.html" }},
-{data: { id: 'MPHOSPH10', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/O00566" }},
-{data: { id: 'PRKRA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75569" }}], 
- edges: [{ data: { source: 'SARS-CoV2 nsp8', target: 'SRP72', directed: 'false', weight: 0.739540656, type: 'sars'} },
-{ data: { source: 'SARS-CoV2 nsp8', target: 'MPHOSPH10', directed: 'false', weight: 0.728559172, type: 'sars'} },
-{ data: { source: 'RPL10', target: 'SRP72', directed: 'false', weight: 0.981125} },
-{ data: { source: 'IMP3', target: 'MPHOSPH10', directed: 'false', weight: 0.99982} },
-{ data: { source: 'IMP3', target: 'NOP53', directed: 'false', weight: 0.704543} },
-{ data: { source: 'IMP3', target: 'SRP72', directed: 'false', weight: 0.455086} },
-{ data: { source: 'FOCAD', target: 'NOP53', directed: 'false', weight: 0.0960696} },
-{ data: { source: 'SRP72', target: 'MPHOSPH10', directed: 'false', weight: 0.516483} },
-{ data: { source: 'SRP72', target: 'NOP53', directed: 'false', weight: 0.662852} },
-{ data: { source: 'NOP53', target: 'MPHOSPH10', directed: 'false', weight: 0.9959100000000001} },
-{ data: { source: 'MPHOSPH10', target: 'PRKRA', directed: 'false', weight: 0.130908} }]},
+elements:{nodes: [{data: { id: 'TCF4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NQB0" }},
+{data: { id: 'TWIST1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15672" }},
+{data: { id: 'MYOG', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P15173" }},
+{data: { id: 'CBFA2T3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75081" }}], 
+ edges: [{ data: { source: 'TCF4', target: 'TWIST1', directed: 'false', weight: 0.91991} },
+{ data: { source: 'TCF4', target: 'MYOG', directed: 'false', weight: 0.43917} },
+{ data: { source: 'TCF4', target: 'CBFA2T3', directed: 'false', weight: 0.144723} }]},
 
 style: [
     {
@@ -109,12 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 IMP3-IMP4-MPP10 complex<br> Complex Score = 0.35000<br> Unweighted Density = 0.43
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        2 interacting protein(s): <br>SRP72 MPHOSPH10
+    0.2 TCF4-CTNNB1 complex match 2<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

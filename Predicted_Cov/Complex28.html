@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.3 Kinase maturation complex 2</title>
+<title> 0.8 Telomere-associated protein complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,27 +30,20 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'TANK', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92844" }},
-{data: { id: 'CASP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P42575" }},
-{data: { id: 'BBOX1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75936" }},
-{data: { id: 'AZI2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H6S1" }},
-{data: { id: 'SARS-CoV2 nsp13', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp13.html" }},
-{data: { id: 'TBK1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9UHD2" }},
-{data: { id: 'RTF2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BY42" }}], 
- edges: [{ data: { source: 'SARS-CoV2 nsp13', target: 'TBK1', directed: 'false', weight: 0.993970596, type: 'sars'} },
-{ data: { source: 'AZI2', target: 'BBOX1', directed: 'false', weight: 0.9804510000000001} },
-{ data: { source: 'AZI2', target: 'TANK', directed: 'false', weight: 0.171414} },
-{ data: { source: 'AZI2', target: 'CASP2', directed: 'false', weight: 0.151455} },
-{ data: { source: 'AZI2', target: 'RTF2', directed: 'false', weight: 0.133451} },
-{ data: { source: 'AZI2', target: 'TBK1', directed: 'false', weight: 0.11473699999999999} },
-{ data: { source: 'TANK', target: 'BBOX1', directed: 'false', weight: 0.967692} },
-{ data: { source: 'TANK', target: 'CASP2', directed: 'false', weight: 0.151455} },
-{ data: { source: 'TANK', target: 'TBK1', directed: 'false', weight: 0.11473699999999999} },
-{ data: { source: 'CASP2', target: 'BBOX1', directed: 'false', weight: 0.9728209999999999} },
-{ data: { source: 'CASP2', target: 'RTF2', directed: 'false', weight: 0.117318} },
-{ data: { source: 'CASP2', target: 'TBK1', directed: 'false', weight: 0.10064} },
-{ data: { source: 'BBOX1', target: 'RTF2', directed: 'false', weight: 0.820233} },
-{ data: { source: 'BBOX1', target: 'TBK1', directed: 'false', weight: 0.658095} }]},
+elements:{nodes: [{data: { id: 'POT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NUX5" }},
+{data: { id: 'ACD', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96AP0" }},
+{data: { id: 'TERF2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15554" }},
+{data: { id: 'TINF2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BSI4" }},
+{data: { id: 'TERF2IP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NYB0" }}], 
+ edges: [{ data: { source: 'POT1', target: 'TINF2', directed: 'false', weight: 0.999331} },
+{ data: { source: 'POT1', target: 'TERF2IP', directed: 'false', weight: 0.651291} },
+{ data: { source: 'POT1', target: 'TERF2', directed: 'false', weight: 0.8390799999999999} },
+{ data: { source: 'POT1', target: 'ACD', directed: 'false', weight: 0.9995569999999999} },
+{ data: { source: 'ACD', target: 'TINF2', directed: 'false', weight: 0.709208} },
+{ data: { source: 'ACD', target: 'TERF2IP', directed: 'false', weight: 0.153623} },
+{ data: { source: 'TERF2', target: 'TINF2', directed: 'false', weight: 0.08758880000000001} },
+{ data: { source: 'TERF2', target: 'TERF2IP', directed: 'false', weight: 0.9999969999999999} },
+{ data: { source: 'TINF2', target: 'TERF2IP', directed: 'false', weight: 0.11316099999999998} }]},
 
 style: [
     {
@@ -105,12 +98,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.3 Kinase maturation complex 2<br> Complex Score = 0.39688<br> Unweighted Density = 0.87
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>TBK1
+    0.8 Telomere-associated protein complex<br> Complex Score = 0.39400<br> Unweighted Density = 0.90
     </section>
     </body>
     </html>

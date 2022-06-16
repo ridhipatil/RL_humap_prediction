@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 KIAA1468-OSBP-RAB11A complex</title>
+<title> 0.6 Bcl-2-Beclin1-UVRAG-PI(3)KC3 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,47 +30,38 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'FKBP6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75344" }},
-{data: { id: 'OSBP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P22059" }},
-{data: { id: 'CDC37L1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q7L3B6" }},
-{data: { id: 'PDE4A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P27815" }},
-{data: { id: 'EEF2K', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00418" }},
-{data: { id: 'USP19', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O94966" }},
-{data: { id: 'AGAP3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96P47" }}], 
- edges: [{ data: { source: 'CDC37L1', target: 'FKBP6', directed: 'false', weight: 0.923847} },
-{ data: { source: 'CDC37L1', target: 'EEF2K', directed: 'false', weight: 0.171414} },
-{ data: { source: 'CDC37L1', target: 'PDE4A', directed: 'false', weight: 0.171414} },
-{ data: { source: 'CDC37L1', target: 'OSBP', directed: 'false', weight: 0.120276} },
-{ data: { source: 'CDC37L1', target: 'AGAP3', directed: 'false', weight: 0.151455} },
-{ data: { source: 'CDC37L1', target: 'USP19', directed: 'false', weight: 0.11248399999999999} },
-{ data: { source: 'FKBP6', target: 'EEF2K', directed: 'false', weight: 0.978325} },
-{ data: { source: 'FKBP6', target: 'PDE4A', directed: 'false', weight: 0.9620690000000001} },
-{ data: { source: 'FKBP6', target: 'OSBP', directed: 'false', weight: 0.941916} },
-{ data: { source: 'FKBP6', target: 'AGAP3', directed: 'false', weight: 0.915108} },
-{ data: { source: 'FKBP6', target: 'USP19', directed: 'false', weight: 0.648928} },
-{ data: { source: 'OSBP', target: 'EEF2K', directed: 'false', weight: 0.120276} },
-{ data: { source: 'OSBP', target: 'PDE4A', directed: 'false', weight: 0.120276} },
-{ data: { source: 'OSBP', target: 'USP19', directed: 'false', weight: 0.106169} },
-{ data: { source: 'OSBP', target: 'AGAP3', directed: 'false', weight: 0.10556600000000001} },
-{ data: { source: 'PDE4A', target: 'EEF2K', directed: 'false', weight: 0.171414} },
-{ data: { source: 'PDE4A', target: 'AGAP3', directed: 'false', weight: 0.151455} },
-{ data: { source: 'PDE4A', target: 'USP19', directed: 'false', weight: 0.11248399999999999} },
-{ data: { source: 'EEF2K', target: 'AGAP3', directed: 'false', weight: 0.151455} },
-{ data: { source: 'EEF2K', target: 'USP19', directed: 'false', weight: 0.11248399999999999} },
-{ data: { source: 'USP19', target: 'AGAP3', directed: 'false', weight: 0.098638} }]},
+elements:{nodes: [{data: { id: 'PIK3C3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NEB9" }},
+{data: { id: 'RUBCNL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H714" }},
+{data: { id: 'ATG14', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6ZNE5" }},
+{data: { id: 'PIK3R4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99570" }},
+{data: { id: 'BECN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14457" }},
+{data: { id: 'UVRAG', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9P2Y5" }}], 
+ edges: [{ data: { source: 'PIK3C3', target: 'BECN1', directed: 'false', weight: 0.325965} },
+{ data: { source: 'PIK3C3', target: 'PIK3R4', directed: 'false', weight: 0.995532} },
+{ data: { source: 'PIK3C3', target: 'ATG14', directed: 'false', weight: 0.855138} },
+{ data: { source: 'PIK3C3', target: 'RUBCNL', directed: 'false', weight: 0.569792} },
+{ data: { source: 'RUBCNL', target: 'BECN1', directed: 'false', weight: 0.410354} },
+{ data: { source: 'RUBCNL', target: 'UVRAG', directed: 'false', weight: 0.996253} },
+{ data: { source: 'RUBCNL', target: 'PIK3R4', directed: 'false', weight: 0.053430399999999996} },
+{ data: { source: 'ATG14', target: 'BECN1', directed: 'false', weight: 0.997697} },
+{ data: { source: 'ATG14', target: 'PIK3R4', directed: 'false', weight: 0.12850599999999998} },
+{ data: { source: 'PIK3R4', target: 'BECN1', directed: 'false', weight: 0.101281} },
+{ data: { source: 'BECN1', target: 'UVRAG', directed: 'false', weight: 0.160382} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 30,
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}  
                                  if ( ele.data('type') == 'sars' ){return 'triangle'}   
   return 'rectangle';
   },            
-            'background-color': function( ele ){ 
+             'background-color': function( ele ){ 
                                 if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
 								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
                                  if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
@@ -84,7 +75,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
 								'line-color': function( ele ){ 
                                  if ( ele.data('type') == 'sars' ){return 'red'}   
   return 'blue';
@@ -96,7 +87,10 @@ style: [
 
 });
 cy.layout({
-    'name': 'circle'
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -112,7 +106,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 KIAA1468-OSBP-RAB11A complex<br> Complex Score = 0.38750<br> Unweighted Density = 1.00
+    0.6 Bcl-2-Beclin1-UVRAG-PI(3)KC3 complex<br> Complex Score = 0.38800<br> Unweighted Density = 0.73
     </section>
     </body>
     </html>

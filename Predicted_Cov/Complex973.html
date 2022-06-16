@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 HNRNPU-NR3C1 complex</title>
+<title> 0.2 PKC-alpha-PLD1-PLC-gamma-2 signaling complex, lacritin stimulated</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,20 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'ACADVL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49748" }},
-{data: { id: 'RPS3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P23396" }},
-{data: { id: 'ATP5F1A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P25705" }},
-{data: { id: 'HNRNPU', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q00839" }},
-{data: { id: 'SRBD1', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q8N5C6" }},
-{data: { id: 'RPS23', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62266" }}], 
- edges: [{ data: { source: 'HNRNPU', target: 'RPS23', directed: 'false', weight: 0.9759190000000001} },
-{ data: { source: 'HNRNPU', target: 'RPS3', directed: 'false', weight: 0.9640040000000001} },
-{ data: { source: 'HNRNPU', target: 'SRBD1', directed: 'false', weight: 0.7266100000000001} },
-{ data: { source: 'HNRNPU', target: 'ATP5F1A', directed: 'false', weight: 0.236804} },
-{ data: { source: 'ACADVL', target: 'ATP5F1A', directed: 'false', weight: 0.892724} },
-{ data: { source: 'RPS3', target: 'RPS23', directed: 'false', weight: 0.9999979999999999} },
-{ data: { source: 'RPS3', target: 'ATP5F1A', directed: 'false', weight: 0.8527049999999999} },
-{ data: { source: 'ATP5F1A', target: 'RPS23', directed: 'false', weight: 0.899867} }]},
+elements:{nodes: [{data: { id: 'PRKCA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P17252" }},
+{data: { id: 'PRKCB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P05771" }},
+{data: { id: 'PRKCH', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P24723" }},
+{data: { id: 'PRKCG', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P05129" }}], 
+ edges: [{ data: { source: 'PRKCG', target: 'PRKCA', directed: 'false', weight: 0.72482} },
+{ data: { source: 'PRKCB', target: 'PRKCA', directed: 'false', weight: 0.814036} },
+{ data: { source: 'PRKCH', target: 'PRKCA', directed: 'false', weight: 0.877451} }]},
 
 style: [
     {
@@ -103,7 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 HNRNPU-NR3C1 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.53
+    0.2 PKC-alpha-PLD1-PLC-gamma-2 signaling complex, lacritin stimulated<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> HMGCL GOT2 TAGLN PCBP3 OXCT1 TIAL1 ISOC1 UPP1</title>
+<title> 0.2 prohibitin 2 complex, mitochondrial</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,27 +30,18 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'GOT2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P00505" }},
-{data: { id: 'HMGCL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P35914" }},
-{data: { id: 'TAGLN', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q01995" }},
-{data: { id: 'ISOC1', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q96CN7" }},
-{data: { id: 'OXCT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P55809" }},
-{data: { id: 'PCBP3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P57721" }},
-{data: { id: 'UPP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16831" }},
-{data: { id: 'TIAL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q01085" }}], 
- edges: [{ data: { source: 'HMGCL', target: 'TAGLN', directed: 'false', weight: 0.0469978} },
-{ data: { source: 'HMGCL', target: 'TIAL1', directed: 'false', weight: 0.335361} },
-{ data: { source: 'HMGCL', target: 'ISOC1', directed: 'false', weight: 0.013108700000000001} },
-{ data: { source: 'HMGCL', target: 'PCBP3', directed: 'false', weight: 0.0531033} },
-{ data: { source: 'GOT2', target: 'OXCT1', directed: 'false', weight: 0.850384} },
-{ data: { source: 'GOT2', target: 'TIAL1', directed: 'false', weight: 0.0772808} },
-{ data: { source: 'TAGLN', target: 'TIAL1', directed: 'false', weight: 0.631026} },
-{ data: { source: 'TAGLN', target: 'PCBP3', directed: 'false', weight: 0.0717232} },
-{ data: { source: 'TAGLN', target: 'ISOC1', directed: 'false', weight: 0.0039448999999999994} },
-{ data: { source: 'ISOC1', target: 'TIAL1', directed: 'false', weight: 0.8560530000000001} },
-{ data: { source: 'ISOC1', target: 'PCBP3', directed: 'false', weight: 0.0613066} },
-{ data: { source: 'PCBP3', target: 'TIAL1', directed: 'false', weight: 0.323892} },
-{ data: { source: 'UPP1', target: 'TIAL1', directed: 'false', weight: 0.042867199999999994} }]},
+elements:{nodes: [{data: { id: 'RPS5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P46782" }},
+{data: { id: 'DKFZp686J11229', score: 1, type: '', href: "https://www.uniprot.org/uniprot/Q6MZF9" }},
+{data: { id: 'PHB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P35232" }},
+{data: { id: 'SARS-CoV2 N', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 N.html" }},
+{data: { id: 'PABPC4', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q13310" }},
+{data: { id: 'PHB2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99623" }}], 
+ edges: [{ data: { source: 'SARS-CoV2 N', target: 'PABPC4', directed: 'false', weight: 0.846200046, type: 'sars'} },
+{ data: { source: 'RPS5', target: 'DKFZp686J11229', directed: 'false', weight: 0.238669} },
+{ data: { source: 'RPS5', target: 'PABPC4', directed: 'false', weight: 0.11201099999999999} },
+{ data: { source: 'DKFZp686J11229', target: 'PHB2', directed: 'false', weight: 0.579096} },
+{ data: { source: 'DKFZp686J11229', target: 'PHB', directed: 'false', weight: 0.665213} },
+{ data: { source: 'PHB', target: 'PHB2', directed: 'false', weight: 1.0} }]},
 
 style: [
     {
@@ -110,7 +101,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    HMGCL GOT2 TAGLN PCBP3 OXCT1 TIAL1 ISOC1 UPP1<br> Complex Score = 0.37500<br> Unweighted Density = 0.46
+    0.2 prohibitin 2 complex, mitochondrial<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>PABPC4
     </section>
     </body>
     </html>

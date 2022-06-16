@@ -30,27 +30,26 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'DNAJC18', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q9H819" }},
-{data: { id: 'DNAJC30', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96LL9" }},
-{data: { id: 'CHRNA9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UGM1" }},
-{data: { id: 'ZIC2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95409" }},
-{data: { id: 'CHEK1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O14757" }}], 
- edges: [{ data: { source: 'CHRNA9', target: 'ZIC2', directed: 'false', weight: 0.8541489999999999} },
-{ data: { source: 'CHRNA9', target: 'DNAJC18', directed: 'false', weight: 0.804603} },
-{ data: { source: 'CHRNA9', target: 'CHEK1', directed: 'false', weight: 0.639065} },
-{ data: { source: 'CHRNA9', target: 'DNAJC30', directed: 'false', weight: 0.506577} },
-{ data: { source: 'DNAJC18', target: 'ZIC2', directed: 'false', weight: 0.171414} },
-{ data: { source: 'DNAJC18', target: 'DNAJC30', directed: 'false', weight: 0.151455} },
-{ data: { source: 'DNAJC18', target: 'CHEK1', directed: 'false', weight: 0.11248399999999999} },
-{ data: { source: 'DNAJC30', target: 'ZIC2', directed: 'false', weight: 0.151455} },
-{ data: { source: 'DNAJC30', target: 'CHEK1', directed: 'false', weight: 0.098638} },
-{ data: { source: 'ZIC2', target: 'CHEK1', directed: 'false', weight: 0.11248399999999999} }]},
+elements:{nodes: [{data: { id: 'PLPBP', score: 4, type: '', href: "https://www.uniprot.org/uniprot/O94903" }},
+{data: { id: 'PRPS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P60891" }},
+{data: { id: 'PRPSAP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14558" }},
+{data: { id: 'PRPS2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P11908" }},
+{data: { id: 'GRPEL1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9HAV7" }}], 
+ edges: [{ data: { source: 'PLPBP', target: 'PRPS1', directed: 'false', weight: 0.28871399999999997} },
+{ data: { source: 'PLPBP', target: 'PRPS2', directed: 'false', weight: 0.132772} },
+{ data: { source: 'PRPS1', target: 'GRPEL1', directed: 'false', weight: 0.401767} },
+{ data: { source: 'PRPS1', target: 'PRPS2', directed: 'false', weight: 0.999922} },
+{ data: { source: 'PRPS1', target: 'PRPSAP1', directed: 'false', weight: 0.991361} },
+{ data: { source: 'PRPSAP1', target: 'PRPS2', directed: 'false', weight: 0.388443} },
+{ data: { source: 'PRPS2', target: 'GRPEL1', directed: 'false', weight: 0.043741} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 30,
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}                                
@@ -62,7 +61,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
 								'line-color': 'blue',
 								'opacity': 0.5
 							}
@@ -71,7 +70,10 @@ style: [
 
 });
 cy.layout({
-    name: 'circle'
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -87,7 +89,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.38750
+    Complex Score  = 0.38800
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>GRPEL1
     </section>
     </body>
     </html>

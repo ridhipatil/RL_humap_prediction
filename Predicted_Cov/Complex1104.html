@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> RETREG3 PLSCR1 FAM210B SPRY2</title>
+<title> ARHGEF5 DPYD ARHGEF35 ALAD</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,15 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'SARS-CoV2 orf9c', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 orf9c.html" }},
-{data: { id: 'RETREG3', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q86VR2" }},
-{data: { id: 'PLSCR1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15162" }},
-{data: { id: 'FAM210B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96KR6" }},
-{data: { id: 'SPRY2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43597" }}], 
- edges: [{ data: { source: 'SARS-CoV2 orf9c', target: 'RETREG3', directed: 'false', weight: 0.731626333, type: 'sars'} },
-{ data: { source: 'RETREG3', target: 'PLSCR1', directed: 'false', weight: 0.924651} },
-{ data: { source: 'RETREG3', target: 'FAM210B', directed: 'false', weight: 0.298498} },
-{ data: { source: 'SPRY2', target: 'PLSCR1', directed: 'false', weight: 0.305336} }]},
+elements:{nodes: [{data: { id: 'ARHGEF5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q12774" }},
+{data: { id: 'DPYD', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q12882" }},
+{data: { id: 'ARHGEF35', score: 2, type: '', href: "https://www.uniprot.org/uniprot/A5YM69" }},
+{data: { id: 'ALAD', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P13716" }}], 
+ edges: [{ data: { source: 'ARHGEF5', target: 'ARHGEF35', directed: 'false', weight: 1.0} },
+{ data: { source: 'DPYD', target: 'ALAD', directed: 'false', weight: 0.160637} },
+{ data: { source: 'ARHGEF35', target: 'ALAD', directed: 'false', weight: 0.104673} }]},
 
 style: [
     {
@@ -98,12 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    RETREG3 PLSCR1 FAM210B SPRY2<br> Complex Score = 0.30000<br> Unweighted Density = 0.50
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>RETREG3
+    ARHGEF5 DPYD ARHGEF35 ALAD<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> LMLN ARSK MOXD1 CACNA2D1 CTSF</title>
+<title> ZNF148 SLC12A3 IL16</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,17 +30,11 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'LMLN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96KR4" }},
-{data: { id: 'ARSK', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q6UWY0" }},
-{data: { id: 'CTSF', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UBX1" }},
-{data: { id: 'MOXD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6UVY6" }},
-{data: { id: 'CACNA2D1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P54289" }}], 
- edges: [{ data: { source: 'ARSK', target: 'MOXD1', directed: 'false', weight: 0.631306} },
-{ data: { source: 'ARSK', target: 'CACNA2D1', directed: 'false', weight: 0.560215} },
-{ data: { source: 'ARSK', target: 'CTSF', directed: 'false', weight: 0.5} },
-{ data: { source: 'ARSK', target: 'LMLN', directed: 'false', weight: 0.359342} },
-{ data: { source: 'LMLN', target: 'CACNA2D1', directed: 'false', weight: 0.309205} },
-{ data: { source: 'CTSF', target: 'MOXD1', directed: 'false', weight: 0.377325} }]},
+elements:{nodes: [{data: { id: 'ZNF148', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UQR1" }},
+{data: { id: 'IL16', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14005" }},
+{data: { id: 'SLC12A3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P55017" }}], 
+ edges: [{ data: { source: 'ZNF148', target: 'IL16', directed: 'false', weight: 0.0218541} },
+{ data: { source: 'IL16', target: 'SLC12A3', directed: 'false', weight: 0.315321} }]},
 
 style: [
     {
@@ -100,7 +94,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    LMLN ARSK MOXD1 CACNA2D1 CTSF<br> Complex Score = 0.38750<br> Unweighted Density = 0.60
+    ZNF148 SLC12A3 IL16<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
     </section>
     </body>
     </html>

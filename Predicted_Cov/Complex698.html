@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 PP2A-NR3A complex</title>
+<title> 0.2 SNARE complex (VAMP3, VAMP4, STX16)</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,21 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'FAM122A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96E09" }},
-{data: { id: 'PPP2R2D', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q66LE6" }},
-{data: { id: 'FBXL16', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q8N461" }},
-{data: { id: 'PPP2R2A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P63151" }},
-{data: { id: 'CDCA4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BXL8" }},
-{data: { id: 'FAM122B', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q7Z309" }}], 
- edges: [{ data: { source: 'FAM122A', target: 'PPP2R2A', directed: 'false', weight: 0.9502370000000001} },
-{ data: { source: 'FAM122A', target: 'PPP2R2D', directed: 'false', weight: 0.849633} },
-{ data: { source: 'FAM122A', target: 'CDCA4', directed: 'false', weight: 0.349367} },
-{ data: { source: 'FAM122A', target: 'FBXL16', directed: 'false', weight: 0.325934} },
-{ data: { source: 'FAM122A', target: 'FAM122B', directed: 'false', weight: 0.54083} },
-{ data: { source: 'PPP2R2A', target: 'PPP2R2D', directed: 'false', weight: 0.9989540000000001} },
-{ data: { source: 'PPP2R2A', target: 'FBXL16', directed: 'false', weight: 0.398899} },
-{ data: { source: 'CDCA4', target: 'FAM122B', directed: 'false', weight: 0.11730499999999999} },
-{ data: { source: 'PPP2R2D', target: 'FBXL16', directed: 'false', weight: 0.954263} }]},
+elements:{nodes: [{data: { id: 'UTP6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NYH9" }},
+{data: { id: 'WDFY2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96P53" }},
+{data: { id: 'STX7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15400" }},
+{data: { id: 'VAMP3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15836" }}], 
+ edges: [{ data: { source: 'UTP6', target: 'WDFY2', directed: 'false', weight: 0.202071} },
+{ data: { source: 'WDFY2', target: 'VAMP3', directed: 'false', weight: 0.1823} },
+{ data: { source: 'STX7', target: 'VAMP3', directed: 'false', weight: 0.151347} }]},
 
 style: [
     {
@@ -104,7 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 PP2A-NR3A complex<br> Complex Score = 0.38750<br> Unweighted Density = 0.60
+    0.2 SNARE complex (VAMP3, VAMP4, STX16)<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

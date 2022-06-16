@@ -30,13 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'TRIM39', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HCM9" }},
-{data: { id: 'ZNF19', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P17023" }},
-{data: { id: 'ZNF621', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q6ZSS3" }},
-{data: { id: 'TRIM27', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P14373" }}], 
- edges: [{ data: { source: 'ZNF19', target: 'TRIM39', directed: 'false', weight: 0.321772} },
-{ data: { source: 'ZNF621', target: 'TRIM27', directed: 'false', weight: 0.26713600000000004} },
-{ data: { source: 'ZNF621', target: 'TRIM39', directed: 'false', weight: 0.655472} }]},
+elements:{nodes: [{data: { id: 'SPDL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96EA4" }},
+{data: { id: 'FNTA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49354" }},
+{data: { id: 'CENPF', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P49454" }},
+{data: { id: 'FNTB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49356" }}], 
+ edges: [{ data: { source: 'SPDL1', target: 'FNTB', directed: 'false', weight: 0.715689} },
+{ data: { source: 'FNTA', target: 'FNTB', directed: 'false', weight: 0.999138} },
+{ data: { source: 'CENPF', target: 'FNTB', directed: 'false', weight: 0.160548} }]},
 
 style: [
     {
@@ -84,7 +84,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.30000
+    Complex Score  = 0.37500
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>CENPF
     </section>
     </body>
     </html>

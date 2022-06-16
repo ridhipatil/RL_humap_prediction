@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.4 Respiratory chain complex I (intermediate I/200kD and III/250kD), mitochondrial</title>
+<title> 0.1 Astrin-kinastrin complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,14 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'NDUFA8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P51970" }},
-{data: { id: 'NDUFS3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75489" }},
-{data: { id: 'NDUFA9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16795" }},
-{data: { id: 'ND5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P03915" }}], 
- edges: [{ data: { source: 'NDUFA8', target: 'NDUFS3', directed: 'false', weight: 0.457136} },
-{ data: { source: 'NDUFA8', target: 'ND5', directed: 'false', weight: 0.6972119999999999} },
-{ data: { source: 'NDUFA9', target: 'NDUFS3', directed: 'false', weight: 0.574289} },
-{ data: { source: 'NDUFS3', target: 'ND5', directed: 'false', weight: 0.458714} }]},
+elements:{nodes: [{data: { id: 'H3F3A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P84243" }},
+{data: { id: 'SGO2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q562F6" }},
+{data: { id: 'LACC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IV20" }},
+{data: { id: 'OSER1', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q9NX31" }}], 
+ edges: [{ data: { source: 'H3F3A', target: 'LACC1', directed: 'false', weight: 0.942701} },
+{ data: { source: 'H3F3A', target: 'SGO2', directed: 'false', weight: 0.8208639999999999} },
+{ data: { source: 'LACC1', target: 'OSER1', directed: 'false', weight: 0.6039869999999999} }]},
 
 style: [
     {
@@ -97,7 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.4 Respiratory chain complex I (intermediate I/200kD and III/250kD), mitochondrial<br> Complex Score = 0.30000<br> Unweighted Density = 0.67
+    0.1 Astrin-kinastrin complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

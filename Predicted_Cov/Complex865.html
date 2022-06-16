@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 SRm160/300 complex match 3</title>
+<title> 0.2 SMN1-SIP1-SNRP complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,20 +30,22 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'CD2BP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95400" }},
-{data: { id: 'CDC5L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99459" }},
-{data: { id: 'EIF2S2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P20042" }},
-{data: { id: 'SNRPN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P63162" }},
-{data: { id: 'CDC123', score: 3, type: '', href: "https://www.uniprot.org/uniprot/O75794" }},
-{data: { id: 'SNRPA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P09661" }}], 
- edges: [{ data: { source: 'CD2BP2', target: 'SNRPA1', directed: 'false', weight: 0.18575} },
-{ data: { source: 'CD2BP2', target: 'CDC5L', directed: 'false', weight: 0.655616} },
-{ data: { source: 'CD2BP2', target: 'EIF2S2', directed: 'false', weight: 0.042951199999999995} },
-{ data: { source: 'SNRPN', target: 'SNRPA1', directed: 'false', weight: 0.978398} },
-{ data: { source: 'CDC123', target: 'EIF2S2', directed: 'false', weight: 0.530143} },
-{ data: { source: 'SNRPA1', target: 'CDC5L', directed: 'false', weight: 0.9758899999999999} },
-{ data: { source: 'SNRPA1', target: 'EIF2S2', directed: 'false', weight: 0.510518} },
-{ data: { source: 'CDC5L', target: 'EIF2S2', directed: 'false', weight: 0.8843260000000001} }]},
+elements:{nodes: [{data: { id: 'SNRPE', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62304" }},
+{data: { id: 'EFTUD2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15029" }},
+{data: { id: 'SRP14', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P37108" }},
+{data: { id: 'HNRNPU', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q00839" }},
+{data: { id: 'SNRPD3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62318" }},
+{data: { id: 'PRPF8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6P2Q9" }}], 
+ edges: [{ data: { source: 'SNRPE', target: 'PRPF8', directed: 'false', weight: 0.07016610000000001} },
+{ data: { source: 'SNRPE', target: 'EFTUD2', directed: 'false', weight: 0.13859000000000002} },
+{ data: { source: 'SNRPE', target: 'SNRPD3', directed: 'false', weight: 0.9999979999999999} },
+{ data: { source: 'EFTUD2', target: 'PRPF8', directed: 'false', weight: 1.0} },
+{ data: { source: 'EFTUD2', target: 'HNRNPU', directed: 'false', weight: 0.906241} },
+{ data: { source: 'EFTUD2', target: 'SNRPD3', directed: 'false', weight: 0.6471640000000001} },
+{ data: { source: 'SRP14', target: 'HNRNPU', directed: 'false', weight: 0.0584151} },
+{ data: { source: 'HNRNPU', target: 'PRPF8', directed: 'false', weight: 0.766108} },
+{ data: { source: 'HNRNPU', target: 'SNRPD3', directed: 'false', weight: 0.0300128} },
+{ data: { source: 'SNRPD3', target: 'PRPF8', directed: 'false', weight: 0.630969} }]},
 
 style: [
     {
@@ -103,7 +105,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 SRm160/300 complex match 3<br> Complex Score = 0.37500<br> Unweighted Density = 0.53
+    0.2 SMN1-SIP1-SNRP complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
     </section>
     </body>
     </html>

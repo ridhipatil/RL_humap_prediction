@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> TTC13 B3GLCT POGLUT2 CHPF GSTCD BMP7</title>
+<title> 0.5 HAUS augmin-like complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,24 +30,29 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'BMP7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P18075" }},
-{data: { id: 'GSTCD', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q8NEC7" }},
-{data: { id: 'TTC13', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q8NBP0" }},
-{data: { id: 'B3GLCT', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6Y288" }},
-{data: { id: 'SARS-CoV2 orf8', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 orf8.html" }},
-{data: { id: 'CHPF', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q8IZ52" }},
-{data: { id: 'SARS-CoV2 orf8', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 orf8.html" }},
-{data: { id: 'POGLUT2', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q6UW63" }}], 
- edges: [{ data: { source: 'SARS-CoV2 orf8', target: 'CHPF', directed: 'false', weight: 0.989068101, type: 'sars'} },
-{ data: { source: 'SARS-CoV2 orf8', target: 'POGLUT2', directed: 'false', weight: 0.95793072, type: 'sars'} },
-{ data: { source: 'TTC13', target: 'CHPF', directed: 'false', weight: 0.353128} },
-{ data: { source: 'B3GLCT', target: 'BMP7', directed: 'false', weight: 0.116085} },
-{ data: { source: 'B3GLCT', target: 'POGLUT2', directed: 'false', weight: 0.23167} },
-{ data: { source: 'B3GLCT', target: 'CHPF', directed: 'false', weight: 0.126269} },
-{ data: { source: 'BMP7', target: 'GSTCD', directed: 'false', weight: 0.945549} },
-{ data: { source: 'BMP7', target: 'POGLUT2', directed: 'false', weight: 0.308962} },
-{ data: { source: 'BMP7', target: 'CHPF', directed: 'false', weight: 0.110952} },
-{ data: { source: 'CHPF', target: 'POGLUT2', directed: 'false', weight: 0.127646} }]},
+elements:{nodes: [{data: { id: 'HAUS4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H6D7" }},
+{data: { id: 'HAUS7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99871" }},
+{data: { id: 'HAUS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96CS2" }},
+{data: { id: 'HAUS8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BT25" }},
+{data: { id: 'HAUS3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q68CZ6" }},
+{data: { id: 'CEP27', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NVX0" }},
+{data: { id: 'C13orf1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5W111" }}], 
+ edges: [{ data: { source: 'HAUS4', target: 'HAUS7', directed: 'false', weight: 1.0} },
+{ data: { source: 'HAUS4', target: 'HAUS1', directed: 'false', weight: 0.997423} },
+{ data: { source: 'HAUS4', target: 'CEP27', directed: 'false', weight: 0.9634219999999999} },
+{ data: { source: 'HAUS4', target: 'HAUS3', directed: 'false', weight: 0.850677} },
+{ data: { source: 'HAUS4', target: 'HAUS8', directed: 'false', weight: 0.680901} },
+{ data: { source: 'HAUS7', target: 'CEP27', directed: 'false', weight: 1.0} },
+{ data: { source: 'HAUS7', target: 'HAUS1', directed: 'false', weight: 1.0} },
+{ data: { source: 'HAUS7', target: 'HAUS3', directed: 'false', weight: 0.999986} },
+{ data: { source: 'HAUS7', target: 'HAUS8', directed: 'false', weight: 0.999949} },
+{ data: { source: 'HAUS7', target: 'C13orf1', directed: 'false', weight: 0.054190199999999994} },
+{ data: { source: 'HAUS1', target: 'CEP27', directed: 'false', weight: 0.9053399999999999} },
+{ data: { source: 'HAUS1', target: 'HAUS3', directed: 'false', weight: 0.756474} },
+{ data: { source: 'HAUS1', target: 'HAUS8', directed: 'false', weight: 0.154948} },
+{ data: { source: 'HAUS8', target: 'CEP27', directed: 'false', weight: 0.9777819999999999} },
+{ data: { source: 'HAUS8', target: 'HAUS3', directed: 'false', weight: 0.022047999999999998} },
+{ data: { source: 'HAUS3', target: 'CEP27', directed: 'false', weight: 0.9850120000000001} }]},
 
 style: [
     {
@@ -107,12 +112,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    TTC13 B3GLCT POGLUT2 CHPF GSTCD BMP7<br> Complex Score = 0.37500<br> Unweighted Density = 0.53
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        2 interacting protein(s): <br>CHPF POGLUT2
+    0.5 HAUS augmin-like complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.76
     </section>
     </body>
     </html>

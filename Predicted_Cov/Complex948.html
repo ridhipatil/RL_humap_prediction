@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 Emerin complex 1</title>
+<title> 0.8 RFX5-RFXANK-RFXAP complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,29 +30,14 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'CTTN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14247" }},
-{data: { id: 'ACTB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P60709" }},
-{data: { id: 'LMO7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WWI1" }},
-{data: { id: 'TPM2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P07951" }},
-{data: { id: 'CAPZA2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P47755" }},
-{data: { id: 'ACTN2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P35609" }},
-{data: { id: 'TPM4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P67936" }},
-{data: { id: 'LIMA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UHB6" }}], 
- edges: [{ data: { source: 'CTTN', target: 'TPM2', directed: 'false', weight: 0.206181} },
-{ data: { source: 'CTTN', target: 'ACTB', directed: 'false', weight: 0.592463} },
-{ data: { source: 'CTTN', target: 'LIMA1', directed: 'false', weight: 0.20166199999999998} },
-{ data: { source: 'ACTB', target: 'CAPZA2', directed: 'false', weight: 0.9144909999999999} },
-{ data: { source: 'ACTB', target: 'TPM4', directed: 'false', weight: 0.9846280000000001} },
-{ data: { source: 'ACTB', target: 'TPM2', directed: 'false', weight: 0.0879196} },
-{ data: { source: 'ACTB', target: 'LIMA1', directed: 'false', weight: 0.994553} },
-{ data: { source: 'LMO7', target: 'CAPZA2', directed: 'false', weight: 0.991002} },
-{ data: { source: 'TPM2', target: 'TPM4', directed: 'false', weight: 0.353056} },
-{ data: { source: 'TPM2', target: 'ACTN2', directed: 'false', weight: 0.617215} },
-{ data: { source: 'TPM2', target: 'LIMA1', directed: 'false', weight: 0.206181} },
-{ data: { source: 'LIMA1', target: 'CAPZA2', directed: 'false', weight: 0.896653} },
-{ data: { source: 'LIMA1', target: 'TPM4', directed: 'false', weight: 0.136274} },
-{ data: { source: 'ACTN2', target: 'TPM4', directed: 'false', weight: 0.622981} },
-{ data: { source: 'TPM4', target: 'CAPZA2', directed: 'false', weight: 0.46104300000000004} }]},
+elements:{nodes: [{data: { id: 'RFXANK', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O14593" }},
+{data: { id: 'RFXAP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00287" }},
+{data: { id: 'RFX7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q2KHR2" }},
+{data: { id: 'RFX5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P48382" }}], 
+ edges: [{ data: { source: 'RFXANK', target: 'RFX5', directed: 'false', weight: 0.987556} },
+{ data: { source: 'RFXANK', target: 'RFXAP', directed: 'false', weight: 0.028983999999999996} },
+{ data: { source: 'RFXAP', target: 'RFX5', directed: 'false', weight: 0.997655} },
+{ data: { source: 'RFX7', target: 'RFX5', directed: 'false', weight: 0.794081} }]},
 
 style: [
     {
@@ -112,7 +97,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 Emerin complex 1<br> Complex Score = 0.37500<br> Unweighted Density = 0.54
+    0.8 RFX5-RFXANK-RFXAP complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
     </section>
     </body>
     </html>

@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> NME2 ADI1 FKBP2 SOD1 TRABD FAM161B</title>
+<title> 0.2 TFIIF complex (transcription factor IIF) match 3</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,18 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'FAM161B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96MY7" }},
-{data: { id: 'FKBP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P26885" }},
-{data: { id: 'SOD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P00441" }},
-{data: { id: 'ADI1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BV57" }},
-{data: { id: 'TRABD', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q9H4I3" }},
-{data: { id: 'NME2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P22392" }}], 
- edges: [{ data: { source: 'SOD1', target: 'NME2', directed: 'false', weight: 0.924004} },
-{ data: { source: 'SOD1', target: 'FKBP2', directed: 'false', weight: 0.27879899999999996} },
-{ data: { source: 'SOD1', target: 'FAM161B', directed: 'false', weight: 0.31805900000000004} },
-{ data: { source: 'TRABD', target: 'NME2', directed: 'false', weight: 0.984411} },
-{ data: { source: 'NME2', target: 'FKBP2', directed: 'false', weight: 0.9877319999999999} },
-{ data: { source: 'ADI1', target: 'FKBP2', directed: 'false', weight: 0.8772700000000001} }]},
+elements:{nodes: [{data: { id: 'VPS72', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15906" }},
+{data: { id: 'PPM1G', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15355" }},
+{data: { id: 'GTF2F1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P35269" }},
+{data: { id: 'H2BC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96A08" }}], 
+ edges: [{ data: { source: 'VPS72', target: 'H2BC1', directed: 'false', weight: 0.487063} },
+{ data: { source: 'PPM1G', target: 'GTF2F1', directed: 'false', weight: 0.222512} },
+{ data: { source: 'PPM1G', target: 'H2BC1', directed: 'false', weight: 0.376215} }]},
 
 style: [
     {
@@ -101,7 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    NME2 ADI1 FKBP2 SOD1 TRABD FAM161B<br> Complex Score = 0.35000<br> Unweighted Density = 0.40
+    0.2 TFIIF complex (transcription factor IIF) match 3<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

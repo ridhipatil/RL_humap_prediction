@@ -30,21 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'H6PD', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95479" }},
-{data: { id: 'NUDT9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BW91" }},
-{data: { id: 'ENTPD5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75356" }},
-{data: { id: 'PPT2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UMR5" }},
-{data: { id: 'MAN2B2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y2E5" }},
-{data: { id: 'FBXO6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NRD1" }}], 
- edges: [{ data: { source: 'PPT2', target: 'ENTPD5', directed: 'false', weight: 0.33813200000000004} },
-{ data: { source: 'H6PD', target: 'FBXO6', directed: 'false', weight: 0.841568} },
-{ data: { source: 'H6PD', target: 'ENTPD5', directed: 'false', weight: 0.123797} },
-{ data: { source: 'H6PD', target: 'MAN2B2', directed: 'false', weight: 0.114755} },
-{ data: { source: 'H6PD', target: 'NUDT9', directed: 'false', weight: 0.11331400000000001} },
-{ data: { source: 'NUDT9', target: 'FBXO6', directed: 'false', weight: 0.47032299999999994} },
-{ data: { source: 'NUDT9', target: 'MAN2B2', directed: 'false', weight: 0.140692} },
-{ data: { source: 'ENTPD5', target: 'FBXO6', directed: 'false', weight: 0.39669299999999996} },
-{ data: { source: 'MAN2B2', target: 'FBXO6', directed: 'false', weight: 0.599593} }]},
+elements:{nodes: [{data: { id: 'EIF6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P56537" }},
+{data: { id: 'TENT5A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96IP4" }},
+{data: { id: 'BCCIP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9P287" }},
+{data: { id: 'FNDC3A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y2H6" }}], 
+ edges: [{ data: { source: 'FNDC3A', target: 'TENT5A', directed: 'false', weight: 0.954893} },
+{ data: { source: 'TENT5A', target: 'BCCIP', directed: 'false', weight: 0.170165} },
+{ data: { source: 'EIF6', target: 'BCCIP', directed: 'false', weight: 0.7233729999999999} }]},
 
 style: [
     {
@@ -92,7 +84,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.38750
+    Complex Score  = 0.37500
     </section>
     </body>
     </html>

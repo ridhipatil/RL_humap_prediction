@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 Intraflagellar transport complex B core complex match 2</title>
+<title> 0.1 40S ribosomal subunit, cytoplasmic match 6</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,17 +30,27 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'ANKRD50', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9ULJ7" }},
-{data: { id: 'ARL13B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q3SXY8" }},
-{data: { id: 'IFT74', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96LB3" }},
-{data: { id: 'IFT22', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9H7X7" }},
-{data: { id: 'IFT81', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WYA0" }}], 
- edges: [{ data: { source: 'ARL13B', target: 'ANKRD50', directed: 'false', weight: 0.976067} },
-{ data: { source: 'ARL13B', target: 'IFT81', directed: 'false', weight: 0.277991} },
-{ data: { source: 'ARL13B', target: 'IFT74', directed: 'false', weight: 0.11700999999999999} },
-{ data: { source: 'IFT22', target: 'IFT74', directed: 'false', weight: 0.0507858} },
-{ data: { source: 'IFT22', target: 'IFT81', directed: 'false', weight: 0.414998} },
-{ data: { source: 'IFT81', target: 'IFT74', directed: 'false', weight: 0.41767} }]},
+elements:{nodes: [{data: { id: 'RPL10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P27635" }},
+{data: { id: 'RPS12', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P25398" }},
+{data: { id: 'RPS17', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P08708" }},
+{data: { id: 'RPS3A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P61247" }},
+{data: { id: 'RPL26', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P61254" }},
+{data: { id: 'RPL32', score: 4, type: '', href: "https://www.uniprot.org/uniprot/P62910" }},
+{data: { id: 'RPL10L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96L21" }}], 
+ edges: [{ data: { source: 'RPL10', target: 'RPL32', directed: 'false', weight: 1.0} },
+{ data: { source: 'RPL10', target: 'RPS3A', directed: 'false', weight: 1.0} },
+{ data: { source: 'RPL10', target: 'RPS12', directed: 'false', weight: 0.998448} },
+{ data: { source: 'RPL10', target: 'RPL26', directed: 'false', weight: 0.965601} },
+{ data: { source: 'RPL10', target: 'RPS17', directed: 'false', weight: 0.8484729999999999} },
+{ data: { source: 'RPS12', target: 'RPL32', directed: 'false', weight: 0.025096200000000003} },
+{ data: { source: 'RPS12', target: 'RPS3A', directed: 'false', weight: 0.9528790000000001} },
+{ data: { source: 'RPS17', target: 'RPL32', directed: 'false', weight: 0.0342482} },
+{ data: { source: 'RPS17', target: 'RPS3A', directed: 'false', weight: 0.0296955} },
+{ data: { source: 'RPS3A', target: 'RPL32', directed: 'false', weight: 1.0} },
+{ data: { source: 'RPS3A', target: 'RPL26', directed: 'false', weight: 1.0} },
+{ data: { source: 'RPS3A', target: 'RPL10L', directed: 'false', weight: 0.975949} },
+{ data: { source: 'RPL26', target: 'RPL32', directed: 'false', weight: 0.16761700000000002} },
+{ data: { source: 'RPL32', target: 'RPL10L', directed: 'false', weight: 0.417596} }]},
 
 style: [
     {
@@ -100,7 +110,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 Intraflagellar transport complex B core complex match 2<br> Complex Score = 0.38750<br> Unweighted Density = 0.60
+    0.1 40S ribosomal subunit, cytoplasmic match 6<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
     </section>
     </body>
     </html>

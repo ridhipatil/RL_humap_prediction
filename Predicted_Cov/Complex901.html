@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 Emerin regulatory complex match 2</title>
+<title> CROCC CCDC102B XBP1 SH2B</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,16 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'BTF3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00478" }},
-{data: { id: 'HIST1H1A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q02539" }},
-{data: { id: 'HIST1H1C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P16403" }},
-{data: { id: 'RPL5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P46777" }},
-{data: { id: 'ARHGAP27', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q6ZUM4" }}], 
- edges: [{ data: { source: 'RPL5', target: 'HIST1H1C', directed: 'false', weight: 0.9778370000000001} },
-{ data: { source: 'RPL5', target: 'HIST1H1A', directed: 'false', weight: 0.889495} },
-{ data: { source: 'RPL5', target: 'BTF3', directed: 'false', weight: 0.8666459999999999} },
-{ data: { source: 'RPL5', target: 'ARHGAP27', directed: 'false', weight: 0.407641} },
-{ data: { source: 'HIST1H1A', target: 'HIST1H1C', directed: 'false', weight: 0.0736755} }]},
+elements:{nodes: [{data: { id: 'XBP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P17861" }},
+{data: { id: 'CROCC', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5TZA2" }},
+{data: { id: 'SH2B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NRF2" }},
+{data: { id: 'CCDC102B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q68D86" }}], 
+ edges: [{ data: { source: 'XBP1', target: 'CROCC', directed: 'false', weight: 0.172377} },
+{ data: { source: 'XBP1', target: 'CCDC102B', directed: 'false', weight: 0.749764} },
+{ data: { source: 'SH2B', target: 'CCDC102B', directed: 'false', weight: 0.152656} }]},
 
 style: [
     {
@@ -99,7 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 Emerin regulatory complex match 2<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    CROCC CCDC102B XBP1 SH2B<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

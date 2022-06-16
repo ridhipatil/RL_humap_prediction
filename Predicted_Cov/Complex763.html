@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 MRIP-RHOA complex</title>
+<title> 0.2 PABPC1-HSPA8-HNRPD-EIF4G1 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,16 +30,18 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'MYH8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P13535" }},
-{data: { id: 'PSMC3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P17980" }},
-{data: { id: 'TPM1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P09493" }},
-{data: { id: 'MPRIP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6WCQ1" }},
-{data: { id: 'ACTN2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P35609" }}], 
- edges: [{ data: { source: 'MYH8', target: 'TPM1', directed: 'false', weight: 0.9438549999999999} },
-{ data: { source: 'MYH8', target: 'ACTN2', directed: 'false', weight: 0.5586979999999999} },
-{ data: { source: 'MPRIP', target: 'PSMC3', directed: 'false', weight: 0.65885} },
-{ data: { source: 'MPRIP', target: 'TPM1', directed: 'false', weight: 0.6995899999999999} },
-{ data: { source: 'ACTN2', target: 'TPM1', directed: 'false', weight: 0.787251} }]},
+elements:{nodes: [{data: { id: 'HEL-S-72p', score: 3, type: '', href: "https://www.uniprot.org/uniprot/V9HW22" }},
+{data: { id: 'EIF4G1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q04637" }},
+{data: { id: 'BCAT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P54687" }},
+{data: { id: 'DDB1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16531" }},
+{data: { id: 'SARS-CoV2 N', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 N.html" }},
+{data: { id: 'PABPC1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P11940" }}], 
+ edges: [{ data: { source: 'SARS-CoV2 N', target: 'PABPC1', directed: 'false', weight: 0.736635929, type: 'sars'} },
+{ data: { source: 'HEL-S-72p', target: 'PABPC1', directed: 'false', weight: 0.995268} },
+{ data: { source: 'HEL-S-72p', target: 'EIF4G1', directed: 'false', weight: 0.98754} },
+{ data: { source: 'HEL-S-72p', target: 'DDB1', directed: 'false', weight: 0.662632} },
+{ data: { source: 'EIF4G1', target: 'PABPC1', directed: 'false', weight: 0.9876} },
+{ data: { source: 'BCAT1', target: 'PABPC1', directed: 'false', weight: 0.10939700000000001} }]},
 
 style: [
     {
@@ -99,7 +101,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 MRIP-RHOA complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.2 PABPC1-HSPA8-HNRPD-EIF4G1 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>PABPC1
     </section>
     </body>
     </html>

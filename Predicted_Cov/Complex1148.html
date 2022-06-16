@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 Apoptosis- and splicing-associated protein complex (ASAP-L), SAP18, RNPS1, Acinus-L match 2</title>
+<title> FBXL17 ZBTB3 ZBTB42 ZBTB18</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,14 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'GPATCH8', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9UKJ3" }},
-{data: { id: 'SRSF3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P84103" }},
-{data: { id: 'RNPS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15287" }},
-{data: { id: 'RBM39', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14498" }}], 
- edges: [{ data: { source: 'RNPS1', target: 'GPATCH8', directed: 'false', weight: 0.9967739999999999} },
-{ data: { source: 'RNPS1', target: 'RBM39', directed: 'false', weight: 0.986384} },
-{ data: { source: 'RNPS1', target: 'SRSF3', directed: 'false', weight: 0.127151} },
-{ data: { source: 'RBM39', target: 'SRSF3', directed: 'false', weight: 0.798505} }]},
+elements:{nodes: [{data: { id: 'ZBTB18', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99592" }},
+{data: { id: 'FBXL17', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UF56" }},
+{data: { id: 'ZBTB42', score: 5, type: '', href: "https://www.uniprot.org/uniprot/B2RXF5" }},
+{data: { id: 'ZBTB3', score: 4, type: '', href: "https://www.ncbi.nlm.nih.gov/gene/79842" }}], 
+ edges: [{ data: { source: 'ZBTB18', target: 'ZBTB42', directed: 'false', weight: 0.8576860000000001} },
+{ data: { source: 'ZBTB18', target: 'ZBTB3', directed: 'false', weight: 0.131699} },
+{ data: { source: 'FBXL17', target: 'ZBTB42', directed: 'false', weight: 0.10091699999999999} }]},
 
 style: [
     {
@@ -97,7 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 Apoptosis- and splicing-associated protein complex (ASAP-L), SAP18, RNPS1, Acinus-L match 2<br> Complex Score = 0.30000<br> Unweighted Density = 0.67
+    FBXL17 ZBTB3 ZBTB42 ZBTB18<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

@@ -30,14 +30,16 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'EME1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96AY2" }},
-{data: { id: 'MTPAP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NVV4" }},
-{data: { id: 'MUS81', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96NY9" }},
-{data: { id: 'H2AFV', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q71UI9" }}], 
- edges: [{ data: { source: 'EME1', target: 'MUS81', directed: 'false', weight: 0.34177199999999996} },
-{ data: { source: 'H2AFV', target: 'MUS81', directed: 'false', weight: 0.08441860000000001} },
-{ data: { source: 'H2AFV', target: 'MTPAP', directed: 'false', weight: 0.100589} },
-{ data: { source: 'MUS81', target: 'MTPAP', directed: 'false', weight: 0.14852200000000002} }]},
+elements:{nodes: [{data: { id: 'ANGEL1', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9UNK9" }},
+{data: { id: 'PDYN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P01213" }},
+{data: { id: 'TIMM13', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y5L4" }},
+{data: { id: 'TIMM8B', score: 4, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9Y5J9" }},
+{data: { id: 'EIF4E', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P06730" }}], 
+ edges: [{ data: { source: 'ANGEL1', target: 'EIF4E', directed: 'false', weight: 0.5947859999999999} },
+{ data: { source: 'PDYN', target: 'TIMM13', directed: 'false', weight: 0.302833} },
+{ data: { source: 'PDYN', target: 'TIMM8B', directed: 'false', weight: 0.945392} },
+{ data: { source: 'TIMM13', target: 'EIF4E', directed: 'false', weight: 0.141235} },
+{ data: { source: 'TIMM13', target: 'TIMM8B', directed: 'false', weight: 0.9521360000000001} }]},
 
 style: [
     {
@@ -85,7 +87,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.30000
+    Complex Score  = 0.37500
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>TIMM8B
     </section>
     </body>
     </html>

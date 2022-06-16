@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> MEIS2 PBX2 MEIS1 PBX1 PBX3 MAB21L1 PIGL MEIS3</title>
+<title> 0.2 OCT4-SOX2 DNA-protein complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,55 +30,26 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'PBX2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P40425" }},
-{data: { id: 'MEIS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00470" }},
-{data: { id: 'MAB21L1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13394" }},
-{data: { id: 'PBX3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P40426" }},
-{data: { id: 'MEIS2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O14770" }},
-{data: { id: 'MEIS3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99687" }},
-{data: { id: 'PBX1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P40424" }},
-{data: { id: 'PIGL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y2B2" }}], 
- edges: [{ data: { source: 'PBX2', target: 'MEIS2', directed: 'false', weight: 0.930668} },
-{ data: { source: 'PBX2', target: 'MEIS3', directed: 'false', weight: 0.11473699999999999} },
-{ data: { source: 'PBX2', target: 'MAB21L1', directed: 'false', weight: 0.385114} },
-{ data: { source: 'PBX2', target: 'PIGL', directed: 'false', weight: 0.11473699999999999} },
-{ data: { source: 'PBX2', target: 'PBX1', directed: 'false', weight: 0.9583370000000001} },
-{ data: { source: 'PBX2', target: 'PBX3', directed: 'false', weight: 0.6435810000000001} },
-{ data: { source: 'PBX2', target: 'MEIS1', directed: 'false', weight: 0.46998900000000005} },
-{ data: { source: 'PIGL', target: 'MEIS2', directed: 'false', weight: 0.9690270000000001} },
-{ data: { source: 'PIGL', target: 'MEIS3', directed: 'false', weight: 0.171414} },
-{ data: { source: 'PIGL', target: 'MAB21L1', directed: 'false', weight: 0.140692} },
-{ data: { source: 'PIGL', target: 'MEIS1', directed: 'false', weight: 0.133451} },
-{ data: { source: 'PIGL', target: 'PBX3', directed: 'false', weight: 0.128057} },
-{ data: { source: 'PIGL', target: 'PBX1', directed: 'false', weight: 0.11047699999999999} },
-{ data: { source: 'MAB21L1', target: 'MEIS2', directed: 'false', weight: 0.970283} },
-{ data: { source: 'MAB21L1', target: 'MEIS3', directed: 'false', weight: 0.140692} },
-{ data: { source: 'MAB21L1', target: 'MEIS1', directed: 'false', weight: 0.817917} },
-{ data: { source: 'MAB21L1', target: 'PBX3', directed: 'false', weight: 0.5} },
-{ data: { source: 'MAB21L1', target: 'PBX1', directed: 'false', weight: 0.275252} },
-{ data: { source: 'PBX3', target: 'MEIS2', directed: 'false', weight: 0.9369569999999999} },
-{ data: { source: 'PBX3', target: 'MEIS3', directed: 'false', weight: 0.128057} },
-{ data: { source: 'PBX3', target: 'PBX1', directed: 'false', weight: 0.579203} },
-{ data: { source: 'PBX3', target: 'MEIS1', directed: 'false', weight: 0.6375390000000001} },
-{ data: { source: 'MEIS2', target: 'MEIS3', directed: 'false', weight: 0.981441} },
-{ data: { source: 'MEIS2', target: 'MEIS1', directed: 'false', weight: 0.838651} },
-{ data: { source: 'MEIS2', target: 'PBX1', directed: 'false', weight: 0.831751} },
-{ data: { source: 'MEIS3', target: 'MEIS1', directed: 'false', weight: 0.133451} },
-{ data: { source: 'MEIS3', target: 'PBX1', directed: 'false', weight: 0.11047699999999999} },
-{ data: { source: 'PBX1', target: 'MEIS1', directed: 'false', weight: 0.41868} }]},
+elements:{nodes: [{data: { id: 'SOX14', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95416" }},
+{data: { id: 'SOX2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P48431" }},
+{data: { id: 'SOX21', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q9Y651" }}], 
+ edges: [{ data: { source: 'SOX14', target: 'SOX2', directed: 'false', weight: 0.951368} },
+{ data: { source: 'SOX2', target: 'SOX21', directed: 'false', weight: 1.0} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 30,
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}  
                                  if ( ele.data('type') == 'sars' ){return 'triangle'}   
   return 'rectangle';
   },            
-            'background-color': function( ele ){ 
+             'background-color': function( ele ){ 
                                 if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
 								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
                                  if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
@@ -92,7 +63,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
 								'line-color': function( ele ){ 
                                  if ( ele.data('type') == 'sars' ){return 'red'}   
   return 'blue';
@@ -104,7 +75,10 @@ style: [
 
 });
 cy.layout({
-    'name': 'circle'
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -120,7 +94,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    MEIS2 PBX2 MEIS1 PBX1 PBX3 MAB21L1 PIGL MEIS3<br> Complex Score = 0.38750<br> Unweighted Density = 1.00
+    0.2 OCT4-SOX2 DNA-protein complex<br> Complex Score = 0.38800<br> Unweighted Density = 0.67
     </section>
     </body>
     </html>

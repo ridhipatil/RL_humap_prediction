@@ -30,16 +30,11 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'KYAT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16773" }},
-{data: { id: 'PALLD', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WX93" }},
-{data: { id: 'ATP5IF1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UII2" }},
-{data: { id: 'GRPEL1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9HAV7" }},
-{data: { id: 'CMPK1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P30085" }}], 
- edges: [{ data: { source: 'KYAT1', target: 'CMPK1', directed: 'false', weight: 0.903732} },
-{ data: { source: 'KYAT1', target: 'PALLD', directed: 'false', weight: 0.03658019999999999} },
-{ data: { source: 'PALLD', target: 'CMPK1', directed: 'false', weight: 0.685014} },
-{ data: { source: 'PALLD', target: 'GRPEL1', directed: 'false', weight: 0.849672} },
-{ data: { source: 'ATP5IF1', target: 'GRPEL1', directed: 'false', weight: 0.898349} }]},
+elements:{nodes: [{data: { id: 'TBCE', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15813" }},
+{data: { id: 'HEL-S-61p', score: 2, type: '', href: "https://www.uniprot.org/uniprot/V9HWA4" }},
+{data: { id: 'BHMT2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H2M3" }}], 
+ edges: [{ data: { source: 'TBCE', target: 'BHMT2', directed: 'false', weight: 0.28082399999999996} },
+{ data: { source: 'HEL-S-61p', target: 'BHMT2', directed: 'false', weight: 0.995999} }]},
 
 style: [
     {
@@ -88,11 +83,6 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.37500
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>GRPEL1
     </section>
     </body>
     </html>

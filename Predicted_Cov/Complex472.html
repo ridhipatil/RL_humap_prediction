@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> RHOG USP3 NT5E SLC6A8</title>
+<title> SHROOM3 RAB32 RAB38</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,29 +30,26 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'USP3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y6I4" }},
-{data: { id: 'RHOG', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P84095" }},
-{data: { id: 'NT5E', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P21589" }},
-{data: { id: 'SLC6A8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P48029" }}], 
- edges: [{ data: { source: 'USP3', target: 'RHOG', directed: 'false', weight: 0.151455} },
-{ data: { source: 'USP3', target: 'NT5E', directed: 'false', weight: 0.9076879999999999} },
-{ data: { source: 'USP3', target: 'SLC6A8', directed: 'false', weight: 0.133456} },
-{ data: { source: 'RHOG', target: 'NT5E', directed: 'false', weight: 0.917115} },
-{ data: { source: 'RHOG', target: 'SLC6A8', directed: 'false', weight: 0.151455} },
-{ data: { source: 'NT5E', target: 'SLC6A8', directed: 'false', weight: 0.542176} }]},
+elements:{nodes: [{data: { id: 'RAB32', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13637" }},
+{data: { id: 'SHROOM3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TF72" }},
+{data: { id: 'RAB38', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P57729" }}], 
+ edges: [{ data: { source: 'SHROOM3', target: 'RAB32', directed: 'false', weight: 0.0230412} },
+{ data: { source: 'RAB32', target: 'RAB38', directed: 'false', weight: 1.0} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 30,
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}  
                                  if ( ele.data('type') == 'sars' ){return 'triangle'}   
   return 'rectangle';
   },            
-            'background-color': function( ele ){ 
+             'background-color': function( ele ){ 
                                 if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
 								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
                                  if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
@@ -66,7 +63,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
 								'line-color': function( ele ){ 
                                  if ( ele.data('type') == 'sars' ){return 'red'}   
   return 'blue';
@@ -78,7 +75,10 @@ style: [
 
 });
 cy.layout({
-    'name': 'circle'
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -94,7 +94,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    RHOG USP3 NT5E SLC6A8<br> Complex Score = 0.38750<br> Unweighted Density = 1.00
+    SHROOM3 RAB32 RAB38<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
     </section>
     </body>
     </html>

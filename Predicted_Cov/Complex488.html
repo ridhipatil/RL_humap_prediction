@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 Alpha-dystrobrevin-ZO-1-actin complex</title>
+<title> 0.5 AP3 adaptor complex match 2</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,24 +30,18 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'SARS-CoV2 nsp10', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp10.html" }},
-{data: { id: 'AP2M1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q96CW1" }},
-{data: { id: 'ACTB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P60709" }},
-{data: { id: 'MYO6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UM54" }},
-{data: { id: 'AP2S1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P53680" }},
-{data: { id: 'AP2A1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95782" }},
-{data: { id: 'CALCOCO1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9P1Z2" }}], 
- edges: [{ data: { source: 'SARS-CoV2 nsp10', target: 'AP2M1', directed: 'false', weight: 0.982905884, type: 'sars'} },
-{ data: { source: 'ACTB', target: 'MYO6', directed: 'false', weight: 0.9464600000000001} },
-{ data: { source: 'AP2S1', target: 'AP2M1', directed: 'false', weight: 0.9469559999999999} },
-{ data: { source: 'AP2S1', target: 'AP2A1', directed: 'false', weight: 0.953032} },
-{ data: { source: 'AP2S1', target: 'CALCOCO1', directed: 'false', weight: 0.0855723} },
-{ data: { source: 'AP2S1', target: 'MYO6', directed: 'false', weight: 0.0693095} },
-{ data: { source: 'CALCOCO1', target: 'AP2M1', directed: 'false', weight: 0.808557} },
-{ data: { source: 'CALCOCO1', target: 'AP2A1', directed: 'false', weight: 0.0692242} },
-{ data: { source: 'AP2M1', target: 'AP2A1', directed: 'false', weight: 0.9999889999999999} },
-{ data: { source: 'AP2M1', target: 'MYO6', directed: 'false', weight: 0.399855} },
-{ data: { source: 'AP2A1', target: 'MYO6', directed: 'false', weight: 0.22855100000000003} }]},
+elements:{nodes: [{data: { id: 'AP3B2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13367" }},
+{data: { id: 'AP3S1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92572" }},
+{data: { id: 'AP3M1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y2T2" }},
+{data: { id: 'RNF13', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43567" }},
+{data: { id: 'AP3D1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O14617" }}], 
+ edges: [{ data: { source: 'AP3B2', target: 'AP3S1', directed: 'false', weight: 0.966832} },
+{ data: { source: 'AP3B2', target: 'AP3M1', directed: 'false', weight: 0.921644} },
+{ data: { source: 'AP3S1', target: 'AP3D1', directed: 'false', weight: 0.993626} },
+{ data: { source: 'AP3S1', target: 'AP3M1', directed: 'false', weight: 0.987562} },
+{ data: { source: 'AP3S1', target: 'RNF13', directed: 'false', weight: 0.280781} },
+{ data: { source: 'AP3M1', target: 'AP3D1', directed: 'false', weight: 0.9875790000000001} },
+{ data: { source: 'RNF13', target: 'AP3D1', directed: 'false', weight: 0.030418900000000002} }]},
 
 style: [
     {
@@ -107,12 +101,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 Alpha-dystrobrevin-ZO-1-actin complex<br> Complex Score = 0.38750<br> Unweighted Density = 0.67
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>AP2M1
+    0.5 AP3 adaptor complex match 2<br> Complex Score = 0.37500<br> Unweighted Density = 0.70
     </section>
     </body>
     </html>

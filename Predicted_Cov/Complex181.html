@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 Robo4\u2013paxillin complex</title>
+<title> 0.2 PA700 complex match 2</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,23 +30,35 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'PXN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49023" }},
-{data: { id: 'FBXL20', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q96IG2" }},
-{data: { id: 'PGBD5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N414" }},
-{data: { id: 'PPP1R16A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96I34" }},
-{data: { id: 'RABGGTB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P53611" }},
-{data: { id: 'PIP5K1A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99755" }}], 
- edges: [{ data: { source: 'PXN', target: 'PGBD5', directed: 'false', weight: 0.140692} },
-{ data: { source: 'PXN', target: 'RABGGTB', directed: 'false', weight: 0.9217549999999999} },
-{ data: { source: 'PXN', target: 'PPP1R16A', directed: 'false', weight: 0.140692} },
-{ data: { source: 'PXN', target: 'FBXL20', directed: 'false', weight: 0.140692} },
-{ data: { source: 'PGBD5', target: 'RABGGTB', directed: 'false', weight: 0.972649} },
-{ data: { source: 'PGBD5', target: 'PPP1R16A', directed: 'false', weight: 0.171414} },
-{ data: { source: 'PGBD5', target: 'FBXL20', directed: 'false', weight: 0.171414} },
-{ data: { source: 'FBXL20', target: 'RABGGTB', directed: 'false', weight: 0.5671579999999999} },
-{ data: { source: 'FBXL20', target: 'PPP1R16A', directed: 'false', weight: 0.171414} },
-{ data: { source: 'PPP1R16A', target: 'RABGGTB', directed: 'false', weight: 0.959833} },
-{ data: { source: 'RABGGTB', target: 'PIP5K1A', directed: 'false', weight: 0.7422479999999999} }]},
+elements:{nodes: [{data: { id: 'PSMC4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P43686" }},
+{data: { id: 'ADRM1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16186" }},
+{data: { id: 'RUVBL2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y230" }},
+{data: { id: 'TFPT', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P0C1Z6" }},
+{data: { id: 'PSMD6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15008" }},
+{data: { id: 'UCHL5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y5K5" }},
+{data: { id: 'PSMD10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75832" }},
+{data: { id: 'PSMD3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43242" }},
+{data: { id: 'PSMD5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16401" }}], 
+ edges: [{ data: { source: 'PSMC4', target: 'PSMD6', directed: 'false', weight: 1.0} },
+{ data: { source: 'PSMC4', target: 'ADRM1', directed: 'false', weight: 0.9995930000000001} },
+{ data: { source: 'PSMC4', target: 'PSMD3', directed: 'false', weight: 1.0} },
+{ data: { source: 'PSMC4', target: 'PSMD10', directed: 'false', weight: 0.9999959999999999} },
+{ data: { source: 'PSMC4', target: 'PSMD5', directed: 'false', weight: 0.997589} },
+{ data: { source: 'PSMC4', target: 'UCHL5', directed: 'false', weight: 0.781266} },
+{ data: { source: 'ADRM1', target: 'PSMD6', directed: 'false', weight: 1.0} },
+{ data: { source: 'ADRM1', target: 'UCHL5', directed: 'false', weight: 0.9999030000000001} },
+{ data: { source: 'ADRM1', target: 'PSMD10', directed: 'false', weight: 0.913048} },
+{ data: { source: 'ADRM1', target: 'PSMD3', directed: 'false', weight: 0.873042} },
+{ data: { source: 'RUVBL2', target: 'TFPT', directed: 'false', weight: 0.24261999999999997} },
+{ data: { source: 'TFPT', target: 'UCHL5', directed: 'false', weight: 0.343445} },
+{ data: { source: 'PSMD6', target: 'PSMD3', directed: 'false', weight: 1.0} },
+{ data: { source: 'PSMD6', target: 'PSMD10', directed: 'false', weight: 0.99998} },
+{ data: { source: 'PSMD6', target: 'PSMD5', directed: 'false', weight: 0.997717} },
+{ data: { source: 'PSMD6', target: 'UCHL5', directed: 'false', weight: 0.5589609999999999} },
+{ data: { source: 'UCHL5', target: 'PSMD3', directed: 'false', weight: 0.971433} },
+{ data: { source: 'UCHL5', target: 'PSMD10', directed: 'false', weight: 0.0674596} },
+{ data: { source: 'PSMD10', target: 'PSMD3', directed: 'false', weight: 0.999984} },
+{ data: { source: 'PSMD3', target: 'PSMD5', directed: 'false', weight: 0.996935} }]},
 
 style: [
     {
@@ -106,7 +118,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 Robo4\u2013paxillin complex<br> Complex Score = 0.39375<br> Unweighted Density = 0.73
+    0.2 PA700 complex match 2<br> Complex Score = 0.38800<br> Unweighted Density = 0.56
     </section>
     </body>
     </html>

@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> MLLT10 MLLT6 DOT1L</title>
+<title> 0.1 eIF3 complex (EIF3S6, EIF3S5, EIF3S4, EIF3S3, EIF3S6IP, EIF3S2, EIF3S9, EIF3S12,  EIF3S10, EIF3S8,  EIF3S1, EIF3S7)</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,12 +30,17 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'MLLT6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P55198" }},
-{data: { id: 'DOT1L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TEK3" }},
-{data: { id: 'MLLT10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P55197" }}], 
- edges: [{ data: { source: 'MLLT6', target: 'DOT1L', directed: 'false', weight: 0.707759} },
-{ data: { source: 'MLLT6', target: 'MLLT10', directed: 'false', weight: 0.110576} },
-{ data: { source: 'DOT1L', target: 'MLLT10', directed: 'false', weight: 0.8322709999999999} }]},
+elements:{nodes: [{data: { id: 'EIF3E', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P60228" }},
+{data: { id: 'EIF3L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y262" }},
+{data: { id: 'SARS-CoV2 nsp12', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp12.html" }},
+{data: { id: 'PRRC2B', score: 4, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q5JSZ5" }},
+{data: { id: 'EIF3S2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13347" }}], 
+ edges: [{ data: { source: 'SARS-CoV2 nsp12', target: 'PRRC2B', directed: 'false', weight: 0.843969576, type: 'sars'} },
+{ data: { source: 'EIF3E', target: 'EIF3L', directed: 'false', weight: 1.0} },
+{ data: { source: 'EIF3E', target: 'EIF3S2', directed: 'false', weight: 1.0} },
+{ data: { source: 'EIF3L', target: 'EIF3S2', directed: 'false', weight: 1.0} },
+{ data: { source: 'EIF3L', target: 'PRRC2B', directed: 'false', weight: 0.069324} },
+{ data: { source: 'PRRC2B', target: 'EIF3S2', directed: 'false', weight: 0.999851} }]},
 
 style: [
     {
@@ -90,7 +95,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    MLLT10 MLLT6 DOT1L<br> Complex Score = 0.38750<br> Unweighted Density = 1.00
+    0.1 eIF3 complex (EIF3S6, EIF3S5, EIF3S4, EIF3S3, EIF3S6IP, EIF3S2, EIF3S9, EIF3S12,  EIF3S10, EIF3S8,  EIF3S1, EIF3S7)<br> Complex Score = 0.37500<br> Unweighted Density = 0.83
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>PRRC2B
     </section>
     </body>
     </html>

@@ -30,27 +30,29 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'PIGU', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H490" }},
-{data: { id: 'PIGS', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q96S52" }},
-{data: { id: 'GPAA1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/O43292" }},
-{data: { id: 'PIGT', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q969N2" }},
-{data: { id: 'PIGK', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92643" }}], 
- edges: [{ data: { source: 'PIGU', target: 'PIGS', directed: 'false', weight: 0.991814} },
-{ data: { source: 'PIGU', target: 'GPAA1', directed: 'false', weight: 0.420967} },
-{ data: { source: 'PIGU', target: 'PIGT', directed: 'false', weight: 0.25572399999999995} },
-{ data: { source: 'PIGU', target: 'PIGK', directed: 'false', weight: 0.688149} },
-{ data: { source: 'GPAA1', target: 'PIGS', directed: 'false', weight: 0.9998879999999999} },
-{ data: { source: 'GPAA1', target: 'PIGK', directed: 'false', weight: 0.56912} },
-{ data: { source: 'GPAA1', target: 'PIGT', directed: 'false', weight: 0.4114} },
-{ data: { source: 'PIGS', target: 'PIGT', directed: 'false', weight: 0.9992840000000001} },
-{ data: { source: 'PIGS', target: 'PIGK', directed: 'false', weight: 0.9982549999999999} },
-{ data: { source: 'PIGT', target: 'PIGK', directed: 'false', weight: 0.606064} }]},
+elements:{nodes: [{data: { id: 'NCAPH2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6IBW4" }},
+{data: { id: 'NCAPD3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P42695" }},
+{data: { id: 'NCAPH', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15003" }},
+{data: { id: 'NCAPG2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86XI2" }},
+{data: { id: 'NCAPD2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15021" }},
+{data: { id: 'SMC4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NTJ3" }}], 
+ edges: [{ data: { source: 'NCAPH2', target: 'SMC4', directed: 'false', weight: 0.999476} },
+{ data: { source: 'NCAPH2', target: 'NCAPD3', directed: 'false', weight: 0.999984} },
+{ data: { source: 'NCAPH2', target: 'NCAPG2', directed: 'false', weight: 0.999999} },
+{ data: { source: 'NCAPD3', target: 'SMC4', directed: 'false', weight: 0.774492} },
+{ data: { source: 'NCAPD3', target: 'NCAPG2', directed: 'false', weight: 1.0} },
+{ data: { source: 'NCAPH', target: 'SMC4', directed: 'false', weight: 0.987598} },
+{ data: { source: 'NCAPH', target: 'NCAPD2', directed: 'false', weight: 0.999991} },
+{ data: { source: 'NCAPG2', target: 'SMC4', directed: 'false', weight: 0.9885229999999999} },
+{ data: { source: 'NCAPD2', target: 'SMC4', directed: 'false', weight: 0.98759} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 30,
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}                                
@@ -62,7 +64,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
 								'line-color': 'blue',
 								'opacity': 0.5
 							}
@@ -71,7 +73,10 @@ style: [
 
 });
 cy.layout({
-    name: 'circle'
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -87,12 +92,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.38750
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        2 interacting protein(s): <br>PIGS GPAA1
+    Complex Score  = 0.38800
     </section>
     </body>
     </html>

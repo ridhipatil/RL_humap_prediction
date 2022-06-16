@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.7 IFP35-NMI complex</title>
+<title> 0.4 Tankyrin 1-tankyrin 2-TRF1 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,25 +30,29 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'NMI', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13287" }},
-{data: { id: 'ASRGL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q7L266" }},
-{data: { id: 'IFI35', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P80217" }}], 
- edges: [{ data: { source: 'NMI', target: 'IFI35', directed: 'false', weight: 0.981376} },
-{ data: { source: 'NMI', target: 'ASRGL1', directed: 'false', weight: 0.635302} },
-{ data: { source: 'ASRGL1', target: 'IFI35', directed: 'false', weight: 0.171414} }]},
+elements:{nodes: [{data: { id: 'TNKS', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95271" }},
+{data: { id: 'HECTD2', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q5U5R9" }},
+{data: { id: 'TNKS2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H2K2" }},
+{data: { id: 'RNF166', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96A37" }}], 
+ edges: [{ data: { source: 'TNKS', target: 'RNF166', directed: 'false', weight: 0.026072900000000003} },
+{ data: { source: 'TNKS', target: 'TNKS2', directed: 'false', weight: 0.474915} },
+{ data: { source: 'HECTD2', target: 'RNF166', directed: 'false', weight: 0.9414969999999999} },
+{ data: { source: 'TNKS2', target: 'RNF166', directed: 'false', weight: 0.127752} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 30,
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}  
                                  if ( ele.data('type') == 'sars' ){return 'triangle'}   
   return 'rectangle';
   },            
-            'background-color': function( ele ){ 
+             'background-color': function( ele ){ 
                                 if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
 								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
                                  if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
@@ -62,7 +66,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
 								'line-color': function( ele ){ 
                                  if ( ele.data('type') == 'sars' ){return 'red'}   
   return 'blue';
@@ -74,7 +78,10 @@ style: [
 
 });
 cy.layout({
-    'name': 'circle'
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -90,7 +97,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.7 IFP35-NMI complex<br> Complex Score = 0.38750<br> Unweighted Density = 1.00
+    0.4 Tankyrin 1-tankyrin 2-TRF1 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
     </section>
     </body>
     </html>

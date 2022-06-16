@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> WDR45B TYMS DHFR</title>
+<title> 0.2 GM130-GRASP65 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,11 +30,15 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'TYMS', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P04818" }},
-{data: { id: 'DHFR', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P00374" }},
-{data: { id: 'WDR45B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5MNZ6" }}], 
- edges: [{ data: { source: 'WDR45B', target: 'TYMS', directed: 'false', weight: 0.49377} },
-{ data: { source: 'WDR45B', target: 'DHFR', directed: 'false', weight: 0.407762} }]},
+elements:{nodes: [{data: { id: 'CCNJ', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q5T5M9" }},
+{data: { id: 'RSN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P30622" }},
+{data: { id: 'TES', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UGI8" }},
+{data: { id: 'SARS-CoV2 nsp13', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp13.html" }},
+{data: { id: 'GORASP1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9BQQ3" }}], 
+ edges: [{ data: { source: 'SARS-CoV2 nsp13', target: 'GORASP1', directed: 'false', weight: 0.986870312, type: 'sars'} },
+{ data: { source: 'CCNJ', target: 'GORASP1', directed: 'false', weight: 0.944243} },
+{ data: { source: 'RSN', target: 'GORASP1', directed: 'false', weight: 0.719491} },
+{ data: { source: 'TES', target: 'GORASP1', directed: 'false', weight: 0.18548900000000001} }]},
 
 style: [
     {
@@ -94,7 +98,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    WDR45B TYMS DHFR<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
+    0.2 GM130-GRASP65 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>GORASP1
     </section>
     </body>
     </html>

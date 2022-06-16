@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 AATF-NGDN-NOL10 complex</title>
+<title> 0.3 ABI1-WASF2 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,46 +30,39 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'RSBN1L', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q6PCB5" }},
-{data: { id: 'UTP3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NQZ2" }},
-{data: { id: 'SARS-CoV2 nsp8', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp8.html" }},
-{data: { id: 'NGDN', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q8NEJ9" }},
-{data: { id: 'GPATCH4', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q5T3I0" }},
-{data: { id: 'DDX55', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NHQ9" }},
-{data: { id: 'RSBN1', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q5VWQ0" }},
-{data: { id: 'POP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NE79" }}], 
- edges: [{ data: { source: 'SARS-CoV2 nsp8', target: 'NGDN', directed: 'false', weight: 0.71407894, type: 'sars'} },
-{ data: { source: 'RSBN1L', target: 'POP1', directed: 'false', weight: 0.339729} },
-{ data: { source: 'RSBN1L', target: 'GPATCH4', directed: 'false', weight: 0.909529} },
-{ data: { source: 'RSBN1L', target: 'DDX55', directed: 'false', weight: 0.102922} },
-{ data: { source: 'RSBN1L', target: 'UTP3', directed: 'false', weight: 0.187167} },
-{ data: { source: 'RSBN1L', target: 'RSBN1', directed: 'false', weight: 0.15152000000000002} },
-{ data: { source: 'RSBN1L', target: 'NGDN', directed: 'false', weight: 0.086378} },
-{ data: { source: 'UTP3', target: 'POP1', directed: 'false', weight: 0.252449} },
-{ data: { source: 'UTP3', target: 'GPATCH4', directed: 'false', weight: 0.3332} },
-{ data: { source: 'UTP3', target: 'DDX55', directed: 'false', weight: 0.302296} },
-{ data: { source: 'UTP3', target: 'NGDN', directed: 'false', weight: 0.611872} },
-{ data: { source: 'NGDN', target: 'POP1', directed: 'false', weight: 0.391893} },
-{ data: { source: 'NGDN', target: 'GPATCH4', directed: 'false', weight: 0.18988} },
-{ data: { source: 'NGDN', target: 'RSBN1', directed: 'false', weight: 0.133243} },
-{ data: { source: 'GPATCH4', target: 'POP1', directed: 'false', weight: 0.98008} },
-{ data: { source: 'GPATCH4', target: 'RSBN1', directed: 'false', weight: 0.645754} },
-{ data: { source: 'GPATCH4', target: 'DDX55', directed: 'false', weight: 0.08270599999999999} },
-{ data: { source: 'DDX55', target: 'POP1', directed: 'false', weight: 0.255743} },
-{ data: { source: 'RSBN1', target: 'POP1', directed: 'false', weight: 0.339729} }]},
+elements:{nodes: [{data: { id: 'ABI2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NYB9" }},
+{data: { id: 'CYFIP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96F07" }},
+{data: { id: 'WASF1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92558" }},
+{data: { id: 'ABI1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IZP0" }},
+{data: { id: 'WASF2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y6W5" }},
+{data: { id: 'WASF3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UPY6" }}], 
+ edges: [{ data: { source: 'ABI2', target: 'ABI1', directed: 'false', weight: 0.998416} },
+{ data: { source: 'ABI2', target: 'WASF1', directed: 'false', weight: 0.9762139999999999} },
+{ data: { source: 'ABI2', target: 'WASF2', directed: 'false', weight: 0.371168} },
+{ data: { source: 'ABI2', target: 'CYFIP2', directed: 'false', weight: 0.706511} },
+{ data: { source: 'ABI2', target: 'WASF3', directed: 'false', weight: 0.772594} },
+{ data: { source: 'CYFIP2', target: 'ABI1', directed: 'false', weight: 0.908783} },
+{ data: { source: 'CYFIP2', target: 'WASF1', directed: 'false', weight: 0.993717} },
+{ data: { source: 'CYFIP2', target: 'WASF2', directed: 'false', weight: 0.9950209999999999} },
+{ data: { source: 'CYFIP2', target: 'WASF3', directed: 'false', weight: 0.9824459999999999} },
+{ data: { source: 'WASF1', target: 'ABI1', directed: 'false', weight: 0.999826} },
+{ data: { source: 'ABI1', target: 'WASF2', directed: 'false', weight: 0.9995700000000001} },
+{ data: { source: 'ABI1', target: 'WASF3', directed: 'false', weight: 0.0293834} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 30,
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}  
                                  if ( ele.data('type') == 'sars' ){return 'triangle'}   
   return 'rectangle';
   },            
-            'background-color': function( ele ){ 
+             'background-color': function( ele ){ 
                                 if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
 								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
                                  if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
@@ -83,7 +76,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
 								'line-color': function( ele ){ 
                                  if ( ele.data('type') == 'sars' ){return 'red'}   
   return 'blue';
@@ -95,7 +88,10 @@ style: [
 
 });
 cy.layout({
-    'name': 'circle'
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -111,12 +107,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 AATF-NGDN-NOL10 complex<br> Complex Score = 0.39688<br> Unweighted Density = 0.86
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>NGDN
+    0.3 ABI1-WASF2 complex<br> Complex Score = 0.39700<br> Unweighted Density = 0.80
     </section>
     </body>
     </html>
