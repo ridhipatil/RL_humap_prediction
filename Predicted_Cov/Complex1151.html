@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 TNFRSF11A-TRAF6-SRC complex</title>
+<title> 0.2 WNK1-OSR1 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,14 +30,14 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'CCNY', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8ND76" }},
-{data: { id: 'SRC', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P12931" }},
-{data: { id: 'PALM', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75781" }},
-{data: { id: 'EEPD1', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q7L9B9" }}], 
- edges: [{ data: { source: 'EEPD1', target: 'SRC', directed: 'false', weight: 0.310733} },
-{ data: { source: 'CCNY', target: 'PALM', directed: 'false', weight: 0.6641560000000001} },
-{ data: { source: 'CCNY', target: 'SRC', directed: 'false', weight: 0.384302} },
-{ data: { source: 'SRC', target: 'PALM', directed: 'false', weight: 0.385361} }]},
+elements:{nodes: [{data: { id: 'OXSR1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95747" }},
+{data: { id: 'RELL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IUW5" }},
+{data: { id: 'STK39', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UEW8" }},
+{data: { id: 'TNFRSF19L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q969Z4" }}], 
+ edges: [{ data: { source: 'OXSR1', target: 'RELL1', directed: 'false', weight: 0.387778} },
+{ data: { source: 'OXSR1', target: 'TNFRSF19L', directed: 'false', weight: 0.0698797} },
+{ data: { source: 'TNFRSF19L', target: 'STK39', directed: 'false', weight: 0.32050500000000004} },
+{ data: { source: 'STK39', target: 'RELL1', directed: 'false', weight: 0.12181800000000001} }]},
 
 style: [
     {
@@ -97,7 +97,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 TNFRSF11A-TRAF6-SRC complex<br> Complex Score = 0.30000<br> Unweighted Density = 0.67
+    0.2 WNK1-OSR1 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
     </section>
     </body>
     </html>

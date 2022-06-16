@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 Ubiquilin-proteasome complex</title>
+<title> 0.1 PP2A A/C-striatin complex match 2</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,19 +30,23 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'HAAO', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P46952" }},
-{data: { id: 'UBQLN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UMX0" }},
-{data: { id: 'IDH1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75874" }},
-{data: { id: 'PHGDH', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43175" }},
-{data: { id: 'UBQLN2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UHD9" }},
-{data: { id: 'IDH2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P48735" }}], 
- edges: [{ data: { source: 'UBQLN2', target: 'UBQLN1', directed: 'false', weight: 0.941853} },
-{ data: { source: 'UBQLN2', target: 'HAAO', directed: 'false', weight: 0.6365069999999999} },
-{ data: { source: 'UBQLN2', target: 'IDH2', directed: 'false', weight: 0.451531} },
-{ data: { source: 'HAAO', target: 'IDH1', directed: 'false', weight: 0.572655} },
-{ data: { source: 'HAAO', target: 'IDH2', directed: 'false', weight: 0.5662020000000001} },
-{ data: { source: 'UBQLN1', target: 'PHGDH', directed: 'false', weight: 0.8143600000000001} },
-{ data: { source: 'IDH1', target: 'IDH2', directed: 'false', weight: 0.822733} }]},
+elements:{nodes: [{data: { id: 'STRN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43815" }},
+{data: { id: 'STRIP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5VSL9" }},
+{data: { id: 'STRN4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NRL3" }},
+{data: { id: 'SLMAP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14BN4" }},
+{data: { id: 'HEL-S-95', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q5U0E6" }},
+{data: { id: 'PREI3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y3A3" }}], 
+ edges: [{ data: { source: 'STRN', target: 'HEL-S-95', directed: 'false', weight: 0.031622000000000004} },
+{ data: { source: 'STRN', target: 'SLMAP', directed: 'false', weight: 0.9999979999999999} },
+{ data: { source: 'STRN', target: 'PREI3', directed: 'false', weight: 0.9999959999999999} },
+{ data: { source: 'STRN', target: 'STRN4', directed: 'false', weight: 0.965619} },
+{ data: { source: 'STRN', target: 'STRIP1', directed: 'false', weight: 0.527079} },
+{ data: { source: 'STRIP1', target: 'HEL-S-95', directed: 'false', weight: 0.028939299999999998} },
+{ data: { source: 'STRIP1', target: 'SLMAP', directed: 'false', weight: 0.999727} },
+{ data: { source: 'STRIP1', target: 'PREI3', directed: 'false', weight: 0.36340300000000003} },
+{ data: { source: 'STRIP1', target: 'STRN4', directed: 'false', weight: 0.5} },
+{ data: { source: 'STRN4', target: 'SLMAP', directed: 'false', weight: 0.9999129999999999} },
+{ data: { source: 'STRN4', target: 'PREI3', directed: 'false', weight: 0.999948} }]},
 
 style: [
     {
@@ -102,7 +106,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 Ubiquilin-proteasome complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.47
+    0.1 PP2A A/C-striatin complex match 2<br> Complex Score = 0.37500<br> Unweighted Density = 0.73
     </section>
     </body>
     </html>

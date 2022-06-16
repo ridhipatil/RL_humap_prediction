@@ -30,21 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'NAT10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H0A0" }},
-{data: { id: 'LLPH', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9BRT6" }},
-{data: { id: 'RIOX2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IUF8" }},
-{data: { id: 'DDX55', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NHQ9" }},
-{data: { id: 'RPL8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62917" }},
-{data: { id: 'RPS2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P15880" }}], 
- edges: [{ data: { source: 'NAT10', target: 'RPL8', directed: 'false', weight: 0.796254} },
-{ data: { source: 'NAT10', target: 'RPS2', directed: 'false', weight: 0.999591} },
-{ data: { source: 'NAT10', target: 'RIOX2', directed: 'false', weight: 0.345144} },
-{ data: { source: 'NAT10', target: 'LLPH', directed: 'false', weight: 0.24162899999999998} },
-{ data: { source: 'RPL8', target: 'RPS2', directed: 'false', weight: 1.0} },
-{ data: { source: 'RPL8', target: 'RIOX2', directed: 'false', weight: 0.9914649999999999} },
-{ data: { source: 'LLPH', target: 'RIOX2', directed: 'false', weight: 0.121618} },
-{ data: { source: 'LLPH', target: 'DDX55', directed: 'false', weight: 0.0855395} },
-{ data: { source: 'RIOX2', target: 'RPS2', directed: 'false', weight: 0.563882} }]},
+elements:{nodes: [{data: { id: 'APOA4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P06727" }},
+{data: { id: 'APOA2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P02652" }},
+{data: { id: 'HBG1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P69891" }},
+{data: { id: 'GDPD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N9F7" }}], 
+ edges: [{ data: { source: 'APOA4', target: 'GDPD1', directed: 'false', weight: 0.406771} },
+{ data: { source: 'APOA2', target: 'GDPD1', directed: 'false', weight: 0.998656} },
+{ data: { source: 'HBG1', target: 'GDPD1', directed: 'false', weight: 0.590007} }]},
 
 style: [
     {
@@ -92,7 +84,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.38750
+    Complex Score  = 0.37500
     </section>
     </body>
     </html>

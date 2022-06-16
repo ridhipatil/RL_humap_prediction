@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 FIF-FGR2 complex</title>
+<title> 0.2 KAT2A-TRRAP complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,24 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'HS1BP3', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q53T59" }},
-{data: { id: 'HNRNPA3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P51991" }},
-{data: { id: 'HNRNPR', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43390" }},
-{data: { id: 'SARS-CoV2 E', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 E.html" }},
-{data: { id: 'CWC27', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q6UX04" }},
-{data: { id: 'HNRNPA0', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13151" }},
-{data: { id: 'SYNCRIP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60506" }},
-{data: { id: 'API5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BZZ5" }}], 
- edges: [{ data: { source: 'SARS-CoV2 E', target: 'CWC27', directed: 'false', weight: 0.89310916, type: 'sars'} },
-{ data: { source: 'HS1BP3', target: 'API5', directed: 'false', weight: 0.412688} },
-{ data: { source: 'HNRNPA3', target: 'HNRNPR', directed: 'false', weight: 0.994337} },
-{ data: { source: 'HNRNPA3', target: 'SYNCRIP', directed: 'false', weight: 0.9656440000000001} },
-{ data: { source: 'HNRNPA3', target: 'HNRNPA0', directed: 'false', weight: 0.655759} },
-{ data: { source: 'HNRNPR', target: 'CWC27', directed: 'false', weight: 0.8358} },
-{ data: { source: 'HNRNPR', target: 'API5', directed: 'false', weight: 0.792322} },
-{ data: { source: 'HNRNPR', target: 'SYNCRIP', directed: 'false', weight: 0.292591} },
-{ data: { source: 'CWC27', target: 'API5', directed: 'false', weight: 0.558729} },
-{ data: { source: 'HNRNPA0', target: 'SYNCRIP', directed: 'false', weight: 0.964475} }]},
+elements:{nodes: [{data: { id: 'MAGEA10', score: 4, type: '', href: "https://www.uniprot.org/uniprot/P43363" }},
+{data: { id: 'MAGEA9', score: 3, type: '', href: "https://www.uniprot.org/uniprot/P43362" }},
+{data: { id: 'KAT2A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92830" }},
+{data: { id: 'THEX1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IV48" }}], 
+ edges: [{ data: { source: 'MAGEA10', target: 'KAT2A', directed: 'false', weight: 0.999978} },
+{ data: { source: 'MAGEA10', target: 'MAGEA9', directed: 'false', weight: 0.808571} },
+{ data: { source: 'MAGEA10', target: 'THEX1', directed: 'false', weight: 0.43968100000000004} }]},
 
 style: [
     {
@@ -107,12 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 FIF-FGR2 complex<br> Complex Score = 0.35000<br> Unweighted Density = 0.43
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>CWC27
+    0.2 KAT2A-TRRAP complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

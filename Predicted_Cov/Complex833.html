@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> EEF1A2 EEF1B2 EEF1D PBDC1 TTLL12</title>
+<title> 0.2 GRASP1-GRIP1 complex match 2</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,16 +30,15 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'EEF1A2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q05639" }},
-{data: { id: 'TTLL12', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14166" }},
-{data: { id: 'EEF1D', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P29692" }},
-{data: { id: 'EEF1B2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P24534" }},
-{data: { id: 'PBDC1', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q9BVG4" }}], 
- edges: [{ data: { source: 'EEF1A2', target: 'EEF1D', directed: 'false', weight: 0.0755548} },
-{ data: { source: 'EEF1A2', target: 'EEF1B2', directed: 'false', weight: 0.90479} },
-{ data: { source: 'EEF1A2', target: 'PBDC1', directed: 'false', weight: 0.789034} },
-{ data: { source: 'TTLL12', target: 'PBDC1', directed: 'false', weight: 0.953219} },
-{ data: { source: 'EEF1B2', target: 'EEF1D', directed: 'false', weight: 0.988467} }]},
+elements:{nodes: [{data: { id: 'TCP10L2', score: 1, type: '', href: "https://www.ncbi.nlm.nih.gov/gene/401285" }},
+{data: { id: 'SARS-CoV2 nsp13', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp13.html" }},
+{data: { id: 'GRIPAP1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q4V328" }},
+{data: { id: 'TCP10L3', score: 0, type: '', href: "https://www.ncbi.nlm.nih.gov/gene/6953" }},
+{data: { id: 'NDEL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9GZM8" }}], 
+ edges: [{ data: { source: 'SARS-CoV2 nsp13', target: 'GRIPAP1', directed: 'false', weight: 0.989815969, type: 'sars'} },
+{ data: { source: 'NDEL1', target: 'GRIPAP1', directed: 'false', weight: 0.160005} },
+{ data: { source: 'TCP10L2', target: 'TCP10L3', directed: 'false', weight: 1.0} },
+{ data: { source: 'TCP10L2', target: 'GRIPAP1', directed: 'false', weight: 0.798737} }]},
 
 style: [
     {
@@ -99,7 +98,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    EEF1A2 EEF1B2 EEF1D PBDC1 TTLL12<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.2 GRASP1-GRIP1 complex match 2<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>GRIPAP1
     </section>
     </body>
     </html>

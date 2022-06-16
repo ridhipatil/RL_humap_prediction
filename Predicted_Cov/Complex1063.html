@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 ATM homodimer complex</title>
+<title> 0.2 AKAP5-PRKAR2A-PPP3CA complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,18 +30,15 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'DNAAF5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86Y56" }},
-{data: { id: 'GCN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92616" }},
-{data: { id: 'ARRDC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N5I2" }},
-{data: { id: 'ATM', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13315" }},
-{data: { id: 'OSBPL6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BZF3" }},
-{data: { id: 'GLMN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92990" }}], 
- edges: [{ data: { source: 'DNAAF5', target: 'GCN1', directed: 'false', weight: 0.426387} },
-{ data: { source: 'DNAAF5', target: 'GLMN', directed: 'false', weight: 0.49344799999999994} },
-{ data: { source: 'DNAAF5', target: 'ATM', directed: 'false', weight: 0.33407800000000004} },
-{ data: { source: 'GLMN', target: 'ARRDC1', directed: 'false', weight: 0.36186599999999997} },
-{ data: { source: 'GLMN', target: 'OSBPL6', directed: 'false', weight: 0.0881436} },
-{ data: { source: 'OSBPL6', target: 'ARRDC1', directed: 'false', weight: 0.330363} }]},
+elements:{nodes: [{data: { id: 'AKAP14', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86UN6" }},
+{data: { id: 'EFCAB7', score: 4, type: '', href: "https://www.uniprot.org/uniprot/A8K855" }},
+{data: { id: 'SARS-CoV2 nsp13', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp13.html" }},
+{data: { id: 'PRKAR2A', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P13861" }},
+{data: { id: 'SPA17', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15506" }}], 
+ edges: [{ data: { source: 'SARS-CoV2 nsp13', target: 'PRKAR2A', directed: 'false', weight: 0.897857211, type: 'sars'} },
+{ data: { source: 'AKAP14', target: 'PRKAR2A', directed: 'false', weight: 0.42600699999999997} },
+{ data: { source: 'AKAP14', target: 'SPA17', directed: 'false', weight: 0.991718} },
+{ data: { source: 'SPA17', target: 'EFCAB7', directed: 'false', weight: 0.9352889999999999} }]},
 
 style: [
     {
@@ -101,7 +98,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 ATM homodimer complex<br> Complex Score = 0.35000<br> Unweighted Density = 0.40
+    0.2 AKAP5-PRKAR2A-PPP3CA complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>PRKAR2A
     </section>
     </body>
     </html>

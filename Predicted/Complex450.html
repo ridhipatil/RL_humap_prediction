@@ -30,25 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'ITGA6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P23229" }},
-{data: { id: 'ITGAV', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P06756" }},
-{data: { id: 'ITGB1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P05556" }},
-{data: { id: 'IGF1R', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P08069" }},
-{data: { id: 'ITGA3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P26006" }},
-{data: { id: 'PTGFRN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9P2B2" }},
-{data: { id: 'INSR', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P06213" }}], 
- edges: [{ data: { source: 'ITGA6', target: 'ITGB1', directed: 'false', weight: 0.961311} },
-{ data: { source: 'ITGA6', target: 'ITGAV', directed: 'false', weight: 0.241196} },
-{ data: { source: 'ITGA6', target: 'IGF1R', directed: 'false', weight: 0.321912} },
-{ data: { source: 'ITGA6', target: 'INSR', directed: 'false', weight: 0.29633400000000004} },
-{ data: { source: 'ITGA6', target: 'ITGA3', directed: 'false', weight: 0.25801} },
-{ data: { source: 'ITGA6', target: 'PTGFRN', directed: 'false', weight: 0.181046} },
-{ data: { source: 'ITGAV', target: 'ITGB1', directed: 'false', weight: 0.975927} },
-{ data: { source: 'ITGAV', target: 'ITGA3', directed: 'false', weight: 0.190412} },
-{ data: { source: 'ITGB1', target: 'ITGA3', directed: 'false', weight: 0.948802} },
-{ data: { source: 'IGF1R', target: 'INSR', directed: 'false', weight: 0.921316} },
-{ data: { source: 'IGF1R', target: 'PTGFRN', directed: 'false', weight: 0.24852800000000003} },
-{ data: { source: 'PTGFRN', target: 'INSR', directed: 'false', weight: 0.671901} }]},
+elements:{nodes: [{data: { id: 'MAN1A2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60476" }},
+{data: { id: 'CLDND1', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9NY35" }},
+{data: { id: 'MAN1A1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P33908" }},
+{data: { id: 'GOLGA7', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q7Z5G4" }}], 
+ edges: [{ data: { source: 'MAN1A2', target: 'CLDND1', directed: 'false', weight: 0.124152} },
+{ data: { source: 'CLDND1', target: 'GOLGA7', directed: 'false', weight: 0.9734780000000001} },
+{ data: { source: 'CLDND1', target: 'MAN1A1', directed: 'false', weight: 0.739535} }]},
 
 style: [
     {
@@ -96,12 +84,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.38750
+    Complex Score  = 0.37500
         <br> 
         <br>
         Connection to SARS-COV2: 
         <br>
-        1 interacting protein(s): <br>ITGB1
+        1 interacting protein(s): <br>GOLGA7
     </section>
     </body>
     </html>

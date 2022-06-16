@@ -30,17 +30,17 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'TEAD3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99594" }},
-{data: { id: 'PDLIM7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NR12" }},
-{data: { id: 'IRF2BP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q7Z5L9" }},
-{data: { id: 'IRF2BPL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H1B7" }},
-{data: { id: 'VGLL4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14135" }}], 
- edges: [{ data: { source: 'TEAD3', target: 'VGLL4', directed: 'false', weight: 0.932099} },
-{ data: { source: 'PDLIM7', target: 'IRF2BPL', directed: 'false', weight: 0.5711729999999999} },
-{ data: { source: 'PDLIM7', target: 'IRF2BP2', directed: 'false', weight: 0.055830700000000004} },
-{ data: { source: 'IRF2BP2', target: 'IRF2BPL', directed: 'false', weight: 0.896009} },
-{ data: { source: 'IRF2BP2', target: 'VGLL4', directed: 'false', weight: 0.807826} },
-{ data: { source: 'VGLL4', target: 'IRF2BPL', directed: 'false', weight: 0.9690989999999999} }]},
+elements:{nodes: [{data: { id: 'CYTIP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60759" }},
+{data: { id: 'IPCEF1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WWN9" }},
+{data: { id: 'CYTH3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43739" }},
+{data: { id: 'CYTH1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15438" }},
+{data: { id: 'CNKSR1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q969H4" }}], 
+ edges: [{ data: { source: 'CYTIP', target: 'CYTH1', directed: 'false', weight: 1.0} },
+{ data: { source: 'CYTIP', target: 'CYTH3', directed: 'false', weight: 0.777946} },
+{ data: { source: 'IPCEF1', target: 'CYTH1', directed: 'false', weight: 0.6320939999999999} },
+{ data: { source: 'IPCEF1', target: 'CYTH3', directed: 'false', weight: 0.192383} },
+{ data: { source: 'CYTH3', target: 'CNKSR1', directed: 'false', weight: 0.306214} },
+{ data: { source: 'CYTH1', target: 'CNKSR1', directed: 'false', weight: 0.6453909999999999} }]},
 
 style: [
     {
@@ -88,7 +88,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.38750
+    Complex Score  = 0.38800
     </section>
     </body>
     </html>

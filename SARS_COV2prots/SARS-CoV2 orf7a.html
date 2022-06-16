@@ -31,8 +31,10 @@
       
 elements:{nodes: [{data: { id: "SARS-CoV2 orf7a", score: 2, type:  "sars" , href: "https://covid-19.uniprot.org/uniprotkb/P0DTC7" }},
 {data: { id: "HEATR3", score: 1, score_annot: 3, type:  "human" , href: "https://www.uniprot.org/uniprot/Q7Z4Q2" }},
-{data: { id: "MDN1", score: 1, score_annot: 5, type:  "human" , href: "https://www.uniprot.org/uniprot/Q9NU22" }}], 
- edges: [{ data: { source: "SARS-CoV2 orf7a", target: "HEATR3", directed: "false", type: "sars2prot",weight: 0.789988379} },
+{data: { id: "MDN1", score: 1, score_annot: 5, type:  "human" , href: "https://www.uniprot.org/uniprot/Q9NU22" }},
+{data: { id: "0.2 CRM1-Survivin mitotic complex", score: 0, type: "complex", href: "../Predicted/Complex2183.html" }}], 
+ edges: [{ data: { source: "HEATR3", target: "0.2 CRM1-Survivin mitotic complex", directed: "false",type: "prot2complex", weight: 0.99} },
+{ data: { source: "SARS-CoV2 orf7a", target: "HEATR3", directed: "false", type: "sars2prot",weight: 0.789988379} },
 { data: { source: "SARS-CoV2 orf7a", target: "MDN1", directed: "false", type: "sars2prot",weight: 0.981108579} }]},
 
 style: [

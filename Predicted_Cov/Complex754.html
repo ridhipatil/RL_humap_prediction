@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> SMARCAL1 XPNPEP1 ARMC6</title>
+<title> GSTA2 GSTA1 GSTA3 GSTA4</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,11 +30,14 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'ARMC6', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q6NXE6" }},
-{data: { id: 'XPNPEP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NQW7" }},
-{data: { id: 'SMARCAL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NZC9" }}], 
- edges: [{ data: { source: 'ARMC6', target: 'XPNPEP1', directed: 'false', weight: 0.586481} },
-{ data: { source: 'ARMC6', target: 'SMARCAL1', directed: 'false', weight: 0.398411} }]},
+elements:{nodes: [{data: { id: 'GSTA4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15217" }},
+{data: { id: 'GSTA2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P09210" }},
+{data: { id: 'GSTA3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16772" }},
+{data: { id: 'GSTA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P08263" }}], 
+ edges: [{ data: { source: 'GSTA4', target: 'GSTA2', directed: 'false', weight: 0.601993} },
+{ data: { source: 'GSTA4', target: 'GSTA1', directed: 'false', weight: 0.5786859999999999} },
+{ data: { source: 'GSTA2', target: 'GSTA3', directed: 'false', weight: 0.999999} },
+{ data: { source: 'GSTA3', target: 'GSTA1', directed: 'false', weight: 1.0} }]},
 
 style: [
     {
@@ -94,7 +97,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    SMARCAL1 XPNPEP1 ARMC6<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
+    GSTA2 GSTA1 GSTA3 GSTA4<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
     </section>
     </body>
     </html>

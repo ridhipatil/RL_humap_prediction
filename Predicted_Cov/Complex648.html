@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 PA700 complex match 2</title>
+<title> AIDA TMEM185B C1orf21 TMEM185A</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,22 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'PSMC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62191" }},
-{data: { id: 'PSMD14', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00487" }},
-{data: { id: 'ACBD3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H3P7" }},
-{data: { id: 'REX1BD', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q96EN9" }},
-{data: { id: 'PSMC6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62333" }},
-{data: { id: 'PSMB8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P28062" }}], 
- edges: [{ data: { source: 'PSMC1', target: 'PSMC6', directed: 'false', weight: 0.9999979999999999} },
-{ data: { source: 'PSMC1', target: 'PSMD14', directed: 'false', weight: 1.0} },
-{ data: { source: 'PSMC1', target: 'REX1BD', directed: 'false', weight: 0.177884} },
-{ data: { source: 'PSMC1', target: 'PSMB8', directed: 'false', weight: 0.00465693} },
-{ data: { source: 'PSMD14', target: 'PSMC6', directed: 'false', weight: 1.0} },
-{ data: { source: 'PSMD14', target: 'REX1BD', directed: 'false', weight: 0.995916} },
-{ data: { source: 'PSMD14', target: 'PSMB8', directed: 'false', weight: 0.8466819999999999} },
-{ data: { source: 'REX1BD', target: 'PSMC6', directed: 'false', weight: 0.178612} },
-{ data: { source: 'ACBD3', target: 'PSMC6', directed: 'false', weight: 0.39876500000000004} },
-{ data: { source: 'PSMB8', target: 'PSMC6', directed: 'false', weight: 0.14362} }]},
+elements:{nodes: [{data: { id: 'TMEM185A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NFB2" }},
+{data: { id: 'TMEM185B', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q9H7F4" }},
+{data: { id: 'C1orf21', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q9H246" }},
+{data: { id: 'AIDA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96BJ3" }}], 
+ edges: [{ data: { source: 'TMEM185A', target: 'TMEM185B', directed: 'false', weight: 0.31343899999999997} },
+{ data: { source: 'TMEM185A', target: 'AIDA', directed: 'false', weight: 0.20102} },
+{ data: { source: 'TMEM185A', target: 'C1orf21', directed: 'false', weight: 0.10997} }]},
 
 style: [
     {
@@ -105,7 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 PA700 complex match 2<br> Complex Score = 0.38750<br> Unweighted Density = 0.67
+    AIDA TMEM185B C1orf21 TMEM185A<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

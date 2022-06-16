@@ -30,16 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'PI4KB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UBF8" }},
-{data: { id: 'KIF3B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15066" }},
-{data: { id: 'CASP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P29466" }},
-{data: { id: 'KIFAP3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92845" }},
-{data: { id: 'KIF3A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y496" }}], 
- edges: [{ data: { source: 'KIF3B', target: 'KIFAP3', directed: 'false', weight: 0.541488} },
-{ data: { source: 'KIF3B', target: 'KIF3A', directed: 'false', weight: 0.6228319999999999} },
-{ data: { source: 'PI4KB', target: 'CASP1', directed: 'false', weight: 0.854519} },
-{ data: { source: 'KIF3A', target: 'KIFAP3', directed: 'false', weight: 0.9754799999999999} },
-{ data: { source: 'KIF3A', target: 'CASP1', directed: 'false', weight: 0.691779} }]},
+elements:{nodes: [{data: { id: 'CETN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q12798" }},
+{data: { id: 'MYCBP2', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/O75592" }},
+{data: { id: 'SPRYD3', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q8NCJ5" }},
+{data: { id: 'LGALS3BP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q08380" }}], 
+ edges: [{ data: { source: 'CETN1', target: 'SPRYD3', directed: 'false', weight: 0.522572} },
+{ data: { source: 'MYCBP2', target: 'LGALS3BP', directed: 'false', weight: 0.402104} },
+{ data: { source: 'SPRYD3', target: 'LGALS3BP', directed: 'false', weight: 0.558204} }]},
 
 style: [
     {
@@ -88,6 +85,11 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.37500
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>MYCBP2
     </section>
     </body>
     </html>

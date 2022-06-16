@@ -30,15 +30,18 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'PUM3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15397" }},
-{data: { id: 'URB2', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q14146" }},
-{data: { id: 'SRP72', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/O76094" }},
-{data: { id: 'HIST2H3C', score: 5.0, type: '', href: "https://www.uniprot.org/uniprot/Q71DI3" }},
-{data: { id: 'H3C2', score: 0, type: '', href: "https://www.ncbi.nlm.nih.gov/gene?https://www.ncbi.nlm.nih.gov/gene?Db=gene&Cmd=DetailsSearch&Term=8358" }}], 
- edges: [{ data: { source: 'PUM3', target: 'SRP72', directed: 'false', weight: 0.374528} },
-{ data: { source: 'URB2', target: 'SRP72', directed: 'false', weight: 0.639153} },
-{ data: { source: 'HIST2H3C', target: 'SRP72', directed: 'false', weight: 0.696487} },
-{ data: { source: 'SRP72', target: 'H3C2', directed: 'false', weight: 0.333933} }]},
+elements:{nodes: [{data: { id: 'CAMK2D', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13557" }},
+{data: { id: 'GNG2', score: 4, type: '', href: "https://www.uniprot.org/uniprot/P59768" }},
+{data: { id: 'SYN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P17600" }},
+{data: { id: 'MAPT', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P10636" }},
+{data: { id: 'CAMK2A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UQM7" }}], 
+ edges: [{ data: { source: 'CAMK2D', target: 'CAMK2A', directed: 'false', weight: 0.99646} },
+{ data: { source: 'GNG2', target: 'CAMK2A', directed: 'false', weight: 0.0223497} },
+{ data: { source: 'GNG2', target: 'MAPT', directed: 'false', weight: 0.0224338} },
+{ data: { source: 'GNG2', target: 'SYN1', directed: 'false', weight: 0.0205267} },
+{ data: { source: 'SYN1', target: 'CAMK2A', directed: 'false', weight: 0.021778799999999997} },
+{ data: { source: 'SYN1', target: 'MAPT', directed: 'false', weight: 0.021824400000000004} },
+{ data: { source: 'MAPT', target: 'CAMK2A', directed: 'false', weight: 0.023840200000000002} }]},
 
 style: [
     {
@@ -86,12 +89,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.35000
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>SRP72
+    Complex Score  = 0.37500
     </section>
     </body>
     </html>

@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.3 Codanin-1-Asf1-H3.1-histone-H4-importin-4 complex </title>
+<title> 0.1 TNF-alpha/NF-kappa B signaling complex 6</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,26 +30,27 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'HIRA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P54198" }},
-{data: { id: 'C15orf41', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y2V0" }},
-{data: { id: 'UBN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NPG3" }},
-{data: { id: 'ASF1A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y294" }},
-{data: { id: 'UBN2', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q6ZU65" }},
-{data: { id: 'CDAN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IWY9" }}], 
- edges: [{ data: { source: 'CDAN1', target: 'ASF1A', directed: 'false', weight: 0.705706} },
-{ data: { source: 'CDAN1', target: 'C15orf41', directed: 'false', weight: 0.165074} },
-{ data: { source: 'CDAN1', target: 'HIRA', directed: 'false', weight: 0.144297} },
-{ data: { source: 'CDAN1', target: 'UBN2', directed: 'false', weight: 0.144297} },
-{ data: { source: 'CDAN1', target: 'UBN1', directed: 'false', weight: 0.133179} },
-{ data: { source: 'HIRA', target: 'ASF1A', directed: 'false', weight: 0.546316} },
-{ data: { source: 'HIRA', target: 'C15orf41', directed: 'false', weight: 0.144297} },
-{ data: { source: 'HIRA', target: 'UBN2', directed: 'false', weight: 0.125749} },
-{ data: { source: 'HIRA', target: 'UBN1', directed: 'false', weight: 0.115879} },
-{ data: { source: 'C15orf41', target: 'ASF1A', directed: 'false', weight: 0.815242} },
-{ data: { source: 'C15orf41', target: 'UBN2', directed: 'false', weight: 0.144297} },
-{ data: { source: 'C15orf41', target: 'UBN1', directed: 'false', weight: 0.133179} },
-{ data: { source: 'UBN1', target: 'ASF1A', directed: 'false', weight: 0.37968} },
-{ data: { source: 'ASF1A', target: 'UBN2', directed: 'false', weight: 0.47204700000000005} }]},
+elements:{nodes: [{data: { id: 'RPL6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q02878" }},
+{data: { id: 'SARS-CoV2 N', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 N.html" }},
+{data: { id: 'DDX21', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9NR30" }},
+{data: { id: 'RPL13A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P40429" }},
+{data: { id: 'RPS20', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P60866" }},
+{data: { id: 'RPS13', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62277" }},
+{data: { id: 'RPL23A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62750" }}], 
+ edges: [{ data: { source: 'SARS-CoV2 N', target: 'DDX21', directed: 'false', weight: 0.613544528, type: 'sars'} },
+{ data: { source: 'RPL6', target: 'RPL13A', directed: 'false', weight: 1.0} },
+{ data: { source: 'RPL6', target: 'RPL23A', directed: 'false', weight: 1.0} },
+{ data: { source: 'RPL6', target: 'RPS13', directed: 'false', weight: 1.0} },
+{ data: { source: 'RPL6', target: 'RPS20', directed: 'false', weight: 1.0} },
+{ data: { source: 'RPL6', target: 'DDX21', directed: 'false', weight: 0.962357} },
+{ data: { source: 'DDX21', target: 'RPL13A', directed: 'false', weight: 0.11766300000000002} },
+{ data: { source: 'DDX21', target: 'RPL23A', directed: 'false', weight: 0.0510284} },
+{ data: { source: 'RPL13A', target: 'RPL23A', directed: 'false', weight: 1.0} },
+{ data: { source: 'RPL13A', target: 'RPS13', directed: 'false', weight: 1.0} },
+{ data: { source: 'RPL13A', target: 'RPS20', directed: 'false', weight: 0.9990100000000001} },
+{ data: { source: 'RPS20', target: 'RPL23A', directed: 'false', weight: 0.999914} },
+{ data: { source: 'RPS20', target: 'RPS13', directed: 'false', weight: 1.0} },
+{ data: { source: 'RPS13', target: 'RPL23A', directed: 'false', weight: 1.0} }]},
 
 style: [
     {
@@ -104,7 +105,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.3 Codanin-1-Asf1-H3.1-histone-H4-importin-4 complex <br> Complex Score = 0.39688<br> Unweighted Density = 0.93
+    0.1 TNF-alpha/NF-kappa B signaling complex 6<br> Complex Score = 0.39400<br> Unweighted Density = 0.87
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>DDX21
     </section>
     </body>
     </html>

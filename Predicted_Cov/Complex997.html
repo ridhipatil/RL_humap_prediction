@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 HEXA-HEXB complex</title>
+<title> 0.4 CAND1-CUL1-RBX1 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,15 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'TPI1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P60174" }},
-{data: { id: 'ALDOC', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P09972" }},
-{data: { id: 'GSTO2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H4Y5" }},
-{data: { id: 'HEXA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P06865" }},
-{data: { id: 'NIT2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NQR4" }}], 
- edges: [{ data: { source: 'TPI1', target: 'NIT2', directed: 'false', weight: 0.00771721} },
-{ data: { source: 'GSTO2', target: 'ALDOC', directed: 'false', weight: 0.793399} },
-{ data: { source: 'GSTO2', target: 'NIT2', directed: 'false', weight: 0.03209} },
-{ data: { source: 'HEXA', target: 'ALDOC', directed: 'false', weight: 0.5} }]},
+elements:{nodes: [{data: { id: 'CAND1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86VP6" }},
+{data: { id: 'PSMB5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P28074" }},
+{data: { id: 'FBXO7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y3I1" }},
+{data: { id: 'CUL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13616" }}], 
+ edges: [{ data: { source: 'CAND1', target: 'CUL1', directed: 'false', weight: 0.217906} },
+{ data: { source: 'FBXO7', target: 'PSMB5', directed: 'false', weight: 0.576709} },
+{ data: { source: 'FBXO7', target: 'CUL1', directed: 'false', weight: 0.10265} }]},
 
 style: [
     {
@@ -98,7 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 HEXA-HEXB complex<br> Complex Score = 0.35000<br> Unweighted Density = 0.40
+    0.4 CAND1-CUL1-RBX1 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

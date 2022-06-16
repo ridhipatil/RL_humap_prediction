@@ -30,23 +30,11 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'DUSP16', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BY84" }},
-{data: { id: 'MEF2D', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14814" }},
-{data: { id: 'RHBDF1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96CC6" }},
-{data: { id: 'MAPK14', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16539" }},
-{data: { id: 'OBSL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75147" }},
-{data: { id: 'KIF22', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14807" }}], 
- edges: [{ data: { source: 'DUSP16', target: 'MAPK14', directed: 'false', weight: 0.975247} },
-{ data: { source: 'DUSP16', target: 'RHBDF1', directed: 'false', weight: 0.171414} },
-{ data: { source: 'DUSP16', target: 'MEF2D', directed: 'false', weight: 0.171414} },
-{ data: { source: 'DUSP16', target: 'KIF22', directed: 'false', weight: 0.171414} },
-{ data: { source: 'MEF2D', target: 'MAPK14', directed: 'false', weight: 0.889809} },
-{ data: { source: 'MEF2D', target: 'RHBDF1', directed: 'false', weight: 0.171414} },
-{ data: { source: 'MEF2D', target: 'KIF22', directed: 'false', weight: 0.171414} },
-{ data: { source: 'MAPK14', target: 'RHBDF1', directed: 'false', weight: 0.9736440000000001} },
-{ data: { source: 'MAPK14', target: 'KIF22', directed: 'false', weight: 0.938031} },
-{ data: { source: 'MAPK14', target: 'OBSL1', directed: 'false', weight: 0.418925} },
-{ data: { source: 'RHBDF1', target: 'KIF22', directed: 'false', weight: 0.171414} }]},
+elements:{nodes: [{data: { id: 'FAM153CP', score: 0, type: '', href: "https://www.ncbi.nlm.nih.gov/gene/653316" }},
+{data: { id: 'FAM153A', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q9UHL3" }},
+{data: { id: 'FAM153B', score: 1, type: '', href: "https://www.uniprot.org/uniprot/D6RF84" }}], 
+ edges: [{ data: { source: 'FAM153B', target: 'FAM153A', directed: 'false', weight: 1.0} },
+{ data: { source: 'FAM153B', target: 'FAM153CP', directed: 'false', weight: 1.0} }]},
 
 style: [
     {
@@ -94,7 +82,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.39375
+    Complex Score  = 0.38800
     </section>
     </body>
     </html>

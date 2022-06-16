@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> FAM3C ABHD14A DHFR2 HYAL2 ST3GAL4</title>
+<title> 0.1 Frataxin complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,17 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'FAM3C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92520" }},
-{data: { id: 'ABHD14A', score: 3.0, type: '', href: "https://www.uniprot.org/uniprot/Q9BUJ0" }},
-{data: { id: 'ST3GAL4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q11206" }},
-{data: { id: 'DHFR2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86XF0" }},
-{data: { id: 'HYAL2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q12891" }}], 
- edges: [{ data: { source: 'ABHD14A', target: 'FAM3C', directed: 'false', weight: 0.364713} },
-{ data: { source: 'ST3GAL4', target: 'DHFR2', directed: 'false', weight: 0.613608} },
-{ data: { source: 'ST3GAL4', target: 'FAM3C', directed: 'false', weight: 0.41850699999999996} },
-{ data: { source: 'ST3GAL4', target: 'HYAL2', directed: 'false', weight: 0.130382} },
-{ data: { source: 'HYAL2', target: 'DHFR2', directed: 'false', weight: 0.10220900000000001} },
-{ data: { source: 'FAM3C', target: 'DHFR2', directed: 'false', weight: 0.0741937} }]},
+elements:{nodes: [{data: { id: 'SDHAF4', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q5VUM1" }},
+{data: { id: 'SDHA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P31040" }},
+{data: { id: 'SDHAF2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NX18" }},
+{data: { id: 'SDHAF3', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q9NRP4" }}], 
+ edges: [{ data: { source: 'SDHA', target: 'SDHAF2', directed: 'false', weight: 0.9828290000000001} },
+{ data: { source: 'SDHA', target: 'SDHAF4', directed: 'false', weight: 0.938627} },
+{ data: { source: 'SDHAF3', target: 'SDHAF4', directed: 'false', weight: 0.177617} }]},
 
 style: [
     {
@@ -100,7 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    FAM3C ABHD14A DHFR2 HYAL2 ST3GAL4<br> Complex Score = 0.38750<br> Unweighted Density = 0.60
+    0.1 Frataxin complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

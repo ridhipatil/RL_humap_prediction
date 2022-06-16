@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 AURKA-HDAC6 cilia-disassembly complex</title>
+<title> 0.2 B-raf-MAP3K11 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,14 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'DLST', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P36957" }},
-{data: { id: 'DBT', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P11182" }},
-{data: { id: 'KCNAB3', score: 4, type: '', href: "https://www.uniprot.org/uniprot/O43448" }},
-{data: { id: 'HDAC6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UBN7" }}], 
- edges: [{ data: { source: 'DLST', target: 'DBT', directed: 'false', weight: 0.995064} },
-{ data: { source: 'DLST', target: 'HDAC6', directed: 'false', weight: 0.151662} },
-{ data: { source: 'DBT', target: 'HDAC6', directed: 'false', weight: 0.43395} },
-{ data: { source: 'KCNAB3', target: 'HDAC6', directed: 'false', weight: 0.49161499999999997} }]},
+elements:{nodes: [{data: { id: 'SLC4A1AP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BWU0" }},
+{data: { id: 'SNRPE', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62304" }},
+{data: { id: 'SF3A3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q12874" }},
+{data: { id: 'RBM11', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P57052" }}], 
+ edges: [{ data: { source: 'SLC4A1AP', target: 'SNRPE', directed: 'false', weight: 0.301159} },
+{ data: { source: 'SLC4A1AP', target: 'RBM11', directed: 'false', weight: 0.134326} },
+{ data: { source: 'SNRPE', target: 'SF3A3', directed: 'false', weight: 0.527011} }]},
 
 style: [
     {
@@ -97,7 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 AURKA-HDAC6 cilia-disassembly complex<br> Complex Score = 0.30000<br> Unweighted Density = 0.67
+    0.2 B-raf-MAP3K11 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

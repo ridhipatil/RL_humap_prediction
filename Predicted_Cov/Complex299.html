@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 ATR-ATRIP complex</title>
+<title> 0.1 ASF1-histone containing complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,32 +30,11 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'THADA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6YHU6" }},
-{data: { id: 'BTAF1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O14981" }},
-{data: { id: 'TNPO2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O14787" }},
-{data: { id: 'C19orf25', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UFG5" }},
-{data: { id: 'TTI1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43156" }},
-{data: { id: 'XPO7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UIA9" }},
-{data: { id: 'GCN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92616" }},
-{data: { id: 'ATR', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P20848" }}], 
- edges: [{ data: { source: 'THADA', target: 'TNPO2', directed: 'false', weight: 0.44567700000000005} },
-{ data: { source: 'THADA', target: 'TTI1', directed: 'false', weight: 0.7223970000000001} },
-{ data: { source: 'THADA', target: 'ATR', directed: 'false', weight: 0.51279} },
-{ data: { source: 'THADA', target: 'XPO7', directed: 'false', weight: 0.328104} },
-{ data: { source: 'THADA', target: 'BTAF1', directed: 'false', weight: 0.303195} },
-{ data: { source: 'BTAF1', target: 'TNPO2', directed: 'false', weight: 0.43463999999999997} },
-{ data: { source: 'TNPO2', target: 'TTI1', directed: 'false', weight: 0.510916} },
-{ data: { source: 'TNPO2', target: 'XPO7', directed: 'false', weight: 0.493504} },
-{ data: { source: 'TNPO2', target: 'ATR', directed: 'false', weight: 0.33331900000000003} },
-{ data: { source: 'C19orf25', target: 'ATR', directed: 'false', weight: 0.0850542} },
-{ data: { source: 'C19orf25', target: 'TTI1', directed: 'false', weight: 0.0641733} },
-{ data: { source: 'C19orf25', target: 'GCN1', directed: 'false', weight: 0.0641733} },
-{ data: { source: 'TTI1', target: 'GCN1', directed: 'false', weight: 0.46347299999999997} },
-{ data: { source: 'TTI1', target: 'XPO7', directed: 'false', weight: 0.401391} },
-{ data: { source: 'TTI1', target: 'ATR', directed: 'false', weight: 0.265096} },
-{ data: { source: 'XPO7', target: 'GCN1', directed: 'false', weight: 0.581176} },
-{ data: { source: 'XPO7', target: 'ATR', directed: 'false', weight: 0.61695} },
-{ data: { source: 'GCN1', target: 'ATR', directed: 'false', weight: 0.401391} }]},
+elements:{nodes: [{data: { id: 'TP73', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15350" }},
+{data: { id: 'CHEK2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O96017" }},
+{data: { id: 'TP63', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H3D4" }}], 
+ edges: [{ data: { source: 'TP73', target: 'TP63', directed: 'false', weight: 0.141596} },
+{ data: { source: 'CHEK2', target: 'TP63', directed: 'false', weight: 0.227287} }]},
 
 style: [
     {
@@ -115,7 +94,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 ATR-ATRIP complex<br> Complex Score = 0.38750<br> Unweighted Density = 0.64
+    0.1 ASF1-histone containing complex<br> Complex Score = 0.38800<br> Unweighted Density = 0.67
     </section>
     </body>
     </html>

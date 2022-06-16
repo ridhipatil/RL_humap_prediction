@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 SERCA2a-alphaKAP-CaM-CaMKII complex</title>
+<title> 0.1 SEPHS1-SEPHS2-SEPSECS-SECp43 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,17 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'RANBP6', score: 4, type: '', href: "https://www.uniprot.org/uniprot/O60518" }},
-{data: { id: 'KPNA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P52294" }},
-{data: { id: 'KPNA6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60684" }},
-{data: { id: 'IPO5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00410" }},
-{data: { id: 'KPNA5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15131" }}], 
- edges: [{ data: { source: 'KPNA1', target: 'IPO5', directed: 'false', weight: 0.7065859999999999} },
-{ data: { source: 'KPNA1', target: 'KPNA6', directed: 'false', weight: 0.7083079999999999} },
-{ data: { source: 'KPNA6', target: 'IPO5', directed: 'false', weight: 0.419707} },
-{ data: { source: 'KPNA6', target: 'RANBP6', directed: 'false', weight: 0.697757} },
-{ data: { source: 'RANBP6', target: 'IPO5', directed: 'false', weight: 0.39718000000000003} },
-{ data: { source: 'IPO5', target: 'KPNA5', directed: 'false', weight: 0.785783} }]},
+elements:{nodes: [{data: { id: 'MATK', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P42679" }},
+{data: { id: 'CSK', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P41240" }},
+{data: { id: 'SEPHS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49903" }},
+{data: { id: 'HEL-S-47e', score: 2, type: '', href: "https://www.uniprot.org/uniprot/V9HWE8" }}], 
+ edges: [{ data: { source: 'MATK', target: 'CSK', directed: 'false', weight: 0.9930110000000001} },
+{ data: { source: 'CSK', target: 'SEPHS1', directed: 'false', weight: 0.107932} },
+{ data: { source: 'SEPHS1', target: 'HEL-S-47e', directed: 'false', weight: 0.24983899999999998} }]},
 
 style: [
     {
@@ -100,7 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 SERCA2a-alphaKAP-CaM-CaMKII complex<br> Complex Score = 0.38750<br> Unweighted Density = 0.60
+    0.1 SEPHS1-SEPHS2-SEPSECS-SECp43 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

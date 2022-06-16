@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> GGCX CHP1 GPAT4 FADS2 GPAT3</title>
+<title> WDR81 WFDC2 WDR91</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,20 +30,11 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'SARS-CoV2 M', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 M.html" }},
-{data: { id: 'GGCX', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P38435" }},
-{data: { id: 'GPAT3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q53EU6" }},
-{data: { id: 'CHP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99653" }},
-{data: { id: 'FADS2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95864" }},
-{data: { id: 'GPAT4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86UL3" }}], 
- edges: [{ data: { source: 'SARS-CoV2 M', target: 'GGCX', directed: 'false', weight: 0.789966998, type: 'sars'} },
-{ data: { source: 'GPAT3', target: 'GPAT4', directed: 'false', weight: 0.8752120000000001} },
-{ data: { source: 'GPAT3', target: 'CHP1', directed: 'false', weight: 0.427584} },
-{ data: { source: 'GPAT3', target: 'FADS2', directed: 'false', weight: 0.249333} },
-{ data: { source: 'FADS2', target: 'GPAT4', directed: 'false', weight: 0.313319} },
-{ data: { source: 'FADS2', target: 'GGCX', directed: 'false', weight: 0.545516} },
-{ data: { source: 'FADS2', target: 'CHP1', directed: 'false', weight: 0.343587} },
-{ data: { source: 'GPAT4', target: 'CHP1', directed: 'false', weight: 0.49291499999999994} }]},
+elements:{nodes: [{data: { id: 'WDR91', score: 5, type: '', href: "https://www.uniprot.org/uniprot/A4D1P6" }},
+{data: { id: 'WFDC2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14508" }},
+{data: { id: 'WDR81', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q562E7" }}], 
+ edges: [{ data: { source: 'WDR91', target: 'WFDC2', directed: 'false', weight: 0.352544} },
+{ data: { source: 'WFDC2', target: 'WDR81', directed: 'false', weight: 0.899367} }]},
 
 style: [
     {
@@ -103,12 +94,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    GGCX CHP1 GPAT4 FADS2 GPAT3<br> Complex Score = 0.38750<br> Unweighted Density = 0.70
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>GGCX
+    WDR81 WFDC2 WDR91<br> Complex Score = 0.38800<br> Unweighted Density = 0.67
     </section>
     </body>
     </html>

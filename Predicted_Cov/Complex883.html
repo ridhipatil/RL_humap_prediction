@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 C-CFTR-NHERF-ezrin complex</title>
+<title> 0.05 60S ribosomal subunit, cytoplasmic match 6</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,19 +30,14 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'MSN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P26038" }},
-{data: { id: 'EZR', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P15311" }},
-{data: { id: 'PLS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14651" }},
-{data: { id: 'FLNB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75369" }},
-{data: { id: 'DECR2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NUI1" }},
-{data: { id: 'GABARAPL2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P60520" }}], 
- edges: [{ data: { source: 'EZR', target: 'MSN', directed: 'false', weight: 0.874489} },
-{ data: { source: 'EZR', target: 'GABARAPL2', directed: 'false', weight: 0.450825} },
-{ data: { source: 'EZR', target: 'PLS1', directed: 'false', weight: 0.345172} },
-{ data: { source: 'PLS1', target: 'MSN', directed: 'false', weight: 0.7584890000000001} },
-{ data: { source: 'PLS1', target: 'FLNB', directed: 'false', weight: 0.584954} },
-{ data: { source: 'PLS1', target: 'DECR2', directed: 'false', weight: 0.11585699999999999} },
-{ data: { source: 'DECR2', target: 'FLNB', directed: 'false', weight: 0.5573229999999999} }]},
+elements:{nodes: [{data: { id: 'RPLP0', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P05388" }},
+{data: { id: 'RPF2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H7B2" }},
+{data: { id: 'PRR4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96NY8" }},
+{data: { id: 'DDX31', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H8H2" }}], 
+ edges: [{ data: { source: 'RPLP0', target: 'RPF2', directed: 'false', weight: 0.962501} },
+{ data: { source: 'RPLP0', target: 'DDX31', directed: 'false', weight: 0.0432954} },
+{ data: { source: 'RPF2', target: 'DDX31', directed: 'false', weight: 0.158656} },
+{ data: { source: 'DDX31', target: 'PRR4', directed: 'false', weight: 0.327886} }]},
 
 style: [
     {
@@ -102,7 +97,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 C-CFTR-NHERF-ezrin complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.47
+    0.05 60S ribosomal subunit, cytoplasmic match 6<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
     </section>
     </body>
     </html>

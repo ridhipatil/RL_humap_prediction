@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 RAB5-EEA1 complex</title>
+<title> 0.4 RPA complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,23 +30,14 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'PTPN11', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q06124" }},
-{data: { id: 'RAB5A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P20339" }},
-{data: { id: 'SARS-CoV2 nsp7', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp7.html" }},
-{data: { id: 'RAB5C', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P51148" }},
-{data: { id: 'SARS-CoV2 orf3a', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 orf3a.html" }},
-{data: { id: 'SUN2', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9UH99" }},
-{data: { id: 'CHM', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P24386" }},
-{data: { id: 'RAB5B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P61020" }}], 
- edges: [{ data: { source: 'SARS-CoV2 nsp7', target: 'RAB5C', directed: 'false', weight: 0.87908593, type: 'sars'} },
-{ data: { source: 'SARS-CoV2 orf3a', target: 'SUN2', directed: 'false', weight: 0.880019941, type: 'sars'} },
-{ data: { source: 'PTPN11', target: 'RAB5C', directed: 'false', weight: 0.6350439999999999} },
-{ data: { source: 'CHM', target: 'RAB5C', directed: 'false', weight: 0.819044} },
-{ data: { source: 'CHM', target: 'RAB5B', directed: 'false', weight: 0.115879} },
-{ data: { source: 'CHM', target: 'RAB5A', directed: 'false', weight: 0.0886254} },
-{ data: { source: 'RAB5A', target: 'RAB5C', directed: 'false', weight: 0.16464} },
-{ data: { source: 'RAB5C', target: 'RAB5B', directed: 'false', weight: 0.631423} },
-{ data: { source: 'RAB5C', target: 'SUN2', directed: 'false', weight: 0.941565} }]},
+elements:{nodes: [{data: { id: 'CLIC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00299" }},
+{data: { id: 'RPA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P27694" }},
+{data: { id: 'TOM1L2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6ZVM7" }},
+{data: { id: 'RPA3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P35244" }}], 
+ edges: [{ data: { source: 'RPA3', target: 'RPA1', directed: 'false', weight: 0.9999899999999999} },
+{ data: { source: 'RPA3', target: 'TOM1L2', directed: 'false', weight: 0.25108600000000003} },
+{ data: { source: 'RPA3', target: 'CLIC1', directed: 'false', weight: 0.0992165} },
+{ data: { source: 'RPA1', target: 'CLIC1', directed: 'false', weight: 0.102653} }]},
 
 style: [
     {
@@ -106,12 +97,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 RAB5-EEA1 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.47
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        2 interacting protein(s): <br>RAB5C SUN2
+    0.4 RPA complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
     </section>
     </body>
     </html>

@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> DENND6A FAM171A2 RPS6KC1</title>
+<title> 0.2 ABI1-WASF2 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,11 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'DENND6A', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q8IWF6" }},
-{data: { id: 'FAM171A2', score: 3, type: '', href: "https://www.uniprot.org/uniprot/A8MVW0" }},
-{data: { id: 'RPS6KC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96S38" }}], 
- edges: [{ data: { source: 'DENND6A', target: 'RPS6KC1', directed: 'false', weight: 0.635688} },
-{ data: { source: 'DENND6A', target: 'FAM171A2', directed: 'false', weight: 0.45249700000000004} }]},
+elements:{nodes: [{data: { id: 'BAIAP2L1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UHR4" }},
+{data: { id: 'WASF2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y6W5" }},
+{data: { id: 'BAIAP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UQB8" }},
+{data: { id: 'NCK2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43639" }}], 
+ edges: [{ data: { source: 'BAIAP2L1', target: 'BAIAP2', directed: 'false', weight: 0.9666600000000001} },
+{ data: { source: 'WASF2', target: 'NCK2', directed: 'false', weight: 0.740275} },
+{ data: { source: 'WASF2', target: 'BAIAP2', directed: 'false', weight: 0.329305} }]},
 
 style: [
     {
@@ -94,7 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    DENND6A FAM171A2 RPS6KC1<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
+    0.2 ABI1-WASF2 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

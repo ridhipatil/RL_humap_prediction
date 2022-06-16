@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 SNARE complex (STX1A, SNAP29)</title>
+<title> 0.2 LKB1-STRAD-MO25 complex match 2</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,16 +30,14 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'SKA2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WVK7" }},
-{data: { id: 'SKA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96BD8" }},
-{data: { id: 'SKA3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IX90" }},
-{data: { id: 'SNAP29', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95721" }},
-{data: { id: 'SEC22B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75396" }}], 
- edges: [{ data: { source: 'SKA1', target: 'SKA3', directed: 'false', weight: 0.999373} },
-{ data: { source: 'SKA1', target: 'SKA2', directed: 'false', weight: 0.9944049999999999} },
-{ data: { source: 'SKA1', target: 'SNAP29', directed: 'false', weight: 0.992822} },
-{ data: { source: 'SNAP29', target: 'SEC22B', directed: 'false', weight: 0.0376143} },
-{ data: { source: 'SKA2', target: 'SKA3', directed: 'false', weight: 0.99121} }]},
+elements:{nodes: [{data: { id: 'ATP6V1C1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P21283" }},
+{data: { id: 'CAB39L', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q9H9S4" }},
+{data: { id: 'CAB39', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y376" }},
+{data: { id: 'STRADB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9C0K7" }}], 
+ edges: [{ data: { source: 'ATP6V1C1', target: 'CAB39', directed: 'false', weight: 0.996916} },
+{ data: { source: 'ATP6V1C1', target: 'CAB39L', directed: 'false', weight: 0.59013} },
+{ data: { source: 'CAB39', target: 'CAB39L', directed: 'false', weight: 0.991849} },
+{ data: { source: 'CAB39', target: 'STRADB', directed: 'false', weight: 0.9065270000000001} }]},
 
 style: [
     {
@@ -99,7 +97,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 SNARE complex (STX1A, SNAP29)<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.2 LKB1-STRAD-MO25 complex match 2<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
     </section>
     </body>
     </html>

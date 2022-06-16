@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 SPATA2-CYLD complex</title>
+<title> PGD UPP1 CUTA HEL-S-281</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,17 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'FGL2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14314" }},
-{data: { id: 'SPHK1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NYA1" }},
-{data: { id: 'KIF7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q2M1P5" }},
-{data: { id: 'ZNF282', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UDV7" }},
-{data: { id: 'CYLD', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NQC7" }}], 
- edges: [{ data: { source: 'FGL2', target: 'ZNF282', directed: 'false', weight: 0.917507} },
-{ data: { source: 'FGL2', target: 'CYLD', directed: 'false', weight: 0.853147} },
-{ data: { source: 'FGL2', target: 'KIF7', directed: 'false', weight: 0.505458} },
-{ data: { source: 'KIF7', target: 'ZNF282', directed: 'false', weight: 0.151455} },
-{ data: { source: 'CYLD', target: 'ZNF282', directed: 'false', weight: 0.151455} },
-{ data: { source: 'CYLD', target: 'SPHK1', directed: 'false', weight: 0.662416} }]},
+elements:{nodes: [{data: { id: 'HEL-S-281', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q5U077" }},
+{data: { id: 'CUTA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60888" }},
+{data: { id: 'PGD', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P52209" }},
+{data: { id: 'UPP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16831" }}], 
+ edges: [{ data: { source: 'HEL-S-281', target: 'UPP1', directed: 'false', weight: 0.112402} },
+{ data: { source: 'CUTA', target: 'UPP1', directed: 'false', weight: 0.667716} },
+{ data: { source: 'PGD', target: 'UPP1', directed: 'false', weight: 0.11464300000000001} }]},
 
 style: [
     {
@@ -100,7 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 SPATA2-CYLD complex<br> Complex Score = 0.38750<br> Unweighted Density = 0.60
+    PGD UPP1 CUTA HEL-S-281<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

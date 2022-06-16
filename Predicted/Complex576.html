@@ -30,18 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'EPM2AIP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q7L775" }},
-{data: { id: 'BAG5', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9UL15" }},
-{data: { id: 'MAD2L1BP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15013" }},
-{data: { id: 'MAD2L1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13257" }},
-{data: { id: 'MAD1L1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y6D9" }}], 
- edges: [{ data: { source: 'MAD2L1', target: 'MAD2L1BP', directed: 'false', weight: 0.941802} },
-{ data: { source: 'MAD2L1', target: 'MAD1L1', directed: 'false', weight: 0.64625} },
-{ data: { source: 'MAD2L1', target: 'EPM2AIP1', directed: 'false', weight: 0.579746} },
-{ data: { source: 'MAD2L1BP', target: 'MAD1L1', directed: 'false', weight: 0.715875} },
-{ data: { source: 'MAD2L1BP', target: 'EPM2AIP1', directed: 'false', weight: 0.144297} },
-{ data: { source: 'EPM2AIP1', target: 'MAD1L1', directed: 'false', weight: 0.133179} },
-{ data: { source: 'BAG5', target: 'MAD1L1', directed: 'false', weight: 0.806249} }]},
+elements:{nodes: [{data: { id: 'KIF2C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99661" }},
+{data: { id: 'SGF29', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96ES7" }},
+{data: { id: 'MBIP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NS73" }},
+{data: { id: 'SUPT7L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O94864" }}], 
+ edges: [{ data: { source: 'KIF2C', target: 'SGF29', directed: 'false', weight: 0.27887199999999995} },
+{ data: { source: 'SGF29', target: 'SUPT7L', directed: 'false', weight: 0.985819} },
+{ data: { source: 'SGF29', target: 'MBIP', directed: 'false', weight: 0.872474} }]},
 
 style: [
     {
@@ -89,12 +84,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.38750
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>BAG5
+    Complex Score  = 0.37500
     </section>
     </body>
     </html>

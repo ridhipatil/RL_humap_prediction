@@ -30,21 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'RING1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q06587" }},
-{data: { id: 'RYBP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N488" }},
-{data: { id: 'YAF2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IY57" }},
-{data: { id: 'PCGF1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BSM1" }},
-{data: { id: 'MORC4', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q8TE76" }},
-{data: { id: 'BCL6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P41182" }}], 
- edges: [{ data: { source: 'RING1', target: 'RYBP', directed: 'false', weight: 0.996924} },
-{ data: { source: 'RING1', target: 'YAF2', directed: 'false', weight: 0.8144020000000001} },
-{ data: { source: 'PCGF1', target: 'RYBP', directed: 'false', weight: 0.998292} },
-{ data: { source: 'PCGF1', target: 'YAF2', directed: 'false', weight: 0.862851} },
-{ data: { source: 'PCGF1', target: 'BCL6', directed: 'false', weight: 0.614095} },
-{ data: { source: 'PCGF1', target: 'MORC4', directed: 'false', weight: 0.151455} },
-{ data: { source: 'RYBP', target: 'MORC4', directed: 'false', weight: 0.940069} },
-{ data: { source: 'RYBP', target: 'YAF2', directed: 'false', weight: 0.872525} },
-{ data: { source: 'RYBP', target: 'BCL6', directed: 'false', weight: 0.1067} }]},
+elements:{nodes: [{data: { id: 'CHMP3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y3E7" }},
+{data: { id: 'STAMBP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95630" }},
+{data: { id: 'ZSCAN21', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y5A6" }},
+{data: { id: 'GRAP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75791" }}], 
+ edges: [{ data: { source: 'CHMP3', target: 'STAMBP', directed: 'false', weight: 0.652087} },
+{ data: { source: 'STAMBP', target: 'GRAP2', directed: 'false', weight: 0.7976439999999999} },
+{ data: { source: 'ZSCAN21', target: 'GRAP2', directed: 'false', weight: 0.102853} }]},
 
 style: [
     {
@@ -92,7 +84,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.38750
+    Complex Score  = 0.37500
     </section>
     </body>
     </html>

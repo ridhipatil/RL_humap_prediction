@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 VEGFR2-S1PR5-ERK1/2-PKC-alpha complex</title>
+<title> 0.6 PRKAA1-PRKAB2-PRKAG1 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,31 +30,20 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'ELOVL2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NXB9" }},
-{data: { id: 'PIGW', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q7Z7B1" }},
-{data: { id: 'ABCD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P33897" }},
-{data: { id: 'SLC39A4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6P5W5" }},
-{data: { id: 'S1PR5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H228" }},
-{data: { id: 'GOLM1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NBJ4" }},
-{data: { id: 'TMEM143', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96AN5" }}], 
- edges: [{ data: { source: 'ELOVL2', target: 'TMEM143', directed: 'false', weight: 0.151455} },
-{ data: { source: 'ELOVL2', target: 'SLC39A4', directed: 'false', weight: 0.45192200000000005} },
-{ data: { source: 'ELOVL2', target: 'S1PR5', directed: 'false', weight: 0.133456} },
-{ data: { source: 'ELOVL2', target: 'GOLM1', directed: 'false', weight: 0.108694} },
-{ data: { source: 'PIGW', target: 'TMEM143', directed: 'false', weight: 0.151455} },
-{ data: { source: 'PIGW', target: 'SLC39A4', directed: 'false', weight: 0.450979} },
-{ data: { source: 'PIGW', target: 'S1PR5', directed: 'false', weight: 0.133456} },
-{ data: { source: 'PIGW', target: 'GOLM1', directed: 'false', weight: 0.108694} },
-{ data: { source: 'ABCD1', target: 'TMEM143', directed: 'false', weight: 0.140692} },
-{ data: { source: 'ABCD1', target: 'SLC39A4', directed: 'false', weight: 0.38701199999999997} },
-{ data: { source: 'ABCD1', target: 'S1PR5', directed: 'false', weight: 0.123797} },
-{ data: { source: 'ABCD1', target: 'GOLM1', directed: 'false', weight: 0.100649} },
-{ data: { source: 'SLC39A4', target: 'TMEM143', directed: 'false', weight: 0.892783} },
-{ data: { source: 'SLC39A4', target: 'S1PR5', directed: 'false', weight: 0.698418} },
-{ data: { source: 'SLC39A4', target: 'GOLM1', directed: 'false', weight: 0.683376} },
-{ data: { source: 'S1PR5', target: 'TMEM143', directed: 'false', weight: 0.151455} },
-{ data: { source: 'S1PR5', target: 'GOLM1', directed: 'false', weight: 0.108694} },
-{ data: { source: 'GOLM1', target: 'TMEM143', directed: 'false', weight: 0.12378900000000001} }]},
+elements:{nodes: [{data: { id: 'PRKAA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13131" }},
+{data: { id: 'PRKAB2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43741" }},
+{data: { id: 'PRKAB1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y478" }},
+{data: { id: 'PRKAG1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P54619" }},
+{data: { id: 'PRKAG2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UGJ0" }}], 
+ edges: [{ data: { source: 'PRKAA1', target: 'PRKAG1', directed: 'false', weight: 0.999999} },
+{ data: { source: 'PRKAA1', target: 'PRKAB2', directed: 'false', weight: 0.993383} },
+{ data: { source: 'PRKAA1', target: 'PRKAB1', directed: 'false', weight: 0.924694} },
+{ data: { source: 'PRKAA1', target: 'PRKAG2', directed: 'false', weight: 0.690395} },
+{ data: { source: 'PRKAB2', target: 'PRKAG1', directed: 'false', weight: 0.9984059999999999} },
+{ data: { source: 'PRKAB2', target: 'PRKAB1', directed: 'false', weight: 0.21495799999999998} },
+{ data: { source: 'PRKAB2', target: 'PRKAG2', directed: 'false', weight: 0.875898} },
+{ data: { source: 'PRKAB1', target: 'PRKAG1', directed: 'false', weight: 0.9998020000000001} },
+{ data: { source: 'PRKAB1', target: 'PRKAG2', directed: 'false', weight: 0.976383} }]},
 
 style: [
     {
@@ -109,7 +98,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 VEGFR2-S1PR5-ERK1/2-PKC-alpha complex<br> Complex Score = 0.39688<br> Unweighted Density = 0.86
+    0.6 PRKAA1-PRKAB2-PRKAG1 complex<br> Complex Score = 0.39800<br> Unweighted Density = 0.90
     </section>
     </body>
     </html>

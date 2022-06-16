@@ -30,13 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'SAPCD2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86UD0" }},
-{data: { id: 'GPSM1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86YR5" }},
-{data: { id: 'PLIN5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q00G26" }},
-{data: { id: 'CFLAR', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15519" }}], 
- edges: [{ data: { source: 'PLIN5', target: 'SAPCD2', directed: 'false', weight: 0.278721} },
-{ data: { source: 'PLIN5', target: 'CFLAR', directed: 'false', weight: 0.322711} },
-{ data: { source: 'SAPCD2', target: 'GPSM1', directed: 'false', weight: 0.913566} }]},
+elements:{nodes: [{data: { id: 'XAGE2', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q96GT9" }},
+{data: { id: 'EHMT2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96KQ7" }},
+{data: { id: 'HDAC2', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q92769" }},
+{data: { id: 'MIER2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N344" }}], 
+ edges: [{ data: { source: 'XAGE2', target: 'EHMT2', directed: 'false', weight: 0.42631499999999994} },
+{ data: { source: 'MIER2', target: 'HDAC2', directed: 'false', weight: 0.5408069999999999} },
+{ data: { source: 'MIER2', target: 'EHMT2', directed: 'false', weight: 0.12194100000000001} }]},
 
 style: [
     {
@@ -84,7 +84,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.30000
+    Complex Score  = 0.37500
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>HDAC2
     </section>
     </body>
     </html>

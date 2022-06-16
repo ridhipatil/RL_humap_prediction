@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 ITGAV-ITGB5-ADAM9 complex</title>
+<title> seTCTP HEL-S-1 EIF5AL1 HEL-S-271</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,15 +30,14 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'ARSK', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q6UWY0" }},
-{data: { id: 'MBTPS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14703" }},
-{data: { id: 'GALNT13', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IUC8" }},
-{data: { id: 'SARS-CoV2 orf8', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 orf8.html" }},
-{data: { id: 'ADAM9', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q13443" }}], 
- edges: [{ data: { source: 'SARS-CoV2 orf8', target: 'ADAM9', directed: 'false', weight: 0.669574426, type: 'sars'} },
-{ data: { source: 'ADAM9', target: 'MBTPS1', directed: 'false', weight: 0.237195} },
-{ data: { source: 'GALNT13', target: 'MBTPS1', directed: 'false', weight: 0.61717} },
-{ data: { source: 'ARSK', target: 'MBTPS1', directed: 'false', weight: 0.560215} }]},
+elements:{nodes: [{data: { id: 'HEL-S-271', score: 3, type: '', href: "https://www.uniprot.org/uniprot/V9HW31" }},
+{data: { id: 'seTCTP', score: 2, type: '', href: "https://www.uniprot.org/uniprot/A0A0P1J1R0" }},
+{data: { id: 'HEL-S-1', score: 2, type: '', href: "https://www.uniprot.org/uniprot/V9HWD6" }},
+{data: { id: 'EIF5AL1', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q6IS14" }}], 
+ edges: [{ data: { source: 'HEL-S-271', target: 'seTCTP', directed: 'false', weight: 0.163259} },
+{ data: { source: 'HEL-S-271', target: 'HEL-S-1', directed: 'false', weight: 0.06491849999999999} },
+{ data: { source: 'seTCTP', target: 'HEL-S-1', directed: 'false', weight: 0.263703} },
+{ data: { source: 'seTCTP', target: 'EIF5AL1', directed: 'false', weight: 0.187607} }]},
 
 style: [
     {
@@ -98,12 +97,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 ITGAV-ITGB5-ADAM9 complex<br> Complex Score = 0.30000<br> Unweighted Density = 0.50
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>ADAM9
+    seTCTP HEL-S-1 EIF5AL1 HEL-S-271<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
     </section>
     </body>
     </html>

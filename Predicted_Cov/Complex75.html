@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 Histone-2-Histone-4-ASF1-MCM2 complex</title>
+<title> 0.6 BBSome</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,30 +30,38 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'LUC7L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NQ29" }},
-{data: { id: 'MKRN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UHC7" }},
-{data: { id: 'SNRNP70', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P08621" }},
-{data: { id: 'SRSF9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13242" }},
-{data: { id: 'SRSF1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q07955" }},
-{data: { id: 'DDX46', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q7L014" }},
-{data: { id: 'CWC22', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HCG8" }}], 
- edges: [{ data: { source: 'LUC7L', target: 'SRSF9', directed: 'false', weight: 0.08425650000000001} },
-{ data: { source: 'LUC7L', target: 'SRSF1', directed: 'false', weight: 0.8486899999999999} },
-{ data: { source: 'LUC7L', target: 'SNRNP70', directed: 'false', weight: 0.9982120000000001} },
-{ data: { source: 'LUC7L', target: 'DDX46', directed: 'false', weight: 0.42057100000000003} },
-{ data: { source: 'LUC7L', target: 'CWC22', directed: 'false', weight: 0.36218} },
-{ data: { source: 'MKRN1', target: 'SRSF9', directed: 'false', weight: 0.538582} },
-{ data: { source: 'MKRN1', target: 'SRSF1', directed: 'false', weight: 0.538582} },
-{ data: { source: 'SNRNP70', target: 'SRSF9', directed: 'false', weight: 0.47504399999999997} },
-{ data: { source: 'SNRNP70', target: 'SRSF1', directed: 'false', weight: 0.9971530000000001} },
-{ data: { source: 'SNRNP70', target: 'CWC22', directed: 'false', weight: 0.108921} },
-{ data: { source: 'SNRNP70', target: 'DDX46', directed: 'false', weight: 0.0952728} },
-{ data: { source: 'SRSF9', target: 'SRSF1', directed: 'false', weight: 1.0} },
-{ data: { source: 'SRSF9', target: 'DDX46', directed: 'false', weight: 0.337376} },
-{ data: { source: 'SRSF9', target: 'CWC22', directed: 'false', weight: 0.22579699999999997} },
-{ data: { source: 'SRSF1', target: 'CWC22', directed: 'false', weight: 0.632054} },
-{ data: { source: 'SRSF1', target: 'DDX46', directed: 'false', weight: 0.542899} },
-{ data: { source: 'DDX46', target: 'CWC22', directed: 'false', weight: 0.637712} }]},
+elements:{nodes: [{data: { id: 'BBS7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IWZ6" }},
+{data: { id: 'BBS2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BXC9" }},
+{data: { id: 'TTC8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TAM2" }},
+{data: { id: 'BBS5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N3I7" }},
+{data: { id: 'BBS4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96RK4" }},
+{data: { id: 'BBS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NFJ9" }},
+{data: { id: 'B1', score: 2, type: '', href: "https://www.uniprot.org/uniprot/A0A090N8P4" }},
+{data: { id: 'LZTFL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NQ48" }}], 
+ edges: [{ data: { source: 'BBS7', target: 'BBS5', directed: 'false', weight: 0.8230959999999999} },
+{ data: { source: 'BBS7', target: 'BBS1', directed: 'false', weight: 0.443784} },
+{ data: { source: 'BBS7', target: 'B1', directed: 'false', weight: 0.85775} },
+{ data: { source: 'BBS7', target: 'BBS4', directed: 'false', weight: 0.324204} },
+{ data: { source: 'BBS7', target: 'TTC8', directed: 'false', weight: 0.16883299999999998} },
+{ data: { source: 'BBS7', target: 'BBS2', directed: 'false', weight: 0.976137} },
+{ data: { source: 'BBS2', target: 'BBS5', directed: 'false', weight: 0.94755} },
+{ data: { source: 'BBS2', target: 'BBS1', directed: 'false', weight: 0.698634} },
+{ data: { source: 'BBS2', target: 'B1', directed: 'false', weight: 0.11205899999999999} },
+{ data: { source: 'BBS2', target: 'BBS4', directed: 'false', weight: 0.0206947} },
+{ data: { source: 'BBS2', target: 'TTC8', directed: 'false', weight: 0.0246027} },
+{ data: { source: 'TTC8', target: 'BBS5', directed: 'false', weight: 0.98562} },
+{ data: { source: 'TTC8', target: 'BBS1', directed: 'false', weight: 0.9729610000000001} },
+{ data: { source: 'TTC8', target: 'B1', directed: 'false', weight: 0.145696} },
+{ data: { source: 'TTC8', target: 'BBS4', directed: 'false', weight: 0.08840419999999999} },
+{ data: { source: 'BBS5', target: 'BBS1', directed: 'false', weight: 0.9968879999999999} },
+{ data: { source: 'BBS5', target: 'B1', directed: 'false', weight: 0.9964700000000001} },
+{ data: { source: 'BBS5', target: 'BBS4', directed: 'false', weight: 0.995174} },
+{ data: { source: 'BBS5', target: 'LZTFL1', directed: 'false', weight: 0.036402699999999996} },
+{ data: { source: 'BBS4', target: 'BBS1', directed: 'false', weight: 0.979126} },
+{ data: { source: 'BBS4', target: 'B1', directed: 'false', weight: 0.0387078} },
+{ data: { source: 'BBS4', target: 'LZTFL1', directed: 'false', weight: 0.180568} },
+{ data: { source: 'BBS1', target: 'B1', directed: 'false', weight: 0.991941} },
+{ data: { source: 'B1', target: 'LZTFL1', directed: 'false', weight: 0.0450978} }]},
 
 style: [
     {
@@ -108,7 +116,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 Histone-2-Histone-4-ASF1-MCM2 complex<br> Complex Score = 0.39375<br> Unweighted Density = 0.81
+    0.6 BBSome<br> Complex Score = 0.39400<br> Unweighted Density = 0.86
     </section>
     </body>
     </html>

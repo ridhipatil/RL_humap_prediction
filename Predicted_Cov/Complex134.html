@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> CALB2 SLC12A5 NCALD CAMKV DGUOK EDIL3 NUFIP1</title>
+<title> 0.2 CDC5L core complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,28 +30,21 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'NUFIP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UHK0" }},
-{data: { id: 'CALB2', score: 4, type: '', href: "https://www.uniprot.org/uniprot/P22676" }},
-{data: { id: 'NCALD', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P61601" }},
-{data: { id: 'CAMKV', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NCB2" }},
-{data: { id: 'SLC12A5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H2X9" }},
-{data: { id: 'DGUOK', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16854" }},
-{data: { id: 'EDIL3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43854" }}], 
- edges: [{ data: { source: 'NUFIP1', target: 'NCALD', directed: 'false', weight: 0.51883} },
-{ data: { source: 'NUFIP1', target: 'CAMKV', directed: 'false', weight: 0.336572} },
-{ data: { source: 'NUFIP1', target: 'CALB2', directed: 'false', weight: 0.31650500000000004} },
-{ data: { source: 'NUFIP1', target: 'EDIL3', directed: 'false', weight: 0.136991} },
-{ data: { source: 'CALB2', target: 'DGUOK', directed: 'false', weight: 0.198416} },
-{ data: { source: 'CALB2', target: 'NCALD', directed: 'false', weight: 0.6375390000000001} },
-{ data: { source: 'CALB2', target: 'CAMKV', directed: 'false', weight: 0.6375390000000001} },
-{ data: { source: 'CALB2', target: 'EDIL3', directed: 'false', weight: 0.390018} },
-{ data: { source: 'NCALD', target: 'DGUOK', directed: 'false', weight: 0.341652} },
-{ data: { source: 'NCALD', target: 'CAMKV', directed: 'false', weight: 0.837815} },
-{ data: { source: 'NCALD', target: 'EDIL3', directed: 'false', weight: 0.345713} },
-{ data: { source: 'CAMKV', target: 'DGUOK', directed: 'false', weight: 0.402617} },
-{ data: { source: 'CAMKV', target: 'EDIL3', directed: 'false', weight: 0.345713} },
-{ data: { source: 'SLC12A5', target: 'DGUOK', directed: 'false', weight: 0.367581} },
-{ data: { source: 'DGUOK', target: 'EDIL3', directed: 'false', weight: 0.171543} }]},
+elements:{nodes: [{data: { id: 'CDC5L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99459" }},
+{data: { id: 'HEL-S-72p', score: 3, type: '', href: "https://www.uniprot.org/uniprot/V9HW22" }},
+{data: { id: 'YJU2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BW85" }},
+{data: { id: 'PRPF19', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UMS4" }},
+{data: { id: 'SETMAR', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q53H47" }},
+{data: { id: 'SFPQ', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P23246" }}], 
+ edges: [{ data: { source: 'CDC5L', target: 'PRPF19', directed: 'false', weight: 1.0} },
+{ data: { source: 'CDC5L', target: 'YJU2', directed: 'false', weight: 0.9977280000000001} },
+{ data: { source: 'CDC5L', target: 'HEL-S-72p', directed: 'false', weight: 0.9811209999999999} },
+{ data: { source: 'CDC5L', target: 'SFPQ', directed: 'false', weight: 0.386941} },
+{ data: { source: 'HEL-S-72p', target: 'PRPF19', directed: 'false', weight: 0.614306} },
+{ data: { source: 'HEL-S-72p', target: 'SFPQ', directed: 'false', weight: 0.987557} },
+{ data: { source: 'YJU2', target: 'PRPF19', directed: 'false', weight: 0.993423} },
+{ data: { source: 'YJU2', target: 'SETMAR', directed: 'false', weight: 0.9978360000000001} },
+{ data: { source: 'SFPQ', target: 'PRPF19', directed: 'false', weight: 0.9875379999999999} }]},
 
 style: [
     {
@@ -111,7 +104,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    CALB2 SLC12A5 NCALD CAMKV DGUOK EDIL3 NUFIP1<br> Complex Score = 0.39375<br> Unweighted Density = 0.71
+    0.2 CDC5L core complex<br> Complex Score = 0.38800<br> Unweighted Density = 0.60
     </section>
     </body>
     </html>

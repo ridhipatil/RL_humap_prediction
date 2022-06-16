@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> DPP8 WDR4 METTL1 PLS3 AMPD2</title>
+<title> 0.5 NELF complex (Negative elongation factor complex)</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,15 +30,16 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'DPP8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6V1X1" }},
-{data: { id: 'WDR4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P57081" }},
-{data: { id: 'METTL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UBP6" }},
-{data: { id: 'AMPD2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q01433" }},
-{data: { id: 'PLS3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P13797" }}], 
- edges: [{ data: { source: 'DPP8', target: 'WDR4', directed: 'false', weight: 0.86593} },
-{ data: { source: 'WDR4', target: 'METTL1', directed: 'false', weight: 0.727337} },
-{ data: { source: 'WDR4', target: 'PLS3', directed: 'false', weight: 0.585997} },
-{ data: { source: 'METTL1', target: 'AMPD2', directed: 'false', weight: 0.6808069999999999} }]},
+elements:{nodes: [{data: { id: 'NELFA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H3P2" }},
+{data: { id: 'NELFB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WX92" }},
+{data: { id: 'NELFE', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P18615" }},
+{data: { id: 'ANK1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P16157" }},
+{data: { id: 'DKFZp667A016', score: 1, type: '', href: "https://www.uniprot.org/uniprot/Q5JPD2" }}], 
+ edges: [{ data: { source: 'NELFA', target: 'NELFB', directed: 'false', weight: 0.9944049999999999} },
+{ data: { source: 'NELFA', target: 'NELFE', directed: 'false', weight: 0.9999979999999999} },
+{ data: { source: 'NELFB', target: 'NELFE', directed: 'false', weight: 1.0} },
+{ data: { source: 'NELFB', target: 'ANK1', directed: 'false', weight: 0.127378} },
+{ data: { source: 'ANK1', target: 'DKFZp667A016', directed: 'false', weight: 0.25404699999999997} }]},
 
 style: [
     {
@@ -98,7 +99,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    DPP8 WDR4 METTL1 PLS3 AMPD2<br> Complex Score = 0.35000<br> Unweighted Density = 0.40
+    0.5 NELF complex (Negative elongation factor complex)<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

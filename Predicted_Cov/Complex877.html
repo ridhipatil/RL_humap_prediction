@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 DISC complex (FAS, FADD, CASP8)</title>
+<title> SARS1 HEL-S-47e HEL-S-303 UCHL3</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,16 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'PAFAH1B3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15102" }},
-{data: { id: 'FADD', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13158" }},
-{data: { id: 'IL37', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NZH6" }},
-{data: { id: 'PAFAH1B1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P43034" }},
-{data: { id: 'PAFAH1B2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P68402" }}], 
- edges: [{ data: { source: 'FADD', target: 'PAFAH1B2', directed: 'false', weight: 0.407102} },
-{ data: { source: 'FADD', target: 'IL37', directed: 'false', weight: 0.831765} },
-{ data: { source: 'PAFAH1B1', target: 'PAFAH1B3', directed: 'false', weight: 0.9770280000000001} },
-{ data: { source: 'PAFAH1B1', target: 'PAFAH1B2', directed: 'false', weight: 0.6186119999999999} },
-{ data: { source: 'PAFAH1B3', target: 'PAFAH1B2', directed: 'false', weight: 0.999592} }]},
+elements:{nodes: [{data: { id: 'UCHL3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P15374" }},
+{data: { id: 'HEL-S-303', score: 3, type: '', href: "https://www.uniprot.org/uniprot/V9HW44" }},
+{data: { id: 'SARS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49591" }},
+{data: { id: 'HEL-S-47e', score: 2, type: '', href: "https://www.uniprot.org/uniprot/V9HWE8" }}], 
+ edges: [{ data: { source: 'UCHL3', target: 'HEL-S-47e', directed: 'false', weight: 0.78859} },
+{ data: { source: 'HEL-S-303', target: 'HEL-S-47e', directed: 'false', weight: 0.397406} },
+{ data: { source: 'HEL-S-303', target: 'SARS1', directed: 'false', weight: 0.189957} }]},
 
 style: [
     {
@@ -99,7 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 DISC complex (FAS, FADD, CASP8)<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    SARS1 HEL-S-47e HEL-S-303 UCHL3<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

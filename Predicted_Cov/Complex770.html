@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 Nav1.2-beta2 complex match 3</title>
+<title> 0.2 PNUTS-PP1 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,19 +30,14 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'NKRF', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15226" }},
-{data: { id: 'FOCAD', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q5VW36" }},
-{data: { id: 'MRTO4', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9UKD2" }},
-{data: { id: 'SLC25A51', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9H1U9" }},
-{data: { id: 'SCN2B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60939" }},
-{data: { id: 'PWP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13610" }}], 
- edges: [{ data: { source: 'NKRF', target: 'MRTO4', directed: 'false', weight: 0.728955} },
-{ data: { source: 'NKRF', target: 'PWP1', directed: 'false', weight: 0.888558} },
-{ data: { source: 'NKRF', target: 'FOCAD', directed: 'false', weight: 0.194323} },
-{ data: { source: 'FOCAD', target: 'MRTO4', directed: 'false', weight: 0.44872399999999996} },
-{ data: { source: 'FOCAD', target: 'SCN2B', directed: 'false', weight: 0.8563120000000001} },
-{ data: { source: 'MRTO4', target: 'PWP1', directed: 'false', weight: 0.999768} },
-{ data: { source: 'SCN2B', target: 'SLC25A51', directed: 'false', weight: 0.44555100000000003} }]},
+elements:{nodes: [{data: { id: 'TANC2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HCD6" }},
+{data: { id: 'PPP1CA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62136" }},
+{data: { id: 'SH2D4A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H788" }},
+{data: { id: 'HEL-S-80p', score: 4, type: '', href: "https://www.uniprot.org/uniprot/V9HW04" }}], 
+ edges: [{ data: { source: 'TANC2', target: 'PPP1CA', directed: 'false', weight: 0.692761} },
+{ data: { source: 'PPP1CA', target: 'HEL-S-80p', directed: 'false', weight: 1.0} },
+{ data: { source: 'PPP1CA', target: 'SH2D4A', directed: 'false', weight: 0.0530516} },
+{ data: { source: 'HEL-S-80p', target: 'SH2D4A', directed: 'false', weight: 0.8908159999999999} }]},
 
 style: [
     {
@@ -102,7 +97,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 Nav1.2-beta2 complex match 3<br> Complex Score = 0.37500<br> Unweighted Density = 0.47
+    0.2 PNUTS-PP1 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
     </section>
     </body>
     </html>

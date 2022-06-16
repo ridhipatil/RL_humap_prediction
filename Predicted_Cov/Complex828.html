@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 TIMM8A-TIMM13 complex</title>
+<title> 0.2 BORC complex match 2</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,18 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'PDYN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P01213" }},
-{data: { id: 'TLN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y490" }},
-{data: { id: 'EIF4EBP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13542" }},
-{data: { id: 'TIMM13', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y5L4" }},
-{data: { id: 'SARS-CoV2 orf10', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 orf10.html" }},
-{data: { id: 'TIMM8B', score: 4, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9Y5J9" }}], 
- edges: [{ data: { source: 'SARS-CoV2 orf10', target: 'TIMM8B', directed: 'false', weight: 0.752997484, type: 'sars'} },
-{ data: { source: 'TIMM13', target: 'TIMM8B', directed: 'false', weight: 0.9992} },
-{ data: { source: 'TIMM13', target: 'TLN1', directed: 'false', weight: 0.597221} },
-{ data: { source: 'TIMM13', target: 'PDYN', directed: 'false', weight: 0.465238} },
-{ data: { source: 'PDYN', target: 'TIMM8B', directed: 'false', weight: 0.700897} },
-{ data: { source: 'TIMM8B', target: 'EIF4EBP2', directed: 'false', weight: 0.341254} }]},
+elements:{nodes: [{data: { id: 'ODF2L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9ULJ1" }},
+{data: { id: 'BORCS6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96GS4" }},
+{data: { id: 'UACA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BZF9" }},
+{data: { id: 'BORCS8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96FH0" }}], 
+ edges: [{ data: { source: 'ODF2L', target: 'BORCS6', directed: 'false', weight: 0.949259} },
+{ data: { source: 'BORCS6', target: 'BORCS8', directed: 'false', weight: 0.949773} },
+{ data: { source: 'BORCS6', target: 'UACA', directed: 'false', weight: 0.5924189999999999} }]},
 
 style: [
     {
@@ -101,12 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 TIMM8A-TIMM13 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>TIMM8B
+    0.2 BORC complex match 2<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

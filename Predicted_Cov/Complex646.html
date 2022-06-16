@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> UQCC1 C16orf91 UQCC2 COX20</title>
+<title> 0.2 SNARE complex (VAMP4, STX6, STX16, VTI1a, VTI1b)</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,29 +30,37 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'C16orf91', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q4G0I0" }},
-{data: { id: 'UQCC2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BRT2" }},
-{data: { id: 'UQCC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NVA1" }},
-{data: { id: 'COX20', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5RI15" }}], 
- edges: [{ data: { source: 'C16orf91', target: 'COX20', directed: 'false', weight: 0.9096479999999999} },
-{ data: { source: 'C16orf91', target: 'UQCC2', directed: 'false', weight: 0.140692} },
-{ data: { source: 'C16orf91', target: 'UQCC1', directed: 'false', weight: 0.12378900000000001} },
-{ data: { source: 'UQCC2', target: 'COX20', directed: 'false', weight: 0.415545} },
-{ data: { source: 'UQCC2', target: 'UQCC1', directed: 'false', weight: 0.184918} },
-{ data: { source: 'UQCC1', target: 'COX20', directed: 'false', weight: 0.635393} }]},
+elements:{nodes: [{data: { id: 'STX7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15400" }},
+{data: { id: 'ZKSCAN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P17029" }},
+{data: { id: 'VTI1B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UEU0" }},
+{data: { id: 'STX12', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86Y82" }},
+{data: { id: 'STX10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60499" }},
+{data: { id: 'STX6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43752" }}], 
+ edges: [{ data: { source: 'ZKSCAN1', target: 'STX7', directed: 'false', weight: 0.0633797} },
+{ data: { source: 'ZKSCAN1', target: 'STX12', directed: 'false', weight: 0.276466} },
+{ data: { source: 'STX7', target: 'STX10', directed: 'false', weight: 0.376747} },
+{ data: { source: 'STX7', target: 'STX6', directed: 'false', weight: 0.24652} },
+{ data: { source: 'STX7', target: 'VTI1B', directed: 'false', weight: 0.08371519999999999} },
+{ data: { source: 'VTI1B', target: 'STX12', directed: 'false', weight: 0.123649} },
+{ data: { source: 'VTI1B', target: 'STX6', directed: 'false', weight: 0.0254897} },
+{ data: { source: 'STX12', target: 'STX10', directed: 'false', weight: 0.8936790000000001} },
+{ data: { source: 'STX12', target: 'STX6', directed: 'false', weight: 0.34197} },
+{ data: { source: 'STX10', target: 'STX6', directed: 'false', weight: 0.51964} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 30,
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}  
                                  if ( ele.data('type') == 'sars' ){return 'triangle'}   
   return 'rectangle';
   },            
-            'background-color': function( ele ){ 
+             'background-color': function( ele ){ 
                                 if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
 								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
                                  if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
@@ -66,7 +74,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
 								'line-color': function( ele ){ 
                                  if ( ele.data('type') == 'sars' ){return 'red'}   
   return 'blue';
@@ -78,7 +86,10 @@ style: [
 
 });
 cy.layout({
-    'name': 'circle'
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -94,7 +105,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    UQCC1 C16orf91 UQCC2 COX20<br> Complex Score = 0.38750<br> Unweighted Density = 1.00
+    0.2 SNARE complex (VAMP4, STX6, STX16, VTI1a, VTI1b)<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
     </section>
     </body>
     </html>

@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 F1F0-ATP synthase, mitochondrial match 4</title>
+<title> 0.3 tRNA Splicing Ligase Complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,16 +30,15 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'ATP5F1A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P25705" }},
-{data: { id: 'ATP5F1E', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P56381" }},
-{data: { id: 'GJB2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P29033" }},
-{data: { id: 'ATP5PD', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75947" }},
-{data: { id: 'ACKR3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P25106" }}], 
- edges: [{ data: { source: 'GJB2', target: 'ACKR3', directed: 'false', weight: 0.666954} },
-{ data: { source: 'ACKR3', target: 'ATP5F1E', directed: 'false', weight: 0.32400300000000004} },
-{ data: { source: 'ATP5F1A', target: 'ATP5PD', directed: 'false', weight: 0.99976} },
-{ data: { source: 'ATP5F1A', target: 'ATP5F1E', directed: 'false', weight: 0.857952} },
-{ data: { source: 'ATP5F1E', target: 'ATP5PD', directed: 'false', weight: 0.118528} }]},
+elements:{nodes: [{data: { id: 'DDX1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92499" }},
+{data: { id: 'SARS-CoV2 N', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 N.html" }},
+{data: { id: 'DDX21', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9NR30" }},
+{data: { id: 'RTCB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y3I0" }},
+{data: { id: 'SF3B1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75533" }}], 
+ edges: [{ data: { source: 'SARS-CoV2 N', target: 'DDX21', directed: 'false', weight: 0.613544528, type: 'sars'} },
+{ data: { source: 'DDX21', target: 'SF3B1', directed: 'false', weight: 0.748633} },
+{ data: { source: 'SF3B1', target: 'DDX1', directed: 'false', weight: 0.589577} },
+{ data: { source: 'RTCB', target: 'DDX1', directed: 'false', weight: 0.999908} }]},
 
 style: [
     {
@@ -99,7 +98,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 F1F0-ATP synthase, mitochondrial match 4<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.3 tRNA Splicing Ligase Complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>DDX21
     </section>
     </body>
     </html>

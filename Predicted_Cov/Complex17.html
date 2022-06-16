@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 Nup 107-160 subcomplex</title>
+<title> 0.1 39S ribosomal subunit, mitochondrial match 3</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,27 +30,59 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'NUP133', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WUM0" }},
-{data: { id: 'NUP43', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NFH3" }},
-{data: { id: 'SARS-CoV2 nsp9', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp9.html" }},
-{data: { id: 'NUP214', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P35658" }},
-{data: { id: 'NUP42', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15504" }},
-{data: { id: 'NUP205', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92621" }},
-{data: { id: 'NUP188', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5SRE5" }}], 
- edges: [{ data: { source: 'SARS-CoV2 nsp9', target: 'NUP214', directed: 'false', weight: 0.962233264, type: 'sars'} },
-{ data: { source: 'NUP43', target: 'NUP133', directed: 'false', weight: 0.9999889999999999} },
-{ data: { source: 'NUP43', target: 'NUP205', directed: 'false', weight: 0.920406} },
-{ data: { source: 'NUP43', target: 'NUP188', directed: 'false', weight: 0.586757} },
-{ data: { source: 'NUP43', target: 'NUP42', directed: 'false', weight: 0.353402} },
-{ data: { source: 'NUP188', target: 'NUP133', directed: 'false', weight: 0.313316} },
-{ data: { source: 'NUP188', target: 'NUP214', directed: 'false', weight: 0.6112989999999999} },
-{ data: { source: 'NUP188', target: 'NUP205', directed: 'false', weight: 0.9793129999999999} },
-{ data: { source: 'NUP188', target: 'NUP42', directed: 'false', weight: 0.301227} },
-{ data: { source: 'NUP133', target: 'NUP205', directed: 'false', weight: 0.660604} },
-{ data: { source: 'NUP133', target: 'NUP42', directed: 'false', weight: 0.282964} },
-{ data: { source: 'NUP214', target: 'NUP205', directed: 'false', weight: 0.946535} },
-{ data: { source: 'NUP214', target: 'NUP42', directed: 'false', weight: 0.386706} },
-{ data: { source: 'NUP42', target: 'NUP205', directed: 'false', weight: 0.48273299999999997} }]},
+elements:{nodes: [{data: { id: 'MRPL1', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9BYD6" }},
+{data: { id: 'MRPL17', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NRX2" }},
+{data: { id: 'MRPS30', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9NP92" }},
+{data: { id: 'GADD45GIP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TAE8" }},
+{data: { id: 'MRP63', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9BQC6" }},
+{data: { id: 'MRPL47', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9HD33" }},
+{data: { id: 'MRPL39', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NYK5" }},
+{data: { id: 'MRPL27', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IXM3" }},
+{data: { id: 'MRPL37', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9BZE1" }},
+{data: { id: 'MRPL13', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BYD1" }}], 
+ edges: [{ data: { source: 'MRPL1', target: 'MRPS30', directed: 'false', weight: 0.998707} },
+{ data: { source: 'MRPL1', target: 'MRPL13', directed: 'false', weight: 0.996951} },
+{ data: { source: 'MRPL1', target: 'MRPL47', directed: 'false', weight: 0.9997219999999999} },
+{ data: { source: 'MRPL1', target: 'MRPL37', directed: 'false', weight: 0.9968370000000001} },
+{ data: { source: 'MRPL1', target: 'MRPL39', directed: 'false', weight: 1.0} },
+{ data: { source: 'MRPL1', target: 'MRPL17', directed: 'false', weight: 0.9504889999999999} },
+{ data: { source: 'MRPL1', target: 'GADD45GIP1', directed: 'false', weight: 0.941377} },
+{ data: { source: 'MRPL1', target: 'MRP63', directed: 'false', weight: 0.42710600000000004} },
+{ data: { source: 'MRPL1', target: 'MRPL27', directed: 'false', weight: 0.05614349999999999} },
+{ data: { source: 'MRPL17', target: 'MRPS30', directed: 'false', weight: 0.995175} },
+{ data: { source: 'MRPL17', target: 'MRPL13', directed: 'false', weight: 0.07690110000000001} },
+{ data: { source: 'MRPL17', target: 'MRPL47', directed: 'false', weight: 0.9999969999999999} },
+{ data: { source: 'MRPL17', target: 'MRPL37', directed: 'false', weight: 0.996713} },
+{ data: { source: 'MRPL17', target: 'MRPL39', directed: 'false', weight: 0.9998469999999999} },
+{ data: { source: 'MRPL17', target: 'GADD45GIP1', directed: 'false', weight: 0.033106000000000003} },
+{ data: { source: 'MRPL17', target: 'MRP63', directed: 'false', weight: 0.024168799999999997} },
+{ data: { source: 'MRPL17', target: 'MRPL27', directed: 'false', weight: 0.024046400000000002} },
+{ data: { source: 'MRPS30', target: 'MRPL27', directed: 'false', weight: 0.998922} },
+{ data: { source: 'MRPS30', target: 'MRPL47', directed: 'false', weight: 0.9986229999999999} },
+{ data: { source: 'MRPS30', target: 'MRPL13', directed: 'false', weight: 0.9985299999999999} },
+{ data: { source: 'MRPS30', target: 'GADD45GIP1', directed: 'false', weight: 0.992524} },
+{ data: { source: 'MRPS30', target: 'MRPL39', directed: 'false', weight: 0.971023} },
+{ data: { source: 'MRPS30', target: 'MRP63', directed: 'false', weight: 0.939658} },
+{ data: { source: 'MRPS30', target: 'MRPL37', directed: 'false', weight: 0.8488530000000001} },
+{ data: { source: 'GADD45GIP1', target: 'MRPL13', directed: 'false', weight: 0.0880091} },
+{ data: { source: 'GADD45GIP1', target: 'MRPL47', directed: 'false', weight: 0.999216} },
+{ data: { source: 'GADD45GIP1', target: 'MRPL37', directed: 'false', weight: 0.298535} },
+{ data: { source: 'GADD45GIP1', target: 'MRPL39', directed: 'false', weight: 0.0303012} },
+{ data: { source: 'GADD45GIP1', target: 'MRPL27', directed: 'false', weight: 0.0312913} },
+{ data: { source: 'MRP63', target: 'MRPL47', directed: 'false', weight: 0.782088} },
+{ data: { source: 'MRP63', target: 'MRPL37', directed: 'false', weight: 0.0291931} },
+{ data: { source: 'MRP63', target: 'MRPL39', directed: 'false', weight: 0.66499} },
+{ data: { source: 'MRP63', target: 'MRPL27', directed: 'false', weight: 0.0232803} },
+{ data: { source: 'MRPL47', target: 'MRPL13', directed: 'false', weight: 1.0} },
+{ data: { source: 'MRPL47', target: 'MRPL39', directed: 'false', weight: 0.999907} },
+{ data: { source: 'MRPL47', target: 'MRPL37', directed: 'false', weight: 0.9983870000000001} },
+{ data: { source: 'MRPL47', target: 'MRPL27', directed: 'false', weight: 0.9967870000000001} },
+{ data: { source: 'MRPL39', target: 'MRPL13', directed: 'false', weight: 0.9999969999999999} },
+{ data: { source: 'MRPL39', target: 'MRPL37', directed: 'false', weight: 0.9996780000000001} },
+{ data: { source: 'MRPL39', target: 'MRPL27', directed: 'false', weight: 0.938283} },
+{ data: { source: 'MRPL27', target: 'MRPL13', directed: 'false', weight: 0.0524134} },
+{ data: { source: 'MRPL27', target: 'MRPL37', directed: 'false', weight: 0.109471} },
+{ data: { source: 'MRPL37', target: 'MRPL13', directed: 'false', weight: 0.955467} }]},
 
 style: [
     {
@@ -105,12 +137,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 Nup 107-160 subcomplex<br> Complex Score = 0.39688<br> Unweighted Density = 0.87
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>NUP214
+    0.1 39S ribosomal subunit, mitochondrial match 3<br> Complex Score = 0.39700<br> Unweighted Density = 0.96
     </section>
     </body>
     </html>

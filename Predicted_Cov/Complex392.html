@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> UTP14C FGFRL1 ATP13A2 NOB1 HS3ST3B1 DCBLD1 IL27RA HLA-DPA1 FUT4</title>
+<title> 0.2 Stargazin-Glu1-mu2 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,38 +30,15 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'DCBLD1', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q8N8Z6" }},
-{data: { id: 'ATP13A2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NQ11" }},
-{data: { id: 'UTP14C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5TAP6" }},
-{data: { id: 'FUT4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P22083" }},
-{data: { id: 'IL27RA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6UWB1" }},
-{data: { id: 'HS3ST3B1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y662" }},
-{data: { id: 'NOB1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9ULX3" }},
-{data: { id: 'HLA-DPA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P20036" }},
-{data: { id: 'FGFRL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N441" }}], 
- edges: [{ data: { source: 'DCBLD1', target: 'HLA-DPA1', directed: 'false', weight: 0.8911190000000001} },
-{ data: { source: 'DCBLD1', target: 'HS3ST3B1', directed: 'false', weight: 0.171414} },
-{ data: { source: 'DCBLD1', target: 'IL27RA', directed: 'false', weight: 0.171414} },
-{ data: { source: 'DCBLD1', target: 'FGFRL1', directed: 'false', weight: 0.171414} },
-{ data: { source: 'DCBLD1', target: 'FUT4', directed: 'false', weight: 0.171414} },
-{ data: { source: 'DCBLD1', target: 'ATP13A2', directed: 'false', weight: 0.12378900000000001} },
-{ data: { source: 'ATP13A2', target: 'HLA-DPA1', directed: 'false', weight: 0.5359079999999999} },
-{ data: { source: 'ATP13A2', target: 'HS3ST3B1', directed: 'false', weight: 0.12378900000000001} },
-{ data: { source: 'ATP13A2', target: 'FUT4', directed: 'false', weight: 0.12378900000000001} },
-{ data: { source: 'ATP13A2', target: 'FGFRL1', directed: 'false', weight: 0.12378900000000001} },
-{ data: { source: 'ATP13A2', target: 'IL27RA', directed: 'false', weight: 0.12378900000000001} },
-{ data: { source: 'UTP14C', target: 'NOB1', directed: 'false', weight: 0.128057} },
-{ data: { source: 'FUT4', target: 'HLA-DPA1', directed: 'false', weight: 0.8725629999999999} },
-{ data: { source: 'FUT4', target: 'HS3ST3B1', directed: 'false', weight: 0.171414} },
-{ data: { source: 'FUT4', target: 'IL27RA', directed: 'false', weight: 0.171414} },
-{ data: { source: 'FUT4', target: 'FGFRL1', directed: 'false', weight: 0.171414} },
-{ data: { source: 'IL27RA', target: 'HLA-DPA1', directed: 'false', weight: 0.49271800000000004} },
-{ data: { source: 'IL27RA', target: 'HS3ST3B1', directed: 'false', weight: 0.171414} },
-{ data: { source: 'IL27RA', target: 'FGFRL1', directed: 'false', weight: 0.171414} },
-{ data: { source: 'HS3ST3B1', target: 'HLA-DPA1', directed: 'false', weight: 0.907113} },
-{ data: { source: 'HS3ST3B1', target: 'FGFRL1', directed: 'false', weight: 0.171414} },
-{ data: { source: 'NOB1', target: 'HLA-DPA1', directed: 'false', weight: 0.547085} },
-{ data: { source: 'HLA-DPA1', target: 'FGFRL1', directed: 'false', weight: 0.747196} }]},
+elements:{nodes: [{data: { id: 'SARS-CoV2 nsp10', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp10.html" }},
+{data: { id: 'AP2M1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q96CW1" }},
+{data: { id: 'AP1S3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96PC3" }},
+{data: { id: 'REXO1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N1G1" }},
+{data: { id: 'AAK1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q2M2I8" }}], 
+ edges: [{ data: { source: 'SARS-CoV2 nsp10', target: 'AP2M1', directed: 'false', weight: 0.982905884, type: 'sars'} },
+{ data: { source: 'AP2M1', target: 'AAK1', directed: 'false', weight: 1.0} },
+{ data: { source: 'AP2M1', target: 'REXO1', directed: 'false', weight: 0.449959} },
+{ data: { source: 'AP2M1', target: 'AP1S3', directed: 'false', weight: 0.281915} }]},
 
 style: [
     {
@@ -121,7 +98,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    UTP14C FGFRL1 ATP13A2 NOB1 HS3ST3B1 DCBLD1 IL27RA HLA-DPA1 FUT4<br> Complex Score = 0.38750<br> Unweighted Density = 0.64
+    0.2 Stargazin-Glu1-mu2 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>AP2M1
     </section>
     </body>
     </html>

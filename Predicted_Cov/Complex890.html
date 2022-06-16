@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 HSD17B10-TRMT10C complex</title>
+<title> 0.2 TFIIF complex (transcription factor IIF) match 2</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,16 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'GANC', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q8TET4" }},
-{data: { id: 'ARHGDIG', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99819" }},
-{data: { id: 'HSD17B10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99714" }},
-{data: { id: 'AGO1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UL18" }},
-{data: { id: 'TRMT10C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q7L0Y3" }}], 
- edges: [{ data: { source: 'GANC', target: 'TRMT10C', directed: 'false', weight: 0.100579} },
-{ data: { source: 'GANC', target: 'HSD17B10', directed: 'false', weight: 0.292933} },
-{ data: { source: 'HSD17B10', target: 'TRMT10C', directed: 'false', weight: 0.918314} },
-{ data: { source: 'HSD17B10', target: 'ARHGDIG', directed: 'false', weight: 0.7993359999999999} },
-{ data: { source: 'HSD17B10', target: 'AGO1', directed: 'false', weight: 0.781142} }]},
+elements:{nodes: [{data: { id: 'POLR3K', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y2Y1" }},
+{data: { id: 'POLR2E', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P19388" }},
+{data: { id: 'GTF2F1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P35269" }},
+{data: { id: 'POLR2H', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P52434" }}], 
+ edges: [{ data: { source: 'POLR2E', target: 'POLR2H', directed: 'false', weight: 0.999994} },
+{ data: { source: 'POLR2E', target: 'POLR3K', directed: 'false', weight: 0.29889099999999996} },
+{ data: { source: 'POLR2E', target: 'GTF2F1', directed: 'false', weight: 0.14033800000000002} }]},
 
 style: [
     {
@@ -99,7 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 HSD17B10-TRMT10C complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.2 TFIIF complex (transcription factor IIF) match 2<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

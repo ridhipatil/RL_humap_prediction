@@ -30,32 +30,21 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'CASK', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O14936" }},
-{data: { id: 'APBA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q02410" }},
-{data: { id: 'MPP6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99547" }},
-{data: { id: 'LIN7C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NUP9" }},
-{data: { id: 'MPDZ', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75970" }},
-{data: { id: 'ABLIM2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6H8Q1" }},
-{data: { id: 'MPP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14168" }}], 
- edges: [{ data: { source: 'CASK', target: 'LIN7C', directed: 'false', weight: 0.996451} },
-{ data: { source: 'CASK', target: 'MPP6', directed: 'false', weight: 0.168469} },
-{ data: { source: 'CASK', target: 'ABLIM2', directed: 'false', weight: 0.151455} },
-{ data: { source: 'CASK', target: 'MPP2', directed: 'false', weight: 0.151455} },
-{ data: { source: 'CASK', target: 'APBA1', directed: 'false', weight: 0.151455} },
-{ data: { source: 'CASK', target: 'MPDZ', directed: 'false', weight: 0.147307} },
-{ data: { source: 'APBA1', target: 'LIN7C', directed: 'false', weight: 0.966167} },
-{ data: { source: 'APBA1', target: 'MPP6', directed: 'false', weight: 0.12378900000000001} },
-{ data: { source: 'APBA1', target: 'ABLIM2', directed: 'false', weight: 0.171414} },
-{ data: { source: 'APBA1', target: 'MPP2', directed: 'false', weight: 0.171414} },
-{ data: { source: 'APBA1', target: 'MPDZ', directed: 'false', weight: 0.151455} },
-{ data: { source: 'MPP6', target: 'LIN7C', directed: 'false', weight: 0.9996860000000001} },
-{ data: { source: 'MPP6', target: 'ABLIM2', directed: 'false', weight: 0.12378900000000001} },
-{ data: { source: 'MPP6', target: 'MPP2', directed: 'false', weight: 0.12378900000000001} },
-{ data: { source: 'MPDZ', target: 'LIN7C', directed: 'false', weight: 0.832593} },
-{ data: { source: 'MPDZ', target: 'ABLIM2', directed: 'false', weight: 0.151455} },
-{ data: { source: 'LIN7C', target: 'ABLIM2', directed: 'false', weight: 0.973673} },
-{ data: { source: 'LIN7C', target: 'MPP2', directed: 'false', weight: 0.8433299999999999} },
-{ data: { source: 'ABLIM2', target: 'MPP2', directed: 'false', weight: 0.171414} }]},
+elements:{nodes: [{data: { id: 'PIGT', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q969N2" }},
+{data: { id: 'GPAA1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/O43292" }},
+{data: { id: 'PIGK', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92643" }},
+{data: { id: 'PIGU', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H490" }},
+{data: { id: 'PIGS', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q96S52" }}], 
+ edges: [{ data: { source: 'PIGT', target: 'PIGS', directed: 'false', weight: 1.0} },
+{ data: { source: 'PIGT', target: 'GPAA1', directed: 'false', weight: 0.682344} },
+{ data: { source: 'PIGT', target: 'PIGK', directed: 'false', weight: 0.544013} },
+{ data: { source: 'PIGT', target: 'PIGU', directed: 'false', weight: 0.307663} },
+{ data: { source: 'GPAA1', target: 'PIGS', directed: 'false', weight: 0.9999889999999999} },
+{ data: { source: 'GPAA1', target: 'PIGK', directed: 'false', weight: 0.312233} },
+{ data: { source: 'GPAA1', target: 'PIGU', directed: 'false', weight: 0.160031} },
+{ data: { source: 'PIGK', target: 'PIGS', directed: 'false', weight: 0.9999959999999999} },
+{ data: { source: 'PIGK', target: 'PIGU', directed: 'false', weight: 0.216112} },
+{ data: { source: 'PIGU', target: 'PIGS', directed: 'false', weight: 0.990208} }]},
 
 style: [
     {
@@ -98,7 +87,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.39688
+    Complex Score  = 0.39400
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        2 interacting protein(s): <br>GPAA1 PIGS
     </section>
     </body>
     </html>

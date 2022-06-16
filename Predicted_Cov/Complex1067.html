@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 CTNNB1-DDX5-HDGF complex match 4</title>
+<title> 0.2 CBC complex (cap binding complex)</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,18 +30,15 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'PDS5B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NTI5" }},
-{data: { id: 'RBM3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P98179" }},
-{data: { id: 'SAFB2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14151" }},
-{data: { id: 'DDX5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P17844" }},
-{data: { id: 'SAFB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15424" }},
-{data: { id: 'YLPM1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49750" }}], 
- edges: [{ data: { source: 'DDX5', target: 'SAFB', directed: 'false', weight: 0.792054} },
-{ data: { source: 'SAFB', target: 'PDS5B', directed: 'false', weight: 0.345173} },
-{ data: { source: 'SAFB', target: 'SAFB2', directed: 'false', weight: 0.9994540000000001} },
-{ data: { source: 'SAFB', target: 'RBM3', directed: 'false', weight: 0.204007} },
-{ data: { source: 'YLPM1', target: 'SAFB2', directed: 'false', weight: 0.492774} },
-{ data: { source: 'RBM3', target: 'SAFB2', directed: 'false', weight: 0.158719} }]},
+elements:{nodes: [{data: { id: 'KPNA2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P52292" }},
+{data: { id: 'NCBP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P52298" }},
+{data: { id: 'LUC7L2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y383" }},
+{data: { id: 'SARS-CoV2 E', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 E.html" }},
+{data: { id: 'ZC3H18', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q86VM9" }}], 
+ edges: [{ data: { source: 'SARS-CoV2 E', target: 'ZC3H18', directed: 'false', weight: 0.796415039, type: 'sars'} },
+{ data: { source: 'KPNA2', target: 'NCBP2', directed: 'false', weight: 0.179971} },
+{ data: { source: 'NCBP2', target: 'ZC3H18', directed: 'false', weight: 0.9290790000000001} },
+{ data: { source: 'LUC7L2', target: 'ZC3H18', directed: 'false', weight: 0.109153} }]},
 
 style: [
     {
@@ -101,7 +98,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 CTNNB1-DDX5-HDGF complex match 4<br> Complex Score = 0.35000<br> Unweighted Density = 0.40
+    0.2 CBC complex (cap binding complex)<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>ZC3H18
     </section>
     </body>
     </html>

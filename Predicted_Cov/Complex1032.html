@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> ATP1B4 TMEM8A ATP1A4 P2RY8 ATP1A2</title>
+<title> 0.3 RAD50-MRE11-NBN-p200-p350 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,15 +30,17 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'P2RY8', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q86VZ1" }},
-{data: { id: 'ATP1A4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13733" }},
-{data: { id: 'ATP1B4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UN42" }},
-{data: { id: 'TMEM8A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HCN3" }},
-{data: { id: 'ATP1A2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P50993" }}], 
- edges: [{ data: { source: 'P2RY8', target: 'ATP1A2', directed: 'false', weight: 0.9563309999999999} },
-{ data: { source: 'P2RY8', target: 'ATP1A4', directed: 'false', weight: 0.916675} },
-{ data: { source: 'ATP1A4', target: 'ATP1B4', directed: 'false', weight: 0.791518} },
-{ data: { source: 'ATP1B4', target: 'TMEM8A', directed: 'false', weight: 0.895466} }]},
+elements:{nodes: [{data: { id: 'MRE11A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49959" }},
+{data: { id: 'CPSF6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16630" }},
+{data: { id: 'FAM219A', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q8IW50" }},
+{data: { id: 'NBN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60934" }},
+{data: { id: 'RAD50', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92878" }}], 
+ edges: [{ data: { source: 'MRE11A', target: 'CPSF6', directed: 'false', weight: 0.32261100000000004} },
+{ data: { source: 'MRE11A', target: 'RAD50', directed: 'false', weight: 0.9914139999999999} },
+{ data: { source: 'MRE11A', target: 'FAM219A', directed: 'false', weight: 0.083201} },
+{ data: { source: 'FAM219A', target: 'NBN', directed: 'false', weight: 0.7804909999999999} },
+{ data: { source: 'FAM219A', target: 'RAD50', directed: 'false', weight: 0.423425} },
+{ data: { source: 'NBN', target: 'RAD50', directed: 'false', weight: 0.9988389999999999} }]},
 
 style: [
     {
@@ -98,7 +100,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    ATP1B4 TMEM8A ATP1A4 P2RY8 ATP1A2<br> Complex Score = 0.35000<br> Unweighted Density = 0.40
+    0.3 RAD50-MRE11-NBN-p200-p350 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.60
     </section>
     </body>
     </html>

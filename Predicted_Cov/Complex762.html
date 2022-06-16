@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> CALD1 FDXACB1 THUMPD1</title>
+<title> ZNF397 ZSCAN29 ZNF213 DKFZp434L2027</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,11 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'CALD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q05682" }},
-{data: { id: 'FDXACB1', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q9BRP7" }},
-{data: { id: 'THUMPD1', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9NXG2" }}], 
- edges: [{ data: { source: 'CALD1', target: 'THUMPD1', directed: 'false', weight: 0.38848499999999997} },
-{ data: { source: 'FDXACB1', target: 'THUMPD1', directed: 'false', weight: 0.975242} }]},
+elements:{nodes: [{data: { id: 'ZNF397', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NF99" }},
+{data: { id: 'DKFZp434L2027', score: 1, type: '', href: "https://www.uniprot.org/uniprot/Q9UFF2" }},
+{data: { id: 'ZSCAN29', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IWY8" }},
+{data: { id: 'ZNF213', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O14771" }}], 
+ edges: [{ data: { source: 'ZNF397', target: 'DKFZp434L2027', directed: 'false', weight: 0.72659} },
+{ data: { source: 'ZNF397', target: 'ZNF213', directed: 'false', weight: 0.11415299999999999} },
+{ data: { source: 'ZNF397', target: 'ZSCAN29', directed: 'false', weight: 0.111902} }]},
 
 style: [
     {
@@ -94,7 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    CALD1 FDXACB1 THUMPD1<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
+    ZNF397 ZSCAN29 ZNF213 DKFZp434L2027<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

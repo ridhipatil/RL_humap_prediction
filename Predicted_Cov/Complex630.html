@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 Ubiquitin E3 ligase (SMAD7, SMURF2)</title>
+<title> 0.2 Toposome</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,38 +30,16 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'LDLRAD4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15165" }},
-{data: { id: 'REEP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H902" }},
-{data: { id: 'PEX11B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O96011" }},
-{data: { id: 'USP24', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UPU5" }},
-{data: { id: 'SMURF2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HAU4" }},
-{data: { id: 'STXBP4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6ZWJ1" }},
-{data: { id: 'WWC2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6AWC2" }},
-{data: { id: 'SARS-CoV2 orf9c', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 orf9c.html" }},
-{data: { id: 'DPY19L1', score: 3, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q2PZI1" }},
-{data: { id: 'RBCK1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BYM8" }}], 
- edges: [{ data: { source: 'SARS-CoV2 orf9c', target: 'DPY19L1', directed: 'false', weight: 0.968853805, type: 'sars'} },
-{ data: { source: 'LDLRAD4', target: 'SMURF2', directed: 'false', weight: 0.991762} },
-{ data: { source: 'LDLRAD4', target: 'WWC2', directed: 'false', weight: 0.974289} },
-{ data: { source: 'LDLRAD4', target: 'DPY19L1', directed: 'false', weight: 0.9104049999999999} },
-{ data: { source: 'LDLRAD4', target: 'STXBP4', directed: 'false', weight: 0.8342} },
-{ data: { source: 'LDLRAD4', target: 'RBCK1', directed: 'false', weight: 0.727386} },
-{ data: { source: 'SMURF2', target: 'WWC2', directed: 'false', weight: 0.171414} },
-{ data: { source: 'SMURF2', target: 'RBCK1', directed: 'false', weight: 0.151455} },
-{ data: { source: 'SMURF2', target: 'DPY19L1', directed: 'false', weight: 0.140692} },
-{ data: { source: 'SMURF2', target: 'STXBP4', directed: 'false', weight: 0.11730499999999999} },
-{ data: { source: 'PEX11B', target: 'REEP1', directed: 'false', weight: 0.151455} },
-{ data: { source: 'PEX11B', target: 'DPY19L1', directed: 'false', weight: 0.123797} },
-{ data: { source: 'PEX11B', target: 'USP24', directed: 'false', weight: 0.123797} },
-{ data: { source: 'USP24', target: 'REEP1', directed: 'false', weight: 0.140692} },
-{ data: { source: 'USP24', target: 'DPY19L1', directed: 'false', weight: 0.114755} },
-{ data: { source: 'REEP1', target: 'DPY19L1', directed: 'false', weight: 0.140692} },
-{ data: { source: 'STXBP4', target: 'WWC2', directed: 'false', weight: 0.11730499999999999} },
-{ data: { source: 'STXBP4', target: 'DPY19L1', directed: 'false', weight: 0.0952688} },
-{ data: { source: 'STXBP4', target: 'RBCK1', directed: 'false', weight: 0.102922} },
-{ data: { source: 'WWC2', target: 'RBCK1', directed: 'false', weight: 0.151455} },
-{ data: { source: 'WWC2', target: 'DPY19L1', directed: 'false', weight: 0.140692} },
-{ data: { source: 'DPY19L1', target: 'RBCK1', directed: 'false', weight: 0.123797} }]},
+elements:{nodes: [{data: { id: 'C1orf33', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9UKD2" }},
+{data: { id: 'SARS-CoV2 N', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 N.html" }},
+{data: { id: 'DDX21', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9NR30" }},
+{data: { id: 'PRPF8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6P2Q9" }},
+{data: { id: 'NOP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P46087" }}], 
+ edges: [{ data: { source: 'SARS-CoV2 N', target: 'DDX21', directed: 'false', weight: 0.613544528, type: 'sars'} },
+{ data: { source: 'C1orf33', target: 'PRPF8', directed: 'false', weight: 0.10691099999999999} },
+{ data: { source: 'C1orf33', target: 'NOP2', directed: 'false', weight: 0.999216} },
+{ data: { source: 'DDX21', target: 'PRPF8', directed: 'false', weight: 0.0321592} },
+{ data: { source: 'DDX21', target: 'NOP2', directed: 'false', weight: 0.396403} }]},
 
 style: [
     {
@@ -121,12 +99,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 Ubiquitin E3 ligase (SMAD7, SMURF2)<br> Complex Score = 0.38750<br> Unweighted Density = 0.58
+    0.2 Toposome<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
         <br> 
         <br>
         Connection to SARS-COV2: 
         <br>
-        1 interacting protein(s): <br>DPY19L1
+        1 interacting protein(s): <br>DDX21
     </section>
     </body>
     </html>

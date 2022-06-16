@@ -30,24 +30,18 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'PPM1A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P35813" }},
-{data: { id: 'CIR1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86X95" }},
-{data: { id: 'FANCI', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NVI1" }},
-{data: { id: 'NAA10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P41227" }},
-{data: { id: 'FAAP20', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6NZ36" }}], 
- edges: [{ data: { source: 'PPM1A', target: 'NAA10', directed: 'false', weight: 0.763983} },
-{ data: { source: 'CIR1', target: 'FANCI', directed: 'false', weight: 0.5416569999999999} },
-{ data: { source: 'CIR1', target: 'FAAP20', directed: 'false', weight: 0.0974347} },
-{ data: { source: 'FANCI', target: 'FAAP20', directed: 'false', weight: 0.578259} },
-{ data: { source: 'NAA10', target: 'FAAP20', directed: 'false', weight: 0.521573} }]},
+elements:{nodes: [{data: { id: 'BMPER', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N8U9" }},
+{data: { id: 'DEFA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P59665" }},
+{data: { id: 'IGFBP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P18065" }}], 
+ edges: [{ data: { source: 'BMPER', target: 'DEFA1', directed: 'false', weight: 0.178333} },
+{ data: { source: 'DEFA1', target: 'DEFA1', directed: 'false', weight: 0.9906379999999999} },
+{ data: { source: 'DEFA1', target: 'IGFBP2', directed: 'false', weight: 0.22924499999999998} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 10,
-		'width':'10',
-		'height': '10',	
+		'font-size': 30,
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}                                
@@ -59,7 +53,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
 								'line-color': 'blue',
 								'opacity': 0.5
 							}
@@ -68,10 +62,7 @@ style: [
 
 });
 cy.layout({
-    'name': 'fcose',
-		'animate':false,
-	'nodeDimensionsIncludeLabels':true,
-	'nodeSeparation': 1000
+    name: 'circle'
 }).run();
 
 cy.on('tap', 'node', function(){

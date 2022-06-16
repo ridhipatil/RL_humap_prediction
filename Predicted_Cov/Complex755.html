@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 Sulphiredoxin-peroxiredoxin complex</title>
+<title> 0.1 9-1-1-LIG1 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,20 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'PRDX2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P32119" }},
-{data: { id: 'PRDX3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P30048" }},
-{data: { id: 'DAZAP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96EP5" }},
-{data: { id: 'PRDX1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q06830" }},
-{data: { id: 'DTYMK', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P23919" }},
-{data: { id: 'TTN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WZ42" }}], 
- edges: [{ data: { source: 'DTYMK', target: 'PRDX1', directed: 'false', weight: 0.48338000000000003} },
-{ data: { source: 'DTYMK', target: 'TTN', directed: 'false', weight: 0.047300199999999994} },
-{ data: { source: 'TTN', target: 'PRDX2', directed: 'false', weight: 0.585413} },
-{ data: { source: 'TTN', target: 'PRDX1', directed: 'false', weight: 0.89807} },
-{ data: { source: 'PRDX2', target: 'DAZAP1', directed: 'false', weight: 0.35665} },
-{ data: { source: 'PRDX2', target: 'PRDX1', directed: 'false', weight: 0.932924} },
-{ data: { source: 'PRDX2', target: 'PRDX3', directed: 'false', weight: 0.790762} },
-{ data: { source: 'DAZAP1', target: 'PRDX1', directed: 'false', weight: 0.815498} }]},
+elements:{nodes: [{data: { id: 'DDX39A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00148" }},
+{data: { id: 'LIG1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P18858" }},
+{data: { id: 'hCG_2005638', score: 2, type: '', href: "https://www.uniprot.org/uniprot/A0A024RCM3" }},
+{data: { id: 'LSM8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95777" }}], 
+ edges: [{ data: { source: 'DDX39A', target: 'LSM8', directed: 'false', weight: 0.20064500000000002} },
+{ data: { source: 'DDX39A', target: 'hCG_2005638', directed: 'false', weight: 0.8715229999999999} },
+{ data: { source: 'hCG_2005638', target: 'LIG1', directed: 'false', weight: 0.120958} }]},
 
 style: [
     {
@@ -103,7 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 Sulphiredoxin-peroxiredoxin complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.53
+    0.1 9-1-1-LIG1 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

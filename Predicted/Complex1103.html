@@ -30,13 +30,23 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'RTCB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y3I0" }},
-{data: { id: 'PPAN-P2RY11', score: 2, type: '', href: "https://www.uniprot.org/uniprot/A0A0B4J1V8" }},
-{data: { id: 'KLHL12', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q53G59" }},
-{data: { id: 'EWSR1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q01844" }}], 
- edges: [{ data: { source: 'KLHL12', target: 'EWSR1', directed: 'false', weight: 0.695489} },
-{ data: { source: 'EWSR1', target: 'RTCB', directed: 'false', weight: 0.866251} },
-{ data: { source: 'RTCB', target: 'PPAN-P2RY11', directed: 'false', weight: 0.0896083} }]},
+elements:{nodes: [{data: { id: 'hCG_24487', score: 2, type: '', href: "https://www.uniprot.org/uniprot/A0A024R261" }},
+{data: { id: 'RPL6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q02878" }},
+{data: { id: 'NOP53', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NZM5" }},
+{data: { id: 'RPS19', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P39019" }},
+{data: { id: 'PUM3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15397" }},
+{data: { id: 'RPL36A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P83881" }}], 
+ edges: [{ data: { source: 'hCG_24487', target: 'RPL6', directed: 'false', weight: 0.9629559999999999} },
+{ data: { source: 'hCG_24487', target: 'RPS19', directed: 'false', weight: 0.132579} },
+{ data: { source: 'hCG_24487', target: 'PUM3', directed: 'false', weight: 0.046724} },
+{ data: { source: 'hCG_24487', target: 'NOP53', directed: 'false', weight: 0.0321814} },
+{ data: { source: 'RPL6', target: 'RPS19', directed: 'false', weight: 1.0} },
+{ data: { source: 'RPL6', target: 'RPL36A', directed: 'false', weight: 0.9007799999999999} },
+{ data: { source: 'RPL6', target: 'PUM3', directed: 'false', weight: 0.11906800000000001} },
+{ data: { source: 'RPL6', target: 'NOP53', directed: 'false', weight: 0.0590815} },
+{ data: { source: 'NOP53', target: 'PUM3', directed: 'false', weight: 0.882125} },
+{ data: { source: 'NOP53', target: 'RPL36A', directed: 'false', weight: 0.0664314} },
+{ data: { source: 'PUM3', target: 'RPL36A', directed: 'false', weight: 0.0340858} }]},
 
 style: [
     {
@@ -84,7 +94,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.30000
+    Complex Score  = 0.37500
     </section>
     </body>
     </html>

@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 PLXNA4-RANBPM complex</title>
+<title> 0.1 GAIT complex match 2</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,41 +30,29 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'DPP6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P42658" }},
-{data: { id: 'LSAMP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13449" }},
-{data: { id: 'PLXNA4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HCM2" }},
-{data: { id: 'CLPB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H078" }},
-{data: { id: 'DNAAF2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NVR5" }},
-{data: { id: 'HAX1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00165" }},
-{data: { id: 'ALS2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96Q42" }}], 
- edges: [{ data: { source: 'DPP6', target: 'DNAAF2', directed: 'false', weight: 0.63341} },
-{ data: { source: 'DPP6', target: 'ALS2', directed: 'false', weight: 0.151455} },
-{ data: { source: 'DPP6', target: 'CLPB', directed: 'false', weight: 0.102922} },
-{ data: { source: 'DPP6', target: 'HAX1', directed: 'false', weight: 0.484108} },
-{ data: { source: 'DPP6', target: 'PLXNA4', directed: 'false', weight: 0.151455} },
-{ data: { source: 'DPP6', target: 'LSAMP', directed: 'false', weight: 0.151455} },
-{ data: { source: 'LSAMP', target: 'DNAAF2', directed: 'false', weight: 0.270293} },
-{ data: { source: 'LSAMP', target: 'ALS2', directed: 'false', weight: 0.171414} },
-{ data: { source: 'LSAMP', target: 'PLXNA4', directed: 'false', weight: 0.171414} },
-{ data: { source: 'PLXNA4', target: 'DNAAF2', directed: 'false', weight: 0.422605} },
-{ data: { source: 'PLXNA4', target: 'ALS2', directed: 'false', weight: 0.171414} },
-{ data: { source: 'CLPB', target: 'HAX1', directed: 'false', weight: 0.762718} },
-{ data: { source: 'DNAAF2', target: 'ALS2', directed: 'false', weight: 0.953428} }]},
+elements:{nodes: [{data: { id: 'RPL13A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P40429" }},
+{data: { id: 'PPAN-P2RY11', score: 2, type: '', href: "https://www.uniprot.org/uniprot/A0A0B4J1V8" }},
+{data: { id: 'RPL18A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q02543" }},
+{data: { id: 'RRP8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43159" }}], 
+ edges: [{ data: { source: 'RPL13A', target: 'RPL18A', directed: 'false', weight: 1.0} },
+{ data: { source: 'RPL13A', target: 'RRP8', directed: 'false', weight: 0.09091619999999999} },
+{ data: { source: 'RPL13A', target: 'PPAN-P2RY11', directed: 'false', weight: 0.0414733} },
+{ data: { source: 'PPAN-P2RY11', target: 'RPL18A', directed: 'false', weight: 0.352962} },
+{ data: { source: 'PPAN-P2RY11', target: 'RRP8', directed: 'false', weight: 0.22505100000000003} },
+{ data: { source: 'RPL18A', target: 'RRP8', directed: 'false', weight: 0.11569000000000002} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 10,
-		'width':'10',
-		'height': '10',	
+		'font-size': 30,
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}  
                                  if ( ele.data('type') == 'sars' ){return 'triangle'}   
   return 'rectangle';
   },            
-             'background-color': function( ele ){ 
+            'background-color': function( ele ){ 
                                 if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
 								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
                                  if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
@@ -78,7 +66,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
 								'line-color': function( ele ){ 
                                  if ( ele.data('type') == 'sars' ){return 'red'}   
   return 'blue';
@@ -90,10 +78,7 @@ style: [
 
 });
 cy.layout({
-    'name': 'fcose',
-		'animate':false,
-	'nodeDimensionsIncludeLabels':true,
-	'nodeSeparation': 1000
+    'name': 'circle'
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -109,7 +94,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 PLXNA4-RANBPM complex<br> Complex Score = 0.38750<br> Unweighted Density = 0.62
+    0.1 GAIT complex match 2<br> Complex Score = 0.37500<br> Unweighted Density = 1.00
     </section>
     </body>
     </html>

@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 CTLH complex</title>
+<title> 0.2 PRAME-Cullin2 ubiquitin ligase complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,18 +30,15 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'RANBP9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96P70" }},
-{data: { id: 'RMND5A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H871" }},
-{data: { id: 'GID4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IVV7" }},
-{data: { id: 'TCEAL9', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q9UHQ7" }},
-{data: { id: 'YPEL5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62699" }}], 
- edges: [{ data: { source: 'RANBP9', target: 'YPEL5', directed: 'false', weight: 0.999914} },
-{ data: { source: 'RANBP9', target: 'RMND5A', directed: 'false', weight: 0.999482} },
-{ data: { source: 'RANBP9', target: 'GID4', directed: 'false', weight: 0.9881549999999999} },
-{ data: { source: 'RMND5A', target: 'YPEL5', directed: 'false', weight: 0.9999870000000001} },
-{ data: { source: 'RMND5A', target: 'GID4', directed: 'false', weight: 0.994718} },
-{ data: { source: 'RMND5A', target: 'TCEAL9', directed: 'false', weight: 0.832142} },
-{ data: { source: 'GID4', target: 'YPEL5', directed: 'false', weight: 0.899962} }]},
+elements:{nodes: [{data: { id: 'KLHDC3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BQ90" }},
+{data: { id: 'BRAP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6UWU4" }},
+{data: { id: 'RPP25L', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q8N5L8" }},
+{data: { id: 'SARS-CoV2 orf10', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 orf10.html" }},
+{data: { id: 'CUL2', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q13617" }}], 
+ edges: [{ data: { source: 'SARS-CoV2 orf10', target: 'CUL2', directed: 'false', weight: 0.818290141, type: 'sars'} },
+{ data: { source: 'KLHDC3', target: 'RPP25L', directed: 'false', weight: 0.122555} },
+{ data: { source: 'KLHDC3', target: 'CUL2', directed: 'false', weight: 0.886225} },
+{ data: { source: 'KLHDC3', target: 'BRAP', directed: 'false', weight: 0.8313299999999999} }]},
 
 style: [
     {
@@ -101,7 +98,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 CTLH complex<br> Complex Score = 0.38750<br> Unweighted Density = 0.70
+    0.2 PRAME-Cullin2 ubiquitin ligase complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>CUL2
     </section>
     </body>
     </html>

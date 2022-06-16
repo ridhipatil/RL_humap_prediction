@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.3 GINS complex</title>
+<title> 0.2 Ubiquitin E3 ligase (DDB1, DDB2, CUL4A, CUL4B, RBX1)</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,20 +30,31 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'CLSPN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HAW4" }},
-{data: { id: 'GINS3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BRX5" }},
-{data: { id: 'TIPIN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BVW5" }},
-{data: { id: 'TIMELESS', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UNS1" }},
-{data: { id: 'GINS4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BRT9" }}], 
- edges: [{ data: { source: 'CLSPN', target: 'TIPIN', directed: 'false', weight: 0.43237} },
-{ data: { source: 'CLSPN', target: 'TIMELESS', directed: 'false', weight: 0.24882600000000002} },
-{ data: { source: 'CLSPN', target: 'GINS3', directed: 'false', weight: 0.796709} },
-{ data: { source: 'TIPIN', target: 'TIMELESS', directed: 'false', weight: 0.999973} },
-{ data: { source: 'TIPIN', target: 'GINS4', directed: 'false', weight: 0.986808} },
-{ data: { source: 'TIPIN', target: 'GINS3', directed: 'false', weight: 0.9714459999999999} },
-{ data: { source: 'TIMELESS', target: 'GINS4', directed: 'false', weight: 0.8841959999999999} },
-{ data: { source: 'TIMELESS', target: 'GINS3', directed: 'false', weight: 0.714755} },
-{ data: { source: 'GINS4', target: 'GINS3', directed: 'false', weight: 0.9985780000000001} }]},
+elements:{nodes: [{data: { id: 'COPS7B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H9Q2" }},
+{data: { id: 'DCAF11', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TEB1" }},
+{data: { id: 'COPS2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P61201" }},
+{data: { id: 'CUL4B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13620" }},
+{data: { id: 'CUL4A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13619" }},
+{data: { id: 'COPS6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q7L5N1" }},
+{data: { id: 'DCAF4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WV16" }}], 
+ edges: [{ data: { source: 'COPS7B', target: 'COPS6', directed: 'false', weight: 0.999999} },
+{ data: { source: 'COPS7B', target: 'COPS2', directed: 'false', weight: 0.999834} },
+{ data: { source: 'COPS7B', target: 'CUL4B', directed: 'false', weight: 0.0636127} },
+{ data: { source: 'COPS7B', target: 'CUL4A', directed: 'false', weight: 0.0492255} },
+{ data: { source: 'COPS7B', target: 'DCAF11', directed: 'false', weight: 0.021424099999999998} },
+{ data: { source: 'DCAF11', target: 'COPS6', directed: 'false', weight: 0.144849} },
+{ data: { source: 'DCAF11', target: 'COPS2', directed: 'false', weight: 0.0316952} },
+{ data: { source: 'DCAF11', target: 'CUL4A', directed: 'false', weight: 0.9307610000000001} },
+{ data: { source: 'DCAF11', target: 'CUL4B', directed: 'false', weight: 0.96273} },
+{ data: { source: 'COPS2', target: 'COPS6', directed: 'false', weight: 1.0} },
+{ data: { source: 'COPS2', target: 'CUL4B', directed: 'false', weight: 0.8239129999999999} },
+{ data: { source: 'COPS2', target: 'CUL4A', directed: 'false', weight: 0.281992} },
+{ data: { source: 'COPS2', target: 'DCAF4', directed: 'false', weight: 0.177979} },
+{ data: { source: 'CUL4B', target: 'COPS6', directed: 'false', weight: 0.998084} },
+{ data: { source: 'CUL4B', target: 'CUL4A', directed: 'false', weight: 0.335074} },
+{ data: { source: 'CUL4B', target: 'DCAF4', directed: 'false', weight: 0.351767} },
+{ data: { source: 'CUL4A', target: 'COPS6', directed: 'false', weight: 0.838975} },
+{ data: { source: 'CUL4A', target: 'DCAF4', directed: 'false', weight: 0.050695800000000006} }]},
 
 style: [
     {
@@ -98,7 +109,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.3 GINS complex<br> Complex Score = 0.39688<br> Unweighted Density = 0.90
+    0.2 Ubiquitin E3 ligase (DDB1, DDB2, CUL4A, CUL4B, RBX1)<br> Complex Score = 0.39400<br> Unweighted Density = 0.86
     </section>
     </body>
     </html>

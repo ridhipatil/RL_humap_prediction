@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> EFNB3 CERK TBC1D22A</title>
+<title> 0.05 28S ribosomal subunit, mitochondrial</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,11 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'TBC1D22A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WUA7" }},
-{data: { id: 'CERK', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TCT0" }},
-{data: { id: 'EFNB3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15768" }}], 
- edges: [{ data: { source: 'TBC1D22A', target: 'CERK', directed: 'false', weight: 0.990237} },
-{ data: { source: 'TBC1D22A', target: 'EFNB3', directed: 'false', weight: 0.456189} }]},
+elements:{nodes: [{data: { id: 'MTFR1L', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9H019" }},
+{data: { id: 'MRPS30', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9NP92" }},
+{data: { id: 'SLC25A10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UBX3" }},
+{data: { id: 'MRPL12', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P52815" }}], 
+ edges: [{ data: { source: 'MRPS30', target: 'MRPL12', directed: 'false', weight: 0.702868} },
+{ data: { source: 'MTFR1L', target: 'MRPL12', directed: 'false', weight: 0.224658} },
+{ data: { source: 'SLC25A10', target: 'MRPL12', directed: 'false', weight: 0.14793800000000001} }]},
 
 style: [
     {
@@ -94,7 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    EFNB3 CERK TBC1D22A<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
+    0.05 28S ribosomal subunit, mitochondrial<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

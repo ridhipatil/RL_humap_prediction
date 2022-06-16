@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 ATAC complex, GCN5-linked</title>
+<title> 0.2 Stargazin-Glu1-mu2 complex match 2</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,24 +30,15 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'SMCHD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/A6NHR9" }},
-{data: { id: 'LRIF1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5T3J3" }},
-{data: { id: 'YEATS2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9ULM3" }},
-{data: { id: 'FAM92A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/A1XBS5" }},
-{data: { id: 'CEP41', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BYV8" }},
-{data: { id: 'TADA3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75528" }},
-{data: { id: 'KAT2A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92830" }}], 
- edges: [{ data: { source: 'SMCHD1', target: 'LRIF1', directed: 'false', weight: 0.742046} },
-{ data: { source: 'SMCHD1', target: 'CEP41', directed: 'false', weight: 0.701879} },
-{ data: { source: 'LRIF1', target: 'TADA3', directed: 'false', weight: 0.08339939999999998} },
-{ data: { source: 'LRIF1', target: 'YEATS2', directed: 'false', weight: 0.643868} },
-{ data: { source: 'LRIF1', target: 'KAT2A', directed: 'false', weight: 0.117948} },
-{ data: { source: 'YEATS2', target: 'TADA3', directed: 'false', weight: 0.837578} },
-{ data: { source: 'YEATS2', target: 'KAT2A', directed: 'false', weight: 0.7522300000000001} },
-{ data: { source: 'YEATS2', target: 'FAM92A', directed: 'false', weight: 0.10554300000000001} },
-{ data: { source: 'FAM92A', target: 'TADA3', directed: 'false', weight: 0.11730499999999999} },
-{ data: { source: 'FAM92A', target: 'KAT2A', directed: 'false', weight: 0.11473699999999999} },
-{ data: { source: 'TADA3', target: 'KAT2A', directed: 'false', weight: 0.991099} }]},
+elements:{nodes: [{data: { id: 'SARS-CoV2 nsp10', score: 0, type: 'sars' , href: "../SARS_COV2prots/SARS-CoV2 nsp10.html" }},
+{data: { id: 'AP2M1', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q96CW1" }},
+{data: { id: 'FCHO2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q0JRZ9" }},
+{data: { id: 'AP1S1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P61966" }},
+{data: { id: 'ITSN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15811" }}], 
+ edges: [{ data: { source: 'SARS-CoV2 nsp10', target: 'AP2M1', directed: 'false', weight: 0.982905884, type: 'sars'} },
+{ data: { source: 'AP2M1', target: 'ITSN1', directed: 'false', weight: 0.999613} },
+{ data: { source: 'AP2M1', target: 'FCHO2', directed: 'false', weight: 0.918587} },
+{ data: { source: 'AP2M1', target: 'AP1S1', directed: 'false', weight: 0.12721400000000002} }]},
 
 style: [
     {
@@ -107,7 +98,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 ATAC complex, GCN5-linked<br> Complex Score = 0.37500<br> Unweighted Density = 0.52
+    0.2 Stargazin-Glu1-mu2 complex match 2<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>AP2M1
     </section>
     </body>
     </html>

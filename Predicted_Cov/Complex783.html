@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> HASPIN CNRIP1 UTP4</title>
+<title> 0.2 TRAF6 homo-oligomer complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,11 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'HASPIN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TF76" }},
-{data: { id: 'CNRIP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96F85" }},
-{data: { id: 'UTP4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q969X6" }}], 
- edges: [{ data: { source: 'UTP4', target: 'CNRIP1', directed: 'false', weight: 0.8560120000000001} },
-{ data: { source: 'UTP4', target: 'HASPIN', directed: 'false', weight: 0.37808600000000003} }]},
+elements:{nodes: [{data: { id: 'LTBR', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P36941" }},
+{data: { id: 'TRAF6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y4K3" }},
+{data: { id: 'IRAK2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43187" }},
+{data: { id: 'TRAF1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13077" }}], 
+ edges: [{ data: { source: 'LTBR', target: 'TRAF1', directed: 'false', weight: 0.767668} },
+{ data: { source: 'TRAF6', target: 'TRAF1', directed: 'false', weight: 0.263311} },
+{ data: { source: 'TRAF6', target: 'IRAK2', directed: 'false', weight: 0.212535} }]},
 
 style: [
     {
@@ -94,7 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    HASPIN CNRIP1 UTP4<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
+    0.2 TRAF6 homo-oligomer complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

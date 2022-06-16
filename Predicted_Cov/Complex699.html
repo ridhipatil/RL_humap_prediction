@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.5 TSC1-TSC2 complex</title>
+<title> 0.2 AXIN-MEKK4-CCD1 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,29 +30,28 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'TSC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92574" }},
-{data: { id: 'TBC1D7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9P0N9" }},
-{data: { id: 'TSC2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49815" }},
-{data: { id: 'KIF27', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86VH2" }}], 
- edges: [{ data: { source: 'TBC1D7', target: 'TSC2', directed: 'false', weight: 0.9979610000000001} },
-{ data: { source: 'TBC1D7', target: 'TSC1', directed: 'false', weight: 0.9979469999999999} },
-{ data: { source: 'TBC1D7', target: 'KIF27', directed: 'false', weight: 0.9844219999999999} },
-{ data: { source: 'KIF27', target: 'TSC2', directed: 'false', weight: 0.10554300000000001} },
-{ data: { source: 'KIF27', target: 'TSC1', directed: 'false', weight: 0.151455} },
-{ data: { source: 'TSC2', target: 'TSC1', directed: 'false', weight: 0.978151} }]},
+elements:{nodes: [{data: { id: 'KIF20B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96Q89" }},
+{data: { id: 'NDEL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9GZM8" }},
+{data: { id: 'CCSER2', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9H7U1" }},
+{data: { id: 'DIXDC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q155Q3" }}], 
+ edges: [{ data: { source: 'KIF20B', target: 'NDEL1', directed: 'false', weight: 0.11791300000000002} },
+{ data: { source: 'DIXDC1', target: 'NDEL1', directed: 'false', weight: 0.9998940000000001} },
+{ data: { source: 'CCSER2', target: 'NDEL1', directed: 'false', weight: 0.9995569999999999} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 30,
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}  
                                  if ( ele.data('type') == 'sars' ){return 'triangle'}   
   return 'rectangle';
   },            
-            'background-color': function( ele ){ 
+             'background-color': function( ele ){ 
                                 if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
 								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
                                  if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
@@ -66,7 +65,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
 								'line-color': function( ele ){ 
                                  if ( ele.data('type') == 'sars' ){return 'red'}   
   return 'blue';
@@ -78,7 +77,10 @@ style: [
 
 });
 cy.layout({
-    'name': 'circle'
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -94,7 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.5 TSC1-TSC2 complex<br> Complex Score = 0.38750<br> Unweighted Density = 1.00
+    0.2 AXIN-MEKK4-CCD1 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

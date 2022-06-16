@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 RNA polymerase II (RNAPII) match 2</title>
+<title> 0.2 DNA-PK-Ku-eIF2-NF90-NF45 complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,49 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'GPN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HCN4" }},
-{data: { id: 'POLR3C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BUI4" }},
-{data: { id: 'RPAP3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H6T3" }},
-{data: { id: 'POLR2A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P24928" }},
-{data: { id: 'WDR92', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q96MX6" }},
-{data: { id: 'CTDP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y5B0" }},
-{data: { id: 'POLR3H', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y535" }},
-{data: { id: 'POLR3D', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P05423" }},
-{data: { id: 'POLR3B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NW08" }},
-{data: { id: 'POLR3K', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y2Y1" }},
-{data: { id: 'POLR3E', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NVU0" }},
-{data: { id: 'POLR3F', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H1D9" }}], 
- edges: [{ data: { source: 'GPN1', target: 'POLR2A', directed: 'false', weight: 0.651181} },
-{ data: { source: 'GPN1', target: 'POLR3D', directed: 'false', weight: 0.9371659999999999} },
-{ data: { source: 'GPN1', target: 'POLR3B', directed: 'false', weight: 0.34245} },
-{ data: { source: 'GPN1', target: 'POLR3C', directed: 'false', weight: 0.267844} },
-{ data: { source: 'GPN1', target: 'POLR3H', directed: 'false', weight: 0.413617} },
-{ data: { source: 'GPN1', target: 'POLR3K', directed: 'false', weight: 0.7415039999999999} },
-{ data: { source: 'POLR3C', target: 'POLR3D', directed: 'false', weight: 0.9998090000000001} },
-{ data: { source: 'POLR3C', target: 'POLR3B', directed: 'false', weight: 0.984824} },
-{ data: { source: 'POLR3C', target: 'POLR3F', directed: 'false', weight: 0.6818069999999999} },
-{ data: { source: 'POLR3C', target: 'POLR3H', directed: 'false', weight: 0.9985620000000001} },
-{ data: { source: 'POLR3C', target: 'POLR3K', directed: 'false', weight: 0.8303299999999999} },
-{ data: { source: 'POLR3C', target: 'POLR3E', directed: 'false', weight: 0.112499} },
-{ data: { source: 'RPAP3', target: 'WDR92', directed: 'false', weight: 0.990978} },
-{ data: { source: 'RPAP3', target: 'POLR3E', directed: 'false', weight: 0.30286} },
-{ data: { source: 'POLR2A', target: 'CTDP1', directed: 'false', weight: 0.10943299999999999} },
-{ data: { source: 'WDR92', target: 'POLR3E', directed: 'false', weight: 0.345713} },
-{ data: { source: 'POLR3H', target: 'POLR3D', directed: 'false', weight: 0.9989540000000001} },
-{ data: { source: 'POLR3H', target: 'POLR3B', directed: 'false', weight: 0.998067} },
-{ data: { source: 'POLR3H', target: 'POLR3F', directed: 'false', weight: 0.994495} },
-{ data: { source: 'POLR3H', target: 'POLR3K', directed: 'false', weight: 0.614185} },
-{ data: { source: 'POLR3H', target: 'POLR3E', directed: 'false', weight: 0.198303} },
-{ data: { source: 'POLR3D', target: 'POLR3B', directed: 'false', weight: 0.9999520000000001} },
-{ data: { source: 'POLR3D', target: 'POLR3F', directed: 'false', weight: 0.9999180000000001} },
-{ data: { source: 'POLR3D', target: 'POLR3K', directed: 'false', weight: 0.998341} },
-{ data: { source: 'POLR3D', target: 'POLR3E', directed: 'false', weight: 0.980567} },
-{ data: { source: 'POLR3B', target: 'POLR3F', directed: 'false', weight: 0.965209} },
-{ data: { source: 'POLR3B', target: 'POLR3K', directed: 'false', weight: 0.843031} },
-{ data: { source: 'POLR3B', target: 'POLR3E', directed: 'false', weight: 0.579203} },
-{ data: { source: 'POLR3K', target: 'POLR3F', directed: 'false', weight: 0.69018} },
-{ data: { source: 'POLR3K', target: 'POLR3E', directed: 'false', weight: 0.345713} },
-{ data: { source: 'POLR3E', target: 'POLR3F', directed: 'false', weight: 0.104198} }]},
+elements:{nodes: [{data: { id: 'SNRPA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P09012" }},
+{data: { id: 'EIF2S3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P41091" }},
+{data: { id: 'SNRPA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P09661" }},
+{data: { id: 'EIF2S1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P05198" }}], 
+ edges: [{ data: { source: 'SNRPA', target: 'SNRPA1', directed: 'false', weight: 0.964009} },
+{ data: { source: 'SNRPA', target: 'EIF2S1', directed: 'false', weight: 0.21859099999999998} },
+{ data: { source: 'EIF2S3', target: 'EIF2S1', directed: 'false', weight: 0.981017} }]},
 
 style: [
     {
@@ -132,7 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 RNA polymerase II (RNAPII) match 2<br> Complex Score = 0.37500<br> Unweighted Density = 0.47
+    0.2 DNA-PK-Ku-eIF2-NF90-NF45 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

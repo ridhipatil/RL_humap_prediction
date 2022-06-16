@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 v-ATPase-Ragulator-AXIN/LKB1-AMPK complex</title>
+<title> 0.2 TFIIF complex (transcription factor IIF)</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,18 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'MITD1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WV92" }},
-{data: { id: 'ATP6V0C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P27449" }},
-{data: { id: 'VMA21', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q3ZAQ7" }},
-{data: { id: 'ATP6AP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75787" }},
-{data: { id: 'TCIRG1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13488" }}], 
- edges: [{ data: { source: 'MITD1', target: 'ATP6AP2', directed: 'false', weight: 0.8647610000000001} },
-{ data: { source: 'VMA21', target: 'ATP6AP2', directed: 'false', weight: 0.9415549999999999} },
-{ data: { source: 'VMA21', target: 'ATP6V0C', directed: 'false', weight: 0.151455} },
-{ data: { source: 'VMA21', target: 'TCIRG1', directed: 'false', weight: 0.151455} },
-{ data: { source: 'TCIRG1', target: 'ATP6AP2', directed: 'false', weight: 0.813732} },
-{ data: { source: 'TCIRG1', target: 'ATP6V0C', directed: 'false', weight: 0.171414} },
-{ data: { source: 'ATP6V0C', target: 'ATP6AP2', directed: 'false', weight: 0.46447700000000003} }]},
+elements:{nodes: [{data: { id: 'GTF2B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q00403" }},
+{data: { id: 'SIN3A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96ST3" }},
+{data: { id: 'GTF2F1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P35269" }},
+{data: { id: 'PRB1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P04280" }}], 
+ edges: [{ data: { source: 'GTF2B', target: 'GTF2F1', directed: 'false', weight: 0.153142} },
+{ data: { source: 'GTF2B', target: 'PRB1', directed: 'false', weight: 0.8894860000000001} },
+{ data: { source: 'SIN3A', target: 'GTF2F1', directed: 'false', weight: 0.9416469999999999} }]},
 
 style: [
     {
@@ -101,7 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 v-ATPase-Ragulator-AXIN/LKB1-AMPK complex<br> Complex Score = 0.38750<br> Unweighted Density = 0.70
+    0.2 TFIIF complex (transcription factor IIF)<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

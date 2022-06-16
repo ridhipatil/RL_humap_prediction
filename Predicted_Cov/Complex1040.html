@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 FAK-beta5 integrin complex, VEGF induced</title>
+<title> 0.2 MIB complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,15 +30,14 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'BCAT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P54687" }},
-{data: { id: 'SERPINB10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P48595" }},
-{data: { id: 'TWF2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6IBS0" }},
-{data: { id: 'HARS', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P12081" }},
-{data: { id: 'PTK2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q05397" }}], 
- edges: [{ data: { source: 'SERPINB10', target: 'BCAT1', directed: 'false', weight: 0.462362} },
-{ data: { source: 'SERPINB10', target: 'PTK2', directed: 'false', weight: 0.293585} },
-{ data: { source: 'HARS', target: 'BCAT1', directed: 'false', weight: 0.78308} },
-{ data: { source: 'TWF2', target: 'PTK2', directed: 'false', weight: 0.700587} }]},
+elements:{nodes: [{data: { id: 'MTX2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75431" }},
+{data: { id: 'SAMM50', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y512" }},
+{data: { id: 'CHCHD3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NX63" }},
+{data: { id: 'MTX3', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q5HYI7" }}], 
+ edges: [{ data: { source: 'MTX2', target: 'SAMM50', directed: 'false', weight: 0.999768} },
+{ data: { source: 'MTX2', target: 'CHCHD3', directed: 'false', weight: 0.996655} },
+{ data: { source: 'MTX2', target: 'MTX3', directed: 'false', weight: 0.99574} },
+{ data: { source: 'SAMM50', target: 'CHCHD3', directed: 'false', weight: 0.729985} }]},
 
 style: [
     {
@@ -98,7 +97,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 FAK-beta5 integrin complex, VEGF induced<br> Complex Score = 0.35000<br> Unweighted Density = 0.40
+    0.2 MIB complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
     </section>
     </body>
     </html>

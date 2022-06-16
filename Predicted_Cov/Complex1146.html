@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> ZNF26 ZSCAN32 ZNF397 ZSCAN23</title>
+<title> 0.1 SNARE complex (RINT1, ZW10, p31)</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,14 +30,22 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'ZSCAN23', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q3MJ62" }},
-{data: { id: 'ZNF397', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NF99" }},
-{data: { id: 'ZNF26', score: 4, type: '', href: "https://www.uniprot.org/uniprot/P17031" }},
-{data: { id: 'ZSCAN32', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NX65" }}], 
- edges: [{ data: { source: 'ZSCAN32', target: 'ZNF397', directed: 'false', weight: 0.354197} },
-{ data: { source: 'ZSCAN32', target: 'ZSCAN23', directed: 'false', weight: 0.8041119999999999} },
-{ data: { source: 'ZNF397', target: 'ZNF26', directed: 'false', weight: 0.980369} },
-{ data: { source: 'ZNF397', target: 'ZSCAN23', directed: 'false', weight: 0.28781100000000004} }]},
+elements:{nodes: [{data: { id: 'C19orf25', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UFG5" }},
+{data: { id: 'SCFD2', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q8WU76" }},
+{data: { id: 'STX18', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9P2W9" }},
+{data: { id: 'BNIP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q12981" }},
+{data: { id: 'ZW10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43264" }},
+{data: { id: 'SEC22B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75396" }}], 
+ edges: [{ data: { source: 'C19orf25', target: 'ZW10', directed: 'false', weight: 0.700049} },
+{ data: { source: 'C19orf25', target: 'SCFD2', directed: 'false', weight: 0.0802203} },
+{ data: { source: 'SCFD2', target: 'ZW10', directed: 'false', weight: 0.848733} },
+{ data: { source: 'SCFD2', target: 'STX18', directed: 'false', weight: 0.0646865} },
+{ data: { source: 'SCFD2', target: 'BNIP1', directed: 'false', weight: 0.11640299999999999} },
+{ data: { source: 'STX18', target: 'ZW10', directed: 'false', weight: 0.995174} },
+{ data: { source: 'STX18', target: 'BNIP1', directed: 'false', weight: 0.9985290000000001} },
+{ data: { source: 'STX18', target: 'SEC22B', directed: 'false', weight: 0.855873} },
+{ data: { source: 'BNIP1', target: 'ZW10', directed: 'false', weight: 0.164866} },
+{ data: { source: 'BNIP1', target: 'SEC22B', directed: 'false', weight: 0.283166} }]},
 
 style: [
     {
@@ -97,7 +105,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    ZNF26 ZSCAN32 ZNF397 ZSCAN23<br> Complex Score = 0.30000<br> Unweighted Density = 0.67
+    0.1 SNARE complex (RINT1, ZW10, p31)<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
     </section>
     </body>
     </html>

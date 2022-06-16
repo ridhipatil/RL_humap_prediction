@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> MFSD5 10052 LPAR1 SLC9A1 EXTL2</title>
+<title> 0.4 COP9 signalosome complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,18 +30,22 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'SLC9A1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P19634" }},
-{data: { id: 'LPAR1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92633" }},
-{data: { id: 'MFSD5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6N075" }},
-{data: { id: 'EXTL2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UBQ6" }},
-{data: { id: 'CXNQ', score: 3, type: '', href: "https://www.uniprot.org/uniprot/A0A654IDC0" }}], 
- edges: [{ data: { source: 'MFSD5', target: 'LPAR1', directed: 'false', weight: 0.391302} },
-{ data: { source: 'MFSD5', target: 'SLC9A1', directed: 'false', weight: 0.128057} },
-{ data: { source: 'MFSD5', target: 'EXTL2', directed: 'false', weight: 0.151455} },
-{ data: { source: 'CXNQ', target: 'EXTL2', directed: 'false', weight: 0.312709} },
-{ data: { source: 'SLC9A1', target: 'LPAR1', directed: 'false', weight: 0.8268559999999999} },
-{ data: { source: 'SLC9A1', target: 'EXTL2', directed: 'false', weight: 0.112499} },
-{ data: { source: 'LPAR1', target: 'EXTL2', directed: 'false', weight: 0.37145} }]},
+elements:{nodes: [{data: { id: 'COPS5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92905" }},
+{data: { id: 'GATAD2B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WXI9" }},
+{data: { id: 'COPS4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BT78" }},
+{data: { id: 'COPS6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q7L5N1" }},
+{data: { id: 'GATAD2A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q86YP4" }},
+{data: { id: 'COPS8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q99627" }}], 
+ edges: [{ data: { source: 'COPS5', target: 'COPS6', directed: 'false', weight: 0.99998} },
+{ data: { source: 'COPS5', target: 'COPS4', directed: 'false', weight: 0.999983} },
+{ data: { source: 'COPS5', target: 'COPS8', directed: 'false', weight: 0.999974} },
+{ data: { source: 'COPS5', target: 'GATAD2A', directed: 'false', weight: 0.111578} },
+{ data: { source: 'GATAD2B', target: 'GATAD2A', directed: 'false', weight: 0.989908} },
+{ data: { source: 'COPS4', target: 'COPS6', directed: 'false', weight: 1.0} },
+{ data: { source: 'COPS4', target: 'COPS8', directed: 'false', weight: 0.9999889999999999} },
+{ data: { source: 'COPS4', target: 'GATAD2A', directed: 'false', weight: 0.0655299} },
+{ data: { source: 'COPS6', target: 'COPS8', directed: 'false', weight: 0.9999979999999999} },
+{ data: { source: 'COPS6', target: 'GATAD2A', directed: 'false', weight: 0.0503844} }]},
 
 style: [
     {
@@ -101,7 +105,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    MFSD5 10052 LPAR1 SLC9A1 EXTL2<br> Complex Score = 0.38750<br> Unweighted Density = 0.70
+    0.4 COP9 signalosome complex<br> Complex Score = 0.38800<br> Unweighted Density = 0.67
     </section>
     </body>
     </html>

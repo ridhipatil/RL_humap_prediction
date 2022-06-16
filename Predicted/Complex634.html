@@ -30,17 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'RABIF', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P47224" }},
-{data: { id: 'TOLLIP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H0E2" }},
-{data: { id: 'DNAJB1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P25685" }},
-{data: { id: 'ARPP19', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P56211" }},
-{data: { id: 'TRIM25', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14258" }}], 
- edges: [{ data: { source: 'ARPP19', target: 'DNAJB1', directed: 'false', weight: 0.353657} },
-{ data: { source: 'ARPP19', target: 'TRIM25', directed: 'false', weight: 0.536369} },
-{ data: { source: 'ARPP19', target: 'RABIF', directed: 'false', weight: 0.270376} },
-{ data: { source: 'TRIM25', target: 'DNAJB1', directed: 'false', weight: 0.612809} },
-{ data: { source: 'TRIM25', target: 'RABIF', directed: 'false', weight: 0.0166694} },
-{ data: { source: 'TOLLIP', target: 'DNAJB1', directed: 'false', weight: 0.718403} }]},
+elements:{nodes: [{data: { id: 'BAD', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92934" }},
+{data: { id: 'BAX', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q07812" }},
+{data: { id: 'BCL2L1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q07817" }},
+{data: { id: 'MCL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q07820" }}], 
+ edges: [{ data: { source: 'BAD', target: 'BCL2L1', directed: 'false', weight: 0.976469} },
+{ data: { source: 'MCL1', target: 'BAX', directed: 'false', weight: 0.273491} },
+{ data: { source: 'BAX', target: 'BCL2L1', directed: 'false', weight: 0.9388780000000001} }]},
 
 style: [
     {
@@ -88,7 +84,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.38750
+    Complex Score  = 0.37500
     </section>
     </body>
     </html>

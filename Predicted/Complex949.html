@@ -30,16 +30,16 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'PPP3R1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P63098" }},
-{data: { id: 'CHML', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P26374" }},
-{data: { id: 'RAB7A', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P51149" }},
-{data: { id: 'CHM', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P24386" }},
-{data: { id: 'RILP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96MT3" }}], 
- edges: [{ data: { source: 'PPP3R1', target: 'RAB7A', directed: 'false', weight: 0.21061300000000002} },
-{ data: { source: 'CHM', target: 'CHML', directed: 'false', weight: 0.950232} },
-{ data: { source: 'CHM', target: 'RAB7A', directed: 'false', weight: 0.9122870000000001} },
-{ data: { source: 'CHM', target: 'RILP', directed: 'false', weight: 0.144297} },
-{ data: { source: 'RAB7A', target: 'RILP', directed: 'false', weight: 0.5} }]},
+elements:{nodes: [{data: { id: 'HNRNPK', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P61978" }},
+{data: { id: 'AQR', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60306" }},
+{data: { id: 'XAB2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HCS7" }},
+{data: { id: 'PPIE', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UNP9" }},
+{data: { id: 'ADSL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P30566" }}], 
+ edges: [{ data: { source: 'HNRNPK', target: 'PPIE', directed: 'false', weight: 0.817283} },
+{ data: { source: 'HNRNPK', target: 'ADSL', directed: 'false', weight: 0.317801} },
+{ data: { source: 'AQR', target: 'PPIE', directed: 'false', weight: 1.0} },
+{ data: { source: 'AQR', target: 'XAB2', directed: 'false', weight: 1.0} },
+{ data: { source: 'XAB2', target: 'PPIE', directed: 'false', weight: 1.0} }]},
 
 style: [
     {
@@ -88,11 +88,6 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.37500
-        <br> 
-        <br>
-        Connection to SARS-COV2: 
-        <br>
-        1 interacting protein(s): <br>RAB7A
     </section>
     </body>
     </html>

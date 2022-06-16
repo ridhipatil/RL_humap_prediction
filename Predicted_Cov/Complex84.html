@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.6 XPA-ERCC1-ERCC4 complex</title>
+<title> TRAF3IP3 FGFR1OP2 PREI3 STRIP1 SLMAP</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,19 +30,19 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'ERCC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P07992" }},
-{data: { id: 'SLX4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8IY92" }},
-{data: { id: 'XPA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P23025" }},
-{data: { id: 'ERCC4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92889" }},
-{data: { id: 'SLX4IP', score: 3.0, type: '', href: "https://www.uniprot.org/uniprot/Q5VYV7" }}], 
- edges: [{ data: { source: 'ERCC1', target: 'ERCC4', directed: 'false', weight: 0.999957} },
-{ data: { source: 'ERCC1', target: 'SLX4', directed: 'false', weight: 0.9744879999999999} },
-{ data: { source: 'ERCC1', target: 'SLX4IP', directed: 'false', weight: 0.477426} },
-{ data: { source: 'ERCC1', target: 'XPA', directed: 'false', weight: 0.439953} },
-{ data: { source: 'XPA', target: 'ERCC4', directed: 'false', weight: 0.14624600000000001} },
-{ data: { source: 'ERCC4', target: 'SLX4', directed: 'false', weight: 0.21936399999999998} },
-{ data: { source: 'ERCC4', target: 'SLX4IP', directed: 'false', weight: 0.104198} },
-{ data: { source: 'SLX4', target: 'SLX4IP', directed: 'false', weight: 0.128057} }]},
+elements:{nodes: [{data: { id: 'STRIP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5VSL9" }},
+{data: { id: 'FGFR1OP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NVK5" }},
+{data: { id: 'SLMAP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14BN4" }},
+{data: { id: 'PREI3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y3A3" }},
+{data: { id: 'TRAF3IP3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y228" }}], 
+ edges: [{ data: { source: 'STRIP1', target: 'SLMAP', directed: 'false', weight: 0.999727} },
+{ data: { source: 'STRIP1', target: 'PREI3', directed: 'false', weight: 0.36340300000000003} },
+{ data: { source: 'STRIP1', target: 'TRAF3IP3', directed: 'false', weight: 0.195052} },
+{ data: { source: 'STRIP1', target: 'FGFR1OP2', directed: 'false', weight: 0.130475} },
+{ data: { source: 'FGFR1OP2', target: 'SLMAP', directed: 'false', weight: 0.0765304} },
+{ data: { source: 'FGFR1OP2', target: 'PREI3', directed: 'false', weight: 0.33632399999999996} },
+{ data: { source: 'FGFR1OP2', target: 'TRAF3IP3', directed: 'false', weight: 0.942584} },
+{ data: { source: 'PREI3', target: 'TRAF3IP3', directed: 'false', weight: 0.0624544} }]},
 
 style: [
     {
@@ -102,7 +102,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.6 XPA-ERCC1-ERCC4 complex<br> Complex Score = 0.39375<br> Unweighted Density = 0.80
+    TRAF3IP3 FGFR1OP2 PREI3 STRIP1 SLMAP<br> Complex Score = 0.38800<br> Unweighted Density = 0.80
     </section>
     </body>
     </html>

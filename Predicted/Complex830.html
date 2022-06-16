@@ -30,19 +30,14 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'ARPC3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15145" }},
-{data: { id: 'DNAJC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96KC8" }},
-{data: { id: 'FARSB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NSD9" }},
-{data: { id: 'ARPC5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15511" }},
-{data: { id: 'DDX1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92499" }},
-{data: { id: 'FAM98B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q52LJ0" }}], 
- edges: [{ data: { source: 'ARPC3', target: 'ARPC5', directed: 'false', weight: 0.999994} },
-{ data: { source: 'ARPC3', target: 'FAM98B', directed: 'false', weight: 0.359283} },
-{ data: { source: 'DNAJC1', target: 'ARPC5', directed: 'false', weight: 0.12079100000000001} },
-{ data: { source: 'ARPC5', target: 'FAM98B', directed: 'false', weight: 0.49481099999999995} },
-{ data: { source: 'ARPC5', target: 'FARSB', directed: 'false', weight: 0.47391000000000005} },
-{ data: { source: 'DDX1', target: 'FAM98B', directed: 'false', weight: 0.990566} },
-{ data: { source: 'FAM98B', target: 'FARSB', directed: 'false', weight: 0.5462229999999999} }]},
+elements:{nodes: [{data: { id: 'UBQLN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UMX0" }},
+{data: { id: 'HIBCH', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6NVY1" }},
+{data: { id: 'IDH1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75874" }},
+{data: { id: 'NUTF2', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P61970" }}], 
+ edges: [{ data: { source: 'UBQLN1', target: 'HIBCH', directed: 'false', weight: 0.287197} },
+{ data: { source: 'UBQLN1', target: 'IDH1', directed: 'false', weight: 0.049023800000000006} },
+{ data: { source: 'UBQLN1', target: 'NUTF2', directed: 'false', weight: 0.531836} },
+{ data: { source: 'HIBCH', target: 'IDH1', directed: 'false', weight: 0.8809040000000001} }]},
 
 style: [
     {
@@ -91,6 +86,11 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.37500
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>NUTF2
     </section>
     </body>
     </html>

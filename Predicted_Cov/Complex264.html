@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.5 BHC complex</title>
+<title> 0.2 SNX complex (SNX1, SNX1a, SNX2, SNX4)</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,21 +30,11 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'HMG20A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NP66" }},
-{data: { id: 'RCOR1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UKL0" }},
-{data: { id: 'KDM1A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60341" }},
-{data: { id: 'TCF20', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UGU0" }},
-{data: { id: 'PHF21A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96BD5" }},
-{data: { id: 'HMG20B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9P0W2" }}], 
- edges: [{ data: { source: 'HMG20A', target: 'KDM1A', directed: 'false', weight: 0.8104439999999999} },
-{ data: { source: 'HMG20A', target: 'RCOR1', directed: 'false', weight: 0.8753120000000001} },
-{ data: { source: 'HMG20A', target: 'TCF20', directed: 'false', weight: 0.19262} },
-{ data: { source: 'RCOR1', target: 'KDM1A', directed: 'false', weight: 0.9999969999999999} },
-{ data: { source: 'RCOR1', target: 'HMG20B', directed: 'false', weight: 0.96454} },
-{ data: { source: 'RCOR1', target: 'PHF21A', directed: 'false', weight: 0.206618} },
-{ data: { source: 'KDM1A', target: 'HMG20B', directed: 'false', weight: 0.919858} },
-{ data: { source: 'KDM1A', target: 'PHF21A', directed: 'false', weight: 0.157086} },
-{ data: { source: 'PHF21A', target: 'HMG20B', directed: 'false', weight: 0.828659} }]},
+elements:{nodes: [{data: { id: 'SNX30', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WV41" }},
+{data: { id: 'SNX4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95219" }},
+{data: { id: 'SNX7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UNH6" }}], 
+ edges: [{ data: { source: 'SNX30', target: 'SNX4', directed: 'false', weight: 0.9815219999999999} },
+{ data: { source: 'SNX4', target: 'SNX7', directed: 'false', weight: 0.997218} }]},
 
 style: [
     {
@@ -104,7 +94,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.5 BHC complex<br> Complex Score = 0.38750<br> Unweighted Density = 0.60
+    0.2 SNX complex (SNX1, SNX1a, SNX2, SNX4)<br> Complex Score = 0.38800<br> Unweighted Density = 0.67
     </section>
     </body>
     </html>

@@ -30,25 +30,14 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'SRCAP', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6ZRS2" }},
-{data: { id: 'ARNT', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P27540" }},
-{data: { id: 'HIF1A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q16665" }},
-{data: { id: 'YEATS4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95619" }},
-{data: { id: 'MYC', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P01106" }},
-{data: { id: 'EPC2', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q52LR7" }},
-{data: { id: 'VPS72', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15906" }}], 
- edges: [{ data: { source: 'SRCAP', target: 'YEATS4', directed: 'false', weight: 0.9590559999999999} },
-{ data: { source: 'SRCAP', target: 'VPS72', directed: 'false', weight: 0.33883} },
-{ data: { source: 'SRCAP', target: 'EPC2', directed: 'false', weight: 0.179088} },
-{ data: { source: 'SRCAP', target: 'MYC', directed: 'false', weight: 0.0896254} },
-{ data: { source: 'ARNT', target: 'HIF1A', directed: 'false', weight: 0.974464} },
-{ data: { source: 'ARNT', target: 'MYC', directed: 'false', weight: 0.108699} },
-{ data: { source: 'YEATS4', target: 'VPS72', directed: 'false', weight: 1.0} },
-{ data: { source: 'YEATS4', target: 'EPC2', directed: 'false', weight: 0.999999} },
-{ data: { source: 'YEATS4', target: 'MYC', directed: 'false', weight: 0.292335} },
-{ data: { source: 'MYC', target: 'VPS72', directed: 'false', weight: 0.294644} },
-{ data: { source: 'MYC', target: 'EPC2', directed: 'false', weight: 0.352171} },
-{ data: { source: 'EPC2', target: 'VPS72', directed: 'false', weight: 0.9981610000000001} }]},
+elements:{nodes: [{data: { id: 'GAS', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P01350" }},
+{data: { id: 'CROCCP2', score: 2, type: '', href: "https://www.ncbi.nlm.nih.gov/gene/84809" }},
+{data: { id: 'DSCR4', score: 2, type: '', href: "https://www.ncbi.nlm.nih.gov/gene/10281" }},
+{data: { id: 'APOC2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P02655" }}], 
+ edges: [{ data: { source: 'GAS', target: 'CROCCP2', directed: 'false', weight: 0.12421800000000001} },
+{ data: { source: 'GAS', target: 'APOC2', directed: 'false', weight: 0.0753064} },
+{ data: { source: 'CROCCP2', target: 'DSCR4', directed: 'false', weight: 0.31267} },
+{ data: { source: 'DSCR4', target: 'APOC2', directed: 'false', weight: 0.173808} }]},
 
 style: [
     {
@@ -96,7 +85,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.38750
+    Complex Score  = 0.37500
     </section>
     </body>
     </html>

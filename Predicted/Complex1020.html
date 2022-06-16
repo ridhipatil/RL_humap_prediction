@@ -30,15 +30,14 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'MCM2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P33993" }},
-{data: { id: 'UBL5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BZL1" }},
-{data: { id: 'BCAS2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75934" }},
-{data: { id: 'PDIA5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14554" }},
-{data: { id: 'C1orf52', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q8N6N3" }}], 
- edges: [{ data: { source: 'MCM2', target: 'BCAS2', directed: 'false', weight: 0.325198} },
-{ data: { source: 'BCAS2', target: 'PDIA5', directed: 'false', weight: 0.9043889999999999} },
-{ data: { source: 'BCAS2', target: 'UBL5', directed: 'false', weight: 0.591747} },
-{ data: { source: 'BCAS2', target: 'C1orf52', directed: 'false', weight: 0.0770887} }]},
+elements:{nodes: [{data: { id: 'CCNT2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60583" }},
+{data: { id: 'HEXIM1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O94992" }},
+{data: { id: 'MEPCE', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q7L2J0" }},
+{data: { id: 'CCNT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60563" }}], 
+ edges: [{ data: { source: 'CCNT2', target: 'CCNT1', directed: 'false', weight: 0.0277738} },
+{ data: { source: 'CCNT2', target: 'HEXIM1', directed: 'false', weight: 0.353632} },
+{ data: { source: 'HEXIM1', target: 'CCNT1', directed: 'false', weight: 0.8739530000000001} },
+{ data: { source: 'HEXIM1', target: 'MEPCE', directed: 'false', weight: 0.644497} }]},
 
 style: [
     {
@@ -86,7 +85,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.35000
+    Complex Score  = 0.37500
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>MEPCE
     </section>
     </body>
     </html>

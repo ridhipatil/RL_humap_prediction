@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 ECT2-KIF23-RACGAP1 complex</title>
+<title> 0.1 tRNA Splicing Ligase Complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,13 +30,14 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'SNRPA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P09012" }},
-{data: { id: 'ECT2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H8V3" }},
-{data: { id: 'LRRC47', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q8N1G4" }},
-{data: { id: 'DHX16', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60231" }}], 
- edges: [{ data: { source: 'SNRPA', target: 'DHX16', directed: 'false', weight: 0.9698040000000001} },
-{ data: { source: 'ECT2', target: 'LRRC47', directed: 'false', weight: 0.341033} },
-{ data: { source: 'LRRC47', target: 'DHX16', directed: 'false', weight: 0.725737} }]},
+elements:{nodes: [{data: { id: 'HNRNPM', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P52272" }},
+{data: { id: 'HEL-S-303', score: 3, type: '', href: "https://www.uniprot.org/uniprot/V9HW44" }},
+{data: { id: 'C14orf166', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y224" }},
+{data: { id: 'FAM98B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q52LJ0" }}], 
+ edges: [{ data: { source: 'HNRNPM', target: 'C14orf166', directed: 'false', weight: 0.295675} },
+{ data: { source: 'HNRNPM', target: 'FAM98B', directed: 'false', weight: 0.08393210000000001} },
+{ data: { source: 'HEL-S-303', target: 'C14orf166', directed: 'false', weight: 0.12242} },
+{ data: { source: 'C14orf166', target: 'FAM98B', directed: 'false', weight: 0.919057} }]},
 
 style: [
     {
@@ -96,7 +97,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 ECT2-KIF23-RACGAP1 complex<br> Complex Score = 0.30000<br> Unweighted Density = 0.50
+    0.1 tRNA Splicing Ligase Complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
     </section>
     </body>
     </html>

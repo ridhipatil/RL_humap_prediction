@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 Propionyl-CoA carboxylase</title>
+<title> EDG2 TESC CERS4 IPPK</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,34 +30,28 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'PCCA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P05165" }},
-{data: { id: 'CPS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P31327" }},
-{data: { id: 'NNT', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13423" }},
-{data: { id: 'TWF2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6IBS0" }},
-{data: { id: 'IARS2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NSE4" }},
-{data: { id: 'FDXR', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P22570" }}], 
- edges: [{ data: { source: 'PCCA', target: 'CPS1', directed: 'false', weight: 0.427584} },
-{ data: { source: 'PCCA', target: 'FDXR', directed: 'false', weight: 0.292948} },
-{ data: { source: 'PCCA', target: 'NNT', directed: 'false', weight: 0.29130700000000004} },
-{ data: { source: 'NNT', target: 'CPS1', directed: 'false', weight: 0.18651500000000001} },
-{ data: { source: 'IARS2', target: 'CPS1', directed: 'false', weight: 0.639253} },
-{ data: { source: 'FDXR', target: 'CPS1', directed: 'false', weight: 0.131827} },
-{ data: { source: 'FDXR', target: 'TWF2', directed: 'false', weight: 0.634371} }]},
+elements:{nodes: [{data: { id: 'CERS4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9HA82" }},
+{data: { id: 'TESC', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96BS2" }},
+{data: { id: 'EDG2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92633" }},
+{data: { id: 'IPPK', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H8X2" }}], 
+ edges: [{ data: { source: 'TESC', target: 'EDG2', directed: 'false', weight: 0.14812} },
+{ data: { source: 'TESC', target: 'IPPK', directed: 'false', weight: 0.431708} },
+{ data: { source: 'EDG2', target: 'IPPK', directed: 'false', weight: 0.9875280000000001} },
+{ data: { source: 'EDG2', target: 'CERS4', directed: 'false', weight: 0.102211} },
+{ data: { source: 'IPPK', target: 'CERS4', directed: 'false', weight: 0.024582800000000002} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 10,
-		'width':'10',
-		'height': '10',	
+		'font-size': 30,
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}  
                                  if ( ele.data('type') == 'sars' ){return 'triangle'}   
   return 'rectangle';
   },            
-             'background-color': function( ele ){ 
+            'background-color': function( ele ){ 
                                 if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
 								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
                                  if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
@@ -71,7 +65,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
 								'line-color': function( ele ){ 
                                  if ( ele.data('type') == 'sars' ){return 'red'}   
   return 'blue';
@@ -83,10 +77,7 @@ style: [
 
 });
 cy.layout({
-    'name': 'fcose',
-		'animate':false,
-	'nodeDimensionsIncludeLabels':true,
-	'nodeSeparation': 1000
+    'name': 'circle'
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -102,7 +93,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 Propionyl-CoA carboxylase<br> Complex Score = 0.37500<br> Unweighted Density = 0.47
+    EDG2 TESC CERS4 IPPK<br> Complex Score = 0.37500<br> Unweighted Density = 0.83
     </section>
     </body>
     </html>

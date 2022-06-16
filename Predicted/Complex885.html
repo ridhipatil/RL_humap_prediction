@@ -30,11 +30,27 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'ALDH8A1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H2A2" }},
-{data: { id: 'ALDH6A1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q02252" }},
-{data: { id: 'ACAD10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6JQN1" }}], 
- edges: [{ data: { source: 'ALDH8A1', target: 'ALDH6A1', directed: 'false', weight: 0.6064} },
-{ data: { source: 'ALDH8A1', target: 'ACAD10', directed: 'false', weight: 0.330414} }]},
+elements:{nodes: [{data: { id: 'VPS16', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H269" }},
+{data: { id: 'VPS18', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9P253" }},
+{data: { id: 'TECPR2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15040" }},
+{data: { id: 'VPS33A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96AX1" }},
+{data: { id: 'VPS41', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49754" }},
+{data: { id: 'VPS8', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N3P4" }},
+{data: { id: 'VPS11', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9H270" }}], 
+ edges: [{ data: { source: 'VPS16', target: 'VPS11', directed: 'false', weight: 0.0505084} },
+{ data: { source: 'VPS16', target: 'VPS41', directed: 'false', weight: 0.999711} },
+{ data: { source: 'VPS16', target: 'VPS18', directed: 'false', weight: 0.367817} },
+{ data: { source: 'VPS16', target: 'VPS33A', directed: 'false', weight: 0.551771} },
+{ data: { source: 'VPS18', target: 'VPS11', directed: 'false', weight: 0.950644} },
+{ data: { source: 'VPS18', target: 'VPS41', directed: 'false', weight: 0.9999540000000001} },
+{ data: { source: 'VPS18', target: 'VPS33A', directed: 'false', weight: 0.257231} },
+{ data: { source: 'VPS18', target: 'VPS8', directed: 'false', weight: 0.0685747} },
+{ data: { source: 'TECPR2', target: 'VPS41', directed: 'false', weight: 0.345352} },
+{ data: { source: 'VPS33A', target: 'VPS11', directed: 'false', weight: 0.050488599999999995} },
+{ data: { source: 'VPS33A', target: 'VPS41', directed: 'false', weight: 0.999685} },
+{ data: { source: 'VPS33A', target: 'VPS8', directed: 'false', weight: 0.0315124} },
+{ data: { source: 'VPS41', target: 'VPS11', directed: 'false', weight: 0.985909} },
+{ data: { source: 'VPS8', target: 'VPS11', directed: 'false', weight: 0.0518495} }]},
 
 style: [
     {
@@ -83,6 +99,11 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br> 
     Complex Score  = 0.37500
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>VPS11
     </section>
     </body>
     </html>

@@ -30,18 +30,14 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'BAIAP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UQB8" }},
-{data: { id: 'CYFIP2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96F07" }},
-{data: { id: 'KIAA1522', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9P206" }},
-{data: { id: 'CHMP6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96FZ7" }},
-{data: { id: 'CYFIP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q7L576" }}], 
- edges: [{ data: { source: 'CYFIP2', target: 'CYFIP1', directed: 'false', weight: 0.522996} },
-{ data: { source: 'CYFIP2', target: 'KIAA1522', directed: 'false', weight: 0.151927} },
-{ data: { source: 'CYFIP2', target: 'BAIAP2', directed: 'false', weight: 0.0929957} },
-{ data: { source: 'KIAA1522', target: 'CYFIP1', directed: 'false', weight: 0.211761} },
-{ data: { source: 'KIAA1522', target: 'BAIAP2', directed: 'false', weight: 0.9603139999999999} },
-{ data: { source: 'CHMP6', target: 'BAIAP2', directed: 'false', weight: 0.614189} },
-{ data: { source: 'BAIAP2', target: 'CYFIP1', directed: 'false', weight: 0.290939} }]},
+elements:{nodes: [{data: { id: 'HLA-C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P10321" }},
+{data: { id: 'HLA-G', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P17693" }},
+{data: { id: 'HLA-E', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P13747" }},
+{data: { id: 'HLA-B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P01889" }}], 
+ edges: [{ data: { source: 'HLA-C', target: 'HLA-B', directed: 'false', weight: 0.999986} },
+{ data: { source: 'HLA-C', target: 'HLA-E', directed: 'false', weight: 0.761884} },
+{ data: { source: 'HLA-C', target: 'HLA-G', directed: 'false', weight: 0.6096090000000001} },
+{ data: { source: 'HLA-E', target: 'HLA-B', directed: 'false', weight: 0.9593889999999999} }]},
 
 style: [
     {
@@ -89,7 +85,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.38750
+    Complex Score  = 0.37500
     </section>
     </body>
     </html>

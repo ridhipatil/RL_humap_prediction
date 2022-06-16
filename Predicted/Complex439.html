@@ -30,17 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'FRAT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q92837" }},
-{data: { id: 'AXIN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15169" }},
-{data: { id: 'GSK3B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49841" }},
-{data: { id: 'APC', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P25054" }},
-{data: { id: 'GSK3A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49840" }}], 
- edges: [{ data: { source: 'APC', target: 'AXIN1', directed: 'false', weight: 0.724195} },
-{ data: { source: 'GSK3B', target: 'FRAT1', directed: 'false', weight: 0.971023} },
-{ data: { source: 'GSK3B', target: 'AXIN1', directed: 'false', weight: 0.844852} },
-{ data: { source: 'GSK3B', target: 'GSK3A', directed: 'false', weight: 0.5745439999999999} },
-{ data: { source: 'FRAT1', target: 'GSK3A', directed: 'false', weight: 0.965234} },
-{ data: { source: 'AXIN1', target: 'GSK3A', directed: 'false', weight: 0.577001} }]},
+elements:{nodes: [{data: { id: 'NIN', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q8N4C6" }},
+{data: { id: 'CENPE', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q02224" }},
+{data: { id: 'SASS6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6UVJ0" }},
+{data: { id: 'SYCE3', score: 4, type: '', href: "https://www.uniprot.org/uniprot/A1L190" }}], 
+ edges: [{ data: { source: 'NIN', target: 'SYCE3', directed: 'false', weight: 0.506022} },
+{ data: { source: 'CENPE', target: 'SYCE3', directed: 'false', weight: 0.973305} },
+{ data: { source: 'SASS6', target: 'SYCE3', directed: 'false', weight: 0.124605} }]},
 
 style: [
     {
@@ -88,7 +84,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.38750
+    Complex Score  = 0.37500
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>NIN
     </section>
     </body>
     </html>

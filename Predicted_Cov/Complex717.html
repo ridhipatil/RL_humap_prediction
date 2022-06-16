@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 TIAM1-EFNB1-EPHA2 complex</title>
+<title> TACI DKFZp686A01127 ZNF579 CHCHD10</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,17 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'EFR3A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14156" }},
-{data: { id: 'EPHA2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P29317" }},
-{data: { id: 'CPNE8', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q86YQ8" }},
-{data: { id: 'MEAK7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6P9B6" }},
-{data: { id: 'RRAS2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62070" }}], 
- edges: [{ data: { source: 'EFR3A', target: 'MEAK7', directed: 'false', weight: 0.294644} },
-{ data: { source: 'EFR3A', target: 'CPNE8', directed: 'false', weight: 0.0972987} },
-{ data: { source: 'EPHA2', target: 'RRAS2', directed: 'false', weight: 0.29130700000000004} },
-{ data: { source: 'EPHA2', target: 'MEAK7', directed: 'false', weight: 0.16370099999999999} },
-{ data: { source: 'CPNE8', target: 'MEAK7', directed: 'false', weight: 0.331902} },
-{ data: { source: 'MEAK7', target: 'RRAS2', directed: 'false', weight: 0.299213} }]},
+elements:{nodes: [{data: { id: 'TACI', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O14836" }},
+{data: { id: 'CHCHD10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WYQ3" }},
+{data: { id: 'ZNF579', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q8NAF0" }},
+{data: { id: 'DKFZp686A01127', score: 1, type: '', href: "https://www.uniprot.org/uniprot/Q5H9S4" }}], 
+ edges: [{ data: { source: 'TACI', target: 'ZNF579', directed: 'false', weight: 0.12983599999999998} },
+{ data: { source: 'CHCHD10', target: 'DKFZp686A01127', directed: 'false', weight: 0.9149889999999999} },
+{ data: { source: 'CHCHD10', target: 'ZNF579', directed: 'false', weight: 0.171415} }]},
 
 style: [
     {
@@ -100,7 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 TIAM1-EFNB1-EPHA2 complex<br> Complex Score = 0.38750<br> Unweighted Density = 0.60
+    TACI DKFZp686A01127 ZNF579 CHCHD10<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.1 4E-T-DDX6-CNOT1 complex</title>
+<title> 0.2 TBCD-tubulin(alpha)-tubulin(beta) complex match 2</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,16 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'DNAJC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96KC8" }},
-{data: { id: 'EIF4E', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P06730" }},
-{data: { id: 'EIF4ENIF1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NRA8" }},
-{data: { id: 'ARPC4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P59998" }},
-{data: { id: 'EIF4G3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O43432" }}], 
- edges: [{ data: { source: 'DNAJC1', target: 'ARPC4', directed: 'false', weight: 0.322628} },
-{ data: { source: 'ARPC4', target: 'EIF4E', directed: 'false', weight: 0.626221} },
-{ data: { source: 'EIF4G3', target: 'EIF4E', directed: 'false', weight: 0.9843799999999999} },
-{ data: { source: 'EIF4G3', target: 'EIF4ENIF1', directed: 'false', weight: 0.108674} },
-{ data: { source: 'EIF4E', target: 'EIF4ENIF1', directed: 'false', weight: 0.982555} }]},
+elements:{nodes: [{data: { id: 'PBDC1', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q9BVG4" }},
+{data: { id: 'TUBB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P07437" }},
+{data: { id: 'EEF1G', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P26641" }},
+{data: { id: 'EEF1A2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q05639" }}], 
+ edges: [{ data: { source: 'PBDC1', target: 'EEF1A2', directed: 'false', weight: 0.9897379999999999} },
+{ data: { source: 'TUBB', target: 'EEF1G', directed: 'false', weight: 0.98759} },
+{ data: { source: 'EEF1G', target: 'EEF1A2', directed: 'false', weight: 0.9822629999999999} }]},
 
 style: [
     {
@@ -99,7 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.1 4E-T-DDX6-CNOT1 complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
+    0.2 TBCD-tubulin(alpha)-tubulin(beta) complex match 2<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

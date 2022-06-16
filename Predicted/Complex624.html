@@ -30,22 +30,21 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'LILRB2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N423" }},
-{data: { id: 'LILRA3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N6C8" }},
-{data: { id: 'LILRA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75019" }},
-{data: { id: 'LILRB1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NHL6" }}], 
- edges: [{ data: { source: 'LILRA1', target: 'LILRA3', directed: 'false', weight: 0.987397} },
-{ data: { source: 'LILRA1', target: 'LILRB1', directed: 'false', weight: 0.171414} },
-{ data: { source: 'LILRA1', target: 'LILRB2', directed: 'false', weight: 0.171414} },
-{ data: { source: 'LILRB2', target: 'LILRA3', directed: 'false', weight: 0.9827879999999999} },
-{ data: { source: 'LILRB2', target: 'LILRB1', directed: 'false', weight: 0.171414} },
-{ data: { source: 'LILRA3', target: 'LILRB1', directed: 'false', weight: 0.98105} }]},
+elements:{nodes: [{data: { id: 'HLA-C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P10321" }},
+{data: { id: 'OLFM4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q6UX06" }},
+{data: { id: 'HLA-DQA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P01909" }},
+{data: { id: 'LOC100507680', score: 0, type: '', href: "https://www.ncbi.nlm.nih.gov/gene/100507680" }}], 
+ edges: [{ data: { source: 'HLA-C', target: 'LOC100507680', directed: 'false', weight: 0.9944059999999999} },
+{ data: { source: 'HLA-C', target: 'OLFM4', directed: 'false', weight: 0.144213} },
+{ data: { source: 'HLA-DQA1', target: 'LOC100507680', directed: 'false', weight: 0.666846} }]},
 
 style: [
     {
         selector: 'node',
         style: {
-		'font-size': 30,
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
         'font-weight': 'bold',
         'shape': function( ele ){ 
                                 if ( ele.data('type') == 'cov_link' ){return 'star'}                                
@@ -57,7 +56,7 @@ style: [
 							{
 							selector: 'edge',
 							style: {
-								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
 								'line-color': 'blue',
 								'opacity': 0.5
 							}
@@ -66,7 +65,10 @@ style: [
 
 });
 cy.layout({
-    name: 'circle'
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
 }).run();
 
 cy.on('tap', 'node', function(){
@@ -82,7 +84,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.38750
+    Complex Score  = 0.37500
     </section>
     </body>
     </html>

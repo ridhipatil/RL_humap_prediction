@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 20S proteasome</title>
+<title> 0.3 GPR56-CD81-Galpha(q/11)-Gbeta complex</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,25 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'TTF2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00358" }},
-{data: { id: 'PSMA7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O14818" }},
-{data: { id: 'HDAC7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WUI4" }},
-{data: { id: 'AKIRIN2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q53H80" }},
-{data: { id: 'PSMA5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P28066" }},
-{data: { id: 'PSMB3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49720" }},
-{data: { id: 'PSMB5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P28074" }}], 
- edges: [{ data: { source: 'TTF2', target: 'PSMB5', directed: 'false', weight: 0.9145719999999999} },
-{ data: { source: 'TTF2', target: 'AKIRIN2', directed: 'false', weight: 0.144297} },
-{ data: { source: 'TTF2', target: 'HDAC7', directed: 'false', weight: 0.621721} },
-{ data: { source: 'PSMA7', target: 'PSMB3', directed: 'false', weight: 0.959726} },
-{ data: { source: 'PSMA7', target: 'PSMA5', directed: 'false', weight: 0.324969} },
-{ data: { source: 'PSMA7', target: 'PSMB5', directed: 'false', weight: 0.31298000000000004} },
-{ data: { source: 'PSMA7', target: 'AKIRIN2', directed: 'false', weight: 0.309131} },
-{ data: { source: 'AKIRIN2', target: 'PSMA5', directed: 'false', weight: 0.194708} },
-{ data: { source: 'AKIRIN2', target: 'PSMB5', directed: 'false', weight: 0.9980559999999999} },
-{ data: { source: 'PSMA5', target: 'PSMB3', directed: 'false', weight: 0.822192} },
-{ data: { source: 'PSMA5', target: 'PSMB5', directed: 'false', weight: 0.060651300000000005} },
-{ data: { source: 'PSMB3', target: 'PSMB5', directed: 'false', weight: 0.999898} }]},
+elements:{nodes: [{data: { id: 'GNA11', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P29992" }},
+{data: { id: 'GNG3', score: 4, type: '', href: "https://www.uniprot.org/uniprot/P63215" }},
+{data: { id: 'GNA13', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14344" }},
+{data: { id: 'GNAQ', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P50148" }}], 
+ edges: [{ data: { source: 'GNA11', target: 'GNG3', directed: 'false', weight: 0.153578} },
+{ data: { source: 'GNG3', target: 'GNAQ', directed: 'false', weight: 0.25069400000000003} },
+{ data: { source: 'GNG3', target: 'GNA13', directed: 'false', weight: 0.165356} }]},
 
 style: [
     {
@@ -108,7 +96,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 20S proteasome<br> Complex Score = 0.38750<br> Unweighted Density = 0.57
+    0.3 GPR56-CD81-Galpha(q/11)-Gbeta complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.50
     </section>
     </body>
     </html>

@@ -30,17 +30,13 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'GRIP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96DT0" }},
-{data: { id: 'DYRK1B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y463" }},
-{data: { id: 'FAM53C', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q9NYF3" }},
-{data: { id: 'FNTB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49356" }},
-{data: { id: 'CENPF', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P49454" }}], 
- edges: [{ data: { source: 'DYRK1B', target: 'FAM53C', directed: 'false', weight: 0.9829540000000001} },
-{ data: { source: 'DYRK1B', target: 'FNTB', directed: 'false', weight: 0.128057} },
-{ data: { source: 'FAM53C', target: 'FNTB', directed: 'false', weight: 0.809684} },
-{ data: { source: 'FNTB', target: 'GRIP1', directed: 'false', weight: 0.963724} },
-{ data: { source: 'FNTB', target: 'CENPF', directed: 'false', weight: 0.745133} },
-{ data: { source: 'GRIP1', target: 'CENPF', directed: 'false', weight: 0.133451} }]},
+elements:{nodes: [{data: { id: 'UBAP2L', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q14157" }},
+{data: { id: 'HEXA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P06865" }},
+{data: { id: 'SARS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P49591" }},
+{data: { id: 'UBAP2', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q5T6F2" }}], 
+ edges: [{ data: { source: 'UBAP2', target: 'UBAP2L', directed: 'false', weight: 0.315183} },
+{ data: { source: 'HEXA', target: 'UBAP2L', directed: 'false', weight: 0.140816} },
+{ data: { source: 'SARS1', target: 'UBAP2L', directed: 'false', weight: 0.169726} }]},
 
 style: [
     {
@@ -88,12 +84,12 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    Complex Score  = 0.38750
+    Complex Score  = 0.37500
         <br> 
         <br>
         Connection to SARS-COV2: 
         <br>
-        1 interacting protein(s): <br>CENPF
+        2 interacting protein(s): <br>UBAP2L UBAP2
     </section>
     </body>
     </html>

@@ -2,7 +2,7 @@
 <!doctype html>
 <html>
 <head>
-<title> 0.2 Grancalcin-sorcin complex</title>
+<title> HEL-S-32 HEL-S-67p FABP7 SORD ECHS1 TALDO1</title>
 
 		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
 		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
@@ -30,15 +30,22 @@
           var cy = cytoscape({
       container: document.getElementById('cy'),
       
-elements:{nodes: [{data: { id: 'TMEM255A', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q5JRV8" }},
-{data: { id: 'CBR1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P16152" }},
-{data: { id: 'GCA', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P28676" }},
-{data: { id: 'CSTB', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P04080" }},
-{data: { id: 'DENND3', score: 4, type: '', href: "https://www.uniprot.org/uniprot/A2RUS2" }}], 
- edges: [{ data: { source: 'CBR1', target: 'CSTB', directed: 'false', weight: 0.8633850000000001} },
-{ data: { source: 'CBR1', target: 'DENND3', directed: 'false', weight: 0.638201} },
-{ data: { source: 'CBR1', target: 'GCA', directed: 'false', weight: 0.296392} },
-{ data: { source: 'TMEM255A', target: 'GCA', directed: 'false', weight: 0.9044620000000001} }]},
+elements:{nodes: [{data: { id: 'SORD', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q00796" }},
+{data: { id: 'TALDO1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P37837" }},
+{data: { id: 'HEL-S-32', score: 3, type: '', href: "https://www.uniprot.org/uniprot/V9HWF2" }},
+{data: { id: 'FABP7', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O15540" }},
+{data: { id: 'ECHS1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P30084" }},
+{data: { id: 'HEL-S-67p', score: 5, type: '', href: "https://www.uniprot.org/uniprot/V9HWC2" }}], 
+ edges: [{ data: { source: 'TALDO1', target: 'HEL-S-32', directed: 'false', weight: 0.055762599999999996} },
+{ data: { source: 'TALDO1', target: 'FABP7', directed: 'false', weight: 0.9930209999999999} },
+{ data: { source: 'TALDO1', target: 'ECHS1', directed: 'false', weight: 0.62825} },
+{ data: { source: 'TALDO1', target: 'HEL-S-67p', directed: 'false', weight: 0.020678400000000003} },
+{ data: { source: 'SORD', target: 'HEL-S-32', directed: 'false', weight: 0.9418479999999999} },
+{ data: { source: 'SORD', target: 'HEL-S-67p', directed: 'false', weight: 0.0331358} },
+{ data: { source: 'HEL-S-32', target: 'FABP7', directed: 'false', weight: 0.470182} },
+{ data: { source: 'HEL-S-32', target: 'HEL-S-67p', directed: 'false', weight: 0.038567699999999996} },
+{ data: { source: 'HEL-S-32', target: 'ECHS1', directed: 'false', weight: 0.0208375} },
+{ data: { source: 'FABP7', target: 'HEL-S-67p', directed: 'false', weight: 0.023871299999999998} }]},
 
 style: [
     {
@@ -98,7 +105,7 @@ cy.on('tap', 'node', function(){
 	<br>
 	<br>
 	<br> 
-    0.2 Grancalcin-sorcin complex<br> Complex Score = 0.35000<br> Unweighted Density = 0.40
+    HEL-S-32 HEL-S-67p FABP7 SORD ECHS1 TALDO1<br> Complex Score = 0.37500<br> Unweighted Density = 0.67
     </section>
     </body>
     </html>
