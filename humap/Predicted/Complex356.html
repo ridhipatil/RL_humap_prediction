@@ -1,0 +1,89 @@
+
+<!doctype html>
+<html>
+<head>
+<title> Complex 356</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex357.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'WDR7', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q9Y4E6" }},
+{data: { id: 'DMXL1', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q9Y485" }},
+{data: { id: 'DMXL2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8TDJ6" }},
+{data: { id: 'ROGDI', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9GZN7" }}], 
+ edges: [{ data: { source: 'WDR7', target: 'ROGDI', directed: 'false', weight: 0.963785} },
+{ data: { source: 'WDR7', target: 'DMXL1', directed: 'false', weight: 0.28781100000000004} },
+{ data: { source: 'WDR7', target: 'DMXL2', directed: 'false', weight: 0.108694} },
+{ data: { source: 'DMXL2', target: 'ROGDI', directed: 'false', weight: 0.93405} },
+{ data: { source: 'DMXL2', target: 'DMXL1', directed: 'false', weight: 0.100649} },
+{ data: { source: 'ROGDI', target: 'DMXL1', directed: 'false', weight: 0.9317639999999999} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 30,
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}                                
+  return 'rectangle';
+  },            
+            'background-color': 'mapData(score, 0, 5, yellow, green)',
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
+								'line-color': 'blue',
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    name: 'circle'
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    Complex Score  = 0.38750
+    </section>
+    </body>
+    </html>
+    

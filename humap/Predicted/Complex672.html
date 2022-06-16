@@ -1,0 +1,161 @@
+
+<!doctype html>
+<html>
+<head>
+<title> Complex 672</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex673.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'MRPS10', score: 3, type: '', href: "https://www.uniprot.org/uniprot/P82664" }},
+{data: { id: 'MRPS9', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P82933" }},
+{data: { id: 'MRPS2', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q9Y399" }},
+{data: { id: 'RPL10', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P27635" }},
+{data: { id: 'MRPS17', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9Y2R5" }},
+{data: { id: 'MRPS18C', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9Y3D5" }},
+{data: { id: 'EEF1B2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P24534" }},
+{data: { id: 'MRPS28', score: 4, type: '', href: "https://www.uniprot.org/uniprot/P82673" }},
+{data: { id: 'MRPS25', score: 4, type: 'cov_link', href: "https://www.uniprot.org/uniprot/P82663" }},
+{data: { id: 'MRPS22', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P82650" }},
+{data: { id: 'ERAL1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75616" }},
+{data: { id: 'PTCD3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96EY7" }},
+{data: { id: 'DAP3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O95886" }},
+{data: { id: 'SRP72', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/O76094" }}], 
+ edges: [{ data: { source: 'MRPS10', target: 'MRPS9', directed: 'false', weight: 0.9835520000000001} },
+{ data: { source: 'MRPS10', target: 'MRPS2', directed: 'false', weight: 0.9807110000000001} },
+{ data: { source: 'MRPS10', target: 'DAP3', directed: 'false', weight: 0.98559} },
+{ data: { source: 'MRPS10', target: 'MRPS22', directed: 'false', weight: 0.9845940000000001} },
+{ data: { source: 'MRPS10', target: 'PTCD3', directed: 'false', weight: 0.99777} },
+{ data: { source: 'MRPS10', target: 'MRPS25', directed: 'false', weight: 0.828779} },
+{ data: { source: 'MRPS10', target: 'MRPS28', directed: 'false', weight: 0.775307} },
+{ data: { source: 'MRPS10', target: 'MRPS18C', directed: 'false', weight: 0.647457} },
+{ data: { source: 'MRPS10', target: 'MRPS17', directed: 'false', weight: 0.596251} },
+{ data: { source: 'MRPS10', target: 'ERAL1', directed: 'false', weight: 0.13328900000000002} },
+{ data: { source: 'MRPS9', target: 'MRPS2', directed: 'false', weight: 1.0} },
+{ data: { source: 'MRPS9', target: 'DAP3', directed: 'false', weight: 0.999999} },
+{ data: { source: 'MRPS9', target: 'MRPS22', directed: 'false', weight: 0.999999} },
+{ data: { source: 'MRPS9', target: 'PTCD3', directed: 'false', weight: 0.9999959999999999} },
+{ data: { source: 'MRPS9', target: 'MRPS18C', directed: 'false', weight: 0.940367} },
+{ data: { source: 'MRPS9', target: 'MRPS17', directed: 'false', weight: 0.932634} },
+{ data: { source: 'MRPS9', target: 'MRPS25', directed: 'false', weight: 0.8792840000000001} },
+{ data: { source: 'MRPS9', target: 'MRPS28', directed: 'false', weight: 0.593847} },
+{ data: { source: 'MRPS9', target: 'ERAL1', directed: 'false', weight: 0.299639} },
+{ data: { source: 'MRPS2', target: 'DAP3', directed: 'false', weight: 0.9999520000000001} },
+{ data: { source: 'MRPS2', target: 'PTCD3', directed: 'false', weight: 0.999857} },
+{ data: { source: 'MRPS2', target: 'MRPS22', directed: 'false', weight: 0.999828} },
+{ data: { source: 'MRPS2', target: 'MRPS18C', directed: 'false', weight: 0.9687100000000001} },
+{ data: { source: 'MRPS2', target: 'MRPS17', directed: 'false', weight: 0.91619} },
+{ data: { source: 'MRPS2', target: 'MRPS25', directed: 'false', weight: 0.9068120000000001} },
+{ data: { source: 'MRPS2', target: 'MRPS28', directed: 'false', weight: 0.8398479999999999} },
+{ data: { source: 'MRPS2', target: 'ERAL1', directed: 'false', weight: 0.46074} },
+{ data: { source: 'MRPS17', target: 'DAP3', directed: 'false', weight: 0.93129} },
+{ data: { source: 'MRPS17', target: 'MRPS22', directed: 'false', weight: 0.980281} },
+{ data: { source: 'MRPS17', target: 'PTCD3', directed: 'false', weight: 0.8877370000000001} },
+{ data: { source: 'MRPS17', target: 'MRPS25', directed: 'false', weight: 0.937386} },
+{ data: { source: 'MRPS17', target: 'MRPS18C', directed: 'false', weight: 0.853382} },
+{ data: { source: 'MRPS17', target: 'ERAL1', directed: 'false', weight: 0.646687} },
+{ data: { source: 'MRPS17', target: 'MRPS28', directed: 'false', weight: 0.5989760000000001} },
+{ data: { source: 'RPL10', target: 'EEF1B2', directed: 'false', weight: 0.999719} },
+{ data: { source: 'RPL10', target: 'SRP72', directed: 'false', weight: 0.981125} },
+{ data: { source: 'MRPS18C', target: 'DAP3', directed: 'false', weight: 0.855109} },
+{ data: { source: 'MRPS18C', target: 'MRPS22', directed: 'false', weight: 0.881661} },
+{ data: { source: 'MRPS18C', target: 'PTCD3', directed: 'false', weight: 0.9043} },
+{ data: { source: 'MRPS18C', target: 'MRPS25', directed: 'false', weight: 0.808786} },
+{ data: { source: 'MRPS18C', target: 'MRPS28', directed: 'false', weight: 0.9068} },
+{ data: { source: 'MRPS18C', target: 'ERAL1', directed: 'false', weight: 0.484392} },
+{ data: { source: 'MRPS28', target: 'DAP3', directed: 'false', weight: 0.946326} },
+{ data: { source: 'MRPS28', target: 'MRPS22', directed: 'false', weight: 0.9459489999999999} },
+{ data: { source: 'MRPS28', target: 'PTCD3', directed: 'false', weight: 0.974477} },
+{ data: { source: 'MRPS28', target: 'MRPS25', directed: 'false', weight: 0.8480260000000001} },
+{ data: { source: 'MRPS28', target: 'ERAL1', directed: 'false', weight: 0.31808200000000003} },
+{ data: { source: 'MRPS25', target: 'DAP3', directed: 'false', weight: 0.945125} },
+{ data: { source: 'MRPS25', target: 'MRPS22', directed: 'false', weight: 0.9953} },
+{ data: { source: 'MRPS25', target: 'PTCD3', directed: 'false', weight: 0.959573} },
+{ data: { source: 'MRPS25', target: 'ERAL1', directed: 'false', weight: 0.48499200000000003} },
+{ data: { source: 'MRPS22', target: 'DAP3', directed: 'false', weight: 0.9999040000000001} },
+{ data: { source: 'MRPS22', target: 'PTCD3', directed: 'false', weight: 0.999978} },
+{ data: { source: 'MRPS22', target: 'ERAL1', directed: 'false', weight: 0.289459} },
+{ data: { source: 'MRPS22', target: 'SRP72', directed: 'false', weight: 0.276446} },
+{ data: { source: 'ERAL1', target: 'DAP3', directed: 'false', weight: 0.293785} },
+{ data: { source: 'ERAL1', target: 'PTCD3', directed: 'false', weight: 0.45272299999999993} },
+{ data: { source: 'PTCD3', target: 'DAP3', directed: 'false', weight: 0.9999889999999999} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}                                
+  return 'rectangle';
+  },            
+            'background-color': 'mapData(score, 0, 5, yellow, green)',
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'line-color': 'blue',
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    Complex Score  = 0.38750
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        3 interacting protein(s): <br>MRPS2 MRPS25 SRP72
+    </section>
+    </body>
+    </html>
+    

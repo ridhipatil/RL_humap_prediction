@@ -1,0 +1,102 @@
+
+<!doctype html>
+<html>
+<head>
+<title> Complex 905</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex906.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'WASH3P', score: 5, type: '', href: "https://www.uniprot.org/uniprot/C4AMC7" }},
+{data: { id: 'WASH6P', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9NQA3" }},
+{data: { id: 'TPM2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P07951" }},
+{data: { id: 'ACTA1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P68133" }},
+{data: { id: 'CORO2A', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q92828" }},
+{data: { id: 'CAPZA2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P47755" }},
+{data: { id: 'CEP162', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q5TB80" }}], 
+ edges: [{ data: { source: 'WASH3P', target: 'CAPZA2', directed: 'false', weight: 0.976981} },
+{ data: { source: 'WASH3P', target: 'WASH6P', directed: 'false', weight: 0.171414} },
+{ data: { source: 'WASH6P', target: 'CAPZA2', directed: 'false', weight: 0.9803} },
+{ data: { source: 'TPM2', target: 'ACTA1', directed: 'false', weight: 0.399751} },
+{ data: { source: 'TPM2', target: 'CORO2A', directed: 'false', weight: 0.22107600000000002} },
+{ data: { source: 'TPM2', target: 'CEP162', directed: 'false', weight: 0.130393} },
+{ data: { source: 'ACTA1', target: 'CAPZA2', directed: 'false', weight: 0.960994} },
+{ data: { source: 'ACTA1', target: 'CORO2A', directed: 'false', weight: 0.342124} },
+{ data: { source: 'ACTA1', target: 'CEP162', directed: 'false', weight: 0.192797} },
+{ data: { source: 'CORO2A', target: 'CEP162', directed: 'false', weight: 0.147366} },
+{ data: { source: 'CAPZA2', target: 'CEP162', directed: 'false', weight: 0.054570400000000005} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}                                
+  return 'rectangle';
+  },            
+            'background-color': 'mapData(score, 0, 5, yellow, green)',
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'line-color': 'blue',
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    Complex Score  = 0.37500
+    </section>
+    </body>
+    </html>
+    

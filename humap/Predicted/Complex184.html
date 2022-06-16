@@ -1,0 +1,111 @@
+
+<!doctype html>
+<html>
+<head>
+<title> Complex 184</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex185.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'TIMM50', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q3ZCQ8" }},
+{data: { id: 'AUP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9Y679" }},
+{data: { id: 'PDE3A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14432" }},
+{data: { id: 'MAP7D1', score: 4, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q3KQU3" }},
+{data: { id: 'TUBB4A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P04350" }},
+{data: { id: 'TUBB6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BUF5" }},
+{data: { id: 'TUBA1C', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BQE3" }}], 
+ edges: [{ data: { source: 'TIMM50', target: 'TUBA1C', directed: 'false', weight: 0.351136} },
+{ data: { source: 'TIMM50', target: 'TUBB6', directed: 'false', weight: 0.149954} },
+{ data: { source: 'TIMM50', target: 'PDE3A', directed: 'false', weight: 0.07545460000000001} },
+{ data: { source: 'TIMM50', target: 'MAP7D1', directed: 'false', weight: 0.09052510000000001} },
+{ data: { source: 'AUP1', target: 'TUBA1C', directed: 'false', weight: 0.43848100000000007} },
+{ data: { source: 'AUP1', target: 'TUBB6', directed: 'false', weight: 0.12529} },
+{ data: { source: 'AUP1', target: 'PDE3A', directed: 'false', weight: 0.0693691} },
+{ data: { source: 'PDE3A', target: 'TUBA1C', directed: 'false', weight: 0.47910600000000003} },
+{ data: { source: 'PDE3A', target: 'TUBB6', directed: 'false', weight: 0.07203949999999999} },
+{ data: { source: 'PDE3A', target: 'MAP7D1', directed: 'false', weight: 0.07203949999999999} },
+{ data: { source: 'MAP7D1', target: 'TUBA1C', directed: 'false', weight: 0.360021} },
+{ data: { source: 'MAP7D1', target: 'TUBB6', directed: 'false', weight: 0.0909956} },
+{ data: { source: 'TUBB4A', target: 'TUBA1C', directed: 'false', weight: 0.989151} },
+{ data: { source: 'TUBB4A', target: 'TUBB6', directed: 'false', weight: 0.054014099999999995} },
+{ data: { source: 'TUBB6', target: 'TUBA1C', directed: 'false', weight: 0.8143229999999999} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}                                
+  return 'rectangle';
+  },            
+            'background-color': 'mapData(score, 0, 5, yellow, green)',
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'line-color': 'blue',
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    Complex Score  = 0.39375
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>MAP7D1
+    </section>
+    </body>
+    </html>
+    

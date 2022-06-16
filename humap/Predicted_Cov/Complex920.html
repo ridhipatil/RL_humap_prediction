@@ -1,0 +1,119 @@
+
+<!doctype html>
+<html>
+<head>
+<title> 0.2 6S methyltransferase and RG-containing Sm proteins complex</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex921.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'SNRPE', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62304" }},
+{data: { id: 'SNRPF', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62306" }},
+{data: { id: 'IK', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13123" }},
+{data: { id: 'SF3B1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O75533" }},
+{data: { id: 'SRRT', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BXP5" }},
+{data: { id: 'SNRPD2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62316" }},
+{data: { id: 'CDK12', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NYV4" }},
+{data: { id: 'RSBN1', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q5VWQ0" }}], 
+ edges: [{ data: { source: 'SNRPE', target: 'SNRPD2', directed: 'false', weight: 0.994926} },
+{ data: { source: 'SNRPE', target: 'IK', directed: 'false', weight: 0.16098800000000002} },
+{ data: { source: 'SNRPE', target: 'SNRPF', directed: 'false', weight: 0.9970319999999999} },
+{ data: { source: 'SNRPF', target: 'SNRPD2', directed: 'false', weight: 0.9848} },
+{ data: { source: 'SNRPF', target: 'IK', directed: 'false', weight: 0.114254} },
+{ data: { source: 'SNRPF', target: 'SRRT', directed: 'false', weight: 0.102896} },
+{ data: { source: 'IK', target: 'SNRPD2', directed: 'false', weight: 0.967368} },
+{ data: { source: 'IK', target: 'SRRT', directed: 'false', weight: 0.5499609999999999} },
+{ data: { source: 'SF3B1', target: 'SNRPD2', directed: 'false', weight: 0.9989} },
+{ data: { source: 'SF3B1', target: 'SRRT', directed: 'false', weight: 0.976561} },
+{ data: { source: 'SF3B1', target: 'CDK12', directed: 'false', weight: 0.0863487} },
+{ data: { source: 'SRRT', target: 'SNRPD2', directed: 'false', weight: 0.986266} },
+{ data: { source: 'SRRT', target: 'CDK12', directed: 'false', weight: 0.510731} },
+{ data: { source: 'SNRPD2', target: 'CDK12', directed: 'false', weight: 0.8060649999999999} },
+{ data: { source: 'CDK12', target: 'RSBN1', directed: 'false', weight: 0.570802} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}  
+                                 if ( ele.data('type') == 'sars' ){return 'triangle'}   
+  return 'rectangle';
+  },            
+             'background-color': function( ele ){ 
+                                if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
+								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
+                                 if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
+                                 if ( ele.data('score') == 4 ){return 'rgb(78, 148, 70)'}   
+                                 if ( ele.data('score') == 5 ){return 'rgb(52, 136, 74)'} 
+								                                  if ( ele.data('type') == 'sars' ){return 'rgb(255, 0, 0)'}   
+  return 'rgb(180, 131, 40)';
+  },
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'line-color': function( ele ){ 
+                                 if ( ele.data('type') == 'sars' ){return 'red'}   
+  return 'blue';
+  },
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    0.2 6S methyltransferase and RG-containing Sm proteins complex<br> Complex Score = 0.37500<br> Unweighted Density = 0.54
+    </section>
+    </body>
+    </html>
+    

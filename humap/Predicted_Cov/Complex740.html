@@ -1,0 +1,117 @@
+
+<!doctype html>
+<html>
+<head>
+<title> 0.1 SEC23-SEC24 adaptor complex match 2</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex741.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'ZNF358', score: 3, type: '', href: "https://www.uniprot.org/uniprot/Q9NW07" }},
+{data: { id: 'FAM170A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/A1A519" }},
+{data: { id: 'TNK2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q07912" }},
+{data: { id: 'SEC31A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O94979" }},
+{data: { id: 'CSNK1A1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P48729" }},
+{data: { id: 'SEC23A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15436" }},
+{data: { id: 'OCRL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q01968" }},
+{data: { id: 'CSNK1A1L', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N752" }}], 
+ edges: [{ data: { source: 'ZNF358', target: 'FAM170A', directed: 'false', weight: 0.877114} },
+{ data: { source: 'ZNF358', target: 'CSNK1A1L', directed: 'false', weight: 0.151455} },
+{ data: { source: 'ZNF358', target: 'CSNK1A1', directed: 'false', weight: 0.102922} },
+{ data: { source: 'FAM170A', target: 'CSNK1A1L', directed: 'false', weight: 0.9608690000000001} },
+{ data: { source: 'FAM170A', target: 'CSNK1A1', directed: 'false', weight: 0.820425} },
+{ data: { source: 'TNK2', target: 'OCRL', directed: 'false', weight: 0.288379} },
+{ data: { source: 'SEC31A', target: 'SEC23A', directed: 'false', weight: 0.9213549999999999} },
+{ data: { source: 'SEC31A', target: 'OCRL', directed: 'false', weight: 0.115879} },
+{ data: { source: 'SEC31A', target: 'CSNK1A1', directed: 'false', weight: 0.0904993} },
+{ data: { source: 'CSNK1A1', target: 'SEC23A', directed: 'false', weight: 0.335946} },
+{ data: { source: 'CSNK1A1', target: 'CSNK1A1L', directed: 'false', weight: 0.11730499999999999} },
+{ data: { source: 'CSNK1A1', target: 'OCRL', directed: 'false', weight: 0.234805} },
+{ data: { source: 'SEC23A', target: 'OCRL', directed: 'false', weight: 0.396848} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}  
+                                 if ( ele.data('type') == 'sars' ){return 'triangle'}   
+  return 'rectangle';
+  },            
+             'background-color': function( ele ){ 
+                                if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
+								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
+                                 if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
+                                 if ( ele.data('score') == 4 ){return 'rgb(78, 148, 70)'}   
+                                 if ( ele.data('score') == 5 ){return 'rgb(52, 136, 74)'} 
+								                                  if ( ele.data('type') == 'sars' ){return 'rgb(255, 0, 0)'}   
+  return 'rgb(180, 131, 40)';
+  },
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'line-color': function( ele ){ 
+                                 if ( ele.data('type') == 'sars' ){return 'red'}   
+  return 'blue';
+  },
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    0.1 SEC23-SEC24 adaptor complex match 2<br> Complex Score = 0.37500<br> Unweighted Density = 0.46
+    </section>
+    </body>
+    </html>
+    

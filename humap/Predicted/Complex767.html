@@ -1,0 +1,110 @@
+
+<!doctype html>
+<html>
+<head>
+<title> Complex 767</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex768.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'B4GALT3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60512" }},
+{data: { id: 'CHST14', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NCH0" }},
+{data: { id: 'CHST12', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9NRB3" }},
+{data: { id: 'ADAM17', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P78536" }},
+{data: { id: 'PACC1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H813" }},
+{data: { id: 'LRIG1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96JA1" }},
+{data: { id: 'LRFN3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BTN0" }},
+{data: { id: 'SCAP', score: 5, type: 'cov_link', href: "https://www.uniprot.org/uniprot/Q12770" }}], 
+ edges: [{ data: { source: 'B4GALT3', target: 'CHST14', directed: 'false', weight: 0.40644} },
+{ data: { source: 'CHST14', target: 'LRIG1', directed: 'false', weight: 0.26962800000000003} },
+{ data: { source: 'CHST14', target: 'CHST12', directed: 'false', weight: 0.318657} },
+{ data: { source: 'CHST14', target: 'LRFN3', directed: 'false', weight: 0.223189} },
+{ data: { source: 'CHST14', target: 'PACC1', directed: 'false', weight: 0.124124} },
+{ data: { source: 'CHST12', target: 'LRIG1', directed: 'false', weight: 0.35973099999999997} },
+{ data: { source: 'CHST12', target: 'LRFN3', directed: 'false', weight: 0.353919} },
+{ data: { source: 'CHST12', target: 'PACC1', directed: 'false', weight: 0.124904} },
+{ data: { source: 'ADAM17', target: 'LRIG1', directed: 'false', weight: 0.30286599999999997} },
+{ data: { source: 'PACC1', target: 'LRIG1', directed: 'false', weight: 0.07892769999999999} },
+{ data: { source: 'PACC1', target: 'SCAP', directed: 'false', weight: 0.310974} },
+{ data: { source: 'PACC1', target: 'LRFN3', directed: 'false', weight: 0.102586} },
+{ data: { source: 'LRIG1', target: 'LRFN3', directed: 'false', weight: 0.25908400000000004} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}                                
+  return 'rectangle';
+  },            
+            'background-color': 'mapData(score, 0, 5, yellow, green)',
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'line-color': 'blue',
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    Complex Score  = 0.37500
+        <br> 
+        <br>
+        Connection to SARS-COV2: 
+        <br>
+        1 interacting protein(s): <br>SCAP
+    </section>
+    </body>
+    </html>
+    

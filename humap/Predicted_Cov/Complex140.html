@@ -1,0 +1,138 @@
+
+<!doctype html>
+<html>
+<head>
+<title> 0.1 protein phosphatase 2A C-subunit-synapsin complex</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex141.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'NUFIP1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UHK0" }},
+{data: { id: 'DPYSL4', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O14531" }},
+{data: { id: 'CAMKV', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8NCB2" }},
+{data: { id: 'GPM6A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P51674" }},
+{data: { id: 'SYN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P17600" }},
+{data: { id: 'CAMK2A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UQM7" }},
+{data: { id: 'CNTN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q12860" }},
+{data: { id: 'ZNHIT3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q15649" }},
+{data: { id: 'SYT1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P21579" }},
+{data: { id: 'ATP4A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P20648" }}], 
+ edges: [{ data: { source: 'NUFIP1', target: 'ZNHIT3', directed: 'false', weight: 0.98654} },
+{ data: { source: 'NUFIP1', target: 'SYN1', directed: 'false', weight: 0.42837700000000006} },
+{ data: { source: 'NUFIP1', target: 'CAMK2A', directed: 'false', weight: 0.397246} },
+{ data: { source: 'NUFIP1', target: 'CAMKV', directed: 'false', weight: 0.336572} },
+{ data: { source: 'NUFIP1', target: 'GPM6A', directed: 'false', weight: 0.261341} },
+{ data: { source: 'NUFIP1', target: 'CNTN1', directed: 'false', weight: 0.25231} },
+{ data: { source: 'NUFIP1', target: 'ATP4A', directed: 'false', weight: 0.185135} },
+{ data: { source: 'NUFIP1', target: 'DPYSL4', directed: 'false', weight: 0.152072} },
+{ data: { source: 'NUFIP1', target: 'SYT1', directed: 'false', weight: 0.0854067} },
+{ data: { source: 'DPYSL4', target: 'GPM6A', directed: 'false', weight: 0.222874} },
+{ data: { source: 'DPYSL4', target: 'CAMK2A', directed: 'false', weight: 0.39405999999999997} },
+{ data: { source: 'DPYSL4', target: 'SYT1', directed: 'false', weight: 0.35689299999999996} },
+{ data: { source: 'DPYSL4', target: 'ATP4A', directed: 'false', weight: 0.33181700000000003} },
+{ data: { source: 'DPYSL4', target: 'SYN1', directed: 'false', weight: 0.5} },
+{ data: { source: 'DPYSL4', target: 'CAMKV', directed: 'false', weight: 0.5} },
+{ data: { source: 'DPYSL4', target: 'CNTN1', directed: 'false', weight: 0.33181700000000003} },
+{ data: { source: 'GPM6A', target: 'CAMKV', directed: 'false', weight: 0.45249700000000004} },
+{ data: { source: 'GPM6A', target: 'SYN1', directed: 'false', weight: 0.45249700000000004} },
+{ data: { source: 'GPM6A', target: 'CAMK2A', directed: 'false', weight: 0.352711} },
+{ data: { source: 'GPM6A', target: 'SYT1', directed: 'false', weight: 0.319639} },
+{ data: { source: 'GPM6A', target: 'ATP4A', directed: 'false', weight: 0.292948} },
+{ data: { source: 'GPM6A', target: 'CNTN1', directed: 'false', weight: 0.292948} },
+{ data: { source: 'CAMKV', target: 'CAMK2A', directed: 'false', weight: 0.7282689999999999} },
+{ data: { source: 'CAMKV', target: 'SYT1', directed: 'false', weight: 0.684525} },
+{ data: { source: 'CAMKV', target: 'ATP4A', directed: 'false', weight: 0.6435810000000001} },
+{ data: { source: 'CAMKV', target: 'SYN1', directed: 'false', weight: 0.837815} },
+{ data: { source: 'CAMKV', target: 'CNTN1', directed: 'false', weight: 0.6435810000000001} },
+{ data: { source: 'SYN1', target: 'CAMK2A', directed: 'false', weight: 0.7282689999999999} },
+{ data: { source: 'SYN1', target: 'SYT1', directed: 'false', weight: 0.684525} },
+{ data: { source: 'SYN1', target: 'ATP4A', directed: 'false', weight: 0.6435810000000001} },
+{ data: { source: 'SYN1', target: 'CNTN1', directed: 'false', weight: 0.6435810000000001} },
+{ data: { source: 'CAMK2A', target: 'SYT1', directed: 'false', weight: 0.926789} },
+{ data: { source: 'CAMK2A', target: 'ATP4A', directed: 'false', weight: 0.9013770000000001} },
+{ data: { source: 'CAMK2A', target: 'CNTN1', directed: 'false', weight: 0.48647299999999993} },
+{ data: { source: 'CNTN1', target: 'SYT1', directed: 'false', weight: 0.43407700000000005} },
+{ data: { source: 'CNTN1', target: 'ATP4A', directed: 'false', weight: 0.390904} },
+{ data: { source: 'SYT1', target: 'ATP4A', directed: 'false', weight: 0.853543} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 30,
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}  
+                                 if ( ele.data('type') == 'sars' ){return 'triangle'}   
+  return 'rectangle';
+  },            
+            'background-color': function( ele ){ 
+                                if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
+								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
+                                 if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
+                                 if ( ele.data('score') == 4 ){return 'rgb(78, 148, 70)'}   
+                                 if ( ele.data('score') == 5 ){return 'rgb(52, 136, 74)'} 
+								                                  if ( ele.data('type') == 'sars' ){return 'rgb(255, 0, 0)'}   
+  return 'rgb(180, 131, 40)';
+  },
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
+								'line-color': function( ele ){ 
+                                 if ( ele.data('type') == 'sars' ){return 'red'}   
+  return 'blue';
+  },
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'circle'
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    0.1 protein phosphatase 2A C-subunit-synapsin complex<br> Complex Score = 0.39375<br> Unweighted Density = 0.82
+    </section>
+    </body>
+    </html>
+    

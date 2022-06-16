@@ -1,0 +1,110 @@
+
+<!doctype html>
+<html>
+<head>
+<title> Complex 411</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex412.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'MATR3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P43243" }},
+{data: { id: 'PRPF4B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q13523" }},
+{data: { id: 'SRRM2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UQ35" }},
+{data: { id: 'SELENOH', score: 2, type: '', href: "https://www.uniprot.org/uniprot/Q8IZQ5" }},
+{data: { id: 'TRA2B', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P62995" }},
+{data: { id: 'PNN', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9H307" }},
+{data: { id: 'SRRT', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9BXP5" }},
+{data: { id: 'ACIN1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UKV3" }}], 
+ edges: [{ data: { source: 'MATR3', target: 'SRRM2', directed: 'false', weight: 0.293829} },
+{ data: { source: 'MATR3', target: 'TRA2B', directed: 'false', weight: 0.47006800000000004} },
+{ data: { source: 'MATR3', target: 'ACIN1', directed: 'false', weight: 0.131244} },
+{ data: { source: 'MATR3', target: 'PNN', directed: 'false', weight: 0.520228} },
+{ data: { source: 'MATR3', target: 'PRPF4B', directed: 'false', weight: 0.0941206} },
+{ data: { source: 'MATR3', target: 'SELENOH', directed: 'false', weight: 0.34609} },
+{ data: { source: 'PRPF4B', target: 'SRRM2', directed: 'false', weight: 0.0959108} },
+{ data: { source: 'PRPF4B', target: 'TRA2B', directed: 'false', weight: 0.43055299999999996} },
+{ data: { source: 'PRPF4B', target: 'ACIN1', directed: 'false', weight: 0.12340999999999999} },
+{ data: { source: 'PRPF4B', target: 'PNN', directed: 'false', weight: 0.09449760000000001} },
+{ data: { source: 'SRRM2', target: 'TRA2B', directed: 'false', weight: 0.99976} },
+{ data: { source: 'SRRM2', target: 'PNN', directed: 'false', weight: 0.99444} },
+{ data: { source: 'SRRM2', target: 'ACIN1', directed: 'false', weight: 0.994173} },
+{ data: { source: 'SRRM2', target: 'SRRT', directed: 'false', weight: 0.689616} },
+{ data: { source: 'TRA2B', target: 'ACIN1', directed: 'false', weight: 0.942994} },
+{ data: { source: 'TRA2B', target: 'PNN', directed: 'false', weight: 0.93606} },
+{ data: { source: 'PNN', target: 'ACIN1', directed: 'false', weight: 0.994806} },
+{ data: { source: 'SRRT', target: 'ACIN1', directed: 'false', weight: 0.755293} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}                                
+  return 'rectangle';
+  },            
+            'background-color': 'mapData(score, 0, 5, yellow, green)',
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'line-color': 'blue',
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    Complex Score  = 0.38750
+    </section>
+    </body>
+    </html>
+    

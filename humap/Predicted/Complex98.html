@@ -1,0 +1,117 @@
+
+<!doctype html>
+<html>
+<head>
+<title> Complex 98</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex99.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'CCDC93', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q567U6" }},
+{data: { id: 'COMMD3', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UBI1" }},
+{data: { id: 'CCDC22', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60826" }},
+{data: { id: 'VPS29', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q9UBQ0" }},
+{data: { id: 'COMMD8', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9NX08" }},
+{data: { id: 'COMMD2', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q86X83" }},
+{data: { id: 'COMMD4', score: 4, type: '', href: "https://www.uniprot.org/uniprot/Q9H0A8" }},
+{data: { id: 'VPS35', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96QK1" }},
+{data: { id: 'COMMD6', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q7Z4G1" }}], 
+ edges: [{ data: { source: 'CCDC93', target: 'COMMD3', directed: 'false', weight: 0.865294} },
+{ data: { source: 'CCDC93', target: 'VPS29', directed: 'false', weight: 0.270362} },
+{ data: { source: 'CCDC93', target: 'COMMD8', directed: 'false', weight: 0.121359} },
+{ data: { source: 'CCDC93', target: 'COMMD4', directed: 'false', weight: 0.362122} },
+{ data: { source: 'CCDC93', target: 'COMMD6', directed: 'false', weight: 0.8787379999999999} },
+{ data: { source: 'CCDC93', target: 'COMMD2', directed: 'false', weight: 0.937475} },
+{ data: { source: 'CCDC93', target: 'CCDC22', directed: 'false', weight: 0.65067} },
+{ data: { source: 'COMMD3', target: 'COMMD8', directed: 'false', weight: 0.99903} },
+{ data: { source: 'COMMD3', target: 'COMMD4', directed: 'false', weight: 0.997518} },
+{ data: { source: 'COMMD3', target: 'COMMD6', directed: 'false', weight: 0.9931969999999999} },
+{ data: { source: 'COMMD3', target: 'COMMD2', directed: 'false', weight: 0.968349} },
+{ data: { source: 'COMMD3', target: 'VPS29', directed: 'false', weight: 0.931486} },
+{ data: { source: 'COMMD3', target: 'CCDC22', directed: 'false', weight: 0.928673} },
+{ data: { source: 'COMMD8', target: 'VPS29', directed: 'false', weight: 0.664317} },
+{ data: { source: 'COMMD8', target: 'COMMD6', directed: 'false', weight: 0.8438469999999999} },
+{ data: { source: 'COMMD8', target: 'COMMD2', directed: 'false', weight: 0.546666} },
+{ data: { source: 'COMMD8', target: 'COMMD4', directed: 'false', weight: 0.414624} },
+{ data: { source: 'COMMD8', target: 'CCDC22', directed: 'false', weight: 0.110175} },
+{ data: { source: 'VPS29', target: 'VPS35', directed: 'false', weight: 0.9759110000000001} },
+{ data: { source: 'VPS29', target: 'CCDC22', directed: 'false', weight: 0.810412} },
+{ data: { source: 'VPS29', target: 'COMMD4', directed: 'false', weight: 0.714525} },
+{ data: { source: 'VPS29', target: 'COMMD6', directed: 'false', weight: 0.664317} },
+{ data: { source: 'VPS29', target: 'COMMD2', directed: 'false', weight: 0.6026} },
+{ data: { source: 'CCDC22', target: 'COMMD4', directed: 'false', weight: 0.8372700000000001} },
+{ data: { source: 'CCDC22', target: 'COMMD6', directed: 'false', weight: 0.958357} },
+{ data: { source: 'CCDC22', target: 'COMMD2', directed: 'false', weight: 0.670705} },
+{ data: { source: 'COMMD2', target: 'COMMD4', directed: 'false', weight: 0.589286} },
+{ data: { source: 'COMMD2', target: 'COMMD6', directed: 'false', weight: 0.8031119999999999} },
+{ data: { source: 'COMMD4', target: 'COMMD6', directed: 'false', weight: 0.996511} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 30,
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}                                
+  return 'rectangle';
+  },            
+            'background-color': 'mapData(score, 0, 5, yellow, green)',
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.5, 2.5)',
+								'line-color': 'blue',
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    name: 'circle'
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    Complex Score  = 0.39375
+    </section>
+    </body>
+    </html>
+    

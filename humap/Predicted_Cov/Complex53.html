@@ -1,0 +1,139 @@
+
+<!doctype html>
+<html>
+<head>
+<title> 0.3 Sororin-cohesin complex</title>
+
+		<script src="https://unpkg.com/cytoscape/dist/cytoscape.min.js"></script>
+		<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+<script src="https://unpkg.com/cose-base/cose-base.js"></script>
+<script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    </head>
+
+    <style>
+        #cy {
+            width: 90%;
+            height: 90%;
+            position: absolute;
+            middle: 0px;
+            left: 0px;
+        }
+    </style>
+
+    <body>
+    <section>
+    <a href="Complex54.html">Next</a>
+
+     </section>
+        <div id="cy"></div>
+        <script>
+          var cy = cytoscape({
+      container: document.getElementById('cy'),
+      
+elements:{nodes: [{data: { id: 'MCM2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P33993" }},
+{data: { id: 'TOP2A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/P11388" }},
+{data: { id: 'PDS5A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q29RF7" }},
+{data: { id: 'CDCA5', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q96FF9" }},
+{data: { id: 'SMC1A', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q14683" }},
+{data: { id: 'RAD21', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O60216" }},
+{data: { id: 'TRIM38', score: 5, type: '', href: "https://www.uniprot.org/uniprot/O00635" }},
+{data: { id: 'STAG2', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8N3U4" }},
+{data: { id: 'WAPL', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q7Z5K2" }},
+{data: { id: 'STAG1', score: 5, type: '', href: "https://www.uniprot.org/uniprot/Q8WVM7" }}], 
+ edges: [{ data: { source: 'MCM2', target: 'TOP2A', directed: 'false', weight: 0.270984} },
+{ data: { source: 'MCM2', target: 'SMC1A', directed: 'false', weight: 0.19575499999999998} },
+{ data: { source: 'MCM2', target: 'PDS5A', directed: 'false', weight: 0.12446800000000001} },
+{ data: { source: 'TOP2A', target: 'PDS5A', directed: 'false', weight: 0.037518300000000004} },
+{ data: { source: 'TOP2A', target: 'SMC1A', directed: 'false', weight: 0.246671} },
+{ data: { source: 'PDS5A', target: 'STAG2', directed: 'false', weight: 0.9908969999999999} },
+{ data: { source: 'PDS5A', target: 'SMC1A', directed: 'false', weight: 0.720338} },
+{ data: { source: 'PDS5A', target: 'RAD21', directed: 'false', weight: 0.439143} },
+{ data: { source: 'PDS5A', target: 'WAPL', directed: 'false', weight: 0.43431400000000003} },
+{ data: { source: 'PDS5A', target: 'STAG1', directed: 'false', weight: 0.398094} },
+{ data: { source: 'PDS5A', target: 'CDCA5', directed: 'false', weight: 0.26425} },
+{ data: { source: 'PDS5A', target: 'TRIM38', directed: 'false', weight: 0.16530799999999998} },
+{ data: { source: 'CDCA5', target: 'RAD21', directed: 'false', weight: 0.999189} },
+{ data: { source: 'CDCA5', target: 'STAG2', directed: 'false', weight: 0.998558} },
+{ data: { source: 'CDCA5', target: 'SMC1A', directed: 'false', weight: 0.93224} },
+{ data: { source: 'CDCA5', target: 'STAG1', directed: 'false', weight: 0.904459} },
+{ data: { source: 'CDCA5', target: 'WAPL', directed: 'false', weight: 0.35547399999999996} },
+{ data: { source: 'CDCA5', target: 'TRIM38', directed: 'false', weight: 0.229492} },
+{ data: { source: 'SMC1A', target: 'RAD21', directed: 'false', weight: 0.993503} },
+{ data: { source: 'SMC1A', target: 'STAG2', directed: 'false', weight: 0.993922} },
+{ data: { source: 'SMC1A', target: 'STAG1', directed: 'false', weight: 0.996499} },
+{ data: { source: 'SMC1A', target: 'WAPL', directed: 'false', weight: 0.6517470000000001} },
+{ data: { source: 'SMC1A', target: 'TRIM38', directed: 'false', weight: 0.5483399999999999} },
+{ data: { source: 'RAD21', target: 'STAG1', directed: 'false', weight: 0.983316} },
+{ data: { source: 'RAD21', target: 'STAG2', directed: 'false', weight: 0.9759389999999999} },
+{ data: { source: 'RAD21', target: 'WAPL', directed: 'false', weight: 0.9446129999999999} },
+{ data: { source: 'RAD21', target: 'TRIM38', directed: 'false', weight: 0.20959099999999997} },
+{ data: { source: 'TRIM38', target: 'STAG2', directed: 'false', weight: 0.229492} },
+{ data: { source: 'TRIM38', target: 'STAG1', directed: 'false', weight: 0.194708} },
+{ data: { source: 'TRIM38', target: 'WAPL', directed: 'false', weight: 0.194708} },
+{ data: { source: 'STAG2', target: 'STAG1', directed: 'false', weight: 0.755897} },
+{ data: { source: 'STAG2', target: 'WAPL', directed: 'false', weight: 0.581803} },
+{ data: { source: 'WAPL', target: 'STAG1', directed: 'false', weight: 0.848464} }]},
+
+style: [
+    {
+        selector: 'node',
+        style: {
+		'font-size': 10,
+		'width':'10',
+		'height': '10',	
+        'font-weight': 'bold',
+        'shape': function( ele ){ 
+                                if ( ele.data('type') == 'cov_link' ){return 'star'}  
+                                 if ( ele.data('type') == 'sars' ){return 'triangle'}   
+  return 'rectangle';
+  },            
+             'background-color': function( ele ){ 
+                                if ( ele.data('score') == 1 ){return 'rgb(201, 160, 54)'} 
+								if ( ele.data('score') == 2 ){return 'rgb(211, 186, 63)'}  
+                                 if ( ele.data('score') == 3 ){return 'rgb(160, 171, 105)'}   
+                                 if ( ele.data('score') == 4 ){return 'rgb(78, 148, 70)'}   
+                                 if ( ele.data('score') == 5 ){return 'rgb(52, 136, 74)'} 
+								                                  if ( ele.data('type') == 'sars' ){return 'rgb(255, 0, 0)'}   
+  return 'rgb(180, 131, 40)';
+  },
+            'label': 'data(id)'        }
+    },
+							{
+							selector: 'edge',
+							style: {
+								'width': 'mapData(weight, 0.002, 1, 0.3, 1)',
+								'line-color': function( ele ){ 
+                                 if ( ele.data('type') == 'sars' ){return 'red'}   
+  return 'blue';
+  },
+								'opacity': 0.5
+							}
+						}
+	]
+
+});
+cy.layout({
+    'name': 'fcose',
+		'animate':false,
+	'nodeDimensionsIncludeLabels':true,
+	'nodeSeparation': 1000
+}).run();
+
+cy.on('tap', 'node', function(){
+  try { // your browser may block popups
+    window.open( this.data('href') );
+  } catch(e){ // fall back on url change
+    window.location.href = this.data('href');
+  }
+});      
+    </script>
+
+    	<section>
+	<br>
+	<br>
+	<br> 
+    0.3 Sororin-cohesin complex<br> Complex Score = 0.39375<br> Unweighted Density = 0.73
+    </section>
+    </body>
+    </html>
+    
