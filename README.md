@@ -24,7 +24,7 @@ Similarly, sorted in ascending order of annotation score here:
 [SARS-CoV-2 interacting hu.MAP 1.0 proteins and their corresponding protein complexes, sorted in ascending annotation score order](https://marcottelab.github.io/RL_humap_prediction/humap/Protein2complex_annotated_covid.html)
 
 Complexes interacting with SARS-CoV-2 proteins can be visualized by exploring different complexes from Complex 1 to Complex 1157 by changing the last part of the URL in:
-https://marcottelab.github.io/RL_humap_prediction/humap/Predicted_Cov/Complex1.html
+[https://marcottelab.github.io/RL_humap_prediction/humap/Predicted_Cov/Complex1.html](https://marcottelab.github.io/RL_humap_prediction/humap/Predicted_Cov/Complex1.html)
 
 ## Interactive visualizations of results on hu.MAP 2.0:
 To investigate the complexes identified by the RL algorithm interactively, visualizations are available for the 3614 learned complexes here for:
@@ -49,4 +49,4 @@ Similarly, sorted in ascending order of annotation score here:
 [SARS-CoV-2 interacting hu.MAP 2.0 proteins and their corresponding protein complexes, sorted in ascending annotation score order](https://marcottelab.github.io/RL_humap_prediction/humap2/Protein2complex_annotated_covid.html)
 
 Complexes interacting with SARS-CoV-2 proteins can be visualized by exploring different complexes from Complex 1 to Complex 3614 by changing the last part of the URL in:
-https://marcottelab.github.io/RL_humap_prediction/humap2/Predicted_Cov/Complex1.html
+[https://marcottelab.github.io/RL_humap_prediction/humap2/Predicted_Cov/Complex1.html](https://marcottelab.github.io/RL_humap_prediction/humap2/Predicted_Cov/Complex1.html)
